@@ -27,7 +27,7 @@ const LasVegasHome = () => {
             subtitle="Professional residential, commercial, and specialized cleaning in Las Vegas and Henderson"
             phone="(702) 508-0098"
             bookingUrl="/book-now-vegas"
-            imageType="commercial"
+            imageType="residential"
           />
           
           <ServicesSection />

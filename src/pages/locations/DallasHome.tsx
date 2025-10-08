@@ -27,7 +27,7 @@ const DallasHome = () => {
             subtitle="Professional residential and commercial cleaning packages tailored to the Dallas area"
             phone="(972) 992-2576"
             bookingUrl="/book-now-dallas"
-            imageType="commercial"
+            imageType="residential"
           />
           
           <ServicesSection />

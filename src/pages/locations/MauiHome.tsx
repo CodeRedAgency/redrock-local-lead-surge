@@ -27,7 +27,7 @@ const MauiHome = () => {
             subtitle="Professional vacation rental, deep, and recurring cleaning services throughout Maui"
             phone="(808) 909-3038"
             bookingUrl="/book-now-maui"
-            imageType="vacation"
+            imageType="residential"
           />
           
           <ServicesSection />

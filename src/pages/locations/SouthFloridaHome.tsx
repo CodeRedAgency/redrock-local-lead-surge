@@ -27,7 +27,7 @@ const SouthFloridaHome = () => {
             subtitle="Professional residential and vacation rental cleaning in Weston, Fort Lauderdale, and surrounding areas"
             phone="(954) 469-8881"
             bookingUrl="/book-now-southflorida"
-            imageType="vacation"
+            imageType="residential"
           />
           
           <ServicesSection />

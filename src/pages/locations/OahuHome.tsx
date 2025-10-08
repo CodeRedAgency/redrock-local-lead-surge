@@ -27,7 +27,7 @@ const OahuHome = () => {
             subtitle="Professional residential and vacation rental cleaning in Honolulu and throughout Oahu"
             phone="(808) 909-8801"
             bookingUrl="/book-now-honolulu"
-            imageType="vacation"
+            imageType="residential"
           />
           
           <ServicesSection />
