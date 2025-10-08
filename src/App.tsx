@@ -5,6 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import AboutUs from "./pages/AboutUs";
+import FAQ from "./pages/FAQ";
+import ResidentialCleaning from "./pages/ResidentialCleaning";
+import CommercialCleaning from "./pages/CommercialCleaning";
+import Contact from "./pages/Contact";
 import SouthFloridaHome from "./pages/locations/SouthFloridaHome";
 import SouthFloridaCalculator from "./pages/locations/SouthFloridaCalculator";
 import SouthFloridaBooking from "./pages/locations/SouthFloridaBooking";
@@ -34,6 +39,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          
+          {/* General Pages */}
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/residential-cleaning" element={<ResidentialCleaning />} />
+          <Route path="/commercial-cleaning" element={<CommercialCleaning />} />
+          <Route path="/contact" element={<Contact />} />
           
           {/* South Florida Routes */}
           <Route path="/home-south-florida" element={<SouthFloridaHome />} />

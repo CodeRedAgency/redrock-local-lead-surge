@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MapPin } from "lucide-react";
+import { Menu, X, MapPin, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import {
   Select,
   SelectContent,
@@ -32,6 +38,64 @@ export const GeneralNavigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+                About <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/about">About Us</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/faq">FAQ</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+                Services <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/residential-cleaning">Residential Cleaning</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/commercial-cleaning">Commercial Cleaning</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+                Pricing <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/south-florida">South Florida</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/las-vegas">Las Vegas</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/oahu">Oahu</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/maui">Maui</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/columbus-ohio">Columbus Ohio</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/dallas">Dallas</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <Link to="/contact" className="hover:text-primary transition-colors">
+              Contact
+            </Link>
+
             <Select onValueChange={(value) => window.location.href = value}>
               <SelectTrigger className="w-[200px]">
                 <MapPin className="w-4 h-4 mr-2" />
@@ -60,6 +124,52 @@ export const GeneralNavigation = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden py-4 space-y-4">
+            <div className="space-y-2">
+              <div className="font-semibold text-sm text-muted-foreground px-2">About</div>
+              <Link to="/about" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                About Us
+              </Link>
+              <Link to="/faq" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                FAQ
+              </Link>
+            </div>
+
+            <div className="space-y-2">
+              <div className="font-semibold text-sm text-muted-foreground px-2">Services</div>
+              <Link to="/residential-cleaning" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                Residential Cleaning
+              </Link>
+              <Link to="/commercial-cleaning" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                Commercial Cleaning
+              </Link>
+            </div>
+
+            <div className="space-y-2">
+              <div className="font-semibold text-sm text-muted-foreground px-2">Pricing</div>
+              <Link to="/south-florida" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                South Florida
+              </Link>
+              <Link to="/las-vegas" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                Las Vegas
+              </Link>
+              <Link to="/oahu" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                Oahu
+              </Link>
+              <Link to="/maui" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                Maui
+              </Link>
+              <Link to="/columbus-ohio" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                Columbus Ohio
+              </Link>
+              <Link to="/dallas" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+                Dallas
+              </Link>
+            </div>
+
+            <Link to="/contact" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              Contact
+            </Link>
+
             <Select onValueChange={(value) => window.location.href = value}>
               <SelectTrigger className="w-full">
                 <MapPin className="w-4 h-4 mr-2" />
