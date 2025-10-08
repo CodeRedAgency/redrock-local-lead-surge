@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MapPin, ChevronDown } from "lucide-react";
+import { Menu, X, MapPin, ChevronDown, Phone } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,6 +30,16 @@ export const GeneralNavigation = () => {
 
   return (
     <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
+      {/* Top Bar with Toll-Free Number */}
+      <div className="bg-primary text-primary-foreground py-2">
+        <div className="container mx-auto px-4 flex justify-center items-center">
+          <a href="tel:+18888051733" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+            <Phone className="w-4 h-4" />
+            <span className="font-semibold">(888) 805-1733</span>
+          </a>
+        </div>
+      </div>
+      
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">

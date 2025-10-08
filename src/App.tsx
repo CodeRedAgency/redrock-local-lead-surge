@@ -10,6 +10,17 @@ import FAQ from "./pages/FAQ";
 import ResidentialCleaning from "./pages/ResidentialCleaning";
 import CommercialCleaning from "./pages/CommercialCleaning";
 import Contact from "./pages/Contact";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Sitemap from "./pages/Sitemap";
+import StandardVsDeep from "./pages/StandardVsDeep";
+import StandardCleaning from "./pages/StandardCleaning";
+import DeepCleaning from "./pages/DeepCleaning";
+import AirbnbCleaning from "./pages/AirbnbCleaning";
+import PostConstruction from "./pages/PostConstruction";
+import Blog from "./pages/Blog";
+import HiringRequirements from "./pages/HiringRequirements";
+import MaidilyApp from "./pages/MaidilyApp";
 import SouthFloridaHome from "./pages/locations/SouthFloridaHome";
 import SouthFloridaCalculator from "./pages/locations/SouthFloridaCalculator";
 import SouthFloridaBooking from "./pages/locations/SouthFloridaBooking";
@@ -46,6 +57,21 @@ const App = () => (
           <Route path="/residential-cleaning" element={<ResidentialCleaning />} />
           <Route path="/commercial-cleaning" element={<CommercialCleaning />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/sitemap" element={<Sitemap />} />
+          
+          {/* Services Pages */}
+          <Route path="/standard-vs-deep" element={<StandardVsDeep />} />
+          <Route path="/standard-cleaning" element={<StandardCleaning />} />
+          <Route path="/deep-cleaning" element={<DeepCleaning />} />
+          <Route path="/airbnb-cleaning" element={<AirbnbCleaning />} />
+          <Route path="/post-construction" element={<PostConstruction />} />
+          
+          {/* Blog & Hiring */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/hiring-requirements" element={<HiringRequirements />} />
+          <Route path="/maidily-app" element={<MaidilyApp />} />
           
           {/* South Florida Routes */}
           <Route path="/home-south-florida" element={<SouthFloridaHome />} />
