@@ -30,13 +30,13 @@ export const GeneralNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
+    <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 shadow-[var(--shadow-soft)]">
       {/* Top Bar with Toll-Free Number */}
-      <div className="bg-primary text-primary-foreground py-2">
+      <div className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground py-2.5">
         <div className="container mx-auto px-4 flex justify-center items-center">
-          <a href="tel:+18888051733" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <Phone className="w-4 h-4" />
-            <span className="font-semibold">(888) 805-1733</span>
+          <a href="tel:+18888051733" className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300 group">
+            <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+            <span className="font-semibold tracking-wide">(888) 805-1733</span>
           </a>
         </div>
       </div>
@@ -48,10 +48,10 @@ export const GeneralNavigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-                About <ChevronDown className="w-4 h-4" />
+              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium">
+                About <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem asChild>

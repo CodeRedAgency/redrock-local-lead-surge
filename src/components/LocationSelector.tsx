@@ -50,44 +50,51 @@ const locations = [
 
 export const LocationSelector = () => {
   return (
-    <section className="py-20">
+    <section className="py-24 relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Select Your Location</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Select Your Location</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Choose your service area to get started with premium cleaning services
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {locations.map((location) => (
-            <Card key={location.path} className="hover:shadow-xl transition-shadow group">
-              <CardContent className="pt-6 space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {locations.map((location, index) => (
+            <Card 
+              key={location.path} 
+              className="group hover:scale-[1.02] transition-all duration-300 border-2 hover:border-primary/20 overflow-hidden relative"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="pt-6 space-y-4 relative z-10">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="font-bold text-xl mb-1">{location.name}</h3>
+                    <h3 className="font-bold text-xl mb-1 group-hover:text-primary transition-colors">{location.name}</h3>
                     <p className="text-sm text-muted-foreground">{location.region}</p>
                   </div>
-                  <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <MapPin className="w-5 h-5 text-primary" />
+                  </div>
                 </div>
                 
-                <div className="space-y-2 text-sm">
-                  <div className="flex items-start space-x-2">
-                    <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-muted-foreground" />
-                    <a href={`tel:${location.phone}`} className="hover:text-primary transition-colors">
+                <div className="space-y-3 text-sm pt-2">
+                  <div className="flex items-start space-x-3 group/phone">
+                    <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-muted-foreground group-hover/phone:text-primary transition-colors" />
+                    <a href={`tel:${location.phone}`} className="hover:text-primary transition-colors font-medium">
                       {location.phone}
                     </a>
                   </div>
-                  <div className="flex items-start space-x-2">
+                  <div className="flex items-start space-x-3">
                     <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-muted-foreground" />
-                    <span className="text-muted-foreground">{location.address}</span>
+                    <span className="text-muted-foreground text-xs leading-relaxed">{location.address}</span>
                   </div>
                 </div>
                 
-                <Button asChild className="w-full group-hover:bg-primary/90" variant="cta">
-                  <Link to={location.path}>
+                <Button asChild className="w-full mt-4" variant="cta">
+                  <Link to={location.path} className="group/btn">
                     Select Location
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
               </CardContent>

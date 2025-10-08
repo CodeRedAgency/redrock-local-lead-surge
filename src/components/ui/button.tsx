@@ -5,17 +5,18 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg transition-all",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all font-semibold",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-premium)] hover:-translate-y-0.5",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md hover:shadow-lg",
+        outline: "border-2 border-input bg-background hover:bg-accent/5 hover:border-primary transition-all",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm hover:shadow-md",
+        ghost: "hover:bg-accent/10 hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline hover:text-primary/80",
+        cta: "bg-gradient-to-r from-primary to-primary-glow text-primary-foreground hover:shadow-[var(--shadow-premium)] hover:-translate-y-1 font-semibold tracking-wide",
+        premium: "bg-gradient-to-r from-accent to-amber-400 text-accent-foreground shadow-[0_0_30px_-5px_hsl(var(--accent)/0.5)] hover:shadow-[0_0_40px_-5px_hsl(var(--accent)/0.7)] hover:-translate-y-1 font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
