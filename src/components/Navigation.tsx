@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MapPin, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 import {
   Select,
   SelectContent,
@@ -31,8 +32,8 @@ export const Navigation = ({ loginUrl }: { loginUrl?: string }) => {
     <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">Red Rock Cleaning</div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={logo} alt="Red Rock Cleaning Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
