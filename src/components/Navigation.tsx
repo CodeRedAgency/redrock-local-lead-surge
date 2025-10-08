@@ -31,9 +31,9 @@ export const Navigation = ({ loginUrl }: { loginUrl?: string }) => {
   return (
     <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-40 py-4">
+        <div className="flex items-center justify-between h-24 md:h-40 py-2 md:py-4">
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Red Rock Cleaning Logo" className="h-[150px] w-[150px]" />
+            <img src={logo} alt="Red Rock Cleaning Logo" className="h-[75px] w-[75px] md:h-[150px] md:w-[150px]" />
           </Link>
 
           {/* Desktop Navigation */}
