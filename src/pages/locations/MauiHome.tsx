@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TrustSection } from "@/components/TrustSection";
+import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
@@ -26,9 +27,12 @@ const MauiHome = () => {
             subtitle="Professional vacation rental, deep, and recurring cleaning services throughout Maui"
             phone="(808) 909-3038"
             bookingUrl="/book-now-maui"
+            imageType="vacation"
           />
           
           <ServicesSection />
+          
+          <BeforeAfterSection bookingUrl="/book-now-maui" />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">

@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TrustSection } from "@/components/TrustSection";
+import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
@@ -26,9 +27,12 @@ const LasVegasHome = () => {
             subtitle="Professional residential, commercial, and specialized cleaning in Las Vegas and Henderson"
             phone="(702) 508-0098"
             bookingUrl="/book-now-vegas"
+            imageType="commercial"
           />
           
           <ServicesSection />
+          
+          <BeforeAfterSection bookingUrl="/book-now-vegas" />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">

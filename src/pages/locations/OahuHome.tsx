@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TrustSection } from "@/components/TrustSection";
+import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
@@ -26,9 +27,12 @@ const OahuHome = () => {
             subtitle="Professional residential and vacation rental cleaning in Honolulu and throughout Oahu"
             phone="(808) 909-8801"
             bookingUrl="/book-now-honolulu"
+            imageType="vacation"
           />
           
           <ServicesSection />
+          
+          <BeforeAfterSection bookingUrl="/book-now-honolulu" />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">
