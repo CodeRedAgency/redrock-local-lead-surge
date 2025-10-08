@@ -83,22 +83,22 @@ export const GeneralNavigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem asChild>
-                  <Link to="/south-florida">South Florida</Link>
+                  <Link to="/south-florida-booking">South Florida</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/las-vegas">Las Vegas</Link>
+                  <Link to="/las-vegas-booking">Las Vegas</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/oahu">Oahu</Link>
+                  <Link to="/oahu-booking">Oahu</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/maui">Maui</Link>
+                  <Link to="/maui-booking">Maui</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/columbus-ohio">Columbus Ohio</Link>
+                  <Link to="/columbus-ohio-booking">Columbus Ohio</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/dallas">Dallas</Link>
+                  <Link to="/dallas-booking">Dallas</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -157,22 +157,22 @@ export const GeneralNavigation = () => {
 
             <div className="space-y-2">
               <div className="font-semibold text-sm text-muted-foreground px-2">Pricing</div>
-              <Link to="/south-florida" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              <Link to="/south-florida-booking" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 South Florida
               </Link>
-              <Link to="/las-vegas" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              <Link to="/las-vegas-booking" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 Las Vegas
               </Link>
-              <Link to="/oahu" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              <Link to="/oahu-booking" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 Oahu
               </Link>
-              <Link to="/maui" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              <Link to="/maui-booking" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 Maui
               </Link>
-              <Link to="/columbus-ohio" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              <Link to="/columbus-ohio-booking" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 Columbus Ohio
               </Link>
-              <Link to="/dallas" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              <Link to="/dallas-booking" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 Dallas
               </Link>
             </div>
