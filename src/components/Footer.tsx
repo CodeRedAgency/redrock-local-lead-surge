@@ -43,108 +43,93 @@ const locationData = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-secondary mt-20 py-12">
+    <footer className="bg-background border-t border-border mt-20 py-12">
       <div className="container mx-auto px-4">
         {/* Navigation Dropdowns */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
           {/* Home Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-auto">
-                Home
-                <ChevronDown className="ml-2 h-4 w-4" />
-              </Button>
+            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+              Home <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 bg-background">
+            <DropdownMenuContent>
               <DropdownMenuItem asChild>
-                <Link to="/" className="w-full cursor-pointer">Home</Link>
+                <Link to="/">Home</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
           {/* About Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-auto">
-                About
-                <ChevronDown className="ml-2 h-4 w-4" />
-              </Button>
+            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+              About <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 bg-background">
+            <DropdownMenuContent>
               <DropdownMenuItem asChild>
-                <Link to="/terms" className="w-full cursor-pointer">Terms and Conditions</Link>
+                <Link to="/terms">Terms and Conditions</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/privacy" className="w-full cursor-pointer">Privacy Policy</Link>
+                <Link to="/privacy">Privacy Policy</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/faq" className="w-full cursor-pointer">FAQ</Link>
+                <Link to="/faq">FAQ</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/sitemap" className="w-full cursor-pointer">Sitemap</Link>
+                <Link to="/sitemap">Sitemap</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
           {/* Services Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-auto">
-                Services
-                <ChevronDown className="ml-2 h-4 w-4" />
-              </Button>
+            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+              Services <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 bg-background">
+            <DropdownMenuContent>
               <DropdownMenuItem asChild>
-                <Link to="/standard-vs-deep" className="w-full cursor-pointer">Standard vs Deep Cleaning</Link>
+                <Link to="/standard-vs-deep">Standard vs Deep Cleaning</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/standard-cleaning" className="w-full cursor-pointer">Standard Cleaning</Link>
+                <Link to="/standard-cleaning">Standard Cleaning</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/deep-cleaning" className="w-full cursor-pointer">Deep Cleaning</Link>
+                <Link to="/deep-cleaning">Deep Cleaning</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/airbnb-cleaning" className="w-full cursor-pointer">Airbnb Cleaning</Link>
+                <Link to="/airbnb-cleaning">Airbnb Cleaning</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/post-construction" className="w-full cursor-pointer">Post Construction</Link>
+                <Link to="/post-construction">Post Construction</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
           {/* Blog & Pricing Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-auto">
-                Resources
-                <ChevronDown className="ml-2 h-4 w-4" />
-              </Button>
+            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+              Resources <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 bg-background">
+            <DropdownMenuContent>
               <DropdownMenuItem asChild>
-                <Link to="/blog" className="w-full cursor-pointer">Blog</Link>
+                <Link to="/blog">Blog</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/" className="w-full cursor-pointer">Pricing</Link>
+                <Link to="/">Pricing</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
           {/* Hiring Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-auto">
-                Hiring
-                <ChevronDown className="ml-2 h-4 w-4" />
-              </Button>
+            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
+              Hiring <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 bg-background">
+            <DropdownMenuContent>
               <DropdownMenuItem asChild>
-                <Link to="/hiring-requirements" className="w-full cursor-pointer">Hiring Requirements</Link>
+                <Link to="/hiring-requirements">Hiring Requirements</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/maidily-app" className="w-full cursor-pointer">Maidily Mobile App</Link>
+                <Link to="/maidily-app">Maidily Mobile App</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
