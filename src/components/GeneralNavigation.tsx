@@ -42,7 +42,7 @@ export const GeneralNavigation = () => {
       </div>
       
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-40 py-4">
           <Link to="/" className="flex items-center space-x-3">
             <img src={logo} alt="Red Rock Cleaning Logo" className="h-[150px] w-[150px]" />
           </Link>
