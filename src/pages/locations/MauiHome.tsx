@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 
 const MauiHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-dallas/sign-in";
+  const bookingUrl = "/book-now-maui";
   
   return (
     <>
@@ -18,7 +19,7 @@ const MauiHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} />
+        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -26,13 +27,13 @@ const MauiHome = () => {
             title="Premium Cleaning Services in Maui"
             subtitle="Professional vacation rental, deep, and recurring cleaning services throughout Maui"
             phone="(808) 909-3038"
-            bookingUrl="/book-now-maui"
+            bookingUrl={bookingUrl}
             imageType="residential"
           />
           
           <ServicesSection />
           
-          <BeforeAfterSection bookingUrl="/book-now-maui" />
+          <BeforeAfterSection bookingUrl={bookingUrl} />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">

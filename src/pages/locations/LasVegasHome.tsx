@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 
 const LasVegasHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-vegas/sign-in";
+  const bookingUrl = "/book-now-vegas";
   
   return (
     <>
@@ -18,7 +19,7 @@ const LasVegasHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} />
+        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -26,13 +27,13 @@ const LasVegasHome = () => {
             title="Premium Cleaning Services in Las Vegas"
             subtitle="Professional residential, commercial, and specialized cleaning in Las Vegas and Henderson"
             phone="(702) 508-0098"
-            bookingUrl="/book-now-vegas"
+            bookingUrl={bookingUrl}
             imageType="residential"
           />
           
           <ServicesSection />
           
-          <BeforeAfterSection bookingUrl="/book-now-vegas" />
+          <BeforeAfterSection bookingUrl={bookingUrl} />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">

@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 
 const OahuHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-vegas/sign-in";
+  const bookingUrl = "/book-now-honolulu";
   
   return (
     <>
@@ -18,7 +19,7 @@ const OahuHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} />
+        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -26,13 +27,13 @@ const OahuHome = () => {
             title="Premium Cleaning Services in Oahu"
             subtitle="Professional residential and vacation rental cleaning in Honolulu and throughout Oahu"
             phone="(808) 909-8801"
-            bookingUrl="/book-now-honolulu"
+            bookingUrl={bookingUrl}
             imageType="residential"
           />
           
           <ServicesSection />
           
-          <BeforeAfterSection bookingUrl="/book-now-honolulu" />
+          <BeforeAfterSection bookingUrl={bookingUrl} />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">

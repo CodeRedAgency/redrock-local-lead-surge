@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 
 const ColumbusHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-ohio/sign-in";
+  const bookingUrl = "/book-now-columbus-ohio";
   
   return (
     <>
@@ -18,7 +19,7 @@ const ColumbusHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} />
+        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -26,13 +27,13 @@ const ColumbusHome = () => {
             title="Premium Cleaning Services in Columbus"
             subtitle="Professional house and office cleaning with reliable service and easy online booking"
             phone="(380) 235-3135"
-            bookingUrl="/book-now-columbus-ohio"
+            bookingUrl={bookingUrl}
             imageType="residential"
           />
           
           <ServicesSection />
           
-          <BeforeAfterSection bookingUrl="/book-now-columbus-ohio" />
+          <BeforeAfterSection bookingUrl={bookingUrl} />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">

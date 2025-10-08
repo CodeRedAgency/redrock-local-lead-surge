@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 
 const SouthFloridaHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-fort-lauderdale/sign-in";
+  const bookingUrl = "/book-now-southflorida";
   
   return (
     <>
@@ -18,7 +19,7 @@ const SouthFloridaHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} />
+        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -26,13 +27,13 @@ const SouthFloridaHome = () => {
             title="Premium Cleaning Services in South Florida"
             subtitle="Professional residential and vacation rental cleaning in Weston, Fort Lauderdale, and surrounding areas"
             phone="(954) 469-8881"
-            bookingUrl="/book-now-southflorida"
+            bookingUrl={bookingUrl}
             imageType="residential"
           />
           
           <ServicesSection />
           
-          <BeforeAfterSection bookingUrl="/book-now-southflorida" />
+          <BeforeAfterSection bookingUrl={bookingUrl} />
           
           <section className="py-12 bg-primary/5">
             <div className="container mx-auto px-4 text-center space-y-6">
