@@ -45,12 +45,13 @@ export const Footer = () => {
   return (
     <footer className="bg-secondary mt-20 py-12">
       <div className="container mx-auto px-4">
-        {/* Navigation Dropdown */}
-        <div className="flex justify-center mb-12">
+        {/* Navigation Dropdowns */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {/* Home Dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-full md:w-auto">
-                Navigation
+              <Button variant="outline" className="w-auto">
+                Home
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
@@ -58,6 +59,18 @@ export const Footer = () => {
               <DropdownMenuItem asChild>
                 <Link to="/" className="w-full cursor-pointer">Home</Link>
               </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* About Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-auto">
+                About
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-background">
               <DropdownMenuItem asChild>
                 <Link to="/terms" className="w-full cursor-pointer">Terms and Conditions</Link>
               </DropdownMenuItem>
@@ -70,6 +83,18 @@ export const Footer = () => {
               <DropdownMenuItem asChild>
                 <Link to="/sitemap" className="w-full cursor-pointer">Sitemap</Link>
               </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Services Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-auto">
+                Services
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-background">
               <DropdownMenuItem asChild>
                 <Link to="/standard-vs-deep" className="w-full cursor-pointer">Standard vs Deep Cleaning</Link>
               </DropdownMenuItem>
@@ -85,9 +110,36 @@ export const Footer = () => {
               <DropdownMenuItem asChild>
                 <Link to="/post-construction" className="w-full cursor-pointer">Post Construction</Link>
               </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Blog & Pricing Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-auto">
+                Resources
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-background">
               <DropdownMenuItem asChild>
                 <Link to="/blog" className="w-full cursor-pointer">Blog</Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/" className="w-full cursor-pointer">Pricing</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Hiring Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-auto">
+                Hiring
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-background">
               <DropdownMenuItem asChild>
                 <Link to="/hiring-requirements" className="w-full cursor-pointer">Hiring Requirements</Link>
               </DropdownMenuItem>
@@ -165,7 +217,7 @@ export const Footer = () => {
         
         {/* Copyright */}
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2022 by CodeRed Agency</p>
+          <p>&copy; 2022 by <a href="https://www.coderedagency.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">CodeRed Agency</a></p>
         </div>
       </div>
     </footer>
