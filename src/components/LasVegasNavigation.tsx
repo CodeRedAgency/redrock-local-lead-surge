@@ -59,15 +59,6 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                       <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
                       <DropdownMenuSubContent>
                         <DropdownMenuItem asChild>
-                          <Link to="/standard-cleaning-services">Standard Cleaning Services</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                          <Link to="/deep-cleaning-services">Deep Cleaning Services</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                          <Link to="/move-out-cleaning-services">Move Out Cleaning Services</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
                           <Link to="/las-vegas/airbnb-cleaning-services">Airbnb Cleaning Services in Las Vegas</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
@@ -81,9 +72,6 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/post-construction-cleaning-services">Post Construction Cleaning Services in Las Vegas</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                          <Link to="/post-construction-cleaning-services">Post Construction Cleaning Services</Link>
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
@@ -232,15 +220,6 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                   <div className="font-medium mb-2">Services</div>
                   <div className="ml-4 space-y-2">
                     <div className="font-medium text-sm text-muted-foreground mb-1">Residential Cleaning</div>
-                    <Link to="/standard-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Standard Cleaning Services
-                    </Link>
-                    <Link to="/deep-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Deep Cleaning Services
-                    </Link>
-                    <Link to="/move-out-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Move Out Cleaning Services
-                    </Link>
                     <Link to="/las-vegas/airbnb-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Airbnb Cleaning Services in Las Vegas
                     </Link>
@@ -255,9 +234,6 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                     </Link>
                     <Link to="/las-vegas/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Post Construction Cleaning Services in Las Vegas
-                    </Link>
-                    <Link to="/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Post Construction Cleaning Services
                     </Link>
                     <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Commercial Cleaning
