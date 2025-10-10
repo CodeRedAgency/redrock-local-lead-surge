@@ -3,6 +3,7 @@ import { LasVegasNavigation } from "@/components/LasVegasNavigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Calendar, Home } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -336,19 +337,39 @@ export default function AirbnbCleaningLasVegasPage() {
         
         <main className="flex-grow">
           {/* Hero Section */}
-          <section className="py-20 bg-gradient-to-br from-primary/10 to-primary/5">
-            <div className="container mx-auto px-4">
+          <section className="relative py-24 md:py-32 overflow-hidden">
+            <div className="absolute inset-0">
+              <img 
+                src="/src/assets/hero-vacation.jpg" 
+                alt="Professional Airbnb cleaning service in a Las Vegas vacation rental with Bellagio fountain views"
+                className="w-full h-full object-cover scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/75"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50"></div>
+            </div>
+            <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">Professional Airbnb Cleaning Services in Las Vegas</h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                  Professional Airbnb Cleaning Services in Las Vegas
+                </h1>
+                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Keep your Las Vegas vacation rental spotless and guest-ready with our professional Airbnb cleaning services. 
                   We help you maintain 5-star reviews and maximize your rental income with reliable, thorough cleaning every time.
                 </p>
-                <img 
-                  src="/src/assets/hero-commercial.jpg" 
-                  alt="Spotless and guest-ready Airbnb property in Las Vegas cleaned by Red Rock Cleans"
-                  className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
-                />
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" className="h-14 text-lg px-8" asChild>
+                    <Link to="/book-now-vegas">
+                      <Calendar className="w-5 h-5 mr-2" />
+                      Schedule Airbnb Cleaning
+                    </Link>
+                  </Button>
+                  <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
+                    <Link to="/las-vegas-calculator">
+                      <Home className="w-5 h-5 mr-2" />
+                      Get Free Quote
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </section>

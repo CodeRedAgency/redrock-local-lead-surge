@@ -382,8 +382,17 @@ const MoveOutCleaningLasVegasPage = () => {
         
         <main className="flex-grow">
           {/* Hero Section */}
-          <section className="relative py-24 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-            <div className="container mx-auto px-4">
+          <section className="relative py-24 md:py-32 overflow-hidden">
+            <div className="absolute inset-0">
+              <img 
+                src="/src/assets/service-products.jpg" 
+                alt="Professional move out cleaning service in a Las Vegas apartment with Strip skyline views"
+                className="w-full h-full object-cover scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/75"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50"></div>
+            </div>
+            <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
                   Stress-Free Move Out Cleaning Service in Las Vegas
