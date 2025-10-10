@@ -70,37 +70,37 @@ const CommercialCleaningEstimator = () => {
                         <div className="space-y-6">
                           <div className="grid md:grid-cols-2 gap-4">
                             <Button asChild className="h-16 text-lg">
-                              <Link to="/south-florida">
+                              <Link to="/south-florida-calculator">
                                 <MapPin className="w-5 h-5 mr-2" />
                                 South Florida
                               </Link>
                             </Button>
                             <Button asChild variant="outline" className="h-16 text-lg">
-                              <Link to="/las-vegas">
+                              <Link to="/las-vegas-calculator">
                                 <MapPin className="w-5 h-5 mr-2" />
                                 Las Vegas
                               </Link>
                             </Button>
                             <Button asChild variant="outline" className="h-16 text-lg">
-                              <Link to="/oahu">
+                              <Link to="/oahu-calculator">
                                 <MapPin className="w-5 h-5 mr-2" />
                                 Oahu
                               </Link>
                             </Button>
                             <Button asChild variant="outline" className="h-16 text-lg">
-                              <Link to="/maui">
+                              <Link to="/maui-calculator">
                                 <MapPin className="w-5 h-5 mr-2" />
                                 Maui
                               </Link>
                             </Button>
                             <Button asChild variant="outline" className="h-16 text-lg">
-                              <Link to="/columbus-ohio">
+                              <Link to="/columbus-ohio-calculator">
                                 <MapPin className="w-5 h-5 mr-2" />
                                 Columbus Ohio
                               </Link>
                             </Button>
                             <Button asChild variant="outline" className="h-16 text-lg">
-                              <Link to="/dallas">
+                              <Link to="/dallas-calculator">
                                 <MapPin className="w-5 h-5 mr-2" />
                                 Dallas
                               </Link>

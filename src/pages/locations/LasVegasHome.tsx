@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/Navigation";
+import { LasVegasNavigation } from "@/components/LasVegasNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
 import { ServicesSection } from "@/components/ServicesSection";
@@ -19,7 +19,7 @@ const LasVegasHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
+        <LasVegasNavigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -43,7 +43,7 @@ const LasVegasHome = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" variant="cta">
-                  <a href="/las-vegas">Get a Quote</a>
+                  <a href="/las-vegas-calculator">Get a Quote</a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
                   <a href={loginUrl} target="_blank" rel="noopener noreferrer">

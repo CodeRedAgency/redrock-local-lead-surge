@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/Navigation";
+import { LasVegasNavigation } from "@/components/LasVegasNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 
@@ -13,7 +13,7 @@ const LasVegasCalculator = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} />
+        <LasVegasNavigation loginUrl={loginUrl} />
         
         <main className="flex-grow py-12">
           <div className="container mx-auto px-4">

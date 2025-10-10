@@ -20,6 +20,11 @@ import AirbnbCleaning from "./pages/AirbnbCleaning";
 import PostConstruction from "./pages/PostConstruction";
 import MoveOutCleaning from "./pages/MoveOutCleaning";
 import CommercialCleaningEstimator from "./pages/CommercialCleaningEstimator";
+import AirbnbCleaningLasVegasPage from "./pages/las-vegas/airbnb-cleaning-services/+Page";
+import StandardCleaningLasVegasPage from "./pages/las-vegas/standard-cleaning-services/+Page";
+import DeepCleaningLasVegasPage from "./pages/las-vegas/deep-cleaning-services/+Page";
+import MoveOutCleaningLasVegasPage from "./pages/las-vegas/move-out-cleaning-services/+Page";
+import PostConstructionCleaningLasVegasPage from "./pages/las-vegas/post-construction-cleaning-services/+Page";
 import Blog from "./pages/Blog";
 import HiringRequirements from "./pages/HiringRequirements";
 import MaidilyApp from "./pages/MaidilyApp";
@@ -71,6 +76,11 @@ const App = () => (
           <Route path="/post-construction-cleaning-services" element={<PostConstruction />} />
           <Route path="/move-out-cleaning-services" element={<MoveOutCleaning />} />
           <Route path="/commercial-cleaning-estimator" element={<CommercialCleaningEstimator />} />
+          <Route path="/las-vegas/airbnb-cleaning-services" element={<AirbnbCleaningLasVegasPage />} />
+          <Route path="/las-vegas/standard-cleaning-services" element={<StandardCleaningLasVegasPage />} />
+          <Route path="/las-vegas/deep-cleaning-services" element={<DeepCleaningLasVegasPage />} />
+          <Route path="/las-vegas/move-out-cleaning-services" element={<MoveOutCleaningLasVegasPage />} />
+          <Route path="/las-vegas/post-construction-cleaning-services" element={<PostConstructionCleaningLasVegasPage />} />
           
           {/* Blog & Hiring */}
           <Route path="/blog" element={<Blog />} />
@@ -78,33 +88,33 @@ const App = () => (
           <Route path="/hiring-application/how-to-use-the-maidily-mobile-app" element={<MaidilyApp />} />
           
           {/* South Florida Routes */}
-          <Route path="/home-south-florida" element={<SouthFloridaHome />} />
-          <Route path="/south-florida" element={<SouthFloridaCalculator />} />
+          <Route path="/south-florida" element={<SouthFloridaHome />} />
+          <Route path="/south-florida-calculator" element={<SouthFloridaCalculator />} />
           <Route path="/book-now-southflorida" element={<SouthFloridaBooking />} />
           
           {/* Las Vegas Routes */}
-          <Route path="/home-las-vegas" element={<LasVegasHome />} />
-          <Route path="/las-vegas" element={<LasVegasCalculator />} />
+          <Route path="/las-vegas" element={<LasVegasHome />} />
+          <Route path="/las-vegas-calculator" element={<LasVegasCalculator />} />
           <Route path="/book-now-vegas" element={<LasVegasBooking />} />
           
           {/* Oahu Routes */}
-          <Route path="/home-oahu" element={<OahuHome />} />
-          <Route path="/oahu" element={<OahuCalculator />} />
+          <Route path="/oahu" element={<OahuHome />} />
+          <Route path="/oahu-calculator" element={<OahuCalculator />} />
           <Route path="/book-now-honolulu" element={<OahuBooking />} />
           
           {/* Maui Routes */}
-          <Route path="/home-maui" element={<MauiHome />} />
-          <Route path="/maui" element={<MauiCalculator />} />
+          <Route path="/maui" element={<MauiHome />} />
+          <Route path="/maui-calculator" element={<MauiCalculator />} />
           <Route path="/book-now-maui" element={<MauiBooking />} />
           
           {/* Columbus Ohio Routes */}
-          <Route path="/home-columbus-ohio" element={<ColumbusHome />} />
-          <Route path="/columbus-ohio" element={<ColumbusCalculator />} />
+          <Route path="/columbus-ohio" element={<ColumbusHome />} />
+          <Route path="/columbus-ohio-calculator" element={<ColumbusCalculator />} />
           <Route path="/book-now-columbus-ohio" element={<ColumbusBooking />} />
           
           {/* Dallas Routes */}
-          <Route path="/home-dallas" element={<DallasHome />} />
-          <Route path="/dallas" element={<DallasCalculator />} />
+          <Route path="/dallas" element={<DallasHome />} />
+          <Route path="/dallas-calculator" element={<DallasCalculator />} />
           <Route path="/book-now-dallas" element={<DallasBooking />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

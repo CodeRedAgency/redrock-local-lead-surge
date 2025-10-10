@@ -12,7 +12,8 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(), 
-    ssr({ 
+    // Only enable SSR in production builds, not in development
+    mode === "production" && ssr({ 
       prerender: false,
       includeAssetsImportedByServer: true 
     }), 

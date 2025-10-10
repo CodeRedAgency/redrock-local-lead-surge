@@ -43,7 +43,7 @@ const OahuHome = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" variant="cta">
-                  <a href="/oahu">Get a Quote</a>
+                  <a href="/oahu-calculator">Get a Quote</a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
                   <a href={loginUrl} target="_blank" rel="noopener noreferrer">

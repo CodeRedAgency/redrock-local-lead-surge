@@ -56,12 +56,12 @@ const Sitemap = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-primary mb-4">Locations</h2>
                   <ul className="space-y-2">
-                    <li><Link to="/home-south-florida" className="hover:text-primary transition-colors">South Florida</Link></li>
-                    <li><Link to="/home-las-vegas" className="hover:text-primary transition-colors">Las Vegas</Link></li>
-                    <li><Link to="/home-oahu" className="hover:text-primary transition-colors">Oahu</Link></li>
-                    <li><Link to="/home-maui" className="hover:text-primary transition-colors">Maui</Link></li>
-                    <li><Link to="/home-columbus-ohio" className="hover:text-primary transition-colors">Columbus Ohio</Link></li>
-                    <li><Link to="/home-dallas" className="hover:text-primary transition-colors">Dallas</Link></li>
+                    <li><Link to="/south-florida" className="hover:text-primary transition-colors">South Florida</Link></li>
+                    <li><Link to="/las-vegas" className="hover:text-primary transition-colors">Las Vegas</Link></li>
+                    <li><Link to="/oahu" className="hover:text-primary transition-colors">Oahu</Link></li>
+                    <li><Link to="/maui" className="hover:text-primary transition-colors">Maui</Link></li>
+                    <li><Link to="/columbus-ohio" className="hover:text-primary transition-colors">Columbus Ohio</Link></li>
+                    <li><Link to="/dallas" className="hover:text-primary transition-colors">Dallas</Link></li>
                   </ul>
                 </div>
 
