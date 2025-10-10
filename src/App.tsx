@@ -25,6 +25,11 @@ import StandardCleaningLasVegasPage from "./pages/las-vegas/standard-cleaning-se
 import DeepCleaningLasVegasPage from "./pages/las-vegas/deep-cleaning-services/+Page";
 import MoveOutCleaningLasVegasPage from "./pages/las-vegas/move-out-cleaning-services/+Page";
 import PostConstructionCleaningLasVegasPage from "./pages/las-vegas/post-construction-cleaning-services/+Page";
+import MoveOutCleaningOahuPage from "./pages/oahu/move-out-cleaning-services/+Page";
+import StandardCleaningOahuPage from "./pages/oahu/standard-cleaning-services/+Page";
+import DeepCleaningOahuPage from "./pages/oahu/deep-cleaning-services/+Page";
+import AirbnbCleaningOahuPage from "./pages/oahu/airbnb-cleaning-services/+Page";
+import PostConstructionCleaningOahuPage from "./pages/oahu/post-construction-cleaning-services/+Page";
 import Blog from "./pages/Blog";
 import HiringRequirements from "./pages/HiringRequirements";
 import MaidilyApp from "./pages/MaidilyApp";
@@ -101,6 +106,11 @@ const App = () => (
           <Route path="/oahu" element={<OahuHome />} />
           <Route path="/oahu-calculator" element={<OahuCalculator />} />
           <Route path="/book-now-honolulu" element={<OahuBooking />} />
+          <Route path="/oahu/move-out-cleaning-services" element={<MoveOutCleaningOahuPage />} />
+          <Route path="/oahu/standard-cleaning-services" element={<StandardCleaningOahuPage />} />
+          <Route path="/oahu/deep-cleaning-services" element={<DeepCleaningOahuPage />} />
+          <Route path="/oahu/airbnb-cleaning-services" element={<AirbnbCleaningOahuPage />} />
+          <Route path="/oahu/post-construction-cleaning-services" element={<PostConstructionCleaningOahuPage />} />
           
           {/* Maui Routes */}
           <Route path="/maui" element={<MauiHome />} />
