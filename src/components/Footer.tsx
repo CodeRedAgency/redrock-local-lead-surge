@@ -13,31 +13,37 @@ const locationData = [
     name: "South Florida",
     address: "4032 Pinewood Lane, Weston FL, 33331",
     phone: "(954) 469-8881",
+    path: "/south-florida",
   },
   {
     name: "Las Vegas",
     address: "4536 W Warm Springs Rd, Las Vegas NV, 89118",
     phone: "(702) 508-0098",
+    path: "/las-vegas",
   },
   {
     name: "Oahu",
     address: "1326 Alapai Street, Honolulu HI, 96813",
     phone: "(808) 909-8801",
+    path: "/oahu",
   },
   {
     name: "Maui",
     address: "1326 Alapai Street, Honolulu HI, 96813",
     phone: "(808) 909-3038",
+    path: "/maui",
   },
   {
     name: "Columbus Ohio",
     address: "6605 Longshore Street Suite 240-320, Dublin, Oh 43017",
     phone: "(380) 235-3135",
+    path: "/columbus-ohio",
   },
   {
     name: "Dallas",
     address: "18383 Preston Road # 202, Dallas, TX 75252",
     phone: "(972) 992-2576",
+    path: "/dallas",
   },
 ];
 
@@ -192,19 +198,26 @@ export const Footer = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {locationData.map((location) => (
-              <div key={location.name} className="bg-slate-800/30 p-6 rounded-lg hover:bg-slate-800/50 transition-colors duration-300">
-                <h4 className="font-bold text-primary text-lg mb-4">{location.name}</h4>
+              <Link 
+                key={location.name} 
+                to={location.path}
+                className="bg-slate-800/30 p-6 rounded-lg hover:bg-slate-800/50 transition-colors duration-300 block group"
+              >
+                <h4 className="font-bold text-primary text-lg mb-4 group-hover:text-primary/80 transition-colors">{location.name}</h4>
                 <div className="flex items-start space-x-3 text-slate-300 mb-3">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
                   <span className="text-sm">{location.address}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0 text-primary" />
-                  <a href={`tel:${location.phone}`} className="text-slate-300 hover:text-primary transition-colors duration-300 font-medium">
+                  <span 
+                    className="text-slate-300 hover:text-primary transition-colors duration-300 font-medium"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     {location.phone}
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
