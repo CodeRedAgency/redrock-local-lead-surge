@@ -43,113 +43,148 @@ const locationData = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border mt-20 py-12">
+    <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white mt-20">
       <div className="container mx-auto px-4">
-        {/* Navigation Dropdowns */}
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
-          {/* Home Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-              Home <ChevronDown className="w-4 h-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem asChild>
-                <Link to="/">Home</Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+        {/* Enhanced Navigation */}
+        <div className="py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            {/* Home Section */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-primary mb-4">Home</h3>
+              <Link 
+                to="/" 
+                className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+              >
+                Home
+              </Link>
+            </div>
 
-          {/* About Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-              About <ChevronDown className="w-4 h-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem asChild>
-                <Link to="/terms">Terms and Conditions</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/privacy">Privacy Policy</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/faq">FAQ</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/sitemap">Sitemap</Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            {/* About Section */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-primary mb-4">About</h3>
+              <div className="space-y-3">
+                <Link 
+                  to="/terms-and-conditions-page" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Terms and Conditions
+                </Link>
+                <Link 
+                  to="/privacy-policy-page" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Privacy Policy
+                </Link>
+                <Link 
+                  to="/about/faq" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  FAQ
+                </Link>
+                <Link 
+                  to="/sitemap" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Sitemap
+                </Link>
+              </div>
+            </div>
 
-          {/* Services Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-              Services <ChevronDown className="w-4 h-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem asChild>
-                <Link to="/standard-vs-deep">Standard vs Deep Cleaning</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/standard-cleaning">Standard Cleaning</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/deep-cleaning">Deep Cleaning</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/airbnb-cleaning">Airbnb Cleaning</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/post-construction">Post Construction</Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            {/* Services Section */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-primary mb-4">Services</h3>
+              <div className="space-y-3">
+                <Link 
+                  to="/blog/standard-cleaning-vs-deep-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Standard vs Deep Cleaning
+                </Link>
+                <Link 
+                  to="/standard-cleaning-services" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Standard Cleaning
+                </Link>
+                <Link 
+                  to="/deep-cleaning-services" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Deep Cleaning
+                </Link>
+                <Link 
+                  to="/airbnb-cleaning-services" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Airbnb Cleaning
+                </Link>
+                <Link 
+                  to="/post-construction-cleaning-services" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Post Construction
+                </Link>
+              </div>
+            </div>
 
-          {/* Blog & Pricing Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-              Resources <ChevronDown className="w-4 h-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem asChild>
-                <Link to="/blog">Blog</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/">Pricing</Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            {/* Resources & Hiring Section */}
+            <div className="space-y-6">
+              {/* Resources */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-primary mb-4">Resources</h3>
+                <div className="space-y-3">
+                  <Link 
+                    to="/blog" 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    Blog
+                  </Link>
+                  <Link 
+                    to="/" 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    Pricing
+                  </Link>
+                </div>
+              </div>
 
-          {/* Hiring Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-              Hiring <ChevronDown className="w-4 h-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem asChild>
-                <Link to="/hiring-requirements">Hiring Requirements</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link to="/maidily-app">Maidily Mobile App</Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+              {/* Hiring */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-primary mb-4">Hiring</h3>
+                <div className="space-y-3">
+                  <Link 
+                    to="/hiring-req" 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    Hiring Requirements
+                  </Link>
+                  <Link 
+                    to="/hiring-application/how-to-use-the-maidily-mobile-app" 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    How to use the Maidily mobile app
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Locations with Contact Info */}
-        <div className="border-t border-border pt-8 mb-8">
-          <h3 className="font-bold text-xl text-primary mb-6 text-center">Our Locations</h3>
+        <div className="border-t border-slate-700 pt-12 mb-8">
+          <h3 className="font-bold text-2xl text-primary mb-8 text-center">Our Locations</h3>
           
           {/* Contact Information */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
-            <div className="flex items-center space-x-2 text-lg font-semibold">
-              <Phone className="w-5 h-5 text-primary" />
-              <a href="tel:+18888051733" className="hover:text-primary transition-colors">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+            <div className="flex items-center space-x-3 text-xl font-semibold bg-slate-800/50 px-6 py-3 rounded-lg hover:bg-slate-700/50 transition-colors duration-300">
+              <Phone className="w-6 h-6 text-primary" />
+              <a href="tel:+18888051733" className="text-white hover:text-primary transition-colors duration-300">
                 (888) 805-1733
               </a>
             </div>
-            <div className="flex items-center space-x-2">
-              <Mail className="w-5 h-5 text-primary" />
-              <a href="mailto:office@redrockcleans.com" className="hover:text-primary transition-colors">
+            <div className="flex items-center space-x-3 text-xl bg-slate-800/50 px-6 py-3 rounded-lg hover:bg-slate-700/50 transition-colors duration-300">
+              <Mail className="w-6 h-6 text-primary" />
+              <a href="mailto:office@redrockcleans.com" className="text-white hover:text-primary transition-colors duration-300">
                 office@redrockcleans.com
               </a>
             </div>
@@ -157,15 +192,15 @@ export const Footer = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {locationData.map((location) => (
-              <div key={location.name} className="space-y-2">
-                <h4 className="font-bold text-primary">{location.name}</h4>
-                <div className="flex items-start space-x-2 text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                  <span>{location.address}</span>
+              <div key={location.name} className="bg-slate-800/30 p-6 rounded-lg hover:bg-slate-800/50 transition-colors duration-300">
+                <h4 className="font-bold text-primary text-lg mb-4">{location.name}</h4>
+                <div className="flex items-start space-x-3 text-slate-300 mb-3">
+                  <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-primary" />
+                  <span className="text-sm">{location.address}</span>
                 </div>
-                <div className="flex items-center space-x-2 text-sm">
-                  <Phone className="w-4 h-4 flex-shrink-0" />
-                  <a href={`tel:${location.phone}`} className="hover:text-primary transition-colors">
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 flex-shrink-0 text-primary" />
+                  <a href={`tel:${location.phone}`} className="text-slate-300 hover:text-primary transition-colors duration-300 font-medium">
                     {location.phone}
                   </a>
                 </div>
@@ -175,34 +210,36 @@ export const Footer = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="flex justify-center items-center space-x-4 mb-6">
-          <a href="https://www.facebook.com/redrockcleans/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-            <Facebook className="w-6 h-6" />
-          </a>
-          <a href="https://twitter.com/redrockcleans/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-            <Twitter className="w-6 h-6" />
-          </a>
-          <a href="https://www.instagram.com/red_rock_cleaning/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-            <Instagram className="w-6 h-6" />
-          </a>
-          <a href="http://www.linkedin.com/company/red-rock-cleaning/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-            <Linkedin className="w-6 h-6" />
-          </a>
-          <a href="https://www.youtube.com/@redrockcleaning7597/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-            <Youtube className="w-6 h-6" />
-          </a>
+        <div className="border-t border-slate-700 pt-8 mb-8">
+          <div className="flex justify-center items-center space-x-6">
+            <a href="https://www.facebook.com/redrockcleans/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+              <Facebook className="w-7 h-7" />
+            </a>
+            <a href="https://twitter.com/redrockcleans/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+              <Twitter className="w-7 h-7" />
+            </a>
+            <a href="https://www.instagram.com/red_rock_cleaning/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+              <Instagram className="w-7 h-7" />
+            </a>
+            <a href="http://www.linkedin.com/company/red-rock-cleaning/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+              <Linkedin className="w-7 h-7" />
+            </a>
+            <a href="https://www.youtube.com/@redrockcleaning7597/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+              <Youtube className="w-7 h-7" />
+            </a>
+          </div>
         </div>
 
         {/* SEO Text */}
-        <div className="text-center mb-6">
-          <p className="text-[10px] text-muted-foreground leading-relaxed">
+        <div className="text-center mb-8">
+          <p className="text-sm text-slate-400 leading-relaxed max-w-4xl mx-auto">
             Red Rock Cleans offers house cleaning, apartment cleaning, vacation rental cleaning and commercial cleaning services in the following areas: Fort Lauderdale, Las Vegas, Oahu, Maui, Columbus Ohio and Los Angeles.
           </p>
         </div>
         
         {/* Copyright */}
-        <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2022 by <a href="https://www.coderedagency.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">CodeRed Agency</a></p>
+        <div className="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+          <p>&copy; 2022 by <a href="https://www.coderedagency.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-300">CodeRed Agency</a></p>
         </div>
       </div>
     </footer>

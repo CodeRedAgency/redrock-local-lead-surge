@@ -18,6 +18,8 @@ import StandardCleaning from "./pages/StandardCleaning";
 import DeepCleaning from "./pages/DeepCleaning";
 import AirbnbCleaning from "./pages/AirbnbCleaning";
 import PostConstruction from "./pages/PostConstruction";
+import MoveOutCleaning from "./pages/MoveOutCleaning";
+import CommercialCleaningEstimator from "./pages/CommercialCleaningEstimator";
 import Blog from "./pages/Blog";
 import HiringRequirements from "./pages/HiringRequirements";
 import MaidilyApp from "./pages/MaidilyApp";
@@ -53,25 +55,27 @@ const App = () => (
           
           {/* General Pages */}
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/faq" element={<FAQ />} />
+          <Route path="/about/faq" element={<FAQ />} />
           <Route path="/residential-cleaning" element={<ResidentialCleaning />} />
           <Route path="/commercial-cleaning" element={<CommercialCleaning />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/terms" element={<TermsAndConditions />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions-page" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy-page" element={<PrivacyPolicy />} />
           <Route path="/sitemap" element={<Sitemap />} />
           
           {/* Services Pages */}
-          <Route path="/standard-vs-deep" element={<StandardVsDeep />} />
-          <Route path="/standard-cleaning" element={<StandardCleaning />} />
-          <Route path="/deep-cleaning" element={<DeepCleaning />} />
-          <Route path="/airbnb-cleaning" element={<AirbnbCleaning />} />
-          <Route path="/post-construction" element={<PostConstruction />} />
+          <Route path="/blog/standard-cleaning-vs-deep-cleaning" element={<StandardVsDeep />} />
+          <Route path="/standard-cleaning-services" element={<StandardCleaning />} />
+          <Route path="/deep-cleaning-services" element={<DeepCleaning />} />
+          <Route path="/airbnb-cleaning-services" element={<AirbnbCleaning />} />
+          <Route path="/post-construction-cleaning-services" element={<PostConstruction />} />
+          <Route path="/move-out-cleaning-services" element={<MoveOutCleaning />} />
+          <Route path="/commercial-cleaning-estimator" element={<CommercialCleaningEstimator />} />
           
           {/* Blog & Hiring */}
           <Route path="/blog" element={<Blog />} />
-          <Route path="/hiring-requirements" element={<HiringRequirements />} />
-          <Route path="/maidily-app" element={<MaidilyApp />} />
+          <Route path="/hiring-req" element={<HiringRequirements />} />
+          <Route path="/hiring-application/how-to-use-the-maidily-mobile-app" element={<MaidilyApp />} />
           
           {/* South Florida Routes */}
           <Route path="/home-south-florida" element={<SouthFloridaHome />} />

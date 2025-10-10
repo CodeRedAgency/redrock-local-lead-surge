@@ -32,9 +32,9 @@ const Sitemap = () => {
                   <h2 className="text-2xl font-bold text-primary mb-4">About</h2>
                   <ul className="space-y-2">
                     <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-                    <li><Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
-                    <li><Link to="/terms" className="hover:text-primary transition-colors">Terms and Conditions</Link></li>
-                    <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+                    <li><Link to="/about/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
+                    <li><Link to="/terms-and-conditions-page" className="hover:text-primary transition-colors">Terms and Conditions</Link></li>
+                    <li><Link to="/privacy-policy-page" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
                   </ul>
                 </div>
 
@@ -43,11 +43,13 @@ const Sitemap = () => {
                   <ul className="space-y-2">
                     <li><Link to="/residential-cleaning" className="hover:text-primary transition-colors">Residential Cleaning</Link></li>
                     <li><Link to="/commercial-cleaning" className="hover:text-primary transition-colors">Commercial Cleaning</Link></li>
-                    <li><Link to="/standard-vs-deep" className="hover:text-primary transition-colors">Standard vs Deep Cleaning</Link></li>
-                    <li><Link to="/standard-cleaning" className="hover:text-primary transition-colors">Standard Cleaning Services</Link></li>
-                    <li><Link to="/deep-cleaning" className="hover:text-primary transition-colors">Deep Cleaning Services</Link></li>
-                    <li><Link to="/airbnb-cleaning" className="hover:text-primary transition-colors">Airbnb Cleaning</Link></li>
-                    <li><Link to="/post-construction" className="hover:text-primary transition-colors">Post Construction Cleaning</Link></li>
+                    <li><Link to="/blog/standard-cleaning-vs-deep-cleaning" className="hover:text-primary transition-colors">Standard vs Deep Cleaning</Link></li>
+                    <li><Link to="/standard-cleaning-services" className="hover:text-primary transition-colors">Standard Cleaning Services</Link></li>
+                    <li><Link to="/deep-cleaning-services" className="hover:text-primary transition-colors">Deep Cleaning Services</Link></li>
+                    <li><Link to="/airbnb-cleaning-services" className="hover:text-primary transition-colors">Airbnb Cleaning</Link></li>
+                    <li><Link to="/post-construction-cleaning-services" className="hover:text-primary transition-colors">Post Construction Cleaning</Link></li>
+                    <li><Link to="/move-out-cleaning-services" className="hover:text-primary transition-colors">Move Out Cleaning</Link></li>
+                    <li><Link to="/commercial-cleaning-estimator" className="hover:text-primary transition-colors">Commercial Cleaning Cost Estimator</Link></li>
                   </ul>
                 </div>
 

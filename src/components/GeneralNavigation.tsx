@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MapPin, ChevronDown, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { BubbleAnimation, HoverBubble, ClickBubble } from "@/components/BubbleAnimation";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
   Select,
@@ -30,9 +34,12 @@ export const GeneralNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 shadow-[var(--shadow-soft)]">
+    <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 shadow-[var(--shadow-soft)] relative overflow-hidden">
+      {/* Bubble Animation Background */}
+      <BubbleAnimation className="absolute inset-0 pointer-events-none" bubbleCount={3} />
+      
       {/* Top Bar with Toll-Free Number */}
-      <div className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground py-2.5">
+      <div className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground py-2.5 relative">
         <div className="container mx-auto px-4 flex justify-center items-center">
           <a href="tel:+18888051733" className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300 group">
             <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform" />
@@ -49,8 +56,15 @@ export const GeneralNavigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium">
+            <HoverBubble>
+              <Link to="/" className="hover:text-primary transition-all duration-300 font-medium relative z-10">
+                Home
+              </Link>
+            </HoverBubble>
+
+            <HoverBubble>
+              <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
                 About <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -58,30 +72,54 @@ export const GeneralNavigation = () => {
                   <Link to="/about">About Us</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/faq">FAQ</Link>
+                  <Link to="/about/faq">FAQ</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+              </DropdownMenu>
+            </HoverBubble>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-                Services <ChevronDown className="w-4 h-4" />
-              </DropdownMenuTrigger>
+            <HoverBubble>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors relative z-10">
+                  Services <ChevronDown className="w-4 h-4" />
+                </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem asChild>
-                  <Link to="/residential-cleaning">Residential Cleaning</Link>
-                </DropdownMenuItem>
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent>
+                    <DropdownMenuItem asChild>
+                      <Link to="/standard-cleaning-services">Standard Cleaning Services</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/deep-cleaning-services">Deep Cleaning Services</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/move-out-cleaning-services">Move Out Cleaning Services</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/airbnb-cleaning-services">Airbnb Cleaning Services</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/post-construction-cleaning-services">Post Construction Cleaning Services</Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
                 <DropdownMenuItem asChild>
                   <Link to="/commercial-cleaning">Commercial Cleaning</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+              </DropdownMenu>
+            </HoverBubble>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors">
-                Pricing <ChevronDown className="w-4 h-4" />
-              </DropdownMenuTrigger>
+            <HoverBubble>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors relative z-10">
+                  Pricing <ChevronDown className="w-4 h-4" />
+                </DropdownMenuTrigger>
               <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/book-now-southflorida">South Florida</Link>
                 </DropdownMenuItem>
@@ -101,11 +139,14 @@ export const GeneralNavigation = () => {
                   <Link to="/book-now-dallas">Dallas</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+              </DropdownMenu>
+            </HoverBubble>
 
-            <Link to="/contact" className="hover:text-primary transition-colors">
-              Contact
-            </Link>
+            <HoverBubble>
+              <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
+                Contact
+              </Link>
+            </HoverBubble>
 
             <Select onValueChange={(value) => window.location.href = value}>
               <SelectTrigger className="w-[200px]">
@@ -123,24 +164,32 @@ export const GeneralNavigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <ClickBubble>
+            <button
+              className="md:hidden p-2 relative z-10"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </ClickBubble>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden py-4 space-y-4">
             <div className="space-y-2">
+              <Link to="/" className="block px-2 py-2 hover:bg-muted rounded font-medium" onClick={() => setIsOpen(false)}>
+                Home
+              </Link>
+            </div>
+
+            <div className="space-y-2">
               <div className="font-semibold text-sm text-muted-foreground px-2">About</div>
               <Link to="/about" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 About Us
               </Link>
-              <Link to="/faq" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
+              <Link to="/about/faq" className="block px-2 py-2 hover:bg-muted rounded" onClick={() => setIsOpen(false)}>
                 FAQ
               </Link>
             </div>
