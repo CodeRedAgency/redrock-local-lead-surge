@@ -19,15 +19,18 @@ const neighborhoods = [
     description: "For your Airbnb in the beautiful Anthem master-planned community, we provide exceptional cleaning services that ensure every guest leaves a 5-star review. Our team knows the high standards expected in this prestigious Henderson neighborhood.",
     faq: [
       {
-        q: "How quickly can you clean my Anthem Airbnb?",
-        a: "We can typically clean your Anthem property within 4-6 hours, perfect for same-day turnovers."
+        question: "How quickly can you clean my Anthem Airbnb?",
+        answer: "We can typically clean your Anthem property within 4-6 hours, perfect for same-day turnovers."
       },
       {
-        q: "Do you provide linens for Anthem properties?",
-        a: "Yes, we offer linen service including fresh towels, sheets, and amenities for your Anthem Airbnb."
+        question: "Do you provide linens for Anthem properties?",
+        answer: "Yes, we offer linen service including fresh towels, sheets, and amenities for your Anthem Airbnb."
       }
     ],
-    testimonial: "Red Rock Cleans has been maintaining our Anthem Airbnb for over a year. Their attention to detail and reliability has helped us maintain a 4.9-star rating. - Sarah M., Anthem Host"
+    testimonial: {
+      text: "Red Rock Cleans has been maintaining our Anthem Airbnb for over a year. Their attention to detail and reliability has helped us maintain a 4.9-star rating.",
+      author: "Sarah M., Anthem Host"
+    }
   },
   {
     id: "enterprise",
@@ -35,15 +38,18 @@ const neighborhoods = [
     description: "Enterprise Airbnb hosts trust Red Rock Cleans for consistent, professional cleaning services. We understand the unique needs of vacation rentals in this growing Las Vegas area.",
     faq: [
       {
-        q: "What cleaning services do you offer in Enterprise?",
-        a: "We provide comprehensive Airbnb cleaning including deep cleaning, maintenance cleaning, and emergency turnovers."
+        question: "What cleaning services do you offer in Enterprise?",
+        answer: "We provide comprehensive Airbnb cleaning including deep cleaning, maintenance cleaning, and emergency turnovers."
       },
       {
-        q: "Do you work weekends in Enterprise?",
-        a: "Yes, we offer weekend cleaning services to accommodate your Enterprise Airbnb's busy turnover schedule."
+        question: "Do you work weekends in Enterprise?",
+        answer: "Yes, we offer weekend cleaning services to accommodate your Enterprise Airbnb's busy turnover schedule."
       }
     ],
-    testimonial: "Living in Enterprise, I needed a reliable cleaning service for my Airbnb. Red Rock Cleans has never let me down, even during busy holiday weekends. - Mike T., Enterprise Host"
+    testimonial: {
+      text: "Living in Enterprise, I needed a reliable cleaning service for my Airbnb. Red Rock Cleans has never let me down, even during busy holiday weekends.",
+      author: "Mike T., Enterprise Host"
+    }
   },
   {
     id: "green-valley-north",
@@ -51,15 +57,18 @@ const neighborhoods = [
     description: "Green Valley North Airbnb hosts rely on Red Rock Cleans for spotless properties that impress guests. Our local team understands the expectations of visitors to this desirable Henderson area.",
     faq: [
       {
-        q: "How do you handle key access for Green Valley North properties?",
-        a: "We offer flexible key management including lockbox access, key pickup, and smart lock integration."
+        question: "How do you handle key access for Green Valley North properties?",
+        answer: "We offer flexible key management including lockbox access, key pickup, and smart lock integration."
       },
       {
-        q: "What's included in your Green Valley North cleaning service?",
-        a: "Full cleaning including kitchens, bathrooms, bedrooms, living areas, plus inventory checks and restocking."
+        question: "What's included in your Green Valley North cleaning service?",
+        answer: "Full cleaning including kitchens, bathrooms, bedrooms, living areas, plus inventory checks and restocking."
       }
     ],
-    testimonial: "Our Green Valley North Airbnb guests consistently mention how clean the property is. Red Rock Cleans makes us look great! - Jennifer L., Green Valley North Host"
+    testimonial: {
+      text: "Our Green Valley North Airbnb guests consistently mention how clean the property is. Red Rock Cleans makes us look great!",
+      author: "Jennifer L., Green Valley North Host"
+    }
   },
   {
     id: "henderson",
@@ -67,15 +76,18 @@ const neighborhoods = [
     description: "Henderson Airbnb properties require professional cleaning that meets the high standards of this family-friendly community. Red Rock Cleans delivers consistent quality that keeps guests coming back.",
     faq: [
       {
-        q: "Do you clean Airbnb properties in all Henderson areas?",
-        a: "Yes, we serve all Henderson neighborhoods including Anthem, Green Valley, and the Lake Las Vegas area."
+        question: "Do you clean Airbnb properties in all Henderson areas?",
+        answer: "Yes, we serve all Henderson neighborhoods including Anthem, Green Valley, and the Lake Las Vegas area."
       },
       {
-        q: "Can you handle same-day turnovers in Henderson?",
-        a: "Absolutely! We specialize in quick, thorough turnovers to meet your Henderson Airbnb's tight schedule."
+        question: "Can you handle same-day turnovers in Henderson?",
+        answer: "Absolutely! We specialize in quick, thorough turnovers to meet your Henderson Airbnb's tight schedule."
       }
     ],
-    testimonial: "As a Henderson host, I appreciate Red Rock Cleans' professionalism and attention to detail. They've helped maintain our 5-star rating. - David R., Henderson Host"
+    testimonial: {
+      text: "As a Henderson host, I appreciate Red Rock Cleans' professionalism and attention to detail. They've helped maintain our 5-star rating.",
+      author: "David R., Henderson Host"
+    }
   },
   {
     id: "lake-las-vegas",
@@ -83,15 +95,18 @@ const neighborhoods = [
     description: "Lake Las Vegas vacation rentals demand luxury-level cleaning services. Our experienced team provides the premium cleaning that matches the upscale expectations of this exclusive resort community.",
     faq: [
       {
-        q: "Do you provide luxury cleaning services for Lake Las Vegas properties?",
-        a: "Yes, we offer premium cleaning services tailored to the high-end expectations of Lake Las Vegas guests."
+        question: "Do you provide luxury cleaning services for Lake Las Vegas properties?",
+        answer: "Yes, we offer premium cleaning services tailored to the high-end expectations of Lake Las Vegas guests."
       },
       {
-        q: "How do you handle seasonal cleaning for Lake Las Vegas rentals?",
-        a: "We provide comprehensive seasonal deep cleaning and maintenance services for Lake Las Vegas properties."
+        question: "How do you handle seasonal cleaning for Lake Las Vegas rentals?",
+        answer: "We provide comprehensive seasonal deep cleaning and maintenance services for Lake Las Vegas properties."
       }
     ],
-    testimonial: "Our Lake Las Vegas rental requires exceptional cleaning standards. Red Rock Cleans consistently delivers luxury-level service that impresses our guests. - Lisa K., Lake Las Vegas Host"
+    testimonial: {
+      text: "Our Lake Las Vegas rental requires exceptional cleaning standards. Red Rock Cleans consistently delivers luxury-level service that impresses our guests.",
+      author: "Lisa K., Lake Las Vegas Host"
+    }
   },
   {
     id: "las-vegas",
@@ -99,15 +114,18 @@ const neighborhoods = [
     description: "Las Vegas Strip and downtown Airbnb properties need reliable cleaning services that work around the city's 24/7 schedule. Red Rock Cleans adapts to your property's unique needs in the Entertainment Capital.",
     faq: [
       {
-        q: "Do you clean Airbnb properties near the Las Vegas Strip?",
-        a: "Yes, we service Airbnb properties throughout Las Vegas including the Strip, downtown, and surrounding areas."
+        question: "Do you clean Airbnb properties near the Las Vegas Strip?",
+        answer: "Yes, we service Airbnb properties throughout Las Vegas including the Strip, downtown, and surrounding areas."
       },
       {
-        q: "Can you handle late-night turnovers in Las Vegas?",
-        a: "We offer flexible scheduling including late-night and early morning cleaning to accommodate Las Vegas tourism schedules."
+        question: "Can you handle late-night turnovers in Las Vegas?",
+        answer: "We offer flexible scheduling including late-night and early morning cleaning to accommodate Las Vegas tourism schedules."
       }
     ],
-    testimonial: "Running an Airbnb near the Strip is challenging, but Red Rock Cleans makes it easy with their flexible scheduling and thorough cleaning. - Carlos M., Las Vegas Host"
+    testimonial: {
+      text: "Running an Airbnb near the Strip is challenging, but Red Rock Cleans makes it easy with their flexible scheduling and thorough cleaning.",
+      author: "Carlos M., Las Vegas Host"
+    }
   },
   {
     id: "macdonald-ranch",
@@ -115,15 +133,18 @@ const neighborhoods = [
     description: "MacDonald Ranch Airbnb hosts choose Red Rock Cleans for our understanding of this Henderson neighborhood's family-friendly atmosphere and guest expectations.",
     faq: [
       {
-        q: "Do you offer family-friendly cleaning services for MacDonald Ranch?",
-        a: "Yes, we provide safe, family-friendly cleaning services perfect for MacDonald Ranch vacation rentals."
+        question: "Do you offer family-friendly cleaning services for MacDonald Ranch?",
+        answer: "Yes, we provide safe, family-friendly cleaning services perfect for MacDonald Ranch vacation rentals."
       },
       {
-        q: "How do you handle pet-friendly properties in MacDonald Ranch?",
-        a: "We offer specialized cleaning for pet-friendly rentals including pet hair removal and odor elimination."
+        question: "How do you handle pet-friendly properties in MacDonald Ranch?",
+        answer: "We offer specialized cleaning for pet-friendly rentals including pet hair removal and odor elimination."
       }
     ],
-    testimonial: "Our MacDonald Ranch Airbnb caters to families, and Red Rock Cleans ensures it's always spotless and welcoming for our guests. - Amanda S., MacDonald Ranch Host"
+    testimonial: {
+      text: "Our MacDonald Ranch Airbnb caters to families, and Red Rock Cleans ensures it's always spotless and welcoming for our guests.",
+      author: "Amanda S., MacDonald Ranch Host"
+    }
   },
   {
     id: "mountains-edge",
@@ -131,15 +152,18 @@ const neighborhoods = [
     description: "Mountain's Edge Airbnb properties benefit from Red Rock Cleans' reliable service in this master-planned community. We understand the needs of vacation rentals in this scenic Henderson area.",
     faq: [
       {
-        q: "Do you service Airbnb properties in Mountain's Edge?",
-        a: "Yes, we provide comprehensive cleaning services for Mountain's Edge vacation rentals."
+        question: "Do you service Airbnb properties in Mountain's Edge?",
+        answer: "Yes, we provide comprehensive cleaning services for Mountain's Edge vacation rentals."
       },
       {
-        q: "Can you handle outdoor cleaning for Mountain's Edge properties?",
-        a: "We offer outdoor cleaning services including patios, outdoor furniture, and pool areas when needed."
+        question: "Can you handle outdoor cleaning for Mountain's Edge properties?",
+        answer: "We offer outdoor cleaning services including patios, outdoor furniture, and pool areas when needed."
       }
     ],
-    testimonial: "Mountain's Edge is a beautiful community, and Red Rock Cleans helps keep our Airbnb property looking pristine for every guest. - Robert H., Mountain's Edge Host"
+    testimonial: {
+      text: "Mountain's Edge is a beautiful community, and Red Rock Cleans helps keep our Airbnb property looking pristine for every guest.",
+      author: "Robert H., Mountain's Edge Host"
+    }
   },
   {
     id: "north-las-vegas",
@@ -147,15 +171,18 @@ const neighborhoods = [
     description: "North Las Vegas Airbnb hosts trust Red Rock Cleans for affordable, professional cleaning services that don't compromise on quality. We serve this growing area with reliable, consistent service.",
     faq: [
       {
-        q: "Do you offer competitive rates for North Las Vegas properties?",
-        a: "Yes, we provide competitive pricing for North Las Vegas Airbnb cleaning services without sacrificing quality."
+        question: "Do you offer competitive rates for North Las Vegas properties?",
+        answer: "Yes, we provide competitive pricing for North Las Vegas Airbnb cleaning services without sacrificing quality."
       },
       {
-        q: "How quickly can you clean my North Las Vegas Airbnb?",
-        a: "We typically complete North Las Vegas Airbnb cleanings within 4-6 hours for efficient turnovers."
+        question: "How quickly can you clean my North Las Vegas Airbnb?",
+        answer: "We typically complete North Las Vegas Airbnb cleanings within 4-6 hours for efficient turnovers."
       }
     ],
-    testimonial: "As a North Las Vegas host, I appreciate Red Rock Cleans' fair pricing and reliable service. They've been cleaning my property for two years. - Maria G., North Las Vegas Host"
+    testimonial: {
+      text: "As a North Las Vegas host, I appreciate Red Rock Cleans' fair pricing and reliable service. They've been cleaning my property for two years.",
+      author: "Maria G., North Las Vegas Host"
+    }
   },
   {
     id: "paradise",
@@ -163,15 +190,18 @@ const neighborhoods = [
     description: "Paradise Airbnb properties near the Strip and airport need flexible cleaning services. Red Rock Cleans adapts to the unique demands of this central Las Vegas location.",
     faq: [
       {
-        q: "Do you clean Airbnb properties in Paradise near the airport?",
-        a: "Yes, we service Paradise properties including those near McCarran Airport with flexible scheduling."
+        question: "Do you clean Airbnb properties in Paradise near the airport?",
+        answer: "Yes, we service Paradise properties including those near McCarran Airport with flexible scheduling."
       },
       {
-        q: "Can you handle high-turnover properties in Paradise?",
-        a: "Absolutely! We specialize in high-turnover cleaning for Paradise's busy vacation rental market."
+        question: "Can you handle high-turnover properties in Paradise?",
+        answer: "Absolutely! We specialize in high-turnover cleaning for Paradise's busy vacation rental market."
       }
     ],
-    testimonial: "Our Paradise Airbnb near the airport has high turnover, but Red Rock Cleans handles it flawlessly every time. - Tony B., Paradise Host"
+    testimonial: {
+      text: "Our Paradise Airbnb near the airport has high turnover, but Red Rock Cleans handles it flawlessly every time.",
+      author: "Tony B., Paradise Host"
+    }
   },
   {
     id: "seven-hills",
@@ -179,15 +209,18 @@ const neighborhoods = [
     description: "Seven Hills Airbnb hosts appreciate Red Rock Cleans' attention to detail in this upscale Henderson community. We provide the premium cleaning service that matches this neighborhood's standards.",
     faq: [
       {
-        q: "Do you provide premium cleaning for Seven Hills properties?",
-        a: "Yes, we offer premium cleaning services tailored to Seven Hills' upscale community standards."
+        question: "Do you provide premium cleaning for Seven Hills properties?",
+        answer: "Yes, we offer premium cleaning services tailored to Seven Hills' upscale community standards."
       },
       {
-        q: "How do you handle luxury amenities in Seven Hills rentals?",
-        a: "We provide specialized cleaning for luxury amenities including gourmet kitchens and spa-like bathrooms."
+        question: "How do you handle luxury amenities in Seven Hills rentals?",
+        answer: "We provide specialized cleaning for luxury amenities including gourmet kitchens and spa-like bathrooms."
       }
     ],
-    testimonial: "Seven Hills residents expect quality, and Red Rock Cleans delivers premium cleaning that keeps our Airbnb guests happy. - Patricia W., Seven Hills Host"
+    testimonial: {
+      text: "Seven Hills residents expect quality, and Red Rock Cleans delivers premium cleaning that keeps our Airbnb guests happy.",
+      author: "Patricia W., Seven Hills Host"
+    }
   },
   {
     id: "silverado-ranch",
@@ -195,15 +228,18 @@ const neighborhoods = [
     description: "Silverado Ranch Airbnb properties benefit from Red Rock Cleans' reliable service in this family-oriented Henderson neighborhood. We understand the needs of vacation rentals in this community.",
     faq: [
       {
-        q: "Do you clean Airbnb properties in Silverado Ranch?",
-        a: "Yes, we provide comprehensive cleaning services for Silverado Ranch vacation rentals."
+        question: "Do you clean Airbnb properties in Silverado Ranch?",
+        answer: "Yes, we provide comprehensive cleaning services for Silverado Ranch vacation rentals."
       },
       {
-        q: "Can you handle family-friendly properties in Silverado Ranch?",
-        a: "We specialize in family-friendly cleaning services perfect for Silverado Ranch's residential atmosphere."
+        question: "Can you handle family-friendly properties in Silverado Ranch?",
+        answer: "We specialize in family-friendly cleaning services perfect for Silverado Ranch's residential atmosphere."
       }
     ],
-    testimonial: "Our Silverado Ranch Airbnb is perfect for families, and Red Rock Cleans ensures it's always clean and welcoming. - Kevin L., Silverado Ranch Host"
+    testimonial: {
+      text: "Our Silverado Ranch Airbnb is perfect for families, and Red Rock Cleans ensures it's always clean and welcoming.",
+      author: "Kevin L., Silverado Ranch Host"
+    }
   },
   {
     id: "spring-valley",
@@ -211,15 +247,18 @@ const neighborhoods = [
     description: "Spring Valley Airbnb hosts choose Red Rock Cleans for our consistent service in this established Las Vegas community. We provide reliable cleaning that keeps guests satisfied.",
     faq: [
       {
-        q: "Do you service established neighborhoods like Spring Valley?",
-        a: "Yes, we have extensive experience cleaning Airbnb properties in established Las Vegas communities like Spring Valley."
+        question: "Do you service established neighborhoods like Spring Valley?",
+        answer: "Yes, we have extensive experience cleaning Airbnb properties in established Las Vegas communities like Spring Valley."
       },
       {
-        q: "How do you handle older properties in Spring Valley?",
-        a: "We provide specialized cleaning for older properties including attention to vintage fixtures and architectural details."
+        question: "How do you handle older properties in Spring Valley?",
+        answer: "We provide specialized cleaning for older properties including attention to vintage fixtures and architectural details."
       }
     ],
-    testimonial: "Our Spring Valley Airbnb is in an older home, but Red Rock Cleans treats it with care and keeps it spotless. - Nancy D., Spring Valley Host"
+    testimonial: {
+      text: "Our Spring Valley Airbnb is in an older home, but Red Rock Cleans treats it with care and keeps it spotless.",
+      author: "Nancy D., Spring Valley Host"
+    }
   },
   {
     id: "summerlin-south",
@@ -227,15 +266,18 @@ const neighborhoods = [
     description: "Summerlin South Airbnb properties require premium cleaning services that match this upscale community's standards. Red Rock Cleans delivers the quality and reliability Summerlin South hosts expect.",
     faq: [
       {
-        q: "Do you provide luxury cleaning for Summerlin South properties?",
-        a: "Yes, we offer luxury cleaning services that meet Summerlin South's high community standards."
+        question: "Do you provide luxury cleaning for Summerlin South properties?",
+        answer: "Yes, we offer luxury cleaning services that meet Summerlin South's high community standards."
       },
       {
-        q: "Can you handle large properties in Summerlin South?",
-        a: "We have experience cleaning large vacation rental properties in Summerlin South efficiently and thoroughly."
+        question: "Can you handle large properties in Summerlin South?",
+        answer: "We have experience cleaning large vacation rental properties in Summerlin South efficiently and thoroughly."
       }
     ],
-    testimonial: "Summerlin South expects quality, and Red Rock Cleans consistently delivers luxury-level cleaning for our Airbnb. - Steven F., Summerlin South Host"
+    testimonial: {
+      text: "Summerlin South expects quality, and Red Rock Cleans consistently delivers luxury-level cleaning for our Airbnb.",
+      author: "Steven F., Summerlin South Host"
+    }
   },
   {
     id: "sunrise-manor",
@@ -243,15 +285,18 @@ const neighborhoods = [
     description: "Sunrise Manor Airbnb hosts appreciate Red Rock Cleans' reliable service in this diverse Las Vegas community. We provide consistent cleaning that keeps vacation rentals guest-ready.",
     faq: [
       {
-        q: "Do you clean Airbnb properties in Sunrise Manor?",
-        a: "Yes, we provide reliable cleaning services for Sunrise Manor vacation rentals."
+        question: "Do you clean Airbnb properties in Sunrise Manor?",
+        answer: "Yes, we provide reliable cleaning services for Sunrise Manor vacation rentals."
       },
       {
-        q: "How do you handle diverse property types in Sunrise Manor?",
-        a: "We adapt our cleaning services to various property types found in Sunrise Manor's diverse community."
+        question: "How do you handle diverse property types in Sunrise Manor?",
+        answer: "We adapt our cleaning services to various property types found in Sunrise Manor's diverse community."
       }
     ],
-    testimonial: "Sunrise Manor has diverse properties, but Red Rock Cleans adapts to each one and keeps our Airbnb looking great. - Rachel M., Sunrise Manor Host"
+    testimonial: {
+      text: "Sunrise Manor has diverse properties, but Red Rock Cleans adapts to each one and keeps our Airbnb looking great.",
+      author: "Rachel M., Sunrise Manor Host"
+    }
   },
   {
     id: "whitney",
@@ -259,15 +304,18 @@ const neighborhoods = [
     description: "Whitney Airbnb hosts trust Red Rock Cleans for professional cleaning services in this established Henderson neighborhood. We provide reliable service that keeps vacation rentals competitive.",
     faq: [
       {
-        q: "Do you service established neighborhoods like Whitney?",
-        a: "Yes, we have extensive experience cleaning Airbnb properties in established Henderson communities like Whitney."
+        question: "Do you service established neighborhoods like Whitney?",
+        answer: "Yes, we have extensive experience cleaning Airbnb properties in established Henderson communities like Whitney."
       },
       {
-        q: "Can you handle competitive pricing for Whitney properties?",
-        a: "We offer competitive rates for Whitney Airbnb cleaning services while maintaining high quality standards."
+        question: "Can you handle competitive pricing for Whitney properties?",
+        answer: "We offer competitive rates for Whitney Airbnb cleaning services while maintaining high quality standards."
       }
     ],
-    testimonial: "Our Whitney Airbnb stays competitive thanks to Red Rock Cleans' consistent, professional cleaning service. - Mark T., Whitney Host"
+    testimonial: {
+      text: "Our Whitney Airbnb stays competitive thanks to Red Rock Cleans' consistent, professional cleaning service.",
+      author: "Mark T., Whitney Host"
+    }
   },
   {
     id: "winchester",
@@ -275,15 +323,18 @@ const neighborhoods = [
     description: "Winchester Airbnb properties benefit from Red Rock Cleans' reliable service in this central Las Vegas area. We provide consistent cleaning that keeps vacation rentals guest-ready.",
     faq: [
       {
-        q: "Do you clean Airbnb properties in Winchester?",
-        a: "Yes, we provide comprehensive cleaning services for Winchester vacation rentals."
+        question: "Do you clean Airbnb properties in Winchester?",
+        answer: "Yes, we provide comprehensive cleaning services for Winchester vacation rentals."
       },
       {
-        q: "Can you handle central Las Vegas locations like Winchester?",
-        a: "We specialize in cleaning vacation rentals in central Las Vegas areas including Winchester."
+        question: "Can you handle central Las Vegas locations like Winchester?",
+        answer: "We specialize in cleaning vacation rentals in central Las Vegas areas including Winchester."
       }
     ],
-    testimonial: "Winchester's central location means high guest turnover, but Red Rock Cleans handles it perfectly every time. - Linda K., Winchester Host"
+    testimonial: {
+      text: "Winchester's central location means high guest turnover, but Red Rock Cleans handles it perfectly every time.",
+      author: "Linda K., Winchester Host"
+    }
   }
 ];
 
@@ -457,14 +508,17 @@ export default function AirbnbCleaningLasVegasPage() {
                           <h4 className="font-semibold">Frequently Asked Questions:</h4>
                           {neighborhood.faq.map((item, index) => (
                             <div key={index} className="border-l-4 border-primary pl-4">
-                              <p className="font-medium">{item.q}</p>
-                              <p className="text-muted-foreground">{item.a}</p>
+                              <p className="font-medium">{item.question}</p>
+                              <p className="text-muted-foreground">{item.answer}</p>
                             </div>
                           ))}
                         </div>
                         
                         <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
-                          "{neighborhood.testimonial}"
+                          "{neighborhood.testimonial.text}"
+                          <footer className="mt-2 text-sm font-medium not-italic">
+                            — {neighborhood.testimonial.author}
+                          </footer>
                         </blockquote>
                         
                         <div className="flex flex-col sm:flex-row gap-4">
