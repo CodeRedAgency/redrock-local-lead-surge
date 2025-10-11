@@ -30,6 +30,11 @@ import StandardCleaningOahuPage from "./pages/oahu/standard-cleaning-services/+P
 import DeepCleaningOahuPage from "./pages/oahu/deep-cleaning-services/+Page";
 import AirbnbCleaningOahuPage from "./pages/oahu/airbnb-cleaning-services/+Page";
 import PostConstructionCleaningOahuPage from "./pages/oahu/post-construction-cleaning-services/+Page";
+import PostConstructionCleaningSouthFloridaPage from "./pages/south-florida/post-construction-cleaning-services/+Page";
+import StandardCleaningSouthFloridaPage from "./pages/south-florida/standard-cleaning-services/+Page";
+import DeepCleaningSouthFloridaPage from "./pages/south-florida/deep-cleaning-services/+Page";
+import MoveOutCleaningSouthFloridaPage from "./pages/south-florida/move-out-cleaning-services/+Page";
+import AirbnbCleaningSouthFloridaPage from "./pages/south-florida/airbnb-cleaning-services/+Page";
 import Blog from "./pages/Blog";
 import HiringRequirements from "./pages/HiringRequirements";
 import MaidilyApp from "./pages/MaidilyApp";
@@ -111,6 +116,11 @@ const App = () => (
           <Route path="/oahu/deep-cleaning-services" element={<DeepCleaningOahuPage />} />
           <Route path="/oahu/airbnb-cleaning-services" element={<AirbnbCleaningOahuPage />} />
           <Route path="/oahu/post-construction-cleaning-services" element={<PostConstructionCleaningOahuPage />} />
+        <Route path="/south-florida/post-construction-cleaning-services" element={<PostConstructionCleaningSouthFloridaPage />} />
+        <Route path="/south-florida/standard-cleaning-services" element={<StandardCleaningSouthFloridaPage />} />
+        <Route path="/south-florida/deep-cleaning-services" element={<DeepCleaningSouthFloridaPage />} />
+        <Route path="/south-florida/move-out-cleaning-services" element={<MoveOutCleaningSouthFloridaPage />} />
+        <Route path="/south-florida/airbnb-cleaning-services" element={<AirbnbCleaningSouthFloridaPage />} />
           
           {/* Maui Routes */}
           <Route path="/maui" element={<MauiHome />} />
