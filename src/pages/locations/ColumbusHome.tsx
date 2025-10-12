@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/Navigation";
+import { ColumbusNavigation } from "@/components/ColumbusNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
 import { ServicesSection } from "@/components/ServicesSection";
@@ -20,7 +20,7 @@ const ColumbusHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
+        <ColumbusNavigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero

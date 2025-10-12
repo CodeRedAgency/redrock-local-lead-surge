@@ -63,13 +63,13 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/south-florida" className="flex items-center space-x-2">
               <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="hover:text-primary transition-colors relative z-10">
+              <Link to="/south-florida" className="hover:text-primary transition-colors relative z-10">
                 Home
               </Link>
 
@@ -82,6 +82,9 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                       <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
                       <DropdownMenuSubContent>
                         <DropdownMenuItem asChild>
+                          <Link to="/south-florida/airbnb-cleaning-services">Airbnb Cleaning Services in South Florida</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
                           <Link to="/south-florida/standard-cleaning-services">Standard Cleaning Services in South Florida</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
@@ -89,9 +92,6 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/move-out-cleaning-services">Move Out Cleaning Services in South Florida</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                          <Link to="/south-florida/airbnb-cleaning-services">Airbnb Cleaning Services in South Florida</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/post-construction-cleaning-services">Post Construction Cleaning Services in South Florida</Link>
@@ -168,13 +168,16 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
           {isOpen && (
             <div className="md:hidden py-4 border-t">
               <div className="flex flex-col space-y-4">
-                <Link to="/" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                <Link to="/south-florida" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
                   Home
                 </Link>
                 
                 <div className="space-y-2">
                   <div className="font-medium text-foreground">Services</div>
                   <div className="ml-4 space-y-2">
+                    <Link to="/south-florida/airbnb-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                      Airbnb Cleaning Services in South Florida
+                    </Link>
                     <Link to="/south-florida/standard-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
                       Standard Cleaning Services in South Florida
                     </Link>
@@ -183,9 +186,6 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                     </Link>
                     <Link to="/south-florida/move-out-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
                       Move Out Cleaning Services in South Florida
-                    </Link>
-                    <Link to="/south-florida/airbnb-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
-                      Airbnb Cleaning Services in South Florida
                     </Link>
                     <Link to="/south-florida/post-construction-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
                       Post Construction Cleaning Services in South Florida

@@ -40,13 +40,13 @@ export const OahuNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/oahu" className="flex items-center space-x-2">
               <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="hover:text-primary transition-colors relative z-10">
+              <Link to="/oahu" className="hover:text-primary transition-colors relative z-10">
                 Home
               </Link>
 
@@ -117,48 +117,52 @@ export const OahuNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
               {/* Oahu Neighborhood Selector */}
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-muted-foreground" />
-              <Select defaultValue="">
+              <Select defaultValue="" onValueChange={(value) => {
+                if (value) {
+                  window.location.href = `/oahu#${value}`;
+                }
+              }}>
                 <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
                   <SelectValue placeholder="Oahu Areas" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="aiea" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#aiea"}>
+                  <SelectItem value="aiea">
                     Aiea
                   </SelectItem>
-                  <SelectItem value="ewa-beach" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#ewa-beach"}>
+                  <SelectItem value="ewa-beach">
                     Ewa Beach
                   </SelectItem>
-                  <SelectItem value="hawaii-kai" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#hawaii-kai"}>
+                  <SelectItem value="hawaii-kai">
                     Hawaii Kai
                   </SelectItem>
-                  <SelectItem value="honolulu" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#honolulu"}>
+                  <SelectItem value="honolulu">
                     Honolulu
                   </SelectItem>
-                  <SelectItem value="kailua" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#kailua"}>
+                  <SelectItem value="kailua">
                     Kailua
                   </SelectItem>
-                  <SelectItem value="kapolei" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#kapolei"}>
+                  <SelectItem value="kapolei">
                     Kapolei
                   </SelectItem>
-                  <SelectItem value="makakilo" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#makakilo"}>
+                  <SelectItem value="makakilo">
                     Makakilo
                   </SelectItem>
-                  <SelectItem value="mililani" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#mililani"}>
+                  <SelectItem value="mililani">
                     Mililani
                   </SelectItem>
-                  <SelectItem value="pearl-city" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#pearl-city"}>
+                  <SelectItem value="pearl-city">
                     Pearl City
                   </SelectItem>
-                  <SelectItem value="waialae" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#waialae"}>
+                  <SelectItem value="waialae">
                     Waialae
                   </SelectItem>
-                  <SelectItem value="waikiki" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#waikiki"}>
+                  <SelectItem value="waikiki">
                     Waikiki
                   </SelectItem>
-                  <SelectItem value="waimanalo" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#waimanalo"}>
+                  <SelectItem value="waimanalo">
                     Waimanalo
                   </SelectItem>
-                  <SelectItem value="waipahu" onClick={() => window.location.href = "/oahu/move-out-cleaning-services#waipahu"}>
+                  <SelectItem value="waipahu">
                     Waipahu
                   </SelectItem>
                   </SelectContent>
@@ -200,7 +204,7 @@ export const OahuNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
           {isOpen && (
             <div className="md:hidden border-t">
               <nav className="py-4 space-y-4">
-                <Link to="/" className="block hover:text-primary transition-colors">
+                <Link to="/oahu" className="block hover:text-primary transition-colors">
                   Home
                 </Link>
                 

@@ -1,15 +1,15 @@
-import { Navigation } from "@/components/Navigation";
+import { MauiNavigation } from "@/components/MauiNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
-import { ServicesSection } from "@/components/ServicesSection";
+import { MauiServicesSection } from "@/components/MauiServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
-import { LocalLocationSelector } from "@/components/LocalLocationSelector";
+import { MauiAreasServed } from "@/components/MauiAreasServed";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
 const MauiHome = () => {
-  const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-dallas/sign-in";
+  const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-maui/sign-in";
   const bookingUrl = "/book-now-maui";
   
   return (
@@ -20,7 +20,7 @@ const MauiHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
+        <MauiNavigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -32,7 +32,7 @@ const MauiHome = () => {
             imageType="residential"
           />
           
-          <ServicesSection />
+          <MauiServicesSection />
           
           <BeforeAfterSection bookingUrl={bookingUrl} />
           
@@ -55,7 +55,7 @@ const MauiHome = () => {
             </div>
           </section>
           
-          <LocalLocationSelector currentLocation="maui" />
+          <MauiAreasServed />
           
           <TrustSection />
         </main>

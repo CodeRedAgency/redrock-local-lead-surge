@@ -2,41 +2,48 @@ import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const locations = [
     {
       name: "South Florida",
+      path: "/south-florida",
       phone: "(754) 999-9999",
       email: "southflorida@redrockcleans.com",
       areas: "Miami, Fort Lauderdale, West Palm Beach"
     },
     {
       name: "Las Vegas",
+      path: "/las-vegas",
       phone: "(702) 999-9999",
       email: "vegas@redrockcleans.com",
       areas: "Las Vegas, Henderson, North Las Vegas"
     },
     {
       name: "Oahu",
+      path: "/oahu",
       phone: "(808) 999-9999",
       email: "oahu@redrockcleans.com",
       areas: "Honolulu, Pearl City, Kailua"
     },
     {
       name: "Maui",
+      path: "/maui",
       phone: "(808) 888-8888",
       email: "maui@redrockcleans.com",
       areas: "Kahului, Lahaina, Kihei"
     },
     {
       name: "Columbus Ohio",
+      path: "/columbus-ohio",
       phone: "(614) 999-9999",
       email: "columbus@redrockcleans.com",
       areas: "Columbus, Dublin, Westerville"
     },
     {
       name: "Dallas",
+      path: "/dallas",
       phone: "(214) 999-9999",
       email: "dallas@redrockcleans.com",
       areas: "Dallas, Plano, Fort Worth"
@@ -66,7 +73,14 @@ const Contact = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {locations.map((location) => (
                   <div key={location.name} className="bg-card p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <h2 className="text-2xl font-bold mb-6 text-primary">{location.name}</h2>
+                    <h2 className="text-2xl font-bold mb-6 text-primary">
+                      <Link 
+                        to={location.path} 
+                        className="hover:text-primary/80 transition-colors"
+                      >
+                        {location.name}
+                      </Link>
+                    </h2>
                     
                     <div className="space-y-4">
                       <div className="flex items-start space-x-3">

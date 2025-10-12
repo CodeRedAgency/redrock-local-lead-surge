@@ -87,6 +87,9 @@ export const Navigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookin
                   <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
+                      <Link to="/airbnb-cleaning-services">Airbnb Cleaning Services</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                       <Link to="/standard-cleaning-services">Standard Cleaning Services</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -214,6 +217,9 @@ export const Navigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookin
                 <div className="font-medium mb-2">Services</div>
                 <div className="ml-4 space-y-2">
                   <div className="font-medium text-sm text-muted-foreground mb-1">Residential Cleaning</div>
+                  <Link to="/airbnb-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Airbnb Cleaning Services
+                  </Link>
                   <Link to="/standard-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                     Standard Cleaning Services
                   </Link>

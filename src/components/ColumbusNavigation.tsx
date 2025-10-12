@@ -29,24 +29,27 @@ const locations = [
   { name: "Dallas", path: "/dallas", phone: "(972) 992-2576" },
 ];
 
-export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookingUrl?: string }) => {
+export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookingUrl?: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const currentLocation = locations.find(loc => location.pathname.startsWith(loc.path));
+  
+  // Get the current page path for the area selector
+  const currentPath = location.pathname;
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/las-vegas" className="flex items-center space-x-2">
+            <Link to="/columbus-ohio" className="flex items-center space-x-2">
               <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/las-vegas" className="hover:text-primary transition-colors relative z-10">
+              <Link to="/columbus-ohio" className="hover:text-primary transition-colors relative z-10">
                 Home
               </Link>
 
@@ -59,19 +62,19 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                       <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
                       <DropdownMenuSubContent>
                         <DropdownMenuItem asChild>
-                          <Link to="/las-vegas/airbnb-cleaning-services">Airbnb Cleaning Services in Las Vegas</Link>
+                          <Link to="/columbus-ohio/standard-cleaning-services">Standard Cleaning Services in Columbus Ohio</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/las-vegas/standard-cleaning-services">Standard Cleaning Services in Las Vegas</Link>
+                          <Link to="/columbus-ohio/deep-cleaning-services">Deep Cleaning Services in Columbus Ohio</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/las-vegas/deep-cleaning-services">Deep Cleaning Services in Las Vegas</Link>
+                          <Link to="/columbus-ohio/move-out-cleaning-services">Move Out Cleaning Services in Columbus Ohio</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/las-vegas/move-out-cleaning-services">Move Out Cleaning Services in Las Vegas</Link>
+                          <Link to="/columbus-ohio/post-construction-cleaning-services">Post Construction Cleaning Services in Columbus Ohio</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/las-vegas/post-construction-cleaning-services">Post Construction Cleaning Services in Las Vegas</Link>
+                          <Link to="/columbus-ohio/airbnb-cleaning-services">Airbnb Cleaning Services in Columbus Ohio</Link>
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
@@ -114,68 +117,49 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                 Contact
               </Link>
 
-              {/* Las Vegas Neighborhood Selector */}
+              {/* Columbus Neighborhood Selector */}
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-muted-foreground" />
-              <Select defaultValue="" onValueChange={(value) => {
-                if (value) {
-                  window.location.href = `/las-vegas#${value}`;
-                }
-              }}>
+              <Select defaultValue="">
                 <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
-                  <SelectValue placeholder="Las Vegas Areas" />
+                  <SelectValue placeholder="Columbus Areas" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="anthem">
-                    Anthem
+                  <SelectItem value="dublin" onClick={() => window.location.href = `${currentPath}#dublin`}>
+                    Dublin
                   </SelectItem>
-                  <SelectItem value="enterprise">
-                    Enterprise
+                  <SelectItem value="upper-arlington" onClick={() => window.location.href = `${currentPath}#upper-arlington`}>
+                    Upper Arlington
                   </SelectItem>
-                  <SelectItem value="green-valley-north">
-                    Green Valley North
+                  <SelectItem value="powell" onClick={() => window.location.href = `${currentPath}#powell`}>
+                    Powell
                   </SelectItem>
-                  <SelectItem value="henderson">
-                    Henderson
+                  <SelectItem value="lewis-center" onClick={() => window.location.href = `${currentPath}#lewis-center`}>
+                    Lewis Center
                   </SelectItem>
-                  <SelectItem value="lake-las-vegas">
-                    Lake Las Vegas
+                  <SelectItem value="worthington" onClick={() => window.location.href = `${currentPath}#worthington`}>
+                    Worthington
                   </SelectItem>
-                  <SelectItem value="las-vegas">
-                    Las Vegas
+                  <SelectItem value="new-albany" onClick={() => window.location.href = `${currentPath}#new-albany`}>
+                    New Albany
                   </SelectItem>
-                  <SelectItem value="macdonald-ranch">
-                    MacDonald Ranch
+                  <SelectItem value="bexley" onClick={() => window.location.href = `${currentPath}#bexley`}>
+                    Bexley
                   </SelectItem>
-                  <SelectItem value="mountains-edge">
-                    Mountain's Edge
+                  <SelectItem value="german-village" onClick={() => window.location.href = `${currentPath}#german-village`}>
+                    German Village
                   </SelectItem>
-                  <SelectItem value="north-las-vegas">
-                    North Las Vegas
+                  <SelectItem value="short-north" onClick={() => window.location.href = `${currentPath}#short-north`}>
+                    Short North
                   </SelectItem>
-                  <SelectItem value="paradise">
-                    Paradise
+                  <SelectItem value="victorian-village" onClick={() => window.location.href = `${currentPath}#victorian-village`}>
+                    Victorian Village
                   </SelectItem>
-                  <SelectItem value="seven-hills">
-                    Seven Hills
+                  <SelectItem value="hillard" onClick={() => window.location.href = `${currentPath}#hillard`}>
+                    Hilliard
                   </SelectItem>
-                  <SelectItem value="silverado-ranch">
-                    Silverado Ranch
-                  </SelectItem>
-                  <SelectItem value="spring-valley">
-                    Spring Valley
-                  </SelectItem>
-                  <SelectItem value="summerlin-south">
-                    Summerlin South
-                  </SelectItem>
-                  <SelectItem value="sunrise-manor">
-                    Sunrise Manor
-                  </SelectItem>
-                  <SelectItem value="whitney">
-                    Whitney
-                  </SelectItem>
-                  <SelectItem value="winchester">
-                    Winchester
+                  <SelectItem value="westerville" onClick={() => window.location.href = `${currentPath}#westerville`}>
+                    Westerville
                   </SelectItem>
                   </SelectContent>
                 </Select>
@@ -216,7 +200,7 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
           {isOpen && (
             <div className="md:hidden border-t">
               <nav className="py-4 space-y-4">
-                <Link to="/las-vegas" className="block hover:text-primary transition-colors">
+                <Link to="/columbus-ohio" className="block hover:text-primary transition-colors">
                   Home
                 </Link>
                 
@@ -224,20 +208,20 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                   <div className="font-medium mb-2">Services</div>
                   <div className="ml-4 space-y-2">
                     <div className="font-medium text-sm text-muted-foreground mb-1">Residential Cleaning</div>
-                    <Link to="/las-vegas/airbnb-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Airbnb Cleaning Services in Las Vegas
+                    <Link to="/columbus-ohio/standard-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Standard Cleaning Services in Columbus Ohio
                     </Link>
-                    <Link to="/las-vegas/standard-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Standard Cleaning Services in Las Vegas
+                    <Link to="/columbus-ohio/deep-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Deep Cleaning Services in Columbus Ohio
                     </Link>
-                    <Link to="/las-vegas/deep-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Deep Cleaning Services in Las Vegas
+                    <Link to="/columbus-ohio/move-out-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Move Out Cleaning Services in Columbus Ohio
                     </Link>
-                    <Link to="/las-vegas/move-out-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Move Out Cleaning Services in Las Vegas
+                    <Link to="/columbus-ohio/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Post Construction Cleaning Services in Columbus Ohio
                     </Link>
-                    <Link to="/las-vegas/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Post Construction Cleaning Services in Las Vegas
+                    <Link to="/columbus-ohio/airbnb-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Airbnb Cleaning Services in Columbus Ohio
                     </Link>
                     <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Commercial Cleaning
@@ -251,8 +235,8 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                     <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
                       Commercial Cleaning Cost Estimator
                     </Link>
-                    <Link to="/book-now-vegas" className="block hover:text-primary transition-colors text-sm">
-                      Las Vegas Booking
+                    <Link to="/book-now-columbus-ohio" className="block hover:text-primary transition-colors text-sm">
+                      Columbus Ohio Booking
                     </Link>
                   </div>
                 </div>

@@ -1,10 +1,10 @@
-import { Navigation } from "@/components/Navigation";
+import { OahuNavigation } from "@/components/OahuNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
-import { LocalLocationSelector } from "@/components/LocalLocationSelector";
+import { OahuAreasServed } from "@/components/OahuAreasServed";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
@@ -20,7 +20,7 @@ const OahuHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
+        <OahuNavigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -55,7 +55,7 @@ const OahuHome = () => {
             </div>
           </section>
           
-          <LocalLocationSelector currentLocation="oahu" />
+          <OahuAreasServed />
           
           <TrustSection />
         </main>

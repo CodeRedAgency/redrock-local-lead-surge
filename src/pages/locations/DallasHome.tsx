@@ -1,7 +1,7 @@
-import { Navigation } from "@/components/Navigation";
+import { DallasNavigation } from "@/components/DallasNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
-import { ServicesSection } from "@/components/ServicesSection";
+import { DallasServicesSection } from "@/components/DallasServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { LocalLocationSelector } from "@/components/LocalLocationSelector";
@@ -20,7 +20,7 @@ const DallasHome = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
+        <DallasNavigation loginUrl={loginUrl} bookingUrl={bookingUrl} />
         
         <main className="flex-grow">
           <LocationHero
@@ -32,7 +32,7 @@ const DallasHome = () => {
             imageType="residential"
           />
           
-          <ServicesSection />
+          <DallasServicesSection />
           
           <BeforeAfterSection bookingUrl={bookingUrl} />
           

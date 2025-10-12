@@ -30,6 +30,16 @@ import StandardCleaningOahuPage from "./pages/oahu/standard-cleaning-services/+P
 import DeepCleaningOahuPage from "./pages/oahu/deep-cleaning-services/+Page";
 import AirbnbCleaningOahuPage from "./pages/oahu/airbnb-cleaning-services/+Page";
 import PostConstructionCleaningOahuPage from "./pages/oahu/post-construction-cleaning-services/+Page";
+import PostConstructionCleaningMauiPage from "./pages/maui/post-construction-cleaning-services/+Page";
+import MoveOutCleaningMauiPage from "./pages/maui/move-out-cleaning-services/+Page";
+import DeepCleaningMauiPage from "./pages/maui/deep-cleaning-services/+Page";
+import StandardCleaningMauiPage from "./pages/maui/standard-cleaning-services/+Page";
+import PostConstructionCleaningDallasPage from "./pages/dallas/post-construction-cleaning-services/+Page";
+import AirbnbCleaningDallasPage from "./pages/dallas/airbnb-cleaning-services/+Page";
+import MoveOutCleaningDallasPage from "./pages/dallas/move-out-cleaning-services/+Page";
+import DeepCleaningDallasPage from "./pages/dallas/deep-cleaning-services/+Page";
+import StandardCleaningDallasPage from "./pages/dallas/standard-cleaning-services/+Page";
+import AirbnbCleaningMauiPage from "./pages/maui/airbnb-cleaning-services/+Page";
 import PostConstructionCleaningSouthFloridaPage from "./pages/south-florida/post-construction-cleaning-services/+Page";
 import StandardCleaningSouthFloridaPage from "./pages/south-florida/standard-cleaning-services/+Page";
 import DeepCleaningSouthFloridaPage from "./pages/south-florida/deep-cleaning-services/+Page";
@@ -56,6 +66,11 @@ import ColumbusBooking from "./pages/locations/ColumbusBooking";
 import DallasHome from "./pages/locations/DallasHome";
 import DallasCalculator from "./pages/locations/DallasCalculator";
 import DallasBooking from "./pages/locations/DallasBooking";
+import StandardCleaningColumbusOhioPage from "./pages/columbus-ohio/standard-cleaning-services/+Page";
+import DeepCleaningColumbusOhioPage from "./pages/columbus-ohio/deep-cleaning-services/+Page";
+import MoveOutCleaningColumbusOhioPage from "./pages/columbus-ohio/move-out-cleaning-services/+Page";
+import PostConstructionCleaningColumbusOhioPage from "./pages/columbus-ohio/post-construction-cleaning-services/+Page";
+import AirbnbCleaningColumbusOhioPage from "./pages/columbus-ohio/airbnb-cleaning-services/+Page";
 
 const queryClient = new QueryClient();
 
@@ -126,11 +141,28 @@ const App = () => (
           <Route path="/maui" element={<MauiHome />} />
           <Route path="/maui-calculator" element={<MauiCalculator />} />
           <Route path="/book-now-maui" element={<MauiBooking />} />
+          <Route path="/maui/post-construction-cleaning-services" element={<PostConstructionCleaningMauiPage />} />
+          <Route path="/maui/move-out-cleaning-services" element={<MoveOutCleaningMauiPage />} />
+        <Route path="/maui/deep-cleaning-services" element={<DeepCleaningMauiPage />} />
+        <Route path="/maui/standard-cleaning-services" element={<StandardCleaningMauiPage />} />
+          <Route path="/maui/airbnb-cleaning-services" element={<AirbnbCleaningMauiPage />} />
+          
+          {/* Dallas Routes */}
+          <Route path="/dallas/post-construction-cleaning-services" element={<PostConstructionCleaningDallasPage />} />
+          <Route path="/dallas/airbnb-cleaning-services" element={<AirbnbCleaningDallasPage />} />
+          <Route path="/dallas/move-out-cleaning-services" element={<MoveOutCleaningDallasPage />} />
+          <Route path="/dallas/deep-cleaning-services" element={<DeepCleaningDallasPage />} />
+          <Route path="/dallas/standard-cleaning-services" element={<StandardCleaningDallasPage />} />
           
           {/* Columbus Ohio Routes */}
           <Route path="/columbus-ohio" element={<ColumbusHome />} />
           <Route path="/columbus-ohio-calculator" element={<ColumbusCalculator />} />
           <Route path="/book-now-columbus-ohio" element={<ColumbusBooking />} />
+          <Route path="/columbus-ohio/standard-cleaning-services" element={<StandardCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/deep-cleaning-services" element={<DeepCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/move-out-cleaning-services" element={<MoveOutCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/post-construction-cleaning-services" element={<PostConstructionCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/airbnb-cleaning-services" element={<AirbnbCleaningColumbusOhioPage />} />
           
           {/* Dallas Routes */}
           <Route path="/dallas" element={<DallasHome />} />
