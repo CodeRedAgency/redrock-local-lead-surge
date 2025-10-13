@@ -75,9 +75,50 @@ export const OahuNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning">Commercial Cleaning</Link>
-                    </DropdownMenuItem>
+                    <DropdownMenuSub>
+                      <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
+                      <DropdownMenuSubContent>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/church-cleaning">Church Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/medical-office-cleaning">Medical Office Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/gym-cleaning">Gym Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/data-center-cleaning">Data Center Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/factory-cleaning">Factory Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/government-facility-cleaning">Government Facility Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/industrial-cleaning">Industrial Cleaning Services in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/restaurant-cleaning">Restaurant Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/retail-cleaning">Retail Store Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/school-cleaning">School Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/showroom-cleaning">Showroom Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/warehouse-cleaning">Warehouse Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/oahu/salon-spa-cleaning">Salon & Spa Cleaning in Oahu</Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuSubContent>
+                    </DropdownMenuSub>
                   </DropdownMenuContent>
                 </DropdownMenu>
 
@@ -229,8 +270,45 @@ export const OahuNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
                     <Link to="/oahu/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Post Construction Cleaning Services in Oahu
                     </Link>
-                    <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning
+                    <div className="font-medium text-sm text-muted-foreground mb-1 ml-4">Commercial Cleaning</div>
+                    <Link to="/oahu/church-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Church Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/medical-office-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Medical Office Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/gym-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Gym Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/data-center-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Data Center Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/factory-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Factory Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/government-facility-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Government Facility Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/industrial-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Industrial Cleaning Services in Oahu
+                    </Link>
+                    <Link to="/oahu/restaurant-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Restaurant Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/retail-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Retail Store Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/school-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      School Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/showroom-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Showroom Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/warehouse-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Warehouse Cleaning in Oahu
+                    </Link>
+                    <Link to="/oahu/salon-spa-cleaning" className="block ml-8 hover:text-primary transition-colors text-sm">
+                      Salon & Spa Cleaning in Oahu
                     </Link>
                   </div>
                 </div>

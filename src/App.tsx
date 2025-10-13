@@ -43,6 +43,19 @@ import StandardCleaningOahuPage from "./pages/oahu/standard-cleaning-services/+P
 import DeepCleaningOahuPage from "./pages/oahu/deep-cleaning-services/+Page";
 import AirbnbCleaningOahuPage from "./pages/oahu/airbnb-cleaning-services/+Page";
 import PostConstructionCleaningOahuPage from "./pages/oahu/post-construction-cleaning-services/+Page";
+import ChurchCleaningOahuPage from "./pages/oahu/church-cleaning/+Page";
+import DataCenterCleaningOahuPage from "./pages/oahu/data-center-cleaning/+Page";
+import FactoryCleaningOahuPage from "./pages/oahu/factory-cleaning/+Page";
+import GovernmentFacilityCleaningOahuPage from "./pages/oahu/government-facility-cleaning/+Page";
+import GymCleaningOahuPage from "./pages/oahu/gym-cleaning/+Page";
+import IndustrialCleaningOahuPage from "./pages/oahu/industrial-cleaning/+Page";
+import MedicalOfficeCleaningOahuPage from "./pages/oahu/medical-office-cleaning/+Page";
+import RestaurantCleaningOahuPage from "./pages/oahu/restaurant-cleaning/+Page";
+import RetailCleaningOahuPage from "./pages/oahu/retail-cleaning/+Page";
+import SchoolCleaningOahuPage from "./pages/oahu/school-cleaning/+Page";
+import ShowroomCleaningOahuPage from "./pages/oahu/showroom-cleaning/+Page";
+import WarehouseCleaningOahuPage from "./pages/oahu/warehouse-cleaning/+Page";
+import SalonSpaCleaningOahuPage from "./pages/oahu/salon-spa-cleaning/+Page";
 import PostConstructionCleaningMauiPage from "./pages/maui/post-construction-cleaning-services/+Page";
 import MoveOutCleaningMauiPage from "./pages/maui/move-out-cleaning-services/+Page";
 import DeepCleaningMauiPage from "./pages/maui/deep-cleaning-services/+Page";
@@ -53,11 +66,33 @@ import MoveOutCleaningDallasPage from "./pages/dallas/move-out-cleaning-services
 import DeepCleaningDallasPage from "./pages/dallas/deep-cleaning-services/+Page";
 import StandardCleaningDallasPage from "./pages/dallas/standard-cleaning-services/+Page";
 import AirbnbCleaningMauiPage from "./pages/maui/airbnb-cleaning-services/+Page";
+import ChurchCleaningMauiPage from "./pages/maui/church-cleaning/+Page";
+import DataCenterCleaningMauiPage from "./pages/maui/data-center-cleaning/+Page";
+import FactoryCleaningMauiPage from "./pages/maui/factory-cleaning/+Page";
+import GovernmentFacilityCleaningMauiPage from "./pages/maui/government-facility-cleaning/+Page";
+import GymCleaningMauiPage from "./pages/maui/gym-cleaning/+Page";
+import IndustrialCleaningMauiPage from "./pages/maui/industrial-cleaning/+Page";
+import MedicalOfficeCleaningMauiPage from "./pages/maui/medical-office-cleaning/+Page";
+import RestaurantCleaningMauiPage from "./pages/maui/restaurant-cleaning/+Page";
+import RetailCleaningMauiPage from "./pages/maui/retail-cleaning/+Page";
+import SchoolCleaningMauiPage from "./pages/maui/school-cleaning/+Page";
+import ShowroomCleaningMauiPage from "./pages/maui/showroom-cleaning/+Page";
+import WarehouseCleaningMauiPage from "./pages/maui/warehouse-cleaning/+Page";
+import SalonSpaCleaningMauiPage from "./pages/maui/salon-spa-cleaning/+Page";
 import PostConstructionCleaningSouthFloridaPage from "./pages/south-florida/post-construction-cleaning-services/+Page";
 import StandardCleaningSouthFloridaPage from "./pages/south-florida/standard-cleaning-services/+Page";
 import DeepCleaningSouthFloridaPage from "./pages/south-florida/deep-cleaning-services/+Page";
 import MoveOutCleaningSouthFloridaPage from "./pages/south-florida/move-out-cleaning-services/+Page";
 import AirbnbCleaningSouthFloridaPage from "./pages/south-florida/airbnb-cleaning-services/+Page";
+import ChurchCleaningSouthFloridaPage from "./pages/south-florida/church-cleaning/+Page";
+import DataCenterCleaningSouthFloridaPage from "./pages/south-florida/data-center-cleaning/+Page";
+import FactoryCleaningSouthFloridaPage from "./pages/south-florida/factory-cleaning/+Page";
+import GovernmentFacilityCleaningSouthFloridaPage from "./pages/south-florida/government-facility-cleaning/+Page";
+import GymCleaningSouthFloridaPage from "./pages/south-florida/gym-cleaning/+Page";
+import IndustrialCleaningSouthFloridaPage from "./pages/south-florida/industrial-cleaning/+Page";
+import MedicalOfficeCleaningSouthFloridaPage from "./pages/south-florida/medical-office-cleaning/+Page";
+import RestaurantCleaningSouthFloridaPage from "./pages/south-florida/restaurant-cleaning/+Page";
+import RetailCleaningSouthFloridaPage from "./pages/south-florida/retail-cleaning/+Page";
 import Blog from "./pages/Blog";
 import HiringRequirements from "./pages/HiringRequirements";
 import MaidilyApp from "./pages/MaidilyApp";
@@ -179,11 +214,33 @@ const App = () => (
           <Route path="/oahu/deep-cleaning-services" element={<DeepCleaningOahuPage />} />
           <Route path="/oahu/airbnb-cleaning-services" element={<AirbnbCleaningOahuPage />} />
           <Route path="/oahu/post-construction-cleaning-services" element={<PostConstructionCleaningOahuPage />} />
-        <Route path="/south-florida/post-construction-cleaning-services" element={<PostConstructionCleaningSouthFloridaPage />} />
-        <Route path="/south-florida/standard-cleaning-services" element={<StandardCleaningSouthFloridaPage />} />
-        <Route path="/south-florida/deep-cleaning-services" element={<DeepCleaningSouthFloridaPage />} />
-        <Route path="/south-florida/move-out-cleaning-services" element={<MoveOutCleaningSouthFloridaPage />} />
-        <Route path="/south-florida/airbnb-cleaning-services" element={<AirbnbCleaningSouthFloridaPage />} />
+          <Route path="/oahu/church-cleaning" element={<ChurchCleaningOahuPage />} />
+          <Route path="/oahu/data-center-cleaning" element={<DataCenterCleaningOahuPage />} />
+          <Route path="/oahu/factory-cleaning" element={<FactoryCleaningOahuPage />} />
+          <Route path="/oahu/government-facility-cleaning" element={<GovernmentFacilityCleaningOahuPage />} />
+          <Route path="/oahu/gym-cleaning" element={<GymCleaningOahuPage />} />
+          <Route path="/oahu/industrial-cleaning" element={<IndustrialCleaningOahuPage />} />
+          <Route path="/oahu/medical-office-cleaning" element={<MedicalOfficeCleaningOahuPage />} />
+          <Route path="/oahu/restaurant-cleaning" element={<RestaurantCleaningOahuPage />} />
+          <Route path="/oahu/retail-cleaning" element={<RetailCleaningOahuPage />} />
+          <Route path="/oahu/school-cleaning" element={<SchoolCleaningOahuPage />} />
+          <Route path="/oahu/showroom-cleaning" element={<ShowroomCleaningOahuPage />} />
+          <Route path="/oahu/warehouse-cleaning" element={<WarehouseCleaningOahuPage />} />
+          <Route path="/oahu/salon-spa-cleaning" element={<SalonSpaCleaningOahuPage />} />
+          <Route path="/south-florida/post-construction-cleaning-services" element={<PostConstructionCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/standard-cleaning-services" element={<StandardCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/deep-cleaning-services" element={<DeepCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/move-out-cleaning-services" element={<MoveOutCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/airbnb-cleaning-services" element={<AirbnbCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/church-cleaning" element={<ChurchCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/data-center-cleaning" element={<DataCenterCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/factory-cleaning" element={<FactoryCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/government-facility-cleaning" element={<GovernmentFacilityCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/gym-cleaning" element={<GymCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/industrial-cleaning" element={<IndustrialCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/medical-office-cleaning" element={<MedicalOfficeCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/restaurant-cleaning" element={<RestaurantCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/retail-cleaning" element={<RetailCleaningSouthFloridaPage />} />
           
           {/* Maui Routes */}
           <Route path="/maui" element={<MauiHome />} />
@@ -194,6 +251,19 @@ const App = () => (
         <Route path="/maui/deep-cleaning-services" element={<DeepCleaningMauiPage />} />
         <Route path="/maui/standard-cleaning-services" element={<StandardCleaningMauiPage />} />
           <Route path="/maui/airbnb-cleaning-services" element={<AirbnbCleaningMauiPage />} />
+          <Route path="/maui/church-cleaning" element={<ChurchCleaningMauiPage />} />
+          <Route path="/maui/data-center-cleaning" element={<DataCenterCleaningMauiPage />} />
+          <Route path="/maui/factory-cleaning" element={<FactoryCleaningMauiPage />} />
+          <Route path="/maui/government-facility-cleaning" element={<GovernmentFacilityCleaningMauiPage />} />
+          <Route path="/maui/gym-cleaning" element={<GymCleaningMauiPage />} />
+          <Route path="/maui/industrial-cleaning" element={<IndustrialCleaningMauiPage />} />
+          <Route path="/maui/medical-office-cleaning" element={<MedicalOfficeCleaningMauiPage />} />
+          <Route path="/maui/restaurant-cleaning" element={<RestaurantCleaningMauiPage />} />
+          <Route path="/maui/retail-cleaning" element={<RetailCleaningMauiPage />} />
+          <Route path="/maui/school-cleaning" element={<SchoolCleaningMauiPage />} />
+          <Route path="/maui/showroom-cleaning" element={<ShowroomCleaningMauiPage />} />
+          <Route path="/maui/warehouse-cleaning" element={<WarehouseCleaningMauiPage />} />
+          <Route path="/maui/salon-spa-cleaning" element={<SalonSpaCleaningMauiPage />} />
           
           {/* Dallas Routes */}
           <Route path="/dallas/post-construction-cleaning-services" element={<PostConstructionCleaningDallasPage />} />

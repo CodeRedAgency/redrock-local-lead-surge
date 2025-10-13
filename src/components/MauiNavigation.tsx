@@ -78,9 +78,50 @@ export const MauiNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning">Commercial Cleaning</Link>
-                    </DropdownMenuItem>
+                    <DropdownMenuSub>
+                      <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
+                      <DropdownMenuSubContent>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/church-cleaning">Church Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/data-center-cleaning">Data Center Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/factory-cleaning">Factory Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/government-facility-cleaning">Government Facility Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/gym-cleaning">Gym Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/industrial-cleaning">Industrial Cleaning Services in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/school-cleaning">School Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/medical-office-cleaning">Medical Office Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/restaurant-cleaning">Restaurant Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/retail-cleaning">Retail Store Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/showroom-cleaning">Showroom Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/warehouse-cleaning">Warehouse Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/maui/salon-spa-cleaning">Salon & Spa Cleaning in Maui</Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuSubContent>
+                    </DropdownMenuSub>
                   </DropdownMenuContent>
                 </DropdownMenu>
 
@@ -223,8 +264,45 @@ export const MauiNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
                     <Link to="/maui/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Post Construction Cleaning Services in Maui
                     </Link>
-                    <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning
+                    <div className="font-medium text-sm text-muted-foreground mb-1 mt-2">Commercial Cleaning</div>
+                    <Link to="/maui/church-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Church Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/data-center-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Data Center Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/factory-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Factory Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/government-facility-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Government Facility Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/gym-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Gym Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/industrial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Industrial Cleaning Services in Maui
+                    </Link>
+                    <Link to="/maui/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      School Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/medical-office-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Medical Office Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/restaurant-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Restaurant Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/retail-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Retail Store Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/showroom-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Showroom Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/warehouse-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Warehouse Cleaning in Maui
+                    </Link>
+                    <Link to="/maui/salon-spa-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Salon & Spa Cleaning in Maui
                     </Link>
                   </div>
                 </div>
