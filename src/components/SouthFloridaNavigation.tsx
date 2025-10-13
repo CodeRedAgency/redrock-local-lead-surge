@@ -124,7 +124,9 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
-                          <Link to="/south-florida/school-cleaning">School Cleaning</Link>
+                          <Link to="/south-florida/school-cleaning">
+                            {location.pathname === '/south-florida/school-cleaning' ? 'School Cleaning in South Florida' : 'School Cleaning'}
+                          </Link>
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
@@ -329,7 +331,7 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                       {location.pathname === '/south-florida/retail-cleaning' ? 'Retail Store Cleaning in South Florida' : 'Retail Store Cleaning'}
                     </Link>
                     <Link to="/south-florida/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      School Cleaning
+                      {location.pathname === '/south-florida/school-cleaning' ? 'School Cleaning in South Florida' : 'School Cleaning'}
                     </Link>
                   </div>
                 </div>

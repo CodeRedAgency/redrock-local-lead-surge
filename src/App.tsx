@@ -93,6 +93,7 @@ import IndustrialCleaningSouthFloridaPage from "./pages/south-florida/industrial
 import MedicalOfficeCleaningSouthFloridaPage from "./pages/south-florida/medical-office-cleaning/+Page";
 import RestaurantCleaningSouthFloridaPage from "./pages/south-florida/restaurant-cleaning/+Page";
 import RetailCleaningSouthFloridaPage from "./pages/south-florida/retail-cleaning/+Page";
+import SchoolCleaningSouthFloridaPage from "./pages/south-florida/school-cleaning/+Page";
 import Blog from "./pages/Blog";
 import HiringRequirements from "./pages/HiringRequirements";
 import MaidilyApp from "./pages/MaidilyApp";
@@ -241,6 +242,7 @@ const App = () => (
           <Route path="/south-florida/medical-office-cleaning" element={<MedicalOfficeCleaningSouthFloridaPage />} />
           <Route path="/south-florida/restaurant-cleaning" element={<RestaurantCleaningSouthFloridaPage />} />
           <Route path="/south-florida/retail-cleaning" element={<RetailCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/school-cleaning" element={<SchoolCleaningSouthFloridaPage />} />
           
           {/* Maui Routes */}
           <Route path="/maui" element={<MauiHome />} />
