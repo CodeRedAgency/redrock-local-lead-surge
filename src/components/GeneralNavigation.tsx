@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MapPin, ChevronDown, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
@@ -31,6 +31,19 @@ const locations = [
 
 export const GeneralNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Get current location name for display
+  const getCurrentLocationName = () => {
+    const currentPath = location.pathname;
+    const currentLocation = locations.find(loc => currentPath.startsWith(loc.path));
+    return currentLocation ? currentLocation.name : "Select Location";
+  };
+
+  const handleLocationChange = (path: string) => {
+    navigate(path);
+  };
 
   return (
     <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 shadow-[var(--shadow-soft)] relative overflow-hidden">
@@ -95,9 +108,47 @@ export const GeneralNavigation = () => {
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuSub>
-                <DropdownMenuItem asChild>
-                  <Link to="/commercial-cleaning">Commercial Cleaning</Link>
-                </DropdownMenuItem>
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent>
+                    <DropdownMenuItem asChild>
+                      <Link to="/commercial-cleaning">Commercial Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/church-cleaning">Church Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/data-center-cleaning">Data Center Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/factory-cleaning">Factory Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/government-facility-cleaning">Government Facility Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/gym-cleaning">Gym Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/medical-office-cleaning">Medical Office Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/retail-cleaning">Retail Store Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/school-cleaning">School Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/showroom-cleaning">Showroom Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/warehouse-cleaning">Warehouse Cleaning</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/salon-spa-cleaning">Salon & Spa Cleaning</Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -137,16 +188,14 @@ export const GeneralNavigation = () => {
             {/* Location Selector */}
             <div className="flex items-center space-x-2">
               <MapPin className="w-4 h-4 text-muted-foreground" />
-              <Select defaultValue="south-florida">
-                <SelectTrigger className="w-32 border-0 bg-transparent shadow-none">
-                  <SelectValue placeholder="Location" />
+              <Select value={location.pathname} onValueChange={handleLocationChange}>
+                <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
+                  <SelectValue>{getCurrentLocationName()}</SelectValue>
                 </SelectTrigger>
                 <SelectContent>
-                  {locations.map((location) => (
-                    <SelectItem key={location.path} value={location.path}>
-                      <a href={location.path} className="flex items-center space-x-2">
-                        <span>{location.name}</span>
-                      </a>
+                  {locations.map((locationItem) => (
+                    <SelectItem key={locationItem.path} value={locationItem.path}>
+                      {locationItem.name}
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -216,8 +265,42 @@ export const GeneralNavigation = () => {
                   <Link to="/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                     Post Construction Cleaning Services
                   </Link>
+                  <div className="font-medium text-sm text-muted-foreground mb-1 mt-3">Commercial Cleaning</div>
                   <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
                     Commercial Cleaning
+                  </Link>
+                  <Link to="/church-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Church Cleaning
+                  </Link>
+                  <Link to="/data-center-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Data Center Cleaning
+                  </Link>
+                  <Link to="/factory-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Factory Cleaning
+                  </Link>
+                  <Link to="/government-facility-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Government Facility Cleaning
+                  </Link>
+                  <Link to="/gym-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Gym Cleaning
+                  </Link>
+                  <Link to="/medical-office-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Medical Office Cleaning
+                  </Link>
+                  <Link to="/retail-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Retail Store Cleaning
+                  </Link>
+                  <Link to="/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    School Cleaning
+                  </Link>
+                  <Link to="/showroom-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Showroom Cleaning
+                  </Link>
+                  <Link to="/warehouse-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Warehouse Cleaning
+                  </Link>
+                  <Link to="/salon-spa-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                    Salon & Spa Cleaning
                   </Link>
                 </div>
               </div>

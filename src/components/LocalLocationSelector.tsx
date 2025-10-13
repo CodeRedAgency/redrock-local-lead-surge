@@ -12,6 +12,10 @@ const locations = [
       { name: "Move-Out Cleaning", path: "/las-vegas/move-out-cleaning-services" },
       { name: "Post-Construction", path: "/las-vegas/post-construction-cleaning-services" },
       { name: "Airbnb Cleaning", path: "/las-vegas/airbnb-cleaning-services" },
+      { name: "Retail Cleaning", path: "/las-vegas/retail-cleaning" },
+      { name: "Showroom Cleaning", path: "/las-vegas/showroom-cleaning" },
+      { name: "Warehouse Cleaning", path: "/las-vegas/warehouse-cleaning" },
+      { name: "Salon & Spa Cleaning", path: "/las-vegas/salon-spa-cleaning" },
     ]
   },
   {

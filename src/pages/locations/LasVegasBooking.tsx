@@ -1,4 +1,4 @@
-import { LasVegasNavigation } from "@/components/LasVegasNavigation";
+import { LasVegasBookingNavigation } from "@/components/LasVegasBookingNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
@@ -39,7 +39,7 @@ const LasVegasBooking = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <LasVegasNavigation loginUrl={loginUrl} />
+        <LasVegasBookingNavigation loginUrl={loginUrl} />
         
         <main className="flex-grow py-12">
           <div className="container mx-auto px-4">

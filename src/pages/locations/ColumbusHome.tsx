@@ -1,10 +1,10 @@
 import { ColumbusNavigation } from "@/components/ColumbusNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
-import { ServicesSection } from "@/components/ServicesSection";
+import { ColumbusServicesSection } from "@/components/ColumbusServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
-import { LocalLocationSelector } from "@/components/LocalLocationSelector";
+import { ColumbusAreasServed } from "@/components/ColumbusAreasServed";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
@@ -32,7 +32,7 @@ const ColumbusHome = () => {
             imageType="residential"
           />
           
-          <ServicesSection />
+          <ColumbusServicesSection />
           
           <BeforeAfterSection bookingUrl={bookingUrl} />
           
@@ -55,7 +55,7 @@ const ColumbusHome = () => {
             </div>
           </section>
           
-          <LocalLocationSelector currentLocation="columbus-ohio" />
+          <ColumbusAreasServed />
           
           <TrustSection />
         </main>

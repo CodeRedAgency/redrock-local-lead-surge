@@ -29,29 +29,6 @@ const locations = [
   { name: "Dallas", path: "/dallas", phone: "(972) 992-2576" },
 ];
 
-const southFloridaNeighborhoods = [
-  { name: "Aventura", path: "/south-florida/standard-cleaning-services#aventura" },
-  { name: "Cooper City", path: "/south-florida/standard-cleaning-services#cooper-city" },
-  { name: "Dania Beach", path: "/south-florida/standard-cleaning-services#dania-beach" },
-  { name: "Davie", path: "/south-florida/standard-cleaning-services#davie" },
-  { name: "Fort Lauderdale", path: "/south-florida/standard-cleaning-services#fort-lauderdale" },
-  { name: "Hallandale Beach", path: "/south-florida/standard-cleaning-services#hallandale-beach" },
-  { name: "Hollywood", path: "/south-florida/standard-cleaning-services#hollywood" },
-  { name: "Las Olas", path: "/south-florida/standard-cleaning-services#las-olas" },
-  { name: "Lauderdale Lakes", path: "/south-florida/standard-cleaning-services#lauderdale-lakes" },
-  { name: "Lauderhill", path: "/south-florida/standard-cleaning-services#lauderhill" },
-  { name: "Margate", path: "/south-florida/standard-cleaning-services#margate" },
-  { name: "Miramar", path: "/south-florida/standard-cleaning-services#miramar" },
-  { name: "North Lauderdale", path: "/south-florida/standard-cleaning-services#north-lauderdale" },
-  { name: "Pembroke Pines", path: "/south-florida/standard-cleaning-services#pembroke-pines" },
-  { name: "Plantation", path: "/south-florida/standard-cleaning-services#plantation" },
-  { name: "Southwest Ranches", path: "/south-florida/standard-cleaning-services#southwest-ranches" },
-  { name: "Sunny Isles Beach", path: "/south-florida/standard-cleaning-services#sunny-isles-beach" },
-  { name: "Sunrise", path: "/south-florida/standard-cleaning-services#sunrise" },
-  { name: "Tamarac", path: "/south-florida/standard-cleaning-services#tamarac" },
-  { name: "Weston", path: "/south-florida/standard-cleaning-services#weston" },
-];
-
 export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookingUrl?: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -63,7 +40,7 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/south-florida" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
             </Link>
 
@@ -113,138 +90,209 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                       <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/south-florida-calculator">South Florida Calculator</Link>
+                      <Link to="/book-now-southflorida">South Florida</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/book-now-vegas">Las Vegas</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/book-now-honolulu">Oahu</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/book-now-maui">Maui</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/book-now-columbus-ohio">Columbus Ohio</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/book-now-dallas">Dallas</Link>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
-
-              <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
-                  <MapPin className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-                  Locations <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  {locations.map((location) => (
-                    <DropdownMenuItem key={location.path} asChild>
-                      <Link to={location.path} className="flex items-center justify-between w-full">
-                        <span>{location.name}</span>
-                        <span className="text-xs text-muted-foreground">{location.phone}</span>
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-
-              <Link to="/about" className="hover:text-primary transition-colors relative z-10">
-                About
-              </Link>
 
               <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
                 Contact
               </Link>
 
-              <div className="flex items-center space-x-4">
-                {loginUrl && (
-                  <Button variant="ghost" size="sm" asChild>
-                    <Link to={loginUrl}>Login</Link>
-                  </Button>
-                )}
-                <Button size="sm" asChild>
-                  <Link to={bookingUrl || "/book-now-southflorida"}>Book Now</Link>
-                </Button>
+              {/* South Florida Neighborhood Selector */}
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4 text-muted-foreground" />
+              <Select defaultValue="" onValueChange={(value) => {
+                if (value) {
+                  // Get the current path and route to the same service page with the city hash
+                  const currentPath = location.pathname;
+                  window.location.href = `${currentPath}#${value}`;
+                }
+              }}>
+                <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
+                  <SelectValue placeholder="South Florida Areas" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="aventura">
+                    Aventura
+                  </SelectItem>
+                  <SelectItem value="cooper-city">
+                    Cooper City
+                  </SelectItem>
+                  <SelectItem value="dania-beach">
+                    Dania Beach
+                  </SelectItem>
+                  <SelectItem value="davie">
+                    Davie
+                  </SelectItem>
+                  <SelectItem value="fort-lauderdale">
+                    Fort Lauderdale
+                  </SelectItem>
+                  <SelectItem value="hallandale-beach">
+                    Hallandale Beach
+                  </SelectItem>
+                  <SelectItem value="hollywood">
+                    Hollywood
+                  </SelectItem>
+                  <SelectItem value="las-olas">
+                    Las Olas
+                  </SelectItem>
+                  <SelectItem value="lauderdale-lakes">
+                    Lauderdale Lakes
+                  </SelectItem>
+                  <SelectItem value="lauderhill">
+                    Lauderhill
+                  </SelectItem>
+                  <SelectItem value="margate">
+                    Margate
+                  </SelectItem>
+                  <SelectItem value="miramar">
+                    Miramar
+                  </SelectItem>
+                  <SelectItem value="north-lauderdale">
+                    North Lauderdale
+                  </SelectItem>
+                  <SelectItem value="pembroke-pines">
+                    Pembroke Pines
+                  </SelectItem>
+                  <SelectItem value="plantation">
+                    Plantation
+                  </SelectItem>
+                  <SelectItem value="southwest-ranches">
+                    Southwest Ranches
+                  </SelectItem>
+                  <SelectItem value="sunny-isles-beach">
+                    Sunny Isles Beach
+                  </SelectItem>
+                  <SelectItem value="sunrise">
+                    Sunrise
+                  </SelectItem>
+                  <SelectItem value="tamarac">
+                    Tamarac
+                  </SelectItem>
+                  <SelectItem value="weston">
+                    Weston
+                  </SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
             </nav>
 
+            {/* Desktop CTA Buttons */}
+            <div className="hidden md:flex items-center space-x-4">
+              {loginUrl && (
+                <Button variant="ghost" size="sm" asChild>
+                  <a href={loginUrl} target="_blank" rel="noopener noreferrer">
+                    Login
+                  </a>
+                </Button>
+              )}
+              {bookingUrl && (
+                <Button size="sm" asChild>
+                  <a href={bookingUrl}>
+                    <Phone className="w-4 h-4 mr-2" />
+                    Book Now
+                  </a>
+                </Button>
+              )}
+            </div>
+
             {/* Mobile Menu Button */}
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
+              className="md:hidden"
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 hover:text-primary transition-colors relative z-10"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </Button>
           </div>
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden py-4 border-t">
-              <div className="flex flex-col space-y-4">
-                <Link to="/south-florida" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+            <div className="md:hidden border-t">
+              <nav className="py-4 space-y-4">
+                <Link to="/south-florida" className="block hover:text-primary transition-colors">
                   Home
                 </Link>
                 
-                <div className="space-y-2">
-                  <div className="font-medium text-foreground">Services</div>
+                <div>
+                  <div className="font-medium mb-2">Services</div>
                   <div className="ml-4 space-y-2">
-                    <Link to="/south-florida/airbnb-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                    <div className="font-medium text-sm text-muted-foreground mb-1">Residential Cleaning</div>
+                    <Link to="/south-florida/airbnb-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Airbnb Cleaning Services in South Florida
                     </Link>
-                    <Link to="/south-florida/standard-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                    <Link to="/south-florida/standard-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Standard Cleaning Services in South Florida
                     </Link>
-                    <Link to="/south-florida/deep-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                    <Link to="/south-florida/deep-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Deep Cleaning Services in South Florida
                     </Link>
-                    <Link to="/south-florida/move-out-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                    <Link to="/south-florida/move-out-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Move Out Cleaning Services in South Florida
                     </Link>
-                    <Link to="/south-florida/post-construction-cleaning-services" className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                    <Link to="/south-florida/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Post Construction Cleaning Services in South Florida
+                    </Link>
+                    <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Commercial Cleaning
                     </Link>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <div className="font-medium text-foreground">Locations</div>
+                <div>
+                  <div className="font-medium mb-2">Pricing</div>
                   <div className="ml-4 space-y-2">
-                    {locations.map((location) => (
-                      <Link key={location.path} to={location.path} className="block hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
-                        {location.name}
-                      </Link>
-                    ))}
+                    <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
+                      Commercial Cleaning Cost Estimator
+                    </Link>
+                    <Link to="/book-now-southflorida" className="block hover:text-primary transition-colors text-sm">
+                      South Florida Booking
+                    </Link>
                   </div>
                 </div>
 
-                <Link to="/about" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
-                  About
-                </Link>
-                <Link to="/contact" className="hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+                <Link to="/contact" className="block hover:text-primary transition-colors">
                   Contact
                 </Link>
 
-                <div className="flex flex-col space-y-2 pt-4 border-t">
+                {/* Mobile CTA Buttons */}
+                <div className="pt-4 space-y-2">
                   {loginUrl && (
-                    <Button variant="outline" size="sm" asChild>
-                      <Link to={loginUrl} onClick={() => setIsOpen(false)}>Login</Link>
+                    <Button variant="outline" size="sm" className="w-full" asChild>
+                      <a href={loginUrl} target="_blank" rel="noopener noreferrer">
+                        Login
+                      </a>
                     </Button>
                   )}
-                  <Button size="sm" asChild>
-                    <Link to={bookingUrl || "/book-now-southflorida"} onClick={() => setIsOpen(false)}>Book Now</Link>
-                  </Button>
+                  {bookingUrl && (
+                    <Button size="sm" className="w-full" asChild>
+                      <a href={bookingUrl}>
+                        <Phone className="w-4 h-4 mr-2" />
+                        Book Now
+                      </a>
+                    </Button>
+                  )}
                 </div>
-              </div>
+              </nav>
             </div>
           )}
-        </div>
-
-        {/* Neighborhood Selector */}
-        <div className="bg-muted/50 py-2">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">Select your neighborhood:</span>
-              <Select onValueChange={(value) => window.location.href = value}>
-                <SelectTrigger className="w-48 h-8 text-xs">
-                  <SelectValue placeholder="Choose neighborhood" />
-                </SelectTrigger>
-                <SelectContent>
-                  {southFloridaNeighborhoods.map((neighborhood) => (
-                    <SelectItem key={neighborhood.path} value={neighborhood.path}>
-                      {neighborhood.name}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
         </div>
     </header>
   );

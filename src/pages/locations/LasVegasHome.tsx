@@ -1,7 +1,7 @@
 import { LasVegasNavigation } from "@/components/LasVegasNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
-import { ServicesSection } from "@/components/ServicesSection";
+import { LasVegasServicesSection } from "@/components/LasVegasServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { LasVegasAreasServed } from "@/components/LasVegasAreasServed";
@@ -32,7 +32,7 @@ const LasVegasHome = () => {
             imageType="residential"
           />
           
-          <ServicesSection />
+          <LasVegasServicesSection />
           
           <BeforeAfterSection bookingUrl={bookingUrl} />
           

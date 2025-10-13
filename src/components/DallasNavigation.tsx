@@ -43,7 +43,7 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/dallas" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
             </Link>
 
@@ -120,33 +120,39 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
               {/* Dallas Neighborhood Selector */}
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-muted-foreground" />
-              <Select defaultValue="">
+              <Select defaultValue="" onValueChange={(value) => {
+                if (value) {
+                  // Get the current path and route to the same service page with the city hash
+                  const currentPath = location.pathname;
+                  window.location.href = `${currentPath}#${value}`;
+                }
+              }}>
                 <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
                   <SelectValue placeholder="Dallas Areas" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="university-park" onClick={() => window.location.href = `${currentPath}#university-park`}>
+                  <SelectItem value="university-park">
                     University Park
                   </SelectItem>
-                  <SelectItem value="highland-park" onClick={() => window.location.href = `${currentPath}#highland-park`}>
+                  <SelectItem value="highland-park">
                     Highland Park
                   </SelectItem>
-                  <SelectItem value="uptown-dallas" onClick={() => window.location.href = `${currentPath}#uptown-dallas`}>
+                  <SelectItem value="uptown-dallas">
                     Uptown Dallas
                   </SelectItem>
-                  <SelectItem value="downtown-dallas" onClick={() => window.location.href = `${currentPath}#downtown-dallas`}>
+                  <SelectItem value="downtown-dallas">
                     Downtown Dallas
                   </SelectItem>
-                  <SelectItem value="preston-hollow" onClick={() => window.location.href = `${currentPath}#preston-hollow`}>
+                  <SelectItem value="preston-hollow">
                     Preston Hollow
                   </SelectItem>
-                  <SelectItem value="plano" onClick={() => window.location.href = `${currentPath}#plano`}>
+                  <SelectItem value="plano">
                     Plano
                   </SelectItem>
-                  <SelectItem value="frisco" onClick={() => window.location.href = `${currentPath}#frisco`}>
+                  <SelectItem value="frisco">
                     Frisco
                   </SelectItem>
-                  <SelectItem value="prosper" onClick={() => window.location.href = `${currentPath}#prosper`}>
+                  <SelectItem value="prosper">
                     Prosper
                   </SelectItem>
                   </SelectContent>

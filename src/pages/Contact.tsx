@@ -9,43 +9,43 @@ const Contact = () => {
     {
       name: "South Florida",
       path: "/south-florida",
-      phone: "(754) 999-9999",
-      email: "southflorida@redrockcleans.com",
+      phone: "(954) 469-8881",
+      email: "office@redrockcleans.com",
       areas: "Miami, Fort Lauderdale, West Palm Beach"
     },
     {
       name: "Las Vegas",
       path: "/las-vegas",
-      phone: "(702) 999-9999",
-      email: "vegas@redrockcleans.com",
+      phone: "(702) 508-0098",
+      email: "office.vegas@redrockcleans.com",
       areas: "Las Vegas, Henderson, North Las Vegas"
     },
     {
       name: "Oahu",
       path: "/oahu",
-      phone: "(808) 999-9999",
-      email: "oahu@redrockcleans.com",
+      phone: "(808) 909-8801",
+      email: "office.oahu@redrockcleans.com",
       areas: "Honolulu, Pearl City, Kailua"
     },
     {
       name: "Maui",
       path: "/maui",
-      phone: "(808) 888-8888",
-      email: "maui@redrockcleans.com",
+      phone: "(808) 909-3038",
+      email: "office.maui@redrockcleans.com",
       areas: "Kahului, Lahaina, Kihei"
     },
     {
       name: "Columbus Ohio",
       path: "/columbus-ohio",
-      phone: "(614) 999-9999",
-      email: "columbus@redrockcleans.com",
+      phone: "(380) 235-3135",
+      email: "office.buckeyes@redrockcleans.com",
       areas: "Columbus, Dublin, Westerville"
     },
     {
       name: "Dallas",
       path: "/dallas",
-      phone: "(214) 999-9999",
-      email: "dallas@redrockcleans.com",
+      phone: "(972) 992-2576",
+      email: "office.texas@redrockcleans.com",
       areas: "Dallas, Plano, Fort Worth"
     }
   ];
@@ -128,10 +128,10 @@ const Contact = () => {
                 </p>
                 <div className="space-y-2">
                   <p className="text-lg">
-                    Email: <a href="mailto:info@redrockcleans.com" className="text-primary hover:underline">info@redrockcleans.com</a>
+                    Email: <a href="mailto:office@redrockcleans.com" className="text-primary hover:underline">office@redrockcleans.com</a>
                   </p>
                   <p className="text-lg">
-                    Phone: <a href="tel:1-800-RED-ROCK" className="text-primary hover:underline">1-800-RED-ROCK</a>
+                    Phone: <a href="tel:888-805-1733" className="text-primary hover:underline">888-805-1733</a>
                   </p>
                 </div>
               </div>

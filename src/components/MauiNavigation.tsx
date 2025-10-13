@@ -43,7 +43,7 @@ export const MauiNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/maui" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
             </Link>
 
@@ -122,7 +122,9 @@ export const MauiNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
                 <MapPin className="w-4 h-4 text-muted-foreground" />
               <Select defaultValue="" onValueChange={(value) => {
                 if (value) {
-                  window.location.href = `/maui#${value}`;
+                  // Get the current path and route to the same service page with the city hash
+                  const currentPath = location.pathname;
+                  window.location.href = `${currentPath}#${value}`;
                 }
               }}>
                 <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">

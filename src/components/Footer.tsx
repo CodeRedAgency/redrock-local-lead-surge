@@ -130,6 +130,78 @@ export const Footer = () => {
                 >
                   Post Construction
                 </Link>
+                <Link 
+                  to="/commercial-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Commercial Cleaning
+                </Link>
+                <Link 
+                  to="/church-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Church Cleaning
+                </Link>
+                <Link 
+                  to="/data-center-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Data Center Cleaning
+                </Link>
+                <Link 
+                  to="/factory-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Factory Cleaning
+                </Link>
+                <Link 
+                  to="/government-facility-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Government Facility Cleaning
+                </Link>
+                <Link 
+                  to="/gym-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Gym Cleaning
+                </Link>
+                <Link 
+                  to="/medical-office-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Medical Office Cleaning
+                </Link>
+                <Link 
+                  to="/retail-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Retail Store Cleaning
+                </Link>
+                <Link 
+                  to="/school-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  School Cleaning
+                </Link>
+                <Link 
+                  to="/showroom-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Showroom Cleaning
+                </Link>
+                <Link 
+                  to="/warehouse-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Warehouse Cleaning
+                </Link>
+                <Link 
+                  to="/salon-spa-cleaning" 
+                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                >
+                  Salon & Spa Cleaning
+                </Link>
               </div>
             </div>
 

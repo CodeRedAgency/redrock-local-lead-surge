@@ -1,7 +1,7 @@
 import { OahuNavigation } from "@/components/OahuNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
-import { ServicesSection } from "@/components/ServicesSection";
+import { OahuServicesSection } from "@/components/OahuServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { OahuAreasServed } from "@/components/OahuAreasServed";
@@ -32,7 +32,7 @@ const OahuHome = () => {
             imageType="residential"
           />
           
-          <ServicesSection />
+          <OahuServicesSection />
           
           <BeforeAfterSection bookingUrl={bookingUrl} />
           

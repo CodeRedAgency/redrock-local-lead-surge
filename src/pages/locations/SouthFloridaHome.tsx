@@ -1,10 +1,10 @@
 import { SouthFloridaNavigation } from "@/components/SouthFloridaNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationHero } from "@/components/LocationHero";
-import { ServicesSection } from "@/components/ServicesSection";
+import { SouthFloridaServicesSection } from "@/components/SouthFloridaServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
-import { LocalLocationSelector } from "@/components/LocalLocationSelector";
+import { SouthFloridaAreasServed } from "@/components/SouthFloridaAreasServed";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
@@ -32,7 +32,7 @@ const SouthFloridaHome = () => {
             imageType="residential"
           />
           
-          <ServicesSection />
+          <SouthFloridaServicesSection />
           
           <BeforeAfterSection bookingUrl={bookingUrl} />
           
@@ -55,7 +55,7 @@ const SouthFloridaHome = () => {
             </div>
           </section>
           
-          <LocalLocationSelector currentLocation="south-florida" />
+          <SouthFloridaAreasServed />
           
           <TrustSection />
         </main>

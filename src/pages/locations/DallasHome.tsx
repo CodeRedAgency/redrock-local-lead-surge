@@ -4,7 +4,7 @@ import { LocationHero } from "@/components/LocationHero";
 import { DallasServicesSection } from "@/components/DallasServicesSection";
 import { TrustSection } from "@/components/TrustSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
-import { LocalLocationSelector } from "@/components/LocalLocationSelector";
+import { DallasAreasServed } from "@/components/DallasAreasServed";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
@@ -55,7 +55,7 @@ const DallasHome = () => {
             </div>
           </section>
           
-          <LocalLocationSelector currentLocation="dallas" />
+          <DallasAreasServed />
           
           <TrustSection />
         </main>

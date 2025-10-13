@@ -25,6 +25,19 @@ import StandardCleaningLasVegasPage from "./pages/las-vegas/standard-cleaning-se
 import DeepCleaningLasVegasPage from "./pages/las-vegas/deep-cleaning-services/+Page";
 import MoveOutCleaningLasVegasPage from "./pages/las-vegas/move-out-cleaning-services/+Page";
 import PostConstructionCleaningLasVegasPage from "./pages/las-vegas/post-construction-cleaning-services/+Page";
+import ChurchCleaningLasVegasPage from "./pages/las-vegas/church-cleaning/+Page";
+import DataCenterCleaningLasVegasPage from "./pages/las-vegas/data-center-cleaning/+Page";
+import FactoryCleaningLasVegasPage from "./pages/las-vegas/factory-cleaning/+Page";
+import GovernmentFacilityCleaningLasVegasPage from "./pages/las-vegas/government-facility-cleaning/+Page";
+import GymCleaningLasVegasPage from "./pages/las-vegas/gym-cleaning/+Page";
+import IndustrialCleaningLasVegasPage from "./pages/las-vegas/industrial-cleaning/+Page";
+import MedicalOfficeCleaningLasVegasPage from "./pages/las-vegas/medical-office-cleaning/+Page";
+import RestaurantCleaningLasVegasPage from "./pages/las-vegas/restaurant-cleaning/+Page";
+import RetailCleaningLasVegasPage from "./pages/las-vegas/retail-cleaning/+Page";
+import ShowroomCleaningLasVegasPage from "./pages/las-vegas/showroom-cleaning/+Page";
+import WarehouseCleaningLasVegasPage from "./pages/las-vegas/warehouse-cleaning/+Page";
+import SalonSpaCleaningLasVegasPage from "./pages/las-vegas/salon-spa-cleaning/+Page";
+import SchoolCleaningLasVegasPage from "./pages/las-vegas/school-cleaning/+Page";
 import MoveOutCleaningOahuPage from "./pages/oahu/move-out-cleaning-services/+Page";
 import StandardCleaningOahuPage from "./pages/oahu/standard-cleaning-services/+Page";
 import DeepCleaningOahuPage from "./pages/oahu/deep-cleaning-services/+Page";
@@ -71,6 +84,17 @@ import DeepCleaningColumbusOhioPage from "./pages/columbus-ohio/deep-cleaning-se
 import MoveOutCleaningColumbusOhioPage from "./pages/columbus-ohio/move-out-cleaning-services/+Page";
 import PostConstructionCleaningColumbusOhioPage from "./pages/columbus-ohio/post-construction-cleaning-services/+Page";
 import AirbnbCleaningColumbusOhioPage from "./pages/columbus-ohio/airbnb-cleaning-services/+Page";
+import ChurchCleaningPage from "./pages/church-cleaning/+Page";
+import DataCenterCleaningPage from "./pages/data-center-cleaning/+Page";
+import FactoryCleaningPage from "./pages/factory-cleaning/+Page";
+import GovernmentFacilityCleaningPage from "./pages/government-facility-cleaning/+Page";
+import GymCleaningPage from "./pages/gym-cleaning/+Page";
+import MedicalOfficeCleaningPage from "./pages/medical-office-cleaning/+Page";
+import RetailCleaningPage from "./pages/general-retail-cleaning/+Page";
+import SchoolCleaningPage from "./pages/school-cleaning/+Page";
+import ShowroomCleaningPage from "./pages/showroom-cleaning/+Page";
+import WarehouseCleaningPage from "./pages/warehouse-cleaning/+Page";
+import SalonSpaCleaningPage from "./pages/salon-spa-cleaning/+Page";
 
 const queryClient = new QueryClient();
 
@@ -88,6 +112,17 @@ const App = () => (
           <Route path="/about/faq" element={<FAQ />} />
           <Route path="/residential-cleaning" element={<ResidentialCleaning />} />
           <Route path="/commercial-cleaning" element={<CommercialCleaning />} />
+          <Route path="/church-cleaning" element={<ChurchCleaningPage />} />
+          <Route path="/data-center-cleaning" element={<DataCenterCleaningPage />} />
+          <Route path="/factory-cleaning" element={<FactoryCleaningPage />} />
+          <Route path="/government-facility-cleaning" element={<GovernmentFacilityCleaningPage />} />
+          <Route path="/gym-cleaning" element={<GymCleaningPage />} />
+          <Route path="/medical-office-cleaning" element={<MedicalOfficeCleaningPage />} />
+          <Route path="/retail-cleaning" element={<RetailCleaningPage />} />
+          <Route path="/school-cleaning" element={<SchoolCleaningPage />} />
+          <Route path="/showroom-cleaning" element={<ShowroomCleaningPage />} />
+          <Route path="/warehouse-cleaning" element={<WarehouseCleaningPage />} />
+          <Route path="/salon-spa-cleaning" element={<SalonSpaCleaningPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms-and-conditions-page" element={<TermsAndConditions />} />
           <Route path="/privacy-policy-page" element={<PrivacyPolicy />} />
@@ -106,6 +141,19 @@ const App = () => (
           <Route path="/las-vegas/deep-cleaning-services" element={<DeepCleaningLasVegasPage />} />
           <Route path="/las-vegas/move-out-cleaning-services" element={<MoveOutCleaningLasVegasPage />} />
           <Route path="/las-vegas/post-construction-cleaning-services" element={<PostConstructionCleaningLasVegasPage />} />
+          <Route path="/las-vegas/church-cleaning" element={<ChurchCleaningLasVegasPage />} />
+          <Route path="/las-vegas/data-center-cleaning" element={<DataCenterCleaningLasVegasPage />} />
+          <Route path="/las-vegas/factory-cleaning" element={<FactoryCleaningLasVegasPage />} />
+          <Route path="/las-vegas/government-facility-cleaning" element={<GovernmentFacilityCleaningLasVegasPage />} />
+          <Route path="/las-vegas/gym-cleaning" element={<GymCleaningLasVegasPage />} />
+          <Route path="/las-vegas/industrial-cleaning" element={<IndustrialCleaningLasVegasPage />} />
+          <Route path="/las-vegas/medical-office-cleaning" element={<MedicalOfficeCleaningLasVegasPage />} />
+          <Route path="/las-vegas/restaurant-cleaning" element={<RestaurantCleaningLasVegasPage />} />
+          <Route path="/las-vegas/retail-cleaning" element={<RetailCleaningLasVegasPage />} />
+          <Route path="/las-vegas/showroom-cleaning" element={<ShowroomCleaningLasVegasPage />} />
+          <Route path="/las-vegas/warehouse-cleaning" element={<WarehouseCleaningLasVegasPage />} />
+          <Route path="/las-vegas/salon-spa-cleaning" element={<SalonSpaCleaningLasVegasPage />} />
+          <Route path="/las-vegas/school-cleaning" element={<SchoolCleaningLasVegasPage />} />
           
           {/* Blog & Hiring */}
           <Route path="/blog" element={<Blog />} />

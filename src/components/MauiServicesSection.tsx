@@ -4,34 +4,28 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: Hammer,
-    title: "Post Construction Cleaning",
-    description: "Transform your dusty worksite into a pristine, move-in ready property. Professional post construction cleaning throughout Maui.",
-    link: "/maui/post-construction-cleaning-services",
-  },
-  {
     icon: Home,
-    title: "Standard Cleaning Services",
+    title: "Residential Cleaning",
     description: "Professional home cleaning services tailored to your Maui property needs. Regular maintenance cleaning for consistent home cleanliness.",
     link: "/maui/standard-cleaning-services",
   },
-      {
-        icon: Sparkles,
-        title: "Deep Cleaning Services",
-        description: "Comprehensive deep cleaning for those hard-to-reach areas. Perfect for seasonal cleaning or special occasions on Maui.",
-        link: "/maui/deep-cleaning-services",
-      },
+  {
+    icon: Building2,
+    title: "Commercial Cleaning",
+    description: "Keep your Maui business spotless with our reliable commercial cleaning services. Flexible scheduling to fit your hours.",
+    link: "/commercial-cleaning",
+  },
   {
     icon: Key,
-    title: "Airbnb Cleaning Services",
+    title: "Vacation Rental Cleaning",
     description: "Professional turnover cleaning services for vacation rentals on Maui. Fast, thorough, and guest-ready every time.",
     link: "/maui/airbnb-cleaning-services",
   },
   {
-    icon: Building2,
-    title: "Move Out Cleaning Services",
-    description: "Thorough end-of-tenancy cleaning to secure your security deposit. Complete move-out cleaning services in Maui.",
-    link: "/maui/move-out-cleaning-services",
+    icon: Sparkles,
+    title: "Deep Cleaning",
+    description: "Comprehensive deep cleaning for those hard-to-reach areas. Perfect for seasonal cleaning or special occasions on Maui.",
+    link: "/maui/deep-cleaning-services",
   },
 ];
 
@@ -46,7 +40,7 @@ export const MauiServicesSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Link key={index} to={service.link} className="group">
               <Card className="hover:shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">

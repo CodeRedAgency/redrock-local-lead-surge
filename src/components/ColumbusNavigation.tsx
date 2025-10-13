@@ -43,7 +43,7 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/columbus-ohio" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
             </Link>
 
@@ -120,45 +120,51 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
               {/* Columbus Neighborhood Selector */}
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-muted-foreground" />
-              <Select defaultValue="">
+              <Select defaultValue="" onValueChange={(value) => {
+                if (value) {
+                  // Get the current path and route to the same service page with the city hash
+                  const currentPath = location.pathname;
+                  window.location.href = `${currentPath}#${value}`;
+                }
+              }}>
                 <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
                   <SelectValue placeholder="Columbus Areas" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="dublin" onClick={() => window.location.href = `${currentPath}#dublin`}>
+                  <SelectItem value="dublin">
                     Dublin
                   </SelectItem>
-                  <SelectItem value="upper-arlington" onClick={() => window.location.href = `${currentPath}#upper-arlington`}>
+                  <SelectItem value="upper-arlington">
                     Upper Arlington
                   </SelectItem>
-                  <SelectItem value="powell" onClick={() => window.location.href = `${currentPath}#powell`}>
+                  <SelectItem value="powell">
                     Powell
                   </SelectItem>
-                  <SelectItem value="lewis-center" onClick={() => window.location.href = `${currentPath}#lewis-center`}>
+                  <SelectItem value="lewis-center">
                     Lewis Center
                   </SelectItem>
-                  <SelectItem value="worthington" onClick={() => window.location.href = `${currentPath}#worthington`}>
+                  <SelectItem value="worthington">
                     Worthington
                   </SelectItem>
-                  <SelectItem value="new-albany" onClick={() => window.location.href = `${currentPath}#new-albany`}>
+                  <SelectItem value="new-albany">
                     New Albany
                   </SelectItem>
-                  <SelectItem value="bexley" onClick={() => window.location.href = `${currentPath}#bexley`}>
+                  <SelectItem value="bexley">
                     Bexley
                   </SelectItem>
-                  <SelectItem value="german-village" onClick={() => window.location.href = `${currentPath}#german-village`}>
+                  <SelectItem value="german-village">
                     German Village
                   </SelectItem>
-                  <SelectItem value="short-north" onClick={() => window.location.href = `${currentPath}#short-north`}>
+                  <SelectItem value="short-north">
                     Short North
                   </SelectItem>
-                  <SelectItem value="victorian-village" onClick={() => window.location.href = `${currentPath}#victorian-village`}>
+                  <SelectItem value="victorian-village">
                     Victorian Village
                   </SelectItem>
-                  <SelectItem value="hillard" onClick={() => window.location.href = `${currentPath}#hillard`}>
+                  <SelectItem value="hilliard">
                     Hilliard
                   </SelectItem>
-                  <SelectItem value="westerville" onClick={() => window.location.href = `${currentPath}#westerville`}>
+                  <SelectItem value="westerville">
                     Westerville
                   </SelectItem>
                   </SelectContent>
