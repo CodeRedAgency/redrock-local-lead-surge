@@ -53,7 +53,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         {/* Enhanced Navigation */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
             {/* Home Section */}
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-primary mb-4">Home</h3>
@@ -96,9 +96,9 @@ export const Footer = () => {
               </div>
             </div>
 
-            {/* Services Section */}
+            {/* Residential Services */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">Services</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">Residential Services</h3>
               <div className="space-y-3">
                 <Link 
                   to="/blog/standard-cleaning-vs-deep-cleaning" 
@@ -130,6 +130,13 @@ export const Footer = () => {
                 >
                   Post Construction
                 </Link>
+              </div>
+            </div>
+
+            {/* Commercial Services */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-primary mb-4">Commercial Services</h3>
+              <div className="space-y-3">
                 <Link 
                   to="/commercial-cleaning" 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
@@ -158,7 +165,7 @@ export const Footer = () => {
                   to="/government-facility-cleaning" 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Government Facility Cleaning
+                  Government Facility
                 </Link>
                 <Link 
                   to="/gym-cleaning" 
@@ -170,13 +177,13 @@ export const Footer = () => {
                   to="/medical-office-cleaning" 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Medical Office Cleaning
+                  Medical Office
                 </Link>
                 <Link 
                   to="/retail-cleaning" 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Retail Store Cleaning
+                  Retail Store
                 </Link>
                 <Link 
                   to="/school-cleaning" 
@@ -200,7 +207,7 @@ export const Footer = () => {
                   to="/salon-spa-cleaning" 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Salon & Spa Cleaning
+                  Salon & Spa
                 </Link>
               </div>
             </div>
