@@ -12,11 +12,11 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(), 
-    // Only enable SSR in production builds, not in development
-    mode === "production" && ssr({ 
-      prerender: false,
-      includeAssetsImportedByServer: true 
-    }), 
+    // Disable SSR for Vercel deployment - use client-side routing only
+    // mode === "production" && ssr({ 
+    //   prerender: false,
+    //   includeAssetsImportedByServer: true 
+    // }), 
     mode === "development" && componentTagger()
   ].filter(Boolean),
   resolve: {
