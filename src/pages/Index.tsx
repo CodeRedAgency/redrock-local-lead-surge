@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Red Rock Cleaning - Premium Multi-Location Cleaning Services</title>
+        <title>Red Rock Cleaning - Trusted Local Cleaning Experts</title>
         <meta name="description" content="Professional cleaning services across South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas. Residential, commercial, and vacation rental cleaning." />
       </Helmet>
       
@@ -42,7 +42,7 @@ const Index = () => {
                 <div className="inline-block animate-fade-in">
                   <span className="inline-flex items-center px-6 py-3 rounded-full bg-accent/15 border border-accent/30 text-accent font-semibold text-sm mb-8 shadow-lg backdrop-blur-sm">
                     <span className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse"></span>
-                    Premium Multi-Location Service
+                    Trusted Local Cleaning Experts
                   </span>
                 </div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-tight tracking-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
