@@ -244,6 +244,7 @@ const App = () => (
           <Route path="/oahu" element={<OahuHome />} />
           <Route path="/oahu-calculator" element={<OahuCalculator />} />
           <Route path="/book-now-honolulu" element={<OahuBooking />} />
+          <Route path="/book-now-oahu" element={<OahuBooking />} />
           <Route path="/oahu/move-out-cleaning-services" element={<MoveOutCleaningOahuPage />} />
           <Route path="/oahu/standard-cleaning-services" element={<StandardCleaningOahuPage />} />
           <Route path="/oahu/deep-cleaning-services" element={<DeepCleaningOahuPage />} />
