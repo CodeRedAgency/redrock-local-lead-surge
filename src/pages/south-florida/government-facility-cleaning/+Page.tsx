@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Lock, FileText, Building, Gavel, Users, ShieldCheck, Building2, CheckCircle2, MapPin, Calendar, Heart, Server, GraduationCap } from "lucide-react";
+import { Shield, Lock, FileText, Building, Scale, Users, ShieldCheck, Building2, CheckCircle2, MapPin, Calendar, Heart, Server, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -527,7 +527,7 @@ const GovernmentFacilityCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <Gavel className="h-12 w-12 text-primary mx-auto mb-4" />
+                      <Scale className="h-12 w-12 text-primary mx-auto mb-4" />
                       <h3 className="text-xl font-semibold mb-3">Secure Areas & Courtrooms</h3>
                       <p className="text-muted-foreground">
                         Our protocols for cleaning sensitive or restricted areas include coordination with security personnel, proper access credential management, respect for confidential materials, and adherence to all facility-specific security requirements. We understand the unique needs of courtrooms, judicial chambers, and secure government offices.

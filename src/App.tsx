@@ -13,6 +13,10 @@ import Contact from "./pages/Contact";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Sitemap from "./pages/Sitemap";
+import HiringRequirements from "./pages/HiringRequirements";
+import HiringApplicationNew from "./pages/HiringApplicationNew";
+import SubContractorAgreement from "./pages/SubContractorAgreement";
+import CleaningSupplies from "./pages/CleaningSupplies";
 import StandardVsDeep from "./pages/StandardVsDeep";
 import StandardCleaning from "./pages/StandardCleaning";
 import DeepCleaning from "./pages/DeepCleaning";
@@ -65,6 +69,19 @@ import AirbnbCleaningDallasPage from "./pages/dallas/airbnb-cleaning-services/+P
 import MoveOutCleaningDallasPage from "./pages/dallas/move-out-cleaning-services/+Page";
 import DeepCleaningDallasPage from "./pages/dallas/deep-cleaning-services/+Page";
 import StandardCleaningDallasPage from "./pages/dallas/standard-cleaning-services/+Page";
+import ChurchCleaningDallasPage from "./pages/dallas/church-cleaning/+Page";
+import DataCenterCleaningDallasPage from "./pages/dallas/data-center-cleaning/+Page";
+import FactoryCleaningDallasPage from "./pages/dallas/factory-cleaning/+Page";
+import GovernmentFacilityCleaningDallasPage from "./pages/dallas/government-facility-cleaning/+Page";
+import GymCleaningDallasPage from "./pages/dallas/gym-cleaning/+Page";
+import IndustrialCleaningDallasPage from "./pages/dallas/industrial-cleaning/+Page";
+import MedicalOfficeCleaningDallasPage from "./pages/dallas/medical-office-cleaning/+Page";
+import RestaurantCleaningDallasPage from "./pages/dallas/restaurant-cleaning/+Page";
+import RetailCleaningDallasPage from "./pages/dallas/retail-cleaning/+Page";
+import SchoolCleaningDallasPage from "./pages/dallas/school-cleaning/+Page";
+import ShowroomCleaningDallasPage from "./pages/dallas/showroom-cleaning/+Page";
+import WarehouseCleaningDallasPage from "./pages/dallas/warehouse-cleaning/+Page";
+import SalonSpaCleaningDallasPage from "./pages/dallas/salon-spa-cleaning/+Page";
 import AirbnbCleaningMauiPage from "./pages/maui/airbnb-cleaning-services/+Page";
 import ChurchCleaningMauiPage from "./pages/maui/church-cleaning/+Page";
 import DataCenterCleaningMauiPage from "./pages/maui/data-center-cleaning/+Page";
@@ -95,8 +112,9 @@ import RestaurantCleaningSouthFloridaPage from "./pages/south-florida/restaurant
 import RetailCleaningSouthFloridaPage from "./pages/south-florida/retail-cleaning/+Page";
 import SchoolCleaningSouthFloridaPage from "./pages/south-florida/school-cleaning/+Page";
 import ShowroomCleaningSouthFloridaPage from "./pages/south-florida/showroom-cleaning/+Page";
+import WarehouseCleaningSouthFloridaPage from "./pages/south-florida/warehouse-cleaning/+Page";
+import SalonSpaCleaningSouthFloridaPage from "./pages/south-florida/salon-spa-cleaning/+Page";
 import Blog from "./pages/Blog";
-import HiringRequirements from "./pages/HiringRequirements";
 import MaidilyApp from "./pages/MaidilyApp";
 import SouthFloridaHome from "./pages/locations/SouthFloridaHome";
 import SouthFloridaCalculator from "./pages/locations/SouthFloridaCalculator";
@@ -121,6 +139,19 @@ import DeepCleaningColumbusOhioPage from "./pages/columbus-ohio/deep-cleaning-se
 import MoveOutCleaningColumbusOhioPage from "./pages/columbus-ohio/move-out-cleaning-services/+Page";
 import PostConstructionCleaningColumbusOhioPage from "./pages/columbus-ohio/post-construction-cleaning-services/+Page";
 import AirbnbCleaningColumbusOhioPage from "./pages/columbus-ohio/airbnb-cleaning-services/+Page";
+import ChurchCleaningColumbusOhioPage from "./pages/columbus-ohio/church-cleaning/+Page";
+import DataCenterCleaningColumbusOhioPage from "./pages/columbus-ohio/data-center-cleaning/+Page";
+import FactoryCleaningColumbusOhioPage from "./pages/columbus-ohio/factory-cleaning/+Page";
+import GovernmentFacilityCleaningColumbusOhioPage from "./pages/columbus-ohio/government-facility-cleaning/+Page";
+import GymCleaningColumbusOhioPage from "./pages/columbus-ohio/gym-cleaning/+Page";
+import IndustrialCleaningColumbusOhioPage from "./pages/columbus-ohio/industrial-cleaning/+Page";
+import MedicalOfficeCleaningColumbusOhioPage from "./pages/columbus-ohio/medical-office-cleaning/+Page";
+import RestaurantCleaningColumbusOhioPage from "./pages/columbus-ohio/restaurant-cleaning/+Page";
+import RetailCleaningColumbusOhioPage from "./pages/columbus-ohio/retail-cleaning/+Page";
+import SchoolCleaningColumbusOhioPage from "./pages/columbus-ohio/school-cleaning/+Page";
+import ShowroomCleaningColumbusOhioPage from "./pages/columbus-ohio/showroom-cleaning/+Page";
+import WarehouseCleaningColumbusOhioPage from "./pages/columbus-ohio/warehouse-cleaning/+Page";
+import SalonSpaCleaningColumbusOhioPage from "./pages/columbus-ohio/salon-spa-cleaning/+Page";
 import ChurchCleaningPage from "./pages/church-cleaning/+Page";
 import DataCenterCleaningPage from "./pages/data-center-cleaning/+Page";
 import FactoryCleaningPage from "./pages/factory-cleaning/+Page";
@@ -245,6 +276,8 @@ const App = () => (
           <Route path="/south-florida/retail-cleaning" element={<RetailCleaningSouthFloridaPage />} />
           <Route path="/south-florida/school-cleaning" element={<SchoolCleaningSouthFloridaPage />} />
           <Route path="/south-florida/showroom-cleaning" element={<ShowroomCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/warehouse-cleaning" element={<WarehouseCleaningSouthFloridaPage />} />
+          <Route path="/south-florida/salon-spa-cleaning" element={<SalonSpaCleaningSouthFloridaPage />} />
           
           {/* Maui Routes */}
           <Route path="/maui" element={<MauiHome />} />
@@ -269,13 +302,6 @@ const App = () => (
           <Route path="/maui/warehouse-cleaning" element={<WarehouseCleaningMauiPage />} />
           <Route path="/maui/salon-spa-cleaning" element={<SalonSpaCleaningMauiPage />} />
           
-          {/* Dallas Routes */}
-          <Route path="/dallas/post-construction-cleaning-services" element={<PostConstructionCleaningDallasPage />} />
-          <Route path="/dallas/airbnb-cleaning-services" element={<AirbnbCleaningDallasPage />} />
-          <Route path="/dallas/move-out-cleaning-services" element={<MoveOutCleaningDallasPage />} />
-          <Route path="/dallas/deep-cleaning-services" element={<DeepCleaningDallasPage />} />
-          <Route path="/dallas/standard-cleaning-services" element={<StandardCleaningDallasPage />} />
-          
           {/* Columbus Ohio Routes */}
           <Route path="/columbus-ohio" element={<ColumbusHome />} />
           <Route path="/columbus-ohio-calculator" element={<ColumbusCalculator />} />
@@ -285,11 +311,48 @@ const App = () => (
           <Route path="/columbus-ohio/move-out-cleaning-services" element={<MoveOutCleaningColumbusOhioPage />} />
           <Route path="/columbus-ohio/post-construction-cleaning-services" element={<PostConstructionCleaningColumbusOhioPage />} />
           <Route path="/columbus-ohio/airbnb-cleaning-services" element={<AirbnbCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/church-cleaning" element={<ChurchCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/data-center-cleaning" element={<DataCenterCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/factory-cleaning" element={<FactoryCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/government-facility-cleaning" element={<GovernmentFacilityCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/gym-cleaning" element={<GymCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/industrial-cleaning" element={<IndustrialCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/medical-office-cleaning" element={<MedicalOfficeCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/restaurant-cleaning" element={<RestaurantCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/retail-cleaning" element={<RetailCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/school-cleaning" element={<SchoolCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/showroom-cleaning" element={<ShowroomCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/warehouse-cleaning" element={<WarehouseCleaningColumbusOhioPage />} />
+          <Route path="/columbus-ohio/salon-spa-cleaning" element={<SalonSpaCleaningColumbusOhioPage />} />
           
           {/* Dallas Routes */}
           <Route path="/dallas" element={<DallasHome />} />
           <Route path="/dallas-calculator" element={<DallasCalculator />} />
           <Route path="/book-now-dallas" element={<DallasBooking />} />
+          <Route path="/dallas/post-construction-cleaning-services" element={<PostConstructionCleaningDallasPage />} />
+          <Route path="/dallas/airbnb-cleaning-services" element={<AirbnbCleaningDallasPage />} />
+          <Route path="/dallas/move-out-cleaning-services" element={<MoveOutCleaningDallasPage />} />
+          <Route path="/dallas/deep-cleaning-services" element={<DeepCleaningDallasPage />} />
+          <Route path="/dallas/standard-cleaning-services" element={<StandardCleaningDallasPage />} />
+          <Route path="/dallas/church-cleaning" element={<ChurchCleaningDallasPage />} />
+          <Route path="/dallas/data-center-cleaning" element={<DataCenterCleaningDallasPage />} />
+          <Route path="/dallas/factory-cleaning" element={<FactoryCleaningDallasPage />} />
+          <Route path="/dallas/government-facility-cleaning" element={<GovernmentFacilityCleaningDallasPage />} />
+          <Route path="/dallas/gym-cleaning" element={<GymCleaningDallasPage />} />
+          <Route path="/dallas/industrial-cleaning" element={<IndustrialCleaningDallasPage />} />
+          <Route path="/dallas/medical-office-cleaning" element={<MedicalOfficeCleaningDallasPage />} />
+          <Route path="/dallas/restaurant-cleaning" element={<RestaurantCleaningDallasPage />} />
+          <Route path="/dallas/retail-cleaning" element={<RetailCleaningDallasPage />} />
+          <Route path="/dallas/school-cleaning" element={<SchoolCleaningDallasPage />} />
+          <Route path="/dallas/showroom-cleaning" element={<ShowroomCleaningDallasPage />} />
+          <Route path="/dallas/warehouse-cleaning" element={<WarehouseCleaningDallasPage />} />
+          <Route path="/dallas/salon-spa-cleaning" element={<SalonSpaCleaningDallasPage />} />
+          
+          {/* Hiring Routes */}
+          <Route path="/hiring-req" element={<HiringRequirements />} />
+          <Route path="/hiring-application-new" element={<HiringApplicationNew />} />
+          <Route path="/sub-contractor-agreement" element={<SubContractorAgreement />} />
+          <Route path="/hiring-application/cleaning-supplies" element={<CleaningSupplies />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

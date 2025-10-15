@@ -43,89 +43,116 @@ const HiringRequirements = () => {
               </div>
 
               <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                <h2 className="text-3xl font-bold mb-6 text-primary">Hiring Requirements</h2>
+                <h2 className="text-3xl font-bold mb-6 text-primary">We Are Hiring</h2>
                 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">Basic Requirements</h3>
+                    <h3 className="text-xl font-semibold mb-4">About the job:</h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      We are searching for highly skilled House Cleaning Technicians, house cleaners, and housekeepers who take pride in their work. You will be responsible for cleaning, vacuuming, washing, dusting, mopping, and sanitizing all areas and surfaces of our clients' homes, apartments, and small offices.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">What does it pay?</h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      We pay an average of $17-$25 per hour. That's about $700-$900 per week plus tips. If working on an active schedule.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">Why work with us?</h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      We believe if our workers are happy, they'll do their work with passion while we help them accomplish their goals and dreams. We also understand what it takes to be a good cleaning technician, which is why we respect, value, and pay very well for great talent.
+                    </p>
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Must be 18 years or older</span>
+                        <span><strong>Get paid and learn:</strong> If you have never cleaned for work before no problem. Your training will be paid ($17/hr. for 25 sessions than $20/hr after) No experience is required. Applicants must be used to physical labor, standing for 6-8 hours a day.</span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Legal authorization to work in the United States</span>
+                        <span><strong>Job Security:</strong> The cleaning industry is considered essential labor! It's the best time to join us, and it's a job that will always be needed.</span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Reliable transportation</span>
+                        <span><strong>Weekly payment via Zelle:</strong> You will receive a weekly payment (direct deposit to your bank account via Zelle).</span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Valid driver's license and insurance (for some positions)</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Pass background check</span>
+                        <span>If you are working on property management assigned jobs, pay period is based on our customer's payment schedule of bi-weekly or monthly. (We will inform you again if we assigned you to these jobs.)</span>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">Desired Qualities</h3>
+                    <h3 className="text-xl font-semibold mb-4">Do I work alone or on a team?</h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      Cleaning jobs are mostly performed by 2 cleaners. For bigger jobs, we send teams of 3 or 4 people. You must have reliable transportation to mobilize to the work sites.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">How do I check my schedule?</h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      We use a scheduling phone application, where you can easily see your daily schedule.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">How do I get paid?</h3>
+                    <p className="text-lg text-gray-700 mb-4">
+                      We pay using Zelle or (Cash App, Venmo, Paypal) to your bank account.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4">Job requirements:</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Strong work ethic and attention to detail</span>
+                        <span>Over 21 years of age</span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Excellent customer service skills</span>
+                        <span>Free of drugs and felonies</span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Ability to work independently and in teams</span>
+                        <span>Authorized to work in the US</span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Physical ability to perform cleaning tasks</span>
+                        <span>Must own a vehicle and smartphone</span>
                       </li>
                       <li className="flex items-start space-x-3">
                         <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Professional appearance and demeanor</span>
+                        <span>Driver's license</span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                        <span>Verifiable work history and references, preferably 1 year or more</span>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                        <span>Excellent attitude and work ethic</span>
                       </li>
                     </ul>
                   </div>
 
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">What We Offer</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Competitive hourly wages</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Flexible scheduling options</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Comprehensive paid training</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Performance bonuses and incentives</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Career advancement opportunities</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>Supportive work environment</span>
-                      </li>
-                    </ul>
+                  <div className="bg-muted/30 p-6 rounded-lg">
+                    <h3 className="text-xl font-semibold mb-4">Job Details</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <p><strong>Location:</strong> South Florida, Las Vegas, Honolulu, Maui, Dallas, Columbus Ohio</p>
+                        <p><strong>Salary:</strong> $17 to $25 hourly</p>
+                        <p><strong>Employment:</strong> Sub-Contractor</p>
+                      </div>
+                      <div>
+                        <p><strong>Experience:</strong> No experience required</p>
+                        <p><strong>Job Type:</strong> Contractor 1099</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -159,17 +186,20 @@ const HiringRequirements = () => {
               <div className="bg-muted/30 p-8 rounded-lg text-center">
                 <h2 className="text-3xl font-bold mb-4">Ready to Apply?</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Contact us today to start your career with Red Rock Cleaning.
+                  Start your application process today and join our team.
                 </p>
                 <div className="space-y-4">
                   <div>
-                    <a href="tel:+18888051733" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                      Call (888) 805-1733
+                    <a href="/hiring-application-new" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                      Apply Now
                     </a>
                   </div>
                   <div>
+                    <a href="tel:+18888051733" className="text-primary hover:underline mr-4">
+                      Call (888) 805-1733
+                    </a>
                     <a href="mailto:office@redrockcleans.com" className="text-primary hover:underline">
-                      Or email: office@redrockcleans.com
+                      Email: office@redrockcleans.com
                     </a>
                   </div>
                 </div>

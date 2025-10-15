@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Clock, Wrench, SprayCan, Construction, Layers, ShieldCheck, GanttChartSquare, Factory, MapPin, Calendar, Warehouse, HardHat, Building2 } from "lucide-react";
+import { Shield, Clock, Wrench, Droplets, Construction, Layers, ShieldCheck, BarChart, Factory, MapPin, Calendar, Warehouse, HardHat, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -515,7 +515,7 @@ const IndustrialCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <SprayCan className="h-12 w-12 text-primary mx-auto mb-4" />
+                      <Droplets className="h-12 w-12 text-primary mx-auto mb-4" />
                       <h3 className="text-xl font-semibold mb-3">Equipment & Machinery Degreasing</h3>
                       <p className="text-muted-foreground">
                         We remove tough grease and grime from production machinery using industrial-strength degreasers and specialized equipment. Our technicians safely clean all types of manufacturing equipment, from CNC machines to assembly lines, ensuring optimal performance and preventing contamination buildup that can lead to costly failures.
@@ -572,7 +572,7 @@ const IndustrialCleaningSouthFloridaPage = () => {
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <GanttChartSquare className="w-8 h-8 text-primary" />
+                    <BarChart className="w-8 h-8 text-primary" />
                   </div>
                   <div className="text-4xl font-bold text-primary mb-2">
                     <CountUp end={500} duration={2} />+

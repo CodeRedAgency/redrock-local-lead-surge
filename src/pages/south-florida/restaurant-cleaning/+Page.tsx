@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ClipboardCheck, Flame, Sparkles, DoorOpen, ChefHat, GlassWater, Droplets, Star, CheckCircle, Utensils, MapPin, Calendar, Dumbbell, Building2, Building } from "lucide-react";
+import { ClipboardCheck, Flame, Sparkles, DoorOpen, ChefHat, Wine, Droplets, Star, CheckCircle, Utensils, MapPin, Calendar, Dumbbell, Building2, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -440,7 +440,7 @@ const RestaurantCleaningSouthFloridaPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-south-florida">
+                  <Link to="/book-now-southflorida">
                     <Calendar className="w-5 h-5 mr-2" />
                     Get Your Free Quote
                   </Link>
@@ -539,7 +539,7 @@ const RestaurantCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <GlassWater className="h-10 w-10 text-primary mx-auto mb-4" />
+                      <Wine className="h-10 w-10 text-primary mx-auto mb-4" />
                       <h3 className="text-lg font-semibold mb-3">Bar Areas</h3>
                       <p className="text-muted-foreground text-sm">
                         Sanitizing taps, cleaning behind the bar, and maintaining floor mats. We ensure all bar equipment is properly cleaned and sanitized, maintaining the highest standards for beverage service.
@@ -684,7 +684,7 @@ const RestaurantCleaningSouthFloridaPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-south-florida">
+                          <Link to="/book-now-southflorida">
                             Get Restaurant Cleaning Quote for {city.name}
                           </Link>
                         </Button>
@@ -814,7 +814,7 @@ const RestaurantCleaningSouthFloridaPage = () => {
               Join hundreds of South Florida restaurants that trust Red Rock Cleans for their cleaning needs
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-south-florida">Get Your Free Restaurant Cleaning Quote</Link>
+              <Link to="/book-now-southflorida">Get Your Free Restaurant Cleaning Quote</Link>
             </Button>
           </div>
         </section>

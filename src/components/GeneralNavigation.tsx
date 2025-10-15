@@ -60,10 +60,10 @@ export const GeneralNavigation = () => {
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
+            <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -161,22 +161,22 @@ export const GeneralNavigation = () => {
                   <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-southflorida">South Florida</Link>
+                  <Link to="/book-now-las-vegas">Pricing for Las Vegas</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-vegas">Las Vegas</Link>
+                  <Link to="/book-now-oahu">Pricing for Oahu</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-honolulu">Oahu</Link>
+                  <Link to="/book-now-maui">Pricing for Maui</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-maui">Maui</Link>
+                  <Link to="/book-now-south-florida">Pricing for South Florida</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-columbus-ohio">Columbus Ohio</Link>
+                  <Link to="/book-now-dallas">Pricing for Dallas</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-dallas">Dallas</Link>
+                  <Link to="/book-now-columbus-ohio">Pricing for Columbus, Ohio</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -311,23 +311,23 @@ export const GeneralNavigation = () => {
                   <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
                     Commercial Cleaning Cost Estimator
                   </Link>
-                  <Link to="/book-now-southflorida" className="block hover:text-primary transition-colors text-sm">
-                    South Florida
+                  <Link to="/book-now-las-vegas" className="block hover:text-primary transition-colors text-sm">
+                    Pricing for Las Vegas
                   </Link>
-                  <Link to="/book-now-vegas" className="block hover:text-primary transition-colors text-sm">
-                    Las Vegas
-                  </Link>
-                  <Link to="/book-now-honolulu" className="block hover:text-primary transition-colors text-sm">
-                    Oahu
+                  <Link to="/book-now-oahu" className="block hover:text-primary transition-colors text-sm">
+                    Pricing for Oahu
                   </Link>
                   <Link to="/book-now-maui" className="block hover:text-primary transition-colors text-sm">
-                    Maui
+                    Pricing for Maui
                   </Link>
-                  <Link to="/book-now-columbus-ohio" className="block hover:text-primary transition-colors text-sm">
-                    Columbus Ohio
+                  <Link to="/book-now-south-florida" className="block hover:text-primary transition-colors text-sm">
+                    Pricing for South Florida
                   </Link>
                   <Link to="/book-now-dallas" className="block hover:text-primary transition-colors text-sm">
-                    Dallas
+                    Pricing for Dallas
+                  </Link>
+                  <Link to="/book-now-columbus-ohio" className="block hover:text-primary transition-colors text-sm">
+                    Pricing for Columbus, Ohio
                   </Link>
                 </div>
               </div>

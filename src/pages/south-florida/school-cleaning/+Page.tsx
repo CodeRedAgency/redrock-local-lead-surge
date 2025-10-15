@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HeartHandshake, BookOpen, BadgeCheck, School, Footprints, Medal, Droplets, Users, Building, Calendar, MapPin, Building2, Stethoscope, Dumbbell } from "lucide-react";
+import { HeartHandshake, BookOpen, BadgeCheck, School, ArrowRight, Medal, Droplets, Users, Building, Calendar, MapPin, Building2, Stethoscope, Dumbbell } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -440,7 +440,7 @@ const SchoolCleaningSouthFloridaPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-south-florida">
+                  <Link to="/book-now-southflorida">
                     <Calendar className="w-5 h-5 mr-2" />
                     Get Your Free Quote
                   </Link>
@@ -527,7 +527,7 @@ const SchoolCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <Footprints className="h-10 w-10 text-primary mx-auto mb-4" />
+                      <ArrowRight className="h-10 w-10 text-primary mx-auto mb-4" />
                       <h3 className="text-lg font-semibold mb-3">Hallways & Common Areas</h3>
                       <p className="text-muted-foreground text-sm">
                         High-traffic floor care including sweeping, mopping, and polishing. Locker cleaning and sanitization, water fountain disinfection, and maintaining the shared spaces where students gather between classes.
@@ -686,7 +686,7 @@ const SchoolCleaningSouthFloridaPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-south-florida">
+                          <Link to="/book-now-southflorida">
                             Get School Cleaning Quote for {city.name}
                           </Link>
                         </Button>
@@ -816,7 +816,7 @@ const SchoolCleaningSouthFloridaPage = () => {
               Join South Florida schools that trust Red Rock Cleans for safe, professional cleaning services
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-south-florida">Get Your Free School Cleaning Quote</Link>
+              <Link to="/book-now-southflorida">Get Your Free School Cleaning Quote</Link>
             </Button>
           </div>
         </section>

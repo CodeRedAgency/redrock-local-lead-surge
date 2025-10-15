@@ -41,11 +41,11 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
-            </Link>
+        <div className="flex items-center justify-between h-24">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
+          </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -78,40 +78,108 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning">Commercial Cleaning</Link>
-                    </DropdownMenuItem>
+                    <DropdownMenuSub>
+                      <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
+                      <DropdownMenuSubContent>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/church-cleaning">
+                            {location.pathname === '/columbus-ohio/church-cleaning' 
+                              ? 'Church Cleaning in Columbus' 
+                              : 'Church Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/data-center-cleaning">
+                            {location.pathname === '/columbus-ohio/data-center-cleaning' 
+                              ? 'Data Center Cleaning in Columbus' 
+                              : 'Data Center Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/factory-cleaning">
+                            {location.pathname === '/columbus-ohio/factory-cleaning' 
+                              ? 'Factory Cleaning in Columbus' 
+                              : 'Factory Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/government-facility-cleaning">
+                            {location.pathname === '/columbus-ohio/government-facility-cleaning' 
+                              ? 'Government Facility Cleaning in Columbus' 
+                              : 'Government Facility Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/industrial-cleaning">
+                            {location.pathname === '/columbus-ohio/industrial-cleaning' 
+                              ? 'Industrial Cleaning Services in Columbus' 
+                              : 'Industrial Cleaning Services'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/school-cleaning">
+                            {location.pathname === '/columbus-ohio/school-cleaning' 
+                              ? 'School Cleaning in Columbus' 
+                              : 'School Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/medical-office-cleaning">
+                            {location.pathname === '/columbus-ohio/medical-office-cleaning' 
+                              ? 'Medical Office Cleaning in Columbus' 
+                              : 'Medical Office Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/gym-cleaning">
+                            {location.pathname === '/columbus-ohio/gym-cleaning' 
+                              ? 'Gym Cleaning in Columbus' 
+                              : 'Gym Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/restaurant-cleaning">
+                            {location.pathname === '/columbus-ohio/restaurant-cleaning' 
+                              ? 'Restaurant Cleaning in Columbus' 
+                              : 'Restaurant Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/retail-cleaning">
+                            {location.pathname === '/columbus-ohio/retail-cleaning' 
+                              ? 'Retail Store Cleaning in Columbus' 
+                              : 'Retail Store Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/showroom-cleaning">
+                            {location.pathname === '/columbus-ohio/showroom-cleaning' 
+                              ? 'Showroom Cleaning in Columbus' 
+                              : 'Showroom Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/warehouse-cleaning">
+                            {location.pathname === '/columbus-ohio/warehouse-cleaning' 
+                              ? 'Warehouse Cleaning in Columbus' 
+                              : 'Warehouse Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/columbus-ohio/salon-spa-cleaning">
+                            {location.pathname === '/columbus-ohio/salon-spa-cleaning' 
+                              ? 'Salon & Spa Cleaning in Columbus' 
+                              : 'Salon & Spa Cleaning'}
+                          </Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuSubContent>
+                    </DropdownMenuSub>
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-              <DropdownMenu>
-                  <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
-                    Pricing <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-southflorida">South Florida</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-vegas">Las Vegas</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-honolulu">Oahu</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-maui">Maui</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-columbus-ohio">Columbus Ohio</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-dallas">Dallas</Link>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+              <Link to="/book-now-columbus-ohio" className="hover:text-primary transition-colors relative z-10">
+                Pricing
+              </Link>
 
               <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
                 Contact
@@ -229,23 +297,78 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                     <Link to="/columbus-ohio/airbnb-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Airbnb Cleaning Services in Columbus Ohio
                     </Link>
-                    <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning
+                    <div className="font-medium text-sm text-muted-foreground mb-1">Commercial Cleaning</div>
+                    <Link to="/columbus-ohio/church-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/church-cleaning' 
+                        ? 'Church Cleaning in Columbus' 
+                        : 'Church Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/data-center-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/data-center-cleaning' 
+                        ? 'Data Center Cleaning in Columbus' 
+                        : 'Data Center Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/factory-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/factory-cleaning' 
+                        ? 'Factory Cleaning in Columbus' 
+                        : 'Factory Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/government-facility-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/government-facility-cleaning' 
+                        ? 'Government Facility Cleaning in Columbus' 
+                        : 'Government Facility Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/industrial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/industrial-cleaning' 
+                        ? 'Industrial Cleaning Services in Columbus' 
+                        : 'Industrial Cleaning Services'}
+                    </Link>
+                    <Link to="/columbus-ohio/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/school-cleaning' 
+                        ? 'School Cleaning in Columbus' 
+                        : 'School Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/medical-office-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/medical-office-cleaning' 
+                        ? 'Medical Office Cleaning in Columbus' 
+                        : 'Medical Office Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/gym-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/gym-cleaning' 
+                        ? 'Gym Cleaning in Columbus' 
+                        : 'Gym Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/restaurant-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/restaurant-cleaning' 
+                        ? 'Restaurant Cleaning in Columbus' 
+                        : 'Restaurant Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/retail-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/retail-cleaning' 
+                        ? 'Retail Store Cleaning in Columbus' 
+                        : 'Retail Store Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/showroom-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/showroom-cleaning' 
+                        ? 'Showroom Cleaning in Columbus' 
+                        : 'Showroom Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/warehouse-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/warehouse-cleaning' 
+                        ? 'Warehouse Cleaning in Columbus' 
+                        : 'Warehouse Cleaning'}
+                    </Link>
+                    <Link to="/columbus-ohio/salon-spa-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === '/columbus-ohio/salon-spa-cleaning' 
+                        ? 'Salon & Spa Cleaning in Columbus' 
+                        : 'Salon & Spa Cleaning'}
                     </Link>
                   </div>
                 </div>
 
-                <div>
-                  <div className="font-medium mb-2">Pricing</div>
-                  <div className="ml-4 space-y-2">
-                    <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning Cost Estimator
-                    </Link>
-                    <Link to="/book-now-columbus-ohio" className="block hover:text-primary transition-colors text-sm">
-                      Columbus Ohio Booking
-                    </Link>
-                  </div>
-                </div>
+                <Link to="/book-now-columbus-ohio" className="block hover:text-primary transition-colors">
+                  Pricing
+                </Link>
 
                 <Link to="/contact" className="block hover:text-primary transition-colors">
                   Contact

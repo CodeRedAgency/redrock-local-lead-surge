@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Microscope, Award, Sofa, Stethoscope, Droplets, Hospital, BadgeCheck, ShieldX, MapPin, Calendar, Building2, School, Building } from "lucide-react";
+import { Shield, Microscope, Award, Sofa, Stethoscope, Droplets, Hospital, BadgeCheck, ShieldCheck, MapPin, Calendar, Building2, School, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -440,7 +440,7 @@ const MedicalOfficeCleaningSouthFloridaPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-south-florida">
+                  <Link to="/book-now-southflorida">
                     <Calendar className="w-5 h-5 mr-2" />
                     Get Your Free Quote
                   </Link>
@@ -586,7 +586,7 @@ const MedicalOfficeCleaningSouthFloridaPage = () => {
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <ShieldX className="w-8 h-8 text-primary" />
+                    <ShieldCheck className="w-8 h-8 text-primary" />
                   </div>
                   <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
                   <h3 className="text-lg font-semibold mb-2">Pathogen Reduction</h3>
@@ -672,7 +672,7 @@ const MedicalOfficeCleaningSouthFloridaPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-south-florida">
+                          <Link to="/book-now-southflorida">
                             Get Medical Office Cleaning Quote for {city.name}
                           </Link>
                         </Button>
@@ -802,7 +802,7 @@ const MedicalOfficeCleaningSouthFloridaPage = () => {
               Join South Florida healthcare providers that trust Red Rock Cleans for professional medical office cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-south-florida">Get Your Free Medical Office Cleaning Quote</Link>
+              <Link to="/book-now-southflorida">Get Your Free Medical Office Cleaning Quote</Link>
             </Button>
           </div>
         </section>

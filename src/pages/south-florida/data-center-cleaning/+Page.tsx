@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Chip, Award, Clock, Grid3x3, Server, SprayCan, Database, TrendingUp, ShieldCheck, MapPin, Calendar, Factory, Building2, Heart } from "lucide-react";
+import { Microchip, Award, Clock, Grid, Server, Sprout, Database, TrendingUp, ShieldCheck, MapPin, Calendar, Factory, Building2, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -467,7 +467,7 @@ const DataCenterCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <Chip className="h-12 w-12 text-primary mx-auto mb-4" />
+                      <Microchip className="h-12 w-12 text-primary mx-auto mb-4" />
                       <h3 className="text-xl font-semibold mb-3">Precision Contamination Control</h3>
                       <p className="text-muted-foreground">
                         Our advanced cleaning methods prevent dust, humidity, and static electricity from compromising your hardware. Using HEPA filtration, anti-static tools, and cleanroom protocols, we eliminate particulate contamination that can cause overheating, short circuits, and premature equipment failure in South Florida's demanding environment.
@@ -515,7 +515,7 @@ const DataCenterCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <Grid3x3 className="h-12 w-12 text-primary mx-auto mb-4" />
+                      <Grid className="h-12 w-12 text-primary mx-auto mb-4" />
                       <h3 className="text-xl font-semibold mb-3">Raised Floor & Sub-Floor Cleaning</h3>
                       <p className="text-muted-foreground">
                         We employ specialized HEPA-filtered vacuuming systems to remove accumulated dust, debris, and particulate matter from beneath raised flooring. Our technicians clean plenum spaces, cable pathways, and sub-floor supports to ensure optimal airflow and prevent contamination from circulating through your cooling systems.
@@ -539,7 +539,7 @@ const DataCenterCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <SprayCan className="h-12 w-12 text-primary mx-auto mb-4" />
+                      <Sprout className="h-12 w-12 text-primary mx-auto mb-4" />
                       <h3 className="text-xl font-semibold mb-3">Environmental Surface Disinfection</h3>
                       <p className="text-muted-foreground">
                         We clean and disinfect all environmental surfaces including walls, ceilings, access doors, windows, and HVAC components using appropriate cleanroom-grade solutions. This comprehensive approach prevents contamination sources from compromising your controlled environment and maintains the integrity of your critical infrastructure space.

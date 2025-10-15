@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Diamond, Sparkles, Handshake, SprayCan, Square, Car, Sofa, Users, DollarSign, Search, MapPin, Calendar, ShoppingBag, Utensils, Building } from "lucide-react";
+import { Diamond, Sparkles, Handshake, Droplets, Square, Car, Sofa, Users, DollarSign, Search, MapPin, Calendar, ShoppingBag, Utensils, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -440,7 +440,7 @@ const ShowroomCleaningSouthFloridaPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-south-florida">
+                  <Link to="/book-now-southflorida">
                     <Calendar className="w-5 h-5 mr-2" />
                     Get Your Free Quote
                   </Link>
@@ -515,7 +515,7 @@ const ShowroomCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <SprayCan className="h-10 w-10 text-primary mx-auto mb-4" />
+                      <Droplets className="h-10 w-10 text-primary mx-auto mb-4" />
                       <h3 className="text-lg font-semibold mb-3">Floor Care & Polishing</h3>
                       <p className="text-muted-foreground text-sm">
                         Specialized care for tile, concrete, or hardwood floors using professional polishing equipment. We achieve the mirror-like finish that luxury showrooms demand, reflecting products beautifully.
@@ -684,7 +684,7 @@ const ShowroomCleaningSouthFloridaPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-south-florida">
+                          <Link to="/book-now-southflorida">
                             Get Showroom Cleaning Quote for {city.name}
                           </Link>
                         </Button>
@@ -814,7 +814,7 @@ const ShowroomCleaningSouthFloridaPage = () => {
               Join South Florida showrooms that trust Red Rock Cleans for pristine product displays
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-south-florida">Get Your Free Showroom Cleaning Quote</Link>
+              <Link to="/book-now-southflorida">Get Your Free Showroom Cleaning Quote</Link>
             </Button>
           </div>
         </section>

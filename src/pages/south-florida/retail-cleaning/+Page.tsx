@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Sparkles, ShoppingCart, Shirt, Store, AppWindow, PictureInPicture, Archive, Users, Star, Clock, MapPin, Calendar, Building, Utensils, Dumbbell } from "lucide-react";
+import { Sparkles, ShoppingCart, Shirt, Store, DoorClosed, Frame, Archive, Users, Star, Clock, MapPin, Calendar, Building, Utensils, Dumbbell } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -440,7 +440,7 @@ const RetailCleaningSouthFloridaPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-south-florida">
+                  <Link to="/book-now-southflorida">
                     <Calendar className="w-5 h-5 mr-2" />
                     Get Your Free Quote
                   </Link>
@@ -527,7 +527,7 @@ const RetailCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <AppWindow className="h-10 w-10 text-primary mx-auto mb-4" />
+                      <DoorClosed className="h-10 w-10 text-primary mx-auto mb-4" />
                       <h3 className="text-lg font-semibold mb-3">Fitting Rooms & Restrooms</h3>
                       <p className="text-muted-foreground text-sm">
                         Maintaining the highest standards of hygiene in these critical spaces. Thorough sanitization of all surfaces, mirrors, benches, and fixtures to ensure customer comfort and confidence throughout their shopping experience.
@@ -539,7 +539,7 @@ const RetailCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <PictureInPicture className="h-10 w-10 text-primary mx-auto mb-4" />
+                      <Frame className="h-10 w-10 text-primary mx-auto mb-4" />
                       <h3 className="text-lg font-semibold mb-3">Windows & Storefront</h3>
                       <p className="text-muted-foreground text-sm">
                         Streak-free glass cleaning that maximizes visibility and curb appeal. Professional techniques ensure your windows sparkle, your merchandise is showcased attractively, and your storefront invites customers inside.
@@ -686,7 +686,7 @@ const RetailCleaningSouthFloridaPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-south-florida">
+                          <Link to="/book-now-southflorida">
                             Get Retail Cleaning Quote for {city.name}
                           </Link>
                         </Button>
@@ -816,7 +816,7 @@ const RetailCleaningSouthFloridaPage = () => {
               Join South Florida retailers that trust Red Rock Cleans for pristine stores that drive sales
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-south-florida">Get Your Free Retail Cleaning Quote</Link>
+              <Link to="/book-now-southflorida">Get Your Free Retail Cleaning Quote</Link>
             </Button>
           </div>
         </section>

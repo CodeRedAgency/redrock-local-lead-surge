@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Dumbbell, ShowerHead, Shield, Bike, Droplets, PersonStanding, Users, ThumbsUp, ShieldX, Trophy, MapPin, Calendar, Heart, ShoppingBag, GraduationCap } from "lucide-react";
+import { Dumbbell, ShowerHead, Shield, Bike, Droplets, User, Users, ThumbsUp, ShieldCheck, Trophy, MapPin, Calendar, Heart, ShoppingBag, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -539,7 +539,7 @@ const GymCleaningSouthFloridaPage = () => {
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                   <CardContent className="p-6">
                     <div className="text-center">
-                      <PersonStanding className="h-10 w-10 text-primary mx-auto mb-4" />
+                      <User className="h-10 w-10 text-primary mx-auto mb-4" />
                       <h3 className="text-lg font-semibold mb-3">Group Fitness Studios</h3>
                       <p className="text-muted-foreground text-sm">
                         Specialized cleaning of yoga, spin, and group fitness studios including hardwood floors, mirrors, props, equipment, and sound systems with appropriate products for each surface type.
@@ -586,7 +586,7 @@ const GymCleaningSouthFloridaPage = () => {
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <ShieldX className="w-8 h-8 text-primary" />
+                    <ShieldCheck className="w-8 h-8 text-primary" />
                   </div>
                   <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
                   <h3 className="text-lg font-semibold mb-2">Germ Reduction</h3>

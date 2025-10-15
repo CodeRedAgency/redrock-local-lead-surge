@@ -52,10 +52,10 @@ export const Navigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookin
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
+            <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

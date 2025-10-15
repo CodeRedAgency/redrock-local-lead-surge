@@ -30,86 +30,200 @@ const FAQ = () => {
               <Accordion type="single" collapsible className="space-y-4">
                 <AccordionItem value="item-1" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    What services do you offer?
+                    What is included in a standard cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    We offer comprehensive residential and commercial cleaning services including regular house cleaning, 
-                    deep cleaning, move-in/move-out cleaning, vacation rental cleaning, and office cleaning. Each service 
-                    is customizable to meet your specific needs.
+                    Our standard cleaning covers all essential areas of your home or apartment, including:
+                    <ul className="mt-2 space-y-1">
+                      <li>• Cleaning and vacuuming floors</li>
+                      <li>• Cleaning bathrooms</li>
+                      <li>• Cleaning the kitchen</li>
+                      <li>• Cleaning the living room</li>
+                      <li>• Dusting surfaces</li>
+                    </ul>
+                    Additional services, such as cleaning inside the fridge or oven, can be selected during the booking process.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    How much do your services cost?
+                    Is a long-term contract required for service?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Pricing varies by location and service type. We offer instant quotes through our online calculator. 
-                    Simply select your location and answer a few questions about your space to get an accurate price estimate.
+                    No, we offer flexible services without long-term contracts or obligations.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    Are your cleaning products safe?
+                    How long have you been cleaning homes?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Yes! We use eco-friendly, non-toxic cleaning products that are safe for children, pets, and the environment. 
-                    If you have specific product preferences or allergies, please let us know when booking.
+                    We have been providing professional house cleaning services since 2019.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    Do I need to be home during the cleaning?
+                    Are you insured?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    No, you don't need to be present during the cleaning. Many of our clients provide us with access 
-                    instructions and go about their day. Our team is fully bonded and insured for your peace of mind.
+                    Yes, Red Rock Cleaning is fully insured with $1,000,000 liability insurance to protect your home and provide peace of mind.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    How do I schedule a cleaning?
+                    What areas do you service?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    You can easily schedule a cleaning through our online booking system. Select your location, 
-                    get a quote, choose your preferred date and time, and complete the booking. We'll send you 
-                    a confirmation and reminder before your scheduled service.
+                    We provide cleaning services in the following locations:
+                    <ul className="mt-2 space-y-1">
+                      <li>• Fort Lauderdale, FL (South Florida)</li>
+                      <li>• Las Vegas, NV</li>
+                      <li>• Honolulu, HI (Oahu)</li>
+                      <li>• Maui, HI</li>
+                      <li>• Dallas, TX</li>
+                      <li>• Columbus, OH</li>
+                    </ul>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-6" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    What if I'm not satisfied with the cleaning?
+                    What is green home cleaning?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Your satisfaction is our priority. If you're not completely happy with our service, please contact us 
-                    within 24 hours and we'll make it right. We stand behind our work with a satisfaction guarantee.
+                    We offer eco-friendly house cleaning at no extra charge, using natural cleaning products instead of harsh chemicals.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-7" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    Do you provide cleaning supplies and equipment?
+                    Do you provide the cleaning supplies?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Yes, we bring all necessary cleaning supplies and equipment. However, if you prefer we use specific 
-                    products or your own supplies, we're happy to accommodate that request.
+                    Yes, we furnish all necessary cleaning supplies free of charge.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-8" className="bg-card px-6 rounded-lg">
                   <AccordionTrigger className="text-lg font-semibold">
-                    Can I book recurring cleaning services?
+                    What should I expect on my first appointment?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Absolutely! We offer weekly, bi-weekly, and monthly recurring cleaning services. Regular service 
-                    clients often receive special pricing and priority scheduling.
+                    Our team will arrive equipped with all necessary supplies and equipment. The first appointment may take longer as we familiarize ourselves with your home. Subsequent appointments will be more efficient.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-9" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    Do I need to do anything before you arrive?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    To maximize efficiency, we recommend straightening up as much as possible so our cleaners can focus on cleaning rather than organizing.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-10" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    Will I have the same cleaning person each visit?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    We strive to provide the same cleaning professional for each visit. If your regular cleaner is unavailable, we will assign a suitable replacement.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-11" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    Do I need to be home during the cleaning?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    It's up to you. Some clients prefer to be home, while others schedule cleanings while they're away. Either way, you can expect superior service.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-12" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    Can I skip or reschedule an appointment?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Yes, please provide at least 24 hours' notice to reschedule or cancel an appointment.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-13" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    How will you enter my home on the scheduled day?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    We can enter your home in the way you feel most comfortable:
+                    <ul className="mt-2 space-y-1">
+                      <li>• You may provide us with a key</li>
+                      <li>• Leave a key under a doormat on the day of cleaning</li>
+                      <li>• Provide us with the garage code</li>
+                      <li>• Leave the door unlocked on the day of cleaning</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-14" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    What if I am not satisfied with my cleaning?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Your satisfaction is very important to us. If you're not satisfied, please contact us within 24 hours, and we will return to re-clean the area at no cost to you.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-15" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    Do you offer house cleaning gift certificates?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Yes, you can purchase cleaning gift certificates for various occasions.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-16" className="bg-card px-6 rounded-lg">
+                  <AccordionTrigger className="text-lg font-semibold">
+                    How and when do I pay for my cleaning services?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Payment is required at the time of service. We accept most major credit cards, debit cards, Zelle, and cash.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+
+              <div className="mt-12 p-6 bg-primary/10 rounded-lg border border-primary/20">
+                <h2 className="text-2xl font-bold text-center mb-4">Eco-Quality Service – It's Our Guarantee</h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-primary">Professional</h3>
+                    <p className="text-sm text-muted-foreground">Trained & experienced cleaners</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-primary">Affordable</h3>
+                    <p className="text-sm text-muted-foreground">Competitive pricing</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-primary">Screened</h3>
+                    <p className="text-sm text-muted-foreground">Background checked staff</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-primary">Secured</h3>
+                    <p className="text-sm text-muted-foreground">$1M liability insurance</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-primary">Bonded</h3>
+                    <p className="text-sm text-muted-foreground">Fully bonded team</p>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-primary">Licensed</h3>
+                    <p className="text-sm text-muted-foreground">Properly licensed business</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>

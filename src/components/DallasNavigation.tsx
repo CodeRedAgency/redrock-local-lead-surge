@@ -41,11 +41,11 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
-            </Link>
+        <div className="flex items-center justify-between h-24">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
+          </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -78,40 +78,82 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning">Commercial Cleaning</Link>
-                    </DropdownMenuItem>
+                    <DropdownMenuSub>
+                      <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
+                      <DropdownMenuSubContent>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/church-cleaning">
+                            {location.pathname === "/dallas/church-cleaning" ? "Church Cleaning in Dallas" : "Church Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/data-center-cleaning">
+                            {location.pathname === "/dallas/data-center-cleaning" ? "Data Center Cleaning in Dallas" : "Data Center Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/factory-cleaning">
+                            {location.pathname === "/dallas/factory-cleaning" ? "Factory Cleaning in Dallas" : "Factory Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/government-facility-cleaning">
+                            {location.pathname === "/dallas/government-facility-cleaning" ? "Government Facility Cleaning in Dallas" : "Government Facility Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/school-cleaning">
+                            {location.pathname === "/dallas/school-cleaning" ? "School Cleaning in Dallas" : "School Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/medical-office-cleaning">
+                            {location.pathname === "/dallas/medical-office-cleaning" ? "Medical Office Cleaning in Dallas" : "Medical Office Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/restaurant-cleaning">
+                            {location.pathname === "/dallas/restaurant-cleaning" ? "Restaurant Cleaning in Dallas" : "Restaurant Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/retail-cleaning">
+                            {location.pathname === "/dallas/retail-cleaning" ? "Retail Store Cleaning in Dallas" : "Retail Store Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/showroom-cleaning">
+                            {location.pathname === "/dallas/showroom-cleaning" ? "Showroom Cleaning in Dallas" : "Showroom Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/gym-cleaning">
+                            {location.pathname === "/dallas/gym-cleaning" ? "Gym Cleaning in Dallas" : "Gym Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/industrial-cleaning">
+                            {location.pathname === "/dallas/industrial-cleaning" ? "Industrial Cleaning Services in Dallas" : "Industrial Cleaning Services"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/warehouse-cleaning">
+                            {location.pathname === "/dallas/warehouse-cleaning" ? "Warehouse Cleaning in Dallas" : "Warehouse Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dallas/salon-spa-cleaning">
+                            {location.pathname === "/dallas/salon-spa-cleaning" ? "Salon & Spa Cleaning in Dallas" : "Salon & Spa Cleaning"}
+                          </Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuSubContent>
+                    </DropdownMenuSub>
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-              <DropdownMenu>
-                  <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
-                    Pricing <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-southflorida">South Florida</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-vegas">Las Vegas</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-honolulu">Oahu</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-maui">Maui</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-columbus-ohio">Columbus Ohio</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-dallas">Dallas</Link>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+              <Link to="/book-now-dallas" className="hover:text-primary transition-colors relative z-10">
+                Pricing
+              </Link>
 
               <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
                 Contact
@@ -217,23 +259,52 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
                     <Link to="/dallas/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                       Post Construction Cleaning Services in Dallas
                     </Link>
-                    <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning
+                    <div className="font-medium text-sm text-muted-foreground mt-2 mb-1">Commercial Cleaning</div>
+                    <Link to="/dallas/church-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/church-cleaning" ? "Church Cleaning in Dallas" : "Church Cleaning"}
+                    </Link>
+                    <Link to="/dallas/data-center-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/data-center-cleaning" ? "Data Center Cleaning in Dallas" : "Data Center Cleaning"}
+                    </Link>
+                    <Link to="/dallas/factory-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/factory-cleaning" ? "Factory Cleaning in Dallas" : "Factory Cleaning"}
+                    </Link>
+                    <Link to="/dallas/government-facility-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/government-facility-cleaning" ? "Government Facility Cleaning in Dallas" : "Government Facility Cleaning"}
+                    </Link>
+                    <Link to="/dallas/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/school-cleaning" ? "School Cleaning in Dallas" : "School Cleaning"}
+                    </Link>
+                    <Link to="/dallas/medical-office-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/medical-office-cleaning" ? "Medical Office Cleaning in Dallas" : "Medical Office Cleaning"}
+                    </Link>
+                    <Link to="/dallas/restaurant-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/restaurant-cleaning" ? "Restaurant Cleaning in Dallas" : "Restaurant Cleaning"}
+                    </Link>
+                    <Link to="/dallas/retail-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/retail-cleaning" ? "Retail Store Cleaning in Dallas" : "Retail Store Cleaning"}
+                    </Link>
+                    <Link to="/dallas/showroom-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/showroom-cleaning" ? "Showroom Cleaning in Dallas" : "Showroom Cleaning"}
+                    </Link>
+                    <Link to="/dallas/gym-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/gym-cleaning" ? "Gym Cleaning in Dallas" : "Gym Cleaning"}
+                    </Link>
+                    <Link to="/dallas/industrial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/industrial-cleaning" ? "Industrial Cleaning Services in Dallas" : "Industrial Cleaning Services"}
+                    </Link>
+                    <Link to="/dallas/warehouse-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/warehouse-cleaning" ? "Warehouse Cleaning in Dallas" : "Warehouse Cleaning"}
+                    </Link>
+                    <Link to="/dallas/salon-spa-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      {location.pathname === "/dallas/salon-spa-cleaning" ? "Salon & Spa Cleaning in Dallas" : "Salon & Spa Cleaning"}
                     </Link>
                   </div>
                 </div>
 
-                <div>
-                  <div className="font-medium mb-2">Pricing</div>
-                  <div className="ml-4 space-y-2">
-                    <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning Cost Estimator
-                    </Link>
-                    <Link to="/book-now-dallas" className="block hover:text-primary transition-colors text-sm">
-                      Dallas Booking
-                    </Link>
-                  </div>
-                </div>
+                <Link to="/book-now-dallas" className="block hover:text-primary transition-colors">
+                  Pricing
+                </Link>
 
                 <Link to="/contact" className="block hover:text-primary transition-colors">
                   Contact

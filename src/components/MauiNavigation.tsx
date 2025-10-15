@@ -41,11 +41,11 @@ export const MauiNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
-            </Link>
+        <div className="flex items-center justify-between h-24">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
+          </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -125,34 +125,9 @@ export const MauiNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-              <DropdownMenu>
-                  <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
-                    Pricing <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-southflorida">South Florida</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-vegas">Las Vegas</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-honolulu">Oahu</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-maui">Maui</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-columbus-ohio">Columbus Ohio</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-dallas">Dallas</Link>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+              <Link to="/book-now-maui" className="hover:text-primary transition-colors relative z-10">
+                Pricing
+              </Link>
 
               <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
                 Contact
@@ -307,17 +282,9 @@ export const MauiNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bo
                   </div>
                 </div>
 
-                <div>
-                  <div className="font-medium mb-2">Pricing</div>
-                  <div className="ml-4 space-y-2">
-                    <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning Cost Estimator
-                    </Link>
-                    <Link to="/book-now-maui" className="block hover:text-primary transition-colors text-sm">
-                      Maui Booking
-                    </Link>
-                  </div>
-                </div>
+                <Link to="/book-now-maui" className="block hover:text-primary transition-colors">
+                  Pricing
+                </Link>
 
                 <Link to="/contact" className="block hover:text-primary transition-colors">
                   Contact

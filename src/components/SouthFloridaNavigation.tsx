@@ -38,11 +38,11 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <img src={logo} alt="Red Rock Cleans" className="h-8 w-auto" />
-            </Link>
+        <div className="flex items-center justify-between h-24">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
+          </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -80,57 +80,67 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                       <DropdownMenuSubContent>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/church-cleaning">
-                            {location.pathname === '/south-florida/church-cleaning' ? 'Church Cleaning in South Florida' : 'Church Cleaning'}
+                            Church Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/data-center-cleaning">
-                            {location.pathname === '/south-florida/data-center-cleaning' ? 'Data Center Cleaning in South Florida' : 'Data Center Cleaning'}
+                            Data Center Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/factory-cleaning">
-                            {location.pathname === '/south-florida/factory-cleaning' ? 'Factory Cleaning in South Florida' : 'Factory Cleaning'}
+                            Factory Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/government-facility-cleaning">
-                            {location.pathname === '/south-florida/government-facility-cleaning' ? 'Government Facility Cleaning in South Florida' : 'Government Facility Cleaning'}
+                            Government Facility Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/gym-cleaning">
-                            {location.pathname === '/south-florida/gym-cleaning' ? 'Gym Cleaning in South Florida' : 'Gym Cleaning'}
+                            Gym Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/industrial-cleaning">
-                            {location.pathname === '/south-florida/industrial-cleaning' ? 'Industrial Cleaning Services in South Florida' : 'Industrial Cleaning Services'}
+                            Industrial Cleaning Services in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/medical-office-cleaning">
-                            {location.pathname === '/south-florida/medical-office-cleaning' ? 'Medical Office Cleaning in South Florida' : 'Medical Office Cleaning'}
+                            Medical Office Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/restaurant-cleaning">
-                            {location.pathname === '/south-florida/restaurant-cleaning' ? 'Restaurant Cleaning in South Florida' : 'Restaurant Cleaning'}
+                            Restaurant Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/retail-cleaning">
-                            {location.pathname === '/south-florida/retail-cleaning' ? 'Retail Store Cleaning in South Florida' : 'Retail Store Cleaning'}
+                            Retail Store Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/school-cleaning">
-                            {location.pathname === '/south-florida/school-cleaning' ? 'School Cleaning in South Florida' : 'School Cleaning'}
+                            School Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/south-florida/showroom-cleaning">
-                            {location.pathname === '/south-florida/showroom-cleaning' ? 'Showroom Cleaning in South Florida' : 'Showroom Cleaning'}
+                            Showroom Cleaning in South Florida
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/south-florida/warehouse-cleaning">
+                            Warehouse Cleaning in South Florida
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/south-florida/salon-spa-cleaning">
+                            Salon & Spa Cleaning in South Florida
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
@@ -138,34 +148,9 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-              <DropdownMenu>
-                  <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
-                    Pricing <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-southflorida">South Florida</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-vegas">Las Vegas</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-honolulu">Oahu</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-maui">Maui</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-columbus-ohio">Columbus Ohio</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/book-now-dallas">Dallas</Link>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+              <Link to="/book-now-south-florida" className="hover:text-primary transition-colors relative z-10">
+                Pricing
+              </Link>
 
               <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
                 Contact
@@ -309,52 +294,50 @@ export const SouthFloridaNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: st
                     </Link>
                     <div className="font-medium text-sm text-muted-foreground mb-1 mt-2">Commercial Cleaning</div>
                     <Link to="/south-florida/church-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/church-cleaning' ? 'Church Cleaning in South Florida' : 'Church Cleaning'}
+                      Church Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/data-center-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/data-center-cleaning' ? 'Data Center Cleaning in South Florida' : 'Data Center Cleaning'}
+                      Data Center Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/factory-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/factory-cleaning' ? 'Factory Cleaning in South Florida' : 'Factory Cleaning'}
+                      Factory Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/government-facility-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/government-facility-cleaning' ? 'Government Facility Cleaning in South Florida' : 'Government Facility Cleaning'}
+                      Government Facility Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/gym-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/gym-cleaning' ? 'Gym Cleaning in South Florida' : 'Gym Cleaning'}
+                      Gym Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/industrial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/industrial-cleaning' ? 'Industrial Cleaning Services in South Florida' : 'Industrial Cleaning Services'}
+                      Industrial Cleaning Services in South Florida
                     </Link>
                     <Link to="/south-florida/medical-office-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/medical-office-cleaning' ? 'Medical Office Cleaning in South Florida' : 'Medical Office Cleaning'}
+                      Medical Office Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/restaurant-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/restaurant-cleaning' ? 'Restaurant Cleaning in South Florida' : 'Restaurant Cleaning'}
+                      Restaurant Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/retail-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/retail-cleaning' ? 'Retail Store Cleaning in South Florida' : 'Retail Store Cleaning'}
+                      Retail Store Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/school-cleaning' ? 'School Cleaning in South Florida' : 'School Cleaning'}
+                      School Cleaning in South Florida
                     </Link>
                     <Link to="/south-florida/showroom-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/south-florida/showroom-cleaning' ? 'Showroom Cleaning in South Florida' : 'Showroom Cleaning'}
+                      Showroom Cleaning in South Florida
+                    </Link>
+                    <Link to="/south-florida/warehouse-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Warehouse Cleaning in South Florida
+                    </Link>
+                    <Link to="/south-florida/salon-spa-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
+                      Salon & Spa Cleaning in South Florida
                     </Link>
                   </div>
                 </div>
 
-                <div>
-                  <div className="font-medium mb-2">Pricing</div>
-                  <div className="ml-4 space-y-2">
-                    <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
-                      Commercial Cleaning Cost Estimator
-                    </Link>
-                    <Link to="/book-now-southflorida" className="block hover:text-primary transition-colors text-sm">
-                      South Florida Booking
-                    </Link>
-                  </div>
-                </div>
+                <Link to="/book-now-south-florida" className="block hover:text-primary transition-colors">
+                  Pricing
+                </Link>
 
                 <Link to="/contact" className="block hover:text-primary transition-colors">
                   Contact
