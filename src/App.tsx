@@ -232,11 +232,13 @@ const App = () => (
           <Route path="/south-florida" element={<SouthFloridaHome />} />
           <Route path="/south-florida-calculator" element={<SouthFloridaCalculator />} />
           <Route path="/book-now-southflorida" element={<SouthFloridaBooking />} />
+          <Route path="/book-now-south-florida" element={<SouthFloridaBooking />} />
           
           {/* Las Vegas Routes */}
           <Route path="/las-vegas" element={<LasVegasHome />} />
           <Route path="/las-vegas-calculator" element={<LasVegasCalculator />} />
           <Route path="/book-now-vegas" element={<LasVegasBooking />} />
+          <Route path="/book-now-las-vegas" element={<LasVegasBooking />} />
           
           {/* Oahu Routes */}
           <Route path="/oahu" element={<OahuHome />} />
