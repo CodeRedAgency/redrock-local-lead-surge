@@ -233,6 +233,25 @@ export const GeneralNavigation = () => {
         {isOpen && (
           <div className="md:hidden border-t">
             <nav className="py-4 space-y-4">
+              {/* Mobile Location Selector - Centered at Top */}
+              <div className="flex justify-center items-center pb-4 border-b border-border mb-4">
+                <div className="flex items-center space-x-2">
+                  <MapPin className="w-4 h-4 text-primary" />
+                  <Select value={location.pathname} onValueChange={handleLocationChange}>
+                    <SelectTrigger className="w-48 border-primary/20">
+                      <SelectValue>{getCurrentLocationName()}</SelectValue>
+                    </SelectTrigger>
+                    <SelectContent>
+                      {locations.map((locationItem) => (
+                        <SelectItem key={locationItem.path} value={locationItem.path}>
+                          {locationItem.name}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+
               <Link to="/" className="block hover:text-primary transition-colors">
                 Home
               </Link>
