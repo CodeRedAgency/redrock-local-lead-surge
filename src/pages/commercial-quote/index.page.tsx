@@ -188,6 +188,14 @@ export default function CommercialQuotePage() {
                               </button>
                             ))}
                           </div>
+                          <div className="mt-6 text-sm text-muted-foreground">
+                            <p className="font-medium mb-2">What do “Open”, “Standard”, and “Dense” mean?</p>
+                            <ul className="list-disc ml-5 space-y-1">
+                              <li><span className="font-semibold">Open</span>: Large, open layouts with few partitions and obstacles (e.g., warehouses, showrooms). Faster to service.</li>
+                              <li><span className="font-semibold">Standard</span>: Typical office-style layout with a mix of rooms, hallways, furniture, and open areas.</li>
+                              <li><span className="font-semibold">Dense</span>: Many small rooms/equipment and high-touch areas (e.g., medical clinics, restaurant BOH). Slower, more detail-oriented.</li>
+                            </ul>
+                          </div>
                         </div>
                       )}
 
