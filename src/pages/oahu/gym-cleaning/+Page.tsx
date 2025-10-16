@@ -680,7 +680,7 @@ const GymCleaningOahuPage = () => {
               Join dozens of Oahu fitness centers that trust Red Rock Cleans for their hygiene and cleanliness needs
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-oahu">Get Your Free Gym Cleaning Quote</Link>
+              <Link to="/commercial-quote?location=oahu">Get Your Free Gym Cleaning Quote</Link>
             </Button>
           </div>
         </section>

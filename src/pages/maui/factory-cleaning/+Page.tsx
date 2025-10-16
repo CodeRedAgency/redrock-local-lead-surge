@@ -615,7 +615,7 @@ const FactoryCleaningMauiPage = () => {
               Join Maui's leading manufacturers who trust Red Rock Cleans for professional factory cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-maui">Get Your Free Factory Cleaning Quote</Link>
+              <Link to="/commercial-quote?location=maui">Get Your Free Factory Cleaning Quote</Link>
             </Button>
           </div>
         </section>

@@ -670,7 +670,7 @@ const GovernmentFacilityCleaningOahuPage = () => {
               Join dozens of Oahu government facilities that trust Red Rock Cleans for their secure cleaning needs
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-oahu">Get Your Free Government Cleaning Quote</Link>
+              <Link to="/commercial-quote?location=oahu">Get Your Free Government Cleaning Quote</Link>
             </Button>
           </div>
         </section>

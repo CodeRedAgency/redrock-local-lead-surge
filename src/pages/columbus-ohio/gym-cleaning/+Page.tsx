@@ -678,7 +678,7 @@ const GymCleaningColumbusOhioPage = () => {
               Join Columbus fitness centers that trust Red Rock Cleans for professional, hygienic gym cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-columbus-ohio">Get Your Free Gym Cleaning Quote</Link>
+              <Link to="/commercial-quote?location=columbus-ohio">Get Your Free Gym Cleaning Quote</Link>
             </Button>
           </div>
         </section>

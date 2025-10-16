@@ -814,7 +814,7 @@ const ShowroomCleaningSouthFloridaPage = () => {
               Join South Florida showrooms that trust Red Rock Cleans for pristine product displays
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Showroom Cleaning Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Showroom Cleaning Quote</Link>
             </Button>
           </div>
         </section>

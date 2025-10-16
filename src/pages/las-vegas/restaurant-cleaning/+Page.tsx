@@ -758,7 +758,7 @@ const RestaurantCleaningLasVegasPage = () => {
               Join hundreds of Las Vegas restaurants that trust Red Rock Cleans for their cleaning needs
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-las-vegas">Get Your Free Restaurant Cleaning Quote</Link>
+              <Link to="/commercial-quote?location=las-vegas">Get Your Free Restaurant Cleaning Quote</Link>
             </Button>
           </div>
         </section>

@@ -682,7 +682,7 @@ const FactoryCleaningOahuPage = () => {
               Join hundreds of Oahu factories that trust Red Rock Cleans for their industrial cleaning needs
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-oahu">Get Your Free Factory Cleaning Quote</Link>
+              <Link to="/commercial-quote?location=oahu">Get Your Free Factory Cleaning Quote</Link>
             </Button>
           </div>
         </section>

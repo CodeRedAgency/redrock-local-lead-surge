@@ -531,7 +531,7 @@ const ChurchCleaningColumbusOhioPage = () => {
               Join Columbus congregations that trust Red Rock Cleans for respectful, professional church cleaning services
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-columbus-ohio">Get Your Free Church Cleaning Quote</Link>
+              <Link to="/commercial-quote?location=columbus-ohio">Get Your Free Church Cleaning Quote</Link>
             </Button>
           </div>
         </section>
