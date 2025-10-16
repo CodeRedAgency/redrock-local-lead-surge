@@ -211,7 +211,7 @@ Red Rock Cleaning Website
                       <input
                         type="text"
                         id="addressLine"
-                        name="address-line"
+                        name="addressLine"
                         value={signatureData.addressLine || ''}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
@@ -256,7 +256,7 @@ Red Rock Cleaning Website
                       <input
                         type="text"
                         id="zipCode"
-                        name="zip-code"
+                        name="zipCode"
                         value={signatureData.zipCode || ''}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
@@ -273,7 +273,7 @@ Red Rock Cleaning Website
                       <input
                         type="text"
                         id="firstName"
-                        name="first-name"
+                        name="firstName"
                         value={signatureData.firstName || ''}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
@@ -287,7 +287,7 @@ Red Rock Cleaning Website
                       <input
                         type="text"
                         id="lastName"
-                        name="last-name"
+                        name="lastName"
                         value={signatureData.lastName || ''}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
