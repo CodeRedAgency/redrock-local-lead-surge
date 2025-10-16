@@ -135,6 +135,9 @@ export const GeneralNavigation = () => {
                       <Link to="/commercial-cleaning-time-estimator">Commercial Cleaning Time Estimator</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
+                      <Link to="/commercial-cleaning-cost-estimator">Commercial Cleaning Cost Estimator</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                       <Link to="/church-cleaning">Church Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>

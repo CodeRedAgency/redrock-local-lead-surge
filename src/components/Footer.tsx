@@ -225,6 +225,12 @@ export const Footer = () => {
                     Blog
                   </Link>
                   <Link 
+                    to="/commercial-cleaning-cost-estimator" 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    Commercial Cleaning Cost Estimator
+                  </Link>
+                  <Link 
                     to="/commercial-cleaning-time-estimator" 
                     className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                   >

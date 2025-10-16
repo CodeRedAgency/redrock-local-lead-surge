@@ -25,6 +25,7 @@ import PostConstruction from "./pages/PostConstruction";
 import MoveOutCleaning from "./pages/MoveOutCleaning";
 import CommercialCleaningEstimator from "./pages/CommercialCleaningEstimator";
 import CommercialCleaningTimeEstimatorPage from "./pages/commercial-cleaning-time-estimator/index.page";
+import CommercialCleaningCostEstimatorPage from "./pages/commercial-cleaning-cost-estimator/index.page";
 import AirbnbCleaningLasVegasPage from "./pages/las-vegas/airbnb-cleaning-services/+Page";
 import StandardCleaningLasVegasPage from "./pages/las-vegas/standard-cleaning-services/+Page";
 import DeepCleaningLasVegasPage from "./pages/las-vegas/deep-cleaning-services/+Page";
@@ -206,6 +207,7 @@ const App = () => (
           <Route path="/move-out-cleaning-services" element={<MoveOutCleaning />} />
           <Route path="/commercial-cleaning-estimator" element={<CommercialCleaningEstimator />} />
           <Route path="/commercial-cleaning-time-estimator" element={<CommercialCleaningTimeEstimatorPage />} />
+          <Route path="/commercial-cleaning-cost-estimator" element={<CommercialCleaningCostEstimatorPage />} />
           <Route path="/las-vegas/airbnb-cleaning-services" element={<AirbnbCleaningLasVegasPage />} />
           <Route path="/las-vegas/standard-cleaning-services" element={<StandardCleaningLasVegasPage />} />
           <Route path="/las-vegas/deep-cleaning-services" element={<DeepCleaningLasVegasPage />} />
