@@ -38,9 +38,45 @@ const HiringApplicationNew = () => {
       submitButton.textContent = 'Submitting...';
       submitButton.disabled = true;
       
-      // Submit to Formspree
-      const form = e.currentTarget as HTMLFormElement;
-      const formDataToSubmit = new FormData(form);
+      // Create a formatted message with all data in the desired order
+      const formattedMessage = `
+CLEANER HIRING APPLICATION
+==========================
+
+PERSONAL INFORMATION:
+--------------------
+First Name: ${formData.firstName}
+Last Name: ${formData.lastName}
+Phone Number: ${formData.phoneNumber}
+Email: ${formData.email}
+
+ADDRESS INFORMATION:
+-------------------
+Address Line 1: ${formData.addressLine1}
+Address Line 2: ${formData.addressLine2 || 'N/A'}
+City: ${formData.city}
+State: ${formData.state}
+Zip Code: ${formData.zipCode}
+
+QUESTIONS:
+----------
+Paid Cleaning Experience: ${formData.cleaningExperience === 'yes' ? 'Yes' : 'No'}
+Has Transportation: ${formData.transportation === 'yes' ? 'Yes' : 'No'}
+Ever Been Arrested: ${formData.arrested === 'yes' ? 'Yes' : 'No'}
+${formData.arrested === 'yes' && formData.arrestExplanation ? `Arrest Explanation: ${formData.arrestExplanation}` : ''}
+
+Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}
+      `.trim();
+      
+      // Build FormData with formatted message
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('message', formattedMessage);
+      formDataToSubmit.append('_subject', 'New Cleaner Hiring Application');
+      
+      // Also send individual fields for Formspree's database
+      formDataToSubmit.append('applicant_name', `${formData.firstName} ${formData.lastName}`);
+      formDataToSubmit.append('applicant_email', formData.email);
+      formDataToSubmit.append('applicant_phone', formData.phoneNumber);
       
       const response = await fetch('https://formspree.io/f/mqaynarr', {
         method: 'POST',

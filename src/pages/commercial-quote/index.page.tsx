@@ -114,24 +114,72 @@ export default function CommercialQuotePage() {
     return false;
   }, [step, location, facility, squareFeet, frequency, fullName, company, email, phone, consent]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const payload = {
-      location,
-      facility,
-      squareFeet: Number(squareFeet) || null,
-      frequency,
-      notes,
-      fullName,
-      company,
-      email,
-      phone,
-      consent,
-      submittedAt: new Date().toISOString(),
-    };
-    // Simulate submission
-    console.log("Commercial Quote Request:", payload);
-    setSubmitted(true);
+    
+    try {
+      // Create a formatted message with all data in the desired order
+      const formattedMessage = `
+COMMERCIAL CLEANING QUOTE REQUEST
+==================================
+
+FACILITY INFORMATION:
+--------------------
+Location: ${location}
+Facility Type: ${facility}
+Square Footage: ${squareFeet.toLocaleString()} sq ft
+Service Frequency: ${frequency}
+
+SPECIAL REQUIREMENTS:
+--------------------
+${notes || 'None specified'}
+
+CONTACT INFORMATION:
+-------------------
+Full Name: ${fullName}
+Company Name: ${company}
+Email Address: ${email}
+Phone Number: ${phone}
+
+CONSENT:
+--------
+Client consented to be contacted: Yes
+
+Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}
+      `.trim();
+      
+      // Build FormData with formatted message
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('message', formattedMessage);
+      formDataToSubmit.append('_subject', `Commercial Quote Request - ${facility} in ${location}`);
+      
+      // Also send individual fields for Formspree's database
+      formDataToSubmit.append('contact_name', fullName);
+      formDataToSubmit.append('contact_email', email);
+      formDataToSubmit.append('contact_phone', phone);
+      formDataToSubmit.append('company_name', company);
+      formDataToSubmit.append('quote_location', String(location));
+      formDataToSubmit.append('facility_type', String(facility));
+      
+      // Submit to Formspree
+      const response = await fetch('https://formspree.io/f/xblzwdgz', {
+        method: 'POST',
+        body: formDataToSubmit,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert('There was a problem submitting your request. Please try again or contact us directly.');
+        console.error('Form submission failed:', await response.text());
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was a problem submitting your request. Please try again or contact us directly.');
+    }
   };
 
   return (
@@ -227,37 +275,48 @@ export default function CommercialQuotePage() {
                           </div>
                           <div>
                             <Label htmlFor="notes" className="mb-2 block">Specific Needs</Label>
-                            <Textarea id="notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Tell us about any special requirements, security protocols, or specific areas of focus..." rows={4} />
+                            <Textarea id="notes" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Tell us about any special requirements, security protocols, or specific areas of focus..." rows={4} />
                           </div>
                         </div>
                       )}
 
                       {/* Step 4: Contact */}
                       {step === 4 && (
-                        <form className="space-y-6" onSubmit={handleSubmit}>
+                        <form className="space-y-6" onSubmit={handleSubmit} method="POST" action="https://formspree.io/f/xblzwdgz">
+                          <input type="hidden" name="form-name" value="commercial-quote-request" />
+                          <input type="hidden" name="_subject" value="New Commercial Cleaning Quote Request" />
+                          <input type="hidden" name="location" value={location} />
+                          <input type="hidden" name="facility" value={facility} />
+                          <input type="hidden" name="squareFeet" value={squareFeet} />
+                          <input type="hidden" name="frequency" value={frequency} />
+                          <input type="hidden" name="notes" value={notes} />
+                          <div style={{ display: 'none' }}>
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                          </div>
+                          
                           <h2 className="text-xl font-semibold">How can our team reach you?</h2>
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
                               <Label htmlFor="fullName" className="mb-2 block">Full Name</Label>
-                              <Input id="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
+                              <Input id="fullName" name="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
                             </div>
                             <div>
                               <Label htmlFor="company" className="mb-2 block">Company Name</Label>
-                              <Input id="company" value={company} onChange={(e) => setCompany(e.target.value)} required />
+                              <Input id="company" name="company" value={company} onChange={(e) => setCompany(e.target.value)} required />
                             </div>
                           </div>
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
                               <Label htmlFor="email" className="mb-2 block">Email Address</Label>
-                              <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                              <Input id="email" name="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                             </div>
                             <div>
                               <Label htmlFor="phone" className="mb-2 block">Phone Number</Label>
-                              <Input id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+                              <Input id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
                             </div>
                           </div>
                           <div className="flex items-start space-x-3">
-                            <input id="consent" type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1" required />
+                            <input id="consent" name="consent" type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1" required />
                             <Label htmlFor="consent" className="text-sm text-muted-foreground">I consent to be contacted by Red Rock Cleans regarding this request. I understand this is a no-obligation proposal and my information will be handled in accordance with the Privacy Policy.</Label>
                           </div>
                           <p className="text-xs text-muted-foreground">
