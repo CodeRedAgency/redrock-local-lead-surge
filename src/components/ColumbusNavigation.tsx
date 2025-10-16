@@ -42,10 +42,10 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+            {/* Logo */}
+            <Link to="/" className="flex items-center space-x-2">
             <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
-          </Link>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -116,62 +116,62 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                               : 'Industrial Cleaning Services'}
                           </Link>
                         </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/school-cleaning">
                             {location.pathname === '/columbus-ohio/school-cleaning' 
                               ? 'School Cleaning in Columbus' 
                               : 'School Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/medical-office-cleaning">
                             {location.pathname === '/columbus-ohio/medical-office-cleaning' 
                               ? 'Medical Office Cleaning in Columbus' 
                               : 'Medical Office Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/gym-cleaning">
                             {location.pathname === '/columbus-ohio/gym-cleaning' 
                               ? 'Gym Cleaning in Columbus' 
                               : 'Gym Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/restaurant-cleaning">
                             {location.pathname === '/columbus-ohio/restaurant-cleaning' 
                               ? 'Restaurant Cleaning in Columbus' 
                               : 'Restaurant Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/retail-cleaning">
                             {location.pathname === '/columbus-ohio/retail-cleaning' 
                               ? 'Retail Store Cleaning in Columbus' 
                               : 'Retail Store Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/showroom-cleaning">
                             {location.pathname === '/columbus-ohio/showroom-cleaning' 
                               ? 'Showroom Cleaning in Columbus' 
                               : 'Showroom Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/warehouse-cleaning">
                             {location.pathname === '/columbus-ohio/warehouse-cleaning' 
                               ? 'Warehouse Cleaning in Columbus' 
                               : 'Warehouse Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                           <Link to="/columbus-ohio/salon-spa-cleaning">
                             {location.pathname === '/columbus-ohio/salon-spa-cleaning' 
                               ? 'Salon & Spa Cleaning in Columbus' 
                               : 'Salon & Spa Cleaning'}
                           </Link>
-                        </DropdownMenuItem>
+                    </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuSub>
                   </DropdownMenuContent>
@@ -368,7 +368,7 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
 
                 <Link to="/book-now-columbus-ohio" className="block hover:text-primary transition-colors">
                   Pricing
-                </Link>
+                    </Link>
 
                 <Link to="/contact" className="block hover:text-primary transition-colors">
                   Contact
