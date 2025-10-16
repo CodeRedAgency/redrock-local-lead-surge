@@ -295,7 +295,7 @@ export default function ShowroomCleaningOahuPage() {
         <link rel="canonical" href="https://redrockcleans.com/oahu/showroom-cleaning/" />
       </Helmet>
 
-      <OahuNavigation bookingUrl="/book-now-oahu" />
+      <OahuNavigation bookingUrl="/commercial-quote?location=oahu" />
 
       <main className="pt-16">
         {/* Hero Section */}
@@ -320,7 +320,7 @@ export default function ShowroomCleaningOahuPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-oahu">
+                  <Link to="/commercial-quote?location=oahu">
                     <Phone className="w-5 h-5 mr-2" />
                     Book Showroom Cleaning
                   </Link>
@@ -535,7 +535,7 @@ export default function ShowroomCleaningOahuPage() {
                         
                         <div className="pt-4">
                           <Button className="w-full sm:w-auto" asChild>
-                            <Link to="/book-now-oahu">
+                            <Link to="/commercial-quote?location=oahu">
                               <Phone className="w-4 h-4 mr-2" />
                               Book Showroom Cleaning in {neighborhood.name}
                             </Link>
@@ -686,7 +686,7 @@ export default function ShowroomCleaningOahuPage() {
                 that enhance product presentation and client experience.
               </p>
               <Button size="lg" className="h-14 text-lg px-8" asChild>
-                <Link to="/book-now-oahu">
+                <Link to="/commercial-quote?location=oahu">
                   <Phone className="w-5 h-5 mr-2" />
                   Book Your Showroom Cleaning Service
                 </Link>

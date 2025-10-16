@@ -289,7 +289,7 @@ const IndustrialCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-dallas">
+                    <Link to="/commercial-quote?location=dallas">
                       <Factory className="w-5 h-5 mr-2" />
                       Schedule Industrial Cleaning
                     </Link>
@@ -482,7 +482,7 @@ const IndustrialCleaningDallasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-dallas">
+                            <Link to="/commercial-quote?location=dallas">
                               Schedule Your {neighborhood.name} Industrial Cleaning
                             </Link>
                           </Button>
@@ -617,7 +617,7 @@ const IndustrialCleaningDallasPage = () => {
                   Join the Dallas industrial facilities that trust Red Rock Cleans for OSHA-compliant, heavy-duty cleaning that maximizes safety and uptime.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-dallas">
+                  <Link to="/commercial-quote?location=dallas">
                     <Factory className="w-5 h-5 mr-2" />
                     Schedule Your Industrial Cleaning Today
                   </Link>

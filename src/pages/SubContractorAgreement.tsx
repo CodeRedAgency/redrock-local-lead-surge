@@ -1,9 +1,12 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import SignatureCanvas from "react-signature-canvas";
+import { Button } from "@/components/ui/button";
 
 const SubContractorAgreement = () => {
+  const signaturePadRef = useRef<SignatureCanvas>(null);
   const [signatureData, setSignatureData] = useState({
     addressLine: '',
     city: '',
@@ -11,9 +14,9 @@ const SubContractorAgreement = () => {
     zipCode: '',
     firstName: '',
     lastName: '',
-    date: '',
-    signature: ''
+    date: ''
   });
+  const [hasSignature, setHasSignature] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -23,9 +26,28 @@ const SubContractorAgreement = () => {
     }));
   };
 
+  const clearSignature = () => {
+    if (signaturePadRef.current) {
+      signaturePadRef.current.clear();
+      setHasSignature(false);
+    }
+  };
+
+  const handleSignatureEnd = () => {
+    if (signaturePadRef.current && !signaturePadRef.current.isEmpty()) {
+      setHasSignature(true);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Validate signature
+    if (!signaturePadRef.current || signaturePadRef.current.isEmpty()) {
+      alert('Please provide your signature before submitting.');
+      return;
+    }
+
     try {
       // Show loading state
       const submitButton = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement;
@@ -33,75 +55,100 @@ const SubContractorAgreement = () => {
       submitButton.textContent = 'Submitting...';
       submitButton.disabled = true;
       
-      // Prepare form data for submission
-      const formData = new FormData();
-      formData.append('form-type', 'sub-contractor-agreement');
-      formData.append('address-line', signatureData.addressLine);
-      formData.append('city', signatureData.city);
-      formData.append('state', signatureData.state);
-      formData.append('zip-code', signatureData.zipCode);
-      formData.append('first-name', signatureData.firstName);
-      formData.append('last-name', signatureData.lastName);
-      formData.append('signature', signatureData.signature);
-      formData.append('date', signatureData.date);
-      formData.append('submitted-at', new Date().toISOString());
+      // Get signature as base64 image
+      const signatureImage = signaturePadRef.current.toDataURL('image/png');
       
-      // Submit using Netlify Forms (if deployed on Netlify) or Formspree
-      // Option 1: Netlify Forms (add netlify attribute to form)
-      // Option 2: Formspree (replace with your formspree endpoint)
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      // Create a formatted message with all agreement details
+      const formattedMessage = `
+SUB-CONTRACTOR AGREEMENT - SIGNED
+===================================
+
+CONTRACTOR INFORMATION:
+----------------------
+Full Name: ${signatureData.firstName} ${signatureData.lastName}
+Address: ${signatureData.addressLine}
+City: ${signatureData.city}
+State: ${signatureData.state}
+Zip Code: ${signatureData.zipCode}
+
+AGREEMENT DETAILS:
+-----------------
+Agreement Date: ${signatureData.date}
+Signed On: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}
+
+TERMS AGREED TO:
+---------------
+✓ Independent contractor relationship with Red Rock Cleaning (Hero Industries LLC DBA Red Rock Cleaning)
+✓ Part-time cleaning work arrangement
+✓ Starting pay: $17-$20/hour (subject to change via written notice)
+✓ Flexible days and hours based on client needs and contractor availability
+✓ Contractor provides all cleaning materials, equipment, and tools as agreed
+✓ No employer-employee relationship
+✓ $50 withholding clause for client claims (shared cost $50-$500)
+✓ Non-solicitation agreement: 18 months after termination
+✓ No direct client contact information to be provided
+✓ Weekly or bi-weekly payroll (calculated Friday, paid Monday/Tuesday)
+✓ 14 days written notice required for termination by contractor
+✓ Contractor can cancel without notice for nonperformance
+
+IMPORTANT NOTES:
+---------------
+- Jobs will be assigned according to distance to the provided address
+- Improper notice forfeits all monies due
+- Poor workmanship resulting in customer cancellation forfeits last payment
+
+SIGNATURE:
+----------
+The contractor has provided a digital signature confirming agreement to all terms and conditions.
+(Signature image attached/embedded below)
+
+This is a legally binding agreement between the contractor and Red Rock Cleaning.
+      `.trim();
+      
+      // Build FormData with formatted message and signature
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('message', formattedMessage);
+      formDataToSubmit.append('_subject', `Sub-Contractor Agreement Signed - ${signatureData.firstName} ${signatureData.lastName}`);
+      
+      // Add individual fields for Formspree database
+      formDataToSubmit.append('contractor_name', `${signatureData.firstName} ${signatureData.lastName}`);
+      formDataToSubmit.append('contractor_address', signatureData.addressLine);
+      formDataToSubmit.append('contractor_city', signatureData.city);
+      formDataToSubmit.append('contractor_state', signatureData.state);
+      formDataToSubmit.append('contractor_zipcode', signatureData.zipCode);
+      formDataToSubmit.append('agreement_date', signatureData.date);
+      
+      // Convert base64 signature to blob and append as file
+      const signatureBlob = await (await fetch(signatureImage)).blob();
+      formDataToSubmit.append('signature_image', signatureBlob, 'signature.png');
+      
+      const response = await fetch('https://formspree.io/f/mqaynpgd', {
         method: 'POST',
-        body: formData,
+        body: formDataToSubmit,
         headers: {
           'Accept': 'application/json'
         }
       });
       
       if (response.ok) {
-        // Success - redirect to cleaning supplies page
-        window.location.href = '/hiring-application/cleaning-supplies';
+        // Success - show confirmation or redirect
+        alert('Thank you! Your Sub-Contractor Agreement has been submitted successfully.');
+        // Optionally redirect to next step
+        // window.location.href = '/cleaning-supplies';
       } else {
-        // Handle error - fallback to email method
-        console.error('Form submission failed, using fallback email method');
-        await submitViaEmail();
-        window.location.href = '/hiring-application/cleaning-supplies';
+        alert('There was a problem submitting your agreement. Please try again.');
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      // Fallback to email method if API fails
-      await submitViaEmail();
-      window.location.href = '/hiring-application/cleaning-supplies';
+      alert('There was a problem submitting your agreement. Please try again.');
+      const submitButton = document.querySelector('button[type="submit"]') as HTMLButtonElement;
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Finished';
+      }
     }
-  };
-
-  const submitViaEmail = async () => {
-    // Fallback method - send via email
-    const emailSubject = 'New Sub-Contractor Agreement Signed';
-    const emailBody = `
-New Sub-Contractor Agreement Submission:
-
-Address Information:
-- Address Line: ${signatureData.addressLine}
-- City: ${signatureData.city}
-- State: ${signatureData.state}
-- Zip Code: ${signatureData.zipCode}
-
-Personal Information:
-- First Name: ${signatureData.firstName}
-- Last Name: ${signatureData.lastName}
-- Signature: ${signatureData.signature}
-- Date: ${signatureData.date}
-
-This contractor has agreed to the terms and conditions of the Red Rock Cleaning Sub-Contractor Agreement.
-
-Please process this application accordingly.
-
-Best regards,
-Red Rock Cleaning Website
-    `;
-    
-    const mailtoLink = `mailto:office@redrockcleans.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-    window.location.href = mailtoLink;
   };
 
   return (
@@ -198,11 +245,13 @@ Red Rock Cleaning Website
               <div className="bg-card p-8 rounded-lg shadow-lg">
                 <p className="text-lg text-gray-700 mb-6">(Jobs will be assigned according to distance to this Address)</p>
                 
-                <form onSubmit={handleSubmit} className="space-y-6" name="sub-contractor-agreement" netlify netlify-honeypot="bot-field">
+                <form onSubmit={handleSubmit} className="space-y-6" method="POST" action="https://formspree.io/f/mqaynpgd">
                   <input type="hidden" name="form-name" value="sub-contractor-agreement" />
+                  <input type="hidden" name="_subject" value={`Sub-Contractor Agreement Signed - ${signatureData.firstName} ${signatureData.lastName}`} />
                   <div style={{ display: 'none' }}>
                     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                   </div>
+                  
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="addressLine" className="block text-sm font-medium mb-2">
@@ -212,7 +261,7 @@ Red Rock Cleaning Website
                         type="text"
                         id="addressLine"
                         name="addressLine"
-                        value={signatureData.addressLine || ''}
+                        value={signatureData.addressLine}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                         required
@@ -226,7 +275,7 @@ Red Rock Cleaning Website
                         type="text"
                         id="city"
                         name="city"
-                        value={signatureData.city || ''}
+                        value={signatureData.city}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                         required
@@ -243,7 +292,7 @@ Red Rock Cleaning Website
                         type="text"
                         id="state"
                         name="state"
-                        value={signatureData.state || ''}
+                        value={signatureData.state}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                         required
@@ -257,7 +306,7 @@ Red Rock Cleaning Website
                         type="text"
                         id="zipCode"
                         name="zipCode"
-                        value={signatureData.zipCode || ''}
+                        value={signatureData.zipCode}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                         required
@@ -274,7 +323,7 @@ Red Rock Cleaning Website
                         type="text"
                         id="firstName"
                         name="firstName"
-                        value={signatureData.firstName || ''}
+                        value={signatureData.firstName}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                         required
@@ -288,7 +337,7 @@ Red Rock Cleaning Website
                         type="text"
                         id="lastName"
                         name="lastName"
-                        value={signatureData.lastName || ''}
+                        value={signatureData.lastName}
                         onChange={handleInputChange}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                         required
@@ -296,22 +345,39 @@ Red Rock Cleaning Website
                     </div>
                   </div>
 
+                  {/* Signature Canvas */}
                   <div>
-                    <label htmlFor="signature" className="block text-sm font-medium mb-2">
-                      Signature (Use your mobile device to sign)
+                    <label className="block text-sm font-medium mb-2">
+                      Signature (Draw your signature below)
                     </label>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                      <p className="text-gray-500 mb-4">Sign Here</p>
-                      <input
-                        type="text"
-                        id="signature"
-                        name="signature"
-                        value={signatureData.signature}
-                        onChange={handleInputChange}
-                        placeholder="Type your full name as your digital signature"
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                        required
+                    <p className="text-sm text-muted-foreground mb-3">
+                      Sign using your finger on mobile or mouse on desktop
+                    </p>
+                    <div className="border-2 border-gray-300 rounded-lg overflow-hidden bg-white">
+                      <SignatureCanvas
+                        ref={signaturePadRef}
+                        canvasProps={{
+                          className: 'w-full h-48 touch-action-none',
+                          style: { width: '100%', height: '192px' }
+                        }}
+                        onEnd={handleSignatureEnd}
+                        backgroundColor="white"
                       />
+                    </div>
+                    <div className="mt-3 flex gap-3">
+                      <Button
+                        type="button"
+                        variant="outline"
+                        size="sm"
+                        onClick={clearSignature}
+                      >
+                        Clear Signature
+                      </Button>
+                      {hasSignature && (
+                        <span className="text-sm text-green-600 flex items-center">
+                          ✓ Signature captured
+                        </span>
+                      )}
                     </div>
                   </div>
 

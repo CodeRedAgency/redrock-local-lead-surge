@@ -289,7 +289,7 @@ const RetailCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-dallas">
+                    <Link to="/commercial-quote?location=dallas">
                       <Store className="w-5 h-5 mr-2" />
                       Schedule Store Cleaning
                     </Link>
@@ -497,7 +497,7 @@ const RetailCleaningDallasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-dallas">
+                            <Link to="/commercial-quote?location=dallas">
                               Schedule Your {neighborhood.name} Retail Cleaning
                             </Link>
                           </Button>
@@ -632,7 +632,7 @@ const RetailCleaningDallasPage = () => {
                   Join the Dallas retail stores that trust Red Rock Cleans for impeccable cleanliness and exceptional customer experiences.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-dallas">
+                  <Link to="/commercial-quote?location=dallas">
                     <Store className="w-5 h-5 mr-2" />
                     Schedule Your Retail Cleaning Today
                   </Link>

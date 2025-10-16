@@ -232,7 +232,7 @@ const ChurchCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-dallas">
+                    <Link to="/commercial-quote?location=dallas">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Church Cleaning
                     </Link>
@@ -352,7 +352,7 @@ const ChurchCleaningDallasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-dallas">
+                            <Link to="/commercial-quote?location=dallas">
                               Schedule Your {neighborhood.name} Church Cleaning
                             </Link>
                           </Button>
@@ -487,7 +487,7 @@ const ChurchCleaningDallasPage = () => {
                   Join the Dallas churches that trust Red Rock Cleans for respectful, professional church cleaning services that honor your sacred space from Plano to Preston Hollow.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-dallas">
+                  <Link to="/commercial-quote?location=dallas">
                     <Calendar className="w-5 h-5 mr-2" />
                     Schedule Your Church Cleaning Today
                   </Link>

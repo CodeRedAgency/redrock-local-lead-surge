@@ -289,7 +289,7 @@ const WarehouseCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-dallas">
+                    <Link to="/commercial-quote?location=dallas">
                       <Package className="w-5 h-5 mr-2" />
                       Schedule Warehouse Cleaning
                     </Link>
@@ -497,7 +497,7 @@ const WarehouseCleaningDallasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-dallas">
+                            <Link to="/commercial-quote?location=dallas">
                               Schedule Your {neighborhood.name} Warehouse Cleaning
                             </Link>
                           </Button>
@@ -632,7 +632,7 @@ const WarehouseCleaningDallasPage = () => {
                   Join the Dallas warehouses that trust Red Rock Cleans for professional logistics facility cleaning that enhances safety and productivity.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-dallas">
+                  <Link to="/commercial-quote?location=dallas">
                     <Package className="w-5 h-5 mr-2" />
                     Schedule Your Warehouse Cleaning Today
                   </Link>

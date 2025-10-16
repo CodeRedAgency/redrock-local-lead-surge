@@ -303,7 +303,7 @@ const ChurchCleaningOahuPage = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <OahuNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-oahu/sign-in" bookingUrl="/book-now-oahu" />
+        <OahuNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-oahu/sign-in" bookingUrl="/commercial-quote?location=oahu" />
         
         <main className="flex-grow">
           {/* Hero Section */}
@@ -327,7 +327,7 @@ const ChurchCleaningOahuPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-oahu">
+                    <Link to="/commercial-quote?location=oahu">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Church Cleaning
                     </Link>
@@ -444,7 +444,7 @@ const ChurchCleaningOahuPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-oahu">
+                            <Link to="/commercial-quote?location=oahu">
                               Schedule Your {neighborhood.name} Church Cleaning
                             </Link>
                           </Button>
@@ -570,7 +570,7 @@ const ChurchCleaningOahuPage = () => {
                   Join Oahu churches who trust Red Rock Cleans for respectful, professional church cleaning services that honor the sacred nature of your worship space while maintaining the highest standards of cleanliness.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-oahu">
+                  <Link to="/commercial-quote?location=oahu">
                     <Calendar className="w-5 h-5 mr-2" />
                     Schedule Your Church Cleaning Today
                   </Link>

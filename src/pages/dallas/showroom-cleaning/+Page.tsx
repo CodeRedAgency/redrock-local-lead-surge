@@ -289,7 +289,7 @@ const ShowroomCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-dallas">
+                    <Link to="/commercial-quote?location=dallas">
                       <Diamond className="w-5 h-5 mr-2" />
                       Schedule Showroom Cleaning
                     </Link>
@@ -497,7 +497,7 @@ const ShowroomCleaningDallasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-dallas">
+                            <Link to="/commercial-quote?location=dallas">
                               Schedule Your {neighborhood.name} Showroom Cleaning
                             </Link>
                           </Button>
@@ -632,7 +632,7 @@ const ShowroomCleaningDallasPage = () => {
                   Join the Dallas showrooms that trust Red Rock Cleans for impeccable presentation and the perfect product showcase.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-dallas">
+                  <Link to="/commercial-quote?location=dallas">
                     <Diamond className="w-5 h-5 mr-2" />
                     Schedule Your Showroom Cleaning Today
                   </Link>

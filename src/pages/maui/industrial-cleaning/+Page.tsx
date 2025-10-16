@@ -250,7 +250,7 @@ const IndustrialCleaningMauiPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-maui">
+                  <Link to="/commercial-quote?location=maui">
                     <Calendar className="w-5 h-5 mr-2" />
                     Get Your Free Assessment
                   </Link>
@@ -485,7 +485,7 @@ const IndustrialCleaningMauiPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-maui">
+                          <Link to="/commercial-quote?location=maui">
                             Get Industrial Cleaning Quote for {town.name}
                           </Link>
                         </Button>
@@ -615,7 +615,7 @@ const IndustrialCleaningMauiPage = () => {
               Join Maui's leading manufacturers that trust Red Rock Cleans for OSHA-compliant industrial cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-maui">Get Your Free Industrial Cleaning Assessment</Link>
+              <Link to="/commercial-quote?location=maui">Get Your Free Industrial Cleaning Assessment</Link>
             </Button>
           </div>
         </section>

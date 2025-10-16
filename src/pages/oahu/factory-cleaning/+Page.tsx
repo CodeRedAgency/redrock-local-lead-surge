@@ -307,7 +307,7 @@ const FactoryCleaningOahuPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-oahu">
+                  <Link to="/commercial-quote?location=oahu">
                     <Calendar className="w-5 h-5 mr-2" />
                     Get Your Free Quote
                   </Link>
@@ -552,7 +552,7 @@ const FactoryCleaningOahuPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-oahu">
+                          <Link to="/commercial-quote?location=oahu">
                             Get Factory Cleaning Quote for {neighborhood.name}
                           </Link>
                         </Button>

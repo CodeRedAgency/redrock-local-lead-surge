@@ -289,7 +289,7 @@ const RestaurantCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-dallas">
+                    <Link to="/commercial-quote?location=dallas">
                       <Utensils className="w-5 h-5 mr-2" />
                       Schedule Restaurant Cleaning
                     </Link>
@@ -497,7 +497,7 @@ const RestaurantCleaningDallasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-dallas">
+                            <Link to="/commercial-quote?location=dallas">
                               Schedule Your {neighborhood.name} Restaurant Cleaning
                             </Link>
                           </Button>
@@ -632,7 +632,7 @@ const RestaurantCleaningDallasPage = () => {
                   Join the Dallas restaurants that trust Red Rock Cleans for health code compliance and impeccable dining experiences that earn rave reviews.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-dallas">
+                  <Link to="/commercial-quote?location=dallas">
                     <Utensils className="w-5 h-5 mr-2" />
                     Schedule Your Restaurant Cleaning Today
                   </Link>
