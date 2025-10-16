@@ -246,7 +246,7 @@ const DataCenterCleaningPage = () => {
                   <h2 className="text-3xl font-bold mb-6">Our Other Commercial Cleaning Solutions</h2>
                   <div className="grid md:grid-cols-3 gap-6">
                     <Link 
-                      to="/commercial-cleaning/" 
+                      to="/commercial-cleaning" 
                       className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
                     >
                       <h3 className="text-xl font-bold mb-2">Commercial Cleaning</h3>
@@ -255,7 +255,7 @@ const DataCenterCleaningPage = () => {
                       </p>
                     </Link>
                     <Link 
-                      to="/church-cleaning/" 
+                      to="/church-cleaning" 
                       className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
                     >
                       <h3 className="text-xl font-bold mb-2">Church Cleaning</h3>
@@ -264,7 +264,7 @@ const DataCenterCleaningPage = () => {
                       </p>
                     </Link>
                     <Link 
-                      to="/post-construction-cleaning/" 
+                      to="/post-construction-cleaning-services" 
                       className="bg-card p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
                     >
                       <h3 className="text-xl font-bold mb-2">Post-Construction Cleaning</h3>
