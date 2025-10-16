@@ -39,7 +39,7 @@ const RetailCleaningPage = () => {
                 Transform your retail space into a spotless showcase that captivates customers and drives sales
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/">Get a Quote</Link>
+                <Link to="/commercial-quote">Get a Quote</Link>
               </Button>
             </div>
           </section>
@@ -278,7 +278,7 @@ const RetailCleaningPage = () => {
                     Choose your location to get a tailored quote for professional retail store cleaning services.
                   </p>
                   <Button size="lg" asChild>
-                    <Link to="/">Find Your Location & Get a Quote</Link>
+                    <Link to="/commercial-quote">Find Your Location & Get a Quote</Link>
                   </Button>
                 </div>
               </div>

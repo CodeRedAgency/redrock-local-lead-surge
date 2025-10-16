@@ -31,7 +31,7 @@ const CommercialCleaning = () => {
                 Professional cleaning solutions for businesses of all sizes
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/">Get a Quote</Link>
+                <Link to="/commercial-quote">Get a Quote</Link>
               </Button>
             </div>
           </section>
@@ -146,7 +146,7 @@ const CommercialCleaning = () => {
                 Choose your location and get an instant quote for professional commercial cleaning services.
               </p>
               <Button size="lg" asChild>
-                <Link to="/">Select Your Location</Link>
+                <Link to="/commercial-quote">Select Your Location</Link>
               </Button>
             </div>
           </section>

@@ -32,7 +32,7 @@ const ChurchCleaningPage = () => {
                 Creating a welcoming, sacred environment through respectful and thorough cleaning
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/">Get a Quote</Link>
+                <Link to="/commercial-quote">Get a Quote</Link>
               </Button>
             </div>
           </section>
@@ -311,7 +311,7 @@ const ChurchCleaningPage = () => {
                   Choose your location and get a personalized quote for respectful, professional church cleaning services.
                 </p>
                 <Button size="lg" asChild>
-                  <Link to="/">Find Your Location & Get a Quote</Link>
+                  <Link to="/commercial-quote">Find Your Location & Get a Quote</Link>
                 </Button>
               </div>
 

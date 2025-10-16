@@ -39,7 +39,7 @@ const GovernmentFacilityCleaningPage = () => {
                 Discreet, professional cleaning for sensitive government and municipal buildings
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/">Get a Quote</Link>
+                <Link to="/commercial-quote">Get a Quote</Link>
               </Button>
             </div>
           </section>
@@ -318,7 +318,7 @@ const GovernmentFacilityCleaningPage = () => {
                     Choose your location and get a confidential quote for secure, compliant government facility cleaning services.
                   </p>
                   <Button size="lg" asChild>
-                    <Link to="/">Find Your Location & Get a Quote</Link>
+                    <Link to="/commercial-quote">Find Your Location & Get a Quote</Link>
                   </Button>
                 </div>
 
