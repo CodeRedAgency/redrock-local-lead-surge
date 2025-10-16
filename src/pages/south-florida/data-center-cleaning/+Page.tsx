@@ -802,7 +802,7 @@ const DataCenterCleaningSouthFloridaPage = () => {
               Join South Florida's leading businesses that trust Red Rock Cleans for specialized data center cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Data Center Cleaning Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Data Center Cleaning Quote</Link>
             </Button>
           </div>
         </section>

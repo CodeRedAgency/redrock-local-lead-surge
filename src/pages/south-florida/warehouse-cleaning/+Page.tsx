@@ -816,7 +816,7 @@ const WarehouseCleaningSouthFloridaPage = () => {
               Join South Florida warehouses that trust Red Rock Cleans for professional warehouse cleaning services
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Warehouse Cleaning Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Warehouse Cleaning Quote</Link>
             </Button>
           </div>
         </section>

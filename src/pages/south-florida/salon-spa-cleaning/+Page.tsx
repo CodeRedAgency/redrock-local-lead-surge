@@ -814,7 +814,7 @@ const SalonSpaCleaningSouthFloridaPage = () => {
               Join South Florida's premier salons and spas that trust Red Rock Cleans for professional beauty industry cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Salon & Spa Cleaning Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Salon & Spa Cleaning Quote</Link>
             </Button>
           </div>
         </section>

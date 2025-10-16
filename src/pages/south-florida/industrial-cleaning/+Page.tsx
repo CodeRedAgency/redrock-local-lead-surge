@@ -802,7 +802,7 @@ const IndustrialCleaningSouthFloridaPage = () => {
               Join South Florida manufacturers that trust Red Rock Cleans for heavy-duty industrial cleaning services
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Industrial Cleaning Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Industrial Cleaning Quote</Link>
             </Button>
           </div>
         </section>

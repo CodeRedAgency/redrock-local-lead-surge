@@ -802,7 +802,7 @@ const MedicalOfficeCleaningSouthFloridaPage = () => {
               Join South Florida healthcare providers that trust Red Rock Cleans for professional medical office cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Medical Office Cleaning Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Medical Office Cleaning Quote</Link>
             </Button>
           </div>
         </section>

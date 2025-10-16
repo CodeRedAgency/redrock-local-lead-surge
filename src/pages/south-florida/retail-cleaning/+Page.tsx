@@ -816,7 +816,7 @@ const RetailCleaningSouthFloridaPage = () => {
               Join South Florida retailers that trust Red Rock Cleans for pristine stores that drive sales
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Retail Cleaning Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Retail Cleaning Quote</Link>
             </Button>
           </div>
         </section>

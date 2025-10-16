@@ -804,7 +804,7 @@ const GovernmentFacilityCleaningSouthFloridaPage = () => {
               Join South Florida government agencies that trust Red Rock Cleans for secure, compliant facility cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-southflorida">Get Your Free Government Facility Quote</Link>
+              <Link to="/commercial-quote">Get Your Free Government Facility Quote</Link>
             </Button>
           </div>
         </section>
