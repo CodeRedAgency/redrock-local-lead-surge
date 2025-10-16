@@ -28,10 +28,44 @@ const HiringApplicationNew = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    window.location.href = '/sub-contractor-agreement';
+    
+    try {
+      // Show loading state
+      const submitButton = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement;
+      const originalText = submitButton.textContent;
+      submitButton.textContent = 'Submitting...';
+      submitButton.disabled = true;
+      
+      // Submit to Formspree
+      const form = e.currentTarget as HTMLFormElement;
+      const formDataToSubmit = new FormData(form);
+      
+      const response = await fetch('https://formspree.io/f/mqaynarr', {
+        method: 'POST',
+        body: formDataToSubmit,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        // Success - redirect to sub-contractor agreement
+        window.location.href = '/sub-contractor-agreement';
+      } else {
+        // Handle error
+        alert('There was a problem submitting your application. Please try again.');
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was a problem submitting your application. Please try again.');
+      const submitButton = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement;
+      submitButton.disabled = false;
+      submitButton.textContent = 'Next Step';
+    }
   };
 
   return (
@@ -54,7 +88,13 @@ const HiringApplicationNew = () => {
               </div>
 
               <div className="bg-card p-8 rounded-lg shadow-lg">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6" method="POST" action="https://formspree.io/f/mqaynarr">
+                  <input type="hidden" name="form-name" value="cleaner-hiring-application" />
+                  <input type="hidden" name="_subject" value="New Cleaner Hiring Application" />
+                  <div style={{ display: 'none' }}>
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                  </div>
+                  
                   {/* Personal Information */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
