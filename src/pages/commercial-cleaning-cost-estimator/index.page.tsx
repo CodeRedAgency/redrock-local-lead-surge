@@ -44,6 +44,34 @@ export default function CommercialCleaningCostEstimatorPage() {
   const [location, setLocation] = useState<keyof typeof HOURLY_RATES | "">("");
   const [animatedMonthly, setAnimatedMonthly] = useState<number>(0);
 
+  // Build link to commercial quote with prefilled params
+  const quoteHref = useMemo(() => {
+    const typeMap: Record<string, string> = {
+      Office: "office",
+      Medical: "medical",
+      School: "other", // map unsupported to other
+      Restaurant: "restaurant",
+      Retail: "retail",
+      Warehouse: "warehouse",
+      Gym: "gym",
+      Other: "other",
+    };
+    const locMap: Record<string, string> = {
+      Oahu: "oahu",
+      Maui: "maui",
+      "Las Vegas": "las-vegas",
+      Dallas: "dallas",
+      "South Florida": "south-florida",
+      "Columbus, Ohio": "columbus-ohio",
+    };
+    const params = new URLSearchParams();
+    if (facilityType && typeMap[facilityType]) params.set("type", typeMap[facilityType]);
+    if (squareFeet) params.set("sqft", String(Math.round(squareFeet)));
+    if (location && locMap[location]) params.set("location", locMap[location]);
+    const qs = params.toString();
+    return qs ? `/commercial-quote?${qs}` : "/commercial-quote";
+  }, [facilityType, squareFeet, location]);
+
   // Production rate baseline (sq ft/hour) similar to time estimator but simplified
   const baseProductionRate = useMemo(() => {
     switch (facilityType) {
@@ -279,7 +307,7 @@ export default function CommercialCleaningCostEstimatorPage() {
 
                       <div className="text-center">
                         <Button size="lg" className="mt-4" asChild>
-                          <a href="/commercial-quote/">Request a Formal, No-Obligation Quote</a>
+                          <a href={quoteHref}>Request a Formal, No-Obligation Quote</a>
                         </Button>
                       </div>
                     </div>
