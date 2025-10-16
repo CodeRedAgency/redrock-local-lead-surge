@@ -240,7 +240,7 @@ export default function CommercialCleaningCostEstimatorPage() {
                             {formatMoney(nationalMonthlyCost.min)} - {formatMoney(nationalMonthlyCost.max)}*
                           </div>
                           <div className="mt-2 text-muted-foreground">Median: <span className="font-semibold text-primary text-3xl align-middle">{formatMoney(animatedMonthly)}</span></div>
-                          <p className="mt-3 text-xs text-muted-foreground">* Estimate uses national hourly averages of ${HOURLY_RATES.National.min}-{HOURLY_RATES.National.max}/hr.</p>
+                          <p className="mt-3 text-xs text-muted-foreground">* Estimate uses national hourly averages of ${HOURLY_RATES.National.min}-{HOURLY_RATES.National.max} per cleaner.</p>
                         </CardContent>
                       </Card>
 
@@ -271,7 +271,7 @@ export default function CommercialCleaningCostEstimatorPage() {
                                 {formatMoney(localMonthlyCost.min)} - {formatMoney(localMonthlyCost.max)}
                               </div>
                               <div className="mt-2 text-muted-foreground">Median: <span className="font-semibold text-primary text-3xl align-middle">{formatMoney(animatedMonthly)}</span></div>
-                              <p className="mt-3 text-xs text-muted-foreground">Estimate uses local hourly averages of ${HOURLY_RATES[location].min}-{HOURLY_RATES[location].max}/hr.</p>
+                              <p className="mt-3 text-xs text-muted-foreground">Estimate uses local hourly averages of ${HOURLY_RATES[location].min}-{HOURLY_RATES[location].max} per cleaner.</p>
                             </CardContent>
                           </Card>
                         )}
