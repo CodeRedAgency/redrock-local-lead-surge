@@ -403,7 +403,7 @@ const ChurchCleaningLasVegasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-las-vegas">
+                    <Link to="/commercial-quote?location=las-vegas">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Church Cleaning
                     </Link>
@@ -523,7 +523,7 @@ const ChurchCleaningLasVegasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-las-vegas">
+                            <Link to="/commercial-quote?location=las-vegas">
                               Schedule Your {neighborhood.name} Church Cleaning
                             </Link>
                           </Button>
@@ -658,7 +658,7 @@ const ChurchCleaningLasVegasPage = () => {
                   Join the Las Vegas churches that trust Red Rock Cleans for respectful, professional church cleaning services that honor your sacred space.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-las-vegas">
+                  <Link to="/commercial-quote?location=las-vegas">
                     <Calendar className="w-5 h-5 mr-2" />
                     Schedule Your Church Cleaning Today
                   </Link>

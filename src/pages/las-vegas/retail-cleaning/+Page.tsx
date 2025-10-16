@@ -454,7 +454,7 @@ const RetailCleaningLasVegasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-las-vegas">
+                    <Link to="/commercial-quote?location=las-vegas">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Retail Cleaning
                     </Link>
@@ -677,7 +677,7 @@ const RetailCleaningLasVegasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-las-vegas">
+                            <Link to="/commercial-quote?location=las-vegas">
                               Schedule Your {neighborhood.name} Retail Cleaning
                             </Link>
                           </Button>
@@ -812,7 +812,7 @@ const RetailCleaningLasVegasPage = () => {
                   Join the Las Vegas retail stores that trust Red Rock Cleans for professional cleaning services that ensure optimal customer experience and brand presentation.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-las-vegas">
+                  <Link to="/commercial-quote?location=las-vegas">
                     <Calendar className="w-5 h-5 mr-2" />
                     Schedule Your Retail Cleaning Today
                   </Link>

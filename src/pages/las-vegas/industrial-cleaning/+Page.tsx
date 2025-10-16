@@ -403,7 +403,7 @@ const IndustrialCleaningLasVegasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-las-vegas">
+                    <Link to="/commercial-quote?location=las-vegas">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Industrial Cleaning
                     </Link>
@@ -626,7 +626,7 @@ const IndustrialCleaningLasVegasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-las-vegas">
+                            <Link to="/commercial-quote?location=las-vegas">
                               Schedule Your {neighborhood.name} Industrial Cleaning
                             </Link>
                           </Button>
@@ -761,7 +761,7 @@ const IndustrialCleaningLasVegasPage = () => {
                   Join the Las Vegas industrial facilities that trust Red Rock Cleans for safe, professional cleaning services that ensure optimal operational efficiency and OSHA compliance.
                 </p>
                 <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-las-vegas">
+                  <Link to="/commercial-quote?location=las-vegas">
                     <Calendar className="w-5 h-5 mr-2" />
                     Schedule Your Industrial Cleaning Today
                   </Link>

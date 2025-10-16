@@ -437,7 +437,7 @@ const ShowroomCleaningLasVegasPage: React.FC = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-las-vegas">
+                          <Link to="/commercial-quote?location=las-vegas">
                             Schedule Showroom Cleaning in {area.name}
                             <ChevronRight className="ml-2 h-4 w-4" />
                           </Link>
@@ -584,7 +584,7 @@ const ShowroomCleaningLasVegasPage: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg">
-                  <Link to="/book-now-las-vegas">
+                  <Link to="/commercial-quote?location=las-vegas">
                     Schedule Your Showroom Cleaning Today
                     <ChevronRight className="ml-2 h-5 w-5" />
                   </Link>
