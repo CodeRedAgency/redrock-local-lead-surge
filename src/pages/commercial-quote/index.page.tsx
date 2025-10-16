@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Building2, Hospital, UtensilsCrossed, Warehouse, Store, Dumbbell, Scissors, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Slider } from "@/components/ui/slider";
 
 type LocationKey = "Las Vegas" | "Oahu" | "Maui" | "South Florida" | "Dallas" | "Columbus, Ohio";
 type FacilityKey = "Office" | "Medical" | "Restaurant" | "Warehouse" | "Retail" | "Gym" | "Salon/Spa" | "Other";
@@ -41,7 +42,7 @@ export default function CommercialQuotePage() {
   // Form state
   const [location, setLocation] = useState<LocationKey | "">("");
   const [facility, setFacility] = useState<FacilityKey | "">("");
-  const [squareFeet, setSquareFeet] = useState<number | "">("");
+  const [squareFeet, setSquareFeet] = useState<number>(10000);
   const [frequency, setFrequency] = useState<string>("Weekly");
   const [notes, setNotes] = useState<string>("");
   const [fullName, setFullName] = useState<string>("");
@@ -195,21 +196,26 @@ export default function CommercialQuotePage() {
                         <div className="space-y-6">
                           <h2 className="text-xl font-semibold">Tell us more about your needs</h2>
                           <div>
-                            <Label htmlFor="sqft" className="mb-2 block">Approximate Square Footage</Label>
-                            <Input id="sqft" type="number" min={0} value={squareFeet} onChange={(e) => setSquareFeet(e.target.value === '' ? '' : Number(e.target.value))} placeholder="e.g., 12,000" />
+                            <div className="flex items-center justify-between mb-2">
+                              <Label htmlFor="sqft-slider">Approximate Square Footage</Label>
+                              <div className="text-sm text-muted-foreground">{squareFeet.toLocaleString()} sq ft</div>
+                            </div>
+                            <Slider id="sqft-slider" value={[squareFeet]} min={1000} max={50000} step={250} onValueChange={(v) => setSquareFeet(v[0])} />
                           </div>
                           <div>
                             <Label className="mb-2 block">Service Frequency</Label>
-                            <Select value={frequency} onValueChange={setFrequency}>
-                              <SelectTrigger>
-                                <SelectValue />
-                              </SelectTrigger>
-                              <SelectContent>
-                                {['One-Time', 'Daily', '3-5x/week', 'Weekly', 'Bi-Weekly', 'Monthly'].map((f) => (
-                                  <SelectItem key={f} value={f}>{f}</SelectItem>
-                                ))}
-                              </SelectContent>
-                            </Select>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                              {['One-Time', 'Daily', '3-5x/week', 'Weekly', 'Bi-Weekly', 'Monthly'].map((f) => (
+                                <button
+                                  key={f}
+                                  type="button"
+                                  onClick={() => setFrequency(f)}
+                                  className={`border rounded-lg p-3 text-center transition-all hover:shadow-md ${frequency === f ? 'border-primary ring-2 ring-primary/30' : 'border-border'}`}
+                                >
+                                  {f}
+                                </button>
+                              ))}
+                            </div>
                           </div>
                           <div>
                             <Label htmlFor="notes" className="mb-2 block">Specific Needs</Label>
@@ -246,6 +252,9 @@ export default function CommercialQuotePage() {
                             <input id="consent" type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1" required />
                             <Label htmlFor="consent" className="text-sm text-muted-foreground">I consent to be contacted by Red Rock Cleans regarding this request. I understand this is a no-obligation proposal and my information will be handled in accordance with the Privacy Policy.</Label>
                           </div>
+                          <p className="text-xs text-muted-foreground">
+                            By providing your phone number, you agree to receive SMS updates related to your quote request. Message and data rates may apply. Message frequency varies. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase. See our Privacy Policy for details.
+                          </p>
                           <div className="flex items-center justify-between">
                             <Button type="button" variant="outline" onClick={prev}>
                               <ChevronLeft className="w-4 h-4 mr-2" /> Back
