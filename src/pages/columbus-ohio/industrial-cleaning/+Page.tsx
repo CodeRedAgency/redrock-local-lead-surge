@@ -318,7 +318,7 @@ const IndustrialCleaningColumbusOhioPage = () => {
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/industrial-cleaning" />
       </Helmet>
       
-      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/book-now-columbus-ohio" />
+      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />
       
       <main className="pt-16">
         {/* Hero Section */}
@@ -342,7 +342,7 @@ const IndustrialCleaningColumbusOhioPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-columbus-ohio">
+                  <Link to="/commercial-quote?location=columbus-ohio">
                     <Factory className="w-5 h-5 mr-2" />
                     Schedule Industrial Cleaning
                   </Link>
@@ -534,7 +534,7 @@ const IndustrialCleaningColumbusOhioPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-columbus-ohio">
+                          <Link to="/commercial-quote?location=columbus-ohio">
                             Schedule {city.name} Industrial Cleaning
                           </Link>
                         </Button>
@@ -664,7 +664,7 @@ const IndustrialCleaningColumbusOhioPage = () => {
               Join Columbus industrial facilities that trust Red Rock Cleans for professional, OSHA-compliant cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-columbus-ohio">Schedule Your Industrial Cleaning Assessment</Link>
+              <Link to="/commercial-quote?location=columbus-ohio">Schedule Your Industrial Cleaning Assessment</Link>
             </Button>
           </div>
         </section>

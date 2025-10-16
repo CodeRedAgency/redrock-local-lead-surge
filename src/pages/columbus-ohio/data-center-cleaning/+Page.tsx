@@ -318,7 +318,7 @@ const DataCenterCleaningColumbusOhioPage = () => {
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/data-center-cleaning" />
       </Helmet>
       
-      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/book-now-columbus-ohio" />
+      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />
       
       <main className="pt-16">
         {/* Hero Section */}
@@ -342,7 +342,7 @@ const DataCenterCleaningColumbusOhioPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-columbus-ohio">
+                  <Link to="/commercial-quote?location=columbus-ohio">
                     <ShieldCheck className="w-5 h-5 mr-2" />
                     Request Assessment
                   </Link>
@@ -534,7 +534,7 @@ const DataCenterCleaningColumbusOhioPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-columbus-ohio">
+                          <Link to="/commercial-quote?location=columbus-ohio">
                             Schedule {city.name} Data Center Assessment
                           </Link>
                         </Button>
@@ -664,7 +664,7 @@ const DataCenterCleaningColumbusOhioPage = () => {
               Join Columbus businesses that trust Red Rock Cleans for ISO-compliant data center cleaning
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-columbus-ohio">Schedule Your Data Center Assessment</Link>
+              <Link to="/commercial-quote?location=columbus-ohio">Schedule Your Data Center Assessment</Link>
             </Button>
           </div>
         </section>

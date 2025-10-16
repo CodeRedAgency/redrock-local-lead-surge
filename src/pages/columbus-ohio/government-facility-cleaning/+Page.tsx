@@ -318,7 +318,7 @@ const GovernmentFacilityCleaningColumbusOhioPage = () => {
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/government-facility-cleaning" />
       </Helmet>
       
-      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/book-now-columbus-ohio" />
+      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />
       
       <main className="pt-16">
         {/* Hero Section */}
@@ -342,7 +342,7 @@ const GovernmentFacilityCleaningColumbusOhioPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-columbus-ohio">
+                  <Link to="/commercial-quote?location=columbus-ohio">
                     <ShieldCheck className="w-5 h-5 mr-2" />
                     Request Security Assessment
                   </Link>
@@ -534,7 +534,7 @@ const GovernmentFacilityCleaningColumbusOhioPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-columbus-ohio">
+                          <Link to="/commercial-quote?location=columbus-ohio">
                             Contact Us for {city.name} Government Cleaning
                           </Link>
                         </Button>
@@ -664,7 +664,7 @@ const GovernmentFacilityCleaningColumbusOhioPage = () => {
               Join Columbus government agencies that trust Red Rock Cleans for professional, compliant facility services
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-columbus-ohio">Request Your Facility Assessment Today</Link>
+              <Link to="/commercial-quote?location=columbus-ohio">Request Your Facility Assessment Today</Link>
             </Button>
           </div>
         </section>

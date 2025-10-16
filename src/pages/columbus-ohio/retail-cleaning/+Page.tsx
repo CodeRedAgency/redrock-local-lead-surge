@@ -318,7 +318,7 @@ const RetailCleaningColumbusOhioPage = () => {
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/retail-cleaning" />
       </Helmet>
       
-      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/book-now-columbus-ohio" />
+      <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />
       
       <main className="pt-16">
         {/* Hero Section */}
@@ -342,7 +342,7 @@ const RetailCleaningColumbusOhioPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/book-now-columbus-ohio">
+                  <Link to="/commercial-quote?location=columbus-ohio">
                     <ShoppingCart className="w-5 h-5 mr-2" />
                     Schedule Retail Cleaning
                   </Link>
@@ -548,7 +548,7 @@ const RetailCleaningColumbusOhioPage = () => {
                         </div>
                         
                         <Button asChild className="w-full">
-                          <Link to="/book-now-columbus-ohio">
+                          <Link to="/commercial-quote?location=columbus-ohio">
                             Schedule {city.name} Retail Cleaning
                           </Link>
                         </Button>
@@ -678,7 +678,7 @@ const RetailCleaningColumbusOhioPage = () => {
               Join Columbus retailers that trust Red Rock Cleans for spotless stores and unforgettable shopping experiences
             </p>
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              <Link to="/book-now-columbus-ohio">Schedule Your Retail Store Cleaning Today</Link>
+              <Link to="/commercial-quote?location=columbus-ohio">Schedule Your Retail Store Cleaning Today</Link>
             </Button>
           </div>
         </section>
