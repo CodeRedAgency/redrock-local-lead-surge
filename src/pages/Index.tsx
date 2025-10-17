@@ -4,10 +4,12 @@ import { LocationCards } from "@/components/LocationCards";
 import { TrustSection } from "@/components/TrustSection";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 import heroResidential from "@/assets/hero-residential.jpg";
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const Index = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
@@ -42,21 +44,21 @@ const Index = () => {
                 <div className="inline-block animate-fade-in">
                   <span className="inline-flex items-center px-6 py-3 rounded-full bg-accent/15 border border-accent/30 text-accent font-semibold text-sm mb-8 shadow-lg backdrop-blur-sm">
                     <span className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse"></span>
-                    Trusted Local Cleaning Experts
+                    {t("home.badge", { defaultValue: "Trusted Local Cleaning Experts" })}
                   </span>
                 </div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-tight tracking-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
-                  Elevate Your Space with
+                  {t("home.h1.part1", { defaultValue: "Elevate Your Space with" })}
                   <span className="block mt-3 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent drop-shadow-sm">
-                    Premium Cleaning
+                    {t("home.h1.part2", { defaultValue: "Premium Cleaning" })}
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-fade-in font-medium" style={{ animationDelay: "0.2s" }}>
-                  Experience excellence in residential, commercial, and vacation rental cleaning services across multiple locations
+                  {t("home.subtitle", { defaultValue: "Experience excellence in residential, commercial, and vacation rental cleaning services across multiple locations" })}
                 </p>
                 <div className="pt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
                   <p className="text-lg md:text-xl font-semibold mb-6 text-foreground/95 bg-background/20 backdrop-blur-sm rounded-full py-3 px-6 inline-block border border-primary/20">
-                    Select Your Location to Get Started
+                    {t("home.selectLocation", { defaultValue: "Select Your Location to Get Started" })}
                   </p>
                 </div>
                 
@@ -64,15 +66,15 @@ const Index = () => {
                 <div className="flex flex-wrap justify-center gap-4 mt-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
                   <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/20">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-foreground/90">Residential</span>
+                    <span className="text-sm font-medium text-foreground/90">{t("home.badges.residential", { defaultValue: "Residential" })}</span>
                   </div>
                   <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/20">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-foreground/90">Commercial</span>
+                    <span className="text-sm font-medium text-foreground/90">{t("home.badges.commercial", { defaultValue: "Commercial" })}</span>
                   </div>
                   <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/20">
                     <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-foreground/90">Vacation Rental</span>
+                    <span className="text-sm font-medium text-foreground/90">{t("home.badges.vacationRental", { defaultValue: "Vacation Rental" })}</span>
                   </div>
                 </div>
               </div>
@@ -86,14 +88,12 @@ const Index = () => {
             <div className="container mx-auto px-4 text-center space-y-8 relative z-10">
               <div className="inline-block">
                 <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium text-sm mb-4">
-                  The Red Rock Difference
+                  {t("home.difference.badge", { defaultValue: "The Red Rock Difference" })}
                 </span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Why Choose Red Rock Cleaning?</h2>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{t("home.difference.title", { defaultValue: "Why Choose Red Rock Cleaning?" })}</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                We're a multi-location premium cleaning service dedicated to excellence. Whether you need 
-                cleaning for your home, office, or vacation rental, our professional teams deliver 
-                exceptional results every time.
+                {t("home.difference.copy", { defaultValue: "We're a multi-location premium cleaning service dedicated to excellence. Whether you need cleaning for your home, office, or vacation rental, our professional teams deliver exceptional results every time." })}
               </p>
             </div>
           </section>

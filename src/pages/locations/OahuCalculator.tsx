@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 
 const OahuCalculator = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-vegas/sign-in";
@@ -11,6 +12,7 @@ const OahuCalculator = () => {
         <title>Get a Quote - Oahu Cleaning Services | Red Rock Cleaning</title>
         <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house cleaning in Oahu and Honolulu." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <Navigation loginUrl={loginUrl} hideLocationSelector={true} />

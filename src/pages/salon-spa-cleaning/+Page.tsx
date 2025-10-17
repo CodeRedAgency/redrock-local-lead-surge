@@ -1,6 +1,8 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -14,12 +16,14 @@ import { Flower2, Hand, FileCheck, Scissors, Droplets, Sofa, Bath, Smile, Sparkl
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const SalonSpaCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Salon & Spa Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Professional salon and spa cleaning services. Red Rock Cleans ensures pristine, hygienic, and relaxing environments for hair salons, day spas, nail salons, and medispas." />
+        <title>{t("commercial.salon.title", { defaultValue: "Salon & Spa Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.salon.description", { defaultValue: "Professional salon and spa cleaning services. Red Rock Cleans ensures pristine, hygienic, and relaxing environments for hair salons, day spas, nail salons, and medispas." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -34,12 +38,12 @@ const SalonSpaCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Pristine Salon & Spa Cleaning for Ultimate Client Relaxation</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.salon.heading", { defaultValue: "Pristine Salon & Spa Cleaning for Ultimate Client Relaxation" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Transform your salon or spa into a sanctuary of cleanliness, luxury, and tranquility
+                {t("commercial.salon.tagline", { defaultValue: "Transform your salon or spa into a sanctuary of cleanliness, luxury, and tranquility" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>

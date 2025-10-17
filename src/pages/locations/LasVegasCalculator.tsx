@@ -1,6 +1,7 @@
 import { LasVegasNavigation } from "@/components/LasVegasNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 
 const LasVegasCalculator = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-vegas/sign-in";
@@ -11,6 +12,7 @@ const LasVegasCalculator = () => {
         <title>Get a Quote - Las Vegas Cleaning Services | Red Rock Cleaning</title>
         <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house and office cleaning in Las Vegas." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <LasVegasNavigation loginUrl={loginUrl} hideLocationSelector={true} />

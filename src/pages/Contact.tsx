@@ -1,6 +1,8 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -50,12 +52,14 @@ const Contact = () => {
     }
   ];
 
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Contact Us - All Locations | Red Rock Cleaning</title>
-        <meta name="description" content="Get in touch with Red Rock Cleaning. Contact information for all our locations including phone numbers and email addresses." />
+        <title>{t("contact.title", { defaultValue: "Contact Us - All Locations | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("contact.description", { defaultValue: "Get in touch with Red Rock Cleaning. Contact information for all our locations including phone numbers and email addresses." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -64,9 +68,9 @@ const Contact = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
+                <h1 className="text-5xl font-bold mb-6">{t("contact.heading", { defaultValue: "Contact Us" })}</h1>
                 <p className="text-xl text-muted-foreground">
-                  Get in touch with your local Red Rock Cleaning team
+                  {t("contact.subheading", { defaultValue: "Get in touch with your local Red Rock Cleaning team" })}
                 </p>
               </div>
 
@@ -86,7 +90,7 @@ const Contact = () => {
                       <div className="flex items-start space-x-3">
                         <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                         <div>
-                          <p className="font-semibold mb-1">Service Areas</p>
+                          <p className="font-semibold mb-1">{t("contact.serviceAreas", { defaultValue: "Service Areas" })}</p>
                           <p className="text-muted-foreground text-sm">{location.areas}</p>
                         </div>
                       </div>
@@ -94,7 +98,7 @@ const Contact = () => {
                       <div className="flex items-start space-x-3">
                         <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                         <div>
-                          <p className="font-semibold mb-1">Phone</p>
+                          <p className="font-semibold mb-1">{t("contact.phone", { defaultValue: "Phone" })}</p>
                           <a 
                             href={`tel:${location.phone}`} 
                             className="text-primary hover:underline"
@@ -107,7 +111,7 @@ const Contact = () => {
                       <div className="flex items-start space-x-3">
                         <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                         <div>
-                          <p className="font-semibold mb-1">Email</p>
+                          <p className="font-semibold mb-1">{t("contact.email", { defaultValue: "Email" })}</p>
                           <a 
                             href={`mailto:${location.email}`} 
                             className="text-primary hover:underline break-all"
@@ -122,16 +126,16 @@ const Contact = () => {
               </div>
 
               <div className="mt-16 bg-muted/30 p-8 rounded-lg text-center">
-                <h2 className="text-3xl font-bold mb-4">General Inquiries</h2>
+                <h2 className="text-3xl font-bold mb-4">{t("contact.generalInquiries", { defaultValue: "General Inquiries" })}</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  For partnership opportunities, franchise information, or general questions:
+                  {t("contact.generalCopy", { defaultValue: "For partnership opportunities, franchise information, or general questions:" })}
                 </p>
                 <div className="space-y-2">
                   <p className="text-lg">
-                    Email: <a href="mailto:office@redrockcleans.com" className="text-primary hover:underline">office@redrockcleans.com</a>
+                    {t("contact.emailLabel", { defaultValue: "Email:" })} <a href="mailto:office@redrockcleans.com" className="text-primary hover:underline">office@redrockcleans.com</a>
                   </p>
                   <p className="text-lg">
-                    Phone: <a href="tel:888-805-1733" className="text-primary hover:underline">888-805-1733</a>
+                    {t("contact.phoneLabel", { defaultValue: "Phone:" })} <a href="tel:888-805-1733" className="text-primary hover:underline">888-805-1733</a>
                   </p>
                 </div>
               </div>

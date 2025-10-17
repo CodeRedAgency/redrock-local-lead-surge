@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 
 const ColumbusCalculator = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-ohio/sign-in";
@@ -11,6 +12,7 @@ const ColumbusCalculator = () => {
         <title>Get a Quote - Columbus Ohio Cleaning Services | Red Rock Cleaning</title>
         <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house and office cleaning in Columbus Ohio." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <Navigation loginUrl={loginUrl} hideLocationSelector={true} />

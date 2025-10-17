@@ -1,6 +1,8 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -14,12 +16,14 @@ import { FileText, Microscope, Award, Users, Stethoscope, Droplets, Cross, Gradu
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const MedicalOfficeCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Medical Office Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Specialized medical office cleaning services. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities to ensure patient safety. Learn more." />
+        <title>{t("commercial.medical.title", { defaultValue: "Medical Office Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.medical.description", { defaultValue: "Specialized medical office cleaning services. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities to ensure patient safety. Learn more." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -34,12 +38,12 @@ const MedicalOfficeCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">HIPAA & OSHA Compliant Medical Office Cleaning</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.medical.heading", { defaultValue: "HIPAA & OSHA Compliant Medical Office Cleaning" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Ensuring patient safety and trust through specialized healthcare facility cleaning protocols
+                {t("commercial.medical.tagline", { defaultValue: "Ensuring patient safety and trust through specialized healthcare facility cleaning protocols" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>

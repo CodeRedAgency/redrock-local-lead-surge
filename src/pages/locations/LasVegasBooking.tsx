@@ -1,6 +1,7 @@
 import { LasVegasBookingNavigation } from "@/components/LasVegasBookingNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect } from "react";
 
 const LasVegasBooking = () => {
@@ -37,6 +38,7 @@ const LasVegasBooking = () => {
         <title>Book Now - Las Vegas Cleaning Services | Red Rock Cleaning</title>
         <meta name="description" content="Book your professional cleaning service in Las Vegas. Easy online booking for residential and commercial cleaning." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <LasVegasBookingNavigation loginUrl={loginUrl} />

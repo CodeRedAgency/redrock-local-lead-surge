@@ -1,6 +1,7 @@
 import { BookingNavigation } from "@/components/BookingNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect } from "react";
 
 const SouthFloridaBooking = () => {
@@ -40,6 +41,7 @@ const SouthFloridaBooking = () => {
         <title>Book Now - South Florida Cleaning Services | Red Rock Cleaning</title>
         <meta name="description" content="Book your professional cleaning service in South Florida. Easy online booking for residential and vacation rental cleaning." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <BookingNavigation loginUrl={loginUrl} />

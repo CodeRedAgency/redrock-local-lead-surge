@@ -1,6 +1,8 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -14,12 +16,14 @@ import { Shield, Clock, Package, Wrench, Users, Truck, Monitor, HardHat, Forklif
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const WarehouseCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Warehouse Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Professional warehouse cleaning services. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers." />
+        <title>{t("commercial.warehouse.title", { defaultValue: "Warehouse Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.warehouse.description", { defaultValue: "Professional warehouse cleaning services. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -34,12 +38,12 @@ const WarehouseCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Efficient & Safe Warehouse Cleaning Services</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.warehouse.heading", { defaultValue: "Efficient & Safe Warehouse Cleaning Services" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Maximize productivity and ensure worker safety with our specialized industrial cleaning solutions
+                {t("commercial.warehouse.tagline", { defaultValue: "Maximize productivity and ensure worker safety with our specialized industrial cleaning solutions" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>

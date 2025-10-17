@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 
 const SouthFloridaCalculator = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-fort-lauderdale/sign-in";
@@ -11,6 +12,7 @@ const SouthFloridaCalculator = () => {
         <title>Get a Quote - South Florida Cleaning Services | Red Rock Cleaning</title>
         <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house cleaning in South Florida, Weston, and Fort Lauderdale." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <Navigation loginUrl={loginUrl} hideLocationSelector={true} />

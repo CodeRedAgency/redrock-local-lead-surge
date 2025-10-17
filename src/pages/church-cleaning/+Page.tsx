@@ -1,18 +1,22 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check, Heart, Shield, Users } from "lucide-react";
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const ChurchCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Professional Church Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Professional church cleaning services by Red Rock Cleans. We provide respectful, detailed cleaning for sanctuaries, fellowship halls, and all places of worship. Learn more." />
+        <title>{t("commercial.church.title", { defaultValue: "Professional Church Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.church.description", { defaultValue: "Professional church cleaning services by Red Rock Cleans. We provide respectful, detailed cleaning for sanctuaries, fellowship halls, and all places of worship. Learn more." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -27,12 +31,12 @@ const ChurchCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Professional Church Cleaning Services</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.church.heading", { defaultValue: "Professional Church Cleaning Services" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Creating a welcoming, sacred environment through respectful and thorough cleaning
+                {t("commercial.church.tagline", { defaultValue: "Creating a welcoming, sacred environment through respectful and thorough cleaning" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>

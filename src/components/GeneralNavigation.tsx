@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MapPin, ChevronDown, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
@@ -33,6 +34,7 @@ export const GeneralNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   // Get current location name for display
   const getCurrentLocationName = () => {
@@ -44,6 +46,8 @@ export const GeneralNavigation = () => {
   const handleLocationChange = (path: string) => {
     navigate(path);
   };
+
+  const prefixForLang = () => (i18n.language.startsWith("es") ? "/es" : "");
 
   return (
     <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 shadow-[var(--shadow-soft)] relative overflow-hidden">
@@ -62,7 +66,7 @@ export const GeneralNavigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to={prefixForLang() + "/"} className="flex items-center space-x-2">
             <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
           </Link>
 
@@ -85,29 +89,29 @@ export const GeneralNavigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="hover:text-primary transition-colors relative z-10">
-              Home
+            <Link to={prefixForLang() + "/"} className="hover:text-primary transition-colors relative z-10">
+              {t("nav.home")}
             </Link>
 
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors relative z-10">
-                Services <ChevronDown className="w-4 h-4" />
+                {t("nav.services")} <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuSub>
                   <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
-                      <Link to="/standard-cleaning-services">Standard Cleaning Services</Link>
+                      <Link to={prefixForLang() + "/standard-cleaning-services"}>Standard Cleaning Services</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/deep-cleaning-services">Deep Cleaning Services</Link>
+                      <Link to={prefixForLang() + "/deep-cleaning-services"}>Deep Cleaning Services</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/move-out-cleaning-services">Move Out Cleaning Services</Link>
+                      <Link to={prefixForLang() + "/move-out-cleaning-services"}>Move Out Cleaning Services</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/post-construction-cleaning-services">Post Construction Cleaning Services</Link>
+                      <Link to={prefixForLang() + "/post-construction-cleaning-services"}>Post Construction Cleaning Services</Link>
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuSub>
@@ -115,7 +119,7 @@ export const GeneralNavigation = () => {
                   <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning">Commercial Cleaning</Link>
+                  <Link to={prefixForLang() + "/commercial-cleaning"}>Commercial Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link to="/commercial-cleaning-time-estimator">Commercial Cleaning Time Estimator</Link>
@@ -127,34 +131,34 @@ export const GeneralNavigation = () => {
                       <Link to="/church-cleaning">Church Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/data-center-cleaning">Data Center Cleaning</Link>
+                  <Link to={prefixForLang() + "/data-center-cleaning"}>Data Center Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/factory-cleaning">Factory Cleaning</Link>
+                  <Link to={prefixForLang() + "/factory-cleaning"}>Factory Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/government-facility-cleaning">Government Facility Cleaning</Link>
+                  <Link to={prefixForLang() + "/government-facility-cleaning"}>Government Facility Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/gym-cleaning">Gym Cleaning</Link>
+                  <Link to={prefixForLang() + "/gym-cleaning"}>Gym Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/medical-office-cleaning">Medical Office Cleaning</Link>
+                  <Link to={prefixForLang() + "/medical-office-cleaning"}>Medical Office Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/retail-cleaning">Retail Store Cleaning</Link>
+                  <Link to={prefixForLang() + "/retail-cleaning"}>Retail Store Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/school-cleaning">School Cleaning</Link>
+                  <Link to={prefixForLang() + "/school-cleaning"}>School Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/showroom-cleaning">Showroom Cleaning</Link>
+                  <Link to={prefixForLang() + "/showroom-cleaning"}>Showroom Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/warehouse-cleaning">Warehouse Cleaning</Link>
+                  <Link to={prefixForLang() + "/warehouse-cleaning"}>Warehouse Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/salon-spa-cleaning">Salon & Spa Cleaning</Link>
+                  <Link to={prefixForLang() + "/salon-spa-cleaning"}>Salon & Spa Cleaning</Link>
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuSub>
@@ -163,7 +167,7 @@ export const GeneralNavigation = () => {
 
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors relative z-10">
-                Pricing <ChevronDown className="w-4 h-4" />
+                {t("nav.pricing")} <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem asChild>
@@ -192,7 +196,7 @@ export const GeneralNavigation = () => {
 
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-colors relative z-10">
-                About <ChevronDown className="w-4 h-4" />
+                {t("nav.about")} <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem asChild>
@@ -204,9 +208,27 @@ export const GeneralNavigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
-              Contact
+              <Link to={prefixForLang() + "/contact"} className="hover:text-primary transition-colors relative z-10">
+              {t("nav.contact")}
             </Link>
+
+            {/* Language Switcher */}
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => i18n.changeLanguage("en")}
+                className={`text-sm px-2 py-1 rounded ${i18n.language.startsWith("en") ? "bg-primary text-primary-foreground" : "hover:bg-accent"}`}
+                aria-label="Switch to English"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => i18n.changeLanguage("es")}
+                className={`text-sm px-2 py-1 rounded ${i18n.language.startsWith("es") ? "bg-primary text-primary-foreground" : "hover:bg-accent"}`}
+                aria-label="Cambiar a español"
+              >
+                ES
+              </button>
+            </div>
 
             {/* Location Selector */}
             <div className="flex items-center space-x-2">
@@ -230,13 +252,13 @@ export const GeneralNavigation = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="sm" asChild>
               <a href="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" target="_blank" rel="noopener noreferrer">
-                Login
+                {t("nav.login")}
               </a>
             </Button>
             <Button size="sm" asChild>
               <a href="/book-now-south-florida">
                 <Phone className="w-4 h-4 mr-2" />
-                Book Now
+                {t("nav.bookNow")}
               </a>
             </Button>
           </div>
@@ -257,11 +279,11 @@ export const GeneralNavigation = () => {
           <div className="md:hidden border-t">
             <nav className="py-4 space-y-4">
               <Link to="/" className="block hover:text-primary transition-colors">
-                Home
+                {t("nav.home")}
               </Link>
               
               <div>
-                <div className="font-medium mb-2">Services</div>
+                <div className="font-medium mb-2">{t("nav.services")}</div>
                 <div className="ml-4 space-y-2">
                   <div className="font-medium text-sm text-muted-foreground mb-1">Residential Cleaning</div>
                   <Link to="/standard-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
@@ -317,7 +339,7 @@ export const GeneralNavigation = () => {
               </div>
 
               <div>
-                <div className="font-medium mb-2">Pricing</div>
+                <div className="font-medium mb-2">{t("nav.pricing")}</div>
                 <div className="ml-4 space-y-2">
                   <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
                     Commercial Cleaning Cost Estimator
@@ -344,7 +366,7 @@ export const GeneralNavigation = () => {
               </div>
 
               <div>
-                <div className="font-medium mb-2">About</div>
+                <div className="font-medium mb-2">{t("nav.about")}</div>
                 <div className="ml-4 space-y-2">
                   <Link to="/about" className="block hover:text-primary transition-colors text-sm">
                     About Us
@@ -356,20 +378,20 @@ export const GeneralNavigation = () => {
               </div>
 
               <Link to="/contact" className="block hover:text-primary transition-colors">
-                Contact
+                {t("nav.contact")}
               </Link>
 
               {/* Mobile CTA Buttons */}
               <div className="pt-4 space-y-2">
                 <Button variant="outline" size="sm" className="w-full" asChild>
                   <a href="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" target="_blank" rel="noopener noreferrer">
-                    Login
+                    {t("nav.login")}
                   </a>
                 </Button>
                 <Button size="sm" className="w-full" asChild>
                   <a href="/book-now-south-florida">
                     <Phone className="w-4 h-4 mr-2" />
-                    Book Now
+                    {t("nav.bookNow")}
                   </a>
                 </Button>
               </div>

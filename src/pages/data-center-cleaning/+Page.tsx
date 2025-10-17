@@ -1,18 +1,22 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check, Shield, Zap, Building } from "lucide-react";
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const DataCenterCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Data Center Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Specialized data center cleaning services. Red Rock Cleans provides professional server room, sub-floor, and critical environment cleaning to prevent downtime. Learn more." />
+        <title>{t("commercial.datacenter.title", { defaultValue: "Data Center Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.datacenter.description", { defaultValue: "Specialized data center cleaning services. Red Rock Cleans provides professional server room, sub-floor, and critical environment cleaning to prevent downtime. Learn more." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -27,12 +31,12 @@ const DataCenterCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Specialized Data Center Cleaning Services</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.datacenter.heading", { defaultValue: "Specialized Data Center Cleaning Services" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Protecting critical infrastructure with precision cleaning protocols
+                {t("commercial.datacenter.tagline", { defaultValue: "Protecting critical infrastructure with precision cleaning protocols" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>
@@ -66,7 +70,7 @@ const DataCenterCleaningPage = () => {
                 </div>
 
                 <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                  <h2 className="text-3xl font-bold mb-6 text-primary">Our Data Center Cleaning Protocol</h2>
+                  <h2 className="text-3xl font-bold mb-6 text-primary">{t("commercial.datacenter.protocol.title", { defaultValue: "Our Data Center Cleaning Protocol" })}</h2>
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
                       <h3 className="text-xl font-semibold mb-4">Server Room & Equipment Cleaning</h3>
@@ -175,7 +179,7 @@ const DataCenterCleaningPage = () => {
                 </div>
 
                 <div className="bg-primary text-primary-foreground p-8 rounded-lg mb-12">
-                  <h2 className="text-3xl font-bold mb-4">Why Professional Data Center Cleaning is Non-Negotiable</h2>
+                  <h2 className="text-3xl font-bold mb-4">{t("commercial.datacenter.why.title", { defaultValue: "Why Professional Data Center Cleaning is Non-Negotiable" })}</h2>
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
                       <h3 className="text-xl font-semibold mb-3">Preventing Contamination & Hardware Failure</h3>
@@ -201,7 +205,7 @@ const DataCenterCleaningPage = () => {
                 </div>
 
                 <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                  <h2 className="text-3xl font-bold mb-6 text-primary">Find Data Center Cleaning In Your Area</h2>
+                  <h2 className="text-3xl font-bold mb-6 text-primary">{t("commercial.datacenter.find.title", { defaultValue: "Find Data Center Cleaning In Your Area" })}</h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <Link 
                       to="/las-vegas/data-center-cleaning/" 
@@ -243,7 +247,7 @@ const DataCenterCleaningPage = () => {
                 </div>
 
                 <div className="bg-muted/30 p-8 rounded-lg mb-12">
-                  <h2 className="text-3xl font-bold mb-6">Our Other Commercial Cleaning Solutions</h2>
+                  <h2 className="text-3xl font-bold mb-6">{t("commercial.datacenter.other.title", { defaultValue: "Our Other Commercial Cleaning Solutions" })}</h2>
                   <div className="grid md:grid-cols-3 gap-6">
                     <Link 
                       to="/commercial-cleaning" 
@@ -276,7 +280,7 @@ const DataCenterCleaningPage = () => {
                 </div>
 
                 <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                  <h2 className="text-3xl font-bold mb-6 text-primary">Frequently Asked Questions</h2>
+                  <h2 className="text-3xl font-bold mb-6 text-primary">{t("commercial.datacenter.faq.title", { defaultValue: "Frequently Asked Questions" })}</h2>
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold mb-2">What is data center cleaning and why is it critical?</h3>
@@ -306,12 +310,12 @@ const DataCenterCleaningPage = () => {
                 </div>
 
                 <div className="bg-primary/5 p-8 rounded-lg text-center">
-                  <h2 className="text-3xl font-bold mb-4">Ready to Protect Your Critical Infrastructure?</h2>
+                  <h2 className="text-3xl font-bold mb-4">{t("commercial.datacenter.cta.title", { defaultValue: "Ready to Protect Your Critical Infrastructure?" })}</h2>
                   <p className="text-xl text-muted-foreground mb-8">
-                    Choose your location and get a specialized quote for professional data center cleaning services.
+                    {t("commercial.datacenter.cta.copy", { defaultValue: "Choose your location and get a specialized quote for professional data center cleaning services." })}
                   </p>
                   <Button size="lg" asChild>
-                    <Link to="/commercial-quote">Find Your Location & Get a Quote</Link>
+                    <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Find Your Location & Get a Quote" })}</Link>
                   </Button>
                 </div>
 

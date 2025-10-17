@@ -2,7 +2,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import i18n from "./i18n";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -176,15 +178,29 @@ import SchoolCleaningPage from "./pages/school-cleaning/+Page";
 import ShowroomCleaningPage from "./pages/showroom-cleaning/+Page";
 import WarehouseCleaningPage from "./pages/warehouse-cleaning/+Page";
 import SalonSpaCleaningPage from "./pages/salon-spa-cleaning/+Page";
+import IndustrialCleaningPage from "./pages/industrial-cleaning/+Page";
 
 const queryClient = new QueryClient();
+
+const LanguageSynchronizer = () => {
+  const location = useLocation();
+  useEffect(() => {
+    const isEs = window.location.pathname.startsWith("/es");
+    const target = isEs ? "es" : "en";
+    if (i18n.language !== target) {
+      i18n.changeLanguage(target);
+    }
+  }, [location]);
+  return null;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname.startsWith("/es") ? "/es" : undefined}>
+        <LanguageSynchronizer />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
@@ -196,6 +212,7 @@ const App = () => (
           <Route path="/commercial-cleaning" element={<CommercialCleaning />} />
           <Route path="/church-cleaning" element={<ChurchCleaningPage />} />
           <Route path="/data-center-cleaning" element={<DataCenterCleaningPage />} />
+          <Route path="/industrial-cleaning" element={<IndustrialCleaningPage />} />
           <Route path="/factory-cleaning" element={<FactoryCleaningPage />} />
           <Route path="/government-facility-cleaning" element={<GovernmentFacilityCleaningPage />} />
           <Route path="/gym-cleaning" element={<GymCleaningPage />} />
@@ -242,6 +259,7 @@ const App = () => (
           
           {/* Blog & Hiring */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/page/:page" element={<Blog />} />
           <Route path="/blog/cleaning-tips/health-code-violations" element={<HealthCodeViolationsPage />} />
           <Route path="/blog/cleaning-tips/airbnb-bedding-management-you-should-know" element={<AirbnbBeddingManagementPage />} />
           <Route path="/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework" element={<MinimizeHouseworkTimePage />} />

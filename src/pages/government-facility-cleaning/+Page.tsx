@@ -1,6 +1,8 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -14,12 +16,14 @@ import { Shield, Lock, FileText, Building, Users, Calendar, Award } from "lucide
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const GovernmentFacilityCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Government Facility Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Secure and compliant government facility cleaning. Red Rock Cleans provides discreet, professional cleaning for municipal, federal, and public buildings by security-cleared staff." />
+        <title>{t("commercial.government.title", { defaultValue: "Government Facility Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.government.description", { defaultValue: "Secure and compliant government facility cleaning. Red Rock Cleans provides discreet, professional cleaning for municipal, federal, and public buildings by security-cleared staff." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -34,12 +38,12 @@ const GovernmentFacilityCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Secure & Compliant Government Facility Cleaning</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.government.heading", { defaultValue: "Secure & Compliant Government Facility Cleaning" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Discreet, professional cleaning for sensitive government and municipal buildings
+                {t("commercial.government.tagline", { defaultValue: "Discreet, professional cleaning for sensitive government and municipal buildings" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>

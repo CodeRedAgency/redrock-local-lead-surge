@@ -1,0 +1,337 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now",
+    "login": "Login"
+  },
+  "blog": {
+    "title": "Cleaning Tips & Advice",
+    "subtitle": "Expert insights and practical guides for a cleaner, healthier space",
+    "readMore": "Read More",
+    "searchPlaceholder": "Search articles...",
+    "allCategories": "All Categories",
+    "pageOf": "Page {{current}} of {{total}}"
+  },
+  "cta": {
+    "needPro": "Need Professional Cleaning?",
+    "phone": "Call (888) 805-1733"
+  },
+  "home": {
+    "badge": "Trusted Local Cleaning Experts",
+    "h1": { "part1": "Elevate Your Space with", "part2": "Premium Cleaning" },
+    "subtitle": "Experience excellence in residential, commercial, and vacation rental cleaning services across multiple locations",
+    "selectLocation": "Select Your Location to Get Started",
+    "badges": { "residential": "Residential", "commercial": "Commercial", "vacationRental": "Vacation Rental" },
+    "difference": {
+      "badge": "The Red Rock Difference",
+      "title": "Why Choose Red Rock Cleaning?",
+      "copy": "We're a multi-location premium cleaning service dedicated to excellence. Whether you need cleaning for your home, office, or vacation rental, our professional teams deliver exceptional results every time."
+    }
+  },
+  "locations": {
+    "cta": { "title": "Ready to Experience a Cleaner Home?", "copy": "Get an instant quote with our online calculator or book your cleaning service now" },
+    "customerLogin": "Customer Login",
+    "southFlorida": {
+      "title": "Professional House Cleaning Services in South Florida | Red Rock Cleaning",
+      "description": "Premium residential and vacation rental cleaning services in South Florida, Weston, and Fort Lauderdale. Book your professional cleaning service today."
+    },
+    "lasVegas": {
+      "title": "Las Vegas House Cleaning Services | Red Rock Cleaning",
+      "description": "Professional residential and commercial cleaning services in Las Vegas and Henderson. Reliable, quality cleaning you can trust."
+    },
+    "oahu": {
+      "title": "Oahu House Cleaning Services | Red Rock Cleaning",
+      "description": "Professional residential and vacation rental cleaning services in Oahu and Honolulu. Experience premium Hawaiian cleaning services."
+    },
+    "maui": {
+      "title": "Maui House Cleaning Services | Red Rock Cleaning",
+      "description": "Professional vacation rental, deep, and recurring cleaning services in Maui. Premium cleaning for your Hawaiian paradise."
+    },
+    "dallas": {
+      "title": "Dallas House Cleaning Services | Red Rock Cleaning",
+      "description": "Premium residential and commercial cleaning packages in Dallas. Professional, reliable cleaning services you can trust."
+    },
+    "columbus": {
+      "title": "Columbus Ohio House Cleaning Services | Red Rock Cleaning",
+      "description": "Professional house and office cleaning in Columbus Ohio. Reliable service with easy online booking. Experience quality you can trust."
+    }
+  },
+  "commercial": {
+    "gym": {
+      "title": "Gym Cleaning Services | Red Rock Cleans",
+      "description": "Professional gym and fitness center cleaning services. Sanitize equipment, locker rooms, and common areas with our specialized cleaning protocols.",
+      "heading": "Professional Gym Cleaning Services",
+      "tagline": "Keep your fitness center clean, safe, and member-ready with our specialized gym cleaning protocols",
+      "checklist": {
+        "title": "Our Comprehensive Gym Cleaning Checklist",
+        "workout": { "title": "Workout & Equipment Areas", "i1": "Disinfecting free weights & dumbbells", "i2": "Cardio machine sanitization", "i3": "High-touch point cleaning", "i4": "Cable & pulley system cleaning" },
+        "locker": { "title": "Locker Rooms & Showers", "i1": "Floor & wall sanitization", "i2": "Bench & locker cleaning", "i3": "Mold & mildew prevention", "i4": "Ventilation cleaning" }
+      }
+    },
+    "datacenter": {
+      "title": "Data Center Cleaning Services | Red Rock Cleans",
+      "description": "Specialized data center cleaning services. Red Rock Cleans provides professional server room, sub-floor, and critical environment cleaning to prevent downtime. Learn more.",
+      "heading": "Specialized Data Center Cleaning Services",
+      "tagline": "Protecting critical infrastructure with precision cleaning protocols",
+      "protocol": { "title": "Our Data Center Cleaning Protocol" },
+      "why": { "title": "Why Professional Data Center Cleaning is Non-Negotiable" },
+      "find": { "title": "Find Data Center Cleaning In Your Area" },
+      "other": { "title": "Our Other Commercial Cleaning Solutions" },
+      "faq": { "title": "Frequently Asked Questions" },
+      "cta": { "title": "Ready to Protect Your Critical Infrastructure?", "copy": "Choose your location and get a specialized quote for professional data center cleaning services." }
+    }
+    ,
+    "retail": {
+      "title": "Retail Store Cleaning Services | Red Rock Cleans",
+      "description": "Professional retail store cleaning services. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts, sales floors, and more.",
+      "heading": "Pristine Retail Cleaning to Elevate Your Brand",
+      "tagline": "Transform your retail space into a spotless showcase that captivates customers and drives sales",
+      "experience": {
+        "title": "Creating an Unforgettable Customer Experience",
+        "i1": { "title": "Immaculate First Impressions" },
+        "i2": { "title": "A Healthy Shopping Space" },
+        "i3": { "title": "Protecting Your Products" }
+      },
+      "checklist": {
+        "title": "Our Comprehensive Retail Cleaning Checklist",
+        "sales": { "title": "Sales Floor & Displays" },
+        "fitting": { "title": "Fitting Rooms & Restrooms" },
+        "windows": { "title": "Windows & Storefront" },
+        "stock": { "title": "Back-of-House & Stockrooms" }
+      },
+      "impact": { "title": "The Impact of a Professionally Cleaned Store" },
+      "find": { "title": "Find Retail Store Cleaning In Your Area" },
+      "faq": { "title": "Frequently Asked Questions" },
+      "cta": { "title": "Ready to Elevate Your Retail Space?", "copy": "Choose your location to get a tailored quote for professional retail store cleaning services." }
+    }
+    ,
+    "factory": {
+      "title": "Factory Cleaning Services | Red Rock Cleans",
+      "description": "Professional factory cleaning services. Red Rock Cleans provides heavy-duty cleaning for manufacturing plants to ensure safety, compliance, and productivity. Learn more.",
+      "heading": "Professional Factory Cleaning Services",
+      "tagline": "Heavy-duty cleaning for manufacturing plants and industrial facilities"
+    }
+    ,
+    "government": {
+      "title": "Government Facility Cleaning Services | Red Rock Cleans",
+      "description": "Secure and compliant government facility cleaning. Red Rock Cleans provides discreet, professional cleaning for municipal, federal, and public buildings by security-cleared staff.",
+      "heading": "Secure & Compliant Government Facility Cleaning",
+      "tagline": "Discreet, professional cleaning for sensitive government and municipal buildings"
+    }
+    ,
+    "medical": {
+      "title": "Medical Office Cleaning Services | Red Rock Cleans",
+      "description": "Specialized medical office cleaning services. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities to ensure patient safety. Learn more.",
+      "heading": "HIPAA & OSHA Compliant Medical Office Cleaning",
+      "tagline": "Ensuring patient safety and trust through specialized healthcare facility cleaning protocols"
+    }
+    ,
+    "school": {
+      "title": "School Cleaning Services | Red Rock Cleans",
+      "description": "Professional school cleaning services. Red Rock Cleans provides a safe and healthy learning environment for students and staff with our comprehensive janitorial services.",
+      "heading": "Safe & Healthy School Cleaning Services",
+      "tagline": "Creating clean, safe learning environments that support student success and staff well-being"
+    }
+    ,
+    "showroom": {
+      "title": "Showroom Cleaning Services | Red Rock Cleans",
+      "description": "Professional showroom cleaning services. Red Rock Cleans enhances your product presentation and client experience with meticulous cleaning for car dealerships, furniture stores, and more.",
+      "heading": "Impeccable Showroom Cleaning to Showcase Your Products",
+      "tagline": "Transform your showroom into a pristine showcase that elevates your products and impresses every client"
+    }
+    ,
+    "warehouse": {
+      "title": "Warehouse Cleaning Services | Red Rock Cleans",
+      "description": "Professional warehouse cleaning services. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers.",
+      "heading": "Efficient & Safe Warehouse Cleaning Services",
+      "tagline": "Maximize productivity and ensure worker safety with our specialized industrial cleaning solutions"
+    }
+    ,
+    "salon": {
+      "title": "Salon & Spa Cleaning Services | Red Rock Cleans",
+      "description": "Professional salon and spa cleaning services. Red Rock Cleans ensures pristine, hygienic, and relaxing environments for hair salons, day spas, nail salons, and medispas.",
+      "heading": "Pristine Salon & Spa Cleaning for Ultimate Client Relaxation",
+      "tagline": "Transform your salon or spa into a sanctuary of cleanliness, luxury, and tranquility"
+    }
+    ,
+    "church": {
+      "title": "Professional Church Cleaning Services | Red Rock Cleans",
+      "description": "Professional church cleaning services by Red Rock Cleans. We provide respectful, detailed cleaning for sanctuaries, fellowship halls, and all places of worship. Learn more.",
+      "heading": "Professional Church Cleaning Services",
+      "tagline": "Creating a welcoming, sacred environment through respectful and thorough cleaning"
+    }
+  },
+  "contact": {
+    "title": "Contact Us - All Locations | Red Rock Cleaning",
+    "description": "Get in touch with Red Rock Cleaning. Contact information for all our locations including phone numbers and email addresses.",
+    "heading": "Contact Us",
+    "subheading": "Get in touch with your local Red Rock Cleaning team",
+    "serviceAreas": "Service Areas",
+    "phone": "Phone",
+    "email": "Email",
+    "generalInquiries": "General Inquiries",
+    "generalCopy": "For partnership opportunities, franchise information, or general questions:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:"
+  }
+  ,
+  "services": {
+    "standard": {
+      "title": "Standard Cleaning Services | Red Rock Cleaning",
+      "description": "Regular standard cleaning services to maintain a spotless home or office. Professional cleaners for consistent, reliable maintenance cleaning.",
+      "heading": "Standard Cleaning Services",
+      "tagline": "Regular maintenance cleaning to keep your space consistently fresh and clean",
+      "flex": { "title": "Flexible Scheduling", "copy": "Weekly, bi-weekly, or monthly options" },
+      "team": { "title": "Professional Team", "copy": "Trained and experienced cleaners" },
+      "quality": { "title": "Quality Guaranteed", "copy": "100% satisfaction promise" },
+      "included": {
+        "title": "What's Included",
+        "allRooms": "All Rooms",
+        "dust": "Dust all accessible surfaces",
+        "vacuum": "Vacuum carpets and rugs",
+        "mop": "Mop hard floors",
+        "trash": "Empty trash bins",
+        "handles": "Wipe door handles and switches",
+        "kitchen": "Kitchen",
+        "ctops": "Clean countertops and backsplash",
+        "appliances": "Clean outside of appliances",
+        "sink": "Clean sink and faucet",
+        "cabinets": "Wipe cabinet fronts",
+        "bathrooms": "Bathrooms",
+        "toilet": "Scrub and sanitize toilet",
+        "shower": "Clean shower and tub",
+        "bathSink": "Clean sink and counters",
+        "mirrors": "Polish mirrors and fixtures",
+        "bedrooms": "Bedrooms",
+        "beds": "Make beds and change linens",
+        "dustFurniture": "Dust furniture and decor",
+        "vacuumUnder": "Vacuum under accessible areas"
+      },
+      "cta": {
+        "title": "Ready to Get Started?",
+        "copy": "Book your standard cleaning service today and enjoy a consistently clean space."
+      }
+    },
+    "deep": {
+      "title": "Deep Cleaning Services | Red Rock Cleaning",
+      "description": "Comprehensive deep cleaning services that reach every corner. Perfect for seasonal cleaning, move-in/out, or thorough home sanitization.",
+      "heading": "Deep Cleaning Services",
+      "tagline": "Intensive, detailed cleaning that transforms your space from top to bottom",
+      "thorough": { "title": "Thorough Clean", "copy": "Every corner, every surface" },
+      "health": { "title": "Health Focused", "copy": "Eliminate allergens and bacteria" },
+      "movein": { "title": "Move-In Ready", "copy": "Perfect for transitions" },
+      "checklist": {
+        "title": "Complete Deep Cleaning Checklist",
+        "kitchen": "Kitchen Deep Clean",
+        "kitchen1": "Inside oven, refrigerator, and dishwasher",
+        "kitchen2": "Inside and outside all cabinets",
+        "kitchen3": "Degrease range hood and backsplash",
+        "kitchen4": "Clean baseboards and corners",
+        "kitchen5": "Detailed grout cleaning",
+        "bath": "Bathroom Deep Clean",
+        "bath1": "Scrub and sanitize grout lines",
+        "bath2": "Deep clean shower doors and tracks",
+        "bath3": "Descale fixtures and showerheads",
+        "bath4": "Clean inside cabinets and drawers",
+        "bath5": "Detailed baseboard cleaning",
+        "living": "Living Areas",
+        "living1": "Clean ceiling fans and light fixtures",
+        "living2": "Wipe down walls and doors",
+        "living3": "Clean window sills and tracks",
+        "living4": "Vacuum behind and under furniture",
+        "living5": "Detailed baseboard and molding",
+        "additional": "Additional Services",
+        "add1": "Clean inside closets",
+        "add2": "Dust vents and air returns",
+        "add3": "Wipe down switches and outlets",
+        "add4": "Polish all hardware",
+        "add5": "Remove cobwebs from ceilings"
+      },
+      "when": {
+        "title": "When to Schedule Deep Cleaning",
+        "seasonal": { "title": "Seasonal Refresh", "copy": "Every 3-6 months for a thorough reset" },
+        "move": { "title": "Move In/Out", "copy": "Start fresh or leave spotless" },
+        "events": { "title": "Special Events", "copy": "Before hosting or after construction" }
+      },
+      "cta": { "title": "Schedule Your Deep Clean", "copy": "Transform your space with our comprehensive deep cleaning service." }
+    }
+    ,
+    "airbnb": {
+      "title": "Airbnb Cleaning Services | Red Rock Cleaning",
+      "description": "Professional Airbnb and vacation rental cleaning services. Fast turnovers, consistent quality, and guest-ready results every time.",
+      "heading": "Airbnb Cleaning Services",
+      "tagline": "Professional turnover cleaning for vacation rentals and short-term properties",
+      "quick": { "title": "Quick Turnover", "copy": "Same-day service available" },
+      "fivestar": { "title": "5-Star Ready", "copy": "Guest-ready standards" },
+      "host": { "title": "Host Partners", "copy": "Trusted by hundreds" },
+      "quality": { "title": "Quality Checked", "copy": "Every clean verified" },
+      "checklist": {
+        "title": "Turnover Cleaning Checklist",
+        "every": "Every Turnover",
+        "e1": "Strip and remake all beds with fresh linens",
+        "e2": "Replace all towels and toiletries",
+        "e3": "Deep clean all bathrooms",
+        "e4": "Kitchen deep clean and restock",
+        "e5": "Vacuum and mop all floors",
+        "e6": "Dust all surfaces and decor",
+        "guest": "Guest Experience",
+        "g1": "Check and replenish supplies",
+        "g2": "Test all appliances and remotes",
+        "g3": "Report any maintenance issues",
+        "g4": "Take before/after photos",
+        "g5": "Lock and secure property",
+        "g6": "Send completion notification"
+      },
+      "why": {
+        "title": "Why Hosts Choose Us",
+        "flex": { "title": "Flexible Scheduling", "copy": "Last-minute bookings? No problem. We work around your check-in/check-out times." },
+        "quality": { "title": "Consistent Quality", "copy": "Every clean meets the same high standard, ensuring great guest reviews." },
+        "care": { "title": "Property Care", "copy": "We treat your property with care and report any issues immediately." }
+      },
+      "cta": { "title": "Partner With Us", "copy": "Let us handle the cleaning so you can focus on being a great host." }
+    }
+    ,
+    "moveout": {
+      "title": "Move Out Cleaning Services | Red Rock Cleaning",
+      "description": "Professional move out cleaning services. Get your security deposit back with our thorough move-out cleaning. Available in South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas.",
+      "heading": "Move Out Cleaning Services",
+      "tagline": "Get your security deposit back with our thorough move-out cleaning",
+      "complete": { "title": "Complete Move Out Cleaning" },
+      "sections": {
+        "kitchen": { "title": "Kitchen Deep Clean", "copy": "Leave your kitchen spotless with our comprehensive move-out kitchen cleaning service.", "i1": "Inside and outside of all appliances", "i2": "Cabinet interiors and exteriors", "i3": "Countertops and backsplash cleaning", "i4": "Sink and faucet deep cleaning", "i5": "Floor cleaning and mopping" },
+        "bath": { "title": "Bathroom Deep Clean", "copy": "Ensure bathrooms are thoroughly sanitized and ready for the next tenant.", "i1": "Toilet deep cleaning and sanitization", "i2": "Shower/tub scrubbing and sanitizing", "i3": "Vanity and mirror cleaning", "i4": "Floor and wall tile cleaning", "i5": "Cabinet interior cleaning" },
+        "living": { "title": "Living Areas", "copy": "Comprehensive cleaning of all living spaces to meet landlord requirements.", "i1": "Carpet vacuuming and spot cleaning", "i2": "Hard floor mopping and polishing", "i3": "Baseboard and trim cleaning", "i4": "Window and window sill cleaning", "i5": "Light fixture dusting" },
+        "additional": { "title": "Additional Services", "copy": "Extra services to ensure your move-out cleaning meets all requirements.", "i1": "Interior cabinet and drawer cleaning", "i2": "Wall spot cleaning and touch-ups", "i3": "Light switch and outlet cleaning", "i4": "Door and door frame cleaning", "i5": "Closet and storage area cleaning" }
+      },
+      "why": {
+        "title": "Why Choose Red Rock for Move Out Cleaning?",
+        "deposit": { "title": "Security Deposit Protection", "copy": "Our thorough cleaning helps ensure you get your full security deposit back." },
+        "fast": { "title": "Fast Turnaround", "copy": "We work efficiently to clean your space quickly without compromising quality." },
+        "approved": { "title": "Landlord Approved", "copy": "Our cleaning standards meet the requirements of most landlords and property managers." }
+      },
+      "cta": { "title": "Ready to Move Out with Confidence?", "copy": "Get a quote for professional move-out cleaning and secure your security deposit." }
+    }
+    ,
+    "post": {
+      "title": "Post Construction Cleaning Services | Red Rock Cleaning",
+      "description": "Specialized post-construction cleaning to remove dust, debris, and make your newly built or renovated space move-in ready.",
+      "heading": "Post Construction Cleaning",
+      "tagline": "Professional cleaning after construction, renovation, or remodeling projects",
+      "process": {
+        "title": "Three-Phase Cleaning Process",
+        "p1": { "title": "Phase 1: Rough Clean", "copy": "Initial cleanup during construction phase", "i1": "Remove large debris and materials", "i2": "Sweep and vacuum floors", "i3": "Remove stickers and labels", "i4": "Dust surfaces and fixtures" },
+        "p2": { "title": "Phase 2: Deep Clean", "copy": "Detailed cleaning after construction is complete", "i1": "Remove all dust from surfaces and vents", "i2": "Clean windows, tracks, and sills", "i3": "Scrub grout and tile", "i4": "Clean all fixtures and hardware", "i5": "Wipe down walls, doors, and trim" },
+        "p3": { "title": "Phase 3: Final Touch", "copy": "Final polish for move-in readiness", "i1": "Polish all surfaces and fixtures", "i2": "Final vacuum and mop", "i3": "Touch-up cleaning of all areas", "i4": "Final inspection walkthrough" }
+      },
+      "remove": { "title": "What We Remove", "r1": "Construction Dust", "r2": "Paint Overspray", "r3": "Adhesive Residue", "r4": "Drywall Dust", "r5": "Sawdust", "r6": "Stickers & Labels", "r7": "Concrete Residue", "r8": "Debris" },
+      "perfectFor": { "title": "Perfect For", "n1": { "title": "New Construction", "copy": "Brand new homes and buildings" }, "n2": { "title": "Renovations", "copy": "Kitchen, bath, or whole home remodels" }, "n3": { "title": "Commercial Projects", "copy": "Office build-outs and retail spaces" } },
+      "cta": { "title": "Ready to Make It Move-In Ready?", "copy": "Let us transform your construction site into a beautiful, clean space." }
+    }
+  }
+}
+
+

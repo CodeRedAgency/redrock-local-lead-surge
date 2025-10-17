@@ -1,6 +1,8 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -14,12 +16,14 @@ import { Dumbbell, Droplets, Activity, Users, CheckCircle, Zap, Clock } from "lu
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const GymCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Gym Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Professional gym and fitness center cleaning services. Sanitize equipment, locker rooms, and common areas with our specialized cleaning protocols." />
+        <title>{t("commercial.gym.title", { defaultValue: "Gym Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.gym.description", { defaultValue: "Professional gym and fitness center cleaning services. Sanitize equipment, locker rooms, and common areas with our specialized cleaning protocols." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -34,12 +38,12 @@ const GymCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Professional Gym Cleaning Services</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.gym.heading", { defaultValue: "Professional Gym Cleaning Services" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Keep your fitness center clean, safe, and member-ready with our specialized gym cleaning protocols
+                {t("commercial.gym.tagline", { defaultValue: "Keep your fitness center clean, safe, and member-ready with our specialized gym cleaning protocols" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>
@@ -54,19 +58,19 @@ const GymCleaningPage = () => {
 
                 {/* Interactive Cleaning Checklist Cards */}
                 <div className="mb-16">
-                  <h2 className="text-3xl font-bold mb-8 text-center">Our Comprehensive Gym Cleaning Checklist</h2>
+                  <h2 className="text-3xl font-bold mb-8 text-center">{t("commercial.gym.checklist.title", { defaultValue: "Our Comprehensive Gym Cleaning Checklist" })}</h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
                       <CardContent className="p-6 text-center">
                         <div className="mb-4">
                           <Dumbbell className="w-12 h-12 text-primary mx-auto" />
                         </div>
-                        <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">Workout & Equipment Areas</h3>
+                        <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">{t("commercial.gym.checklist.workout.title", { defaultValue: "Workout & Equipment Areas" })}</h3>
                         <ul className="text-sm text-muted-foreground space-y-2 text-left">
-                          <li>• Disinfecting free weights & dumbbells</li>
-                          <li>• Cardio machine sanitization</li>
-                          <li>• High-touch point cleaning</li>
-                          <li>• Cable & pulley system cleaning</li>
+                          <li>• {t("commercial.gym.checklist.workout.i1", { defaultValue: "Disinfecting free weights & dumbbells" })}</li>
+                          <li>• {t("commercial.gym.checklist.workout.i2", { defaultValue: "Cardio machine sanitization" })}</li>
+                          <li>• {t("commercial.gym.checklist.workout.i3", { defaultValue: "High-touch point cleaning" })}</li>
+                          <li>• {t("commercial.gym.checklist.workout.i4", { defaultValue: "Cable & pulley system cleaning" })}</li>
                         </ul>
                       </CardContent>
                     </Card>
@@ -76,12 +80,12 @@ const GymCleaningPage = () => {
                         <div className="mb-4">
                           <Droplets className="w-12 h-12 text-primary mx-auto" />
                         </div>
-                        <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">Locker Rooms & Showers</h3>
+                        <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">{t("commercial.gym.checklist.locker.title", { defaultValue: "Locker Rooms & Showers" })}</h3>
                         <ul className="text-sm text-muted-foreground space-y-2 text-left">
-                          <li>• Floor & wall sanitization</li>
-                          <li>• Bench & locker cleaning</li>
-                          <li>• Mold & mildew prevention</li>
-                          <li>• Ventilation cleaning</li>
+                          <li>• {t("commercial.gym.checklist.locker.i1", { defaultValue: "Floor & wall sanitization" })}</li>
+                          <li>• {t("commercial.gym.checklist.locker.i2", { defaultValue: "Bench & locker cleaning" })}</li>
+                          <li>• {t("commercial.gym.checklist.locker.i3", { defaultValue: "Mold & mildew prevention" })}</li>
+                          <li>• {t("commercial.gym.checklist.locker.i4", { defaultValue: "Ventilation cleaning" })}</li>
                         </ul>
                       </CardContent>
                     </Card>

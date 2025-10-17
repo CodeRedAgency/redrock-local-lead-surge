@@ -1,0 +1,337 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "pricing": "Precios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "bookNow": "Reservar",
+    "login": "Iniciar sesión"
+  },
+  "blog": {
+    "title": "Consejos y Guías de Limpieza",
+    "subtitle": "Ideas prácticas y expertos para un espacio más limpio y saludable",
+    "readMore": "Leer más",
+    "searchPlaceholder": "Buscar artículos...",
+    "allCategories": "Todas las categorías",
+    "pageOf": "Página {{current}} de {{total}}"
+  },
+  "cta": {
+    "needPro": "¿Necesitas limpieza profesional?",
+    "phone": "Llama al (888) 805-1733"
+  },
+  "home": {
+    "badge": "Expertos locales de limpieza de confianza",
+    "h1": { "part1": "Eleva tu espacio con", "part2": "Limpieza Premium" },
+    "subtitle": "Excelencia en limpieza residencial, comercial y de alquiler vacacional en múltiples ubicaciones",
+    "selectLocation": "Selecciona tu ubicación para comenzar",
+    "badges": { "residential": "Residencial", "commercial": "Comercial", "vacationRental": "Alquiler vacacional" },
+    "difference": {
+      "badge": "La diferencia de Red Rock",
+      "title": "¿Por qué elegir Red Rock Cleaning?",
+      "copy": "Somos un servicio de limpieza premium con múltiples ubicaciones, dedicado a la excelencia. Ya sea para tu hogar, oficina o alquiler vacacional, nuestros equipos profesionales ofrecen resultados excepcionales siempre."
+    }
+  },
+  "locations": {
+    "cta": { "title": "¿Listo para un hogar más limpio?", "copy": "Obtén una cotización instantánea con nuestra calculadora o reserva tu servicio ahora" },
+    "customerLogin": "Acceso de clientes",
+    "southFlorida": {
+      "title": "Servicios profesionales de limpieza en South Florida | Red Rock Cleaning",
+      "description": "Servicios premium de limpieza residencial y alquiler vacacional en South Florida, Weston y Fort Lauderdale. Reserva tu servicio profesional hoy."
+    },
+    "lasVegas": {
+      "title": "Servicios de limpieza en Las Vegas | Red Rock Cleaning",
+      "description": "Limpieza residencial y comercial en Las Vegas y Henderson. Servicio confiable y de calidad."
+    },
+    "oahu": {
+      "title": "Servicios de limpieza en Oahu | Red Rock Cleaning",
+      "description": "Limpieza residencial y de alquiler vacacional en Oahu y Honolulu. Servicio premium hawaiano."
+    },
+    "maui": {
+      "title": "Servicios de limpieza en Maui | Red Rock Cleaning",
+      "description": "Limpieza de alquiler vacacional, profunda y recurrente en Maui. Limpieza premium para tu paraíso hawaiano."
+    },
+    "dallas": {
+      "title": "Servicios de limpieza en Dallas | Red Rock Cleaning",
+      "description": "Paquetes de limpieza residencial y comercial en Dallas. Servicio profesional y confiable."
+    },
+    "columbus": {
+      "title": "Servicios de limpieza en Columbus, Ohio | Red Rock Cleaning",
+      "description": "Limpieza del hogar y oficina en Columbus, Ohio. Servicio confiable con reserva en línea."
+    }
+  },
+  "commercial": {
+    "gym": {
+      "title": "Servicios de limpieza de gimnasios | Red Rock Cleans",
+      "description": "Limpieza profesional de gimnasios y centros fitness. Desinfección de equipos, vestuarios y áreas comunes con protocolos especializados.",
+      "heading": "Servicios profesionales de limpieza de gimnasios",
+      "tagline": "Mantén tu gimnasio limpio, seguro y listo para los miembros con nuestros protocolos especializados",
+      "checklist": {
+        "title": "Nuestra lista integral de limpieza de gimnasios",
+        "workout": { "title": "Áreas de entrenamiento y equipos", "i1": "Desinfección de pesas y mancuernas", "i2": "Sanitización de máquinas de cardio", "i3": "Limpieza de puntos de alto contacto", "i4": "Limpieza de cables y poleas" },
+        "locker": { "title": "Vestuarios y duchas", "i1": "Sanitización de pisos y paredes", "i2": "Limpieza de bancas y casilleros", "i3": "Prevención de moho y hongos", "i4": "Limpieza de ventilación" }
+      }
+    },
+    "datacenter": {
+      "title": "Servicios de limpieza de centros de datos | Red Rock Cleans",
+      "description": "Servicios especializados de limpieza de centros de datos. Limpieza de salas de servidores, subpisos y ambientes críticos para prevenir caídas.",
+      "heading": "Servicios especializados de limpieza de centros de datos",
+      "tagline": "Protegemos la infraestructura crítica con protocolos de limpieza de precisión",
+      "protocol": { "title": "Nuestro protocolo de limpieza de centros de datos" },
+      "why": { "title": "Por qué la limpieza de centros de datos es irrenunciable" },
+      "find": { "title": "Encuentra limpieza de centros de datos en tu zona" },
+      "other": { "title": "Nuestras otras soluciones comerciales" },
+      "faq": { "title": "Preguntas frecuentes" },
+      "cta": { "title": "¿Listo para proteger tu infraestructura crítica?", "copy": "Elige tu ubicación y recibe una cotización especializada para limpieza de centros de datos." }
+    }
+    ,
+    "retail": {
+      "title": "Servicios de limpieza para tiendas minoristas | Red Rock Cleans",
+      "description": "Limpieza profesional para tiendas. Mejoramos la imagen de tu marca y la experiencia del cliente con vitrinas y salas de ventas impecables.",
+      "heading": "Limpieza impecable para elevar tu marca",
+      "tagline": "Transforma tu tienda en un escaparate impecable que cautiva a los clientes y aumenta las ventas",
+      "experience": {
+        "title": "Creando una experiencia inolvidable",
+        "i1": { "title": "Primeras impresiones impecables" },
+        "i2": { "title": "Un espacio de compra saludable" },
+        "i3": { "title": "Protección de tus productos" }
+      },
+      "checklist": {
+        "title": "Nuestra lista integral de limpieza para retail",
+        "sales": { "title": "Sala de ventas y exhibidores" },
+        "fitting": { "title": "Probadores y baños" },
+        "windows": { "title": "Vitrinas y fachada" },
+        "stock": { "title": "Back-of-house y almacenes" }
+      },
+      "impact": { "title": "El impacto de una tienda limpiada profesionalmente" },
+      "find": { "title": "Encuentra limpieza para tiendas en tu zona" },
+      "faq": { "title": "Preguntas frecuentes" },
+      "cta": { "title": "¿Listo para elevar tu espacio retail?", "copy": "Elige tu ubicación para obtener una cotización personalizada de limpieza para tiendas." }
+    }
+    ,
+    "factory": {
+      "title": "Servicios de limpieza de fábricas | Red Rock Cleans",
+      "description": "Limpieza profesional para plantas de manufactura. Seguridad, cumplimiento y productividad con limpiezas de uso intensivo.",
+      "heading": "Servicios profesionales de limpieza de fábricas",
+      "tagline": "Limpieza de uso intensivo para plantas y entornos industriales"
+    }
+    ,
+    "government": {
+      "title": "Limpieza de instalaciones gubernamentales | Red Rock Cleans",
+      "description": "Limpieza segura y conforme a normas para edificios gubernamentales. Servicio discreto y profesional por personal con autorización de seguridad.",
+      "heading": "Limpieza segura y conforme para instalaciones gubernamentales",
+      "tagline": "Servicio discreto y profesional para edificios municipales y gubernamentales"
+    }
+    ,
+    "medical": {
+      "title": "Limpieza de consultorios médicos | Red Rock Cleans",
+      "description": "Servicios especializados de limpieza para clínicas y centros de salud. Cumplimiento con HIPAA y OSHA para garantizar la seguridad del paciente.",
+      "heading": "Limpieza de consultorios médicos conforme a HIPAA y OSHA",
+      "tagline": "Seguridad del paciente y confianza mediante protocolos de limpieza especializados"
+    }
+    ,
+    "school": {
+      "title": "Servicios de limpieza escolar | Red Rock Cleans",
+      "description": "Limpieza profesional para escuelas. Ambientes seguros y saludables para estudiantes y personal con servicios integrales de conserjería.",
+      "heading": "Servicios de limpieza seguros y saludables para escuelas",
+      "tagline": "Entornos limpios y seguros que apoyan el éxito estudiantil y el bienestar del personal"
+    }
+    ,
+    "showroom": {
+      "title": "Servicios de limpieza de salas de exhibición | Red Rock Cleans",
+      "description": "Limpieza profesional para showrooms. Mejora la presentación de productos y la experiencia del cliente con limpieza meticulosa para concesionarios, tiendas de muebles y más.",
+      "heading": "Limpieza impecable de showrooms para destacar tus productos",
+      "tagline": "Transforma tu showroom en un escaparate impecable que eleva tus productos e impresiona a cada cliente"
+    }
+    ,
+    "warehouse": {
+      "title": "Servicios de limpieza de almacenes | Red Rock Cleans",
+      "description": "Limpieza profesional de almacenes. Mejora seguridad y eficiencia con fregado de suelos, desempolvado en altura y más para centros logísticos.",
+      "heading": "Servicios de limpieza de almacenes seguros y eficientes",
+      "tagline": "Maximiza la productividad y la seguridad con soluciones de limpieza industrial especializadas"
+    }
+    ,
+    "salon": {
+      "title": "Servicios de limpieza para salones y spas | Red Rock Cleans",
+      "description": "Limpieza profesional para salones y spas. Ambientes prístinos, higiénicos y relajantes para peluquerías, spas, salones de uñas y medispas.",
+      "heading": "Limpieza impecable de salones y spas para la máxima relajación",
+      "tagline": "Transforma tu salón o spa en un santuario de limpieza, lujo y tranquilidad"
+    }
+    ,
+    "church": {
+      "title": "Servicios profesionales de limpieza de iglesias | Red Rock Cleans",
+      "description": "Limpieza profesional y respetuosa para iglesias. Santuarios, salones y espacios de culto impecables.",
+      "heading": "Servicios profesionales de limpieza de iglesias",
+      "tagline": "Entornos sagrados y acogedores mediante una limpieza respetuosa y minuciosa"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos - Todas las ubicaciones | Red Rock Cleaning",
+    "description": "Ponte en contacto con Red Rock Cleaning. Información de contacto de todas nuestras ubicaciones, incluidos números de teléfono y correos electrónicos.",
+    "heading": "Contáctanos",
+    "subheading": "Comunícate con tu equipo local de Red Rock Cleaning",
+    "serviceAreas": "Zonas de servicio",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "generalInquiries": "Consultas generales",
+    "generalCopy": "Para oportunidades de asociación, franquicias o preguntas generales:",
+    "emailLabel": "Correo:",
+    "phoneLabel": "Teléfono:"
+  }
+  ,
+  "services": {
+    "standard": {
+      "title": "Servicios de limpieza estándar | Red Rock Cleaning",
+      "description": "Servicio de limpieza estándar regular para mantener impecable tu hogar u oficina. Limpiadores profesionales para un mantenimiento constante y fiable.",
+      "heading": "Servicios de limpieza estándar",
+      "tagline": "Mantenimiento regular para mantener tu espacio fresco y limpio",
+      "flex": { "title": "Programación flexible", "copy": "Opciones semanal, quincenal o mensual" },
+      "team": { "title": "Equipo profesional", "copy": "Limpiadores capacitados y con experiencia" },
+      "quality": { "title": "Calidad garantizada", "copy": "Compromiso de satisfacción 100%" },
+      "included": {
+        "title": "Qué incluye",
+        "allRooms": "Todas las habitaciones",
+        "dust": "Quitar el polvo de todas las superficies accesibles",
+        "vacuum": "Aspirar alfombras y tapetes",
+        "mop": "Fregar pisos duros",
+        "trash": "Vaciar botes de basura",
+        "handles": "Limpiar manijas y apagadores",
+        "kitchen": "Cocina",
+        "ctops": "Limpiar encimeras y salpicadero",
+        "appliances": "Limpiar exterior de electrodomésticos",
+        "sink": "Limpiar fregadero y grifo",
+        "cabinets": "Limpiar frentes de gabinetes",
+        "bathrooms": "Baños",
+        "toilet": "Fregar y desinfectar el inodoro",
+        "shower": "Limpiar ducha y bañera",
+        "bathSink": "Limpiar lavabo y encimeras",
+        "mirrors": "Pulir espejos y grifería",
+        "bedrooms": "Dormitorios",
+        "beds": "Hacer camas y cambiar sábanas",
+        "dustFurniture": "Quitar polvo de muebles y decoración",
+        "vacuumUnder": "Aspirar bajo áreas accesibles"
+      },
+      "cta": {
+        "title": "¿Listo para comenzar?",
+        "copy": "Reserva hoy tu servicio de limpieza estándar y disfruta de un espacio siempre limpio."
+      }
+    },
+    "deep": {
+      "title": "Servicios de limpieza profunda | Red Rock Cleaning",
+      "description": "Servicios integrales de limpieza profunda que llegan a cada rincón. Perfecto para limpiezas estacionales, mudanzas o una sanitización minuciosa del hogar.",
+      "heading": "Servicios de limpieza profunda",
+      "tagline": "Limpieza intensa y detallada que transforma tu espacio de arriba a abajo",
+      "thorough": { "title": "Limpieza exhaustiva", "copy": "Cada rincón, cada superficie" },
+      "health": { "title": "Enfoque en la salud", "copy": "Elimina alérgenos y bacterias" },
+      "movein": { "title": "Listo para mudanza", "copy": "Perfecto para transiciones" },
+      "checklist": {
+        "title": "Lista completa de limpieza profunda",
+        "kitchen": "Limpieza profunda de cocina",
+        "kitchen1": "Dentro de horno, refrigerador y lavavajillas",
+        "kitchen2": "Interior y exterior de todos los gabinetes",
+        "kitchen3": "Desengrasar campana y salpicadero",
+        "kitchen4": "Limpiar zócalos y esquinas",
+        "kitchen5": "Limpieza detallada de juntas",
+        "bath": "Limpieza profunda de baño",
+        "bath1": "Fregar y desinfectar líneas de lechada",
+        "bath2": "Limpieza profunda de puertas y rieles de ducha",
+        "bath3": "Desincrustar grifería y alcachofas",
+        "bath4": "Limpiar interior de gabinetes y cajones",
+        "bath5": "Limpieza detallada de zócalos",
+        "living": "Áreas comunes",
+        "living1": "Limpiar ventiladores de techo y luminarias",
+        "living2": "Limpiar paredes y puertas",
+        "living3": "Limpiar marcos y rieles de ventanas",
+        "living4": "Aspirar detrás y debajo de muebles",
+        "living5": "Zócalos y molduras en detalle",
+        "additional": "Servicios adicionales",
+        "add1": "Limpiar interior de armarios",
+        "add2": "Quitar polvo de rejillas y retornos de aire",
+        "add3": "Limpiar interruptores y enchufes",
+        "add4": "Pulir toda la grifería",
+        "add5": "Quitar telarañas del techo"
+      },
+      "when": {
+        "title": "Cuándo programar limpieza profunda",
+        "seasonal": { "title": "Renovación estacional", "copy": "Cada 3-6 meses para un reinicio completo" },
+        "move": { "title": "Mudanza", "copy": "Empieza fresco o deja impecable" },
+        "events": { "title": "Eventos especiales", "copy": "Antes de recibir invitados o después de obra" }
+      },
+      "cta": { "title": "Programa tu limpieza profunda", "copy": "Transforma tu espacio con nuestro servicio integral de limpieza profunda." }
+    }
+    ,
+    "airbnb": {
+      "title": "Servicios de limpieza para Airbnb | Red Rock Cleaning",
+      "description": "Limpieza profesional para Airbnb y alquileres vacacionales. Cambios rápidos, calidad constante y resultados listos para tus huéspedes.",
+      "heading": "Servicios de limpieza para Airbnb",
+      "tagline": "Limpieza de cambio para alquileres vacacionales y estancias cortas",
+      "quick": { "title": "Cambio rápido", "copy": "Servicio el mismo día disponible" },
+      "fivestar": { "title": "Listo para 5 estrellas", "copy": "Estándares aptos para huéspedes" },
+      "host": { "title": "Socios de anfitriones", "copy": "De confianza para cientos" },
+      "quality": { "title": "Calidad verificada", "copy": "Cada limpieza verificada" },
+      "checklist": {
+        "title": "Lista de limpieza de cambio",
+        "every": "En cada cambio",
+        "e1": "Quitar sábanas y hacer camas con ropa limpia",
+        "e2": "Reemplazar toallas y artículos de tocador",
+        "e3": "Limpieza profunda de todos los baños",
+        "e4": "Limpieza profunda y reposición de la cocina",
+        "e5": "Aspirar y fregar todos los pisos",
+        "e6": "Quitar polvo de superficies y decoración",
+        "guest": "Experiencia del huésped",
+        "g1": "Revisar y reponer suministros",
+        "g2": "Probar electrodomésticos y controles remotos",
+        "g3": "Reportar cualquier problema de mantenimiento",
+        "g4": "Tomar fotos antes/después",
+        "g5": "Cerrar y asegurar la propiedad",
+        "g6": "Enviar notificación de finalización"
+      },
+      "why": {
+        "title": "Por qué nos eligen los anfitriones",
+        "flex": { "title": "Programación flexible", "copy": "¿Reservas de última hora? Sin problema. Nos adaptamos a tus horarios de check-in/check-out." },
+        "quality": { "title": "Calidad constante", "copy": "Cada limpieza cumple el mismo alto estándar, garantizando excelentes reseñas." },
+        "care": { "title": "Cuidado de la propiedad", "copy": "Tratamos tu propiedad con cuidado y reportamos cualquier problema de inmediato." }
+      },
+      "cta": { "title": "Sé nuestro socio", "copy": "Nos encargamos de la limpieza para que te enfoques en ser un gran anfitrión." }
+    }
+    ,
+    "moveout": {
+      "title": "Servicios de limpieza de mudanza | Red Rock Cleaning",
+      "description": "Servicio profesional de limpieza de mudanza. Recupera tu depósito con nuestra limpieza minuciosa de salida. Disponible en South Florida, Las Vegas, Hawaii, Columbus Ohio y Dallas.",
+      "heading": "Servicios de limpieza de mudanza",
+      "tagline": "Recupera tu depósito con nuestra limpieza de mudanza a fondo",
+      "complete": { "title": "Limpieza completa de mudanza" },
+      "sections": {
+        "kitchen": { "title": "Limpieza profunda de cocina", "copy": "Deja tu cocina impecable con nuestro servicio integral de limpieza de mudanza.", "i1": "Interior y exterior de todos los electrodomésticos", "i2": "Interiores y exteriores de gabinetes", "i3": "Limpieza de encimeras y salpicadero", "i4": "Limpieza profunda de fregadero y grifo", "i5": "Limpieza y fregado de pisos" },
+        "bath": { "title": "Limpieza profunda de baño", "copy": "Asegura baños completamente desinfectados y listos para el siguiente inquilino.", "i1": "Limpieza profunda y desinfección del inodoro", "i2": "Fregado y desinfección de ducha/bañera", "i3": "Limpieza de mueble lavabo y espejo", "i4": "Limpieza de azulejos de piso y pared", "i5": "Limpieza interior de gabinetes" },
+        "living": { "title": "Áreas comunes", "copy": "Limpieza integral de todos los espacios para cumplir requisitos del arrendador.", "i1": "Aspirado de alfombras y limpieza de manchas", "i2": "Fregado y pulido de pisos duros", "i3": "Limpieza de zócalos y molduras", "i4": "Limpieza de ventanas y marcos", "i5": "Sacudir luminarias" },
+        "additional": { "title": "Servicios adicionales", "copy": "Servicios extra para cumplir todos los requisitos.", "i1": "Limpieza interior de gabinetes y cajones", "i2": "Limpieza puntual de paredes y retoques", "i3": "Limpieza de apagadores y enchufes", "i4": "Limpieza de puertas y marcos", "i5": "Limpieza de clósets y áreas de almacenaje" }
+      },
+      "why": {
+        "title": "¿Por qué elegir Red Rock para limpieza de mudanza?",
+        "deposit": { "title": "Protección de depósito", "copy": "Nuestra limpieza minuciosa ayuda a asegurar que recuperes tu depósito completo." },
+        "fast": { "title": "Entrega rápida", "copy": "Trabajamos eficientemente sin comprometer la calidad." },
+        "approved": { "title": "Aprobado por arrendadores", "copy": "Nuestros estándares cumplen con la mayoría de arrendadores y administradores." }
+      },
+      "cta": { "title": "¿Listo para mudarte con confianza?", "copy": "Obtén una cotización de limpieza de mudanza y asegura tu depósito." }
+    }
+    ,
+    "post": {
+      "title": "Limpieza post construcción | Red Rock Cleaning",
+      "description": "Limpieza especializada post-construcción para eliminar polvo y residuos y dejar tu espacio listo para mudarte.",
+      "heading": "Limpieza post construcción",
+      "tagline": "Limpieza profesional tras construcción, reforma o remodelación",
+      "process": {
+        "title": "Proceso de limpieza en tres fases",
+        "p1": { "title": "Fase 1: Limpieza inicial", "copy": "Limpieza durante la obra", "i1": "Retirar residuos y materiales grandes", "i2": "Barrer y aspirar pisos", "i3": "Quitar etiquetas y adhesivos", "i4": "Quitar polvo de superficies y accesorios" },
+        "p2": { "title": "Fase 2: Limpieza profunda", "copy": "Limpieza detallada al terminar la obra", "i1": "Eliminar todo el polvo de superficies y rejillas", "i2": "Limpiar ventanas, rieles y marcos", "i3": "Fregar juntas y azulejos", "i4": "Limpiar todos los accesorios y herrajes", "i5": "Limpiar paredes, puertas y molduras" },
+        "p3": { "title": "Fase 3: Toque final", "copy": "Pulido final para estar listo para mudanza", "i1": "Pulir superficies y accesorios", "i2": "Aspirado y fregado final", "i3": "Repaso de todas las áreas", "i4": "Inspección final" }
+      },
+      "remove": { "title": "Qué retiramos", "r1": "Polvo de construcción", "r2": "Rociado de pintura", "r3": "Residuos adhesivos", "r4": "Polvo de drywall", "r5": "Aserrín", "r6": "Etiquetas y adhesivos", "r7": "Residuos de concreto", "r8": "Escombros" },
+      "perfectFor": { "title": "Perfecto para", "n1": { "title": "Obra nueva", "copy": "Casas y edificios nuevos" }, "n2": { "title": "Reformas", "copy": "Cocina, baño o remodelación completa" }, "n3": { "title": "Proyectos comerciales", "copy": "Oficinas y locales" } },
+      "cta": { "title": "¿Listo para dejarlo listo para mudanza?", "copy": "Transformamos tu obra en un espacio limpio y hermoso." }
+    }
+  }
+}
+
+

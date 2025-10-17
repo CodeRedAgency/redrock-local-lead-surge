@@ -1,6 +1,8 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -14,12 +16,14 @@ import { Gem, Sparkles, Handshake, Wrench, Monitor, Car, Users, DollarSign, Sear
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const ShowroomCleaningPage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Showroom Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Professional showroom cleaning services. Red Rock Cleans enhances your product presentation and client experience with meticulous cleaning for car dealerships, furniture stores, and more." />
+        <title>{t("commercial.showroom.title", { defaultValue: "Showroom Cleaning Services | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("commercial.showroom.description", { defaultValue: "Professional showroom cleaning services. Red Rock Cleans enhances your product presentation and client experience with meticulous cleaning for car dealerships, furniture stores, and more." })} />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
@@ -34,12 +38,12 @@ const ShowroomCleaningPage = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Impeccable Showroom Cleaning to Showcase Your Products</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("commercial.showroom.heading", { defaultValue: "Impeccable Showroom Cleaning to Showcase Your Products" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Transform your showroom into a pristine showcase that elevates your products and impresses every client
+                {t("commercial.showroom.tagline", { defaultValue: "Transform your showroom into a pristine showcase that elevates your products and impresses every client" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/commercial-quote">Get a Quote</Link>
+                <Link to="/commercial-quote">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
               </Button>
             </div>
           </section>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import Hreflang from '@/components/Hreflang';
 import { LasVegasNavigation } from "@/components/LasVegasNavigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
@@ -163,8 +165,14 @@ const ShowroomCleaningLasVegasPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <LasVegasNavigation />
+    <>
+      <Helmet>
+        <title>Showroom Cleaning Services in Las Vegas | Red Rock Cleans</title>
+        <meta name="description" content="Professional showroom cleaning in Las Vegas. Impeccable floors, glass, and product presentation for dealerships and retail showrooms." />
+      </Helmet>
+      <Hreflang />
+      <div className="min-h-screen flex flex-col">
+        <LasVegasNavigation />
       
       <main className="flex-1">
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
@@ -606,8 +614,9 @@ const ShowroomCleaningLasVegasPage: React.FC = () => {
         </div>
       </main>
       
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
