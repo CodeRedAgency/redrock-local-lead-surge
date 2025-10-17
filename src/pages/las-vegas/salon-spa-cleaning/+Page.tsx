@@ -612,22 +612,6 @@ const SalonSpaCleaningLasVegasPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Image Section */}
-      <section className="py-16 bg-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <img 
-              src="/src/assets/service-products.jpg" 
-              alt="A serene and immaculate spa treatment room in Las Vegas, cleaned by Red Rock Cleans"
-              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
-            />
-            <p className="text-sm text-slate-600 mt-4 italic">
-              Professional salon and spa cleaning that creates the perfect environment for relaxation
-            </p>
-          </div>
-        </div>
-      </section>
-
         </div>
       </main>
       
