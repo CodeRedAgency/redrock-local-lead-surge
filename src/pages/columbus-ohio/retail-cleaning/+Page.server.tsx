@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Retail Store Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Retail Store Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Professional retail store cleaning in Columbus, OH. Red Rock Cleans helps enhance your brand image with spotless storefronts and sales floors in Dublin, the Short North, and beyond.",
       jsonLdSchema
     }

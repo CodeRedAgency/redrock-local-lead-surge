@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HardHat, Forklift, Box, Layers, Construction, Truck, User, Package, ShieldCheck, Timer, Factory, Cog, Hammer } from "lucide-react";
+import { HardHat, Forklift, Box, Layers, Construction, Truck, User, Package, ShieldCheck, Timer, Factory, Cog, Hammer, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -312,7 +312,7 @@ const WarehouseCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Warehouse Cleaning Columbus Ohio | Red Rock Cleans</title>
+        <title>Warehouse Cleaning in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Professional warehouse cleaning in Columbus, OH. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers." />
         <meta name="keywords" content="warehouse cleaning Columbus Ohio, warehouse cleaning near me, industrial warehouse cleaning Columbus Ohio, distribution center cleaning Dublin OH, warehouse floor scrubbing Westerville, best warehouse cleaners Columbus, heavy duty warehouse cleaning Columbus, OSHA compliant warehouse cleaning, pallet rack cleaning Columbus, warehouse cleaning cost Columbus Ohio, commercial warehouse cleaning prices Columbus, what is warehouse cleaning Columbus, hire warehouse cleaners in Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/warehouse-cleaning" />

@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Gym Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Gym Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Professional gym cleaning in Columbus, OH. Red Rock Cleans provides hygienic fitness center sanitation, including equipment disinfection, in Dublin, Upper Arlington, and beyond.",
       jsonLdSchema
     }

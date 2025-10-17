@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Factory Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Factory Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Professional factory cleaning in Columbus, OH. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Dublin, Westerville, and beyond to ensure safety and productivity.",
       jsonLdSchema
     }

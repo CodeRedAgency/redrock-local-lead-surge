@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Church Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Church Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Professional church cleaning services in Columbus, OH. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Dublin, Upper Arlington, and across the area.",
       jsonLdSchema
     }

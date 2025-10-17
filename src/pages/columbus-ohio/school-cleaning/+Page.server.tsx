@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "School Cleaning Services Columbus Ohio | Red Rock Cleans",
+      title: "School Cleaning Services in Columbus Ohio | Red Rock Cleans",
       description: "Professional school cleaning services in Columbus, OH. Red Rock Cleans provides a safe and healthy learning environment for students in Dublin, Upper Arlington, and beyond.",
       jsonLdSchema
     }

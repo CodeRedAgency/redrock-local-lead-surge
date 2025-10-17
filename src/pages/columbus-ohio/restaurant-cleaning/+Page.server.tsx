@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Restaurant Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Restaurant Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Professional restaurant cleaning in Columbus, OH. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning.",
       jsonLdSchema
     }

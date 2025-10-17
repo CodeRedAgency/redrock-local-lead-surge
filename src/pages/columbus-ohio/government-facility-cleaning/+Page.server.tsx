@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Government Facility Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Government Facility Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Secure and compliant government facility cleaning in Columbus, OH. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff.",
       jsonLdSchema
     }

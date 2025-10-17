@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Showroom Cleaning Services Columbus Ohio | Red Rock Cleans",
+      title: "Showroom Cleaning Services in Columbus Ohio | Red Rock Cleans",
       description: "Professional showroom cleaning in Columbus, OH. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships and luxury retail in Dublin and New Albany.",
       jsonLdSchema
     }

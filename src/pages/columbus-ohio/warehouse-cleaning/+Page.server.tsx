@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Warehouse Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Warehouse Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Professional warehouse cleaning in Columbus, OH. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers.",
       jsonLdSchema
     }

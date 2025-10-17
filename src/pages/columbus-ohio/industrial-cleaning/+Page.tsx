@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Clock, Wrench, SprayCan, Construction, Layers, ShieldCheck, GanttChartSquare, Factory, Warehouse, HardHat, Hammer } from "lucide-react";
+import { Shield, Clock, Wrench, SprayCan, Construction, Layers, ShieldCheck, GanttChartSquare, Factory, Warehouse, HardHat, Hammer, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -312,7 +312,7 @@ const IndustrialCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Industrial Cleaning Services Columbus Ohio | Red Rock Cleans</title>
+        <title>Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Heavy-duty industrial cleaning services in Columbus, OH. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants and facilities in Dublin, Westerville, and beyond." />
         <meta name="keywords" content="industrial cleaning services Columbus Ohio, industrial cleaning near me, heavy duty cleaning Columbus Ohio, industrial cleaning Dublin OH, industrial cleaners Westerville, industrial equipment cleaning Columbus, manufacturing facility cleaning Columbus, plant deep cleaning Columbus Ohio, OSHA compliant cleaning services Columbus, industrial cleaning cost Columbus Ohio, industrial cleaning rates Columbus, what is industrial cleaning Columbus, hire industrial cleaners in Columbus Ohio" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/industrial-cleaning" />

@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Salon & Spa Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Salon & Spa Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Professional salon and spa cleaning in Columbus, OH. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Dublin and the Short North.",
       jsonLdSchema
     }

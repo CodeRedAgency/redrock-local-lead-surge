@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Microscope, Award, Sofa, Stethoscope, Droplets, Hospital, BadgeCheck, ShieldX, Database, Building2, GraduationCap } from "lucide-react";
+import { Shield, Microscope, Award, Sofa, Stethoscope, Droplets, Hospital, BadgeCheck, ShieldX, Database, Building2, GraduationCap, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -312,7 +312,7 @@ const MedicalOfficeCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Medical Office Cleaning Columbus Ohio | Red Rock Cleans</title>
+        <title>Medical Office Cleaning in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Specialized medical office cleaning in Columbus, OH. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Dublin, Upper Arlington, and beyond." />
         <meta name="keywords" content="medical office cleaning Columbus Ohio, medical office cleaning near me, clinic cleaning Columbus Ohio, dental office cleaning Dublin OH, healthcare cleaning Upper Arlington, best medical cleaners Columbus, HIPAA compliant cleaning Columbus, OSHA standards cleaning Columbus Ohio, exam room sanitation Dublin OH, terminal cleaning Columbus, medical office cleaning cost Columbus, clinic cleaning prices Columbus Ohio, what is terminal cleaning Columbus, hire medical cleaners in Columbus Ohio" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/medical-office-cleaning" />

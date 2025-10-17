@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Data Center Cleaning Columbus Ohio | Red Rock Cleans",
+      title: "Data Center Cleaning in Columbus Ohio | Red Rock Cleans",
       description: "Specialized data center cleaning in Columbus, OH. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Dublin and New Albany to ensure uptime.",
       jsonLdSchema
     }

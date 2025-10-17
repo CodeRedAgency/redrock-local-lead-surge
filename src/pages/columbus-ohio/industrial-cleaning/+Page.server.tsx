@@ -200,7 +200,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Industrial Cleaning Services Columbus Ohio | Red Rock Cleans",
+      title: "Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans",
       description: "Heavy-duty industrial cleaning services in Columbus, OH. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants and facilities in Dublin, Westerville, and beyond.",
       jsonLdSchema
     }

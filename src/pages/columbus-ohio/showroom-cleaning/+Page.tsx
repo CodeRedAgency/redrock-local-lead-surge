@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Diamond, Sparkles, Handshake, SprayCan, Square, Car, Sofa, Users, DollarSign, Search, Store, Utensils, Building2 } from "lucide-react";
+import { Diamond, Sparkles, Handshake, SprayCan, Square, Car, Sofa, Users, DollarSign, Search, Store, Utensils, Building2, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -312,7 +312,7 @@ const ShowroomCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Showroom Cleaning Services Columbus Ohio | Red Rock Cleans</title>
+        <title>Showroom Cleaning Services in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Professional showroom cleaning in Columbus, OH. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships and luxury retail in Dublin and New Albany." />
         <meta name="keywords" content="showroom cleaning services Columbus Ohio, showroom cleaning near me, car dealership cleaning Columbus Ohio, furniture showroom cleaning Dublin OH, luxury retail cleaning New Albany, best showroom cleaners Columbus, professional showroom cleaning Columbus Ohio, showroom floor polishing Columbus, immaculate dealership cleaning Columbus, showroom cleaning cost Columbus Ohio, dealership cleaning prices Columbus, what is showroom cleaning Columbus, hire showroom cleaners in Columbus Ohio" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/showroom-cleaning" />

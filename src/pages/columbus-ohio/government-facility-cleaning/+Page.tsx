@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Lock, FileText, Building, Gavel, Users, ShieldCheck, Building2, CheckCircle2, Briefcase, Database, GraduationCap } from "lucide-react";
+import { Shield, Lock, FileText, Building, Gavel, Users, ShieldCheck, Building2, CheckCircle2, Briefcase, Database, GraduationCap, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -312,7 +312,7 @@ const GovernmentFacilityCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Government Facility Cleaning Columbus Ohio | Red Rock Cleans</title>
+        <title>Government Facility Cleaning in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Secure and compliant government facility cleaning in Columbus, OH. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff." />
         <meta name="keywords" content="government facility cleaning Columbus Ohio, government cleaning near me, municipal building cleaning Columbus Ohio, federal office cleaning Dublin OH, courthouse cleaning Columbus, secure facility cleaning Columbus, GSA schedule cleaning Columbus Ohio, confidential cleaning services, discreet government cleaners Columbus, government cleaning contracts Columbus, cost of municipal cleaning Columbus, what is government facility cleaning Columbus, hire secure cleaners in Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/government-facility-cleaning" />

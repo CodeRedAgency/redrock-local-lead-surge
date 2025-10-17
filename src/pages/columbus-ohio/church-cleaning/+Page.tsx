@@ -263,7 +263,7 @@ const ChurchCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Church Cleaning Columbus Ohio | Red Rock Cleans</title>
+        <title>Church Cleaning in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Professional church cleaning services in Columbus, OH. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Dublin, Upper Arlington, and across the area." />
         <meta name="keywords" content="church cleaning Columbus Ohio, church cleaning near me, place of worship cleaning Columbus Ohio, sanctuary cleaning Dublin OH, chapel cleaning Upper Arlington, best church cleaners Columbus, professional church cleaning Columbus Ohio, respectful religious facility cleaning, dependable church cleaners Columbus, church cleaning cost Columbus Ohio, affordable church cleaning services Columbus, what is included in church cleaning Columbus, hire church cleaners in Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/church-cleaning" />
