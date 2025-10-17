@@ -246,6 +246,7 @@ const App = () => (
           <Route path="/blog/cleaning-tips/airbnb-bedding-management-you-should-know" element={<AirbnbBeddingManagementPage />} />
           <Route path="/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework" element={<MinimizeHouseworkTimePage />} />
           <Route path="/blog/cleaning-tips/the-science-of-spring-cleaning" element={<ScienceOfSpringCleaningPage />} />
+          <Route path="/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation" element={<CarpetCleaningFleaInfestationPage />} />
           <Route path="/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party" element={<SpringCleaningPartyPage />} />
           <Route path="/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill" element={<GrillMaintenanceGuidePage />} />
           <Route path="/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets" element={<InkStainRemovalGuidePage />} />

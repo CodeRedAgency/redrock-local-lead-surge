@@ -35,6 +35,13 @@ const Blog = () => {
       image: "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&h=400&fit=crop&q=80"
     },
     {
+      title: "Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide",
+      excerpt: "Dealing with a flea infestation? Our step-by-step guide shows you how professional carpet cleaning can help eradicate fleas from your home for good.",
+      date: "August 20, 2024",
+      slug: "/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation",
+      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=400&fit=crop&q=80"
+    },
+    {
       title: "Get It Done Together: Why You Should Host a Spring Cleaning Party",
       excerpt: "Turn spring cleaning into a fun social event! Learn how to plan a cleaning party with friends and when to bring in the pros for tough jobs.",
       date: "April 22, 2023",
