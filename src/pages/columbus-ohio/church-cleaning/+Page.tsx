@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { BookOpen, HeartHandshake, Calendar, Building, Heart, Dumbbell } from "lucide-react";
+import { BookOpen, HeartHandshake, Calendar, Building, Heart, Dumbbell, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -293,15 +293,15 @@ const ChurchCleaningColumbusOhioPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/commercial-quote?location=columbus-ohio">
-                    <Calendar className="w-5 h-5 mr-2" />
-                    Get Your Free Quote
-                  </Link>
+                  <a href="tel:+13802353135">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call (380) 235-3135
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                  <Link to="/contact">
-                    <BookOpen className="w-5 h-5 mr-2" />
-                    Contact Us
+                  <Link to="/commercial-quote?location=columbus-ohio">
+                    <Home className="w-5 h-5 mr-2" />
+                    Get Free Quote
                   </Link>
                 </Button>
               </div>

@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { BookOpen, HeartHandshake, Calendar, MapPin, Home, Building2, Stethoscope, Dumbbell } from "lucide-react";
+import { BookOpen, HeartHandshake, Calendar, MapPin, Home, Building2, Stethoscope, Dumbbell, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -249,15 +249,15 @@ const ChurchCleaningMauiPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/commercial-quote?location=maui">
-                    <Calendar className="w-5 h-5 mr-2" />
-                    Get Your Free Quote
-                  </Link>
+                  <a href="tel:+18089093038">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call (808) 909-3038
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                  <Link to="/contact">
+                  <Link to="/commercial-quote?location=maui">
                     <Home className="w-5 h-5 mr-2" />
-                    Contact Us
+                    Get Free Quote
                   </Link>
                 </Button>
               </div>
