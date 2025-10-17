@@ -40,6 +40,16 @@ export const ColumbusNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+      {/* Top Bar with Local Phone Number */}
+      <div className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground py-2.5 relative">
+        <div className="container mx-auto px-4 flex justify-center items-center">
+          <a href="tel:+13802353135" className="flex items-center space-x-2 hover:scale-105 transition-transform duration-300 group">
+            <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+            <span className="font-semibold tracking-wide">(380) 235-3135</span>
+          </a>
+        </div>
+      </div>
+
         <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
             {/* Logo */}
