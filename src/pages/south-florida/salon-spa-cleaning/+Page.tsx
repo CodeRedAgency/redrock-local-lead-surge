@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Sparkles, Droplets, Heart, Scissors, Paintbrush, Sofa, ShowerHead, Smile, BadgeCheck, Wind, MapPin, Calendar, Stethoscope, Dumbbell, ShoppingBag } from "lucide-react";
+import { Sparkles, Droplets, Heart, Scissors, Paintbrush, Sofa, ShowerHead, Smile, BadgeCheck, Wind, MapPin, Calendar, Stethoscope, Dumbbell, ShoppingBag, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";

@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Lock, FileText, Building, Scale, Users, ShieldCheck, Building2, CheckCircle2, MapPin, Calendar, Heart, Server, GraduationCap } from "lucide-react";
+import { Shield, Lock, FileText, Building, Scale, Users, ShieldCheck, Building2, CheckCircle2, MapPin, Calendar, Heart, Server, GraduationCap, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -440,15 +440,15 @@ const GovernmentFacilityCleaningSouthFloridaPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/commercial-quote?location=south-florida">
-                    <Calendar className="w-5 h-5 mr-2" />
-                    Get Your Free Quote
-                  </Link>
+                  <a href="tel:+19544698881">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call (954) 469-8881
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                  <Link to="/contact">
-                    <Shield className="w-5 h-5 mr-2" />
-                    Contact Us
+                  <Link to="/commercial-quote?location=south-florida">
+                    <Home className="w-5 h-5 mr-2" />
+                    Get Free Quote
                   </Link>
                 </Button>
               </div>

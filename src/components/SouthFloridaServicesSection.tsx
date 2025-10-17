@@ -1,4 +1,4 @@
-import { Home, Building2, Key, Sparkles, Hammer } from "lucide-react";
+import { Home, Truck, Key, Sparkles, Hammer } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
@@ -10,10 +10,10 @@ const services = [
     link: "/south-florida/standard-cleaning-services",
   },
   {
-    icon: Building2,
-    title: "Commercial Cleaning",
-    description: "Keep your South Florida business spotless with our reliable commercial cleaning services. Flexible scheduling to fit your hours.",
-    link: "/commercial-cleaning",
+    icon: Truck,
+    title: "Move Out Cleaning",
+    description: "Thorough move-out cleaning services in South Florida. Get your deposit back with our comprehensive cleaning for landlords and tenants.",
+    link: "/south-florida/move-out-cleaning-services",
   },
   {
     icon: Key,
