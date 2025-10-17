@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Microscope, Award, Sofa, Stethoscope, Hand, Building, CheckCircle, ShieldX, MapPin, Calendar, Phone, Users, Clock, CheckCircle2, Sparkles, FileText, GraduationCap, ShoppingBag } from "lucide-react";
+import { Shield, Microscope, Award, Sofa, Stethoscope, Hand, Building, CheckCircle, ShieldX, MapPin, Calendar, Phone, Users, Clock, CheckCircle2, Sparkles, FileText, GraduationCap, ShoppingBag, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";

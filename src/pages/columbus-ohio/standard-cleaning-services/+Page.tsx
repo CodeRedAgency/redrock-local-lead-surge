@@ -601,26 +601,13 @@ const StandardCleaningColumbusOhioPage = () => {
                       Schedule Your Standard Cleaning Today
                     </Link>
                   </Button>
-                  <Button size="lg" variant="outline" className="h-14 text-lg px-8 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+                  <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>
                     <Link to="/columbus-calculator">
                       <Home className="w-5 h-5 mr-2" />
                       Get Your Free Quote
                     </Link>
                   </Button>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Image Section */}
-          <section className="py-16 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <img 
-                  src="/src/assets/hero-residential.jpg" 
-                  alt="A bright and tidy living room in a Columbus, Ohio home after a standard cleaning by Red Rock Cleans"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
               </div>
             </div>
           </section>
