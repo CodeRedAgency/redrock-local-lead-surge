@@ -120,6 +120,10 @@ import WarehouseCleaningSouthFloridaPage from "./pages/south-florida/warehouse-c
 import SalonSpaCleaningSouthFloridaPage from "./pages/south-florida/salon-spa-cleaning/+Page";
 import Blog from "./pages/Blog";
 import AirbnbBeddingManagementPage from "./pages/blog/cleaning-tips/airbnb-bedding-management-you-should-know/+Page";
+import MinimizeHouseworkTimePage from "./pages/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework/+Page";
+import GrillMaintenanceGuidePage from "./pages/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill/+Page";
+import HealthCodeViolationsPage from "./pages/blog/cleaning-tips/health-code-violations/+Page";
+import InkStainRemovalGuidePage from "./pages/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets/+Page";
 import MaidilyApp from "./pages/MaidilyApp";
 import SouthFloridaHome from "./pages/locations/SouthFloridaHome";
 import SouthFloridaCalculator from "./pages/locations/SouthFloridaCalculator";
@@ -234,7 +238,10 @@ const App = () => (
           
           {/* Blog & Hiring */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/cleaning-tips/health-code-violations" element={<HealthCodeViolationsPage />} />
           <Route path="/blog/cleaning-tips/airbnb-bedding-management-you-should-know" element={<AirbnbBeddingManagementPage />} />
+          <Route path="/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework" element={<MinimizeHouseworkTimePage />} />
+          <Route path="/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill" element={<GrillMaintenanceGuidePage />} />
           <Route path="/hiring-req" element={<HiringRequirements />} />
           <Route path="/hiring-application/how-to-use-the-maidily-mobile-app" element={<MaidilyApp />} />
           

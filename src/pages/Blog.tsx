@@ -7,6 +7,13 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const articles = [
     {
+      title: "Navigating Health Code Violations: A Commercial Cleaning Guide",
+      excerpt: "Protect your business from costly fines and closure. Learn how professional commercial cleaning ensures compliance with health code regulations.",
+      date: "October 18, 2025",
+      slug: "/blog/cleaning-tips/health-code-violations",
+      image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=400&fit=crop&q=80"
+    },
+    {
       title: "6 Handy Tips to Help You Minimize Your Time on Housework",
       excerpt: "Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time.",
       date: "October 17, 2025",
