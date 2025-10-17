@@ -16,9 +16,9 @@ const Blog = () => {
     {
       title: "6 Handy Tips to Help You Minimize Your Time on Housework",
       excerpt: "Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time.",
-      date: "October 17, 2025",
+      date: "September 5, 2023",
       slug: "/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework",
-      image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&h=400&fit=crop&q=80"
+      image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "Airbnb Bedding Management You Should Know",
@@ -26,6 +26,20 @@ const Blog = () => {
       date: "October 17, 2025",
       slug: "/blog/cleaning-tips/airbnb-bedding-management-you-should-know",
       image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=400&fit=crop&q=80"
+    },
+    {
+      title: "The Science of Spring Cleaning: Why It Boosts Your Mood and Health",
+      excerpt: "Discover the science of spring cleaning! Learn how decluttering and a deep clean can improve your mood, health, and focus. Get our ultimate checklist.",
+      date: "March 15, 2024",
+      slug: "/blog/cleaning-tips/the-science-of-spring-cleaning",
+      image: "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&h=400&fit=crop&q=80"
+    },
+    {
+      title: "Get It Done Together: Why You Should Host a Spring Cleaning Party",
+      excerpt: "Turn spring cleaning into a fun social event! Learn how to plan a cleaning party with friends and when to bring in the pros for tough jobs.",
+      date: "April 22, 2023",
+      slug: "/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party",
+      image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "10 Tips for Keeping Your Home Clean Between Professional Cleanings",
