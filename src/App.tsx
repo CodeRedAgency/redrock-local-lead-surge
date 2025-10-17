@@ -119,6 +119,7 @@ import ShowroomCleaningSouthFloridaPage from "./pages/south-florida/showroom-cle
 import WarehouseCleaningSouthFloridaPage from "./pages/south-florida/warehouse-cleaning/+Page";
 import SalonSpaCleaningSouthFloridaPage from "./pages/south-florida/salon-spa-cleaning/+Page";
 import Blog from "./pages/Blog";
+import AirbnbBeddingManagementPage from "./pages/blog/cleaning-tips/airbnb-bedding-management-you-should-know/+Page";
 import MaidilyApp from "./pages/MaidilyApp";
 import SouthFloridaHome from "./pages/locations/SouthFloridaHome";
 import SouthFloridaCalculator from "./pages/locations/SouthFloridaCalculator";
@@ -233,6 +234,7 @@ const App = () => (
           
           {/* Blog & Hiring */}
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/cleaning-tips/airbnb-bedding-management-you-should-know" element={<AirbnbBeddingManagementPage />} />
           <Route path="/hiring-req" element={<HiringRequirements />} />
           <Route path="/hiring-application/how-to-use-the-maidily-mobile-app" element={<MaidilyApp />} />
           

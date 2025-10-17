@@ -7,6 +7,12 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const articles = [
     {
+      title: "Airbnb Bedding Management You Should Know",
+      excerpt: "Essential strategies for selecting, maintaining, and rotating quality linens to ensure guest comfort, maximize efficiency, and secure 5-star reviews.",
+      date: "October 17, 2025",
+      slug: "/blog/cleaning-tips/airbnb-bedding-management-you-should-know"
+    },
+    {
       title: "10 Tips for Keeping Your Home Clean Between Professional Cleanings",
       excerpt: "Maintain a spotless home with these simple daily habits and quick cleaning tricks.",
       date: "March 15, 2025",
