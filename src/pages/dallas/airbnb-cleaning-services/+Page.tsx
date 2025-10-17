@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
 
 const neighborhoods = [
@@ -205,6 +206,7 @@ const AirbnbCleaningDallasPage = () => {
         <title>Airbnb Cleaning Service in Dallas | Red Rock Cleans</title>
         <meta name="description" content="Get 5-star reviews with our reliable Airbnb cleaning service in Dallas. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Uptown, Plano, and beyond." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <DallasNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-dallas/sign-in" bookingUrl="/book-now-dallas" />
