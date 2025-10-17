@@ -122,6 +122,7 @@ import Blog from "./pages/Blog";
 import AirbnbBeddingManagementPage from "./pages/blog/cleaning-tips/airbnb-bedding-management-you-should-know/+Page";
 import MinimizeHouseworkTimePage from "./pages/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework/+Page";
 import ScienceOfSpringCleaningPage from "./pages/blog/cleaning-tips/the-science-of-spring-cleaning/+Page";
+import CarpetCleaningFleaInfestationPage from "./pages/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation/+Page";
 import GrillMaintenanceGuidePage from "./pages/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill/+Page";
 import HealthCodeViolationsPage from "./pages/blog/cleaning-tips/health-code-violations/+Page";
 import InkStainRemovalGuidePage from "./pages/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets/+Page";
