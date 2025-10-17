@@ -682,19 +682,6 @@ const SchoolCleaningColumbusOhioPage = () => {
             </Button>
           </div>
         </section>
-
-        {/* Image Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <img 
-                src="/src/assets/service-products.jpg" 
-                alt="A bright and sanitized classroom in a Columbus, Ohio school, cleaned by Red Rock Cleans"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </section>
       </main>
       
       <Footer />

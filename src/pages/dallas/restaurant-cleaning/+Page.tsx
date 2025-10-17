@@ -640,20 +640,7 @@ const RestaurantCleaningDallasPage = () => {
               </div>
             </div>
           </section>
-
-          {/* Image Section */}
-          <section className="py-16 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <img 
-                  src="/src/assets/hero-commercial.jpg" 
-                  alt="An immaculate and empty upscale restaurant in Dallas, cleaned by Red Rock Cleans"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </section>
-        </main>
+      </main>
         
         <Footer />
       </div>

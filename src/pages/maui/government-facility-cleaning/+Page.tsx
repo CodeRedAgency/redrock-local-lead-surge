@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Lock, FileText, Building, Gavel, Users, ShieldCheck, Building2, CheckCircle2, MapPin, Calendar, Home, Stethoscope, Server, GraduationCap } from "lucide-react";
+import { Shield, Lock, FileText, Building, Gavel, Users, ShieldCheck, Building2, CheckCircle2, MapPin, Calendar, Home, Stethoscope, Server, GraduationCap, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -617,19 +617,6 @@ const GovernmentFacilityCleaningMauiPage = () => {
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
               <Link to="/commercial-quote?location=maui">Request Your Government Contract Proposal</Link>
             </Button>
-          </div>
-        </section>
-
-        {/* Image Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <img 
-                src="/static/service-products.jpg" 
-                alt="The clean and secure lobby of a government building on Maui after cleaning by Red Rock Cleans"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
           </div>
         </section>
       </main>

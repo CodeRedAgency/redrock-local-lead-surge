@@ -100,7 +100,7 @@ IMPORTANT NOTES:
 SIGNATURE:
 ----------
 The contractor has provided a digital signature confirming agreement to all terms and conditions.
-(Signature image attached/embedded below)
+Signature data URL: ${signatureImage}
 
 This is a legally binding agreement between the contractor and Red Rock Cleaning.
       `.trim();
@@ -117,10 +117,16 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
       formDataToSubmit.append('contractor_state', signatureData.state);
       formDataToSubmit.append('contractor_zipcode', signatureData.zipCode);
       formDataToSubmit.append('agreement_date', signatureData.date);
+      formDataToSubmit.append('signature_base64', signatureImage);
       
-      // Convert base64 signature to blob and append as file
-      const signatureBlob = await (await fetch(signatureImage)).blob();
-      formDataToSubmit.append('signature_image', signatureBlob, 'signature.png');
+      // Try to convert base64 signature to blob and append as file
+      try {
+        const base64Response = await fetch(signatureImage);
+        const signatureBlob = await base64Response.blob();
+        formDataToSubmit.append('signature_image', signatureBlob, 'signature.png');
+      } catch (blobError) {
+        console.warn('Could not convert signature to blob, using base64 instead:', blobError);
+      }
       
       const response = await fetch('https://formspree.io/f/mqaynpgd', {
         method: 'POST',
@@ -130,19 +136,35 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
         }
       });
       
+      // Log response for debugging
+      const responseData = await response.json().catch(() => ({}));
+      console.log('Formspree response:', response.status, responseData);
+      
       if (response.ok) {
         // Success - show confirmation or redirect
-        alert('Thank you! Your Sub-Contractor Agreement has been submitted successfully.');
-        // Optionally redirect to next step
-        // window.location.href = '/cleaning-supplies';
+        alert('Thank you! Your Sub-Contractor Agreement has been submitted successfully. You should receive a confirmation email shortly.');
+        // Clear the form
+        setSignatureData({
+          addressLine: '',
+          city: '',
+          state: '',
+          zipCode: '',
+          firstName: '',
+          lastName: '',
+          date: ''
+        });
+        signaturePadRef.current?.clear();
+        setHasSignature(false);
       } else {
-        alert('There was a problem submitting your agreement. Please try again.');
+        const errorMessage = responseData.error || responseData.errors?.[0]?.message || 'Unknown error';
+        console.error('Formspree error:', errorMessage, responseData);
+        alert(`There was a problem submitting your agreement: ${errorMessage}. Please try again or contact support.`);
         submitButton.textContent = originalText;
         submitButton.disabled = false;
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('There was a problem submitting your agreement. Please try again.');
+      alert('There was a problem submitting your agreement. Please check your internet connection and try again.');
       const submitButton = document.querySelector('button[type="submit"]') as HTMLButtonElement;
       if (submitButton) {
         submitButton.disabled = false;

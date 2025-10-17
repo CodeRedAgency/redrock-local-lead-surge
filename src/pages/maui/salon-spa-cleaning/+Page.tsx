@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Sparkles, Droplets, Heart, Bed, Paintbrush, Sofa, ShowerHead, Smile, BadgeCheck, Wind, MapPin, Calendar, Home, ShoppingBag, Stethoscope, Dumbbell } from "lucide-react";
+import { Sparkles, Droplets, Heart, Bed, Paintbrush, Sofa, ShowerHead, Smile, BadgeCheck, Wind, MapPin, Calendar, Home, ShoppingBag, Stethoscope, Dumbbell, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -629,19 +629,6 @@ const SalonSpaCleaningMauiPage = () => {
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
               <Link to="/commercial-quote?location=maui">Get Your Free Salon & Spa Cleaning Assessment</Link>
             </Button>
-          </div>
-        </section>
-
-        {/* Image Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <img 
-                src="/static/service-products.jpg" 
-                alt="A serene and immaculate spa treatment room on Maui, cleaned by Red Rock Cleans"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
           </div>
         </section>
       </main>

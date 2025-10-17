@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Clock, Wrench, SprayCan, Construction, Layers, ShieldCheck, GanttChartSquare, Factory, MapPin, Calendar, Home, Building2 } from "lucide-react";
+import { Shield, Clock, Wrench, SprayCan, Construction, Layers, ShieldCheck, GanttChartSquare, Factory, MapPin, Calendar, Home, Building2, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -617,19 +617,6 @@ const IndustrialCleaningMauiPage = () => {
             <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
               <Link to="/commercial-quote?location=maui">Get Your Free Industrial Cleaning Assessment</Link>
             </Button>
-          </div>
-        </section>
-
-        {/* Image Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <img 
-                src="/static/service-products.jpg" 
-                alt="A heavy-duty industrial facility on Maui after a thorough cleaning by Red Rock Cleans"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
           </div>
         </section>
       </main>

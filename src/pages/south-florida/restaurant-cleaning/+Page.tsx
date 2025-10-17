@@ -818,19 +818,6 @@ const RestaurantCleaningSouthFloridaPage = () => {
             </Button>
           </div>
         </section>
-
-        {/* Image Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <img 
-                src="/static/service-products.jpg" 
-                alt="An immaculate and empty upscale restaurant in Fort Lauderdale, cleaned by Red Rock Cleans"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </section>
       </main>
       
       <Footer />

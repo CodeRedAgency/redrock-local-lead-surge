@@ -19,7 +19,8 @@ import {
   CheckCircle,
   ShoppingBag,
   Building,
-  GraduationCap
+  GraduationCap,
+  Home
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -320,13 +321,14 @@ export default function WarehouseCleaningOahuPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/commercial-quote?location=oahu">
+                  <a href="tel:+18089098801">
                     <Phone className="w-5 h-5 mr-2" />
-                    Book Warehouse Cleaning
-                  </Link>
+                    Call (808) 909-8801
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                  <Link to="/contact">
+                  <Link to="/commercial-quote?location=oahu">
+                    <Home className="w-5 h-5 mr-2" />
                     Get Free Quote
                   </Link>
                 </Button>
@@ -652,45 +654,6 @@ export default function WarehouseCleaningOahuPage() {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-            </div>
-          </div>
-        </section>
-
-        {/* Image Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center">
-                <img 
-                  src="/src/assets/service-products.jpg" 
-                  alt="A large, clean warehouse on Oahu with polished floors, cleaned by Red Rock Cleans"
-                  className="w-full h-auto rounded-lg shadow-xl"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Optimize Your Warehouse Operations?
-              </h2>
-              <p className="text-xl mb-8 leading-relaxed">
-                Join the many Oahu warehouses that trust Red Rock Cleans for professional, reliable cleaning services 
-                that enhance safety, efficiency, and operational performance.
-              </p>
-              <Button size="lg" className="h-14 text-lg px-8" asChild>
-                <Link to="/commercial-quote?location=oahu">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Book Your Warehouse Cleaning Service
-                </Link>
-              </Button>
             </div>
           </div>
         </section>
