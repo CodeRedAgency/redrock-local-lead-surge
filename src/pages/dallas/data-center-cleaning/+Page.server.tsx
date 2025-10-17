@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Data Center Cleaning Dallas | Red Rock Cleans",
+      title: "Data Center Cleaning in Dallas | Red Rock Cleans",
       description: "Specialized data center cleaning in Dallas. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Plano and Frisco to ensure uptime.",
       jsonLdSchema: localBusinessSchema
     }

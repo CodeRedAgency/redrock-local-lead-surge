@@ -63,7 +63,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Standard Cleaning Service Columbus Ohio | Red Rock Cleans",
+      title: "Standard Cleaning Service in Columbus Ohio | Red Rock Cleans",
       description: "Keep your Columbus home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Dublin, Upper Arlington, and beyond. Get your free quote!",
       jsonLdSchema
     }

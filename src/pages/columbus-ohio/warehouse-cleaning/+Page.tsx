@@ -342,15 +342,15 @@ const WarehouseCleaningColumbusOhioPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/commercial-quote?location=columbus-ohio">
-                    <Package className="w-5 h-5 mr-2" />
-                    Schedule Warehouse Cleaning
-                  </Link>
+                  <a href="tel:+13802353135">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call (380) 235-3135
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                  <Link to="/contact">
-                    <HardHat className="w-5 h-5 mr-2" />
-                    Request Safety Assessment
+                  <Link to="/commercial-quote?location=columbus-ohio">
+                    <Home className="w-5 h-5 mr-2" />
+                    Get Free Quote
                   </Link>
                 </Button>
               </div>

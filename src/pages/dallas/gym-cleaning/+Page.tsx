@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Dumbbell, ShowerHead, Shield, Bike, Droplets, User, Users, ThumbsUp, ShieldX, Trophy, Stethoscope, Store, GraduationCap } from "lucide-react";
+import { Dumbbell, ShowerHead, Shield, Bike, Droplets, User, Users, ThumbsUp, ShieldX, Trophy, Stethoscope, Store, GraduationCap, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -265,7 +265,7 @@ const GymCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Gym Cleaning Dallas | Red Rock Cleans</title>
+        <title>Gym Cleaning in Dallas | Red Rock Cleans</title>
         <meta name="description" content="Professional gym cleaning in Dallas. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Plano and Frisco." />
       </Helmet>
       

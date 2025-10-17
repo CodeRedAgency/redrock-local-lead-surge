@@ -63,7 +63,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Deep Cleaning Service Columbus Ohio | Red Rock Cleans",
+      title: "Deep Cleaning Service in Columbus Ohio | Red Rock Cleans",
       description: "Restore your home's sparkle with our thorough deep cleaning service in Columbus, OH. We tackle built-up grime for a truly refreshed home in Dublin, Upper Arlington, and beyond.",
       jsonLdSchema
     }

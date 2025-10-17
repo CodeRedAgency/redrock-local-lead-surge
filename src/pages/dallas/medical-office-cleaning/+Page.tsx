@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Microscope, Award, Armchair, Stethoscope, Droplets, Hospital, BadgeCheck, ShieldAlert, Cpu, Building2, GraduationCap } from "lucide-react";
+import { Shield, Microscope, Award, Armchair, Stethoscope, Droplets, Hospital, BadgeCheck, ShieldAlert, Cpu, Building2, GraduationCap, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -265,7 +265,7 @@ const MedicalOfficeCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Medical Office Cleaning Dallas | Red Rock Cleans</title>
+        <title>Medical Office Cleaning in Dallas | Red Rock Cleans</title>
         <meta name="description" content="Specialized medical office cleaning in Dallas. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Plano, Frisco, and beyond." />
       </Helmet>
       
@@ -294,15 +294,15 @@ const MedicalOfficeCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/commercial-quote?location=dallas">
-                      <Hospital className="w-5 h-5 mr-2" />
-                      Schedule Medical Cleaning
-                    </Link>
+                    <a href="tel:+19729922576">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Call (972) 992-2576
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                    <Link to="/contact">
-                      <Shield className="w-5 h-5 mr-2" />
-                      Get Free Assessment
+                    <Link to="/commercial-quote?location=dallas">
+                      <Home className="w-5 h-5 mr-2" />
+                      Get Free Quote
                     </Link>
                   </Button>
                 </div>

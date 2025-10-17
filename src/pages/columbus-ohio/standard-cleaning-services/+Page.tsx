@@ -278,7 +278,7 @@ const StandardCleaningColumbusOhioPage = () => {
   return (
     <>
       <Helmet>
-        <title>Standard Cleaning Service Columbus Ohio | Red Rock Cleans</title>
+        <title>Standard Cleaning Service in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Keep your Columbus home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Dublin, Upper Arlington, and beyond. Get your free quote!" />
       </Helmet>
       

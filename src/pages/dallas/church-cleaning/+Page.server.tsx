@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Church Cleaning Dallas | Red Rock Cleans",
+      title: "Church Cleaning in Dallas | Red Rock Cleans",
       description: "Professional church cleaning services in Dallas. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Plano, Frisco, and across the Dallas area.",
       jsonLdSchema: localBusinessSchema
     }

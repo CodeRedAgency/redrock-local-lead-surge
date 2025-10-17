@@ -63,7 +63,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Move Out Cleaning Service Columbus Ohio | Red Rock Cleans",
+      title: "Move Out Cleaning Service in Columbus Ohio | Red Rock Cleans",
       description: "Secure your deposit with our reliable move out cleaning service in Columbus, OH. We provide thorough end-of-tenancy cleaning in Dublin, Upper Arlington, and beyond. Book today!",
       jsonLdSchema
     }

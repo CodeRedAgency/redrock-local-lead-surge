@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Cpu, Award, Clock, Grid3X3, Server, SprayCan, Database, TrendingUp, ShieldCheck, Factory, Building2, Warehouse } from "lucide-react";
+import { Cpu, Award, Clock, Grid3X3, Server, SprayCan, Database, TrendingUp, ShieldCheck, Factory, Building2, Warehouse, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -260,7 +260,7 @@ const DataCenterCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Data Center Cleaning Dallas | Red Rock Cleans</title>
+        <title>Data Center Cleaning in Dallas | Red Rock Cleans</title>
         <meta name="description" content="Specialized data center cleaning in Dallas. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Plano and Frisco to ensure uptime." />
       </Helmet>
       
@@ -289,15 +289,15 @@ const DataCenterCleaningDallasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/commercial-quote?location=dallas">
-                      <Server className="w-5 h-5 mr-2" />
-                      Schedule Data Center Cleaning
-                    </Link>
+                    <a href="tel:+19729922576">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Call (972) 992-2576
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                    <Link to="/contact">
-                      <Cpu className="w-5 h-5 mr-2" />
-                      Get Free Assessment
+                    <Link to="/commercial-quote?location=dallas">
+                      <Home className="w-5 h-5 mr-2" />
+                      Get Free Quote
                     </Link>
                   </Button>
                 </div>

@@ -63,7 +63,7 @@ async function onBeforeRender(pageContext: PageContext) {
 
   return {
     pageContext: {
-      title: "Post Construction Cleaning Service Columbus Ohio | Red Rock Cleans",
+      title: "Post Construction Cleaning Service in Columbus Ohio | Red Rock Cleans",
       description: "Professional post construction cleaning in Columbus, OH. Red Rock Cleans handles construction cleanup for new builds and renovations in Dublin, Upper Arlington, and beyond. Get a detailed quote!",
       jsonLdSchema
     }

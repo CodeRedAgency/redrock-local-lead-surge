@@ -278,7 +278,7 @@ const DeepCleaningColumbusOhioPage = () => {
   return (
     <>
       <Helmet>
-        <title>Deep Cleaning Service Columbus Ohio | Red Rock Cleans</title>
+        <title>Deep Cleaning Service in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service in Columbus, OH. We tackle built-up grime for a truly refreshed home in Dublin, Upper Arlington, and beyond." />
       </Helmet>
       
