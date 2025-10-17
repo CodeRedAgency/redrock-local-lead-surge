@@ -117,16 +117,9 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
       formDataToSubmit.append('contractor_state', signatureData.state);
       formDataToSubmit.append('contractor_zipcode', signatureData.zipCode);
       formDataToSubmit.append('agreement_date', signatureData.date);
-      formDataToSubmit.append('signature_base64', signatureImage);
-      
-      // Try to convert base64 signature to blob and append as file
-      try {
-        const base64Response = await fetch(signatureImage);
-        const signatureBlob = await base64Response.blob();
-        formDataToSubmit.append('signature_image', signatureBlob, 'signature.png');
-      } catch (blobError) {
-        console.warn('Could not convert signature to blob, using base64 instead:', blobError);
-      }
+      // Note: Signature is included in the formatted message above as a base64 data URL
+      // Formspree free plan doesn't support file uploads, so we include it as text
+      formDataToSubmit.append('signature_data', signatureImage);
       
       const response = await fetch('https://formspree.io/f/mqaynpgd', {
         method: 'POST',
