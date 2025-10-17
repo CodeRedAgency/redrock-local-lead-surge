@@ -126,6 +126,7 @@ import GrillMaintenanceGuidePage from "./pages/blog/cleaning-tips/grill-maintena
 import HealthCodeViolationsPage from "./pages/blog/cleaning-tips/health-code-violations/+Page";
 import InkStainRemovalGuidePage from "./pages/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets/+Page";
 import SpringCleaningPartyPage from "./pages/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party/+Page";
+import MoveOutCleaningChecklistPage from "./pages/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist/+Page";
 import MaidilyApp from "./pages/MaidilyApp";
 import SouthFloridaHome from "./pages/locations/SouthFloridaHome";
 import SouthFloridaCalculator from "./pages/locations/SouthFloridaCalculator";
@@ -247,6 +248,7 @@ const App = () => (
           <Route path="/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party" element={<SpringCleaningPartyPage />} />
           <Route path="/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill" element={<GrillMaintenanceGuidePage />} />
           <Route path="/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets" element={<InkStainRemovalGuidePage />} />
+          <Route path="/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist" element={<MoveOutCleaningChecklistPage />} />
           <Route path="/hiring-req" element={<HiringRequirements />} />
           <Route path="/hiring-application/how-to-use-the-maidily-mobile-app" element={<MaidilyApp />} />
           

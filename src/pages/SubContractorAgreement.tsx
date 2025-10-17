@@ -2,9 +2,11 @@ import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const SubContractorAgreement = () => {
+  const navigate = useNavigate();
   const [signatureData, setSignatureData] = useState({
     addressLine: '',
     city: '',
@@ -115,19 +117,10 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
       console.log('Formspree response:', response.status, responseData);
       
       if (response.ok) {
-        // Success - show confirmation or redirect
-        alert('Thank you! Your Sub-Contractor Agreement has been submitted successfully. You should receive a confirmation email shortly.');
-        // Clear the form
-        setSignatureData({
-          addressLine: '',
-          city: '',
-          state: '',
-          zipCode: '',
-          firstName: '',
-          lastName: '',
-          date: '',
-          signatureName: ''
-        });
+        // Success - show confirmation and redirect to cleaning supplies page
+        alert('Thank you! Your Sub-Contractor Agreement has been submitted successfully. You will now be directed to the cleaning supplies page.');
+        // Redirect to cleaning supplies page
+        navigate('/hiring-application/cleaning-supplies');
       } else {
         const errorMessage = responseData.error || responseData.errors?.[0]?.message || 'Unknown error';
         console.error('Formspree error:', errorMessage, responseData);
