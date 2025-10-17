@@ -402,7 +402,7 @@ const MoveOutCleaningLasVegasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-vegas">
+                    <Link to="/book-now-las-vegas">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Move Out Cleaning
                     </Link>
@@ -574,7 +574,7 @@ const MoveOutCleaningLasVegasPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-vegas">
+                            <Link to="/book-now-las-vegas">
                               Schedule Your {neighborhood.name} Move Out Clean
                             </Link>
                           </Button>
@@ -692,7 +692,7 @@ const MoveOutCleaningLasVegasPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-vegas">
+                    <Link to="/book-now-las-vegas">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Move Out Cleaning Today
                     </Link>

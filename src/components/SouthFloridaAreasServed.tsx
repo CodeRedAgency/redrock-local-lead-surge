@@ -294,7 +294,7 @@ export const SouthFloridaAreasServed = () => {
                           size="lg" 
                           className="w-full sm:w-auto"
                         >
-                          <a href="/book-now-southflorida">
+                          <a href="/book-now-south-florida">
                             Get a Quote for {neighborhood.name}
                           </a>
                         </Button>
@@ -314,7 +314,7 @@ export const SouthFloridaAreasServed = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="cta">
-              <a href="/book-now-southflorida">Get Your Free Quote</a>
+              <a href="/book-now-south-florida">Get Your Free Quote</a>
             </Button>
             <Button asChild size="lg" variant="outline">
               <a href="/contact">Contact Us</a>

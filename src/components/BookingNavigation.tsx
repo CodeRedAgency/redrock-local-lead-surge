@@ -82,10 +82,10 @@ export const BookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string;
                   <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-southflorida">South Florida</Link>
+                  <Link to="/book-now-south-florida">South Florida</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-vegas">Las Vegas</Link>
+                  <Link to="/book-now-las-vegas">Las Vegas</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/book-now-honolulu">Oahu</Link>
@@ -185,10 +185,10 @@ export const BookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string;
                   <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
                     Commercial Cleaning Cost Estimator
                   </Link>
-                  <Link to="/book-now-southflorida" className="block hover:text-primary transition-colors text-sm">
+                  <Link to="/book-now-south-florida" className="block hover:text-primary transition-colors text-sm">
                     South Florida
                   </Link>
-                  <Link to="/book-now-vegas" className="block hover:text-primary transition-colors text-sm">
+                  <Link to="/book-now-las-vegas" className="block hover:text-primary transition-colors text-sm">
                     Las Vegas
                   </Link>
                   <Link to="/book-now-honolulu" className="block hover:text-primary transition-colors text-sm">

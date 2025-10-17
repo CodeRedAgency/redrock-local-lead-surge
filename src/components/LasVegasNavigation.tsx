@@ -162,9 +162,8 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                 <MapPin className="w-4 h-4 text-muted-foreground" />
               <Select defaultValue="" onValueChange={(value) => {
                 if (value) {
-                  // Get the current path and navigate to the same service page with the city hash
-                  const currentPath = location.pathname;
-                  navigate(`${currentPath}#${value}`);
+                  // Set the hash and trigger hashchange event for the accordion to respond
+                  window.location.hash = value;
                 }
               }}>
                 <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">

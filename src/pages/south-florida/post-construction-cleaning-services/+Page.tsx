@@ -435,7 +435,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <SouthFloridaNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" bookingUrl="/book-now-southflorida" />
+        <SouthFloridaNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" bookingUrl="/book-now-south-florida" />
         
         <main className="flex-grow">
           {/* Hero Section */}
@@ -459,7 +459,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-southflorida">
+                    <Link to="/book-now-south-florida">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Post Construction Cleaning
                     </Link>
@@ -631,7 +631,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
                           </blockquote>
 
                           <Button asChild className="w-full">
-                            <Link to="/book-now-southflorida">
+                            <Link to="/book-now-south-florida">
                               Schedule Your {city.name} Post Construction Cleaning
                             </Link>
                           </Button>
@@ -749,7 +749,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
-                    <Link to="/book-now-southflorida">
+                    <Link to="/book-now-south-florida">
                       <Calendar className="w-5 h-5 mr-2" />
                       Schedule Your Post Construction Cleaning Today
                     </Link>

@@ -234,7 +234,7 @@ export const GeneralNavigation = () => {
               </a>
             </Button>
             <Button size="sm" asChild>
-              <a href="/book-now-southflorida">
+              <a href="/book-now-south-florida">
                 <Phone className="w-4 h-4 mr-2" />
                 Book Now
               </a>
@@ -367,7 +367,7 @@ export const GeneralNavigation = () => {
                   </a>
                 </Button>
                 <Button size="sm" className="w-full" asChild>
-                  <a href="/book-now-southflorida">
+                  <a href="/book-now-south-florida">
                     <Phone className="w-4 h-4 mr-2" />
                     Book Now
                   </a>

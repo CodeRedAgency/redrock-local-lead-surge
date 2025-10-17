@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 
 const LasVegasHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-vegas/sign-in";
-  const bookingUrl = "/book-now-vegas";
+  const bookingUrl = "/book-now-las-vegas";
   
   return (
     <>

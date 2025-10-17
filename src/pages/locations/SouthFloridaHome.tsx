@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 
 const SouthFloridaHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-fort-lauderdale/sign-in";
-  const bookingUrl = "/book-now-southflorida";
+  const bookingUrl = "/book-now-south-florida";
   
   return (
     <>
