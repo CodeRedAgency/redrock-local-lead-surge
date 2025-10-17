@@ -29,7 +29,7 @@ const locations = [
   { name: "Dallas", path: "/dallas", phone: "(972) 992-2576" },
 ];
 
-export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookingUrl?: string }) => {
+export const LasVegasNavigation = ({ loginUrl, bookingUrl, hideLocationSelector }: { loginUrl?: string; bookingUrl?: string; hideLocationSelector?: boolean }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -81,67 +81,67 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                       <DropdownMenuSubContent>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/church-cleaning">
-                            {location.pathname === '/las-vegas/church-cleaning' ? 'Church Cleaning in Las Vegas' : 'Church Cleaning'}
+                            Church Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/school-cleaning">
-                            {location.pathname === '/las-vegas/school-cleaning' ? 'School Cleaning in Las Vegas' : 'School Cleaning'}
+                            School Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/medical-office-cleaning">
-                            {location.pathname === '/las-vegas/medical-office-cleaning' ? 'Medical Office Cleaning in Las Vegas' : 'Medical Office Cleaning'}
+                            Medical Office Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/data-center-cleaning">
-                            {location.pathname === '/las-vegas/data-center-cleaning' ? 'Data Center Cleaning in Las Vegas' : 'Data Center Cleaning'}
+                            Data Center Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/factory-cleaning">
-                            {location.pathname === '/las-vegas/factory-cleaning' ? 'Factory Cleaning in Las Vegas' : 'Factory Cleaning'}
+                            Factory Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/government-facility-cleaning">
-                            {location.pathname === '/las-vegas/government-facility-cleaning' ? 'Government Facility Cleaning in Las Vegas' : 'Government Facility Cleaning'}
+                            Government Facility Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/gym-cleaning">
-                            {location.pathname === '/las-vegas/gym-cleaning' ? 'Gym Cleaning in Las Vegas' : 'Gym Cleaning'}
+                            Gym Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/industrial-cleaning">
-                            {location.pathname === '/las-vegas/industrial-cleaning' ? 'Industrial Cleaning Services in Las Vegas' : 'Industrial Cleaning Services'}
+                            Industrial Cleaning Services in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/restaurant-cleaning">
-                            {location.pathname === '/las-vegas/restaurant-cleaning' ? 'Restaurant Cleaning in Las Vegas' : 'Restaurant Cleaning'}
+                            Restaurant Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/retail-cleaning">
-                            {location.pathname === '/las-vegas/retail-cleaning' ? 'Retail Store Cleaning in Las Vegas' : 'Retail Store Cleaning'}
+                            Retail Store Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/showroom-cleaning">
-                            {location.pathname === '/las-vegas/showroom-cleaning' ? 'Showroom Cleaning in Las Vegas' : 'Showroom Cleaning'}
+                            Showroom Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/warehouse-cleaning">
-                            {location.pathname === '/las-vegas/warehouse-cleaning' ? 'Warehouse Cleaning in Las Vegas' : 'Warehouse Cleaning'}
+                            Warehouse Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/las-vegas/salon-spa-cleaning">
-                            {location.pathname === '/las-vegas/salon-spa-cleaning' ? 'Salon & Spa Cleaning in Las Vegas' : 'Salon & Spa Cleaning'}
+                            Salon & Spa Cleaning in Las Vegas
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
@@ -158,72 +158,74 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
               </Link>
 
               {/* Las Vegas Neighborhood Selector */}
-              <div className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-muted-foreground" />
-              <Select defaultValue="" onValueChange={(value) => {
-                if (value) {
-                  // Set the hash and trigger hashchange event for the accordion to respond
-                  window.location.hash = value;
-                }
-              }}>
-                <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
-                  <SelectValue placeholder="Las Vegas Areas" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="anthem">
-                    Anthem
-                  </SelectItem>
-                  <SelectItem value="enterprise">
-                    Enterprise
-                  </SelectItem>
-                  <SelectItem value="green-valley-north">
-                    Green Valley North
-                  </SelectItem>
-                  <SelectItem value="henderson">
-                    Henderson
-                  </SelectItem>
-                  <SelectItem value="lake-las-vegas">
-                    Lake Las Vegas
-                  </SelectItem>
-                  <SelectItem value="las-vegas">
-                    Las Vegas
-                  </SelectItem>
-                  <SelectItem value="macdonald-ranch">
-                    MacDonald Ranch
-                  </SelectItem>
-                  <SelectItem value="mountains-edge">
-                    Mountain's Edge
-                  </SelectItem>
-                  <SelectItem value="north-las-vegas">
-                    North Las Vegas
-                  </SelectItem>
-                  <SelectItem value="paradise">
-                    Paradise
-                  </SelectItem>
-                  <SelectItem value="seven-hills">
-                    Seven Hills
-                  </SelectItem>
-                  <SelectItem value="silverado-ranch">
-                    Silverado Ranch
-                  </SelectItem>
-                  <SelectItem value="spring-valley">
-                    Spring Valley
-                  </SelectItem>
-                  <SelectItem value="summerlin-south">
-                    Summerlin South
-                  </SelectItem>
-                  <SelectItem value="sunrise-manor">
-                    Sunrise Manor
-                  </SelectItem>
-                  <SelectItem value="whitney">
-                    Whitney
-                  </SelectItem>
-                  <SelectItem value="winchester">
-                    Winchester
-                  </SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
+              {!hideLocationSelector && (
+                <div className="flex items-center space-x-2">
+                  <MapPin className="w-4 h-4 text-muted-foreground" />
+                <Select defaultValue="" onValueChange={(value) => {
+                  if (value) {
+                    // Set the hash and trigger hashchange event for the accordion to respond
+                    window.location.hash = value;
+                  }
+                }}>
+                  <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
+                    <SelectValue placeholder="Las Vegas Areas" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="anthem">
+                      Anthem
+                    </SelectItem>
+                    <SelectItem value="enterprise">
+                      Enterprise
+                    </SelectItem>
+                    <SelectItem value="green-valley-north">
+                      Green Valley North
+                    </SelectItem>
+                    <SelectItem value="henderson">
+                      Henderson
+                    </SelectItem>
+                    <SelectItem value="lake-las-vegas">
+                      Lake Las Vegas
+                    </SelectItem>
+                    <SelectItem value="las-vegas">
+                      Las Vegas
+                    </SelectItem>
+                    <SelectItem value="macdonald-ranch">
+                      MacDonald Ranch
+                    </SelectItem>
+                    <SelectItem value="mountains-edge">
+                      Mountain's Edge
+                    </SelectItem>
+                    <SelectItem value="north-las-vegas">
+                      North Las Vegas
+                    </SelectItem>
+                    <SelectItem value="paradise">
+                      Paradise
+                    </SelectItem>
+                    <SelectItem value="seven-hills">
+                      Seven Hills
+                    </SelectItem>
+                    <SelectItem value="silverado-ranch">
+                      Silverado Ranch
+                    </SelectItem>
+                    <SelectItem value="spring-valley">
+                      Spring Valley
+                    </SelectItem>
+                    <SelectItem value="summerlin-south">
+                      Summerlin South
+                    </SelectItem>
+                    <SelectItem value="sunrise-manor">
+                      Sunrise Manor
+                    </SelectItem>
+                    <SelectItem value="whitney">
+                      Whitney
+                    </SelectItem>
+                    <SelectItem value="winchester">
+                      Winchester
+                    </SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              )}
             </nav>
 
             {/* Desktop CTA Buttons */}
@@ -285,43 +287,43 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string
                     </Link>
                     <div className="font-medium text-sm text-muted-foreground mb-1 ml-4">Commercial Cleaning</div>
                     <Link to="/las-vegas/church-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/church-cleaning' ? 'Church Cleaning in Las Vegas' : 'Church Cleaning'}
+                      Church Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/school-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/school-cleaning' ? 'School Cleaning in Las Vegas' : 'School Cleaning'}
+                      School Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/medical-office-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/medical-office-cleaning' ? 'Medical Office Cleaning in Las Vegas' : 'Medical Office Cleaning'}
+                      Medical Office Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/data-center-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/data-center-cleaning' ? 'Data Center Cleaning in Las Vegas' : 'Data Center Cleaning'}
+                      Data Center Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/factory-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/factory-cleaning' ? 'Factory Cleaning in Las Vegas' : 'Factory Cleaning'}
+                      Factory Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/government-facility-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/government-facility-cleaning' ? 'Government Facility Cleaning in Las Vegas' : 'Government Facility Cleaning'}
+                      Government Facility Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/gym-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/gym-cleaning' ? 'Gym Cleaning in Las Vegas' : 'Gym Cleaning'}
+                      Gym Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/industrial-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/industrial-cleaning' ? 'Industrial Cleaning Services in Las Vegas' : 'Industrial Cleaning Services'}
+                      Industrial Cleaning Services in Las Vegas
                     </Link>
                     <Link to="/las-vegas/restaurant-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/restaurant-cleaning' ? 'Restaurant Cleaning in Las Vegas' : 'Restaurant Cleaning'}
+                      Restaurant Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/retail-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/retail-cleaning' ? 'Retail Store Cleaning in Las Vegas' : 'Retail Store Cleaning'}
+                      Retail Store Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/showroom-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/showroom-cleaning' ? 'Showroom Cleaning in Las Vegas' : 'Showroom Cleaning'}
+                      Showroom Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/warehouse-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/warehouse-cleaning' ? 'Warehouse Cleaning in Las Vegas' : 'Warehouse Cleaning'}
+                      Warehouse Cleaning in Las Vegas
                     </Link>
                     <Link to="/las-vegas/salon-spa-cleaning" className="block ml-6 hover:text-primary transition-colors text-sm">
-                      {location.pathname === '/las-vegas/salon-spa-cleaning' ? 'Salon & Spa Cleaning in Las Vegas' : 'Salon & Spa Cleaning'}
+                      Salon & Spa Cleaning in Las Vegas
                     </Link>
                   </div>
                 </div>
