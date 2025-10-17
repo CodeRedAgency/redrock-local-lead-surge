@@ -83,67 +83,67 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
                       <DropdownMenuSubContent>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/church-cleaning">
-                            {location.pathname === "/dallas/church-cleaning" ? "Church Cleaning in Dallas" : "Church Cleaning"}
+                            Church Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/data-center-cleaning">
-                            {location.pathname === "/dallas/data-center-cleaning" ? "Data Center Cleaning in Dallas" : "Data Center Cleaning"}
+                            Data Center Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/factory-cleaning">
-                            {location.pathname === "/dallas/factory-cleaning" ? "Factory Cleaning in Dallas" : "Factory Cleaning"}
+                            Factory Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/government-facility-cleaning">
-                            {location.pathname === "/dallas/government-facility-cleaning" ? "Government Facility Cleaning in Dallas" : "Government Facility Cleaning"}
+                            Government Facility Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/school-cleaning">
-                            {location.pathname === "/dallas/school-cleaning" ? "School Cleaning in Dallas" : "School Cleaning"}
+                            School Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/medical-office-cleaning">
-                            {location.pathname === "/dallas/medical-office-cleaning" ? "Medical Office Cleaning in Dallas" : "Medical Office Cleaning"}
+                            Medical Office Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/restaurant-cleaning">
-                            {location.pathname === "/dallas/restaurant-cleaning" ? "Restaurant Cleaning in Dallas" : "Restaurant Cleaning"}
+                            Restaurant Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/retail-cleaning">
-                            {location.pathname === "/dallas/retail-cleaning" ? "Retail Store Cleaning in Dallas" : "Retail Store Cleaning"}
+                            Retail Store Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/showroom-cleaning">
-                            {location.pathname === "/dallas/showroom-cleaning" ? "Showroom Cleaning in Dallas" : "Showroom Cleaning"}
+                            Showroom Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/gym-cleaning">
-                            {location.pathname === "/dallas/gym-cleaning" ? "Gym Cleaning in Dallas" : "Gym Cleaning"}
+                            Gym Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/industrial-cleaning">
-                            {location.pathname === "/dallas/industrial-cleaning" ? "Industrial Cleaning Services in Dallas" : "Industrial Cleaning Services"}
+                            Industrial Cleaning Services in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/warehouse-cleaning">
-                            {location.pathname === "/dallas/warehouse-cleaning" ? "Warehouse Cleaning in Dallas" : "Warehouse Cleaning"}
+                            Warehouse Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link to="/dallas/salon-spa-cleaning">
-                            {location.pathname === "/dallas/salon-spa-cleaning" ? "Salon & Spa Cleaning in Dallas" : "Salon & Spa Cleaning"}
+                            Salon & Spa Cleaning in Dallas
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
@@ -285,43 +285,43 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
                     </Link>
                     <div className="font-medium text-sm text-muted-foreground mt-2 mb-1">Commercial Cleaning</div>
                     <Link to="/dallas/church-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/church-cleaning" ? "Church Cleaning in Dallas" : "Church Cleaning"}
+                      Church Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/data-center-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/data-center-cleaning" ? "Data Center Cleaning in Dallas" : "Data Center Cleaning"}
+                      Data Center Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/factory-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/factory-cleaning" ? "Factory Cleaning in Dallas" : "Factory Cleaning"}
+                      Factory Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/government-facility-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/government-facility-cleaning" ? "Government Facility Cleaning in Dallas" : "Government Facility Cleaning"}
+                      Government Facility Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/school-cleaning" ? "School Cleaning in Dallas" : "School Cleaning"}
+                      School Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/medical-office-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/medical-office-cleaning" ? "Medical Office Cleaning in Dallas" : "Medical Office Cleaning"}
+                      Medical Office Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/restaurant-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/restaurant-cleaning" ? "Restaurant Cleaning in Dallas" : "Restaurant Cleaning"}
+                      Restaurant Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/retail-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/retail-cleaning" ? "Retail Store Cleaning in Dallas" : "Retail Store Cleaning"}
+                      Retail Store Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/showroom-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/showroom-cleaning" ? "Showroom Cleaning in Dallas" : "Showroom Cleaning"}
+                      Showroom Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/gym-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/gym-cleaning" ? "Gym Cleaning in Dallas" : "Gym Cleaning"}
+                      Gym Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/industrial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/industrial-cleaning" ? "Industrial Cleaning Services in Dallas" : "Industrial Cleaning Services"}
+                      Industrial Cleaning Services in Dallas
                     </Link>
                     <Link to="/dallas/warehouse-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/warehouse-cleaning" ? "Warehouse Cleaning in Dallas" : "Warehouse Cleaning"}
+                      Warehouse Cleaning in Dallas
                     </Link>
                     <Link to="/dallas/salon-spa-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                      {location.pathname === "/dallas/salon-spa-cleaning" ? "Salon & Spa Cleaning in Dallas" : "Salon & Spa Cleaning"}
+                      Salon & Spa Cleaning in Dallas
                     </Link>
                   </div>
                 </div>
