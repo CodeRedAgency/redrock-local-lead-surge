@@ -151,9 +151,33 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-              <Link to="/book-now-dallas" className="hover:text-primary transition-colors relative z-10">
-                Pricing
-              </Link>
+              {/* Conditionally show calculator links or Pricing based on current page */}
+              {location.pathname.includes('/church-cleaning') || 
+               location.pathname.includes('/data-center-cleaning') ||
+               location.pathname.includes('/factory-cleaning') ||
+               location.pathname.includes('/government-facility-cleaning') ||
+               location.pathname.includes('/gym-cleaning') ||
+               location.pathname.includes('/industrial-cleaning') ||
+               location.pathname.includes('/medical-office-cleaning') ||
+               location.pathname.includes('/restaurant-cleaning') ||
+               location.pathname.includes('/retail-cleaning') ||
+               location.pathname.includes('/salon-spa-cleaning') ||
+               location.pathname.includes('/school-cleaning') ||
+               location.pathname.includes('/showroom-cleaning') ||
+               location.pathname.includes('/warehouse-cleaning') ? (
+                <>
+                  <Link to="/commercial-cleaning-cost-estimator" className="hover:text-primary transition-colors relative z-10">
+                    Cleaning Cost Calculator
+                  </Link>
+                  <Link to="/commercial-cleaning-time-estimator" className="hover:text-primary transition-colors relative z-10">
+                    Cleaning Time Calculator
+                  </Link>
+                </>
+              ) : (
+                <Link to="/book-now-dallas" className="hover:text-primary transition-colors relative z-10">
+                  Pricing
+                </Link>
+              )}
 
               <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
                 Contact
@@ -302,9 +326,33 @@ export const DallasNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; 
                   </div>
                 </div>
 
-                <Link to="/book-now-dallas" className="block hover:text-primary transition-colors">
-                  Pricing
-                </Link>
+                {/* Conditionally show calculator links or Pricing in mobile menu */}
+                {location.pathname.includes('/church-cleaning') || 
+                 location.pathname.includes('/data-center-cleaning') ||
+                 location.pathname.includes('/factory-cleaning') ||
+                 location.pathname.includes('/government-facility-cleaning') ||
+                 location.pathname.includes('/gym-cleaning') ||
+                 location.pathname.includes('/industrial-cleaning') ||
+                 location.pathname.includes('/medical-office-cleaning') ||
+                 location.pathname.includes('/restaurant-cleaning') ||
+                 location.pathname.includes('/retail-cleaning') ||
+                 location.pathname.includes('/salon-spa-cleaning') ||
+                 location.pathname.includes('/school-cleaning') ||
+                 location.pathname.includes('/showroom-cleaning') ||
+                 location.pathname.includes('/warehouse-cleaning') ? (
+                  <>
+                    <Link to="/commercial-cleaning-cost-estimator" className="block hover:text-primary transition-colors">
+                      Cleaning Cost Calculator
+                    </Link>
+                    <Link to="/commercial-cleaning-time-estimator" className="block hover:text-primary transition-colors">
+                      Cleaning Time Calculator
+                    </Link>
+                  </>
+                ) : (
+                  <Link to="/book-now-dallas" className="block hover:text-primary transition-colors">
+                    Pricing
+                  </Link>
+                )}
 
                 <Link to="/contact" className="block hover:text-primary transition-colors">
                   Contact
