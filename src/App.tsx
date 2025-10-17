@@ -179,6 +179,7 @@ import ShowroomCleaningPage from "./pages/showroom-cleaning/+Page";
 import WarehouseCleaningPage from "./pages/warehouse-cleaning/+Page";
 import SalonSpaCleaningPage from "./pages/salon-spa-cleaning/+Page";
 import IndustrialCleaningPage from "./pages/industrial-cleaning/+Page";
+import RestaurantCleaningPage from "./pages/restaurant-cleaning/+Page";
 
 const queryClient = new QueryClient();
 
@@ -222,6 +223,7 @@ const App = () => (
           <Route path="/showroom-cleaning" element={<ShowroomCleaningPage />} />
           <Route path="/warehouse-cleaning" element={<WarehouseCleaningPage />} />
           <Route path="/salon-spa-cleaning" element={<SalonSpaCleaningPage />} />
+          <Route path="/restaurant-cleaning" element={<RestaurantCleaningPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms-and-conditions-page" element={<TermsAndConditions />} />
           <Route path="/privacy-policy-page" element={<PrivacyPolicy />} />

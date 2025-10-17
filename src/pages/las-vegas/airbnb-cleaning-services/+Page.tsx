@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 
 const neighborhoods = [
   {
@@ -382,6 +383,7 @@ export default function AirbnbCleaningLasVegasPage() {
         <title>Airbnb Cleaning Services Las Vegas | Red Rock Cleans</title>
         <meta name="description" content="5-star Airbnb cleaning services in Las Vegas. Red Rock Cleans offers reliable, automated turnover cleaning for vacation rentals to impress every guest. Get your free instant quote today!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <LasVegasNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-vegas/sign-in" bookingUrl="/book-now-las-vegas" />

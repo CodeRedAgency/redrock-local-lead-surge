@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
 
 const neighborhoods = [
@@ -376,6 +377,7 @@ const MoveOutCleaningLasVegasPage = () => {
         <title>Move Out Cleaning Service Las Vegas | Red Rock Cleans</title>
         <meta name="description" content="Secure your deposit with our reliable move out cleaning service in Las Vegas. Red Rock Cleans provides thorough end-of-tenancy cleaning for renters and sellers. Book today!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <LasVegasNavigation />
