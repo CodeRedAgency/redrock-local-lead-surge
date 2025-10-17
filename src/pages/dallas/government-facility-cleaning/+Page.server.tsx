@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Government Facility Cleaning Dallas | Red Rock Cleans",
+      title: "Government Facility Cleaning in Dallas | Red Rock Cleans",
       description: "Secure and compliant government facility cleaning in Dallas. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings in Plano and Frisco by security-cleared staff.",
       jsonLdSchema: localBusinessSchema
     }

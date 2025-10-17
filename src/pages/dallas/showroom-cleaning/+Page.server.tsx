@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Showroom Cleaning Services Dallas | Red Rock Cleans",
+      title: "Showroom Cleaning Services in Dallas | Red Rock Cleans",
       description: "Professional showroom cleaning in Dallas. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships, furniture stores, and more in Plano and Frisco.",
       jsonLdSchema: localBusinessSchema
     }

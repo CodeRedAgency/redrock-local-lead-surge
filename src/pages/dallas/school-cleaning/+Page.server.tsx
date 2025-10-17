@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "School Cleaning Services Dallas | Red Rock Cleans",
+      title: "School Cleaning Services in Dallas | Red Rock Cleans",
       description: "Professional school cleaning services in Dallas. Red Rock Cleans provides a safe and healthy learning environment for students in Plano, Frisco, and across the Dallas area.",
       jsonLdSchema: localBusinessSchema
     }

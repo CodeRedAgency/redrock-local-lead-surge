@@ -99,7 +99,7 @@ const jsonLdSchema = {
 export const onBeforeRender: OnBeforeRenderAsync = async () => {
   return {
     pageContext: {
-      title: "Standard Cleaning Service Dallas | Red Rock Cleans",
+      title: "Standard Cleaning Service in Dallas | Red Rock Cleans",
       description: "Keep your Dallas home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Plano, Frisco, and beyond. Get your free quote!",
       jsonLdSchema
     }

@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Retail Store Cleaning Dallas | Red Rock Cleans",
+      title: "Retail Store Cleaning in Dallas | Red Rock Cleans",
       description: "Professional retail store cleaning in Dallas. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts and sales floors in Plano, Frisco, and beyond.",
       jsonLdSchema: localBusinessSchema
     }

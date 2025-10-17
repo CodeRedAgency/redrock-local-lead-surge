@@ -99,7 +99,7 @@ const jsonLdSchema = {
 export const onBeforeRender: OnBeforeRenderAsync = async () => {
   return {
     pageContext: {
-      title: "Airbnb Cleaning Service Dallas | Red Rock Cleans",
+      title: "Airbnb Cleaning Service in Dallas | Red Rock Cleans",
       description: "Get 5-star reviews with our reliable Airbnb cleaning service in Dallas. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Uptown, Plano, and beyond.",
       jsonLdSchema
     }

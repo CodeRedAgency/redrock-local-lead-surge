@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Warehouse Cleaning Dallas | Red Rock Cleans",
+      title: "Warehouse Cleaning in Dallas | Red Rock Cleans",
       description: "Professional warehouse cleaning in Dallas. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers in Plano and Frisco.",
       jsonLdSchema: localBusinessSchema
     }

@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Gym Cleaning Dallas | Red Rock Cleans",
+      title: "Gym Cleaning in Dallas | Red Rock Cleans",
       description: "Professional gym cleaning in Dallas. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Plano and Frisco.",
       jsonLdSchema: localBusinessSchema
     }

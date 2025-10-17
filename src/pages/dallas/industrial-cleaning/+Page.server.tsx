@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Industrial Cleaning Services Dallas | Red Rock Cleans",
+      title: "Industrial Cleaning Services in Dallas | Red Rock Cleans",
       description: "Heavy-duty industrial cleaning services in Dallas. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities to ensure safety and uptime.",
       jsonLdSchema: localBusinessSchema
     }

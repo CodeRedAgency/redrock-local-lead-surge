@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Factory Cleaning Dallas | Red Rock Cleans",
+      title: "Factory Cleaning in Dallas | Red Rock Cleans",
       description: "Heavy-duty factory cleaning in Dallas. Red Rock Cleans offers comprehensive cleaning for manufacturing plants in Plano, Frisco, and across the Dallas area to ensure safety and productivity.",
       jsonLdSchema: localBusinessSchema
     }

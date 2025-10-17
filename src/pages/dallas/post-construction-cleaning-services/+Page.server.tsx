@@ -99,7 +99,7 @@ const jsonLdSchema = {
 export const onBeforeRender: OnBeforeRenderAsync = async () => {
   return {
     pageContext: {
-      title: "Post Construction Cleaning Service Dallas | Red Rock Cleans",
+      title: "Post Construction Cleaning Service in Dallas | Red Rock Cleans",
       description: "Professional post construction cleaning service in Dallas. Red Rock Cleans handles construction cleanup for new builds and renovations in Plano, Frisco, and beyond. Get a detailed quote today!",
       jsonLdSchema
     }

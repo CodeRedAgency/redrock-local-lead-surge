@@ -99,7 +99,7 @@ const jsonLdSchema = {
 export const onBeforeRender: OnBeforeRenderAsync = async () => {
   return {
     pageContext: {
-      title: "Deep Cleaning Service Dallas | Red Rock Cleans",
+      title: "Deep Cleaning Service in Dallas | Red Rock Cleans",
       description: "Restore your home's sparkle with our thorough deep cleaning service in Dallas. We tackle built-up grime for a truly refreshed home in Plano, Frisco, and beyond. Get your free quote!",
       jsonLdSchema
     }

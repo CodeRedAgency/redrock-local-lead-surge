@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Salon & Spa Cleaning Dallas | Red Rock Cleans",
+      title: "Salon & Spa Cleaning in Dallas | Red Rock Cleans",
       description: "Professional salon and spa cleaning in Dallas. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Plano, Frisco, and beyond.",
       jsonLdSchema: localBusinessSchema
     }

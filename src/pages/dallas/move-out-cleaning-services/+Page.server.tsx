@@ -99,7 +99,7 @@ const jsonLdSchema = {
 export const onBeforeRender: OnBeforeRenderAsync = async () => {
   return {
     pageContext: {
-      title: "Move Out Cleaning Service Dallas | Red Rock Cleans",
+      title: "Move Out Cleaning Service in Dallas | Red Rock Cleans",
       description: "Secure your deposit with our reliable move out cleaning service in Dallas. We provide thorough end-of-tenancy cleaning in Plano, Frisco, and beyond. Book today!",
       jsonLdSchema
     }

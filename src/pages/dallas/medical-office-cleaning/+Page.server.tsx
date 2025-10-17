@@ -96,7 +96,7 @@ const localBusinessSchema = {
 export const onBeforeRender = (pageContext: PageContext) => {
   return {
     pageContext: {
-      title: "Medical Office Cleaning Dallas | Red Rock Cleans",
+      title: "Medical Office Cleaning in Dallas | Red Rock Cleans",
       description: "Specialized medical office cleaning in Dallas. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Plano, Frisco, and beyond.",
       jsonLdSchema: localBusinessSchema
     }
