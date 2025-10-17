@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 
 const OahuHome = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-vegas/sign-in";
-  const bookingUrl = "/book-now-honolulu";
+  const bookingUrl = "/book-now-oahu";
   
   return (
     <>

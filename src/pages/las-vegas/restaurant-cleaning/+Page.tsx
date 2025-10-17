@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, HardHat, Cog, Building, ClipboardCheck, Wrench, Droplets, Truck, Square, Zap, User, Building2, GraduationCap, ShoppingBag, FileText, Microscope, Award, Users2, Stethoscope, Heart, Cross, CheckCircle2, X, Utensils, ChefHat, Wine, DoorOpen, MapPin } from "lucide-react";
+import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, HardHat, Cog, Building, ClipboardCheck, Wrench, Droplets, Truck, Square, Zap, User, Building2, GraduationCap, ShoppingBag, FileText, Microscope, Award, Users2, Stethoscope, Heart, Cross, CheckCircle2, X, Utensils, ChefHat, Wine, DoorOpen, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -383,15 +383,15 @@ const RestaurantCleaningLasVegasPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="h-14 text-lg px-8" asChild>
-                  <Link to="/commercial-quote?location=las-vegas">
-                    <Calendar className="w-5 h-5 mr-2" />
-                    Get Your Free Quote
-                  </Link>
+                  <a href="tel:+17025080098">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call (702) 508-0098
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                  <Link to="/contact">
+                  <Link to="/commercial-quote?location=las-vegas">
                     <Home className="w-5 h-5 mr-2" />
-                    Contact Us
+                    Get Free Quote
                   </Link>
                 </Button>
               </div>

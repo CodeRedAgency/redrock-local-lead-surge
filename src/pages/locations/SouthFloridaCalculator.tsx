@@ -13,7 +13,7 @@ const SouthFloridaCalculator = () => {
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
-        <Navigation loginUrl={loginUrl} />
+        <Navigation loginUrl={loginUrl} hideLocationSelector={true} />
         
         <main className="flex-grow py-12">
           <div className="container mx-auto px-4">

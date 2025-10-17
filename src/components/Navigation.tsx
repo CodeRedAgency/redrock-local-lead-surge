@@ -29,7 +29,7 @@ const locations = [
   { name: "Dallas", path: "/dallas", phone: "(972) 992-2576" },
 ];
 
-export const Navigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookingUrl?: string }) => {
+export const Navigation = ({ loginUrl, bookingUrl, hideLocationSelector }: { loginUrl?: string; bookingUrl?: string; hideLocationSelector?: boolean }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   
@@ -144,7 +144,7 @@ export const Navigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookin
                   <Link to="/book-now-las-vegas">Las Vegas</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-honolulu">Oahu</Link>
+                  <Link to="/book-now-oahu">Oahu</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/book-now-maui">Maui</Link>
@@ -163,24 +163,26 @@ export const Navigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookin
             </Link>
 
             {/* Location Selector */}
-            <div className="flex items-center space-x-2">
-              <MapPin className="w-4 h-4 text-muted-foreground" />
-              <Select defaultValue={currentLocation.path}>
-                <SelectTrigger className="w-32 border-0 bg-transparent shadow-none">
-                  <SelectValue placeholder="Location" />
-                </SelectTrigger>
-                <SelectContent>
-                  {locations.map((location) => (
-                    <SelectItem key={location.path} value={location.path}>
-                      <a href={location.path} className="flex items-center space-x-2">
-                        <span>{location.name}</span>
-                        <span className="text-xs text-muted-foreground">{location.phone}</span>
-                      </a>
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
+            {!hideLocationSelector && (
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4 text-muted-foreground" />
+                <Select defaultValue={currentLocation.path}>
+                  <SelectTrigger className="w-32 border-0 bg-transparent shadow-none">
+                    <SelectValue placeholder="Location" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {locations.map((location) => (
+                      <SelectItem key={location.path} value={location.path}>
+                        <a href={location.path} className="flex items-center space-x-2">
+                          <span>{location.name}</span>
+                          <span className="text-xs text-muted-foreground">{location.phone}</span>
+                        </a>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            )}
           </div>
 
           {/* Desktop CTA Buttons */}
@@ -270,7 +272,7 @@ export const Navigation = ({ loginUrl, bookingUrl }: { loginUrl?: string; bookin
                   <Link to="/book-now-las-vegas" className="block hover:text-primary transition-colors text-sm">
                     Las Vegas
                   </Link>
-                  <Link to="/book-now-honolulu" className="block hover:text-primary transition-colors text-sm">
+                  <Link to="/book-now-oahu" className="block hover:text-primary transition-colors text-sm">
                     Oahu
                   </Link>
                   <Link to="/book-now-maui" className="block hover:text-primary transition-colors text-sm">

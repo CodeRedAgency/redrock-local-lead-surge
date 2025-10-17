@@ -21,7 +21,8 @@ import {
   Building,
   Calendar,
   Home,
-  MapPin
+  MapPin,
+  Phone
 } from 'lucide-react';
 
 const WarehouseCleaningLasVegasPage: React.FC = () => {
@@ -186,13 +187,13 @@ const WarehouseCleaningLasVegasPage: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="h-14 text-lg px-8" asChild>
-                <Link to="/commercial-quote?location=las-vegas">
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Schedule Warehouse Cleaning
-                </Link>
+                <a href="tel:+17025080098">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call (702) 508-0098
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                <Link to="/contact">
+                <Link to="/commercial-quote?location=las-vegas">
                   <Home className="w-5 h-5 mr-2" />
                   Get Free Quote
                 </Link>

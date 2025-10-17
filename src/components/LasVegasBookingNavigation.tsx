@@ -77,7 +77,7 @@ export const LasVegasBookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?:
                   <Link to="/book-now-las-vegas">Las Vegas</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-honolulu">Oahu</Link>
+                  <Link to="/book-now-oahu">Oahu</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/book-now-maui">Maui</Link>
@@ -171,7 +171,7 @@ export const LasVegasBookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?:
                   <Link to="/book-now-las-vegas" className="block hover:text-primary transition-colors text-sm">
                     Las Vegas
                   </Link>
-                  <Link to="/book-now-honolulu" className="block hover:text-primary transition-colors text-sm">
+                  <Link to="/book-now-oahu" className="block hover:text-primary transition-colors text-sm">
                     Oahu
                   </Link>
                   <Link to="/book-now-maui" className="block hover:text-primary transition-colors text-sm">

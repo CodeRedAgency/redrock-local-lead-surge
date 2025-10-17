@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Heart, Cross, Calendar, CheckCircle, Clock, Shield, Star, Users, Sparkles, DollarSign, Key, RefreshCw } from "lucide-react";
+import { Heart, Cross, Calendar, CheckCircle, Clock, Shield, Star, Users, Sparkles, DollarSign, Key, RefreshCw, Phone, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
@@ -327,14 +327,14 @@ const ChurchCleaningOahuPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
-                    <Link to="/commercial-quote?location=oahu">
-                      <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Church Cleaning
-                    </Link>
+                    <a href="tel:+18089098801">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Call (808) 909-8801
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
-                    <Link to="/oahu-calculator">
-                      <DollarSign className="w-5 h-5 mr-2" />
+                    <Link to="/commercial-quote?location=oahu">
+                      <Home className="w-5 h-5 mr-2" />
                       Get Free Quote
                     </Link>
                   </Button>
