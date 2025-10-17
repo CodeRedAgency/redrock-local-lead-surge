@@ -3,50 +3,70 @@ import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroResidential from "@/assets/hero-residential.jpg";
+import heroVacation from "@/assets/hero-vacation.jpg";
+import deepCleaning from "@/assets/deep-cleaning.jpg";
+import serviceProducts from "@/assets/service-products.jpg";
+import teamTrust from "@/assets/team-trust.jpg";
+import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const Blog = () => {
   const articles = [
     {
+      title: "6 Handy Tips to Help You Minimize Your Time on Housework",
+      excerpt: "Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time.",
+      date: "October 17, 2025",
+      slug: "/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework",
+      image: heroResidential
+    },
+    {
       title: "Airbnb Bedding Management You Should Know",
       excerpt: "Essential strategies for selecting, maintaining, and rotating quality linens to ensure guest comfort, maximize efficiency, and secure 5-star reviews.",
       date: "October 17, 2025",
-      slug: "/blog/cleaning-tips/airbnb-bedding-management-you-should-know"
+      slug: "/blog/cleaning-tips/airbnb-bedding-management-you-should-know",
+      image: heroVacation
     },
     {
       title: "10 Tips for Keeping Your Home Clean Between Professional Cleanings",
       excerpt: "Maintain a spotless home with these simple daily habits and quick cleaning tricks.",
       date: "March 15, 2025",
-      slug: "#"
+      slug: "#",
+      image: teamTrust
     },
     {
       title: "The Ultimate Spring Cleaning Checklist",
       excerpt: "Comprehensive guide to deep cleaning every room in your home this spring.",
       date: "March 10, 2025",
-      slug: "#"
+      slug: "#",
+      image: deepCleaning
     },
     {
       title: "Green Cleaning: Eco-Friendly Products That Actually Work",
       excerpt: "Discover environmentally safe cleaning solutions that deliver professional results.",
       date: "March 5, 2025",
-      slug: "#"
+      slug: "#",
+      image: serviceProducts
     },
     {
       title: "How Often Should You Deep Clean Your Home?",
       excerpt: "Expert recommendations for scheduling deep cleaning based on household size and lifestyle.",
       date: "February 28, 2025",
-      slug: "#"
+      slug: "#",
+      image: deepCleaning
     },
     {
       title: "Airbnb Host Success: The Importance of Professional Cleaning",
       excerpt: "Why professional cleaning is essential for maintaining 5-star ratings and repeat bookings.",
       date: "February 20, 2025",
-      slug: "#"
+      slug: "#",
+      image: heroVacation
     },
     {
       title: "Post-Construction Cleaning: What to Expect",
       excerpt: "A detailed guide to the cleaning process after renovation or new construction projects.",
       date: "February 15, 2025",
-      slug: "#"
+      slug: "#",
+      image: heroCommercial
     }
   ];
 
@@ -73,7 +93,15 @@ const Blog = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {articles.map((article, index) => (
                   <article key={index} className="bg-card rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <div className="h-48 bg-muted"></div>
+                    <Link to={article.slug} className="block">
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src={article.image} 
+                          alt={article.title}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    </Link>
                     <div className="p-6">
                       <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
                         <Calendar className="w-4 h-4" />
