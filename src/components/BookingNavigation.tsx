@@ -30,6 +30,8 @@ export const BookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string;
                 </a>
               </Button>
             )}
+          </div>
+        </div>
       </div>
     </header>
   );

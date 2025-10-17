@@ -30,6 +30,8 @@ export const LasVegasBookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?:
                 </a>
               </Button>
             )}
+          </div>
+        </div>
       </div>
     </header>
   );
