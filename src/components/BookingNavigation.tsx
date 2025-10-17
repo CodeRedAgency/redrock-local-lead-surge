@@ -33,20 +33,6 @@ export const BookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string;
 
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
-                About <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem asChild>
-                  <Link to="/about">About Us</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/about/faq">FAQ</Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
                 Services <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -102,6 +88,20 @@ export const BookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string;
               </DropdownMenuContent>
             </DropdownMenu>
 
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
+                About <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/about">About Us</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/about/faq">FAQ</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
               Contact
             </Link>
@@ -145,18 +145,6 @@ export const BookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string;
                 Home
               </Link>
               
-              <div>
-                <div className="font-medium mb-2">About</div>
-                <div className="ml-4 space-y-2">
-                  <Link to="/about" className="block hover:text-primary transition-colors text-sm">
-                    About Us
-                  </Link>
-                  <Link to="/about/faq" className="block hover:text-primary transition-colors text-sm">
-                    FAQ
-                  </Link>
-                </div>
-              </div>
-
               <div>
                 <div className="font-medium mb-2">Services</div>
                 <div className="ml-4 space-y-2">
@@ -202,6 +190,18 @@ export const BookingNavigation = ({ loginUrl, bookingUrl }: { loginUrl?: string;
                   </Link>
                   <Link to="/book-now-dallas" className="block hover:text-primary transition-colors text-sm">
                     Dallas
+                  </Link>
+                </div>
+              </div>
+
+              <div>
+                <div className="font-medium mb-2">About</div>
+                <div className="ml-4 space-y-2">
+                  <Link to="/about" className="block hover:text-primary transition-colors text-sm">
+                    About Us
+                  </Link>
+                  <Link to="/about/faq" className="block hover:text-primary transition-colors text-sm">
+                    FAQ
                   </Link>
                 </div>
               </div>
