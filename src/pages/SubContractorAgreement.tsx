@@ -1,12 +1,10 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
-import { useState, useRef } from "react";
-import SignatureCanvas from "react-signature-canvas";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const SubContractorAgreement = () => {
-  const signaturePadRef = useRef<SignatureCanvas>(null);
   const [signatureData, setSignatureData] = useState({
     addressLine: '',
     city: '',
@@ -14,9 +12,9 @@ const SubContractorAgreement = () => {
     zipCode: '',
     firstName: '',
     lastName: '',
-    date: ''
+    date: '',
+    signatureName: ''
   });
-  const [hasSignature, setHasSignature] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -26,25 +24,12 @@ const SubContractorAgreement = () => {
     }));
   };
 
-  const clearSignature = () => {
-    if (signaturePadRef.current) {
-      signaturePadRef.current.clear();
-      setHasSignature(false);
-    }
-  };
-
-  const handleSignatureEnd = () => {
-    if (signaturePadRef.current && !signaturePadRef.current.isEmpty()) {
-      setHasSignature(true);
-    }
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validate signature
-    if (!signaturePadRef.current || signaturePadRef.current.isEmpty()) {
-      alert('Please provide your signature before submitting.');
+    // Validate signature name
+    if (!signatureData.signatureName.trim()) {
+      alert('Please type your full name to consent to this agreement.');
       return;
     }
 
@@ -54,9 +39,6 @@ const SubContractorAgreement = () => {
       const originalText = submitButton.textContent;
       submitButton.textContent = 'Submitting...';
       submitButton.disabled = true;
-      
-      // Get signature as base64 image
-      const signatureImage = signaturePadRef.current.toDataURL('image/png');
       
       // Create a formatted message with all agreement details
       const formattedMessage = `
@@ -97,10 +79,10 @@ IMPORTANT NOTES:
 - Improper notice forfeits all monies due
 - Poor workmanship resulting in customer cancellation forfeits last payment
 
-SIGNATURE:
-----------
-The contractor has provided a digital signature confirming agreement to all terms and conditions.
-Signature data URL: ${signatureImage}
+CONSENT & SIGNATURE:
+-------------------
+By typing their name below, the contractor agrees to all terms and conditions of this agreement.
+Signed by: ${signatureData.signatureName}
 
 This is a legally binding agreement between the contractor and Red Rock Cleaning.
       `.trim();
@@ -117,9 +99,8 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
       formDataToSubmit.append('contractor_state', signatureData.state);
       formDataToSubmit.append('contractor_zipcode', signatureData.zipCode);
       formDataToSubmit.append('agreement_date', signatureData.date);
-      // Note: Signature is included in the formatted message above as a base64 data URL
-      // Formspree free plan doesn't support file uploads, so we include it as text
-      formDataToSubmit.append('signature_data', signatureImage);
+      formDataToSubmit.append('signed_by', signatureData.signatureName);
+      formDataToSubmit.append('submission_timestamp', new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
       
       const response = await fetch('https://formspree.io/f/mqaynpgd', {
         method: 'POST',
@@ -144,10 +125,9 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
           zipCode: '',
           firstName: '',
           lastName: '',
-          date: ''
+          date: '',
+          signatureName: ''
         });
-        signaturePadRef.current?.clear();
-        setHasSignature(false);
       } else {
         const errorMessage = responseData.error || responseData.errors?.[0]?.message || 'Unknown error';
         console.error('Formspree error:', errorMessage, responseData);
@@ -360,40 +340,24 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
                     </div>
                   </div>
 
-                  {/* Signature Canvas */}
+                  {/* Signature - Type Name for Consent */}
                   <div>
-                    <label className="block text-sm font-medium mb-2">
-                      Signature (Draw your signature below)
+                    <label htmlFor="signatureName" className="block text-sm font-medium mb-2">
+                      Type Your Full Name to Sign and Consent
                     </label>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Sign using your finger on mobile or mouse on desktop
+                      By typing your full name below, you acknowledge that you have read, understood, and agree to all terms and conditions of this Sub-Contractor Agreement. This constitutes your legal signature.
                     </p>
-                    <div className="border-2 border-gray-300 rounded-lg overflow-hidden bg-white">
-                      <SignatureCanvas
-                        ref={signaturePadRef}
-                        canvasProps={{
-                          className: 'w-full h-48 touch-action-none',
-                          style: { width: '100%', height: '192px' }
-                        }}
-                        onEnd={handleSignatureEnd}
-                        backgroundColor="white"
-                      />
-                    </div>
-                    <div className="mt-3 flex gap-3">
-                      <Button
-                        type="button"
-                        variant="outline"
-                        size="sm"
-                        onClick={clearSignature}
-                      >
-                        Clear Signature
-                      </Button>
-                      {hasSignature && (
-                        <span className="text-sm text-green-600 flex items-center">
-                          ✓ Signature captured
-                        </span>
-                      )}
-                    </div>
+                    <input
+                      type="text"
+                      id="signatureName"
+                      name="signatureName"
+                      value={signatureData.signatureName}
+                      onChange={handleInputChange}
+                      placeholder="Type your full name here"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                      required
+                    />
                   </div>
 
                   <div>
