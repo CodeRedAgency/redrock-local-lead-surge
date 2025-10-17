@@ -3,12 +3,6 @@ import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroResidential from "@/assets/hero-residential.jpg";
-import heroVacation from "@/assets/hero-vacation.jpg";
-import deepCleaning from "@/assets/deep-cleaning.jpg";
-import serviceProducts from "@/assets/service-products.jpg";
-import teamTrust from "@/assets/team-trust.jpg";
-import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const Blog = () => {
   const articles = [
@@ -17,56 +11,56 @@ const Blog = () => {
       excerpt: "Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time.",
       date: "October 17, 2025",
       slug: "/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework",
-      image: heroResidential
+      image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "Airbnb Bedding Management You Should Know",
       excerpt: "Essential strategies for selecting, maintaining, and rotating quality linens to ensure guest comfort, maximize efficiency, and secure 5-star reviews.",
       date: "October 17, 2025",
       slug: "/blog/cleaning-tips/airbnb-bedding-management-you-should-know",
-      image: heroVacation
+      image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "10 Tips for Keeping Your Home Clean Between Professional Cleanings",
       excerpt: "Maintain a spotless home with these simple daily habits and quick cleaning tricks.",
       date: "March 15, 2025",
       slug: "#",
-      image: teamTrust
+      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "The Ultimate Spring Cleaning Checklist",
       excerpt: "Comprehensive guide to deep cleaning every room in your home this spring.",
       date: "March 10, 2025",
       slug: "#",
-      image: deepCleaning
+      image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "Green Cleaning: Eco-Friendly Products That Actually Work",
       excerpt: "Discover environmentally safe cleaning solutions that deliver professional results.",
       date: "March 5, 2025",
       slug: "#",
-      image: serviceProducts
+      image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "How Often Should You Deep Clean Your Home?",
       excerpt: "Expert recommendations for scheduling deep cleaning based on household size and lifestyle.",
       date: "February 28, 2025",
       slug: "#",
-      image: deepCleaning
+      image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "Airbnb Host Success: The Importance of Professional Cleaning",
       excerpt: "Why professional cleaning is essential for maintaining 5-star ratings and repeat bookings.",
       date: "February 20, 2025",
       slug: "#",
-      image: heroVacation
+      image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=400&fit=crop&q=80"
     },
     {
       title: "Post-Construction Cleaning: What to Expect",
       excerpt: "A detailed guide to the cleaning process after renovation or new construction projects.",
       date: "February 15, 2025",
       slug: "#",
-      image: heroCommercial
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=400&fit=crop&q=80"
     }
   ];
 
