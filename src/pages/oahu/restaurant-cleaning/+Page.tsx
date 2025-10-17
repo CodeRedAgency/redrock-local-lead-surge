@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ClipboardCheck, Flame, Sparkles, DoorOpen, ChefHat, Droplets, Hand, Star, CheckCircle, Utensils, MapPin, Calendar, Phone, Users, Clock, Award, ShoppingBag, Building, GraduationCap } from "lucide-react";
+import { ClipboardCheck, Flame, Sparkles, DoorOpen, ChefHat, Droplets, Hand, Star, CheckCircle, Utensils, MapPin, Calendar, Phone, Users, Clock, Award, ShoppingBag, Building, GraduationCap, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
