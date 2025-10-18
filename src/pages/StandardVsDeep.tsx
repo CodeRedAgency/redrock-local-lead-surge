@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Check } from "lucide-react";
 
 const StandardVsDeep = () => {
@@ -10,6 +11,7 @@ const StandardVsDeep = () => {
         <title>Standard vs Deep Cleaning - What's the Difference? | Red Rock Cleaning</title>
         <meta name="description" content="Understand the differences between standard and deep cleaning services to choose the right option for your home or business." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

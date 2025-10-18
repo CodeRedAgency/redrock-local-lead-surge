@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, Flame, CheckCircle, Sparkles, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const GrillMaintenanceGuidePage = () => {
         <title>Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans</title>
         <meta name="description" content="Master grill maintenance with our ultimate guide. Learn how to clean your outdoor grill for better taste, longer life, and a healthier cooking experience." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

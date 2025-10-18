@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +166,7 @@ const neighborhoods = [
 
 const StandardCleaningDallasPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -205,6 +208,7 @@ const StandardCleaningDallasPage = () => {
         <title>Standard Cleaning Service in Dallas | Red Rock Cleans</title>
         <meta name="description" content="Keep your Dallas home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Plano, Frisco, and beyond. Get your free quote!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <DallasNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-dallas/sign-in" bookingUrl="/book-now-dallas" />
@@ -223,9 +227,7 @@ const StandardCleaningDallasPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Reliable Standard Cleaning Service in Dallas
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('dallas.standard.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Give yourself the gift of time with our dependable recurring cleaning service. Our professional standard cleaning gives busy Dallas families and professionals more time to enjoy their lives, free from the burden of household chores and maintenance.
                 </p>
@@ -233,13 +235,13 @@ const StandardCleaningDallasPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-dallas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Cleaning
+                      {t('dallas.standard.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/dallas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('dallas.standard.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -251,9 +253,7 @@ const StandardCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Standard Cleaning Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.standard.checklistTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -360,9 +360,7 @@ const StandardCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve in Dallas
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.standard.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {neighborhoods.map((neighborhood) => (
                     <AccordionItem 
@@ -476,9 +474,7 @@ const StandardCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.standard.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">Do I need to be home for my recurring cleaning service?</h3>
@@ -514,7 +510,7 @@ const StandardCleaningDallasPage = () => {
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Enjoy a Consistently Clean Home?
+                  {t('dallas.standard.finalCtaTitle')}
                 </h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of satisfied Dallas homeowners who trust Red Rock Cleans for reliable standard cleaning that gives them more time to enjoy their lives.
@@ -523,13 +519,13 @@ const StandardCleaningDallasPage = () => {
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-dallas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Standard Cleaning Today
+                      {t('dallas.standard.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>
                     <Link to="/dallas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Your Free Quote
+                      {t('dallas.standard.quote')}
                     </Link>
                   </Button>
                 </div>

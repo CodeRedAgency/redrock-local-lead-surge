@@ -180,6 +180,7 @@ import WarehouseCleaningPage from "./pages/warehouse-cleaning/+Page";
 import SalonSpaCleaningPage from "./pages/salon-spa-cleaning/+Page";
 import IndustrialCleaningPage from "./pages/industrial-cleaning/+Page";
 import RestaurantCleaningPage from "./pages/restaurant-cleaning/+Page";
+import NaturesAirPurifiersBlogPage from "./pages/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air/+Page";
 
 const queryClient = new QueryClient();
 
@@ -271,6 +272,7 @@ const App = () => (
           <Route path="/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill" element={<GrillMaintenanceGuidePage />} />
           <Route path="/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets" element={<InkStainRemovalGuidePage />} />
           <Route path="/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist" element={<MoveOutCleaningChecklistPage />} />
+          <Route path="/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air" element={<NaturesAirPurifiersBlogPage />} />
           <Route path="/hiring-req" element={<HiringRequirements />} />
           <Route path="/hiring-application/how-to-use-the-maidily-mobile-app" element={<MaidilyApp />} />
           

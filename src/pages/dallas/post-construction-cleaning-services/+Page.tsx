@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +166,7 @@ const neighborhoods = [
 
 const PostConstructionCleaningDallasPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -205,6 +208,7 @@ const PostConstructionCleaningDallasPage = () => {
         <title>Post Construction Cleaning Service in Dallas | Red Rock Cleans</title>
         <meta name="description" content="Professional post construction cleaning service in Dallas. Red Rock Cleans handles construction cleanup for new builds and renovations in Plano, Frisco, and beyond. Get a detailed quote today!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <DallasNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-dallas/sign-in" bookingUrl="/book-now-dallas" />
@@ -223,9 +227,7 @@ const PostConstructionCleaningDallasPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Expert Post Construction Cleaning Service in Dallas
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('dallas.post.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Transform your dusty worksite into a pristine, move-in ready property with our professional post construction cleaning service. Perfect for contractors, developers, and homeowners in the fast-growing Dallas area who demand excellence in their final walkthroughs.
                 </p>
@@ -233,13 +235,13 @@ const PostConstructionCleaningDallasPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-dallas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Post Construction Clean
+                      {t('dallas.post.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/dallas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('dallas.post.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -251,9 +253,7 @@ const PostConstructionCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Detailed Post Construction Cleanup Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.post.processTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -320,9 +320,7 @@ const PostConstructionCleaningDallasPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  From Worksite to Showcase Home
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.post.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -360,9 +358,7 @@ const PostConstructionCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve in Dallas
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.post.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {neighborhoods.map((neighborhood) => (
                     <AccordionItem 
@@ -476,9 +472,7 @@ const PostConstructionCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.post.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">What's the difference between a rough clean and a final clean?</h3>
@@ -514,7 +508,7 @@ const PostConstructionCleaningDallasPage = () => {
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Transform Your Worksite?
+                  {t('dallas.post.finalCtaTitle')}
                 </h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of satisfied Dallas contractors, developers, and homeowners who trust Red Rock Cleans for professional post construction cleaning that delivers showcase-quality results.
@@ -523,13 +517,13 @@ const PostConstructionCleaningDallasPage = () => {
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-dallas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Post Construction Cleaning Today
+                      {t('dallas.post.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>
                     <Link to="/dallas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Your Free Quote
+                      {t('dallas.post.quote')}
                     </Link>
                   </Button>
                 </div>

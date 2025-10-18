@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -202,6 +204,7 @@ const neighborhoods = [
 
 const MoveOutCleaningMauiPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -243,6 +246,7 @@ const MoveOutCleaningMauiPage = () => {
         <title>Move Out Cleaning Service Maui | Red Rock Cleans</title>
         <meta name="description" content="Secure your deposit with our reliable move out cleaning service on Maui. We provide thorough end-of-tenancy cleaning in Wailea, Lahaina, and beyond. Book today!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <MauiNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-maui/sign-in" bookingUrl="/book-now-maui" />
@@ -261,9 +265,7 @@ const MoveOutCleaningMauiPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Stress-Free Move Out Cleaning Service on Maui
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('maui.moveout.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Secure your security deposit and make your move easier with our professional move out cleaning service. We help Maui renters and homeowners prepare their properties for new occupants with thorough, landlord-approved cleaning that maximizes your chances of a full deposit return.
                 </p>
@@ -271,13 +273,13 @@ const MoveOutCleaningMauiPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-maui">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Move Out Cleaning
+                      {t('maui.moveout.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/maui-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('maui.moveout.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -289,9 +291,7 @@ const MoveOutCleaningMauiPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Deposit-Focused Move Out Cleaning Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('maui.moveout.checklistTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -358,9 +358,7 @@ const MoveOutCleaningMauiPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Make Your Move Easier and Secure Your Deposit
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('maui.moveout.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

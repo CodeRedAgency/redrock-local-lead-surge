@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -392,6 +394,7 @@ const cities = [
 
 const PostConstructionCleaningSouthFloridaPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -433,6 +436,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
         <title>Post Construction Cleaning Service South Florida | Red Rock Cleans</title>
         <meta name="description" content="Professional post construction cleaning service in South Florida. Red Rock Cleans handles construction cleanup for new builds and renovations in Fort Lauderdale, Weston, and beyond. Get a quote!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <SouthFloridaNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" bookingUrl="/book-now-south-florida" />
@@ -451,9 +455,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Expert Post Construction Cleaning Service in South Florida
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('southFlorida.post.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Transform your messy construction site into a pristine, move-in ready home or business. Our expert post construction cleaning service helps South Florida contractors, developers, and homeowners deliver flawless final products that exceed client expectations in the competitive local market.
                 </p>
@@ -461,13 +463,13 @@ const PostConstructionCleaningSouthFloridaPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-south-florida">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Post Construction Cleaning
+                      {t('southFlorida.post.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/south-florida-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('southFlorida.post.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -479,9 +481,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Detailed Post Construction Cleanup Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.post.processTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -548,9 +548,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  From Worksite to Flawless Finish
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.post.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -588,9 +586,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve in South Florida
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.post.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {cities.map((city) => (
                     <AccordionItem 
@@ -648,9 +644,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  Other Cleaning Services for Your Property in South Florida
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">{t('southFlorida.post.otherServicesTitle')}</h2>
                 <p className="text-xl text-muted-foreground mb-12">
                   Beyond post construction cleaning, we offer specialized services to meet all your South Florida property needs.
                 </p>
@@ -704,9 +698,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.post.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">What's the difference between a rough clean and a final clean?</h3>
@@ -741,9 +733,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Transform Your Worksite?
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('southFlorida.post.finalCtaTitle')}</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of successful South Florida contractors, developers, and homeowners who trust Red Rock Cleans for professional post construction cleaning that delivers flawless results and exceeds client expectations.
                 </p>
@@ -751,13 +741,13 @@ const PostConstructionCleaningSouthFloridaPage = () => {
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-south-florida">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Post Construction Cleaning Today
+                      {t('southFlorida.post.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>
                     <Link to="/south-florida-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Your Free Quote
+                      {t('southFlorida.post.quote')}
                     </Link>
                   </Button>
                 </div>

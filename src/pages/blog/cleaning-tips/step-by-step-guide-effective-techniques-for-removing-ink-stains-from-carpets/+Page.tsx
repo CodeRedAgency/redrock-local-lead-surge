@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, Droplet, CheckCircle, AlertTriangle, Sparkles, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const InkStainRemovalGuidePage = () => {
         <title>Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans</title>
         <meta name="description" content="Don't panic over ink stains! Follow our step-by-step guide to effectively remove ink from carpets and learn when to call the professionals for stubborn spots." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

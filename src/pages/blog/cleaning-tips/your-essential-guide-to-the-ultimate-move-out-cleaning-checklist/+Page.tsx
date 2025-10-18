@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, CheckSquare, Home, Sparkles, Clock, DollarSign, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const MoveOutCleaningChecklistPage = () => {
         <title>Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans</title>
         <meta name="description" content="Our ultimate move-out cleaning checklist ensures you get your security deposit back. Follow our room-by-room guide for a perfect clean, or hire our pros to do it for you." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

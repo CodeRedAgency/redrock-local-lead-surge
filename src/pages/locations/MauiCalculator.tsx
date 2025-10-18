@@ -1,10 +1,12 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from 'react-i18next';
 import Hreflang from "@/components/Hreflang";
 
 const MauiCalculator = () => {
   const loginUrl = "https://customer-portal.maidily.com/red-rock-cleans-dallas/sign-in";
+  const { t } = useTranslation();
   
   return (
     <>
@@ -20,9 +22,9 @@ const MauiCalculator = () => {
         <main className="flex-grow py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-8">
-              <h1 className="text-4xl font-bold mb-4">Get Your Cleaning Quote</h1>
+              <h1 className="text-4xl font-bold mb-4">{t('calculator.h1')}</h1>
               <p className="text-xl text-muted-foreground">
-                Maui - Instant pricing calculator
+                {t('calculator.subtitle', { region: 'Maui' })}
               </p>
             </div>
             

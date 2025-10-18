@@ -5,6 +5,7 @@ import { TrustSection } from "@/components/TrustSection";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
+import Hreflang from "@/components/Hreflang";
 import heroResidential from "@/assets/hero-residential.jpg";
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
@@ -16,6 +17,7 @@ const Index = () => {
         <title>Red Rock Cleaning - Trusted Local Cleaning Experts</title>
         <meta name="description" content="Professional cleaning services across South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas. Residential, commercial, and vacation rental cleaning." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

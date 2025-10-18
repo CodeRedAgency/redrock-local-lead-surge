@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, Sparkles, CheckCircle, AlertTriangle, Droplets, Trash2, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const CarpetCleaningFleaInfestationPage = () => {
         <title>Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans</title>
         <meta name="description" content="Dealing with a flea infestation? Our step-by-step guide shows you how professional carpet cleaning can help eradicate fleas from your home for good." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

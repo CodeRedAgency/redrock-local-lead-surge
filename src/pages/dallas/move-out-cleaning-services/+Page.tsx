@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +166,7 @@ const neighborhoods = [
 
 const MoveOutCleaningDallasPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -205,6 +208,7 @@ const MoveOutCleaningDallasPage = () => {
         <title>Move Out Cleaning Service in Dallas | Red Rock Cleans</title>
         <meta name="description" content="Secure your deposit with our reliable move out cleaning service in Dallas. We provide thorough end-of-tenancy cleaning in Plano, Frisco, and beyond. Book today!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <DallasNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-dallas/sign-in" bookingUrl="/book-now-dallas" />
@@ -223,9 +227,7 @@ const MoveOutCleaningDallasPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Stress-Free Move Out Cleaning Service in Dallas
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('dallas.moveout.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Secure your security deposit and make your move easier with our professional move out cleaning service. In the competitive Dallas real estate market, our thorough end-of-tenancy cleaning helps renters and homeowners prepare properties for successful inspections and sales.
                 </p>
@@ -233,13 +235,13 @@ const MoveOutCleaningDallasPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-dallas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Move Out Cleaning
+                      {t('dallas.moveout.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/dallas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('dallas.moveout.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -251,9 +253,7 @@ const MoveOutCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Deposit-Focused Move Out Cleaning Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.moveout.checklistTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -320,9 +320,7 @@ const MoveOutCleaningDallasPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Make Your Move Easier and Secure Your Deposit
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.moveout.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -360,9 +358,7 @@ const MoveOutCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve in Dallas
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.moveout.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {neighborhoods.map((neighborhood) => (
                     <AccordionItem 
@@ -476,9 +472,7 @@ const MoveOutCleaningDallasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('dallas.moveout.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">Should the property be completely empty before you arrive?</h3>
@@ -514,7 +508,7 @@ const MoveOutCleaningDallasPage = () => {
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Secure Your Deposit?
+                  {t('dallas.moveout.finalCtaTitle')}
                 </h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of satisfied Dallas renters and homeowners who trust Red Rock Cleans for reliable move out cleaning that maximizes their security deposit returns.
@@ -523,13 +517,13 @@ const MoveOutCleaningDallasPage = () => {
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-dallas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Move Out Cleaning Today
+                      {t('dallas.moveout.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>
                     <Link to="/dallas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Your Free Quote
+                      {t('dallas.moveout.quote')}
                     </Link>
                   </Button>
                 </div>

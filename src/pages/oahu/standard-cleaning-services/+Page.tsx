@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -259,6 +261,7 @@ const neighborhoods = [
 
 const StandardCleaningOahuPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -300,6 +303,7 @@ const StandardCleaningOahuPage = () => {
         <title>Standard Cleaning Service Oahu | Red Rock Cleans</title>
         <meta name="description" content="Keep your home consistently beautiful with our reliable standard cleaning service on Oahu. Red Rock Cleans offers flexible maid services in Honolulu and beyond. Get your free quote!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <OahuNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-oahu/sign-in" bookingUrl="/book-now-oahu" />
@@ -318,9 +322,7 @@ const StandardCleaningOahuPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Reliable Standard Cleaning Service on Oahu
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('oahu.standard.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Experience the joy of coming home to a consistently clean space every week. Our recurring standard cleaning service gives Oahu residents more time to enjoy paradise while we keep your home beautifully maintained.
                 </p>
@@ -328,13 +330,13 @@ const StandardCleaningOahuPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-oahu">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Standard Cleaning
+                      {t('oahu.standard.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/oahu-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('oahu.standard.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -346,9 +348,7 @@ const StandardCleaningOahuPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Standard Cleaning Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.standard.checklistTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -415,9 +415,7 @@ const StandardCleaningOahuPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Enjoy a Consistently Clean Home
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.standard.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -455,9 +453,7 @@ const StandardCleaningOahuPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve on Oahu
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.standard.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {neighborhoods.map((neighborhood) => (
                     <AccordionItem 
@@ -515,9 +511,7 @@ const StandardCleaningOahuPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  Other Cleaning Services for Your Property on Oahu
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">{t('oahu.standard.otherServicesTitle')}</h2>
                 <p className="text-xl text-muted-foreground mb-12">
                   Beyond standard cleaning, we offer specialized services to meet all your Oahu property needs.
                 </p>
@@ -571,9 +565,7 @@ const StandardCleaningOahuPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.standard.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">Do I need to be home for my recurring cleaning service?</h3>
@@ -608,9 +600,7 @@ const StandardCleaningOahuPage = () => {
           <section className="py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Enjoy a Consistently Clean Home?
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('oahu.standard.finalCtaTitle')}</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of satisfied Oahu residents who trust Red Rock Cleans for reliable, professional standard cleaning services that keep their homes beautiful week after week.
                 </p>
@@ -618,13 +608,13 @@ const StandardCleaningOahuPage = () => {
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-oahu">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Standard Cleaning Today
+                      {t('oahu.standard.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>
                     <Link to="/oahu-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Your Free Quote
+                      {t('oahu.standard.quote')}
                     </Link>
                   </Button>
                 </div>

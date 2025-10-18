@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, Users, Music, Sparkles, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const SpringCleaningPartyPage = () => {
         <title>Get It Done Together: Why You Should Host a Spring Cleaning Party | Red Rock Cleans</title>
         <meta name="description" content="Turn spring cleaning into a fun event! Learn why you should host a spring cleaning party and how to plan one, plus when to call in the pros for tough jobs." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -392,6 +394,7 @@ const cities = [
 
 const AirbnbCleaningSouthFloridaPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -433,6 +436,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
         <title>Airbnb Cleaning Service South Florida | Red Rock Cleans</title>
         <meta name="description" content="Get 5-star reviews with our reliable Airbnb cleaning service in South Florida. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Fort Lauderdale, Weston, and beyond." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <SouthFloridaNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" bookingUrl="/book-now-south-florida" />
@@ -451,9 +455,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  5-Star Airbnb Cleaning Service in South Florida
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('southFlorida.airbnb.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Get 5-star reviews with our reliable Airbnb cleaning service in South Florida. Our automated turnover cleaning ensures pristine guest arrivals and helps Airbnb hosts in Fort Lauderdale, Weston, and beyond maximize bookings and guest satisfaction in the competitive vacation rental market.
                 </p>
@@ -467,7 +469,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/south-florida-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('southFlorida.airbnb.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -479,9 +481,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Turnover Process for Flawless Guest Arrivals
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.airbnb.processTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -548,9 +548,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Maximize Your Bookings and Guest Satisfaction
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.airbnb.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -588,9 +586,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve in South Florida
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.airbnb.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {cities.map((city) => (
                     <AccordionItem 
@@ -704,9 +700,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.airbnb.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">Can you sync with my Airbnb booking calendar?</h3>
@@ -741,9 +735,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
           <section className="py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Get More 5-Star Reviews?
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('southFlorida.airbnb.finalCtaTitle')}</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of successful South Florida Airbnb hosts who trust Red Rock Cleans for reliable cleaning services that help them maintain Superhost status and maximize bookings.
                 </p>
@@ -751,7 +743,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-south-florida">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Airbnb Cleaning Today
+                      {t('southFlorida.airbnb.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>

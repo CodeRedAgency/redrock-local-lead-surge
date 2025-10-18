@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
@@ -20,6 +21,15 @@ const Blog = () => {
   ];
 
   const baseArticles = [
+    {
+      title: "Nature's Air Purifiers: The Best Plants for Cleaner Indoor Air",
+      excerpt:
+        "Breathe easy and boost wellness! Discover which houseplants top NASA's list for clean indoor air, how they work, and why combining plants with regular cleaning services creates the healthiest home.",
+      date: "November 1, 2023",
+      slug: "/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air",
+      image:
+        "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
+    },
     {
       title: "Navigating Health Code Violations: A Commercial Cleaning Guide",
       excerpt: "Protect your business from costly fines and closure. Learn how professional commercial cleaning ensures compliance with health code regulations.",
@@ -150,6 +160,7 @@ const Blog = () => {
         </title>
         <meta name="description" content="Expert cleaning tips, advice, and guides from Red Rock Cleaning professionals. Learn how to maintain a cleaner, healthier home." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

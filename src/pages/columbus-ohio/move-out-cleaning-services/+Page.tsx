@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer, Award, Wrench, Target, Layers, KeyRound, FileCheck, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -240,6 +242,7 @@ const neighborhoods = [
 
 const MoveOutCleaningColumbusOhioPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -281,6 +284,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
         <title>Move Out Cleaning Service in Columbus Ohio | Red Rock Cleans</title>
         <meta name="description" content="Secure your deposit with our reliable move out cleaning service in Columbus, OH. We provide thorough end-of-tenancy cleaning in Dublin, Upper Arlington, and beyond. Book today!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/book-now-columbus-ohio" />
@@ -298,9 +302,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Stress-Free Move Out Cleaning Service in Columbus, Ohio
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('columbus.moveout.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Secure your security deposit and make your move easier with our comprehensive move out cleaning service. We help renters, students, and homeowners in the Columbus area prepare properties for new occupants, ensuring a stress-free transition and maximizing your chances of a full deposit return.
                 </p>
@@ -308,13 +310,13 @@ const MoveOutCleaningColumbusOhioPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-columbus-ohio">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Your Move Out Cleaning
+                      {t('columbus.moveout.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/columbus-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('columbus.moveout.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -326,9 +328,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Deposit-Focused Move Out Cleaning Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('columbus.moveout.checklistTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -395,9 +395,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Make Your Move Easier and Secure Your Deposit
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('columbus.moveout.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -435,9 +433,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve in Columbus, Ohio
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('columbus.moveout.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {neighborhoods.map((neighborhood) => (
                     <AccordionItem 
@@ -495,9 +491,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  Other Cleaning Services for Your Property in Columbus
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">{t('columbus.moveout.otherServicesTitle')}</h2>
                 <p className="text-xl text-muted-foreground mb-12">
                   Beyond move out cleaning, we offer specialized services to meet all your Columbus property needs.
                 </p>
@@ -551,9 +545,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('columbus.moveout.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">Should the property be completely empty before you arrive?</h3>
@@ -588,9 +580,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
           <section className="py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Secure Your Security Deposit?
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('columbus.moveout.finalCtaTitle')}</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of satisfied Columbus renters and homeowners who trust Red Rock Cleans for thorough move out cleaning that maximizes their deposit returns and makes moving stress-free.
                 </p>

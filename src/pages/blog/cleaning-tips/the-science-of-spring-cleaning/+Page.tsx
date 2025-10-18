@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, Sparkles, CheckCircle, Brain, Heart, Wind, ListChecks } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const ScienceOfSpringCleaningPage = () => {
         <title>The Science of Spring Cleaning: Why It Boosts Your Mood and Health | Red Rock Cleans</title>
         <meta name="description" content="Discover the science of spring cleaning! Learn how decluttering and a deep clean can improve your mood, health, and focus. Get our ultimate checklist." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

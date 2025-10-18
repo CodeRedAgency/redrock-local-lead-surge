@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import {
   Leaf,
   Flower2,
@@ -87,6 +88,7 @@ export default function NaturesAirPurifiersBlogPage() {
         <meta name="description" content="Discover the best houseplants for naturally purifying your indoor air. Our guide covers top plants, care tips, and how cleaning complements their benefits." />
         <link rel="canonical" href="/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air/" />
       </Helmet>
+      <Hreflang />
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
         <main className="flex-grow bg-background">

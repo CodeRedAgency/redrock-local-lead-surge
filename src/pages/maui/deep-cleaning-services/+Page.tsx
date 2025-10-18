@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap, HardHat, Hammer, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -202,6 +204,7 @@ const neighborhoods = [
 
 const DeepCleaningMauiPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -243,6 +246,7 @@ const DeepCleaningMauiPage = () => {
         <title>Deep Cleaning Service Maui | Red Rock Cleans</title>
         <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service on Maui. Red Rock Cleans tackles built-up grime for a truly refreshed home in Wailea, Lahaina, and beyond. Get your free quote!" />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <MauiNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-maui/sign-in" bookingUrl="/book-now-maui" />
@@ -261,9 +265,7 @@ const DeepCleaningMauiPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Thorough Deep Cleaning Service on Maui
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('maui.deep.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Restore your home's freshness and sparkle with our comprehensive deep cleaning service. We tackle built-up grime, allergens, and everyday wear to make any Maui home feel new again, perfect for a one-time intensive clean that transforms your living space.
                 </p>
@@ -271,13 +273,13 @@ const DeepCleaningMauiPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-maui">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Deep Cleaning
+                      {t('maui.deep.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/maui-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('maui.deep.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -289,9 +291,7 @@ const DeepCleaningMauiPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Comprehensive Deep Cleaning Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('maui.deep.checklistTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -358,9 +358,7 @@ const DeepCleaningMauiPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  The Perfect Solution for a Healthier Home
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('maui.deep.healthTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

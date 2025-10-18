@@ -332,6 +332,349 @@
       "cta": { "title": "Ready to Make It Move-In Ready?", "copy": "Let us transform your construction site into a beautiful, clean space." }
     }
   }
+  ,
+  "lv": {
+    "airbnb": {
+      "h1": "Professional Airbnb Cleaning Services in Las Vegas",
+      "areasTitle": "Areas We Serve in Las Vegas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Elevate Your Las Vegas Airbnb?",
+      "schedule": "Schedule Airbnb Cleaning",
+      "quote": "Get Free Quote",
+      "finalCtaButton": "Get Your Free Las Vegas Airbnb Cleaning Quote",
+      "processTitle": "Our Airbnb Cleaning Process for 5-Star Reviews",
+      "whyTitle": "Why Hosts in Las Vegas Choose Red Rock Cleans"
+    },
+    "standard": {
+      "h1": "Reliable Standard Cleaning Service in Las Vegas",
+      "checklistTitle": "Our Standard Cleaning Checklist",
+      "whyTitle": "Why Las Vegas Residents Trust Red Rock Cleans",
+      "areasTitle": "Areas We Serve in Las Vegas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready for a Consistently Clean Las Vegas Home?",
+      "schedule": "Schedule Your Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "deep": {
+      "h1": "Thorough Deep Cleaning Service in Las Vegas",
+      "checklistTitle": "Our Comprehensive Deep Cleaning Checklist",
+      "healthTitle": "The Perfect Solution for a Healthier Las Vegas Home",
+      "areasTitle": "Areas We Serve in Las Vegas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Restore Your Las Vegas Home's Sparkle?",
+      "schedule": "Schedule Deep Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "moveout": {
+      "h1": "Stress-Free Move Out Cleaning Service in Las Vegas",
+      "checklistTitle": "Our Deposit-Focused Move Out Cleaning Checklist",
+      "benefitsTitle": "Make Your Move Easier and Secure Your Deposit",
+      "areasTitle": "Areas We Serve in Las Vegas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure Your Security Deposit?",
+      "schedule": "Schedule Move Out Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "post": {
+      "h1": "Post Construction Cleaning Service in Las Vegas",
+      "processTitle": "Our Detailed Post Construction Cleanup Process",
+      "benefitsTitle": "From Dusty Worksite to Move-In Ready",
+      "areasTitle": "Areas We Serve in Las Vegas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Transform Your Construction Site?",
+      "schedule": "Schedule Post Construction Cleaning",
+      "quote": "Get Free Quote"
+    }
+  }
+  ,
+  "dallas": {
+    "airbnb": {
+      "h1": "5-Star Airbnb Cleaning Service in Dallas",
+      "processTitle": "Our Turnover Process for Flawless Guest Arrivals",
+      "areasTitle": "Areas We Serve in Dallas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure 5-Star Reviews?",
+      "schedule": "Schedule Turnover Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "standard": {
+      "h1": "Reliable Standard Cleaning Service in Dallas",
+      "checklistTitle": "Our Standard Cleaning Checklist",
+      "areasTitle": "Areas We Serve in Dallas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Enjoy a Consistently Clean Home?",
+      "schedule": "Schedule Your Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "deep": {
+      "h1": "Thorough Deep Cleaning Service in Dallas",
+      "checklistTitle": "Our Comprehensive Deep Cleaning Checklist",
+      "healthTitle": "The Perfect Solution for a Healthier Home",
+      "areasTitle": "Areas We Serve in Dallas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Restore Your Home's Sparkle?",
+      "schedule": "Schedule Deep Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "moveout": {
+      "h1": "Stress-Free Move Out Cleaning Service in Dallas",
+      "checklistTitle": "Our Deposit-Focused Move Out Cleaning Checklist",
+      "benefitsTitle": "Make Your Move Easier and Secure Your Deposit",
+      "areasTitle": "Areas We Serve in Dallas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure Your Deposit?",
+      "schedule": "Schedule Move Out Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "post": {
+      "h1": "Expert Post Construction Cleaning Service in Dallas",
+      "processTitle": "Our Detailed Post Construction Cleanup Checklist",
+      "benefitsTitle": "From Worksite to Showcase Home",
+      "areasTitle": "Areas We Serve in Dallas",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Transform Your Worksite?",
+      "schedule": "Schedule Post Construction Clean",
+      "quote": "Get Free Quote"
+    }
+  }
+  ,
+  "southFlorida": {
+    "airbnb": {
+      "h1": "5-Star Airbnb Cleaning Service in South Florida",
+      "processTitle": "Our Turnover Process for Flawless Guest Arrivals",
+      "benefitsTitle": "Maximize Your Bookings and Guest Satisfaction",
+      "areasTitle": "Areas We Serve in South Florida",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Get More 5-Star Reviews?",
+      "schedule": "Schedule Airbnb Cleaning Service",
+      "quote": "Get Free Quote"
+    },
+    "standard": {
+      "h1": "Reliable Standard Cleaning Service in South Florida",
+      "checklistTitle": "Our Standard Cleaning Checklist",
+      "benefitsTitle": "Enjoy a Consistently Clean Home",
+      "areasTitle": "Areas We Serve in South Florida",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in South Florida",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Enjoy More Free Time?",
+      "schedule": "Schedule Your Cleaning Service",
+      "quote": "Get Free Quote"
+    },
+    "deep": {
+      "h1": "Thorough Deep Cleaning Service in South Florida",
+      "checklistTitle": "Our Comprehensive Deep Cleaning Checklist",
+      "healthTitle": "The Perfect Solution for a Healthier Home",
+      "areasTitle": "Areas We Serve in South Florida",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in South Florida",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Restore Your Home's Sparkle?",
+      "schedule": "Schedule Deep Cleaning Service",
+      "quote": "Get Free Quote"
+    },
+    "moveout": {
+      "h1": "Stress-Free Move Out Cleaning Service in South Florida",
+      "checklistTitle": "Our Deposit-Focused Move Out Cleaning Checklist",
+      "benefitsTitle": "Make Your Move Easier and Secure Your Deposit",
+      "areasTitle": "Areas We Serve in South Florida",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in South Florida",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure Your Security Deposit?",
+      "schedule": "Schedule Move Out Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "post": {
+      "h1": "Expert Post Construction Cleaning Service in South Florida",
+      "processTitle": "Our Detailed Post Construction Cleanup Checklist",
+      "benefitsTitle": "From Worksite to Flawless Finish",
+      "areasTitle": "Areas We Serve in South Florida",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in South Florida",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Transform Your Worksite?",
+      "schedule": "Schedule Post Construction Cleaning",
+      "quote": "Get Free Quote"
+    }
+  }
+  ,
+  "oahu": {
+    "airbnb": {
+      "h1": "5-Star Airbnb Cleaning Service on Oahu",
+      "processTitle": "Our Turnover Process for Flawless Guest Arrivals",
+      "benefitsTitle": "Maximize Your Bookings and Guest Satisfaction",
+      "areasTitle": "Areas We Serve on Oahu",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Maximize Your Airbnb Success?",
+      "schedule": "Schedule Airbnb Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "standard": {
+      "h1": "Reliable Standard Cleaning Service on Oahu",
+      "checklistTitle": "Our Standard Cleaning Checklist",
+      "benefitsTitle": "Enjoy a Consistently Clean Home",
+      "areasTitle": "Areas We Serve on Oahu",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Oahu",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Enjoy a Consistently Clean Home?",
+      "schedule": "Schedule Standard Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "deep": {
+      "h1": "Thorough Deep Cleaning Service on Oahu",
+      "checklistTitle": "Our Comprehensive Deep Cleaning Checklist",
+      "healthTitle": "The Perfect Solution for a Healthier Home",
+      "areasTitle": "Areas We Serve on Oahu",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Oahu",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Restore Your Home's Sparkle?",
+      "schedule": "Schedule Deep Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "moveout": {
+      "h1": "Stress-Free Move Out Cleaning Service on Oahu",
+      "checklistTitle": "Our Deposit-Focused Move Out Cleaning Checklist",
+      "benefitsTitle": "Make Your Move Easier and Secure Your Deposit",
+      "areasTitle": "Areas We Serve on Oahu",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Oahu",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure Your Security Deposit?",
+      "schedule": "Schedule Move Out Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "post": {
+      "h1": "Professional Post Construction Cleaning Service on Oahu",
+      "processTitle": "Our Detailed Post Construction Cleanup Checklist",
+      "benefitsTitle": "From Worksite to Showcase Property",
+      "areasTitle": "Areas We Serve on Oahu",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Oahu",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Transform Your Worksite?",
+      "schedule": "Schedule Post Construction Cleaning",
+      "quote": "Get Free Quote"
+    }
+  }
+  ,
+  "maui": {
+    "airbnb": {
+      "h1": "5-Star Airbnb Cleaning Service on Maui",
+      "processTitle": "Our Turnover Process for Flawless Guest Arrivals",
+      "benefitsTitle": "Maximize Your Bookings and Guest Satisfaction",
+      "areasTitle": "Areas We Serve on Maui",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure 5-Star Reviews?",
+      "schedule": "Schedule Airbnb Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "standard": {
+      "h1": "Reliable Standard Cleaning Service on Maui",
+      "checklistTitle": "Our Standard Cleaning Checklist",
+      "benefitsTitle": "Enjoy a Consistently Clean Home",
+      "areasTitle": "Areas We Serve on Maui",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Maui",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Enjoy a Consistently Clean Home?",
+      "schedule": "Schedule Your Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "deep": {
+      "h1": "Thorough Deep Cleaning Service on Maui",
+      "checklistTitle": "Our Comprehensive Deep Cleaning Checklist",
+      "healthTitle": "The Perfect Solution for a Healthier Home",
+      "areasTitle": "Areas We Serve on Maui",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Maui",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Restore Your Home's Sparkle?",
+      "schedule": "Schedule Deep Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "moveout": {
+      "h1": "Stress-Free Move Out Cleaning Service on Maui",
+      "checklistTitle": "Our Deposit-Focused Move Out Cleaning Checklist",
+      "benefitsTitle": "Make Your Move Easier and Secure Your Deposit",
+      "areasTitle": "Areas We Serve on Maui",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Maui",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure Your Deposit?",
+      "schedule": "Schedule Move Out Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "post": {
+      "h1": "Expert Post Construction Cleaning Service on Maui",
+      "processTitle": "Our Detailed Post Construction Cleanup Checklist",
+      "benefitsTitle": "From Worksite to Paradise",
+      "areasTitle": "Areas We Serve on Maui",
+      "otherServicesTitle": "Other Cleaning Services for Your Property on Maui",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Transform Your Worksite?",
+      "schedule": "Schedule Post Construction Cleaning",
+      "quote": "Get Free Quote"
+    }
+  }
+  ,
+  "columbus": {
+    "airbnb": {
+      "h1": "5-Star Airbnb Cleaning Service in Columbus, Ohio",
+      "processTitle": "Our Turnover Process for Flawless Guest Arrivals",
+      "benefitsTitle": "Maximize Your Bookings and Guest Satisfaction",
+      "areasTitle": "Areas We Serve in Columbus, Ohio",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in Columbus",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Get 5-Star Reviews?",
+      "schedule": "Schedule Turnover Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "standard": {
+      "h1": "Reliable Standard Cleaning Service in Columbus, Ohio",
+      "checklistTitle": "Our Standard Cleaning Checklist",
+      "benefitsTitle": "Enjoy a Consistently Clean Home",
+      "areasTitle": "Areas We Serve in Columbus, Ohio",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in Columbus",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Enjoy a Consistently Clean Home?",
+      "schedule": "Schedule Your Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "deep": {
+      "h1": "Thorough Deep Cleaning Service in Columbus, Ohio",
+      "checklistTitle": "Our Comprehensive Deep Cleaning Checklist",
+      "healthTitle": "The Perfect Solution for a Healthier Home",
+      "areasTitle": "Areas We Serve in Columbus, Ohio",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in Columbus",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Restore Your Home's Sparkle?",
+      "schedule": "Schedule Deep Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "moveout": {
+      "h1": "Stress-Free Move Out Cleaning Service in Columbus, Ohio",
+      "checklistTitle": "Our Deposit-Focused Move Out Cleaning Checklist",
+      "benefitsTitle": "Make Your Move Easier and Secure Your Deposit",
+      "areasTitle": "Areas We Serve in Columbus, Ohio",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in Columbus",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Secure Your Security Deposit?",
+      "schedule": "Schedule Move Out Cleaning",
+      "quote": "Get Free Quote"
+    },
+    "post": {
+      "h1": "Expert Post Construction Cleaning Service in Columbus, Ohio",
+      "processTitle": "Our Detailed Post Construction Cleanup Checklist",
+      "benefitsTitle": "From Worksite to Showcase Home",
+      "areasTitle": "Areas We Serve in Columbus, Ohio",
+      "otherServicesTitle": "Other Cleaning Services for Your Property in Columbus",
+      "faqTitle": "Frequently Asked Questions",
+      "finalCtaTitle": "Ready to Transform Your Worksite?",
+      "schedule": "Schedule Post Construction Cleaning",
+      "quote": "Get Free Quote"
+    }
+  }
+  ,
+  "booking": {
+    "h1": "Book Your Cleaning Service",
+    "subtitle": "{{region}} - Easy online booking"
+  },
+  "calculator": {
+    "h1": "Get Your Cleaning Quote",
+    "subtitle": "{{region}} - Instant pricing calculator"
+  }
 }
 
 

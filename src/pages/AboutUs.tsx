@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 
 const AboutUs = () => {
   return (
@@ -9,6 +10,7 @@ const AboutUs = () => {
         <title>About Us - Professional Cleaning Services | Red Rock Cleaning</title>
         <meta name="description" content="Learn about Red Rock Cleaning's commitment to excellence in residential and commercial cleaning services across multiple locations." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

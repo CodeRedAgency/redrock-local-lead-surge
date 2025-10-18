@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MapPin, Phone, ChevronDown } from "lucide-react";
@@ -33,6 +34,14 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl, hideLocationSelector 
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  const switchLang = (lang: 'en' | 'es') => {
+    const path = window.location.pathname || '/';
+    const toEs = lang === 'es';
+    const nextPath = toEs ? (path.startsWith('/es') ? path : `/es${path}`) : (path.startsWith('/es') ? path.replace(/^\/es(\/|$)/, '/') : path);
+    i18n.changeLanguage(lang);
+    navigate(nextPath);
+  };
 
   const currentLocation = locations.find(loc => location.pathname.startsWith(loc.path));
 
@@ -58,12 +67,12 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl, hideLocationSelector 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               <Link to="/las-vegas" className="hover:text-primary transition-colors relative z-10">
-                Home
+                {t('nav.home')}
               </Link>
 
               <DropdownMenu>
                   <DropdownMenuTrigger className="flex items-center space-x-1 hover:text-primary transition-all duration-300 group font-medium relative z-10">
-                    Services <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+                    {t('nav.services')} <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuSub>
@@ -183,13 +192,17 @@ export const LasVegasNavigation = ({ loginUrl, bookingUrl, hideLocationSelector 
                 </>
               ) : (
                 <Link to="/book-now-las-vegas" className="hover:text-primary transition-colors relative z-10">
-                  Pricing
+                  {t('nav.pricing')}
                 </Link>
               )}
 
               <Link to="/contact" className="hover:text-primary transition-colors relative z-10">
-                Contact
+                {t('nav.contact')}
               </Link>
+              <div className="flex items-center gap-2">
+                <button onClick={() => switchLang('en')} className={`text-sm px-2 py-1 rounded ${i18n.language.startsWith('en') ? 'bg-primary text-primary-foreground' : 'hover:bg-accent'}`} aria-label="Switch to English">EN</button>
+                <button onClick={() => switchLang('es')} className={`text-sm px-2 py-1 rounded ${i18n.language.startsWith('es') ? 'bg-primary text-primary-foreground' : 'hover:bg-accent'}`} aria-label="Cambiar a español">ES</button>
+              </div>
 
               {/* Las Vegas Neighborhood Selector */}
               {!hideLocationSelector && (

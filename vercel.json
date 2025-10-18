@@ -709,6 +709,11 @@
       "permanent": true
     },
     {
+      "source": "/es/home-las-vegas/",
+      "destination": "/es/las-vegas/",
+      "permanent": true
+    },
+    {
       "source": "/home-losangeles/",
       "destination": "/",
       "permanent": true
@@ -719,8 +724,18 @@
       "permanent": true
     },
     {
+      "source": "/es/home-oahu/",
+      "destination": "/es/oahu/",
+      "permanent": true
+    },
+    {
       "source": "/home-south-florida/",
       "destination": "/south-florida/",
+      "permanent": true
+    },
+    {
+      "source": "/es/home-south-florida/",
+      "destination": "/es/south-florida/",
       "permanent": true
     },
     {
@@ -751,6 +766,11 @@
     {
       "source": "/las-vegas/",
       "destination": "/book-now-las-vegas/",
+      "permanent": true
+    },
+    {
+      "source": "/es/las-vegas/",
+      "destination": "/es/book-now-las-vegas/",
       "permanent": true
     },
     {
@@ -1294,6 +1314,11 @@
       "permanent": true
     },
     {
+      "source": "/es/oahu/",
+      "destination": "/es/book-now-oahu/",
+      "permanent": true
+    },
+    {
       "source": "/post-construction-cleaning-services/post-construction-cleaning-in-aiea-hawaii/",
       "destination": "/oahu/post-construction-cleaning-services/",
       "permanent": true
@@ -1651,6 +1676,11 @@
     {
       "source": "/south-florida/",
       "destination": "/book-now-south-florida/",
+      "permanent": true
+    },
+    {
+      "source": "/es/south-florida/",
+      "destination": "/es/book-now-south-florida/",
       "permanent": true
     },
     {

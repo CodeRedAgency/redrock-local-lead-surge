@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -336,6 +337,7 @@ const neighborhoods = [
 
 const MoveOutCleaningLasVegasPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -396,9 +398,7 @@ const MoveOutCleaningLasVegasPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  Stress-Free Move Out Cleaning Service in Las Vegas
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('lv.moveout.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Secure your security deposit and make your move easier with our comprehensive move out cleaning service. We help Las Vegas renters and homeowners prepare their property for new occupants, meeting all landlord requirements and maximizing your deposit return.
                 </p>
@@ -406,13 +406,13 @@ const MoveOutCleaningLasVegasPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-las-vegas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Move Out Cleaning
+                      {t('lv.moveout.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/las-vegas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('lv.moveout.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -424,9 +424,7 @@ const MoveOutCleaningLasVegasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Deposit-Focused Move Out Cleaning Checklist
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('lv.moveout.checklistTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -493,9 +491,7 @@ const MoveOutCleaningLasVegasPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Make Your Move Easier and Secure Your Deposit
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('lv.moveout.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -533,9 +529,7 @@ const MoveOutCleaningLasVegasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve in Las Vegas
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('lv.moveout.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {neighborhoods.map((neighborhood) => (
                     <AccordionItem 
@@ -649,9 +643,7 @@ const MoveOutCleaningLasVegasPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('lv.moveout.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">Should the property be completely empty before you arrive?</h3>
@@ -687,7 +679,7 @@ const MoveOutCleaningLasVegasPage = () => {
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Secure Your Security Deposit?
+                  {t('lv.moveout.finalCtaTitle')}
                 </h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of satisfied Las Vegas residents who trust Red Rock Cleans for thorough, professional move out cleaning services that maximize their deposit returns.
@@ -696,13 +688,13 @@ const MoveOutCleaningLasVegasPage = () => {
                   <Button size="lg" variant="secondary" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-las-vegas">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Move Out Cleaning Today
+                      {t('lv.moveout.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="cta" className="h-14 text-lg px-8" asChild>
                     <Link to="/las-vegas-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Your Free Quote
+                      {t('lv.moveout.quote')}
                     </Link>
                   </Button>
                 </div>

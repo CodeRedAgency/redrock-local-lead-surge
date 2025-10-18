@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, Sparkles, CheckCircle, Clock, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const MinimizeHouseworkTimePage = () => {
         <title>6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans</title>
         <meta name="description" content="Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

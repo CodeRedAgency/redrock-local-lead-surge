@@ -5,7 +5,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, DollarSign, Key, RefreshCw, Heart, Clock4, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -259,6 +261,7 @@ const neighborhoods = [
 
 const AirbnbCleaningOahuPage = () => {
   const [openItem, setOpenItem] = useState<string>("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Remove the # symbol
@@ -300,6 +303,7 @@ const AirbnbCleaningOahuPage = () => {
         <title>Airbnb Cleaning Service Oahu | Red Rock Cleans</title>
         <meta name="description" content="Get 5-star reviews with our reliable Airbnb cleaning service on Oahu. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Honolulu, Waikiki, and beyond." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <OahuNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-oahu/sign-in" bookingUrl="/book-now-oahu" />
@@ -318,9 +322,7 @@ const AirbnbCleaningOahuPage = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                  5-Star Airbnb Cleaning Service on Oahu
-                </h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">{t('oahu.airbnb.h1')}</h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                   Secure 5-star reviews with pristine turnovers that exceed guest expectations. Our reliable Airbnb cleaning service helps Oahu hosts maintain their competitive edge in the busy vacation rental market, ensuring every guest arrives to a spotless, welcoming space.
                 </p>
@@ -328,13 +330,13 @@ const AirbnbCleaningOahuPage = () => {
                   <Button size="lg" className="h-14 text-lg px-8" asChild>
                     <Link to="/book-now-oahu">
                       <Calendar className="w-5 h-5 mr-2" />
-                      Schedule Airbnb Cleaning
+                      {t('oahu.airbnb.schedule')}
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="h-14 text-lg px-8" asChild>
                     <Link to="/oahu-calculator">
                       <Home className="w-5 h-5 mr-2" />
-                      Get Free Quote
+                      {t('oahu.airbnb.quote')}
                     </Link>
                   </Button>
                 </div>
@@ -346,9 +348,7 @@ const AirbnbCleaningOahuPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Our Turnover Process for Flawless Guest Arrivals
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.airbnb.processTitle')}</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -415,9 +415,7 @@ const AirbnbCleaningOahuPage = () => {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Maximize Your Bookings and Guest Satisfaction
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.airbnb.benefitsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center p-6 bg-background rounded-lg shadow-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -455,9 +453,7 @@ const AirbnbCleaningOahuPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Areas We Serve on Oahu
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.airbnb.areasTitle')}</h2>
                 <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="space-y-4">
                   {neighborhoods.map((neighborhood) => (
                     <AccordionItem 
@@ -571,9 +567,7 @@ const AirbnbCleaningOahuPage = () => {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.airbnb.faqTitle')}</h2>
                 <div className="space-y-6">
                   <div className="border rounded-lg p-6">
                     <h3 className="text-lg font-semibold mb-3">Can you sync with my Airbnb booking calendar?</h3>
@@ -608,9 +602,7 @@ const AirbnbCleaningOahuPage = () => {
           <section className="py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Maximize Your Airbnb Success?
-                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('oahu.airbnb.finalCtaTitle')}</h2>
                 <p className="text-xl mb-8 opacity-90">
                   Join hundreds of successful Oahu Airbnb hosts who trust Red Rock Cleans for reliable, professional turnover cleaning that helps maintain their 5-star ratings and maximize bookings.
                 </p>

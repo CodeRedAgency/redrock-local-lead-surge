@@ -9,12 +9,20 @@ export const Hreflang = () => {
   const normalizedPathEn = pathEn === "" ? "/" : pathEn;
   const urlEn = `${origin}${normalizedPathEn}`;
   const urlEs = `${origin}/es${normalizedPathEn === "/" ? "" : normalizedPathEn}`;
+  const isEs = rawPath.startsWith("/es");
+  const canonicalUrl = isEs ? urlEs : urlEn;
+  const currentOgLocale = isEs ? "es_US" : "en_US";
+  const altOgLocale = isEs ? "en_US" : "es_US";
 
   return (
     <Helmet>
       <link rel="alternate" hrefLang="en" href={urlEn} />
       <link rel="alternate" hrefLang="es" href={urlEs} />
       <link rel="alternate" hrefLang="x-default" href={urlEn} />
+      <link rel="canonical" href={canonicalUrl} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:locale" content={currentOgLocale} />
+      <meta property="og:locale:alternate" content={altOgLocale} />
     </Helmet>
   );
 };

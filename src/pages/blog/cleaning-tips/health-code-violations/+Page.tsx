@@ -1,6 +1,7 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import Hreflang from "@/components/Hreflang";
 import { Calendar, ArrowLeft, AlertTriangle, CheckCircle, ClipboardCheck, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ const HealthCodeViolationsPage = () => {
         <title>Navigating Health Code Violations: A Commercial Cleaning Guide | Red Rock Cleans</title>
         <meta name="description" content="Learn how to avoid and address health code violations in your business. Discover the role of professional commercial cleaning in maintaining compliance." />
       </Helmet>
+      <Hreflang />
       
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />

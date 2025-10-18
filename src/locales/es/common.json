@@ -332,6 +332,349 @@
       "cta": { "title": "¿Listo para dejarlo listo para mudanza?", "copy": "Transformamos tu obra en un espacio limpio y hermoso." }
     }
   }
+  ,
+  "lv": {
+    "airbnb": {
+      "h1": "Servicio profesional de limpieza para Airbnb en Las Vegas",
+      "areasTitle": "Zonas que atendemos en Las Vegas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para elevar tu Airbnb en Las Vegas?",
+      "schedule": "Programar limpieza de Airbnb",
+      "quote": "Obtener cotización",
+      "finalCtaButton": "Obtén tu cotización de limpieza de Airbnb en Las Vegas",
+      "processTitle": "Nuestro proceso de limpieza para reseñas de 5 estrellas",
+      "whyTitle": "Por qué los anfitriones en Las Vegas eligen Red Rock Cleans"
+    },
+    "standard": {
+      "h1": "Servicio de limpieza estándar confiable en Las Vegas",
+      "checklistTitle": "Nuestra lista de limpieza estándar",
+      "whyTitle": "Por qué los residentes de Las Vegas confían en Red Rock Cleans",
+      "areasTitle": "Zonas que atendemos en Las Vegas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para un hogar consistentemente limpio en Las Vegas?",
+      "schedule": "Programar tu limpieza",
+      "quote": "Obtener cotización"
+    },
+    "deep": {
+      "h1": "Servicio de limpieza profunda en Las Vegas",
+      "checklistTitle": "Nuestra lista integral de limpieza profunda",
+      "healthTitle": "La solución perfecta para un hogar más saludable en Las Vegas",
+      "areasTitle": "Zonas que atendemos en Las Vegas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para devolverle el brillo a tu hogar en Las Vegas?",
+      "schedule": "Programar limpieza profunda",
+      "quote": "Obtener cotización"
+    },
+    "moveout": {
+      "h1": "Servicio de limpieza de mudanza sin estrés en Las Vegas",
+      "checklistTitle": "Nuestra lista de limpieza enfocada en el depósito",
+      "benefitsTitle": "Facilita tu mudanza y asegura tu depósito",
+      "areasTitle": "Zonas que atendemos en Las Vegas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar tu depósito?",
+      "schedule": "Programar limpieza de mudanza",
+      "quote": "Obtener cotización"
+    },
+    "post": {
+      "h1": "Servicio de limpieza post construcción en Las Vegas",
+      "processTitle": "Nuestro proceso detallado de limpieza post construcción",
+      "benefitsTitle": "De obra polvorienta a listo para mudanza",
+      "areasTitle": "Zonas que atendemos en Las Vegas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para transformar tu obra?",
+      "schedule": "Programar limpieza post construcción",
+      "quote": "Obtener cotización"
+    }
+  }
+  ,
+  "dallas": {
+    "airbnb": {
+      "h1": "Servicio de limpieza para Airbnb con 5 estrellas en Dallas",
+      "processTitle": "Nuestro proceso de cambio para llegadas impecables",
+      "areasTitle": "Zonas que atendemos en Dallas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar reseñas de 5 estrellas?",
+      "schedule": "Programar limpieza de cambio",
+      "quote": "Obtener cotización"
+    },
+    "standard": {
+      "h1": "Servicio de limpieza estándar confiable en Dallas",
+      "checklistTitle": "Nuestra lista de limpieza estándar",
+      "areasTitle": "Zonas que atendemos en Dallas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para un hogar consistentemente limpio?",
+      "schedule": "Programar tu limpieza",
+      "quote": "Obtener cotización"
+    },
+    "deep": {
+      "h1": "Servicio de limpieza profunda en Dallas",
+      "checklistTitle": "Nuestra lista integral de limpieza profunda",
+      "healthTitle": "La solución perfecta para un hogar más saludable",
+      "areasTitle": "Zonas que atendemos en Dallas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para devolverle el brillo a tu hogar?",
+      "schedule": "Programar limpieza profunda",
+      "quote": "Obtener cotización"
+    },
+    "moveout": {
+      "h1": "Servicio de limpieza de mudanza sin estrés en Dallas",
+      "checklistTitle": "Nuestra lista de limpieza enfocada en el depósito",
+      "benefitsTitle": "Facilita tu mudanza y asegura tu depósito",
+      "areasTitle": "Zonas que atendemos en Dallas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar tu depósito?",
+      "schedule": "Programar limpieza de mudanza",
+      "quote": "Obtener cotización"
+    },
+    "post": {
+      "h1": "Servicio experto de limpieza post construcción en Dallas",
+      "processTitle": "Nuestra lista detallada de limpieza post construcción",
+      "benefitsTitle": "De obra a casa de exhibición",
+      "areasTitle": "Zonas que atendemos en Dallas",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para transformar tu obra?",
+      "schedule": "Programar limpieza post construcción",
+      "quote": "Obtener cotización"
+    }
+  }
+  ,
+  "southFlorida": {
+    "airbnb": {
+      "h1": "Servicio de limpieza para Airbnb con 5 estrellas en South Florida",
+      "processTitle": "Nuestro proceso de cambio para llegadas impecables",
+      "benefitsTitle": "Maximiza tus reservas y la satisfacción de tus huéspedes",
+      "areasTitle": "Zonas que atendemos en South Florida",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para obtener más reseñas de 5 estrellas?",
+      "schedule": "Programar limpieza para Airbnb",
+      "quote": "Obtener cotización"
+    },
+    "standard": {
+      "h1": "Servicio de limpieza estándar confiable en South Florida",
+      "checklistTitle": "Nuestra lista de limpieza estándar",
+      "benefitsTitle": "Disfruta de un hogar consistentemente limpio",
+      "areasTitle": "Zonas que atendemos en South Florida",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en South Florida",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para disfrutar de más tiempo libre?",
+      "schedule": "Programar tu servicio de limpieza",
+      "quote": "Obtener cotización"
+    },
+    "deep": {
+      "h1": "Servicio de limpieza profunda en South Florida",
+      "checklistTitle": "Nuestra lista integral de limpieza profunda",
+      "healthTitle": "La solución perfecta para un hogar más saludable",
+      "areasTitle": "Zonas que atendemos en South Florida",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en South Florida",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para devolverle el brillo a tu hogar?",
+      "schedule": "Programar servicio de limpieza profunda",
+      "quote": "Obtener cotización"
+    },
+    "moveout": {
+      "h1": "Servicio de limpieza de mudanza sin estrés en South Florida",
+      "checklistTitle": "Nuestra lista de limpieza enfocada en el depósito",
+      "benefitsTitle": "Facilita tu mudanza y asegura tu depósito",
+      "areasTitle": "Zonas que atendemos en South Florida",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en South Florida",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar tu depósito?",
+      "schedule": "Programar limpieza de mudanza",
+      "quote": "Obtener cotización"
+    },
+    "post": {
+      "h1": "Servicio experto de limpieza post construcción en South Florida",
+      "processTitle": "Nuestra lista detallada de limpieza post construcción",
+      "benefitsTitle": "De obra a acabado impecable",
+      "areasTitle": "Zonas que atendemos en South Florida",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en South Florida",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para transformar tu obra?",
+      "schedule": "Programar limpieza post construcción",
+      "quote": "Obtener cotización"
+    }
+  }
+  ,
+  "oahu": {
+    "airbnb": {
+      "h1": "Servicio de limpieza para Airbnb con 5 estrellas en Oahu",
+      "processTitle": "Nuestro proceso de cambio para llegadas impecables",
+      "benefitsTitle": "Maximiza tus reservas y la satisfacción de tus huéspedes",
+      "areasTitle": "Zonas que atendemos en Oahu",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para maximizar tu éxito en Airbnb?",
+      "schedule": "Programar limpieza para Airbnb",
+      "quote": "Obtener cotización"
+    },
+    "standard": {
+      "h1": "Servicio de limpieza estándar confiable en Oahu",
+      "checklistTitle": "Nuestra lista de limpieza estándar",
+      "benefitsTitle": "Disfruta de un hogar consistentemente limpio",
+      "areasTitle": "Zonas que atendemos en Oahu",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Oahu",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para un hogar consistentemente limpio?",
+      "schedule": "Programar limpieza estándar",
+      "quote": "Obtener cotización"
+    },
+    "deep": {
+      "h1": "Servicio de limpieza profunda en Oahu",
+      "checklistTitle": "Nuestra lista integral de limpieza profunda",
+      "healthTitle": "La solución perfecta para un hogar más saludable",
+      "areasTitle": "Zonas que atendemos en Oahu",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Oahu",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para devolverle el brillo a tu hogar?",
+      "schedule": "Programar limpieza profunda",
+      "quote": "Obtener cotización"
+    },
+    "moveout": {
+      "h1": "Servicio de limpieza de mudanza sin estrés en Oahu",
+      "checklistTitle": "Nuestra lista de limpieza enfocada en el depósito",
+      "benefitsTitle": "Facilita tu mudanza y asegura tu depósito",
+      "areasTitle": "Zonas que atendemos en Oahu",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Oahu",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar tu depósito?",
+      "schedule": "Programar limpieza de mudanza",
+      "quote": "Obtener cotización"
+    },
+    "post": {
+      "h1": "Servicio profesional de limpieza post construcción en Oahu",
+      "processTitle": "Nuestra lista detallada de limpieza post construcción",
+      "benefitsTitle": "De obra a propiedad de exhibición",
+      "areasTitle": "Zonas que atendemos en Oahu",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Oahu",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para transformar tu obra?",
+      "schedule": "Programar limpieza post construcción",
+      "quote": "Obtener cotización"
+    }
+  }
+  ,
+  "maui": {
+    "airbnb": {
+      "h1": "Servicio de limpieza para Airbnb con 5 estrellas en Maui",
+      "processTitle": "Nuestro proceso de cambio para llegadas impecables",
+      "benefitsTitle": "Maximiza tus reservas y la satisfacción de tus huéspedes",
+      "areasTitle": "Zonas que atendemos en Maui",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar reseñas de 5 estrellas?",
+      "schedule": "Programar limpieza para Airbnb",
+      "quote": "Obtener cotización"
+    },
+    "standard": {
+      "h1": "Servicio de limpieza estándar confiable en Maui",
+      "checklistTitle": "Nuestra lista de limpieza estándar",
+      "benefitsTitle": "Disfruta de un hogar consistentemente limpio",
+      "areasTitle": "Zonas que atendemos en Maui",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Maui",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para un hogar consistentemente limpio?",
+      "schedule": "Programar tu limpieza",
+      "quote": "Obtener cotización"
+    },
+    "deep": {
+      "h1": "Servicio de limpieza profunda en Maui",
+      "checklistTitle": "Nuestra lista integral de limpieza profunda",
+      "healthTitle": "La solución perfecta para un hogar más saludable",
+      "areasTitle": "Zonas que atendemos en Maui",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Maui",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para devolverle el brillo a tu hogar?",
+      "schedule": "Programar limpieza profunda",
+      "quote": "Obtener cotización"
+    },
+    "moveout": {
+      "h1": "Servicio de limpieza de mudanza sin estrés en Maui",
+      "checklistTitle": "Nuestra lista de limpieza enfocada en el depósito",
+      "benefitsTitle": "Facilita tu mudanza y asegura tu depósito",
+      "areasTitle": "Zonas que atendemos en Maui",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Maui",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar tu depósito?",
+      "schedule": "Programar limpieza de mudanza",
+      "quote": "Obtener cotización"
+    },
+    "post": {
+      "h1": "Servicio experto de limpieza post construcción en Maui",
+      "processTitle": "Nuestra lista detallada de limpieza post construcción",
+      "benefitsTitle": "De obra a paraíso",
+      "areasTitle": "Zonas que atendemos en Maui",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Maui",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para transformar tu obra?",
+      "schedule": "Programar limpieza post construcción",
+      "quote": "Obtener cotización"
+    }
+  }
+  ,
+  "columbus": {
+    "airbnb": {
+      "h1": "Servicio de limpieza para Airbnb con 5 estrellas en Columbus, Ohio",
+      "processTitle": "Nuestro proceso de cambio para llegadas impecables",
+      "benefitsTitle": "Maximiza tus reservas y la satisfacción de tus huéspedes",
+      "areasTitle": "Zonas que atendemos en Columbus, Ohio",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Columbus",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para obtener reseñas de 5 estrellas?",
+      "schedule": "Programar limpieza de cambio",
+      "quote": "Obtener cotización"
+    },
+    "standard": {
+      "h1": "Servicio de limpieza estándar confiable en Columbus, Ohio",
+      "checklistTitle": "Nuestra lista de limpieza estándar",
+      "benefitsTitle": "Disfruta de un hogar consistentemente limpio",
+      "areasTitle": "Zonas que atendemos en Columbus, Ohio",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Columbus",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para disfrutar de un hogar consistentemente limpio?",
+      "schedule": "Programar tu limpieza",
+      "quote": "Obtener cotización"
+    },
+    "deep": {
+      "h1": "Servicio de limpieza profunda en Columbus, Ohio",
+      "checklistTitle": "Nuestra lista integral de limpieza profunda",
+      "healthTitle": "La solución perfecta para un hogar más saludable",
+      "areasTitle": "Zonas que atendemos en Columbus, Ohio",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Columbus",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para devolverle el brillo a tu hogar?",
+      "schedule": "Programar limpieza profunda",
+      "quote": "Obtener cotización"
+    },
+    "moveout": {
+      "h1": "Servicio de limpieza de mudanza sin estrés en Columbus, Ohio",
+      "checklistTitle": "Nuestra lista de limpieza de mudanza enfocada en el depósito",
+      "benefitsTitle": "Facilita tu mudanza y asegura tu depósito",
+      "areasTitle": "Zonas que atendemos en Columbus, Ohio",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Columbus",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para asegurar tu depósito de seguridad?",
+      "schedule": "Programar limpieza de mudanza",
+      "quote": "Obtener cotización"
+    },
+    "post": {
+      "h1": "Servicio experto de limpieza post construcción en Columbus, Ohio",
+      "processTitle": "Nuestra lista detallada de limpieza post construcción",
+      "benefitsTitle": "De obra a casa de exhibición",
+      "areasTitle": "Zonas que atendemos en Columbus, Ohio",
+      "otherServicesTitle": "Otros servicios de limpieza para tu propiedad en Columbus",
+      "faqTitle": "Preguntas frecuentes",
+      "finalCtaTitle": "¿Listo para transformar tu obra?",
+      "schedule": "Programar limpieza post construcción",
+      "quote": "Obtener cotización"
+    }
+  }
+  ,
+  "booking": {
+    "h1": "Reserva tu servicio de limpieza",
+    "subtitle": "{{region}} - Reserva en línea fácil"
+  },
+  "calculator": {
+    "h1": "Obtén tu cotización de limpieza",
+    "subtitle": "{{region}} - Calculadora de precios instantánea"
+  }
 }
 
 
