@@ -49,7 +49,7 @@ const Index = () => {
                     {t("home.badge", { defaultValue: "Trusted Local Cleaning Experts" })}
                   </span>
                 </div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-tight tracking-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-[1.15] tracking-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
                   {t("home.h1.part1", { defaultValue: "Elevate Your Space with" })}
                   <span className="block mt-3 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent drop-shadow-sm">
                     {t("home.h1.part2", { defaultValue: "Premium Cleaning" })}
