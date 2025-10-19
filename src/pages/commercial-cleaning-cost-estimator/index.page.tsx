@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Helmet } from "react-helmet";
+import { useTranslation } from 'react-i18next';
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -43,6 +44,8 @@ export default function CommercialCleaningCostEstimatorPage() {
   const [frequency, setFrequency] = useState<"One-Time" | "Daily" | "5x/week" | "3x/week" | "Weekly">("Weekly");
   const [location, setLocation] = useState<keyof typeof HOURLY_RATES | "">("");
   const [animatedMonthly, setAnimatedMonthly] = useState<number>(0);
+
+  const { t } = useTranslation();
 
   // Build link to commercial quote with prefilled params
   const quoteHref = useMemo(() => {
@@ -182,21 +185,19 @@ export default function CommercialCleaningCostEstimatorPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-10">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Commercial Cleaning Cost Estimator</h1>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Get a ballpark estimate based on national industry averages to help plan your cleaning budget. Then refine your estimate by selecting your service location for local labor rates.
-                </p>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('estimator.costEstimatorTitle')}</h1>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t('estimator.costEstimatorSubtitle')}</p>
               </div>
 
               <Card className="mb-10">
                 <CardHeader>
-                  <CardTitle>Step {step} of 4</CardTitle>
+                  <CardTitle>{t('estimator.step', { step })}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   {/* Step 1: Facility Type */}
                   {step === 1 && (
                     <div>
-                      <p className="text-muted-foreground mb-4">Select your facility type:</p>
+                      <p className="text-muted-foreground mb-4">{t('estimator.facilityTypePrompt')}</p>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {facilityCards.map(({ key, label, icon: Icon }) => (
                           <button
@@ -205,7 +206,7 @@ export default function CommercialCleaningCostEstimatorPage() {
                             className={`group border rounded-lg p-4 text-center transition-all hover:shadow-md ${facilityType === key ? 'border-primary ring-2 ring-primary/30' : 'border-border'}`}
                           >
                             <Icon className="w-8 h-8 mx-auto mb-2 text-primary group-hover:scale-110 transition-transform" />
-                            <div className="font-semibold">{label}</div>
+                            <div className="font-semibold">{t('estimator.facilityTypeLabel', { label })}</div>
                           </button>
                         ))}
                       </div>
@@ -268,14 +269,14 @@ export default function CommercialCleaningCostEstimatorPage() {
                             {formatMoney(nationalMonthlyCost.min)} - {formatMoney(nationalMonthlyCost.max)}*
                           </div>
                           <div className="mt-2 text-muted-foreground">Median: <span className="font-semibold text-primary text-3xl align-middle">{formatMoney(animatedMonthly)}</span></div>
-                          <p className="mt-3 text-xs text-muted-foreground">* Estimate uses national hourly averages of ${HOURLY_RATES.National.min}-{HOURLY_RATES.National.max} per cleaner.</p>
+                          <p className="mt-3 text-xs text-muted-foreground">{t('estimator.nationalEstimateDisclaimer')}</p>
                         </CardContent>
                       </Card>
 
                       <section className="mt-4">
-                        <h2 className="text-xl font-bold mb-3">Get a More Accurate Local Estimate</h2>
+                        <h2 className="text-xl font-bold mb-3">{t('estimator.localEstimateTitle')}</h2>
                         <div className="max-w-xs">
-                          <Label className="mb-2 block">Choose Your Location</Label>
+                          <Label className="mb-2 block">{t('estimator.locationPrompt')}</Label>
                           <Select value={location} onValueChange={(v) => setLocation(v as any)}>
                             <SelectTrigger>
                               <SelectValue placeholder="Select a location" />
@@ -291,7 +292,7 @@ export default function CommercialCleaningCostEstimatorPage() {
                         {location && localMonthlyCost && (
                           <Card className="mt-4">
                             <CardHeader>
-                              <CardTitle>Estimated Monthly Cost for {location}</CardTitle>
+                              <CardTitle>{t('estimator.localCostTitle', { location })}</CardTitle>
                             </CardHeader>
                             <CardContent>
                               <div className="text-sm text-muted-foreground mb-1">Estimated Monthly Cost</div>
@@ -307,7 +308,7 @@ export default function CommercialCleaningCostEstimatorPage() {
 
                       <div className="text-center">
                         <Button size="lg" className="mt-4" asChild>
-                          <a href={quoteHref}>Request a Formal, No-Obligation Quote</a>
+                          <a href={quoteHref}>{t('estimator.requestQuoteButton')}</a>
                         </Button>
                       </div>
                     </div>
@@ -331,19 +332,19 @@ export default function CommercialCleaningCostEstimatorPage() {
 
               {/* Pricing education sections */}
               <section className="mb-10">
-                <h2 className="text-2xl font-bold mb-3">How Commercial Cleaning is Priced</h2>
+                <h2 className="text-2xl font-bold mb-3">{t('estimator.pricingEducationTitle')}</h2>
                 <p className="text-muted-foreground">
                   Commercial cleaning prices reflect labor time, local wage rates, supplies and consumables, equipment use, and your exact scope of work. Our estimator blends production rates with hourly averages to provide a budgeting starting point.
                 </p>
               </section>
 
               <section className="mb-10">
-                <h2 className="text-2xl font-bold mb-5">The 3 Key Factors That Influence Your Final Cost</h2>
+                <h2 className="text-2xl font-bold mb-5">{t('estimator.pricingFactorsTitle')}</h2>
                 <div className="grid md:grid-cols-3 gap-4">
                   <Card className="transition-transform hover:translate-y-[-2px] hover:shadow-md">
                     <CardHeader className="flex flex-row items-center gap-3">
                       <MapPin className="w-6 h-6 text-primary" />
-                      <CardTitle>Labor & Location</CardTitle>
+                      <CardTitle>{t('estimator.laborLocationTitle')}</CardTitle>
                     </CardHeader>
                     <CardContent className="text-muted-foreground">
                       Local labor rates drive most price variance. Selecting your location above updates the hourly rate and gives a more accurate estimate.
@@ -352,7 +353,7 @@ export default function CommercialCleaningCostEstimatorPage() {
                   <Card className="transition-transform hover:translate-y-[-2px] hover:shadow-md">
                     <CardHeader className="flex flex-row items-center gap-3">
                       <ClipboardCheck className="w-6 h-6 text-primary" />
-                      <CardTitle>Scope of Work</CardTitle>
+                      <CardTitle>{t('estimator.scopeOfWorkTitle')}</CardTitle>
                     </CardHeader>
                     <CardContent className="text-muted-foreground">
                       Medical and food-service environments require higher disinfection standards and specialty tasks, increasing time and cost compared to standard offices.
@@ -361,7 +362,7 @@ export default function CommercialCleaningCostEstimatorPage() {
                   <Card className="transition-transform hover:translate-y-[-2px] hover:shadow-md">
                     <CardHeader className="flex flex-row items-center gap-3">
                       <Repeat className="w-6 h-6 text-primary" />
-                      <CardTitle>Frequency & Contract</CardTitle>
+                      <CardTitle>{t('estimator.frequencyContractTitle')}</CardTitle>
                     </CardHeader>
                     <CardContent className="text-muted-foreground">
                       Higher frequency often reduces per-visit cost due to efficiency and lower buildup. Contract terms and scope consistency also impact pricing.
@@ -371,22 +372,22 @@ export default function CommercialCleaningCostEstimatorPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold mb-5">Frequently Asked Questions</h2>
+                <h2 className="text-2xl font-bold mb-5">{t('estimator.faqTitle')}</h2>
                 <Accordion type="single" collapsible>
                   <AccordionItem value="q1">
-                    <AccordionTrigger>Why isn't this estimate a final price?</AccordionTrigger>
+                    <AccordionTrigger>{t('estimator.faqQuestion1')}</AccordionTrigger>
                     <AccordionContent>
                       Because final pricing depends on verified square footage, layout, surfaces, exact scope, access, and service schedule. We finalize numbers after a walkthrough.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="q2">
-                    <AccordionTrigger>Will a higher frequency lower my price?</AccordionTrigger>
+                    <AccordionTrigger>{t('estimator.faqQuestion2')}</AccordionTrigger>
                     <AccordionContent>
                       Typically, yes. Regular maintenance reduces buildup and improves production rates, lowering the average cost per visit.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="q3">
-                    <AccordionTrigger>Do you use ISSA rates?</AccordionTrigger>
+                    <AccordionTrigger>{t('estimator.faqQuestion3')}</AccordionTrigger>
                     <AccordionContent>
                       Our estimator uses ISSA-informed production references combined with local hourly averages to approximate costs.
                     </AccordionContent>

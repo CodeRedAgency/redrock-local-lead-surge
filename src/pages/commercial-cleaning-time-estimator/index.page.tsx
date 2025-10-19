@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Building2, Hospital, School, UtensilsCrossed, Store, Warehouse, Dumbbell, Shapes, CheckCircle2, ClipboardCheck, Square, ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 type FacilityType = "Office" | "Medical Facility" | "School" | "Restaurant" | "Retail Store" | "Warehouse/Industrial" | "Gym" | "Other";
 
@@ -33,6 +34,8 @@ export default function CommercialCleaningTimeEstimatorPage() {
   const [congestion, setCongestion] = useState<"Open" | "Standard" | "Dense">("Standard");
   const [frequency, setFrequency] = useState<"One-Time Deep Clean" | "Daily" | "3-5x Per Week" | "Weekly" | "Bi-Weekly">("Weekly");
   const [animatedHours, setAnimatedHours] = useState<number>(0);
+
+  const { t } = useTranslation();
 
   // Production rate (sq ft per hour) baseline by facility type
   const baseProductionRate = useMemo(() => {
@@ -136,21 +139,19 @@ export default function CommercialCleaningTimeEstimatorPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-10">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Commercial Cleaning Time Estimator</h1>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Get a preliminary estimate based on ISSA industry production rates to help your business plan cleaning budgets and schedules. This is an estimate only; a formal quote requires a walkthrough and scope review.
-                </p>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('timeEstimator.timeEstimatorTitle')}</h1>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t('timeEstimator.timeEstimatorSubtitle')}</p>
               </div>
 
               <Card className="mb-10">
                 <CardHeader>
-                  <CardTitle>Step {step} of 4</CardTitle>
+                  <CardTitle>{t('timeEstimator.step', { step })}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   {/* Step 1: Facility Type */}
                   {step === 1 && (
                     <div>
-                      <p className="text-muted-foreground mb-4">Select your facility type:</p>
+                      <p className="text-muted-foreground mb-4">{t('timeEstimator.facilityTypePrompt')}</p>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {facilityCards.map(({ key, label, icon: Icon }) => (
                           <button
@@ -159,7 +160,7 @@ export default function CommercialCleaningTimeEstimatorPage() {
                             className={`group border rounded-lg p-4 text-center transition-all hover:shadow-md ${facilityType === key ? 'border-primary ring-2 ring-primary/30' : 'border-border'}`}
                           >
                             <Icon className="w-8 h-8 mx-auto mb-2 text-primary group-hover:scale-110 transition-transform" />
-                            <div className="font-semibold">{label}</div>
+                            <div className="font-semibold">{t('timeEstimator.facilityTypeLabel', { label })}</div>
                           </button>
                         ))}
                       </div>
@@ -246,9 +247,9 @@ export default function CommercialCleaningTimeEstimatorPage() {
                           {formatHours(minHours)} - {formatHours(maxHours)} hours
                         </div>
                         <div className="mt-3 text-muted-foreground">Median: <span className="font-semibold text-primary text-3xl align-middle">{formatHours(animatedHours)}</span> hours</div>
-                        <p className="mt-4 text-sm text-muted-foreground">This estimate is based on ISSA production rates and is for budgetary purposes only.</p>
+                        <p className="mt-4 text-sm text-muted-foreground">{t('timeEstimator.estimateDisclaimer')}</p>
                         <Button size="lg" className="mt-6" asChild>
-                          <a href="/commercial-quote/">Request a Formal, No-Obligation Quote</a>
+                          <a href="/commercial-quote/">{t('timeEstimator.requestQuoteButton')}</a>
                         </Button>
                       </div>
                     </div>
@@ -273,7 +274,7 @@ export default function CommercialCleaningTimeEstimatorPage() {
               {/* Explanations */}
               <div className="grid gap-8">
                 <section>
-                  <h2 className="text-2xl font-bold mb-3">How We Calculate Your Estimate (The ISSA Standard)</h2>
+                  <h2 className="text-2xl font-bold mb-3">{t('timeEstimator.calculationExplanationTitle')}</h2>
                   <p className="text-muted-foreground">
                     Our estimator references ISSA 540 Cleaning Times and common production rates, which reflect how many square feet a trained cleaner can service per hour based on facility type,
                     layout, and scope. Actual times vary with onsite conditions and detailed scope of work.
@@ -281,12 +282,12 @@ export default function CommercialCleaningTimeEstimatorPage() {
                 </section>
 
                 <section>
-                  <h2 className="text-2xl font-bold mb-5">Key Factors That Influence Cleaning Time</h2>
+                  <h2 className="text-2xl font-bold mb-5">{t('timeEstimator.keyFactorsTitle')}</h2>
                   <div className="grid md:grid-cols-3 gap-4">
                     <Card className="transition-transform hover:translate-y-[-2px] hover:shadow-md">
                       <CardHeader className="flex flex-row items-center gap-3">
                         <Building2 className="w-6 h-6 text-primary" />
-                        <CardTitle>Facility Type</CardTitle>
+                        <CardTitle>{t('timeEstimator.facilityTypeTitle')}</CardTitle>
                       </CardHeader>
                       <CardContent className="text-muted-foreground">
                         Healthcare and food-service settings require added disinfection and detailed work, resulting in slower production and longer time than standard offices.
@@ -295,7 +296,7 @@ export default function CommercialCleaningTimeEstimatorPage() {
                     <Card className="transition-transform hover:translate-y-[-2px] hover:shadow-md">
                       <CardHeader className="flex flex-row items-center gap-3">
                         <Square className="w-6 h-6 text-primary" />
-                        <CardTitle>Square Footage & Layout</CardTitle>
+                        <CardTitle>{t('timeEstimator.squareFootageLayoutTitle')}</CardTitle>
                       </CardHeader>
                       <CardContent className="text-muted-foreground">
                         Large, open spaces clean faster per square foot than dense, high-touch spaces with many rooms, fixtures, and furniture.
@@ -304,7 +305,7 @@ export default function CommercialCleaningTimeEstimatorPage() {
                     <Card className="transition-transform hover:translate-y-[-2px] hover:shadow-md">
                       <CardHeader className="flex flex-row items-center gap-3">
                         <ClipboardCheck className="w-6 h-6 text-primary" />
-                        <CardTitle>Scope of Work</CardTitle>
+                        <CardTitle>{t('timeEstimator.scopeOfWorkTitle')}</CardTitle>
                       </CardHeader>
                       <CardContent className="text-muted-foreground">
                         Standard maintenance differs from deep cleans and specialty tasks (e.g., machine scrubbing, high dusting), which impact production rates and time.
@@ -314,22 +315,22 @@ export default function CommercialCleaningTimeEstimatorPage() {
                 </section>
 
                 <section>
-                  <h2 className="text-2xl font-bold mb-5">Frequently Asked Questions</h2>
+                  <h2 className="text-2xl font-bold mb-5">{t('timeEstimator.faqTitle')}</h2>
                   <Accordion type="single" collapsible>
                     <AccordionItem value="q1">
-                      <AccordionTrigger>Is this estimate a final price?</AccordionTrigger>
+                      <AccordionTrigger>{t('timeEstimator.faqQuestion1')}</AccordionTrigger>
                       <AccordionContent>
                         No. This tool provides a planning estimate. We provide a formal quote after a walkthrough and scope confirmation.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="q2">
-                      <AccordionTrigger>Why is a physical walkthrough necessary?</AccordionTrigger>
+                      <AccordionTrigger>{t('timeEstimator.faqQuestion2')}</AccordionTrigger>
                       <AccordionContent>
                         Onsite visits validate square footage, layout, surface types, and scope details that influence production rates and final pricing.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="q3">
-                      <AccordionTrigger>Can I use this to budget recurring services?</AccordionTrigger>
+                      <AccordionTrigger>{t('timeEstimator.faqQuestion3')}</AccordionTrigger>
                       <AccordionContent>
                         Yes. Choose a frequency to see typical per-visit time. We’ll fine-tune after confirming your exact scope and schedule.
                       </AccordionContent>

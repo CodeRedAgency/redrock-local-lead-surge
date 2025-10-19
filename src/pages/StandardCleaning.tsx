@@ -10,8 +10,8 @@ const StandardCleaning = () => {
   return (
     <>
       <Helmet>
-        <title>{t("services.standard.title", { defaultValue: "Standard Cleaning Services | Red Rock Cleaning" })}</title>
-        <meta name="description" content={t("services.standard.description", { defaultValue: "Regular standard cleaning services to maintain a spotless home or office. Professional cleaners for consistent, reliable maintenance cleaning." })} />
+        <title>{t("services.standard.title", { defaultValue: "Servicios de limpieza estándar | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("services.standard.description", { defaultValue: "Servicios de limpieza estándar regular para mantener un hogar u oficina impecable. Limpiadores profesionales para un mantenimiento constante y confiable." })} />
       </Helmet>
       <Hreflang />
       
@@ -22,9 +22,9 @@ const StandardCleaning = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
-                <h1 className="text-5xl font-bold mb-6">{t("services.standard.heading", { defaultValue: "Standard Cleaning Services" })}</h1>
+                <h1 className="text-5xl font-bold mb-6">{t("services.standard.heading", { defaultValue: "Servicios de limpieza estándar" })}</h1>
                 <p className="text-xl text-muted-foreground">
-                  {t("services.standard.tagline", { defaultValue: "Regular maintenance cleaning to keep your space consistently fresh and clean" })}
+                  {t("services.standard.tagline", { defaultValue: "Limpieza de mantenimiento regular para mantener su espacio siempre fresco y limpio" })}
                 </p>
               </div>
 

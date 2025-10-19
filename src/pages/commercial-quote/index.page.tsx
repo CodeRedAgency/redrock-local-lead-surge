@@ -11,6 +11,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Building2, Hospital, UtensilsCrossed, Warehouse, Store, Dumbbell, Scissors, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
+import { useTranslation } from 'react-i18next';
 
 type LocationKey = "Las Vegas" | "Oahu" | "Maui" | "South Florida" | "Dallas" | "Columbus, Ohio";
 type FacilityKey = "Office" | "Medical" | "Restaurant" | "Warehouse" | "Retail" | "Gym" | "Salon/Spa" | "Other";
@@ -51,6 +52,8 @@ export default function CommercialQuotePage() {
   const [phone, setPhone] = useState<string>("");
   const [consent, setConsent] = useState<boolean>(false);
   const [submitted, setSubmitted] = useState<boolean>(false);
+
+  const { t } = useTranslation();
 
   // Prefill from URL query
   useEffect(() => {
@@ -185,8 +188,8 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
   return (
     <>
       <Helmet>
-        <title>Request a Commercial Cleaning Quote | Red Rock Cleans</title>
-        <meta name="description" content="Request a free, no-obligation quote for your business. Red Rock Cleans provides custom proposals for office, industrial, medical, and other commercial cleaning services." />
+        <title>{t('quote.pageTitle')}</title>
+        <meta name="description" content={t('quote.pageDescription')} />
         <link rel="canonical" href="/commercial-quote/" />
       </Helmet>
 
@@ -198,21 +201,19 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
               {!submitted ? (
                 <>
                   <div className="text-center mb-10">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Request a Custom Cleaning Proposal for Your Business</h1>
-                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                      Tell us about your facility and cleaning needs, and our commercial team will prepare an accurate, no-obligation proposal. If you came from our estimator, we’ll pre-fill your details to save time.
-                    </p>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('quote.requestCustomProposalTitle')}</h1>
+                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t('quote.requestCustomProposalSubTitle')}</p>
                   </div>
 
                   <Card className="mb-10">
                     <CardHeader>
-                      <CardTitle>Step {step} of 4{prefilled ? " (prefilled)" : ""}</CardTitle>
+                      <CardTitle>{t('quote.step', { step, prefilled })}</CardTitle>
                     </CardHeader>
                     <CardContent>
                       {/* Step 1: Location */}
                       {step === 1 && (
                         <div>
-                          <h2 className="text-xl font-semibold mb-4">Where is your facility located?</h2>
+                          <h2 className="text-xl font-semibold mb-4">{t('quote.locationPrompt')}</h2>
                           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                             {LOCATIONS.map((loc) => (
                               <button key={loc.key} onClick={() => { setLocation(loc.key); next(); }} className={`group border rounded-lg p-4 text-center transition-all hover:shadow-md ${location === loc.key ? 'border-primary ring-2 ring-primary/30' : 'border-border'}`}>
@@ -227,7 +228,7 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
                       {/* Step 2: Facility Type */}
                       {step === 2 && (
                         <div>
-                          <h2 className="text-xl font-semibold mb-4">What type of facility do you have?</h2>
+                          <h2 className="text-xl font-semibold mb-4">{t('quote.facilityTypePrompt')}</h2>
                           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {FACILITIES.map(({ key, label, icon: Icon }) => (
                               <button key={key} onClick={() => { setFacility(key); next(); }} className={`group border rounded-lg p-4 text-center transition-all hover:shadow-md ${facility === key ? 'border-primary ring-2 ring-primary/30' : 'border-border'}`}>
@@ -237,11 +238,11 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
                             ))}
                           </div>
                           <div className="mt-6 text-sm text-muted-foreground">
-                            <p className="font-medium mb-2">What do “Open”, “Standard”, and “Dense” mean?</p>
+                            <p className="font-medium mb-2">{t('quote.congestionExplanationTitle')}</p>
                             <ul className="list-disc ml-5 space-y-1">
-                              <li><span className="font-semibold">Open</span>: Large, open layouts with few partitions and obstacles (e.g., warehouses, showrooms). Faster to service.</li>
-                              <li><span className="font-semibold">Standard</span>: Typical office-style layout with a mix of rooms, hallways, furniture, and open areas.</li>
-                              <li><span className="font-semibold">Dense</span>: Many small rooms/equipment and high-touch areas (e.g., medical clinics, restaurant BOH). Slower, more detail-oriented.</li>
+                              <li><span className="font-semibold">{t('quote.congestionOpen')}</span>: Large, open layouts with few partitions and obstacles (e.g., warehouses, showrooms). Faster to service.</li>
+                              <li><span className="font-semibold">{t('quote.congestionStandard')}</span>: Typical office-style layout with a mix of rooms, hallways, furniture, and open areas.</li>
+                              <li><span className="font-semibold">{t('quote.congestionDense')}</span>: Many small rooms/equipment and high-touch areas (e.g., medical clinics, restaurant BOH). Slower, more detail-oriented.</li>
                             </ul>
                           </div>
                         </div>
@@ -250,16 +251,16 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
                       {/* Step 3: Service Details */}
                       {step === 3 && (
                         <div className="space-y-6">
-                          <h2 className="text-xl font-semibold">Tell us more about your needs</h2>
+                          <h2 className="text-xl font-semibold">{t('quote.serviceDetailsPrompt')}</h2>
                           <div>
                             <div className="flex items-center justify-between mb-2">
-                              <Label htmlFor="sqft-slider">Approximate Square Footage</Label>
+                              <Label htmlFor="sqft-slider">{t('quote.approximateSquareFootageLabel')}</Label>
                               <div className="text-sm text-muted-foreground">{squareFeet.toLocaleString()} sq ft</div>
                             </div>
                             <Slider id="sqft-slider" value={[squareFeet]} min={1000} max={50000} step={250} onValueChange={(v) => setSquareFeet(v[0])} />
                           </div>
                           <div>
-                            <Label className="mb-2 block">Service Frequency</Label>
+                            <Label className="mb-2 block">{t('quote.serviceFrequencyLabel')}</Label>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                               {['One-Time', 'Daily', '3-5x/week', 'Weekly', 'Bi-Weekly', 'Monthly'].map((f) => (
                                 <button
@@ -274,8 +275,8 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
                             </div>
                           </div>
                           <div>
-                            <Label htmlFor="notes" className="mb-2 block">Specific Needs</Label>
-                            <Textarea id="notes" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Tell us about any special requirements, security protocols, or specific areas of focus..." rows={4} />
+                            <Label htmlFor="notes" className="mb-2 block">{t('quote.specificNeedsLabel')}</Label>
+                            <Textarea id="notes" name="notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder={t('quote.specificNeedsPlaceholder')} rows={4} />
                           </div>
                         </div>
                       )}
@@ -294,39 +295,37 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
                             <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                           </div>
                           
-                          <h2 className="text-xl font-semibold">How can our team reach you?</h2>
+                          <h2 className="text-xl font-semibold">{t('quote.contactDetailsPrompt')}</h2>
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
-                              <Label htmlFor="fullName" className="mb-2 block">Full Name</Label>
+                              <Label htmlFor="fullName" className="mb-2 block">{t('quote.fullNameLabel')}</Label>
                               <Input id="fullName" name="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
                             </div>
                             <div>
-                              <Label htmlFor="company" className="mb-2 block">Company Name</Label>
+                              <Label htmlFor="company" className="mb-2 block">{t('quote.companyNameLabel')}</Label>
                               <Input id="company" name="company" value={company} onChange={(e) => setCompany(e.target.value)} required />
                             </div>
                           </div>
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
-                              <Label htmlFor="email" className="mb-2 block">Email Address</Label>
+                              <Label htmlFor="email" className="mb-2 block">{t('quote.emailAddressLabel')}</Label>
                               <Input id="email" name="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                             </div>
                             <div>
-                              <Label htmlFor="phone" className="mb-2 block">Phone Number</Label>
+                              <Label htmlFor="phone" className="mb-2 block">{t('quote.phoneNumberLabel')}</Label>
                               <Input id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
                             </div>
                           </div>
                           <div className="flex items-start space-x-3">
                             <input id="consent" name="consent" type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1" required />
-                            <Label htmlFor="consent" className="text-sm text-muted-foreground">I consent to be contacted by Red Rock Cleans regarding this request. I understand this is a no-obligation proposal and my information will be handled in accordance with the Privacy Policy.</Label>
+                            <Label htmlFor="consent" className="text-sm text-muted-foreground">{t('quote.consentText')}</Label>
                           </div>
-                          <p className="text-xs text-muted-foreground">
-                            By providing your phone number, you agree to receive SMS updates related to your quote request. Message and data rates may apply. Message frequency varies. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase. See our Privacy Policy for details.
-                          </p>
+                          <p className="text-xs text-muted-foreground">{t('quote.smsConsentText')}</p>
                           <div className="flex items-center justify-between">
                             <Button type="button" variant="outline" onClick={prev}>
-                              <ChevronLeft className="w-4 h-4 mr-2" /> Back
+                              <ChevronLeft className="w-4 h-4 mr-2" /> {t('quote.backButton')}
                             </Button>
-                            <Button type="submit" disabled={!canContinue}>Submit Request for Formal Proposal</Button>
+                            <Button type="submit" disabled={!canContinue}>{t('quote.submitButton')}</Button>
                           </div>
                         </form>
                       )}
@@ -347,9 +346,9 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
                 </>
               ) : (
                 <div className="text-center bg-card p-12 rounded-lg shadow-md">
-                  <h2 className="text-3xl font-bold mb-3">Thank You! We've Received Your Request.</h2>
+                  <h2 className="text-3xl font-bold mb-3">{t('quote.thankYouTitle')}</h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    A member of our {location || "local"} commercial cleaning team will review your information and contact you within one business day to schedule a brief consultation and walkthrough. We look forward to partnering with you.
+                    {t('quote.thankYouMessage')}
                   </p>
                 </div>
               )}

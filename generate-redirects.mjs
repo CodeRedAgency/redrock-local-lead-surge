@@ -53,3 +53,5 @@ vercelConfig.redirects = redirects;
 // Step 4: Write to vercel.json
 fs.writeFileSync(vercelPath, JSON.stringify(vercelConfig, null, 2));
 console.log(`Successfully updated vercel.json with ${redirects.length} redirects.`);
+
+

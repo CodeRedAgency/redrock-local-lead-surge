@@ -20,6 +20,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+// import flag images
+import usFlag from '@/assets/us-flag-icon.png';
+import mxFlag from '@/assets/mx-flag-icon.png';
 
 const locations = [
   { name: "South Florida", path: "/south-florida" },
@@ -62,6 +65,16 @@ export const GeneralNavigation = () => {
         </div>
       </div>
 
+      {/* Language Switcher for Desktop */}
+      <div className="hidden md:flex items-center space-x-2 absolute top-2 right-4">
+        <button onClick={() => i18n.changeLanguage("en")} className="p-1.5 rounded-full" aria-label="Switch to English">
+          <span role="img" aria-label="English">🇺🇸</span>
+        </button>
+        <button onClick={() => i18n.changeLanguage("es")} className="p-1.5 rounded-full" aria-label="Cambiar a español">
+          <span role="img" aria-label="Español">🇲🇽</span>
+        </button>
+      </div>
+
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
@@ -70,7 +83,7 @@ export const GeneralNavigation = () => {
             <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
           </Link>
 
-          {/* Mobile Location Selector - Centered in Header */}
+          {/* Mobile Location Selector & Language Switcher */}
           <div className="md:hidden flex items-center space-x-2">
             <MapPin className="w-4 h-4 text-primary" />
             <Select value={location.pathname} onValueChange={handleLocationChange}>
@@ -85,6 +98,13 @@ export const GeneralNavigation = () => {
                 ))}
               </SelectContent>
             </Select>
+            {/* Language Switcher for Mobile */}
+            <button onClick={() => i18n.changeLanguage("en")} className="p-1.5 rounded-full" aria-label="Switch to English">
+              <span role="img" aria-label="English">🇺🇸</span>
+            </button>
+            <button onClick={() => i18n.changeLanguage("es")} className="p-1.5 rounded-full" aria-label="Cambiar a español">
+              <span role="img" aria-label="Español">🇲🇽</span>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -217,24 +237,6 @@ export const GeneralNavigation = () => {
               <Link to={prefixForLang() + "/contact"} className="hover:text-primary transition-colors relative z-10">
               {t("nav.contact")}
             </Link>
-
-            {/* Language Switcher */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => i18n.changeLanguage("en")}
-                className={`text-sm px-2 py-1 rounded ${i18n.language.startsWith("en") ? "bg-primary text-primary-foreground" : "hover:bg-accent"}`}
-                aria-label="Switch to English"
-              >
-                EN
-              </button>
-              <button
-                onClick={() => i18n.changeLanguage("es")}
-                className={`text-sm px-2 py-1 rounded ${i18n.language.startsWith("es") ? "bg-primary text-primary-foreground" : "hover:bg-accent"}`}
-                aria-label="Cambiar a español"
-              >
-                ES
-              </button>
-            </div>
 
             {/* Location Selector */}
             <div className="flex items-center space-x-2">
