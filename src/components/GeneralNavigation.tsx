@@ -20,9 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-// import flag images
-import usFlag from '@/assets/us-flag-icon.png';
-import mxFlag from '@/assets/mx-flag-icon.png';
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const locations = [
   { name: "South Florida", path: "/south-florida" },
@@ -38,19 +36,41 @@ export const GeneralNavigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { t, i18n } = useTranslation();
+  const isMobile = useIsMobile();
+
+  // Helper to get language prefix based on current i18n language
+  const getLanguagePrefix = () => {
+    return i18n.language.startsWith('es') ? '/es' : '';
+  };
 
   // Get current location name for display
   const getCurrentLocationName = () => {
-    const currentPath = location.pathname;
-    const currentLocation = locations.find(loc => currentPath.startsWith(loc.path));
+    // Remove language prefix when checking location
+    const pathWithoutLang = location.pathname.replace(/^\/es/, '');
+    const currentLocation = locations.find(loc => pathWithoutLang.startsWith(loc.path));
     return currentLocation ? currentLocation.name : "Select Location";
   };
 
   const handleLocationChange = (path: string) => {
-    navigate(path);
+    // Add current language prefix to location path
+    const langPrefix = getLanguagePrefix();
+    const prefixedPath = langPrefix + path;
+    navigate(prefixedPath);
   };
 
-  const prefixForLang = () => (i18n.language.startsWith("es") ? "/es" : "");
+  const switchLanguage = (lang: string) => {
+    // Get current path without language prefix
+    const pathWithoutLang = window.location.pathname.replace(/^\/es/, '') || '/';
+    
+    // Construct new path with correct language prefix
+    const newPath = lang === 'es' ? `/es${pathWithoutLang}` : pathWithoutLang;
+    
+    // Change i18n language and navigate
+    i18n.changeLanguage(lang).then(() => {
+      // Use navigate instead of window.location to avoid reload
+      navigate(newPath);
+    });
+  };
 
   return (
     <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50 shadow-[var(--shadow-soft)] relative overflow-hidden">
@@ -67,19 +87,22 @@ export const GeneralNavigation = () => {
 
       {/* Language Switcher for Desktop */}
       <div className="hidden md:flex items-center space-x-2 absolute top-2 right-4">
-        <button onClick={() => i18n.changeLanguage("en")} className="p-1.5 rounded-full" aria-label="Switch to English">
-          <span role="img" aria-label="English">🇺🇸</span>
-        </button>
-        <button onClick={() => i18n.changeLanguage("es")} className="p-1.5 rounded-full" aria-label="Cambiar a español">
-          <span role="img" aria-label="Español">🇲🇽</span>
-        </button>
+        <Select onValueChange={switchLanguage} className="w-32">
+          <SelectTrigger>
+            <SelectValue placeholder="Select Language" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="en">English</SelectItem>
+            <SelectItem value="es">Spanish</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link to={prefixForLang() + "/"} className="flex items-center space-x-2">
+          <Link to={getLanguagePrefix() + "/"} className="flex items-center space-x-2">
             <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
           </Link>
 
@@ -99,17 +122,20 @@ export const GeneralNavigation = () => {
               </SelectContent>
             </Select>
             {/* Language Switcher for Mobile */}
-            <button onClick={() => i18n.changeLanguage("en")} className="p-1.5 rounded-full" aria-label="Switch to English">
-              <span role="img" aria-label="English">🇺🇸</span>
-            </button>
-            <button onClick={() => i18n.changeLanguage("es")} className="p-1.5 rounded-full" aria-label="Cambiar a español">
-              <span role="img" aria-label="Español">🇲🇽</span>
-            </button>
+            <Select onValueChange={switchLanguage} className="w-32">
+              <SelectTrigger>
+                <SelectValue placeholder="Select Language" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">English</SelectItem>
+                <SelectItem value="es">Spanish</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to={prefixForLang() + "/"} className="hover:text-primary transition-colors relative z-10">
+            <Link to={getLanguagePrefix() + "/"} className="hover:text-primary transition-colors relative z-10">
               {t("nav.home")}
             </Link>
 
@@ -122,16 +148,16 @@ export const GeneralNavigation = () => {
                   <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
-                      <Link to={prefixForLang() + "/standard-cleaning-services"}>Standard Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/standard-cleaning-services"}>Standard Cleaning Services</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to={prefixForLang() + "/deep-cleaning-services"}>Deep Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/deep-cleaning-services"}>Deep Cleaning Services</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to={prefixForLang() + "/move-out-cleaning-services"}>Move Out Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/move-out-cleaning-services"}>Move Out Cleaning Services</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to={prefixForLang() + "/post-construction-cleaning-services"}>Post Construction Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/post-construction-cleaning-services"}>Post Construction Cleaning Services</Link>
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuSub>
@@ -139,7 +165,7 @@ export const GeneralNavigation = () => {
                   <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/commercial-cleaning"}>Commercial Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/commercial-cleaning"}>Commercial Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link to="/commercial-cleaning-time-estimator">Commercial Cleaning Time Estimator</Link>
@@ -151,40 +177,40 @@ export const GeneralNavigation = () => {
                       <Link to="/church-cleaning">Church Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/data-center-cleaning"}>Data Center Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/data-center-cleaning"}>Data Center Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/factory-cleaning"}>Factory Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/factory-cleaning"}>Factory Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/government-facility-cleaning"}>Government Facility Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/government-facility-cleaning"}>Government Facility Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/gym-cleaning"}>Gym Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/gym-cleaning"}>Gym Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/medical-office-cleaning"}>Medical Office Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/medical-office-cleaning"}>Medical Office Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/retail-cleaning"}>Retail Store Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/retail-cleaning"}>Retail Store Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/restaurant-cleaning"}>Restaurant Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/restaurant-cleaning"}>Restaurant Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/industrial-cleaning"}>Industrial Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/industrial-cleaning"}>Industrial Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/school-cleaning"}>School Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/school-cleaning"}>School Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/showroom-cleaning"}>Showroom Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/showroom-cleaning"}>Showroom Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/warehouse-cleaning"}>Warehouse Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/warehouse-cleaning"}>Warehouse Cleaning</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={prefixForLang() + "/salon-spa-cleaning"}>Salon & Spa Cleaning</Link>
+                  <Link to={getLanguagePrefix() + "/salon-spa-cleaning"}>Salon & Spa Cleaning</Link>
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuSub>
@@ -234,7 +260,7 @@ export const GeneralNavigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-              <Link to={prefixForLang() + "/contact"} className="hover:text-primary transition-colors relative z-10">
+              <Link to={getLanguagePrefix() + "/contact"} className="hover:text-primary transition-colors relative z-10">
               {t("nav.contact")}
             </Link>
 

@@ -196,217 +196,220 @@ const LanguageSynchronizer = () => {
   return null;
 };
 
+// Helper function to create both English and Spanish route elements
+const createDualLanguageRoutes = (path: string, element: React.ReactElement) => [
+  <Route key={path} path={path} element={element} />,
+  <Route key={`/es${path}`} path={`/es${path}`} element={element} />
+];
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={window.location.pathname.startsWith("/es") ? "/es" : undefined}>
+      <BrowserRouter>
         <LanguageSynchronizer />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Index />} />
+          {...createDualLanguageRoutes("/", <Index />)}
           
           {/* General Pages */}
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/about/faq" element={<FAQ />} />
-          <Route path="/residential-cleaning" element={<ResidentialCleaning />} />
-          <Route path="/commercial-cleaning" element={<CommercialCleaning />} />
-          <Route path="/church-cleaning" element={<ChurchCleaningPage />} />
-          <Route path="/data-center-cleaning" element={<DataCenterCleaningPage />} />
-          <Route path="/industrial-cleaning" element={<IndustrialCleaningPage />} />
-          <Route path="/factory-cleaning" element={<FactoryCleaningPage />} />
-          <Route path="/government-facility-cleaning" element={<GovernmentFacilityCleaningPage />} />
-          <Route path="/gym-cleaning" element={<GymCleaningPage />} />
-          <Route path="/medical-office-cleaning" element={<MedicalOfficeCleaningPage />} />
-          <Route path="/retail-cleaning" element={<RetailCleaningPage />} />
-          <Route path="/school-cleaning" element={<SchoolCleaningPage />} />
-          <Route path="/showroom-cleaning" element={<ShowroomCleaningPage />} />
-          <Route path="/warehouse-cleaning" element={<WarehouseCleaningPage />} />
-          <Route path="/salon-spa-cleaning" element={<SalonSpaCleaningPage />} />
-          <Route path="/restaurant-cleaning" element={<RestaurantCleaningPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/terms-and-conditions-page" element={<TermsAndConditions />} />
-          <Route path="/privacy-policy-page" element={<PrivacyPolicy />} />
-          <Route path="/sitemap" element={<Sitemap />} />
+          {...createDualLanguageRoutes("/about", <AboutUs />)}
+          {...createDualLanguageRoutes("/about/faq", <FAQ />)}
+          {...createDualLanguageRoutes("/residential-cleaning", <ResidentialCleaning />)}
+          {...createDualLanguageRoutes("/commercial-cleaning", <CommercialCleaning />)}
+          {...createDualLanguageRoutes("/church-cleaning", <ChurchCleaningPage />)}
+          {...createDualLanguageRoutes("/data-center-cleaning", <DataCenterCleaningPage />)}
+          {...createDualLanguageRoutes("/industrial-cleaning", <IndustrialCleaningPage />)}
+          {...createDualLanguageRoutes("/factory-cleaning", <FactoryCleaningPage />)}
+          {...createDualLanguageRoutes("/government-facility-cleaning", <GovernmentFacilityCleaningPage />)}
+          {...createDualLanguageRoutes("/gym-cleaning", <GymCleaningPage />)}
+          {...createDualLanguageRoutes("/medical-office-cleaning", <MedicalOfficeCleaningPage />)}
+          {...createDualLanguageRoutes("/retail-cleaning", <RetailCleaningPage />)}
+          {...createDualLanguageRoutes("/school-cleaning", <SchoolCleaningPage />)}
+          {...createDualLanguageRoutes("/showroom-cleaning", <ShowroomCleaningPage />)}
+          {...createDualLanguageRoutes("/warehouse-cleaning", <WarehouseCleaningPage />)}
+          {...createDualLanguageRoutes("/salon-spa-cleaning", <SalonSpaCleaningPage />)}
+          {...createDualLanguageRoutes("/restaurant-cleaning", <RestaurantCleaningPage />)}
+          {...createDualLanguageRoutes("/contact", <Contact />)}
+          {...createDualLanguageRoutes("/terms-and-conditions-page", <TermsAndConditions />)}
+          {...createDualLanguageRoutes("/privacy-policy-page", <PrivacyPolicy />)}
+          {...createDualLanguageRoutes("/sitemap", <Sitemap />)}
           
           {/* Services Pages */}
-          <Route path="/blog/standard-cleaning-vs-deep-cleaning" element={<StandardVsDeep />} />
-          <Route path="/standard-cleaning-services" element={<StandardCleaning />} />
-          <Route path="/deep-cleaning-services" element={<DeepCleaning />} />
-          <Route path="/airbnb-cleaning-services" element={<AirbnbCleaning />} />
-          <Route path="/post-construction-cleaning-services" element={<PostConstruction />} />
-          <Route path="/move-out-cleaning-services" element={<MoveOutCleaning />} />
-          <Route path="/commercial-cleaning-estimator" element={<CommercialCleaningEstimator />} />
-          <Route path="/commercial-cleaning-time-estimator" element={<CommercialCleaningTimeEstimatorPage />} />
-          <Route path="/commercial-cleaning-cost-estimator" element={<CommercialCleaningCostEstimatorPage />} />
-          <Route path="/commercial-quote" element={<CommercialQuotePage />} />
-          <Route path="/las-vegas/airbnb-cleaning-services" element={<AirbnbCleaningLasVegasPage />} />
-          <Route path="/las-vegas/standard-cleaning-services" element={<StandardCleaningLasVegasPage />} />
-          <Route path="/las-vegas/deep-cleaning-services" element={<DeepCleaningLasVegasPage />} />
-          <Route path="/las-vegas/move-out-cleaning-services" element={<MoveOutCleaningLasVegasPage />} />
-          <Route path="/las-vegas/post-construction-cleaning-services" element={<PostConstructionCleaningLasVegasPage />} />
-          <Route path="/las-vegas/church-cleaning" element={<ChurchCleaningLasVegasPage />} />
-          <Route path="/las-vegas/data-center-cleaning" element={<DataCenterCleaningLasVegasPage />} />
-          <Route path="/las-vegas/factory-cleaning" element={<FactoryCleaningLasVegasPage />} />
-          <Route path="/las-vegas/government-facility-cleaning" element={<GovernmentFacilityCleaningLasVegasPage />} />
-          <Route path="/las-vegas/gym-cleaning" element={<GymCleaningLasVegasPage />} />
-          <Route path="/las-vegas/industrial-cleaning" element={<IndustrialCleaningLasVegasPage />} />
-          <Route path="/las-vegas/medical-office-cleaning" element={<MedicalOfficeCleaningLasVegasPage />} />
-          <Route path="/las-vegas/restaurant-cleaning" element={<RestaurantCleaningLasVegasPage />} />
-          <Route path="/las-vegas/retail-cleaning" element={<RetailCleaningLasVegasPage />} />
-          <Route path="/las-vegas/showroom-cleaning" element={<ShowroomCleaningLasVegasPage />} />
-          <Route path="/las-vegas/warehouse-cleaning" element={<WarehouseCleaningLasVegasPage />} />
-          <Route path="/las-vegas/salon-spa-cleaning" element={<SalonSpaCleaningLasVegasPage />} />
-          <Route path="/las-vegas/school-cleaning" element={<SchoolCleaningLasVegasPage />} />
+          {...createDualLanguageRoutes("/blog/standard-cleaning-vs-deep-cleaning", <StandardVsDeep />)}
+          {...createDualLanguageRoutes("/standard-cleaning-services", <StandardCleaning />)}
+          {...createDualLanguageRoutes("/deep-cleaning-services", <DeepCleaning />)}
+          {...createDualLanguageRoutes("/airbnb-cleaning-services", <AirbnbCleaning />)}
+          {...createDualLanguageRoutes("/post-construction-cleaning-services", <PostConstruction />)}
+          {...createDualLanguageRoutes("/move-out-cleaning-services", <MoveOutCleaning />)}
+          {...createDualLanguageRoutes("/commercial-cleaning-estimator", <CommercialCleaningEstimator />)}
+          {...createDualLanguageRoutes("/commercial-cleaning-time-estimator", <CommercialCleaningTimeEstimatorPage />)}
+          {...createDualLanguageRoutes("/commercial-cleaning-cost-estimator", <CommercialCleaningCostEstimatorPage />)}
+          {...createDualLanguageRoutes("/commercial-quote", <CommercialQuotePage />)}
+          {...createDualLanguageRoutes("/las-vegas/airbnb-cleaning-services", <AirbnbCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/standard-cleaning-services", <StandardCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/deep-cleaning-services", <DeepCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/move-out-cleaning-services", <MoveOutCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/post-construction-cleaning-services", <PostConstructionCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/church-cleaning", <ChurchCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/data-center-cleaning", <DataCenterCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/factory-cleaning", <FactoryCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/government-facility-cleaning", <GovernmentFacilityCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/gym-cleaning", <GymCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/industrial-cleaning", <IndustrialCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/medical-office-cleaning", <MedicalOfficeCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/restaurant-cleaning", <RestaurantCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/retail-cleaning", <RetailCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/showroom-cleaning", <ShowroomCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/warehouse-cleaning", <WarehouseCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/salon-spa-cleaning", <SalonSpaCleaningLasVegasPage />)}
+          {...createDualLanguageRoutes("/las-vegas/school-cleaning", <SchoolCleaningLasVegasPage />)}
           
           {/* Blog & Hiring */}
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/page/:page" element={<Blog />} />
-          <Route path="/blog/cleaning-tips/health-code-violations" element={<HealthCodeViolationsPage />} />
-          <Route path="/blog/cleaning-tips/airbnb-bedding-management-you-should-know" element={<AirbnbBeddingManagementPage />} />
-          <Route path="/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework" element={<MinimizeHouseworkTimePage />} />
-          <Route path="/blog/cleaning-tips/the-science-of-spring-cleaning" element={<ScienceOfSpringCleaningPage />} />
-          <Route path="/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation" element={<CarpetCleaningFleaInfestationPage />} />
-          <Route path="/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party" element={<SpringCleaningPartyPage />} />
-          <Route path="/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill" element={<GrillMaintenanceGuidePage />} />
-          <Route path="/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets" element={<InkStainRemovalGuidePage />} />
-          <Route path="/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist" element={<MoveOutCleaningChecklistPage />} />
-          <Route path="/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air" element={<NaturesAirPurifiersBlogPage />} />
-          <Route path="/hiring-req" element={<HiringRequirements />} />
-          <Route path="/hiring-application/how-to-use-the-maidily-mobile-app" element={<MaidilyApp />} />
+          {...createDualLanguageRoutes("/blog", <Blog />)}
+          {...createDualLanguageRoutes("/blog/page/:page", <Blog />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/health-code-violations", <HealthCodeViolationsPage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/airbnb-bedding-management-you-should-know", <AirbnbBeddingManagementPage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework", <MinimizeHouseworkTimePage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/the-science-of-spring-cleaning", <ScienceOfSpringCleaningPage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation", <CarpetCleaningFleaInfestationPage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party", <SpringCleaningPartyPage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill", <GrillMaintenanceGuidePage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets", <InkStainRemovalGuidePage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist", <MoveOutCleaningChecklistPage />)}
+          {...createDualLanguageRoutes("/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air", <NaturesAirPurifiersBlogPage />)}
+          {...createDualLanguageRoutes("/hiring-req", <HiringRequirements />)}
+          {...createDualLanguageRoutes("/hiring-application/how-to-use-the-maidily-mobile-app", <MaidilyApp />)}
           
           {/* South Florida Routes */}
-          <Route path="/south-florida" element={<SouthFloridaHome />} />
-          <Route path="/south-florida-calculator" element={<SouthFloridaCalculator />} />
-          <Route path="/book-now-south-florida" element={<SouthFloridaBooking />} />
-          <Route path="/book-now-south-florida" element={<SouthFloridaBooking />} />
+          {...createDualLanguageRoutes("/south-florida", <SouthFloridaHome />)}
+          {...createDualLanguageRoutes("/south-florida-calculator", <SouthFloridaCalculator />)}
+          {...createDualLanguageRoutes("/book-now-south-florida", <SouthFloridaBooking />)}
           
           {/* Las Vegas Routes */}
-          <Route path="/las-vegas" element={<LasVegasHome />} />
-          <Route path="/las-vegas-calculator" element={<LasVegasCalculator />} />
-          <Route path="/book-now-las-vegas" element={<LasVegasBooking />} />
-          <Route path="/book-now-las-vegas" element={<LasVegasBooking />} />
+          {...createDualLanguageRoutes("/las-vegas", <LasVegasHome />)}
+          {...createDualLanguageRoutes("/las-vegas-calculator", <LasVegasCalculator />)}
+          {...createDualLanguageRoutes("/book-now-las-vegas", <LasVegasBooking />)}
           
           {/* Oahu Routes */}
-          <Route path="/oahu" element={<OahuHome />} />
-          <Route path="/oahu-calculator" element={<OahuCalculator />} />
-          <Route path="/book-now-oahu" element={<OahuBooking />} />
-          <Route path="/book-now-oahu" element={<OahuBooking />} />
-          <Route path="/oahu/move-out-cleaning-services" element={<MoveOutCleaningOahuPage />} />
-          <Route path="/oahu/standard-cleaning-services" element={<StandardCleaningOahuPage />} />
-          <Route path="/oahu/deep-cleaning-services" element={<DeepCleaningOahuPage />} />
-          <Route path="/oahu/airbnb-cleaning-services" element={<AirbnbCleaningOahuPage />} />
-          <Route path="/oahu/post-construction-cleaning-services" element={<PostConstructionCleaningOahuPage />} />
-          <Route path="/oahu/church-cleaning" element={<ChurchCleaningOahuPage />} />
-          <Route path="/oahu/data-center-cleaning" element={<DataCenterCleaningOahuPage />} />
-          <Route path="/oahu/factory-cleaning" element={<FactoryCleaningOahuPage />} />
-          <Route path="/oahu/government-facility-cleaning" element={<GovernmentFacilityCleaningOahuPage />} />
-          <Route path="/oahu/gym-cleaning" element={<GymCleaningOahuPage />} />
-          <Route path="/oahu/industrial-cleaning" element={<IndustrialCleaningOahuPage />} />
-          <Route path="/oahu/medical-office-cleaning" element={<MedicalOfficeCleaningOahuPage />} />
-          <Route path="/oahu/restaurant-cleaning" element={<RestaurantCleaningOahuPage />} />
-          <Route path="/oahu/retail-cleaning" element={<RetailCleaningOahuPage />} />
-          <Route path="/oahu/school-cleaning" element={<SchoolCleaningOahuPage />} />
-          <Route path="/oahu/showroom-cleaning" element={<ShowroomCleaningOahuPage />} />
-          <Route path="/oahu/warehouse-cleaning" element={<WarehouseCleaningOahuPage />} />
-          <Route path="/oahu/salon-spa-cleaning" element={<SalonSpaCleaningOahuPage />} />
-          <Route path="/south-florida/post-construction-cleaning-services" element={<PostConstructionCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/standard-cleaning-services" element={<StandardCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/deep-cleaning-services" element={<DeepCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/move-out-cleaning-services" element={<MoveOutCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/airbnb-cleaning-services" element={<AirbnbCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/church-cleaning" element={<ChurchCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/data-center-cleaning" element={<DataCenterCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/factory-cleaning" element={<FactoryCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/government-facility-cleaning" element={<GovernmentFacilityCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/gym-cleaning" element={<GymCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/industrial-cleaning" element={<IndustrialCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/medical-office-cleaning" element={<MedicalOfficeCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/restaurant-cleaning" element={<RestaurantCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/retail-cleaning" element={<RetailCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/school-cleaning" element={<SchoolCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/showroom-cleaning" element={<ShowroomCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/warehouse-cleaning" element={<WarehouseCleaningSouthFloridaPage />} />
-          <Route path="/south-florida/salon-spa-cleaning" element={<SalonSpaCleaningSouthFloridaPage />} />
+          {...createDualLanguageRoutes("/oahu", <OahuHome />)}
+          {...createDualLanguageRoutes("/oahu-calculator", <OahuCalculator />)}
+          {...createDualLanguageRoutes("/book-now-oahu", <OahuBooking />)}
+          {...createDualLanguageRoutes("/oahu/move-out-cleaning-services", <MoveOutCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/standard-cleaning-services", <StandardCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/deep-cleaning-services", <DeepCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/airbnb-cleaning-services", <AirbnbCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/post-construction-cleaning-services", <PostConstructionCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/church-cleaning", <ChurchCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/data-center-cleaning", <DataCenterCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/factory-cleaning", <FactoryCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/government-facility-cleaning", <GovernmentFacilityCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/gym-cleaning", <GymCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/industrial-cleaning", <IndustrialCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/medical-office-cleaning", <MedicalOfficeCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/restaurant-cleaning", <RestaurantCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/retail-cleaning", <RetailCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/school-cleaning", <SchoolCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/showroom-cleaning", <ShowroomCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/warehouse-cleaning", <WarehouseCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/oahu/salon-spa-cleaning", <SalonSpaCleaningOahuPage />)}
+          {...createDualLanguageRoutes("/south-florida/post-construction-cleaning-services", <PostConstructionCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/standard-cleaning-services", <StandardCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/deep-cleaning-services", <DeepCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/move-out-cleaning-services", <MoveOutCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/airbnb-cleaning-services", <AirbnbCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/church-cleaning", <ChurchCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/data-center-cleaning", <DataCenterCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/factory-cleaning", <FactoryCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/government-facility-cleaning", <GovernmentFacilityCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/gym-cleaning", <GymCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/industrial-cleaning", <IndustrialCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/medical-office-cleaning", <MedicalOfficeCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/restaurant-cleaning", <RestaurantCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/retail-cleaning", <RetailCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/school-cleaning", <SchoolCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/showroom-cleaning", <ShowroomCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/warehouse-cleaning", <WarehouseCleaningSouthFloridaPage />)}
+          {...createDualLanguageRoutes("/south-florida/salon-spa-cleaning", <SalonSpaCleaningSouthFloridaPage />)}
           
           {/* Maui Routes */}
-          <Route path="/maui" element={<MauiHome />} />
-          <Route path="/maui-calculator" element={<MauiCalculator />} />
-          <Route path="/book-now-maui" element={<MauiBooking />} />
-          <Route path="/maui/post-construction-cleaning-services" element={<PostConstructionCleaningMauiPage />} />
-          <Route path="/maui/move-out-cleaning-services" element={<MoveOutCleaningMauiPage />} />
-        <Route path="/maui/deep-cleaning-services" element={<DeepCleaningMauiPage />} />
-        <Route path="/maui/standard-cleaning-services" element={<StandardCleaningMauiPage />} />
-          <Route path="/maui/airbnb-cleaning-services" element={<AirbnbCleaningMauiPage />} />
-          <Route path="/maui/church-cleaning" element={<ChurchCleaningMauiPage />} />
-          <Route path="/maui/data-center-cleaning" element={<DataCenterCleaningMauiPage />} />
-          <Route path="/maui/factory-cleaning" element={<FactoryCleaningMauiPage />} />
-          <Route path="/maui/government-facility-cleaning" element={<GovernmentFacilityCleaningMauiPage />} />
-          <Route path="/maui/gym-cleaning" element={<GymCleaningMauiPage />} />
-          <Route path="/maui/industrial-cleaning" element={<IndustrialCleaningMauiPage />} />
-          <Route path="/maui/medical-office-cleaning" element={<MedicalOfficeCleaningMauiPage />} />
-          <Route path="/maui/restaurant-cleaning" element={<RestaurantCleaningMauiPage />} />
-          <Route path="/maui/retail-cleaning" element={<RetailCleaningMauiPage />} />
-          <Route path="/maui/school-cleaning" element={<SchoolCleaningMauiPage />} />
-          <Route path="/maui/showroom-cleaning" element={<ShowroomCleaningMauiPage />} />
-          <Route path="/maui/warehouse-cleaning" element={<WarehouseCleaningMauiPage />} />
-          <Route path="/maui/salon-spa-cleaning" element={<SalonSpaCleaningMauiPage />} />
+          {...createDualLanguageRoutes("/maui", <MauiHome />)}
+          {...createDualLanguageRoutes("/maui-calculator", <MauiCalculator />)}
+          {...createDualLanguageRoutes("/book-now-maui", <MauiBooking />)}
+          {...createDualLanguageRoutes("/maui/post-construction-cleaning-services", <PostConstructionCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/move-out-cleaning-services", <MoveOutCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/deep-cleaning-services", <DeepCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/standard-cleaning-services", <StandardCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/airbnb-cleaning-services", <AirbnbCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/church-cleaning", <ChurchCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/data-center-cleaning", <DataCenterCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/factory-cleaning", <FactoryCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/government-facility-cleaning", <GovernmentFacilityCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/gym-cleaning", <GymCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/industrial-cleaning", <IndustrialCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/medical-office-cleaning", <MedicalOfficeCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/restaurant-cleaning", <RestaurantCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/retail-cleaning", <RetailCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/school-cleaning", <SchoolCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/showroom-cleaning", <ShowroomCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/warehouse-cleaning", <WarehouseCleaningMauiPage />)}
+          {...createDualLanguageRoutes("/maui/salon-spa-cleaning", <SalonSpaCleaningMauiPage />)}
           
           {/* Columbus Ohio Routes */}
-          <Route path="/columbus-ohio" element={<ColumbusHome />} />
-          <Route path="/columbus-ohio-calculator" element={<ColumbusCalculator />} />
-          <Route path="/book-now-columbus-ohio" element={<ColumbusBooking />} />
-          <Route path="/columbus-ohio/standard-cleaning-services" element={<StandardCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/deep-cleaning-services" element={<DeepCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/move-out-cleaning-services" element={<MoveOutCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/post-construction-cleaning-services" element={<PostConstructionCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/airbnb-cleaning-services" element={<AirbnbCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/church-cleaning" element={<ChurchCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/data-center-cleaning" element={<DataCenterCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/factory-cleaning" element={<FactoryCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/government-facility-cleaning" element={<GovernmentFacilityCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/gym-cleaning" element={<GymCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/industrial-cleaning" element={<IndustrialCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/medical-office-cleaning" element={<MedicalOfficeCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/restaurant-cleaning" element={<RestaurantCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/retail-cleaning" element={<RetailCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/school-cleaning" element={<SchoolCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/showroom-cleaning" element={<ShowroomCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/warehouse-cleaning" element={<WarehouseCleaningColumbusOhioPage />} />
-          <Route path="/columbus-ohio/salon-spa-cleaning" element={<SalonSpaCleaningColumbusOhioPage />} />
+          {...createDualLanguageRoutes("/columbus-ohio", <ColumbusHome />)}
+          {...createDualLanguageRoutes("/columbus-ohio-calculator", <ColumbusCalculator />)}
+          {...createDualLanguageRoutes("/book-now-columbus-ohio", <ColumbusBooking />)}
+          {...createDualLanguageRoutes("/columbus-ohio/standard-cleaning-services", <StandardCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/deep-cleaning-services", <DeepCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/move-out-cleaning-services", <MoveOutCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/post-construction-cleaning-services", <PostConstructionCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/airbnb-cleaning-services", <AirbnbCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/church-cleaning", <ChurchCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/data-center-cleaning", <DataCenterCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/factory-cleaning", <FactoryCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/government-facility-cleaning", <GovernmentFacilityCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/gym-cleaning", <GymCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/industrial-cleaning", <IndustrialCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/medical-office-cleaning", <MedicalOfficeCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/restaurant-cleaning", <RestaurantCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/retail-cleaning", <RetailCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/school-cleaning", <SchoolCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/showroom-cleaning", <ShowroomCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/warehouse-cleaning", <WarehouseCleaningColumbusOhioPage />)}
+          {...createDualLanguageRoutes("/columbus-ohio/salon-spa-cleaning", <SalonSpaCleaningColumbusOhioPage />)}
           
           {/* Dallas Routes */}
-          <Route path="/dallas" element={<DallasHome />} />
-          <Route path="/dallas-calculator" element={<DallasCalculator />} />
-          <Route path="/book-now-dallas" element={<DallasBooking />} />
-          <Route path="/dallas/post-construction-cleaning-services" element={<PostConstructionCleaningDallasPage />} />
-          <Route path="/dallas/airbnb-cleaning-services" element={<AirbnbCleaningDallasPage />} />
-          <Route path="/dallas/move-out-cleaning-services" element={<MoveOutCleaningDallasPage />} />
-          <Route path="/dallas/deep-cleaning-services" element={<DeepCleaningDallasPage />} />
-          <Route path="/dallas/standard-cleaning-services" element={<StandardCleaningDallasPage />} />
-          <Route path="/dallas/church-cleaning" element={<ChurchCleaningDallasPage />} />
-          <Route path="/dallas/data-center-cleaning" element={<DataCenterCleaningDallasPage />} />
-          <Route path="/dallas/factory-cleaning" element={<FactoryCleaningDallasPage />} />
-          <Route path="/dallas/government-facility-cleaning" element={<GovernmentFacilityCleaningDallasPage />} />
-          <Route path="/dallas/gym-cleaning" element={<GymCleaningDallasPage />} />
-          <Route path="/dallas/industrial-cleaning" element={<IndustrialCleaningDallasPage />} />
-          <Route path="/dallas/medical-office-cleaning" element={<MedicalOfficeCleaningDallasPage />} />
-          <Route path="/dallas/restaurant-cleaning" element={<RestaurantCleaningDallasPage />} />
-          <Route path="/dallas/retail-cleaning" element={<RetailCleaningDallasPage />} />
-          <Route path="/dallas/school-cleaning" element={<SchoolCleaningDallasPage />} />
-          <Route path="/dallas/showroom-cleaning" element={<ShowroomCleaningDallasPage />} />
-          <Route path="/dallas/warehouse-cleaning" element={<WarehouseCleaningDallasPage />} />
-          <Route path="/dallas/salon-spa-cleaning" element={<SalonSpaCleaningDallasPage />} />
+          {...createDualLanguageRoutes("/dallas", <DallasHome />)}
+          {...createDualLanguageRoutes("/dallas-calculator", <DallasCalculator />)}
+          {...createDualLanguageRoutes("/book-now-dallas", <DallasBooking />)}
+          {...createDualLanguageRoutes("/dallas/post-construction-cleaning-services", <PostConstructionCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/airbnb-cleaning-services", <AirbnbCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/move-out-cleaning-services", <MoveOutCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/deep-cleaning-services", <DeepCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/standard-cleaning-services", <StandardCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/church-cleaning", <ChurchCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/data-center-cleaning", <DataCenterCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/factory-cleaning", <FactoryCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/government-facility-cleaning", <GovernmentFacilityCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/gym-cleaning", <GymCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/industrial-cleaning", <IndustrialCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/medical-office-cleaning", <MedicalOfficeCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/restaurant-cleaning", <RestaurantCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/retail-cleaning", <RetailCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/school-cleaning", <SchoolCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/showroom-cleaning", <ShowroomCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/warehouse-cleaning", <WarehouseCleaningDallasPage />)}
+          {...createDualLanguageRoutes("/dallas/salon-spa-cleaning", <SalonSpaCleaningDallasPage />)}
           
           {/* Hiring Routes */}
-          <Route path="/hiring-req" element={<HiringRequirements />} />
-          <Route path="/hiring-application-new" element={<HiringApplicationNew />} />
-          <Route path="/sub-contractor-agreement" element={<SubContractorAgreement />} />
-          <Route path="/hiring-application/cleaning-supplies" element={<CleaningSupplies />} />
+          {...createDualLanguageRoutes("/hiring-req", <HiringRequirements />)}
+          {...createDualLanguageRoutes("/hiring-application-new", <HiringApplicationNew />)}
+          {...createDualLanguageRoutes("/sub-contractor-agreement", <SubContractorAgreement />)}
+          {...createDualLanguageRoutes("/hiring-application/cleaning-supplies", <CleaningSupplies />)}
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          {...createDualLanguageRoutes("*", <NotFound />)}
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
