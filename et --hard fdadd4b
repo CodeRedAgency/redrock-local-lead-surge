@@ -1,0 +1,82 @@
+[33ma97b47f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Ensure safe string usage in map and filter operations.
+[33mb308f3d[m Enhance type safety and logging for toLowerCase usage in Blog.tsx
+[33m79b7610[m Add logging and type checks for toLowerCase usage
+[33mb2718c6[m Ensure robust type checking before toLowerCase calls
+[33md5fd7c1[m Fix toLowerCase errors with type checking
+[33m0c3adb5[m Add Microsoft Clarity tracking code
+[33m1614cd6[m chore: add terser as a development dependency
+[33md658036[m fix: correct regex source pattern in vercel.json for image headers
+[33m6794dc0[m fix: move <noscript> to <body> for build compliance
+[33mfb96d46[m fix(hero): use looser line height so letters are not cut off in homepage headline
+[33m01e5ebd[m i18n: add language switchers to all location navs; seo: hreflang + canonical/og on core and blog pages; sitemap: add EN/ES routes and reference in robots
+[33m44845b5[m feat: generate Vercel redirects from CSV via script
+[33madfaf9a[m Add SEO-optimized blog post: Nature's Air Purifiers - Best Plants for Cleaner Indoor Air with service tie-ins and metadata
+[33m04505a3[m chore: add Industrial & Restaurant links to Commercial Cleaning menu (desktop+mobile)
+[33m0302502[m feat: add top-level Restaurant Cleaning page and route (/restaurant-cleaning)
+[33m7fe9fd3[m feat: add top-level Industrial Cleaning page and route (/industrial-cleaning)
+[33m9bde07c[m Add three new SEO-optimized blog posts: Science of Spring Cleaning, Carpet Cleaning for Flea Infestation, and update Minimize Housework Time post
+[33m2dec7ba[m Update App.tsx routing for move-out cleaning checklist blog post
+[33me2573d0[m Update blog post dates and images, add move-out cleaning checklist route
+[33m93cd5f7[m Add fun spring cleaning party blog post with deep cleaning service integration
+[33mce3e738[m Add comprehensive health code violations blog post with commercial cleaning service integration
+[33m1f1759a[m Replace blog article images with unique, relevant Unsplash photos for each topic
+[33m6011414[m Add preview images to blog article cards with hover effects
+[33m3966801[m Add comprehensive Airbnb Bedding Management blog post with SEO optimization and service integration
+[33me16b36c[m Simplify SubContractor Agreement signature - replace canvas with typed name consent (fixes Formspree file upload issue)
+[33mfdadd4b[m Fix SubContractor Agreement form - remove file upload (Formspree free plan doesn't support files), use base64 text instead
+[33m6e29102[m Fix syntax errors in booking navigation components - add missing closing div tags
+[33m3b0a19b[m Simplify booking page navigation to show only logo and CTA buttons
+[33mc595394[m Fix commercial cleaning calculator to link to commercial quote pages instead of residential calculators
+[33mee7f4f8[m Add local phone number banner to all location navigation pages
+[33ma55243b[m Reorder navigation menu: move About after Pricing and before Contact
+[33m5e0621a[m Performance optimizations: WebP images, code splitting, compression, caching headers
+[33m13a7b4a[m Add local SEO to commercial cleaning menu items for Columbus and Dallas
+[33mbaf183c[m Replace Pricing link with calculator links on commercial cleaning pages
+[33m892359c[m Add ScrollToTop component for better navigation UX
+[33m6a430f4[m COMPLETE: Update all commercial cleaning buttons across all locations
+[33m51c2f65[m Update commercial buttons: Maui complete (12 pages) + Columbus imports done (12 pages)
+[33mb1dbfed[m Remove image section from Maui factory cleaning page
+[33m885cce7[m Remove image sections above footer from all commercial cleaning service pages across all locations
+[33m1525174[m Update commercial cleaning buttons: South Florida (13) + Oahu (12) + Maui data-center
+[33mafb74cf[m Update Oahu industrial and restaurant cleaning CTAs: swap button order, prioritize phone call
+[33m6a90e96[m Improve residential cleaning pages: make 'Get Your Free Quote' button more visible and remove image section above footer
+[33m8939bcf[m Replace Commercial Cleaning card with Move Out Cleaning card across all 6 location home pages
+[33m0fef597[m Update commercial cleaning page buttons for all locations
+[33m38d0675[m Replace all /book-now-honolulu URLs with /book-now-oahu across 6 files
+[33mfe0fd1e[m Update Las Vegas navigation: all commercial cleaning services now display 'in Las Vegas'
+[33m8de8593[m Fix Las Vegas navigation selector and standardize booking URLs
+[33m784ccd8[m Fix Las Vegas commercial CTAs to /commercial-quote?location=las-vegas across all service pages
+[33mbdd7c08[m Columbus Ohio: update commercial CTAs to /commercial-quote?location=columbus-ohio; leave residential book-now pages unchanged
+[33mcd28393[m Update Oahu, Maui, and Dallas commercial CTAs to /commercial-quote with location
+[33m3d1a9fc[m Update commercial local page CTAs to /commercial-quote with location across locations; update South Florida and Oahu pages
+[33m5c6e500[m Add warehouse and salon-spa cleaning pages, fix icons and URLs, integrate Formspree for hiring form, update navigation menu titles
+[33m2f89c25[m chore(CTAs): change Schedule/Quote CTAs on local commercial pages to /commercial-quote with location param (South Florida church, Oahu gym, Las Vegas school)
+[33m054ef5f[m fix(links): normalize internal URLs in 'Other Solutions' sections across general commercial pages (factory/church/data-center)
+[33m2a1318a[m fix(links): correct 'Our Other Commercial Cleaning Solutions' card URLs (add -services, remove trailing slashes) on church and data center pages
+[33m175ffce[m fix(agreement): make address/name fields editable by aligning input name attributes with state keys
+[33m95aaa6d[m chore(CTAs): update 'Get Your Free [Service] Cleaning Quote' links on all local commercial pages to /commercial-quote (with location param where applicable)
+[33mb7fc0d2[m chore(CTAs): point local South Florida commercial page CTAs to /commercial-quote instead of booking
+[33m0778d17[m feat(quote-cta): point commercial page CTAs to /commercial-quote (Get a Quote, Find/Select Location)
+[33m3884b70[m feat(estimator/cost): CTA links to /commercial-quote with prefilled params (type, sqft, location)
+[33m81a5a3c[m chore(quotes): add Open/Standard/Dense definitions under Step 2 facility selection
+[33m733dddd[m feat(quotes): improve Step 3 with slider + frequency cards; add SMS/TCR disclaimer on Step 4
+[33m8e616cd[m feat(quotes): add Commercial Quote Request page with prefill wizard and route
+[33m346a37e[m chore(estimator): clarify estimates use hourly averages per cleaner (national and local)
+[33m78a1fe2[m feat(estimator): add Commercial Cleaning Cost Estimator page, metadata, header/footer links, and route
+[33mbd78408[m feat(estimator): add Commercial Cleaning Time Estimator page, metadata, nav/footer links, and route
+[33mefc24ec[m feat(analytics): add Facebook Meta Pixel to index.html and prepare for conversion tracking
+[33mc1c191b[m Add Google Analytics tracking code
+[33m945ff3d[m Move location selector to mobile header (outside hamburger menu)
+[33m54e6e2b[m Add location selector to mobile navigation menu
+[33m4f13daf[m Reorganize footer services into categorized sections
+[33m3a5eb6c[m Fix Vercel deployment by converting to client-side SPA
+[33m28a52bc[m Remove vercel.json to simplify deployment
+[33m5049f68[m Fix Vercel deployment error by removing invalid functions configuration
+[33mfff4861[m Fix Oahu booking page route
+[33m93eba43[m Fix booking page routes for Las Vegas and South Florida
+[33mb286ece[m Fix vercel.json configuration conflict
+[33ma73a411[m Remove deprecated builds section from vercel.json
+[33m86f3e59[m Update hero section messaging to be more local customer-friendly
+[33m37631ad[m Major updates: Enhanced hiring system, updated legal pages, increased logo size, and added new service pages
+[33m34c0ff6[m Add Showroom Cleaning page for South Florida with full routing and navigation
+[33md34a512[m Add School Cleaning page for South Florida with full routing and navigat
