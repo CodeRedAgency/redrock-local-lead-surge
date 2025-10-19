@@ -132,6 +132,7 @@ const Blog = () => {
           : false;
 
       const text = `${article.title} ${article.excerpt}`;
+      console.log(`Filtering article: ${text}`);
       const matchesQuery = query && typeof query === 'string' ? text.toLowerCase().includes(query.toLowerCase()) : true;
       return matchesCategory && matchesQuery;
     });

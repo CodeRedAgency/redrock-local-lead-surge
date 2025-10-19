@@ -74,7 +74,7 @@ export default function CommercialQuotePage() {
         salon: "Salon/Spa",
         other: "Other",
       };
-      const val = typeof typeParam === 'string' ? map[typeParam.toLowerCase()] : undefined;
+      const val = map[safeToLowerLogger(typeParam, 'typeParam')];
       if (val) {
         setFacility(val);
         changed = true;
@@ -94,7 +94,7 @@ export default function CommercialQuotePage() {
         "columbus-ohio": "Columbus, Ohio",
         "columbus": "Columbus, Ohio",
       };
-      const loc = typeof locationParam === 'string' ? locMap[locationParam.toLowerCase()] : undefined;
+      const loc = locMap[safeToLowerLogger(locationParam, 'locationParam')];
       if (loc) {
         setLocation(loc);
         changed = true;
@@ -360,5 +360,15 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
     </>
   );
 }
+
+// Add logging and ensure type checks
+const safeToLowerLogger = (str: string, context: string) => {
+  if (typeof str === 'string') {
+    return str.toLowerCase();
+  } else {
+    console.warn(`Non-string value: ${str} in ${context}`);
+    return '';
+  }
+};
 
 

@@ -282,7 +282,7 @@ export default function CommercialCleaningCostEstimatorPage() {
                               <SelectValue placeholder="Select a location" />
                             </SelectTrigger>
                             <SelectContent>
-                              {Object.keys(HOURLY_RATES).filter((k) => k !== 'National').map((loc) => (
+                              {Object.keys(HOURLY_RATES).filter((k) => typeof k === 'string' && k !== 'National').map((loc) => (
                                 <SelectItem key={loc} value={loc}>{loc}</SelectItem>
                               ))}
                             </SelectContent>
