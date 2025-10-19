@@ -74,7 +74,7 @@ export default function CommercialQuotePage() {
         salon: "Salon/Spa",
         other: "Other",
       };
-      const val = map[typeParam.toLowerCase()];
+      const val = typeof typeParam === 'string' ? map[typeParam.toLowerCase()] : undefined;
       if (val) {
         setFacility(val);
         changed = true;
@@ -94,7 +94,7 @@ export default function CommercialQuotePage() {
         "columbus-ohio": "Columbus, Ohio",
         "columbus": "Columbus, Ohio",
       };
-      const loc = locMap[locationParam.toLowerCase()];
+      const loc = typeof locationParam === 'string' ? locMap[locationParam.toLowerCase()] : undefined;
       if (loc) {
         setLocation(loc);
         changed = true;

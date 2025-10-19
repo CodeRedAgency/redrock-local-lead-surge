@@ -127,9 +127,12 @@ const Blog = () => {
     return sortedArticles.filter((article) => {
       const matchesCategory = selectedCategory === "all"
         ? true
-        : (article as any).category?.toLowerCase() === selectedCategory.toLowerCase();
-      const text = `${article.title} ${article.excerpt}`.toLowerCase();
-      const matchesQuery = query ? text.includes(query.toLowerCase()) : true;
+        : typeof article.category === 'string' && typeof selectedCategory === 'string'
+          ? article.category.toLowerCase() === selectedCategory.toLowerCase()
+          : false;
+
+      const text = `${article.title} ${article.excerpt}`;
+      const matchesQuery = query && typeof query === 'string' ? text.toLowerCase().includes(query.toLowerCase()) : true;
       return matchesCategory && matchesQuery;
     });
   }, [sortedArticles, selectedCategory, query]);
