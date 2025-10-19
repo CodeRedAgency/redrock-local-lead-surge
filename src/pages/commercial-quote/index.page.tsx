@@ -74,7 +74,7 @@ export default function CommercialQuotePage() {
         salon: "Salon/Spa",
         other: "Other",
       };
-      const val = typeof typeParam === 'string' ? map[typeParam.toLowerCase()] : undefined;
+      const val = map[safeToLowerCase(typeParam)];
       if (val) {
         setFacility(val);
         changed = true;
@@ -94,7 +94,7 @@ export default function CommercialQuotePage() {
         "columbus-ohio": "Columbus, Ohio",
         "columbus": "Columbus, Ohio",
       };
-      const loc = typeof locationParam === 'string' ? locMap[locationParam.toLowerCase()] : undefined;
+      const loc = locMap[safeToLowerCase(locationParam)];
       if (loc) {
         setLocation(loc);
         changed = true;
@@ -360,5 +360,8 @@ Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }
     </>
   );
 }
+
+// Ensure type checks for string before toLowerCase usage
+const safeToLowerCase = (str: string) => typeof str === 'string' ? str.toLowerCase() : '';
 
 
