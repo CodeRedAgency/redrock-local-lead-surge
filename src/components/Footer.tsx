@@ -64,7 +64,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         {/* Enhanced Navigation */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Home & Hiring Section */}
             <div className="space-y-6">
               {/* Home */}
@@ -166,116 +166,119 @@ export const Footer = () => {
               </div>
             </div>
 
-            {/* Commercial Services */}
-            <div className="space-y-4">
-              <button
-                onClick={() => setIsCommercialOpen(!isCommercialOpen)}
-                className="flex items-center justify-between w-full text-xl font-bold text-primary mb-4 hover:text-primary-glow transition-colors group"
-                aria-expanded={isCommercialOpen}
-              >
-                <span>{t("footer.commercial.title", { defaultValue: "Commercial Services" })}</span>
-                <ChevronDown 
-                  className={`w-5 h-5 transition-transform duration-300 ${isCommercialOpen ? 'rotate-180' : ''}`}
-                />
-              </button>
-              <div className={`space-y-3 overflow-hidden transition-all duration-300 ${isCommercialOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                <Link 
-                  to={getLanguagePrefix() + "/commercial-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+            {/* Commercial Services & Resources */}
+            <div className="space-y-6">
+              {/* Commercial Services */}
+              <div className="space-y-4">
+                <button
+                  onClick={() => setIsCommercialOpen(!isCommercialOpen)}
+                  className="flex items-center justify-between w-full text-xl font-bold text-primary mb-4 hover:text-primary-glow transition-colors group"
+                  aria-expanded={isCommercialOpen}
                 >
-                  {t("footer.commercial.main", { defaultValue: "Commercial Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/church-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.church", { defaultValue: "Church Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/data-center-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.dataCenter", { defaultValue: "Data Center Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/factory-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.factory", { defaultValue: "Factory Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/government-facility-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.government", { defaultValue: "Government Facility" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/gym-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.gym", { defaultValue: "Gym Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/medical-office-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.medical", { defaultValue: "Medical Office" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/retail-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.retail", { defaultValue: "Retail Store" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/school-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.school", { defaultValue: "School Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/showroom-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.showroom", { defaultValue: "Showroom Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/warehouse-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.warehouse", { defaultValue: "Warehouse Cleaning" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/salon-spa-cleaning"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.commercial.salonSpa", { defaultValue: "Salon & Spa" })}
-                </Link>
+                  <span>{t("footer.commercial.title", { defaultValue: "Commercial Services" })}</span>
+                  <ChevronDown 
+                    className={`w-5 h-5 transition-transform duration-300 ${isCommercialOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+                <div className={`space-y-3 overflow-hidden transition-all duration-300 ${isCommercialOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                  <Link 
+                    to={getLanguagePrefix() + "/commercial-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.main", { defaultValue: "Commercial Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/church-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.church", { defaultValue: "Church Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/data-center-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.dataCenter", { defaultValue: "Data Center Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/factory-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.factory", { defaultValue: "Factory Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/government-facility-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.government", { defaultValue: "Government Facility" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/gym-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.gym", { defaultValue: "Gym Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/medical-office-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.medical", { defaultValue: "Medical Office" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/retail-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.retail", { defaultValue: "Retail Store" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/school-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.school", { defaultValue: "School Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/showroom-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.showroom", { defaultValue: "Showroom Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/warehouse-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.warehouse", { defaultValue: "Warehouse Cleaning" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/salon-spa-cleaning"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.commercial.salonSpa", { defaultValue: "Salon & Spa" })}
+                  </Link>
+                </div>
               </div>
-            </div>
-  
-            {/* Resources Section */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">{t("footer.resources.title", { defaultValue: "Resources" })}</h3>
-              <div className="space-y-3">
-                <Link 
-                  to={getLanguagePrefix() + "/blog"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.resources.blog", { defaultValue: "Blog" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/commercial-cleaning-cost-estimator"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.resources.costEstimator", { defaultValue: "Commercial Cleaning Cost Estimator" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/commercial-cleaning-time-estimator"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.resources.timeEstimator", { defaultValue: "Commercial Cleaning Time Estimator" })}
-                </Link>
+
+              {/* Resources Section */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-primary mb-4">{t("footer.resources.title", { defaultValue: "Resources" })}</h3>
+                <div className="space-y-3">
+                  <Link 
+                    to={getLanguagePrefix() + "/blog"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.resources.blog", { defaultValue: "Blog" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/commercial-cleaning-cost-estimator"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.resources.costEstimator", { defaultValue: "Commercial Cleaning Cost Estimator" })}
+                  </Link>
+                  <Link 
+                    to={getLanguagePrefix() + "/commercial-cleaning-time-estimator"} 
+                    className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                  >
+                    {t("footer.resources.timeEstimator", { defaultValue: "Commercial Cleaning Time Estimator" })}
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
