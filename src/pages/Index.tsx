@@ -67,14 +67,8 @@ const Index = () => {
                 <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-fade-in font-medium" style={{ animationDelay: "0.2s" }}>
                   {t("home.subtitle", { defaultValue: "Experimenta la excelencia en servicios de limpieza residencial, comercial y de alquiler vacacional en múltiples ubicaciones" })}
                 </p>
-                <div className="pt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-                  <p className="text-lg md:text-xl font-semibold mb-6 text-foreground/95 bg-background/20 backdrop-blur-sm rounded-full py-3 px-6 inline-block border border-primary/20">
-                    {t("home.selectLocation", { defaultValue: "Selecciona tu ubicación para empezar" })}
-                  </p>
-                </div>
-                
                 {/* Service Type Indicators */}
-                <div className="flex flex-wrap justify-center gap-4 mt-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <div className="flex flex-wrap justify-center gap-4 pt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
                   <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/20">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                     <span className="text-sm font-medium text-foreground/90">{t("home.badges.residential", { defaultValue: "Residencial" })}</span>

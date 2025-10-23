@@ -118,6 +118,10 @@
     "subtitle": "Excelencia en limpieza residencial, comercial y de alquiler vacacional en múltiples ubicaciones",
     "selectLocation": "Selecciona tu ubicación para comenzar",
     "badges": { "residential": "Residencial", "commercial": "Comercial", "vacationRental": "Alquiler vacacional" },
+    "locationCards": {
+      "title": "Selecciona tu ubicación",
+      "subtitle": "Elige tu área de servicio para comenzar con servicios de limpieza premium"
+    },
     "difference": {
       "badge": "La diferencia de Red Rock",
       "title": "¿Por qué elegir Red Rock Cleaning?",

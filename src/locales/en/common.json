@@ -26,6 +26,10 @@
     "subtitle": "Experience excellence in residential, commercial, and vacation rental cleaning services across multiple locations",
     "selectLocation": "Select Your Location to Get Started",
     "badges": { "residential": "Residential", "commercial": "Commercial", "vacationRental": "Vacation Rental" },
+    "locationCards": {
+      "title": "Select Your Location",
+      "subtitle": "Choose your service area to get started with premium cleaning services"
+    },
     "difference": {
       "badge": "The Red Rock Difference",
       "title": "Why Choose Red Rock Cleaning?",

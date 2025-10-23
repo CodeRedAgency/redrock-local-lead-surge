@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 const locations = [
   {
@@ -66,13 +67,17 @@ const locations = [
 ];
 
 export const LocationCards = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Select Your Location</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+            {t("home.locationCards.title", { defaultValue: "Select Your Location" })}
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose your service area to get started with premium cleaning services
+            {t("home.locationCards.subtitle", { defaultValue: "Choose your service area to get started with premium cleaning services" })}
           </p>
         </div>
         
