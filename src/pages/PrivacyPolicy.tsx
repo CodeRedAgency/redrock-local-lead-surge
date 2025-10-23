@@ -1,13 +1,15 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const PrivacyPolicy = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Red Rock Cleans</title>
-        <meta name="description" content="Review the Red Rock Cleans privacy policy. Learn how we collect, use, and protect your personal information when you use our website and services." />
+        <title>{t("pageTitles.privacy", { defaultValue: "Privacy Policy | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("pageDescriptions.privacy", { defaultValue: "Review the Red Rock Cleans privacy policy. Learn how we collect, use, and protect your personal information when you use our website and services." })} />
         <link rel="canonical" href="/privacy-policy-page" />
       </Helmet>
       
@@ -17,7 +19,7 @@ const PrivacyPolicy = () => {
         <main className="flex-grow py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-5xl font-bold mb-8 text-center">Privacy Policy Page</h1>
+              <h1 className="text-5xl font-bold mb-8 text-center">{t("pageHeadings.privacy.h1", { defaultValue: "Privacy Policy" })}</h1>
               
               <div className="prose prose-lg max-w-none">
                 <h2 className="text-3xl font-bold mb-6">Red Rock Cleaning – Privacy Policy</h2>

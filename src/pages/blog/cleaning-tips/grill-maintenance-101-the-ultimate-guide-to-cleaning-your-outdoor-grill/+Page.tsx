@@ -11,7 +11,7 @@ const GrillMaintenanceGuidePage = () => {
   return (
     <>
       <Helmet>
-        <title>Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans</title>
+        <title>Grill Cleaning & Maintenance Guide | Red Rock Cleans</title>
         <meta name="description" content="Master grill maintenance with our ultimate guide. Learn how to clean your outdoor grill for better taste, longer life, and a healthier cooking experience." />
       </Helmet>
       <Hreflang />

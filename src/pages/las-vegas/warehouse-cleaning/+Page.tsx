@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { LasVegasNavigation } from "@/components/LasVegasNavigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
@@ -162,6 +163,10 @@ const WarehouseCleaningLasVegasPage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Warehouse Cleaning Las Vegas | Red Rock Cleans</title>
+        <meta name="description" content="Professional warehouse cleaning services in Las Vegas. Red Rock Cleans provides industrial cleaning for logistics facilities and distribution centers. Call (702) 508-0098!" />
+      </Helmet>
       <LasVegasNavigation />
       
       <main className="flex-1">

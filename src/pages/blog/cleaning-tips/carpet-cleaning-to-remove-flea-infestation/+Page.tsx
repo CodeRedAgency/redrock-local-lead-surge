@@ -11,7 +11,7 @@ const CarpetCleaningFleaInfestationPage = () => {
   return (
     <>
       <Helmet>
-        <title>Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans</title>
+        <title>Remove Fleas from Carpets: Expert Guide | Red Rock Cleans</title>
         <meta name="description" content="Dealing with a flea infestation? Our step-by-step guide shows you how professional carpet cleaning can help eradicate fleas from your home for good." />
       </Helmet>
       <Hreflang />

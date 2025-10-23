@@ -37,7 +37,7 @@ const ColumbusBooking = () => {
   return (
     <>
       <Helmet>
-        <title>Book Now - Columbus Ohio Cleaning Services | Red Rock Cleaning</title>
+        <title>Book Columbus Cleaning Services | Red Rock Cleans</title>
         <meta name="description" content="Book your professional cleaning service in Columbus Ohio. Easy online booking for house and office cleaning." />
       </Helmet>
       <Hreflang />

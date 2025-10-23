@@ -4,13 +4,15 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroCommercial from "@/assets/hero-commercial.jpg";
+import { useTranslation } from "react-i18next";
 
 const CommercialCleaning = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Commercial Office Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Professional commercial cleaning services for offices, retail spaces, and businesses. Maintain a pristine workplace environment." />
+        <title>{t("pageTitles.commercial", { defaultValue: "Commercial Office Cleaning Services | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.commercial", { defaultValue: "Professional commercial cleaning services for offices, retail spaces, and businesses. Maintain a pristine workplace environment." })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
@@ -26,9 +28,9 @@ const CommercialCleaning = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Commercial Cleaning Services</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("pageHeadings.commercial.h1", { defaultValue: "Commercial Cleaning Services" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Professional cleaning solutions for businesses of all sizes
+                {t("pageHeadings.commercial.subtitle", { defaultValue: "Professional cleaning solutions for businesses of all sizes" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
                 <Link to="/commercial-quote">Get a Quote</Link>

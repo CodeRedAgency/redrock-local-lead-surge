@@ -1,13 +1,15 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const TermsAndConditions = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Terms and Conditions | Red Rock Cleans</title>
-        <meta name="description" content="Review the terms and conditions for using the services provided by Red Rock Cleans. Please read these terms carefully before using our website or booking our services." />
+        <title>{t("pageTitles.terms", { defaultValue: "Terms and Conditions | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("pageDescriptions.terms", { defaultValue: "Review the terms and conditions for using the services provided by Red Rock Cleans. Please read these terms carefully before using our website or booking our services." })} />
         <link rel="canonical" href="/terms-and-conditions-page" />
       </Helmet>
       
@@ -17,7 +19,7 @@ const TermsAndConditions = () => {
         <main className="flex-grow py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-5xl font-bold mb-8 text-center">Terms and Conditions Page</h1>
+              <h1 className="text-5xl font-bold mb-8 text-center">{t("pageHeadings.terms.h1", { defaultValue: "Terms and Conditions" })}</h1>
               
               <div className="prose prose-lg max-w-none">
                 <h2 className="text-3xl font-bold mb-6">Red Rock Cleaning – Terms and Conditions</h2>

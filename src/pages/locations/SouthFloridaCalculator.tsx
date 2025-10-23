@@ -11,7 +11,7 @@ const SouthFloridaCalculator = () => {
   return (
     <>
       <Helmet>
-        <title>Get a Quote - South Florida Cleaning Services | Red Rock Cleaning</title>
+        <title>Free South Florida Cleaning Quote | Red Rock Cleans</title>
         <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house cleaning in South Florida, Weston, and Fort Lauderdale." />
       </Helmet>
       <Hreflang />

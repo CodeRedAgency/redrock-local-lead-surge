@@ -86,16 +86,27 @@ export const GeneralNavigation = () => {
       </div>
 
       {/* Language Switcher for Desktop */}
-      <div className="hidden md:flex items-center space-x-2 absolute top-2 right-4">
-        <Select onValueChange={switchLanguage} className="w-32">
-          <SelectTrigger>
-            <SelectValue placeholder="Select Language" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="en">English</SelectItem>
-            <SelectItem value="es">Spanish</SelectItem>
-          </SelectContent>
-        </Select>
+      <div className="hidden md:flex items-center space-x-2 absolute top-2 right-4 z-50">
+        <Link 
+          to={location.pathname.startsWith('/es') ? location.pathname.replace(/^\/es/, '') || '/' : location.pathname}
+          className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${
+            !location.pathname.startsWith('/es') 
+              ? 'bg-primary text-primary-foreground' 
+              : 'text-slate-300 hover:text-primary hover:bg-primary/10'
+          }`}
+        >
+          EN
+        </Link>
+        <Link 
+          to={location.pathname.startsWith('/es') ? location.pathname : `/es${location.pathname}`}
+          className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${
+            location.pathname.startsWith('/es') 
+              ? 'bg-primary text-primary-foreground' 
+              : 'text-slate-300 hover:text-primary hover:bg-primary/10'
+          }`}
+        >
+          ES
+        </Link>
       </div>
 
       {/* Main Navigation */}
@@ -108,29 +119,29 @@ export const GeneralNavigation = () => {
 
           {/* Mobile Location Selector & Language Switcher */}
           <div className="md:hidden flex items-center space-x-2">
-            <MapPin className="w-4 h-4 text-primary" />
-            <Select value={location.pathname} onValueChange={handleLocationChange}>
-              <SelectTrigger className="w-32 text-xs border-primary/20">
-                <SelectValue>{getCurrentLocationName()}</SelectValue>
-              </SelectTrigger>
-              <SelectContent>
-                {locations.map((locationItem) => (
-                  <SelectItem key={locationItem.path} value={locationItem.path}>
-                    {locationItem.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            {/* Language Switcher for Mobile */}
-            <Select onValueChange={switchLanguage} className="w-32">
-              <SelectTrigger>
-                <SelectValue placeholder="Select Language" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="en">English</SelectItem>
-                <SelectItem value="es">Spanish</SelectItem>
-              </SelectContent>
-            </Select>
+            {/* Language Toggle for Mobile */}
+            <div className="flex items-center space-x-1 bg-slate-100 rounded-md p-1">
+              <Link 
+                to={location.pathname.startsWith('/es') ? location.pathname.replace(/^\/es/, '') || '/' : location.pathname}
+                className={`px-2 py-1 rounded text-xs font-medium transition-all ${
+                  !location.pathname.startsWith('/es') 
+                    ? 'bg-primary text-primary-foreground' 
+                    : 'text-slate-600'
+                }`}
+              >
+                EN
+              </Link>
+              <Link 
+                to={location.pathname.startsWith('/es') ? location.pathname : `/es${location.pathname}`}
+                className={`px-2 py-1 rounded text-xs font-medium transition-all ${
+                  location.pathname.startsWith('/es') 
+                    ? 'bg-primary text-primary-foreground' 
+                    : 'text-slate-600'
+                }`}
+              >
+                ES
+              </Link>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

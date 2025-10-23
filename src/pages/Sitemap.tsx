@@ -2,13 +2,15 @@ import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Sitemap = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Sitemap | Red Rock Cleaning</title>
-        <meta name="description" content="Browse our complete sitemap to find all Red Rock Cleaning pages and services." />
+        <title>{t("pageTitles.sitemap", { defaultValue: "Sitemap | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.sitemap", { defaultValue: "Browse our complete sitemap to find all Red Rock Cleaning pages and services." })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
@@ -17,7 +19,7 @@ const Sitemap = () => {
         <main className="flex-grow py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h1 className="text-5xl font-bold mb-12 text-center">Sitemap</h1>
+              <h1 className="text-5xl font-bold mb-12 text-center">{t("pageHeadings.sitemap.h1", { defaultValue: "Sitemap" })}</h1>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div>

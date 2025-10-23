@@ -11,7 +11,7 @@ const InkStainRemovalGuidePage = () => {
   return (
     <>
       <Helmet>
-        <title>Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans</title>
+        <title>Remove Ink Stains from Carpets: Expert Guide | Red Rock Cleans</title>
         <meta name="description" content="Don't panic over ink stains! Follow our step-by-step guide to effectively remove ink from carpets and learn when to call the professionals for stubborn spots." />
       </Helmet>
       <Hreflang />

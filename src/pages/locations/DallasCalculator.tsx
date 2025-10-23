@@ -11,7 +11,7 @@ const DallasCalculator = () => {
   return (
     <>
       <Helmet>
-        <title>Get a Quote - Dallas Cleaning Services | Red Rock Cleaning</title>
+        <title>Free Dallas Cleaning Quote | Red Rock Cleans</title>
         <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house and commercial cleaning in Dallas." />
       </Helmet>
       <Hreflang />

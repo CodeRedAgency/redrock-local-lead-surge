@@ -2,13 +2,15 @@ import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>About Us - Professional Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Learn about Red Rock Cleaning's commitment to excellence in residential and commercial cleaning services across multiple locations." />
+        <title>{t("pageTitles.about", { defaultValue: "About Red Rock Cleans | Professional Cleaning Services" })}</title>
+        <meta name="description" content={t("pageDescriptions.about", { defaultValue: "Learn about Red Rock Cleaning's commitment to excellence in residential and commercial cleaning services across multiple locations." })} />
       </Helmet>
       <Hreflang />
       
@@ -19,9 +21,9 @@ const AboutUs = () => {
           <section className="py-20 bg-gradient-to-b from-background to-muted/20">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center mb-12">
-                <h1 className="text-5xl font-bold mb-6">About Red Rock Cleaning</h1>
+                <h1 className="text-5xl font-bold mb-6">{t("pageHeadings.about.h1", { defaultValue: "About Red Rock Cleaning" })}</h1>
                 <p className="text-xl text-muted-foreground">
-                  Your trusted partner in professional cleaning services
+                  {t("pageHeadings.about.subtitle", { defaultValue: "Your trusted partner in professional cleaning services" })}
                 </p>
               </div>
 

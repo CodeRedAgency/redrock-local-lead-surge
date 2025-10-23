@@ -159,10 +159,12 @@ const Blog = () => {
       <Helmet>
         <title>
           {currentPage > 1
-            ? `Cleaning Tips & Advice Blog - Page ${currentPage} | Red Rock Cleaning`
-            : "Cleaning Tips & Advice Blog | Red Rock Cleaning"}
+            ? t("pageTitles.blogPage", { page: currentPage, defaultValue: `Cleaning Tips & Advice Blog - Page ${currentPage} | Red Rock Cleaning` })
+            : t("pageTitles.blog", { defaultValue: "Cleaning Tips & Advice Blog | Red Rock Cleaning" })}
         </title>
-        <meta name="description" content="Expert cleaning tips, advice, and guides from Red Rock Cleaning professionals. Learn how to maintain a cleaner, healthier home." />
+        <meta name="description" content={currentPage > 1 
+          ? t("pageDescriptions.blogPage", { page: currentPage, defaultValue: "Expert cleaning tips, advice, and guides from Red Rock Cleaning professionals. Learn how to maintain a cleaner, healthier home." })
+          : t("pageDescriptions.blog", { defaultValue: "Expert cleaning tips, advice, and guides from Red Rock Cleaning professionals. Learn how to maintain a cleaner, healthier home." })} />
       </Helmet>
       <Hreflang />
       

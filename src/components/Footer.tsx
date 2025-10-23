@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Youtube, ChevronDown } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Youtube, ChevronDown, Languages } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -48,12 +48,17 @@ const locationData = [
 ];
 
 export const Footer = () => {
+  const location = useLocation();
+  const isSpanish = location.pathname.startsWith('/es');
+  const currentPath = location.pathname.replace(/^\/es/, '') || '/';
+  const alternateLanguagePath = isSpanish ? currentPath : `/es${currentPath}`;
+  
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white mt-20">
       <div className="container mx-auto px-4">
         {/* Enhanced Navigation */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
             {/* Home Section */}
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-primary mb-4">Home</h3>
@@ -212,6 +217,61 @@ export const Footer = () => {
               </div>
             </div>
 
+            {/* Language Section */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <Languages className="w-5 h-5" />
+                Language
+              </h3>
+              <div className="space-y-3">
+                <Link 
+                  to={currentPath} 
+                  className={`block transition-colors duration-300 hover:translate-x-1 transform ${!isSpanish ? 'text-primary font-semibold' : 'text-slate-300 hover:text-primary'}`}
+                >
+                  🇺🇸 English
+                </Link>
+                <Link 
+                  to={alternateLanguagePath} 
+                  className={`block transition-colors duration-300 hover:translate-x-1 transform ${isSpanish ? 'text-primary font-semibold' : 'text-slate-300 hover:text-primary'}`}
+                >
+                  🇪🇸 Español
+                </Link>
+                <div className="mt-4 pt-4 border-t border-slate-700">
+                  <p className="text-sm text-slate-400 mb-2">Páginas en Español:</p>
+                  <Link 
+                    to="/es/" 
+                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
+                  >
+                    Inicio
+                  </Link>
+                  <Link 
+                    to="/es/about" 
+                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
+                  >
+                    Sobre Nosotros
+                  </Link>
+                  <Link 
+                    to="/es/blog" 
+                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
+                  >
+                    Blog
+                  </Link>
+                  <Link 
+                    to="/es/residential-cleaning" 
+                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
+                  >
+                    Limpieza Residencial
+                  </Link>
+                  <Link 
+                    to="/es/commercial-cleaning" 
+                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
+                  >
+                    Limpieza Comercial
+                  </Link>
+                </div>
+              </div>
+            </div>
+  
             {/* Resources & Hiring Section */}
             <div className="space-y-6">
               {/* Resources */}

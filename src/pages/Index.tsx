@@ -14,8 +14,8 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Red Rock Cleaning - Trusted Local Cleaning Experts</title>
-        <meta name="description" content="Professional cleaning services across South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas. Residential, commercial, and vacation rental cleaning." />
+        <title>{t("pageTitles.home", { defaultValue: "Red Rock Cleaning - Trusted Local Cleaning Experts" })}</title>
+        <meta name="description" content={t("pageDescriptions.home", { defaultValue: "Professional cleaning services across South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas. Residential, commercial, and vacation rental cleaning." })} />
         <script type="text/javascript">
           {`
               (function(c,l,a,r,i,t,y){

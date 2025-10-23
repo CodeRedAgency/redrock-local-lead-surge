@@ -3,13 +3,15 @@ import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { Check } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const StandardVsDeep = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Standard vs Deep Cleaning - What's the Difference? | Red Rock Cleaning</title>
-        <meta name="description" content="Understand the differences between standard and deep cleaning services to choose the right option for your home or business." />
+        <title>{t("pageTitles.standardVsDeep", { defaultValue: "Standard vs Deep Cleaning - What's the Difference? | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.standardVsDeep", { defaultValue: "Understand the differences between standard and deep cleaning services to choose the right option for your home or business." })} />
       </Helmet>
       <Hreflang />
       

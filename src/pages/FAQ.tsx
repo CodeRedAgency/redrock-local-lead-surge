@@ -7,13 +7,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useTranslation } from "react-i18next";
 
 const FAQ = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>FAQ - Frequently Asked Questions | Red Rock Cleaning</title>
-        <meta name="description" content="Find answers to common questions about our cleaning services, pricing, scheduling, and more." />
+        <title>{t("pageTitles.faq", { defaultValue: "FAQ - Frequently Asked Questions | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.faq", { defaultValue: "Find answers to common questions about our cleaning services, pricing, scheduling, and more." })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
@@ -22,9 +24,9 @@ const FAQ = () => {
         <main className="flex-grow py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-5xl font-bold mb-6 text-center">Frequently Asked Questions</h1>
+              <h1 className="text-5xl font-bold mb-6 text-center">{t("pageHeadings.faq.h1", { defaultValue: "Frequently Asked Questions" })}</h1>
               <p className="text-xl text-muted-foreground text-center mb-12">
-                Everything you need to know about our cleaning services
+                {t("pageHeadings.faq.subtitle", { defaultValue: "Everything you need to know about our cleaning services" })}
               </p>
 
               <Accordion type="single" collapsible className="space-y-4">

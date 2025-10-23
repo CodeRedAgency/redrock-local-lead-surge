@@ -4,13 +4,15 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroResidential from "@/assets/hero-residential.jpg";
+import { useTranslation } from "react-i18next";
 
 const ResidentialCleaning = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Residential House Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Professional residential cleaning services for your home. From regular maintenance to deep cleaning, we keep your house spotless." />
+        <title>{t("pageTitles.residential", { defaultValue: "Residential House Cleaning Services | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.residential", { defaultValue: "Professional residential cleaning services for your home. From regular maintenance to deep cleaning, we keep your house spotless." })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
@@ -26,9 +28,9 @@ const ResidentialCleaning = () => {
               <div className="absolute inset-0 bg-black/50" />
             </div>
             <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Residential Cleaning Services</h1>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("pageHeadings.residential.h1", { defaultValue: "Residential Cleaning Services" })}</h1>
               <p className="text-xl md:text-2xl mb-8">
-                Professional home cleaning that fits your lifestyle
+                {t("pageHeadings.residential.subtitle", { defaultValue: "Professional home cleaning that fits your lifestyle" })}
               </p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
                 <Link to="/">Get a Quote</Link>

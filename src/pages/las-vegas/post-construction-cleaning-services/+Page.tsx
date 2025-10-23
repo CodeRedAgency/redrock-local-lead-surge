@@ -376,7 +376,7 @@ const PostConstructionCleaningLasVegasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Post Construction Cleaning Service Las Vegas | Red Rock Cleans</title>
+        <title>Post Construction Cleaning Las Vegas | Red Rock Cleans</title>
         <meta name="description" content="Professional post construction cleaning service in Las Vegas. Red Rock Cleans handles all construction cleanup for new builds and renovations. Get your free, detailed quote today!" />
       </Helmet>
       <Hreflang />

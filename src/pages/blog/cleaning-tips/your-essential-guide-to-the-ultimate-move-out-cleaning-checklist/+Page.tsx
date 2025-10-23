@@ -11,7 +11,7 @@ const MoveOutCleaningChecklistPage = () => {
   return (
     <>
       <Helmet>
-        <title>Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans</title>
+        <title>Move-Out Cleaning Checklist: Complete Guide | Red Rock Cleans</title>
         <meta name="description" content="Our ultimate move-out cleaning checklist ensures you get your security deposit back. Follow our room-by-room guide for a perfect clean, or hire our pros to do it for you." />
       </Helmet>
       <Hreflang />

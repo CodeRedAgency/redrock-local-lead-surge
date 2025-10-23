@@ -6,13 +6,15 @@ import { Calendar, ArrowLeft, Sparkles, CheckCircle, Clock, Home } from "lucide-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 const MinimizeHouseworkTimePage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans</title>
-        <meta name="description" content="Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time." />
+        <title>{t("pageTitles.blogPosts.minimizeHousework", { defaultValue: "6 Tips to Minimize Housework Time | Red Rock Cleans" })}</title>
+        <meta name="description" content={t("pageDescriptions.blogPosts.minimizeHousework", { defaultValue: "Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time." })} />
       </Helmet>
       <Hreflang />
       
@@ -45,7 +47,7 @@ const MinimizeHouseworkTimePage = () => {
                   <span>September 5, 2023</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-                  6 Handy Tips to Help You Minimize Your Time on Housework
+                  {t("pageHeadings.blogPosts.minimizeHousework", { defaultValue: "6 Handy Tips to Help You Minimize Your Time on Housework" })}
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Smart strategies to reclaim your weekends and maintain a clean home without sacrificing hours of your precious free time.
