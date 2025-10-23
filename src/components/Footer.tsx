@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const locationData = [
   {
@@ -51,6 +52,7 @@ const locationData = [
 export const Footer = () => {
   const location = useLocation();
   const { t, i18n } = useTranslation();
+  const [isCommercialOpen, setIsCommercialOpen] = useState(false);
   
   // Helper to get language prefix based on current i18n language
   const getLanguagePrefix = () => {
@@ -144,8 +146,17 @@ export const Footer = () => {
 
             {/* Commercial Services */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">{t("footer.commercial.title", { defaultValue: "Commercial Services" })}</h3>
-              <div className="space-y-3">
+              <button
+                onClick={() => setIsCommercialOpen(!isCommercialOpen)}
+                className="flex items-center justify-between w-full text-xl font-bold text-primary mb-4 hover:text-primary-glow transition-colors group"
+                aria-expanded={isCommercialOpen}
+              >
+                <span>{t("footer.commercial.title", { defaultValue: "Commercial Services" })}</span>
+                <ChevronDown 
+                  className={`w-5 h-5 transition-transform duration-300 ${isCommercialOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+              <div className={`space-y-3 overflow-hidden transition-all duration-300 ${isCommercialOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
                 <Link 
                   to={getLanguagePrefix() + "/commercial-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
