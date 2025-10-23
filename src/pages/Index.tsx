@@ -2,6 +2,7 @@ import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
 import { LocationCards } from "@/components/LocationCards";
 import { TrustSection } from "@/components/TrustSection";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
@@ -96,10 +97,14 @@ const Index = () => {
                   {t("home.difference.badge", { defaultValue: "The Red Rock Difference" })}
                 </span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{t("home.difference.title", { defaultValue: "Why Choose Red Rock Cleaning?" })}</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                {t("home.difference.copy", { defaultValue: "We're a multi-location premium cleaning service dedicated to excellence. Whether you need cleaning for your home, office, or vacation rental, our professional teams deliver exceptional results every time." })}
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">{t("home.difference.title", { defaultValue: "Why Choose Red Rock Cleaning?" })}</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+                {t("home.videoIntro", { defaultValue: "See what makes Red Rock Cleans the trusted choice for exceptional cleaning:" })}
               </p>
+              <YouTubeEmbed 
+                videoId="zrUGqn7OWvI" 
+                title={t("home.videoTitle", { defaultValue: "Red Rock Cleans - Professional Cleaning Services Overview" })}
+              />
             </div>
           </section>
           
