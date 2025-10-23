@@ -343,58 +343,12 @@ export const GeneralNavigation = () => {
                   <Link to="/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
                     Post Construction Cleaning Services
                   </Link>
-                  <div className="font-medium text-sm text-muted-foreground mb-1 mt-3">Commercial Cleaning</div>
-                  <Link to="/commercial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Commercial Cleaning
-                  </Link>
-                  <Link to="/church-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Church Cleaning
-                  </Link>
-                  <Link to="/data-center-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Data Center Cleaning
-                  </Link>
-                  <Link to="/factory-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Factory Cleaning
-                  </Link>
-                  <Link to="/government-facility-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Government Facility Cleaning
-                  </Link>
-                  <Link to="/gym-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Gym Cleaning
-                  </Link>
-                  <Link to="/medical-office-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Medical Office Cleaning
-                  </Link>
-                  <Link to="/retail-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Retail Store Cleaning
-                  </Link>
-                  <Link to="/restaurant-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Restaurant Cleaning
-                  </Link>
-                  <Link to="/industrial-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Industrial Cleaning
-                  </Link>
-                  <Link to="/school-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    School Cleaning
-                  </Link>
-                  <Link to="/showroom-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Showroom Cleaning
-                  </Link>
-                  <Link to="/warehouse-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Warehouse Cleaning
-                  </Link>
-                  <Link to="/salon-spa-cleaning" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Salon & Spa Cleaning
-                  </Link>
                 </div>
               </div>
 
               <div>
                 <div className="font-medium mb-2">{t("nav.pricing")}</div>
                 <div className="ml-4 space-y-2">
-                  <Link to="/commercial-cleaning-estimator" className="block hover:text-primary transition-colors text-sm">
-                    Commercial Cleaning Cost Estimator
-                  </Link>
                   <Link to="/book-now-las-vegas" className="block hover:text-primary transition-colors text-sm">
                     Pricing for Las Vegas
                   </Link>
