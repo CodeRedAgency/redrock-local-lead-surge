@@ -156,72 +156,72 @@ export const GeneralNavigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuSub>
-                  <DropdownMenuSubTrigger>Residential Cleaning</DropdownMenuSubTrigger>
+                  <DropdownMenuSubTrigger>{t("nav.residential.title", { defaultValue: "Residential Cleaning" })}</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
-                      <Link to={getLanguagePrefix() + "/standard-cleaning-services"}>Standard Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/standard-cleaning-services"}>{t("nav.residential.standard", { defaultValue: "Standard Cleaning Services" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to={getLanguagePrefix() + "/deep-cleaning-services"}>Deep Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/deep-cleaning-services"}>{t("nav.residential.deep", { defaultValue: "Deep Cleaning Services" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to={getLanguagePrefix() + "/move-out-cleaning-services"}>Move Out Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/move-out-cleaning-services"}>{t("nav.residential.moveOut", { defaultValue: "Move Out Cleaning Services" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to={getLanguagePrefix() + "/post-construction-cleaning-services"}>Post Construction Cleaning Services</Link>
+                      <Link to={getLanguagePrefix() + "/post-construction-cleaning-services"}>{t("nav.residential.postConstruction", { defaultValue: "Post Construction Cleaning Services" })}</Link>
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuSub>
                 <DropdownMenuSub>
-                  <DropdownMenuSubTrigger>Commercial Cleaning</DropdownMenuSubTrigger>
+                  <DropdownMenuSubTrigger>{t("nav.commercial.title", { defaultValue: "Commercial Cleaning" })}</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/commercial-cleaning"}>Commercial Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/commercial-cleaning"}>{t("nav.commercial.main", { defaultValue: "Commercial Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning-time-estimator">Commercial Cleaning Time Estimator</Link>
+                      <Link to={getLanguagePrefix() + "/commercial-cleaning-time-estimator"}>{t("nav.commercial.timeEstimator", { defaultValue: "Commercial Cleaning Time Estimator" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/commercial-cleaning-cost-estimator">Commercial Cleaning Cost Estimator</Link>
+                      <Link to={getLanguagePrefix() + "/commercial-cleaning-cost-estimator"}>{t("nav.commercial.costEstimator", { defaultValue: "Commercial Cleaning Cost Estimator" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <Link to="/church-cleaning">Church Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/church-cleaning"}>{t("nav.commercial.church", { defaultValue: "Church Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/data-center-cleaning"}>Data Center Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/data-center-cleaning"}>{t("nav.commercial.dataCenter", { defaultValue: "Data Center Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/factory-cleaning"}>Factory Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/factory-cleaning"}>{t("nav.commercial.factory", { defaultValue: "Factory Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/government-facility-cleaning"}>Government Facility Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/government-facility-cleaning"}>{t("nav.commercial.government", { defaultValue: "Government Facility Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/gym-cleaning"}>Gym Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/gym-cleaning"}>{t("nav.commercial.gym", { defaultValue: "Gym Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/medical-office-cleaning"}>Medical Office Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/medical-office-cleaning"}>{t("nav.commercial.medical", { defaultValue: "Medical Office Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/retail-cleaning"}>Retail Store Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/retail-cleaning"}>{t("nav.commercial.retail", { defaultValue: "Retail Store Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/restaurant-cleaning"}>Restaurant Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/restaurant-cleaning"}>{t("nav.commercial.restaurant", { defaultValue: "Restaurant Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/industrial-cleaning"}>Industrial Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/industrial-cleaning"}>{t("nav.commercial.industrial", { defaultValue: "Industrial Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/school-cleaning"}>School Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/school-cleaning"}>{t("nav.commercial.school", { defaultValue: "School Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/showroom-cleaning"}>Showroom Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/showroom-cleaning"}>{t("nav.commercial.showroom", { defaultValue: "Showroom Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/warehouse-cleaning"}>Warehouse Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/warehouse-cleaning"}>{t("nav.commercial.warehouse", { defaultValue: "Warehouse Cleaning" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                  <Link to={getLanguagePrefix() + "/salon-spa-cleaning"}>Salon & Spa Cleaning</Link>
+                      <Link to={getLanguagePrefix() + "/salon-spa-cleaning"}>{t("nav.commercial.salonSpa", { defaultValue: "Salon & Spa Cleaning" })}</Link>
                     </DropdownMenuItem>
                   </DropdownMenuSubContent>
                 </DropdownMenuSub>
@@ -234,25 +234,25 @@ export const GeneralNavigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem asChild>
-                  <Link to="/commercial-cleaning-estimator">Commercial Cleaning Cost Estimator</Link>
+                  <Link to={getLanguagePrefix() + "/commercial-cleaning-estimator"}>{t("nav.pricingMenu.estimator", { defaultValue: "Commercial Cleaning Cost Estimator" })}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-las-vegas">Pricing for Las Vegas</Link>
+                  <Link to={getLanguagePrefix() + "/book-now-las-vegas"}>{t("nav.pricingMenu.lasVegas", { defaultValue: "Pricing for Las Vegas" })}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-oahu">Pricing for Oahu</Link>
+                  <Link to={getLanguagePrefix() + "/book-now-oahu"}>{t("nav.pricingMenu.oahu", { defaultValue: "Pricing for Oahu" })}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-maui">Pricing for Maui</Link>
+                  <Link to={getLanguagePrefix() + "/book-now-maui"}>{t("nav.pricingMenu.maui", { defaultValue: "Pricing for Maui" })}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-south-florida">Pricing for South Florida</Link>
+                  <Link to={getLanguagePrefix() + "/book-now-south-florida"}>{t("nav.pricingMenu.southFlorida", { defaultValue: "Pricing for South Florida" })}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-dallas">Pricing for Dallas</Link>
+                  <Link to={getLanguagePrefix() + "/book-now-dallas"}>{t("nav.pricingMenu.dallas", { defaultValue: "Pricing for Dallas" })}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/book-now-columbus-ohio">Pricing for Columbus, Ohio</Link>
+                  <Link to={getLanguagePrefix() + "/book-now-columbus-ohio"}>{t("nav.pricingMenu.columbus", { defaultValue: "Pricing for Columbus, Ohio" })}</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -263,10 +263,10 @@ export const GeneralNavigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem asChild>
-                  <Link to="/about">About Us</Link>
+                  <Link to={getLanguagePrefix() + "/about"}>{t("nav.aboutMenu.about", { defaultValue: "About Us" })}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/about/faq">FAQ</Link>
+                  <Link to={getLanguagePrefix() + "/about/faq"}>{t("nav.aboutMenu.faq", { defaultValue: "FAQ" })}</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

@@ -6,7 +6,46 @@
     "about": "Nosotros",
     "contact": "Contacto",
     "bookNow": "Reservar",
-    "login": "Iniciar sesión"
+    "login": "Iniciar sesión",
+    "residential": {
+      "title": "Limpieza Residencial",
+      "standard": "Servicios de Limpieza Estándar",
+      "deep": "Servicios de Limpieza Profunda",
+      "moveOut": "Servicios de Limpieza para Mudanzas",
+      "postConstruction": "Servicios de Limpieza Post Construcción"
+    },
+    "commercial": {
+      "title": "Limpieza Comercial",
+      "main": "Limpieza Comercial",
+      "timeEstimator": "Estimador de Tiempo de Limpieza Comercial",
+      "costEstimator": "Estimador de Costos de Limpieza Comercial",
+      "church": "Limpieza de Iglesias",
+      "dataCenter": "Limpieza de Centros de Datos",
+      "factory": "Limpieza de Fábricas",
+      "government": "Limpieza de Instalaciones Gubernamentales",
+      "gym": "Limpieza de Gimnasios",
+      "medical": "Limpieza de Oficinas Médicas",
+      "retail": "Limpieza de Tiendas",
+      "restaurant": "Limpieza de Restaurantes",
+      "industrial": "Limpieza Industrial",
+      "school": "Limpieza de Escuelas",
+      "showroom": "Limpieza de Salones de Exhibición",
+      "warehouse": "Limpieza de Almacenes",
+      "salonSpa": "Limpieza de Salones y Spas"
+    },
+    "pricingMenu": {
+      "estimator": "Estimador de Costos de Limpieza Comercial",
+      "lasVegas": "Precios para Las Vegas",
+      "oahu": "Precios para Oahu",
+      "maui": "Precios para Maui",
+      "southFlorida": "Precios para South Florida",
+      "dallas": "Precios para Dallas",
+      "columbus": "Precios para Columbus, Ohio"
+    },
+    "aboutMenu": {
+      "about": "Sobre Nosotros",
+      "faq": "Preguntas Frecuentes"
+    }
   },
   "blog": {
     "title": "Consejos y Guías de Limpieza",
