@@ -85,7 +85,7 @@ export default function NaturesAirPurifiersBlogPage() {
     <>
       <Helmet>
         <title>Best Air-Purifying Plants for Your Home | Red Rock Cleans</title>
-        <meta name="description" content="Discover the best houseplants for naturally purifying your indoor air. Our guide covers top plants, care tips, and how cleaning complements their benefits." />
+        <meta name="description" content="Best air-purifying plants for your home. Natural ways to improve indoor air quality. Combine with cleaning for healthier living!" />
         <link rel="canonical" href="/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air/" />
       </Helmet>
       <Hreflang />

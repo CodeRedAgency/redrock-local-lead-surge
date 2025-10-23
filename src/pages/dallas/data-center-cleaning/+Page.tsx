@@ -261,7 +261,7 @@ const DataCenterCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Data Center Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Specialized data center cleaning in Dallas. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Plano and Frisco to ensure uptime." />
+        <meta name="description" content="Data center cleaning in Dallas. Protect critical infrastructure with specialized cleaning in Dallas, Plano & Frisco. Book now!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

@@ -12,7 +12,7 @@ const SpringCleaningPartyPage = () => {
     <>
       <Helmet>
         <title>How to Host a Spring Cleaning Party | Red Rock Cleans</title>
-        <meta name="description" content="Turn spring cleaning into a fun event! Learn why you should host a spring cleaning party and how to plan one, plus when to call in the pros for tough jobs." />
+        <meta name="description" content="Why host a spring cleaning party? Turn cleaning into a fun event with friends. Get tips & know when to call professionals!" />
       </Helmet>
       <Hreflang />
       

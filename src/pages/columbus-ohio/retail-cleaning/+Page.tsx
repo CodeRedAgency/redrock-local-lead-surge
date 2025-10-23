@@ -313,7 +313,7 @@ const RetailCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Retail Store Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Professional retail store cleaning in Columbus, OH. Red Rock Cleans helps enhance your brand image with spotless storefronts and sales floors in Dublin, the Short North, and beyond." />
+        <meta name="description" content="Retail store cleaning in Columbus Ohio. Pristine spaces enhancing customer experience in Columbus. Book your service today!" />
         <meta name="keywords" content="retail store cleaning Columbus Ohio, retail cleaning near me, store cleaning Columbus Ohio, boutique cleaning Short North, shop cleaning Dublin OH, Columbus retail cleaning services, best retail cleaners Columbus, commercial store cleaning Columbus, storefront window cleaning Columbus, retail floor care Columbus, retail cleaning cost Columbus Ohio, store cleaning prices Columbus, retail cleaning checklist Columbus, hire store cleaners in Columbus Ohio" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/retail-cleaning" />
       </Helmet>

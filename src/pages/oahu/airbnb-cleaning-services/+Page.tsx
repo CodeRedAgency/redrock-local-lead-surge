@@ -301,7 +301,7 @@ const AirbnbCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Airbnb Cleaning Service Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Get 5-star reviews with our reliable Airbnb cleaning service on Oahu. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Honolulu, Waikiki, and beyond." />
+        <meta name="description" content="Oahu Airbnb cleaning services. Fast turnovers for vacation rentals in Honolulu & Oahu. Guest-ready results every time!" />
       </Helmet>
       <Hreflang />
       

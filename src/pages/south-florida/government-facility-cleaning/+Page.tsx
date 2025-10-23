@@ -411,7 +411,7 @@ const GovernmentFacilityCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Government Facility Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Secure and compliant government facility cleaning in South Florida. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings in Fort Lauderdale and Weston by security-cleared staff." />
+        <meta name="description" content="Government facility cleaning in South Florida. Secure, compliant cleaning for municipal buildings. Fort Lauderdale service!" />
         <meta name="keywords" content="government facility cleaning South Florida, government cleaning near me, municipal building cleaning South Florida, federal office cleaning Fort Lauderdale, courthouse cleaning Broward County, secure facility cleaning South Florida, GSA schedule cleaning South Florida, confidential cleaning services Fort Lauderdale, discreet government cleaners South Florida, government cleaning contracts South Florida, cost of municipal cleaning Fort Lauderdale, what is government facility cleaning South Florida, hire secure cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/government-facility-cleaning" />
       </Helmet>

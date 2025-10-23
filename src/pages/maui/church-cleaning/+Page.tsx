@@ -220,7 +220,7 @@ const ChurchCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Church Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional church cleaning services on Maui. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Wailea, Lahaina, and across the island." />
+        <meta name="description" content="Maui church cleaning. Respectful, thorough cleaning for places of worship. Professional Hawaiian service on Maui. Book today!" />
         <meta name="keywords" content="church cleaning near me, place of worship cleaning Maui, sanctuary cleaning Wailea, chapel cleaning Lahaina, best church cleaners Maui, professional church cleaning Maui, respectful religious facility cleaning, dependable church cleaners Kihei, church cleaning cost Maui, affordable church cleaning services Maui, what is included in church cleaning Maui, hire church cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/church-cleaning" />
       </Helmet>

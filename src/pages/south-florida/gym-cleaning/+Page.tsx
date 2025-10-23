@@ -411,7 +411,7 @@ const GymCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Gym Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional gym cleaning in South Florida. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Fort Lauderdale and Weston." />
+        <meta name="description" content="Gym cleaning services in South Florida. Sanitized equipment & facilities for Fort Lauderdale & Weston fitness centers!" />
         <meta name="keywords" content="gym cleaning South Florida, gym cleaning near me, fitness center cleaning South Florida, health club sanitation Fort Lauderdale, gym disinfection Weston FL, professional gym cleaners South Florida, equipment disinfection Fort Lauderdale, locker room cleaning Broward County, anti-viral gym cleaning South Florida, gym cleaning cost South Florida, commercial gym cleaning prices Fort Lauderdale, gym cleaning checklist South Florida, how to keep a gym clean South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/gym-cleaning" />
       </Helmet>

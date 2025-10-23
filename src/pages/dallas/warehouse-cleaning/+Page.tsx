@@ -261,7 +261,7 @@ const WarehouseCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Warehouse Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional warehouse cleaning in Dallas. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers in Plano and Frisco." />
+        <meta name="description" content="Warehouse cleaning in Dallas. Efficient service maximizing safety & productivity in Dallas, Plano & Frisco. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

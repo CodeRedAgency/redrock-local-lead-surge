@@ -221,7 +221,7 @@ const FactoryCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Factory Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional factory cleaning on Maui. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Lahaina, Kihei, and beyond to ensure safety and productivity." />
+        <meta name="description" content="Factory cleaning in Maui. Heavy-duty industrial cleaning for manufacturing facilities. Professional Hawaiian service!" />
         <meta name="keywords" content="factory cleaning near me, industrial cleaning Maui, manufacturing plant cleaning Maui, factory cleaning Lahaina, heavy-duty factory cleaning Maui, production floor cleaning Maui, machinery degreasing Maui, OSHA compliant cleaning Maui, factory cleaning cost Maui, industrial cleaning prices Maui, what is factory cleaning Maui, hire factory cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/factory-cleaning" />
       </Helmet>

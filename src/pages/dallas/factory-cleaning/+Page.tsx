@@ -261,7 +261,7 @@ const FactoryCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Factory Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Heavy-duty factory cleaning in Dallas. Red Rock Cleans offers comprehensive cleaning for manufacturing plants in Plano, Frisco, and across the Dallas area to ensure safety and productivity." />
+        <meta name="description" content="Factory cleaning in Dallas. Heavy-duty industrial cleaning for manufacturing facilities in Dallas, Plano & Frisco. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

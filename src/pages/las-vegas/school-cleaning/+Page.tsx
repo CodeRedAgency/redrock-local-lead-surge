@@ -430,7 +430,7 @@ const SchoolCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>School Cleaning Services Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional school cleaning services in Las Vegas. Red Rock Cleans provides a safe and healthy learning environment for students in Henderson, Summerlin, and across Clark County." />
+        <meta name="description" content="School cleaning in Las Vegas. Safe, healthy learning environments for students in Las Vegas & Henderson schools. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

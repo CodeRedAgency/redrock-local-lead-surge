@@ -282,7 +282,7 @@ const MoveOutCleaningColumbusOhioPage = () => {
     <>
       <Helmet>
         <title>Move Out Cleaning Service in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Secure your deposit with our reliable move out cleaning service in Columbus, OH. We provide thorough end-of-tenancy cleaning in Dublin, Upper Arlington, and beyond. Book today!" />
+        <meta name="description" content="Move-out cleaning in Columbus Ohio. Secure your deposit with comprehensive end-of-lease cleaning. Schedule your service!" />
       </Helmet>
       <Hreflang />
       

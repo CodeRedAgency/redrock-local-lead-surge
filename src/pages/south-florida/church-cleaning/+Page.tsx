@@ -410,7 +410,7 @@ const ChurchCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Church Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional church cleaning services in South Florida. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Fort Lauderdale, Weston, and across the region." />
+        <meta name="description" content="South Florida church cleaning. Respectful, thorough cleaning for places of worship in Fort Lauderdale & Weston. Book today!" />
         <meta name="keywords" content="church cleaning South Florida, church cleaning near me, place of worship cleaning South Florida, sanctuary cleaning Fort Lauderdale, chapel cleaning Weston FL, best church cleaners South Florida, professional church cleaning Broward County, respectful religious facility cleaning, dependable church cleaners Fort Lauderdale, church cleaning cost South Florida, affordable church cleaning services South Florida, what is included in church cleaning South Florida, hire church cleaners in Broward County" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/church-cleaning" />
       </Helmet>

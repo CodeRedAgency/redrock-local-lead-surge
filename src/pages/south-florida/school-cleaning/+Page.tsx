@@ -411,7 +411,7 @@ const SchoolCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>School Cleaning Services South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional school cleaning services in South Florida. Red Rock Cleans provides a safe and healthy learning environment for students in Fort Lauderdale, Weston, and across Broward County." />
+        <meta name="description" content="School cleaning in South Florida. Safe, healthy learning environments for students in Fort Lauderdale & Weston schools!" />
         <meta name="keywords" content="school cleaning services South Florida, school cleaning near me, janitorial services for schools South Florida, daycare cleaning Fort Lauderdale, preschool cleaning Weston FL, Broward County school cleaning, best school cleaners South Florida, educational facility cleaning Fort Lauderdale, classroom disinfection South Florida, private school cleaning South Florida, school cleaning cost South Florida, school janitorial service prices Fort Lauderdale, school cleaning checklist South Florida, hire school cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/school-cleaning" />
       </Helmet>

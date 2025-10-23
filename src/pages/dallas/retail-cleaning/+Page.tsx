@@ -261,7 +261,7 @@ const RetailCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Retail Store Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional retail store cleaning in Dallas. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts and sales floors in Plano, Frisco, and beyond." />
+        <meta name="description" content="Retail store cleaning in Dallas. Pristine spaces enhancing customer experience in Dallas, Plano & Frisco. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

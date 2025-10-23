@@ -434,7 +434,7 @@ const AirbnbCleaningSouthFloridaPage = () => {
     <>
       <Helmet>
         <title>Airbnb Cleaning Service South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Get 5-star reviews with our reliable Airbnb cleaning service in South Florida. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Fort Lauderdale, Weston, and beyond." />
+        <meta name="description" content="Fast Airbnb cleaning in South Florida. Guest-ready turnovers in Fort Lauderdale & Weston. Professional vacation rental service." />
       </Helmet>
       <Hreflang />
       

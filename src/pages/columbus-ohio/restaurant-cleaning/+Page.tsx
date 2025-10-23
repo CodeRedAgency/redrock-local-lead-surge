@@ -313,7 +313,7 @@ const RestaurantCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Restaurant Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Professional restaurant cleaning in Columbus, OH. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning." />
+        <meta name="description" content="Restaurant cleaning in Columbus Ohio. Food-safe service maintaining health code compliance in Columbus. Book your service!" />
         <meta name="keywords" content="restaurant cleaning Columbus Ohio, restaurant cleaning near me, commercial kitchen cleaning Columbus, bar cleaning Dublin OH, dining room cleaning Short North, German Village restaurant cleaning, best restaurant cleaners Columbus, kitchen degreasing Columbus Ohio, front of house cleaning, health code cleaning Columbus, restaurant cleaning cost Columbus Ohio, commercial kitchen cleaning prices, restaurant cleaning checklist Columbus, hire restaurant cleaners in Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/restaurant-cleaning" />
       </Helmet>

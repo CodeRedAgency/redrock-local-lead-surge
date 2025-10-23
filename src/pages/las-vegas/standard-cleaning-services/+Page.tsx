@@ -377,7 +377,7 @@ const StandardCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Standard Cleaning Service Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Keep your Las Vegas home consistently beautiful with our reliable standard cleaning service. Red Rock Cleans offers flexible maid services for a spotless home. Get your free quote!" />
+        <meta name="description" content="Professional standard cleaning in Las Vegas. Reliable maintenance for homes in Las Vegas & Henderson. Schedule your service now!" />
       </Helmet>
       <Hreflang />
       

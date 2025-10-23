@@ -301,7 +301,7 @@ const StandardCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Standard Cleaning Service Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Keep your home consistently beautiful with our reliable standard cleaning service on Oahu. Red Rock Cleans offers flexible maid services in Honolulu and beyond. Get your free quote!" />
+        <meta name="description" content="Standard cleaning services in Oahu. Consistent maintenance for Honolulu & Oahu homes. Professional Hawaiian cleaning service!" />
       </Helmet>
       <Hreflang />
       

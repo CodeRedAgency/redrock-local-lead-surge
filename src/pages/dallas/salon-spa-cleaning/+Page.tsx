@@ -261,7 +261,7 @@ const SalonSpaCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Salon & Spa Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional salon and spa cleaning in Dallas. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Plano, Frisco, and beyond." />
+        <meta name="description" content="Salon & spa cleaning in Dallas. Hygienic, luxurious environments for Dallas, Plano & Frisco beauty businesses. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

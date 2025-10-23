@@ -221,7 +221,7 @@ const GymCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Gym Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional gym cleaning on Maui. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Kihei and Lahaina." />
+        <meta name="description" content="Gym cleaning services in Maui. Sanitized equipment & facilities for Maui fitness centers. Professional Hawaiian service today!" />
         <meta name="keywords" content="gym cleaning near me Maui, fitness center cleaning Kihei, health club sanitation Lahaina, gym disinfection Wailea, professional gym cleaners Maui, equipment disinfection Maui, locker room cleaning Maui, anti-viral gym cleaning Maui, gym cleaning cost Maui, commercial gym cleaning prices Maui, gym cleaning checklist Maui, how to keep a gym clean Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/gym-cleaning" />
       </Helmet>

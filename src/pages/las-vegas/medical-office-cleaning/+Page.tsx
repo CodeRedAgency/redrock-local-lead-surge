@@ -375,7 +375,7 @@ const MedicalOfficeCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Medical Office Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Specialized medical office cleaning in Las Vegas. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Henderson, Summerlin, and beyond." />
+        <meta name="description" content="Medical office cleaning in Las Vegas. HIPAA-compliant service for Las Vegas & Henderson healthcare facilities. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

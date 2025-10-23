@@ -291,7 +291,7 @@ export default function RetailCleaningOahuPage() {
     <>
       <Helmet>
         <title>Retail Store Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional retail store cleaning on Oahu. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts and sales floors in Honolulu, Waikiki, and beyond." />
+        <meta name="description" content="Retail store cleaning in Oahu. Pristine spaces enhancing customer experience in Honolulu. Professional Hawaiian service!" />
         <meta name="keywords" content="retail store cleaning Oahu, store cleaning near me, boutique cleaning Honolulu, shop cleaning Waikiki, Ala Moana cleaning services, best retail cleaners Oahu, commercial store cleaning Honolulu, storefront window cleaning Oahu, retail floor care Oahu, retail cleaning cost Oahu, store cleaning prices Honolulu, retail cleaning checklist Oahu, hire store cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/retail-cleaning/" />
       </Helmet>

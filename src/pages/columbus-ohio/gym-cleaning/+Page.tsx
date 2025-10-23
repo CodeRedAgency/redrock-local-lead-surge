@@ -313,7 +313,7 @@ const GymCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Gym Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Professional gym cleaning in Columbus, OH. Red Rock Cleans provides hygienic fitness center sanitation, including equipment disinfection, in Dublin, Upper Arlington, and beyond." />
+        <meta name="description" content="Gym cleaning services in Columbus Ohio. Sanitized equipment & facilities for Columbus fitness centers. Book your service!" />
         <meta name="keywords" content="gym cleaning Columbus Ohio, gym cleaning near me, fitness center cleaning Columbus Ohio, health club sanitation Dublin OH, gym disinfection Upper Arlington, professional gym cleaners Columbus, equipment disinfection Columbus, locker room cleaning Columbus Ohio, anti-viral gym cleaning Columbus, gym cleaning cost Columbus Ohio, commercial gym cleaning prices Dublin OH, gym cleaning checklist Columbus, how to keep a gym clean Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/gym-cleaning" />
       </Helmet>

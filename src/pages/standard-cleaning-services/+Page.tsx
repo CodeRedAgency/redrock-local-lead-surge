@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <Helmet>
         <title>Standard Cleaning Services - Red Rock Cleaning</title>
-        <meta name="description" content="Professional standard cleaning services for your home. Regular maintenance cleaning to keep your space spotless." />
+        <meta name="description" content="Professional standard cleaning services. Regular maintenance to keep your home or office consistently fresh and clean. Book today!" />
       </Helmet>
       <StandardCleaning />
     </>

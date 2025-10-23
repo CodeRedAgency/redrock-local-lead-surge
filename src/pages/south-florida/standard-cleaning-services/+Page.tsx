@@ -434,7 +434,7 @@ const StandardCleaningSouthFloridaPage = () => {
     <>
       <Helmet>
         <title>Standard Cleaning Service South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Keep your home consistently beautiful with our reliable standard cleaning service in South Florida. We offer flexible maid services in Fort Lauderdale, Weston, and beyond. Get your free quote!" />
+        <meta name="description" content="Professional standard cleaning in South Florida. Regular maintenance for homes in Fort Lauderdale & Weston. Book your service today!" />
       </Helmet>
       <Hreflang />
       

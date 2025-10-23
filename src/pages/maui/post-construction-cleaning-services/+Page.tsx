@@ -244,7 +244,7 @@ const PostConstructionCleaningMauiPage = () => {
     <>
       <Helmet>
         <title>Post Construction Cleaning Service Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional post construction cleaning on Maui. Red Rock Cleans handles all construction cleanup for new builds and renovations in Wailea, Lahaina, and beyond. Get a detailed quote today!" />
+        <meta name="description" content="Post-construction cleaning in Maui. Professional cleanup after renovations & construction. Remove all dust and debris today!" />
       </Helmet>
       <Hreflang />
       

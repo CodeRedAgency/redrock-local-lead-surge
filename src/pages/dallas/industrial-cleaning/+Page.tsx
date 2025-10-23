@@ -261,7 +261,7 @@ const IndustrialCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Industrial Cleaning Services in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Heavy-duty industrial cleaning services in Dallas. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities to ensure safety and uptime." />
+        <meta name="description" content="Industrial cleaning in Dallas. Heavy-duty cleaning for warehouses & factories in Dallas, Plano & Frisco. Book your service!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

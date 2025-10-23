@@ -278,7 +278,7 @@ const MedicalOfficeCleaningOahuPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Medical Office Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Specialized medical office cleaning on Oahu. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Honolulu, Kailua, and beyond." />
+        <meta name="description" content="Medical office cleaning in Oahu. HIPAA-compliant service for Honolulu healthcare facilities. Professional Hawaiian service!" />
         <meta name="keywords" content="medical office cleaning near me, clinic cleaning Honolulu, dental office cleaning Kailua, healthcare cleaning Oahu, best medical cleaners Oahu, HIPAA compliant cleaning Oahu, OSHA standards cleaning Oahu, exam room sanitation Honolulu, terminal cleaning Oahu, medical office cleaning cost Oahu, clinic cleaning prices Honolulu, what is terminal cleaning Oahu, hire medical cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/medical-office-cleaning" />
       </Helmet>

@@ -411,7 +411,7 @@ const IndustrialCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Industrial Cleaning Services South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Heavy-duty industrial cleaning services in South Florida. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants and industrial facilities in Fort Lauderdale and beyond." />
+        <meta name="description" content="Industrial cleaning in South Florida. Heavy-duty cleaning for warehouses & factories in Fort Lauderdale & Weston area!" />
         <meta name="keywords" content="industrial cleaning services South Florida, industrial cleaning near me, heavy duty cleaning South Florida, industrial cleaning Fort Lauderdale, industrial cleaners Hollywood FL, industrial equipment cleaning South Florida, manufacturing facility cleaning Broward County, plant deep cleaning South Florida, OSHA compliant cleaning services South Florida, industrial cleaning cost South Florida, industrial cleaning rates Fort Lauderdale, what is industrial cleaning South Florida, hire industrial cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/industrial-cleaning" />
       </Helmet>

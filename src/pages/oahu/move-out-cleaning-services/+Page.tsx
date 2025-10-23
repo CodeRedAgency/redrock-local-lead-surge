@@ -301,7 +301,7 @@ const MoveOutCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Move Out Cleaning Service Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Secure your deposit with our reliable move out cleaning service on Oahu. Red Rock Cleans provides thorough end-of-tenancy cleaning for renters and sellers in Honolulu and beyond. Book today!" />
+        <meta name="description" content="Move-out cleaning in Oahu. Get your full deposit back with comprehensive cleaning in Honolulu & Oahu. Book your service today!" />
       </Helmet>
       <Hreflang />
       

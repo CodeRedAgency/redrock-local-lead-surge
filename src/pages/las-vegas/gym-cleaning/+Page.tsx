@@ -375,7 +375,7 @@ const GymCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Gym Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional gym cleaning in Las Vegas. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Henderson and Summerlin." />
+        <meta name="description" content="Gym cleaning services in Las Vegas. Sanitized equipment & facilities for Las Vegas & Henderson fitness centers. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

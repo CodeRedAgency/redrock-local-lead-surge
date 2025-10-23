@@ -411,7 +411,7 @@ const SalonSpaCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Salon & Spa Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional salon and spa cleaning in South Florida. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Fort Lauderdale and Weston." />
+        <meta name="description" content="Salon & spa cleaning in South Florida. Hygienic, luxurious environments for Fort Lauderdale & Weston beauty businesses!" />
         <meta name="keywords" content="salon and spa cleaning South Florida, salon cleaning near me, spa cleaning South Florida, hair salon cleaning Fort Lauderdale, nail salon cleaning Weston FL, medispa cleaning South Florida, best salon cleaners South Florida, hygienic spa cleaning Broward County, beauty salon sanitation, barber shop cleaning Fort Lauderdale, salon cleaning cost South Florida, spa cleaning prices Fort Lauderdale, what is salon cleaning South Florida, hire spa cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/salon-spa-cleaning" />
       </Helmet>

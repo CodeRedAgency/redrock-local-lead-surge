@@ -428,7 +428,7 @@ const RetailCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Retail Store Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional retail store cleaning in Las Vegas. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts, sales floors, and more." />
+        <meta name="description" content="Retail store cleaning in Las Vegas. Pristine spaces enhancing customer experience in Las Vegas & Henderson. Book today!" />
       </Helmet>
       <Hreflang />
       

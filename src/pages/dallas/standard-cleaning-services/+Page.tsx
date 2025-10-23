@@ -206,7 +206,7 @@ const StandardCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Standard Cleaning Service in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Keep your Dallas home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Plano, Frisco, and beyond. Get your free quote!" />
+        <meta name="description" content="Standard cleaning services in Dallas. Consistent maintenance for homes in Dallas, Plano & Frisco. Book your cleaning today!" />
       </Helmet>
       <Hreflang />
       

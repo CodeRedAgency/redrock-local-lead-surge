@@ -12,7 +12,7 @@ const LasVegasCalculator = () => {
     <>
       <Helmet>
         <title>Free Las Vegas Cleaning Quote | Red Rock Cleans</title>
-        <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house and office cleaning in Las Vegas." />
+        <meta name="description" content="Get an instant cleaning quote in Las Vegas. Calculate costs for Las Vegas & Henderson cleaning services. Free online estimate!" />
       </Helmet>
       <Hreflang />
       

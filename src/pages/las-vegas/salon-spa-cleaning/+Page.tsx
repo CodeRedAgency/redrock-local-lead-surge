@@ -166,7 +166,7 @@ const SalonSpaCleaningLasVegasPage: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Salon & Spa Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional salon and spa cleaning services in Las Vegas. Red Rock Cleans provides specialized cleaning for beauty and wellness businesses. Call (702) 508-0098!" />
+        <meta name="description" content="Salon & spa cleaning in Las Vegas. Hygienic, luxurious environments for Las Vegas & Henderson beauty businesses. Book now!" />
       </Helmet>
       <LasVegasNavigation />
       

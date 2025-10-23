@@ -301,7 +301,7 @@ const PostConstructionCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Post Construction Cleaning Service Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional post construction cleaning on Oahu. Red Rock Cleans handles all construction cleanup for new builds and renovations in Honolulu and beyond. Get a detailed quote today!" />
+        <meta name="description" content="Post-construction cleaning in Oahu. Remove dust & debris after renovations in Honolulu. Professional Hawaiian service." />
       </Helmet>
       <Hreflang />
       

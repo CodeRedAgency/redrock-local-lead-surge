@@ -204,7 +204,7 @@ const ChurchCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Church Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional church cleaning services in Dallas. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Plano, Frisco, and across the Dallas area." />
+        <meta name="description" content="Dallas church cleaning. Respectful, thorough cleaning for places of worship in Dallas, Plano & Frisco. Book your service today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

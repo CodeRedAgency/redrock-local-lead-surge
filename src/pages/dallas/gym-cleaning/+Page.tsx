@@ -266,7 +266,7 @@ const GymCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Gym Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional gym cleaning in Dallas. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Plano and Frisco." />
+        <meta name="description" content="Gym cleaning services in Dallas. Sanitized equipment & facilities for Dallas, Plano & Frisco fitness centers. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

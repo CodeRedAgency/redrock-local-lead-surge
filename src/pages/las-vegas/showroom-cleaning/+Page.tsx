@@ -168,7 +168,7 @@ const ShowroomCleaningLasVegasPage: React.FC = () => {
     <>
       <Helmet>
         <title>Showroom Cleaning Services in Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional showroom cleaning in Las Vegas. Impeccable floors, glass, and product presentation for dealerships and retail showrooms." />
+        <meta name="description" content="Showroom cleaning in Las Vegas. Spotless displays showcasing your products perfectly in Las Vegas & Henderson. Book now!" />
       </Helmet>
       <Hreflang />
       <div className="min-h-screen flex flex-col">

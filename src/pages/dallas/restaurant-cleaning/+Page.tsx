@@ -261,7 +261,7 @@ const RestaurantCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Restaurant Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional restaurant cleaning in Dallas. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning." />
+        <meta name="description" content="Restaurant cleaning in Dallas. Food-safe service maintaining health code compliance in Dallas, Plano & Frisco. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

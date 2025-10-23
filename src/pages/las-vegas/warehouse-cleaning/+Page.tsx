@@ -165,7 +165,7 @@ const WarehouseCleaningLasVegasPage: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Warehouse Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional warehouse cleaning services in Las Vegas. Red Rock Cleans provides industrial cleaning for logistics facilities and distribution centers. Call (702) 508-0098!" />
+        <meta name="description" content="Warehouse cleaning in Las Vegas. Efficient service maximizing safety & productivity in Las Vegas & Henderson. Book today!" />
       </Helmet>
       <LasVegasNavigation />
       

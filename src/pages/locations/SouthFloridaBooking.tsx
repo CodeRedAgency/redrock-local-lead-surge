@@ -41,7 +41,7 @@ const SouthFloridaBooking = () => {
     <>
       <Helmet>
         <title>Book South Florida Cleaning | Red Rock Cleans</title>
-        <meta name="description" content="Book your professional cleaning service in South Florida. Easy online booking for residential and vacation rental cleaning." />
+        <meta name="description" content="Book cleaning services in South Florida. Easy online booking for Fort Lauderdale & Weston. Schedule your service today!" />
       </Helmet>
       <Hreflang />
       

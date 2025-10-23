@@ -411,7 +411,7 @@ const DataCenterCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Data Center Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Specialized data center cleaning in South Florida. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Fort Lauderdale and Weston to ensure uptime." />
+        <meta name="description" content="Data center cleaning in South Florida. Protect critical infrastructure with specialized cleaning. Fort Lauderdale service!" />
         <meta name="keywords" content="data center cleaning South Florida, data center cleaning near me, server room cleaning South Florida, critical environment cleaning Fort Lauderdale, raised floor cleaning Weston FL, professional data center cleaners South Florida, ISO 14644-1 cleaning Fort Lauderdale, anti-static cleaning South Florida, sub-floor cleaning Broward County, data center cleaning cost South Florida, data center maintenance services Fort Lauderdale, data center cleaning checklist South Florida, hire data center cleaning services in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/data-center-cleaning" />
       </Helmet>

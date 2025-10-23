@@ -291,7 +291,7 @@ export default function WarehouseCleaningOahuPage() {
     <>
       <Helmet>
         <title>Warehouse Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional warehouse cleaning on Oahu. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers in Honolulu and Kapolei." />
+        <meta name="description" content="Warehouse cleaning in Oahu. Efficient service maximizing safety & productivity in Honolulu. Professional Hawaiian service!" />
         <meta name="keywords" content="warehouse cleaning Oahu, warehouse cleaning near me, industrial warehouse cleaning Oahu, distribution center cleaning Honolulu, warehouse floor scrubbing Kapolei, best warehouse cleaners Oahu, heavy duty warehouse cleaning Oahu, OSHA compliant warehouse cleaning, pallet rack cleaning Honolulu, warehouse cleaning cost Oahu, commercial warehouse cleaning prices Honolulu, what is warehouse cleaning Oahu, hire warehouse cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/warehouse-cleaning/" />
       </Helmet>

@@ -375,7 +375,7 @@ const DataCenterCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Data Center Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Specialized data center cleaning in Las Vegas. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning to ensure uptime." />
+        <meta name="description" content="Data center cleaning in Las Vegas. Protect critical infrastructure with specialized cleaning in Las Vegas & Henderson." />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

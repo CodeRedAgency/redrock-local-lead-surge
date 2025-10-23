@@ -1,0 +1,1097 @@
+{
+  "results": [
+    {
+      "file": "src\\pages\\about\\+Page.tsx",
+      "description": "Learn about Red Rock Cleaning",
+      "isI18n": false,
+      "length": 29
+    },
+    {
+      "file": "src\\pages\\AboutUs.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\AirbnbCleaning.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\6-handy-tips-to-help-you-minimize-your-time-on-housework\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\airbnb-bedding-management-you-should-know\\+Page.tsx",
+      "description": "Airbnb bedding management guide. Best practices for keeping linens fresh & guest-ready between bookings. Expert hosting tips!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\carpet-cleaning-to-remove-flea-infestation\\+Page.tsx",
+      "description": "Remove flea infestations from carpets. Professional carpet cleaning guide to eliminate fleas from your home. Effective solutions!",
+      "isI18n": false,
+      "length": 129
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill\\+Page.tsx",
+      "description": "Ultimate guide to cleaning your outdoor grill. Maintenance tips for better flavor & longer grill life. Master grill cleaning today!",
+      "isI18n": false,
+      "length": 131
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\health-code-violations\\+Page.tsx",
+      "description": "How to avoid health code violations. Learn the role of professional commercial cleaning in maintaining compliance. Essential guide!",
+      "isI18n": false,
+      "length": 131
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\natures-air-purifiers-the-best-plants-for-cleaner-indoor-air\\+Page.tsx",
+      "description": "Best air-purifying plants for your home. Natural ways to improve indoor air quality. Combine with cleaning for healthier living!",
+      "isI18n": false,
+      "length": 128
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets\\+Page.tsx",
+      "description": "Don",
+      "isI18n": false,
+      "length": 3
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\the-science-of-spring-cleaning\\+Page.tsx",
+      "description": "The science of spring cleaning. How decluttering & deep cleaning improve mood, health & focus. Get the ultimate checklist!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\why-you-should-host-a-spring-cleaning-party\\+Page.tsx",
+      "description": "Why host a spring cleaning party? Turn cleaning into a fun event with friends. Get tips & know when to call professionals!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\your-essential-guide-to-the-ultimate-move-out-cleaning-checklist\\+Page.tsx",
+      "description": "Ultimate move-out cleaning checklist. Room-by-room guide to secure your security deposit. Professional tips for perfect results!",
+      "isI18n": false,
+      "length": 128
+    },
+    {
+      "file": "src\\pages\\Blog.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\church-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\CleaningSupplies.tsx",
+      "description": "Complete list of cleaning supplies and equipment needed to work as a Red Rock Cleans contractor. Tools, equipment, and cleaning products checklist.",
+      "isI18n": false,
+      "length": 147
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\airbnb-cleaning-services\\+Page.tsx",
+      "description": "Columbus Ohio Airbnb cleaning. Quick turnovers for vacation rentals. Professional service ensures guest-ready results!",
+      "isI18n": true,
+      "length": 118
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\church-cleaning\\+Page.tsx",
+      "description": "Columbus Ohio church cleaning. Respectful, thorough cleaning for places of worship in Columbus. Professional service today!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\data-center-cleaning\\+Page.tsx",
+      "description": "Data center cleaning in Columbus Ohio. Protect critical infrastructure with specialized cleaning. Professional service!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\deep-cleaning-services\\+Page.tsx",
+      "description": "Restore your home",
+      "isI18n": true,
+      "length": 17
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\factory-cleaning\\+Page.tsx",
+      "description": "Factory cleaning in Columbus Ohio. Heavy-duty industrial cleaning for manufacturing facilities. Professional service today!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\government-facility-cleaning\\+Page.tsx",
+      "description": "Government facility cleaning in Columbus Ohio. Secure, compliant cleaning for municipal buildings. Professional service!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\gym-cleaning\\+Page.tsx",
+      "description": "Gym cleaning services in Columbus Ohio. Sanitized equipment & facilities for Columbus fitness centers. Book your service!",
+      "isI18n": false,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\industrial-cleaning\\+Page.tsx",
+      "description": "Industrial cleaning in Columbus Ohio. Heavy-duty cleaning for warehouses & factories. Professional service. Book today!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\medical-office-cleaning\\+Page.tsx",
+      "description": "Medical office cleaning in Columbus Ohio. HIPAA-compliant service for Columbus healthcare facilities. Book your service today!",
+      "isI18n": false,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\move-out-cleaning-services\\+Page.tsx",
+      "description": "Move-out cleaning in Columbus Ohio. Secure your deposit with comprehensive end-of-lease cleaning. Schedule your service!",
+      "isI18n": true,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\post-construction-cleaning-services\\+Page.tsx",
+      "description": "Post-construction cleaning in Columbus Ohio. Remove dust & debris after renovations. Professional cleanup service available!",
+      "isI18n": true,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\restaurant-cleaning\\+Page.tsx",
+      "description": "Restaurant cleaning in Columbus Ohio. Food-safe service maintaining health code compliance in Columbus. Book your service!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\retail-cleaning\\+Page.tsx",
+      "description": "Retail store cleaning in Columbus Ohio. Pristine spaces enhancing customer experience in Columbus. Book your service today!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\salon-spa-cleaning\\+Page.tsx",
+      "description": "Salon & spa cleaning in Columbus Ohio. Hygienic, luxurious environments for Columbus beauty businesses. Book your service!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\school-cleaning\\+Page.tsx",
+      "description": "School cleaning in Columbus Ohio. Safe, healthy learning environments for students in Columbus schools. Book your service!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\showroom-cleaning\\+Page.tsx",
+      "description": "Showroom cleaning in Columbus Ohio. Spotless displays showcasing your products perfectly in Columbus. Book your service!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\standard-cleaning-services\\+Page.tsx",
+      "description": "Columbus Ohio standard cleaning. Regular maintenance for your home. Professional residential cleaning services. Book today!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\warehouse-cleaning\\+Page.tsx",
+      "description": "Warehouse cleaning in Columbus Ohio. Efficient service maximizing safety & productivity in Columbus. Book your service!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\commercial-cleaning-cost-estimator\\index.page.tsx",
+      "description": "Get a free ballpark estimate for your commercial cleaning needs. Budget confidently using industry averages, then refine with your location.",
+      "isI18n": true,
+      "length": 140
+    },
+    {
+      "file": "src\\pages\\commercial-cleaning-time-estimator\\index.page.tsx",
+      "description": "Use our free tool to estimate how long professional commercial cleaning will take based on ISSA standards. Get an instant time estimate to plan your budget.",
+      "isI18n": true,
+      "length": 156
+    },
+    {
+      "file": "src\\pages\\commercial-quote\\index.page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\CommercialCleaning.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\CommercialCleaningEstimator.tsx",
+      "description": "Calculate your commercial cleaning costs instantly. Get accurate pricing for office, retail, and business cleaning services across all our locations.",
+      "isI18n": false,
+      "length": 149
+    },
+    {
+      "file": "src\\pages\\contact\\+Page.tsx",
+      "description": "Contact Red Rock Cleaning. Phone numbers & addresses for all locations including South Florida, Las Vegas, Hawaii, Dallas & Columbus.",
+      "isI18n": false,
+      "length": 133
+    },
+    {
+      "file": "src\\pages\\Contact.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\dallas\\airbnb-cleaning-services\\+Page.tsx",
+      "description": "Dallas Airbnb cleaning services. Fast turnovers with guest-ready results in Dallas, Plano & Frisco. Professional service!",
+      "isI18n": true,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\dallas\\church-cleaning\\+Page.tsx",
+      "description": "Dallas church cleaning. Respectful, thorough cleaning for places of worship in Dallas, Plano & Frisco. Book your service today!",
+      "isI18n": false,
+      "length": 127
+    },
+    {
+      "file": "src\\pages\\dallas\\data-center-cleaning\\+Page.tsx",
+      "description": "Data center cleaning in Dallas. Protect critical infrastructure with specialized cleaning in Dallas, Plano & Frisco. Book now!",
+      "isI18n": false,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\dallas\\deep-cleaning-services\\+Page.tsx",
+      "description": "Restore your home",
+      "isI18n": true,
+      "length": 17
+    },
+    {
+      "file": "src\\pages\\dallas\\factory-cleaning\\+Page.tsx",
+      "description": "Factory cleaning in Dallas. Heavy-duty industrial cleaning for manufacturing facilities in Dallas, Plano & Frisco. Book today!",
+      "isI18n": false,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\dallas\\government-facility-cleaning\\+Page.tsx",
+      "description": "Government facility cleaning in Dallas. Secure, compliant cleaning for municipal buildings in Dallas, Plano & Frisco.",
+      "isI18n": false,
+      "length": 117
+    },
+    {
+      "file": "src\\pages\\dallas\\gym-cleaning\\+Page.tsx",
+      "description": "Gym cleaning services in Dallas. Sanitized equipment & facilities for Dallas, Plano & Frisco fitness centers. Book today!",
+      "isI18n": false,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\dallas\\industrial-cleaning\\+Page.tsx",
+      "description": "Industrial cleaning in Dallas. Heavy-duty cleaning for warehouses & factories in Dallas, Plano & Frisco. Book your service!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\dallas\\medical-office-cleaning\\+Page.tsx",
+      "description": "Medical office cleaning in Dallas. HIPAA-compliant service for Dallas, Plano & Frisco healthcare facilities. Book today!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\dallas\\move-out-cleaning-services\\+Page.tsx",
+      "description": "Move-out cleaning in Dallas. Get your full deposit back with comprehensive cleaning in Dallas, Plano & Frisco. Book now!",
+      "isI18n": true,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\dallas\\post-construction-cleaning-services\\+Page.tsx",
+      "description": "Post-construction cleaning in Dallas. Professional cleanup after renovations in Dallas, Plano & Frisco. Call for a quote!",
+      "isI18n": true,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\dallas\\restaurant-cleaning\\+Page.tsx",
+      "description": "Restaurant cleaning in Dallas. Food-safe service maintaining health code compliance in Dallas, Plano & Frisco. Book today!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\dallas\\retail-cleaning\\+Page.tsx",
+      "description": "Retail store cleaning in Dallas. Pristine spaces enhancing customer experience in Dallas, Plano & Frisco. Book today!",
+      "isI18n": false,
+      "length": 117
+    },
+    {
+      "file": "src\\pages\\dallas\\salon-spa-cleaning\\+Page.tsx",
+      "description": "Salon & spa cleaning in Dallas. Hygienic, luxurious environments for Dallas, Plano & Frisco beauty businesses. Book today!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\dallas\\school-cleaning\\+Page.tsx",
+      "description": "School cleaning in Dallas. Safe, healthy learning environments for students in Dallas, Plano & Frisco schools. Book today!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\dallas\\showroom-cleaning\\+Page.tsx",
+      "description": "Showroom cleaning in Dallas. Spotless displays showcasing your products perfectly in Dallas, Plano & Frisco. Book today!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\dallas\\standard-cleaning-services\\+Page.tsx",
+      "description": "Standard cleaning services in Dallas. Consistent maintenance for homes in Dallas, Plano & Frisco. Book your cleaning today!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\dallas\\warehouse-cleaning\\+Page.tsx",
+      "description": "Warehouse cleaning in Dallas. Efficient service maximizing safety & productivity in Dallas, Plano & Frisco. Book today!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\data-center-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\deep-cleaning-services\\+Page.tsx",
+      "description": "Expert deep cleaning services. Thorough top-to-bottom cleaning for homes and businesses. Transform your space today!",
+      "isI18n": false,
+      "length": 116
+    },
+    {
+      "file": "src\\pages\\DeepCleaning.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\factory-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\FAQ.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\general-retail-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\government-facility-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\gym-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\HiringApplicationNew.tsx",
+      "description": "Apply to join the Red Rock Cleans team. Complete our work application form to start your career in professional cleaning services.",
+      "isI18n": false,
+      "length": 130
+    },
+    {
+      "file": "src\\pages\\HiringRequirements.tsx",
+      "description": "Explore career opportunities at Red Rock Cleaning. Learn about our hiring requirements and join our professional cleaning team.",
+      "isI18n": false,
+      "length": 127
+    },
+    {
+      "file": "src\\pages\\index\\+Page.tsx",
+      "description": "Professional cleaning services across South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas. Residential, commercial, and vacation rental cleaning.",
+      "isI18n": false,
+      "length": 153
+    },
+    {
+      "file": "src\\pages\\Index.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\industrial-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\las-vegas\\airbnb-cleaning-services\\+Page.tsx",
+      "description": "Las Vegas Airbnb cleaning services. Quick turnovers with guest-ready results in Las Vegas & Henderson. Book your cleaning!",
+      "isI18n": true,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\las-vegas\\church-cleaning\\+Page.tsx",
+      "description": "Las Vegas church cleaning. Respectful, thorough cleaning for places of worship in Las Vegas & Henderson. Book your service!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\las-vegas\\data-center-cleaning\\+Page.tsx",
+      "description": "Data center cleaning in Las Vegas. Protect critical infrastructure with specialized cleaning in Las Vegas & Henderson.",
+      "isI18n": false,
+      "length": 118
+    },
+    {
+      "file": "src\\pages\\las-vegas\\deep-cleaning-services\\+Page.tsx",
+      "description": "Restore your home",
+      "isI18n": true,
+      "length": 17
+    },
+    {
+      "file": "src\\pages\\las-vegas\\factory-cleaning\\+Page.tsx",
+      "description": "Factory cleaning in Las Vegas. Heavy-duty industrial cleaning for manufacturing facilities in Las Vegas & Henderson today!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\las-vegas\\government-facility-cleaning\\+Page.tsx",
+      "description": "Government facility cleaning in Las Vegas. Secure, compliant cleaning for municipal buildings in Las Vegas & Henderson.",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\las-vegas\\gym-cleaning\\+Page.tsx",
+      "description": "Gym cleaning services in Las Vegas. Sanitized equipment & facilities for Las Vegas & Henderson fitness centers. Book today!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\las-vegas\\industrial-cleaning\\+Page.tsx",
+      "description": "Industrial cleaning in Las Vegas. Heavy-duty cleaning for warehouses & factories in Las Vegas & Henderson. Call us today!",
+      "isI18n": false,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\las-vegas\\medical-office-cleaning\\+Page.tsx",
+      "description": "Medical office cleaning in Las Vegas. HIPAA-compliant service for Las Vegas & Henderson healthcare facilities. Book today!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\las-vegas\\move-out-cleaning-services\\+Page.tsx",
+      "description": "Move-out cleaning in Las Vegas. Ensure you get your deposit back with thorough cleaning in Las Vegas & Henderson. Book now!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\las-vegas\\post-construction-cleaning-services\\+Page.tsx",
+      "description": "Post-construction cleaning in Las Vegas. Professional cleanup after renovations in Las Vegas & Henderson. Contact us today!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\las-vegas\\restaurant-cleaning\\+Page.tsx",
+      "description": "Restaurant cleaning in Las Vegas. Food-safe service maintaining health code compliance in Las Vegas & Henderson. Book now!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\las-vegas\\retail-cleaning\\+Page.tsx",
+      "description": "Retail store cleaning in Las Vegas. Pristine spaces enhancing customer experience in Las Vegas & Henderson. Book today!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\las-vegas\\salon-spa-cleaning\\+Page.tsx",
+      "description": "Salon & spa cleaning in Las Vegas. Hygienic, luxurious environments for Las Vegas & Henderson beauty businesses. Book now!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\las-vegas\\school-cleaning\\+Page.tsx",
+      "description": "School cleaning in Las Vegas. Safe, healthy learning environments for students in Las Vegas & Henderson schools. Book today!",
+      "isI18n": false,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\las-vegas\\showroom-cleaning\\+Page.tsx",
+      "description": "Showroom cleaning in Las Vegas. Spotless displays showcasing your products perfectly in Las Vegas & Henderson. Book now!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\las-vegas\\standard-cleaning-services\\+Page.tsx",
+      "description": "Professional standard cleaning in Las Vegas. Reliable maintenance for homes in Las Vegas & Henderson. Schedule your service now!",
+      "isI18n": true,
+      "length": 128
+    },
+    {
+      "file": "src\\pages\\las-vegas\\warehouse-cleaning\\+Page.tsx",
+      "description": "Warehouse cleaning in Las Vegas. Efficient service maximizing safety & productivity in Las Vegas & Henderson. Book today!",
+      "isI18n": false,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\locations\\ColumbusBooking.tsx",
+      "description": "Book cleaning services in Columbus Ohio. Easy online booking for Columbus homes and offices. Schedule your service today!",
+      "isI18n": true,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\locations\\ColumbusCalculator.tsx",
+      "description": "Get an instant cleaning quote in Columbus Ohio. Calculate costs for Columbus cleaning services. Free online estimate today!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\locations\\ColumbusHome.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\locations\\DallasBooking.tsx",
+      "description": "Book cleaning services in Dallas. Easy online booking for Dallas, Plano & Frisco homes and businesses. Schedule today!",
+      "isI18n": true,
+      "length": 118
+    },
+    {
+      "file": "src\\pages\\locations\\DallasCalculator.tsx",
+      "description": "Get an instant cleaning quote in Dallas. Calculate costs for Dallas, Plano & Frisco cleaning services. Free online estimate!",
+      "isI18n": true,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\locations\\DallasHome.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\locations\\LasVegasBooking.tsx",
+      "description": "Book cleaning services in Las Vegas. Easy online booking for Las Vegas & Henderson homes and businesses. Schedule today!",
+      "isI18n": true,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\locations\\LasVegasCalculator.tsx",
+      "description": "Get an instant cleaning quote in Las Vegas. Calculate costs for Las Vegas & Henderson cleaning services. Free online estimate!",
+      "isI18n": true,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\locations\\LasVegasHome.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\locations\\MauiBooking.tsx",
+      "description": "Book cleaning services in Maui. Easy online booking for vacation rental & residential cleaning in Maui. Schedule today!",
+      "isI18n": true,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\locations\\MauiCalculator.tsx",
+      "description": "Get an instant cleaning quote in Maui. Calculate costs for Maui cleaning services. Free online estimate for your home today!",
+      "isI18n": true,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\locations\\MauiHome.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\locations\\OahuBooking.tsx",
+      "description": "Book cleaning services in Oahu. Easy online booking for Honolulu residential & vacation rental cleaning. Schedule today!",
+      "isI18n": true,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\locations\\OahuCalculator.tsx",
+      "description": "Get an instant cleaning quote in Oahu. Calculate costs for Honolulu & Oahu cleaning services. Free online estimate today!",
+      "isI18n": true,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\locations\\OahuHome.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\locations\\SouthFloridaBooking.tsx",
+      "description": "Book cleaning services in South Florida. Easy online booking for Fort Lauderdale & Weston. Schedule your service today!",
+      "isI18n": true,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\locations\\SouthFloridaCalculator.tsx",
+      "description": "Get an instant cleaning quote in South Florida. Calculate costs for Fort Lauderdale & Weston cleaning services. Free estimate!",
+      "isI18n": true,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\locations\\SouthFloridaHome.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\MaidilyApp.tsx",
+      "description": "Learn how to use the Maidily mobile app for managing schedules, tracking jobs, and streamlining your work at Red Rock Cleaning.",
+      "isI18n": false,
+      "length": 127
+    },
+    {
+      "file": "src\\pages\\maui\\airbnb-cleaning-services\\+Page.tsx",
+      "description": "Professional Airbnb cleaning in Maui. Quick turnovers for vacation rentals with guest-ready results. Schedule your service!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\maui\\church-cleaning\\+Page.tsx",
+      "description": "Maui church cleaning. Respectful, thorough cleaning for places of worship. Professional Hawaiian service on Maui. Book today!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\maui\\data-center-cleaning\\+Page.tsx",
+      "description": "Data center cleaning in Maui. Protect critical infrastructure with specialized cleaning. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\maui\\deep-cleaning-services\\+Page.tsx",
+      "description": "Restore your home",
+      "isI18n": true,
+      "length": 17
+    },
+    {
+      "file": "src\\pages\\maui\\factory-cleaning\\+Page.tsx",
+      "description": "Factory cleaning in Maui. Heavy-duty industrial cleaning for manufacturing facilities. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 117
+    },
+    {
+      "file": "src\\pages\\maui\\government-facility-cleaning\\+Page.tsx",
+      "description": "Government facility cleaning in Maui. Secure, compliant cleaning for municipal buildings. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\maui\\gym-cleaning\\+Page.tsx",
+      "description": "Gym cleaning services in Maui. Sanitized equipment & facilities for Maui fitness centers. Professional Hawaiian service today!",
+      "isI18n": false,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\maui\\industrial-cleaning\\+Page.tsx",
+      "description": "Industrial cleaning in Maui. Heavy-duty cleaning for warehouses & factories. Professional Hawaiian service. Book your service!",
+      "isI18n": false,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\maui\\medical-office-cleaning\\+Page.tsx",
+      "description": "Medical office cleaning in Maui. HIPAA-compliant service for Maui healthcare facilities. Professional Hawaiian service today!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\maui\\move-out-cleaning-services\\+Page.tsx",
+      "description": "Move-out cleaning in Maui. Secure your security deposit with thorough end-of-lease cleaning. Professional Hawaiian service!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\maui\\post-construction-cleaning-services\\+Page.tsx",
+      "description": "Post-construction cleaning in Maui. Professional cleanup after renovations & construction. Remove all dust and debris today!",
+      "isI18n": true,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\maui\\restaurant-cleaning\\+Page.tsx",
+      "description": "Restaurant cleaning in Maui. Food-safe service maintaining health code compliance. Professional Hawaiian service. Book today!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\maui\\retail-cleaning\\+Page.tsx",
+      "description": "Retail store cleaning in Maui. Pristine spaces enhancing customer experience. Professional Hawaiian service. Book your service!",
+      "isI18n": false,
+      "length": 127
+    },
+    {
+      "file": "src\\pages\\maui\\salon-spa-cleaning\\+Page.tsx",
+      "description": "Salon & spa cleaning in Maui. Hygienic, luxurious environments for Maui beauty businesses. Professional Hawaiian service today!",
+      "isI18n": false,
+      "length": 127
+    },
+    {
+      "file": "src\\pages\\maui\\school-cleaning\\+Page.tsx",
+      "description": "School cleaning in Maui. Safe, healthy learning environments for students in Maui schools. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 121
+    },
+    {
+      "file": "src\\pages\\maui\\showroom-cleaning\\+Page.tsx",
+      "description": "Showroom cleaning in Maui. Spotless displays showcasing your products perfectly. Professional Hawaiian service. Book today!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\maui\\standard-cleaning-services\\+Page.tsx",
+      "description": "Maui standard cleaning services. Regular maintenance for your Hawaiian paradise. Professional cleaning in Maui. Book today!",
+      "isI18n": true,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\maui\\warehouse-cleaning\\+Page.tsx",
+      "description": "Warehouse cleaning in Maui. Efficient service maximizing safety & productivity. Professional Hawaiian service. Book today!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\medical-office-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\MoveOutCleaning.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\NotFound.tsx",
+      "description": "The page you",
+      "isI18n": false,
+      "length": 12
+    },
+    {
+      "file": "src\\pages\\oahu\\airbnb-cleaning-services\\+Page.tsx",
+      "description": "Oahu Airbnb cleaning services. Fast turnovers for vacation rentals in Honolulu & Oahu. Guest-ready results every time!",
+      "isI18n": true,
+      "length": 118
+    },
+    {
+      "file": "src\\pages\\oahu\\church-cleaning\\+Page.tsx",
+      "description": "Oahu church cleaning. Respectful, thorough cleaning for places of worship in Honolulu & Oahu. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\oahu\\data-center-cleaning\\+Page.tsx",
+      "description": "Data center cleaning in Oahu. Protect critical infrastructure with specialized cleaning in Honolulu. Hawaiian expertise!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\oahu\\deep-cleaning-services\\+Page.tsx",
+      "description": "Restore your home",
+      "isI18n": true,
+      "length": 17
+    },
+    {
+      "file": "src\\pages\\oahu\\factory-cleaning\\+Page.tsx",
+      "description": "Factory cleaning in Oahu. Heavy-duty industrial cleaning for manufacturing facilities in Honolulu. Professional service!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\oahu\\government-facility-cleaning\\+Page.tsx",
+      "description": "Government facility cleaning in Oahu. Secure, compliant cleaning for municipal buildings in Honolulu. Professional service!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\oahu\\gym-cleaning\\+Page.tsx",
+      "description": "Gym cleaning services in Oahu. Sanitized equipment & facilities for Honolulu fitness centers. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\oahu\\industrial-cleaning\\+Page.tsx",
+      "description": "Industrial cleaning in Oahu. Heavy-duty cleaning for warehouses & factories in Honolulu. Professional Hawaiian service today!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\oahu\\medical-office-cleaning\\+Page.tsx",
+      "description": "Medical office cleaning in Oahu. HIPAA-compliant service for Honolulu healthcare facilities. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\oahu\\move-out-cleaning-services\\+Page.tsx",
+      "description": "Move-out cleaning in Oahu. Get your full deposit back with comprehensive cleaning in Honolulu & Oahu. Book your service today!",
+      "isI18n": true,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\oahu\\post-construction-cleaning-services\\+Page.tsx",
+      "description": "Post-construction cleaning in Oahu. Remove dust & debris after renovations in Honolulu. Professional Hawaiian service.",
+      "isI18n": true,
+      "length": 118
+    },
+    {
+      "file": "src\\pages\\oahu\\restaurant-cleaning\\+Page.tsx",
+      "description": "Restaurant cleaning in Oahu. Food-safe service maintaining health code compliance in Honolulu. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\oahu\\retail-cleaning\\+Page.tsx",
+      "description": "Retail store cleaning in Oahu. Pristine spaces enhancing customer experience in Honolulu. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 120
+    },
+    {
+      "file": "src\\pages\\oahu\\salon-spa-cleaning\\+Page.tsx",
+      "description": "Salon & spa cleaning in Oahu. Hygienic, luxurious environments for Honolulu beauty businesses. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\oahu\\school-cleaning\\+Page.tsx",
+      "description": "School cleaning in Oahu. Safe, healthy learning environments for students in Honolulu schools. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\oahu\\showroom-cleaning\\+Page.tsx",
+      "description": "Showroom cleaning in Oahu. Spotless displays showcasing your products perfectly in Honolulu. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\oahu\\standard-cleaning-services\\+Page.tsx",
+      "description": "Standard cleaning services in Oahu. Consistent maintenance for Honolulu & Oahu homes. Professional Hawaiian cleaning service!",
+      "isI18n": true,
+      "length": 125
+    },
+    {
+      "file": "src\\pages\\oahu\\warehouse-cleaning\\+Page.tsx",
+      "description": "Warehouse cleaning in Oahu. Efficient service maximizing safety & productivity in Honolulu. Professional Hawaiian service!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\PostConstruction.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\PrivacyPolicy.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\ResidentialCleaning.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\restaurant-cleaning\\+Page.tsx",
+      "description": "Restaurant cleaning services. Food-safe cleaning maintaining health code compliance. Professional service for dining establishments!",
+      "isI18n": false,
+      "length": 132
+    },
+    {
+      "file": "src\\pages\\salon-spa-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\school-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\showroom-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\Sitemap.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\south-florida\\airbnb-cleaning-services\\+Page.tsx",
+      "description": "Fast Airbnb cleaning in South Florida. Guest-ready turnovers in Fort Lauderdale & Weston. Professional vacation rental service.",
+      "isI18n": true,
+      "length": 127
+    },
+    {
+      "file": "src\\pages\\south-florida\\church-cleaning\\+Page.tsx",
+      "description": "South Florida church cleaning. Respectful, thorough cleaning for places of worship in Fort Lauderdale & Weston. Book today!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\south-florida\\data-center-cleaning\\+Page.tsx",
+      "description": "Data center cleaning in South Florida. Protect critical infrastructure with specialized cleaning. Fort Lauderdale service!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\south-florida\\deep-cleaning-services\\+Page.tsx",
+      "description": "Restore your home",
+      "isI18n": true,
+      "length": 17
+    },
+    {
+      "file": "src\\pages\\south-florida\\factory-cleaning\\+Page.tsx",
+      "description": "Factory cleaning in South Florida. Heavy-duty industrial cleaning for manufacturing facilities in Fort Lauderdale. Book now!",
+      "isI18n": false,
+      "length": 124
+    },
+    {
+      "file": "src\\pages\\south-florida\\government-facility-cleaning\\+Page.tsx",
+      "description": "Government facility cleaning in South Florida. Secure, compliant cleaning for municipal buildings. Fort Lauderdale service!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\south-florida\\gym-cleaning\\+Page.tsx",
+      "description": "Gym cleaning services in South Florida. Sanitized equipment & facilities for Fort Lauderdale & Weston fitness centers!",
+      "isI18n": false,
+      "length": 118
+    },
+    {
+      "file": "src\\pages\\south-florida\\industrial-cleaning\\+Page.tsx",
+      "description": "Industrial cleaning in South Florida. Heavy-duty cleaning for warehouses & factories in Fort Lauderdale & Weston area!",
+      "isI18n": false,
+      "length": 118
+    },
+    {
+      "file": "src\\pages\\south-florida\\medical-office-cleaning\\+Page.tsx",
+      "description": "Medical office cleaning in South Florida. HIPAA-compliant service for Fort Lauderdale & Weston healthcare facilities today!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\south-florida\\move-out-cleaning-services\\+Page.tsx",
+      "description": "Move-out cleaning in South Florida. Secure your deposit with thorough cleaning in Fort Lauderdale & Weston. Book today!",
+      "isI18n": true,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\south-florida\\post-construction-cleaning-services\\+Page.tsx",
+      "description": "Post-construction cleaning in South Florida. Remove dust & debris after renovations in Fort Lauderdale & Weston. Schedule now!",
+      "isI18n": true,
+      "length": 126
+    },
+    {
+      "file": "src\\pages\\south-florida\\restaurant-cleaning\\+Page.tsx",
+      "description": "Restaurant cleaning in South Florida. Food-safe service maintaining health code compliance. Fort Lauderdale & Weston area!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\south-florida\\retail-cleaning\\+Page.tsx",
+      "description": "Retail store cleaning in South Florida. Pristine spaces enhancing customer experience. Fort Lauderdale & Weston locations!",
+      "isI18n": false,
+      "length": 122
+    },
+    {
+      "file": "src\\pages\\south-florida\\salon-spa-cleaning\\+Page.tsx",
+      "description": "Salon & spa cleaning in South Florida. Hygienic, luxurious environments for Fort Lauderdale & Weston beauty businesses!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\south-florida\\school-cleaning\\+Page.tsx",
+      "description": "School cleaning in South Florida. Safe, healthy learning environments for students in Fort Lauderdale & Weston schools!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\south-florida\\showroom-cleaning\\+Page.tsx",
+      "description": "Showroom cleaning in South Florida. Spotless displays showcasing your products perfectly. Fort Lauderdale & Weston service!",
+      "isI18n": false,
+      "length": 123
+    },
+    {
+      "file": "src\\pages\\south-florida\\standard-cleaning-services\\+Page.tsx",
+      "description": "Professional standard cleaning in South Florida. Regular maintenance for homes in Fort Lauderdale & Weston. Book your service today!",
+      "isI18n": true,
+      "length": 132
+    },
+    {
+      "file": "src\\pages\\south-florida\\warehouse-cleaning\\+Page.tsx",
+      "description": "Warehouse cleaning in South Florida. Efficient service maximizing safety & productivity. Fort Lauderdale & Weston area!",
+      "isI18n": false,
+      "length": 119
+    },
+    {
+      "file": "src\\pages\\standard-cleaning-services\\+Page.tsx",
+      "description": "Professional standard cleaning services. Regular maintenance to keep your home or office consistently fresh and clean. Book today!",
+      "isI18n": false,
+      "length": 130
+    },
+    {
+      "file": "src\\pages\\StandardCleaning.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\StandardVsDeep.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\SubContractorAgreement.tsx",
+      "description": "Complete your sub-contractor agreement with Red Rock Cleans. Review terms and sign the agreement to join our team.",
+      "isI18n": false,
+      "length": 114
+    },
+    {
+      "file": "src\\pages\\TermsAndConditions.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    },
+    {
+      "file": "src\\pages\\warehouse-cleaning\\+Page.tsx",
+      "description": "MISSING",
+      "isI18n": false,
+      "length": 0
+    }
+  ],
+  "duplicates": [
+    [
+      "Restore your home",
+      [
+        "src\\pages\\columbus-ohio\\deep-cleaning-services\\+Page.tsx",
+        "src\\pages\\dallas\\deep-cleaning-services\\+Page.tsx",
+        "src\\pages\\las-vegas\\deep-cleaning-services\\+Page.tsx",
+        "src\\pages\\maui\\deep-cleaning-services\\+Page.tsx",
+        "src\\pages\\oahu\\deep-cleaning-services\\+Page.tsx",
+        "src\\pages\\south-florida\\deep-cleaning-services\\+Page.tsx"
+      ]
+    ]
+  ]
+}

@@ -278,7 +278,7 @@ const GymCleaningOahuPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Gym Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional gym cleaning on Oahu. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Honolulu and Kailua." />
+        <meta name="description" content="Gym cleaning services in Oahu. Sanitized equipment & facilities for Honolulu fitness centers. Professional Hawaiian service!" />
         <meta name="keywords" content="gym cleaning near me Oahu, fitness center cleaning Honolulu, health club sanitation Kailua, gym disinfection Oahu, professional gym cleaners Oahu, equipment disinfection Honolulu, locker room cleaning Oahu, anti-viral gym cleaning Oahu, gym cleaning cost Oahu, commercial gym cleaning prices Honolulu, gym cleaning checklist Oahu, how to keep a gym clean Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/gym-cleaning" />
       </Helmet>

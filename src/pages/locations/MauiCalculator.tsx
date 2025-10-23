@@ -12,7 +12,7 @@ const MauiCalculator = () => {
     <>
       <Helmet>
         <title>Get a Quote - Maui Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house and vacation rental cleaning in Maui." />
+        <meta name="description" content="Get an instant cleaning quote in Maui. Calculate costs for Maui cleaning services. Free online estimate for your home today!" />
       </Helmet>
       <Hreflang />
       

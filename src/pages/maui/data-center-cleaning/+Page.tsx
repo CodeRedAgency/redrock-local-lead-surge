@@ -221,7 +221,7 @@ const DataCenterCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Data Center Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Specialized data center cleaning on Maui. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning to ensure uptime." />
+        <meta name="description" content="Data center cleaning in Maui. Protect critical infrastructure with specialized cleaning. Professional Hawaiian service!" />
         <meta name="keywords" content="data center cleaning near me, server room cleaning Maui, critical environment cleaning Wailea, raised floor cleaning Kihei, professional data center cleaners Maui, ISO 14644-1 cleaning Maui, anti-static cleaning Maui, sub-floor cleaning Maui, data center cleaning cost Maui, data center maintenance services Maui, data center cleaning checklist Maui, hire data center cleaning services in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/data-center-cleaning" />
       </Helmet>

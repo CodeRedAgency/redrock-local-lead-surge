@@ -434,7 +434,7 @@ const MoveOutCleaningSouthFloridaPage = () => {
     <>
       <Helmet>
         <title>Move Out Cleaning Service South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Secure your deposit with our reliable move out cleaning service in South Florida. Red Rock Cleans provides thorough end-of-tenancy cleaning for renters and sellers in Fort Lauderdale, Weston, and beyond. Book today!" />
+        <meta name="description" content="Move-out cleaning in South Florida. Secure your deposit with thorough cleaning in Fort Lauderdale & Weston. Book today!" />
       </Helmet>
       <Hreflang />
       

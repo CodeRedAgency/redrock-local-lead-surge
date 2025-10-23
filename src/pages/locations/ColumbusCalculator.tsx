@@ -12,7 +12,7 @@ const ColumbusCalculator = () => {
     <>
       <Helmet>
         <title>Free Columbus Cleaning Quote | Red Rock Cleans</title>
-        <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house and office cleaning in Columbus Ohio." />
+        <meta name="description" content="Get an instant cleaning quote in Columbus Ohio. Calculate costs for Columbus cleaning services. Free online estimate today!" />
       </Helmet>
       <Hreflang />
       

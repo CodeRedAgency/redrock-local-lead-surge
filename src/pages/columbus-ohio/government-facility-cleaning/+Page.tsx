@@ -313,7 +313,7 @@ const GovernmentFacilityCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Government Facility Cleaning Columbus | Red Rock Cleans</title>
-        <meta name="description" content="Secure and compliant government facility cleaning in Columbus, OH. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff." />
+        <meta name="description" content="Government facility cleaning in Columbus Ohio. Secure, compliant cleaning for municipal buildings. Professional service!" />
         <meta name="keywords" content="government facility cleaning Columbus Ohio, government cleaning near me, municipal building cleaning Columbus Ohio, federal office cleaning Dublin OH, courthouse cleaning Columbus, secure facility cleaning Columbus, GSA schedule cleaning Columbus Ohio, confidential cleaning services, discreet government cleaners Columbus, government cleaning contracts Columbus, cost of municipal cleaning Columbus, what is government facility cleaning Columbus, hire secure cleaners in Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/government-facility-cleaning" />
       </Helmet>

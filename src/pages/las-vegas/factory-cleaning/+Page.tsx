@@ -375,7 +375,7 @@ const FactoryCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Factory Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional factory cleaning in Las Vegas. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Henderson, North Las Vegas, and beyond to ensure safety and productivity." />
+        <meta name="description" content="Factory cleaning in Las Vegas. Heavy-duty industrial cleaning for manufacturing facilities in Las Vegas & Henderson today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

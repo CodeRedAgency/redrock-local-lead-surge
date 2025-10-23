@@ -383,7 +383,7 @@ export default function AirbnbCleaningLasVegasPage() {
     <>
       <Helmet>
         <title>Airbnb Cleaning Services Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="5-star Airbnb cleaning services in Las Vegas. Red Rock Cleans offers reliable, automated turnover cleaning for vacation rentals to impress every guest. Get your free instant quote today!" />
+        <meta name="description" content="Las Vegas Airbnb cleaning services. Quick turnovers with guest-ready results in Las Vegas & Henderson. Book your cleaning!" />
       </Helmet>
       <Hreflang />
       

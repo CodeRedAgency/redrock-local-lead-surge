@@ -221,7 +221,7 @@ const RestaurantCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Restaurant Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional restaurant cleaning on Maui. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning in Lahaina and Kihei." />
+        <meta name="description" content="Restaurant cleaning in Maui. Food-safe service maintaining health code compliance. Professional Hawaiian service. Book today!" />
         <meta name="keywords" content="restaurant cleaning near me, commercial kitchen cleaning Maui, bar cleaning Lahaina, dining room cleaning Wailea, best restaurant cleaners Maui, kitchen degreasing Kihei, front of house cleaning Maui, health code cleaning Maui, restaurant cleaning cost Maui, commercial kitchen cleaning prices Maui, restaurant cleaning checklist Maui, hire restaurant cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/restaurant-cleaning" />
       </Helmet>

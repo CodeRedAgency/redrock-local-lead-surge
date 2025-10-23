@@ -278,7 +278,7 @@ const SalonSpaCleaningOahuPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Salon & Spa Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional salon and spa cleaning on Oahu. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Honolulu and Waikiki." />
+        <meta name="description" content="Salon & spa cleaning in Oahu. Hygienic, luxurious environments for Honolulu beauty businesses. Professional Hawaiian service!" />
         <meta name="keywords" content="salon cleaning near me, spa cleaning Oahu, hair salon cleaning Honolulu, nail salon cleaning Waikiki, medispa cleaning Oahu, best salon cleaners Oahu, hygienic spa cleaning Honolulu, beauty salon sanitation, barber shop cleaning Oahu, salon cleaning cost Oahu, spa cleaning prices Honolulu, what is salon cleaning Oahu, hire spa cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/salon-spa-cleaning" />
       </Helmet>

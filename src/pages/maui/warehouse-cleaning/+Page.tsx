@@ -221,7 +221,7 @@ const WarehouseCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Warehouse Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional warehouse cleaning on Maui. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers." />
+        <meta name="description" content="Warehouse cleaning in Maui. Efficient service maximizing safety & productivity. Professional Hawaiian service. Book today!" />
         <meta name="keywords" content="warehouse cleaning near me, industrial warehouse cleaning Maui, distribution center cleaning Maui, warehouse floor scrubbing Kihei, best warehouse cleaners Maui, heavy duty warehouse cleaning Maui, OSHA compliant warehouse cleaning, pallet rack cleaning Maui, warehouse cleaning cost Maui, commercial warehouse cleaning prices Maui, what is warehouse cleaning Maui, hire warehouse cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/warehouse-cleaning" />
       </Helmet>

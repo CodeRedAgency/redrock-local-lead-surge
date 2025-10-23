@@ -377,7 +377,7 @@ const MoveOutCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Move Out Cleaning Service Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Secure your deposit with our reliable move out cleaning service in Las Vegas. Red Rock Cleans provides thorough end-of-tenancy cleaning for renters and sellers. Book today!" />
+        <meta name="description" content="Move-out cleaning in Las Vegas. Ensure you get your deposit back with thorough cleaning in Las Vegas & Henderson. Book now!" />
       </Helmet>
       <Hreflang />
       

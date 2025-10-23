@@ -12,7 +12,7 @@ const ScienceOfSpringCleaningPage = () => {
     <>
       <Helmet>
         <title>Spring Cleaning Benefits: Mood & Health | Red Rock Cleans</title>
-        <meta name="description" content="Discover the science of spring cleaning! Learn how decluttering and a deep clean can improve your mood, health, and focus. Get our ultimate checklist." />
+        <meta name="description" content="The science of spring cleaning. How decluttering & deep cleaning improve mood, health & focus. Get the ultimate checklist!" />
       </Helmet>
       <Hreflang />
       

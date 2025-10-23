@@ -244,7 +244,7 @@ const StandardCleaningMauiPage = () => {
     <>
       <Helmet>
         <title>Standard Cleaning Service Maui | Red Rock Cleans</title>
-        <meta name="description" content="Keep your Maui home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Wailea, Kihei, and beyond. Get your free quote!" />
+        <meta name="description" content="Maui standard cleaning services. Regular maintenance for your Hawaiian paradise. Professional cleaning in Maui. Book today!" />
       </Helmet>
       <Hreflang />
       

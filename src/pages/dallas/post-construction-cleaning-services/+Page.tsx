@@ -206,7 +206,7 @@ const PostConstructionCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Post Construction Cleaning Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional post construction cleaning service in Dallas. Red Rock Cleans handles construction cleanup for new builds and renovations in Plano, Frisco, and beyond. Get a detailed quote today!" />
+        <meta name="description" content="Post-construction cleaning in Dallas. Professional cleanup after renovations in Dallas, Plano & Frisco. Call for a quote!" />
       </Helmet>
       <Hreflang />
       

@@ -434,7 +434,7 @@ const PostConstructionCleaningSouthFloridaPage = () => {
     <>
       <Helmet>
         <title>Post Construction Cleaning South Florida | Red Rock</title>
-        <meta name="description" content="Professional post construction cleaning service in South Florida. Red Rock Cleans handles construction cleanup for new builds and renovations in Fort Lauderdale, Weston, and beyond. Get a quote!" />
+        <meta name="description" content="Post-construction cleaning in South Florida. Remove dust & debris after renovations in Fort Lauderdale & Weston. Schedule now!" />
       </Helmet>
       <Hreflang />
       

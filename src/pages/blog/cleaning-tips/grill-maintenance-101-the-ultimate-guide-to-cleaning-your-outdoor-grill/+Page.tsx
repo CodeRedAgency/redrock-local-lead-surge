@@ -12,7 +12,7 @@ const GrillMaintenanceGuidePage = () => {
     <>
       <Helmet>
         <title>Grill Cleaning & Maintenance Guide | Red Rock Cleans</title>
-        <meta name="description" content="Master grill maintenance with our ultimate guide. Learn how to clean your outdoor grill for better taste, longer life, and a healthier cooking experience." />
+        <meta name="description" content="Ultimate guide to cleaning your outdoor grill. Maintenance tips for better flavor & longer grill life. Master grill cleaning today!" />
       </Helmet>
       <Hreflang />
       

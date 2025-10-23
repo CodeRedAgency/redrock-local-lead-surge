@@ -221,7 +221,7 @@ const GovernmentFacilityCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Government Facility Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Secure and compliant government facility cleaning on Maui. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff." />
+        <meta name="description" content="Government facility cleaning in Maui. Secure, compliant cleaning for municipal buildings. Professional Hawaiian service!" />
         <meta name="keywords" content="government cleaning near me Maui, municipal building cleaning Kihei, federal office cleaning Maui, courthouse cleaning Wailuku, secure facility cleaning Maui, GSA schedule cleaning Maui, confidential cleaning services Maui, discreet government cleaners Maui, government cleaning contracts Maui, cost of municipal cleaning Maui, what is government facility cleaning Maui, hire secure cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/government-facility-cleaning" />
       </Helmet>

@@ -221,7 +221,7 @@ const SchoolCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>School Cleaning Services Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional school cleaning services on Maui. Red Rock Cleans provides a safe and healthy learning environment for students in Kihei, Lahaina, and across the island." />
+        <meta name="description" content="School cleaning in Maui. Safe, healthy learning environments for students in Maui schools. Professional Hawaiian service!" />
         <meta name="keywords" content="school cleaning near me, janitorial services for schools Maui, daycare cleaning Kihei, preschool cleaning Lahaina, Maui school cleaning services, best school cleaners Maui, educational facility cleaning Maui, classroom disinfection Maui, private school cleaning Wailea, school cleaning cost Maui, school janitorial service prices Maui, school cleaning checklist Maui, hire school cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/school-cleaning" />
       </Helmet>

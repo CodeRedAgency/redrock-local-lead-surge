@@ -261,7 +261,7 @@ const ShowroomCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Showroom Cleaning Services in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional showroom cleaning in Dallas. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships, furniture stores, and more in Plano and Frisco." />
+        <meta name="description" content="Showroom cleaning in Dallas. Spotless displays showcasing your products perfectly in Dallas, Plano & Frisco. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

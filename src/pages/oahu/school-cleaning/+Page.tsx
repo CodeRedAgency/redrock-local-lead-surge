@@ -291,7 +291,7 @@ export default function SchoolCleaningOahuPage() {
     <>
       <Helmet>
         <title>School Cleaning Services Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional school cleaning services on Oahu. Red Rock Cleans provides a safe and healthy learning environment for students in Honolulu, Kailua, and across the island." />
+        <meta name="description" content="School cleaning in Oahu. Safe, healthy learning environments for students in Honolulu schools. Professional Hawaiian service!" />
         <meta name="keywords" content="school cleaning services Oahu, school cleaning near me, janitorial services for schools Oahu, daycare cleaning Honolulu, preschool cleaning Kailua, Oahu school cleaning services, best school cleaners Oahu, educational facility cleaning Honolulu, classroom disinfection Oahu, private school cleaning Oahu, school cleaning cost Oahu, school janitorial service prices Honolulu, school cleaning checklist Oahu, hire school cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/school-cleaning/" />
       </Helmet>

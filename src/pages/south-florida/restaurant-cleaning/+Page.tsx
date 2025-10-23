@@ -411,7 +411,7 @@ const RestaurantCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Restaurant Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional restaurant cleaning in South Florida. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning." />
+        <meta name="description" content="Restaurant cleaning in South Florida. Food-safe service maintaining health code compliance. Fort Lauderdale & Weston area!" />
         <meta name="keywords" content="restaurant cleaning South Florida, restaurant cleaning near me, commercial kitchen cleaning South Florida, bar cleaning Fort Lauderdale, dining room cleaning Weston FL, best restaurant cleaners South Florida, kitchen degreasing Fort Lauderdale, front of house cleaning Broward County, health code cleaning South Florida, restaurant cleaning cost South Florida, commercial kitchen cleaning prices Fort Lauderdale, restaurant cleaning checklist South Florida, hire restaurant cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/restaurant-cleaning" />
       </Helmet>

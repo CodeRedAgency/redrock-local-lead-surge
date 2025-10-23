@@ -411,7 +411,7 @@ const RetailCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Retail Store Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional retail store cleaning in South Florida. Red Rock Cleans helps enhance your brand image with spotless storefronts and sales floors in Fort Lauderdale, Weston, and beyond." />
+        <meta name="description" content="Retail store cleaning in South Florida. Pristine spaces enhancing customer experience. Fort Lauderdale & Weston locations!" />
         <meta name="keywords" content="retail store cleaning South Florida, retail cleaning near me, store cleaning South Florida, boutique cleaning Fort Lauderdale, shop cleaning Weston FL, Broward County retail cleaning, best retail cleaners South Florida, commercial store cleaning Fort Lauderdale, storefront window cleaning South Florida, retail floor care South Florida, retail cleaning cost South Florida, store cleaning prices Fort Lauderdale, retail cleaning checklist South Florida, hire store cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/retail-cleaning" />
       </Helmet>

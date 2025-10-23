@@ -244,7 +244,7 @@ const AirbnbCleaningMauiPage = () => {
     <>
       <Helmet>
         <title>Airbnb Cleaning Service Maui | Red Rock Cleans</title>
-        <meta name="description" content="Get 5-star reviews with our reliable Airbnb cleaning service on Maui. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Wailea, Lahaina, and beyond." />
+        <meta name="description" content="Professional Airbnb cleaning in Maui. Quick turnovers for vacation rentals with guest-ready results. Schedule your service!" />
       </Helmet>
       <Hreflang />
       

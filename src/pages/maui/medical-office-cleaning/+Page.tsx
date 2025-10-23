@@ -221,7 +221,7 @@ const MedicalOfficeCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Medical Office Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Specialized medical office cleaning on Maui. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Wailea, Lahaina, and beyond." />
+        <meta name="description" content="Medical office cleaning in Maui. HIPAA-compliant service for Maui healthcare facilities. Professional Hawaiian service today!" />
         <meta name="keywords" content="medical office cleaning near me, clinic cleaning Maui, dental office cleaning Lahaina, healthcare cleaning Wailea, best medical cleaners Maui, HIPAA compliant cleaning Maui, OSHA standards cleaning Maui, exam room sanitation Kihei, terminal cleaning Maui, medical office cleaning cost Maui, clinic cleaning prices Maui, what is terminal cleaning Maui, hire medical cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/medical-office-cleaning" />
       </Helmet>

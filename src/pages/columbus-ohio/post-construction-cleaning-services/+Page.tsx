@@ -282,7 +282,7 @@ const PostConstructionCleaningColumbusOhioPage = () => {
     <>
       <Helmet>
         <title>Post Construction Cleaning Columbus | Red Rock Cleans</title>
-        <meta name="description" content="Professional post construction cleaning in Columbus, OH. Red Rock Cleans handles construction cleanup for new builds and renovations in Dublin, Upper Arlington, and beyond. Get a detailed quote!" />
+        <meta name="description" content="Post-construction cleaning in Columbus Ohio. Remove dust & debris after renovations. Professional cleanup service available!" />
       </Helmet>
       <Hreflang />
       

@@ -411,7 +411,7 @@ const ShowroomCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Showroom Cleaning Services South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional showroom cleaning in South Florida. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships and luxury retail in Fort Lauderdale and Weston." />
+        <meta name="description" content="Showroom cleaning in South Florida. Spotless displays showcasing your products perfectly. Fort Lauderdale & Weston service!" />
         <meta name="keywords" content="showroom cleaning services South Florida, showroom cleaning near me, car dealership cleaning South Florida, furniture showroom cleaning Fort Lauderdale, luxury retail cleaning Weston FL, best showroom cleaners South Florida, professional showroom cleaning Broward County, showroom floor polishing South Florida, immaculate dealership cleaning South Florida, showroom cleaning cost South Florida, dealership cleaning prices Fort Lauderdale, what is showroom cleaning South Florida, hire showroom cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/showroom-cleaning" />
       </Helmet>

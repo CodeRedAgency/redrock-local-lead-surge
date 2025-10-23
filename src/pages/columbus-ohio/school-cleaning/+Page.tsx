@@ -313,7 +313,7 @@ const SchoolCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>School Cleaning Services in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Professional school cleaning services in Columbus, OH. Red Rock Cleans provides a safe and healthy learning environment for students in Dublin, Upper Arlington, and beyond." />
+        <meta name="description" content="School cleaning in Columbus Ohio. Safe, healthy learning environments for students in Columbus schools. Book your service!" />
         <meta name="keywords" content="school cleaning services Columbus Ohio, school cleaning near me, janitorial services for schools Columbus, daycare cleaning Dublin OH, preschool cleaning Upper Arlington, Columbus school cleaning services, best school cleaners Columbus, educational facility cleaning Columbus Ohio, classroom disinfection, private school cleaning Columbus, school cleaning cost Columbus Ohio, school janitorial service prices Columbus, school cleaning checklist Columbus, hire school cleaners in Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/school-cleaning" />
       </Helmet>

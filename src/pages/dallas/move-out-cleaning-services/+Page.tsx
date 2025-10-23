@@ -206,7 +206,7 @@ const MoveOutCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Move Out Cleaning Service in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Secure your deposit with our reliable move out cleaning service in Dallas. We provide thorough end-of-tenancy cleaning in Plano, Frisco, and beyond. Book today!" />
+        <meta name="description" content="Move-out cleaning in Dallas. Get your full deposit back with comprehensive cleaning in Dallas, Plano & Frisco. Book now!" />
       </Helmet>
       <Hreflang />
       

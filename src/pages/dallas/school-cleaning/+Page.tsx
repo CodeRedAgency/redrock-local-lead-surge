@@ -261,7 +261,7 @@ const SchoolCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>School Cleaning Services in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Professional school cleaning services in Dallas. Red Rock Cleans provides a safe and healthy learning environment for students in Plano, Frisco, and across the Dallas area." />
+        <meta name="description" content="School cleaning in Dallas. Safe, healthy learning environments for students in Dallas, Plano & Frisco schools. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

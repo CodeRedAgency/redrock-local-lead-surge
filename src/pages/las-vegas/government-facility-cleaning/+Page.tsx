@@ -375,7 +375,7 @@ const GovernmentFacilityCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Government Facility Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Secure and compliant government facility cleaning in Las Vegas. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff." />
+        <meta name="description" content="Government facility cleaning in Las Vegas. Secure, compliant cleaning for municipal buildings in Las Vegas & Henderson." />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

@@ -12,7 +12,7 @@ const HealthCodeViolationsPage = () => {
     <>
       <Helmet>
         <title>Avoid Health Code Violations: Cleaning Guide | Red Rock Cleans</title>
-        <meta name="description" content="Learn how to avoid and address health code violations in your business. Discover the role of professional commercial cleaning in maintaining compliance." />
+        <meta name="description" content="How to avoid health code violations. Learn the role of professional commercial cleaning in maintaining compliance. Essential guide!" />
       </Helmet>
       <Hreflang />
       

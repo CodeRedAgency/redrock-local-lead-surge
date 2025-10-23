@@ -239,7 +239,7 @@ const RetailCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Retail Store Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional retail store cleaning on Maui. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts and sales floors in Wailea, Lahaina, and beyond." />
+        <meta name="description" content="Retail store cleaning in Maui. Pristine spaces enhancing customer experience. Professional Hawaiian service. Book your service!" />
         <meta name="keywords" content="retail cleaning near me, store cleaning Maui, boutique cleaning Wailea, shop cleaning Lahaina, Maui retail cleaning services, best retail cleaners Maui, commercial store cleaning Maui, storefront window cleaning Maui, retail floor care Maui, retail cleaning cost Maui, store cleaning prices Maui, retail cleaning checklist Maui, hire store cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/retail-cleaning" />
       </Helmet>

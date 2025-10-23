@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <Helmet>
         <title>Deep Cleaning Services - Red Rock Cleaning</title>
-        <meta name="description" content="Comprehensive deep cleaning services for your home. Thorough cleaning that reaches every corner and surface." />
+        <meta name="description" content="Expert deep cleaning services. Thorough top-to-bottom cleaning for homes and businesses. Transform your space today!" />
       </Helmet>
       <DeepCleaning />
     </>

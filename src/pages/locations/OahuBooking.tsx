@@ -38,7 +38,7 @@ const OahuBooking = () => {
     <>
       <Helmet>
         <title>Book Now - Oahu Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Book your professional cleaning service in Oahu and Honolulu. Easy online booking for residential and vacation rental cleaning." />
+        <meta name="description" content="Book cleaning services in Oahu. Easy online booking for Honolulu residential & vacation rental cleaning. Schedule today!" />
       </Helmet>
       <Hreflang />
       

@@ -313,7 +313,7 @@ const SalonSpaCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Salon & Spa Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Professional salon and spa cleaning in Columbus, OH. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Dublin and the Short North." />
+        <meta name="description" content="Salon & spa cleaning in Columbus Ohio. Hygienic, luxurious environments for Columbus beauty businesses. Book your service!" />
         <meta name="keywords" content="salon and spa cleaning Columbus Ohio, salon cleaning near me, spa cleaning Columbus Ohio, hair salon cleaning Dublin OH, nail salon cleaning Short North, medispa cleaning Columbus, best salon cleaners Columbus, hygienic spa cleaning Columbus Ohio, beauty salon sanitation, barber shop cleaning Columbus, salon cleaning cost Columbus Ohio, spa cleaning prices Columbus, what is salon cleaning Columbus, hire spa cleaners in Columbus Ohio" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/salon-spa-cleaning" />
       </Helmet>

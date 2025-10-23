@@ -313,7 +313,7 @@ const DataCenterCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Data Center Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Specialized data center cleaning in Columbus, OH. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Dublin and New Albany to ensure uptime." />
+        <meta name="description" content="Data center cleaning in Columbus Ohio. Protect critical infrastructure with specialized cleaning. Professional service!" />
         <meta name="keywords" content="data center cleaning Columbus Ohio, data center cleaning near me, server room cleaning Columbus Ohio, critical environment cleaning Dublin OH, raised floor cleaning New Albany, professional data center cleaners Columbus, ISO 14644-1 cleaning Columbus Ohio, anti-static cleaning Columbus, sub-floor cleaning Columbus, data center cleaning cost Columbus Ohio, data center maintenance services Columbus, data center cleaning checklist Columbus, hire data center cleaning services in Columbus" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/data-center-cleaning" />
       </Helmet>

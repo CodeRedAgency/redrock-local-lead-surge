@@ -38,7 +38,7 @@ const LasVegasBooking = () => {
     <>
       <Helmet>
         <title>Book Now - Las Vegas Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Book your professional cleaning service in Las Vegas. Easy online booking for residential and commercial cleaning." />
+        <meta name="description" content="Book cleaning services in Las Vegas. Easy online booking for Las Vegas & Henderson homes and businesses. Schedule today!" />
       </Helmet>
       <Hreflang />
       

@@ -38,7 +38,7 @@ const ColumbusBooking = () => {
     <>
       <Helmet>
         <title>Book Columbus Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Book your professional cleaning service in Columbus Ohio. Easy online booking for house and office cleaning." />
+        <meta name="description" content="Book cleaning services in Columbus Ohio. Easy online booking for Columbus homes and offices. Schedule your service today!" />
       </Helmet>
       <Hreflang />
       

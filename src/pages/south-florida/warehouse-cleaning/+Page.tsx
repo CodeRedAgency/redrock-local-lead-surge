@@ -411,7 +411,7 @@ const WarehouseCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Warehouse Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Professional warehouse cleaning in South Florida. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers in Fort Lauderdale." />
+        <meta name="description" content="Warehouse cleaning in South Florida. Efficient service maximizing safety & productivity. Fort Lauderdale & Weston area!" />
         <meta name="keywords" content="warehouse cleaning South Florida, warehouse cleaning near me, industrial warehouse cleaning South Florida, distribution center cleaning Fort Lauderdale, warehouse floor scrubbing Hollywood FL, best warehouse cleaners South Florida, heavy duty warehouse cleaning Broward County, OSHA compliant warehouse cleaning, pallet rack cleaning South Florida, warehouse cleaning cost South Florida, commercial warehouse cleaning prices Fort Lauderdale, what is warehouse cleaning South Florida, hire warehouse cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/warehouse-cleaning" />
       </Helmet>

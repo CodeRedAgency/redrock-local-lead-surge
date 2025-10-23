@@ -206,7 +206,7 @@ const AirbnbCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Airbnb Cleaning Service in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Get 5-star reviews with our reliable Airbnb cleaning service in Dallas. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Uptown, Plano, and beyond." />
+        <meta name="description" content="Dallas Airbnb cleaning services. Fast turnovers with guest-ready results in Dallas, Plano & Frisco. Professional service!" />
       </Helmet>
       <Hreflang />
       

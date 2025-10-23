@@ -244,7 +244,7 @@ const MoveOutCleaningMauiPage = () => {
     <>
       <Helmet>
         <title>Move Out Cleaning Service Maui | Red Rock Cleans</title>
-        <meta name="description" content="Secure your deposit with our reliable move out cleaning service on Maui. We provide thorough end-of-tenancy cleaning in Wailea, Lahaina, and beyond. Book today!" />
+        <meta name="description" content="Move-out cleaning in Maui. Secure your security deposit with thorough end-of-lease cleaning. Professional Hawaiian service!" />
       </Helmet>
       <Hreflang />
       

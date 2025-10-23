@@ -278,7 +278,7 @@ const FactoryCleaningOahuPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Factory Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional factory cleaning on Oahu. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Honolulu, Kapolei, and beyond to ensure safety and productivity." />
+        <meta name="description" content="Factory cleaning in Oahu. Heavy-duty industrial cleaning for manufacturing facilities in Honolulu. Professional service!" />
         <meta name="keywords" content="factory cleaning near me, industrial cleaning Oahu, manufacturing plant cleaning Honolulu, factory cleaning Kapolei, heavy-duty factory cleaning Oahu, production floor cleaning Honolulu, machinery degreasing Oahu, OSHA compliant cleaning Oahu, factory cleaning cost Oahu, industrial cleaning prices Honolulu, what is factory cleaning Oahu, hire factory cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/factory-cleaning" />
       </Helmet>

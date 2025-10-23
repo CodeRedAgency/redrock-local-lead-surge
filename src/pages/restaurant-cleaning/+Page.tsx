@@ -14,7 +14,7 @@ const RestaurantCleaningPage = () => {
     <>
       <Helmet>
         <title>Restaurant Cleaning Services | Red Rock Cleans</title>
-        <meta name="description" content="Professional restaurant cleaning services. We help you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning." />
+        <meta name="description" content="Restaurant cleaning services. Food-safe cleaning maintaining health code compliance. Professional service for dining establishments!" />
         <link rel="canonical" href="https://redrockcleans.com/restaurant-cleaning" />
       </Helmet>
       <Hreflang />

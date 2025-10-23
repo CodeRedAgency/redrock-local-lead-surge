@@ -278,7 +278,7 @@ const RestaurantCleaningOahuPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Restaurant Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional restaurant cleaning on Oahu. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning in Honolulu and Waikiki." />
+        <meta name="description" content="Restaurant cleaning in Oahu. Food-safe service maintaining health code compliance in Honolulu. Professional Hawaiian service!" />
         <meta name="keywords" content="restaurant cleaning near me, commercial kitchen cleaning Oahu, bar cleaning Honolulu, dining room cleaning Waikiki, best restaurant cleaners Oahu, kitchen degreasing Honolulu, front of house cleaning Oahu, health code cleaning Oahu, restaurant cleaning cost Oahu, commercial kitchen cleaning prices Honolulu, restaurant cleaning checklist Oahu, hire restaurant cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/restaurant-cleaning" />
       </Helmet>

@@ -299,7 +299,7 @@ const ChurchCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Church Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Professional church cleaning services on Oahu. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Honolulu, Kailua, and across the island." />
+        <meta name="description" content="Oahu church cleaning. Respectful, thorough cleaning for places of worship in Honolulu & Oahu. Professional Hawaiian service!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

@@ -11,7 +11,7 @@ const AirbnbBeddingManagementPage = () => {
     <>
       <Helmet>
         <title>Airbnb Bedding Management You Should Know | Red Rock Cleans</title>
-        <meta name="description" content="Master Airbnb bedding management with expert tips on selecting, maintaining, and rotating linens for 5-star guest reviews and efficient turnover operations." />
+        <meta name="description" content="Airbnb bedding management guide. Best practices for keeping linens fresh & guest-ready between bookings. Expert hosting tips!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

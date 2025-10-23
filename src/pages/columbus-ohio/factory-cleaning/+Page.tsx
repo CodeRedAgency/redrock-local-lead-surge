@@ -313,7 +313,7 @@ const FactoryCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Factory Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Professional factory cleaning in Columbus, OH. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Dublin, Westerville, and beyond to ensure safety and productivity." />
+        <meta name="description" content="Factory cleaning in Columbus Ohio. Heavy-duty industrial cleaning for manufacturing facilities. Professional service today!" />
         <meta name="keywords" content="factory cleaning Columbus Ohio, factory cleaning near me, industrial cleaning Columbus Ohio, manufacturing plant cleaning Dublin OH, factory cleaning Westerville, heavy-duty factory cleaning Columbus, production floor cleaning Columbus, machinery degreasing Columbus, OSHA compliant cleaning Columbus, factory cleaning cost Columbus Ohio, industrial cleaning prices Dublin OH, what is factory cleaning Columbus, hire factory cleaners in Columbus Ohio" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/factory-cleaning" />
       </Helmet>

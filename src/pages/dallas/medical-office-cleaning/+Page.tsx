@@ -266,7 +266,7 @@ const MedicalOfficeCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Medical Office Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Specialized medical office cleaning in Dallas. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Plano, Frisco, and beyond." />
+        <meta name="description" content="Medical office cleaning in Dallas. HIPAA-compliant service for Dallas, Plano & Frisco healthcare facilities. Book today!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

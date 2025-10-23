@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <Helmet>
         <title>Contact Us - Red Rock Cleaning</title>
-        <meta name="description" content="Get in touch with Red Rock Cleaning for professional cleaning services. Contact us today for a free quote." />
+        <meta name="description" content="Contact Red Rock Cleaning. Phone numbers & addresses for all locations including South Florida, Las Vegas, Hawaii, Dallas & Columbus." />
       </Helmet>
       <Contact />
     </>

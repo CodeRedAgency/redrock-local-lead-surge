@@ -221,7 +221,7 @@ const IndustrialCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Industrial Cleaning Services Maui | Red Rock Cleans</title>
-        <meta name="description" content="Heavy-duty industrial cleaning services on Maui. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities to ensure safety and uptime." />
+        <meta name="description" content="Industrial cleaning in Maui. Heavy-duty cleaning for warehouses & factories. Professional Hawaiian service. Book your service!" />
         <meta name="keywords" content="industrial cleaning near me, heavy duty cleaning Maui, industrial cleaning Kihei, industrial cleaners Lahaina, industrial equipment cleaning Maui, manufacturing facility cleaning Maui, plant deep cleaning Maui, OSHA compliant cleaning services Maui, industrial cleaning cost Maui, industrial cleaning rates Maui, what is industrial cleaning Maui, hire industrial cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/industrial-cleaning" />
       </Helmet>

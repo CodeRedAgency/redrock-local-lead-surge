@@ -299,7 +299,7 @@ const DataCenterCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Data Center Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Specialized data center cleaning on Oahu. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Honolulu and across the island to ensure uptime." />
+        <meta name="description" content="Data center cleaning in Oahu. Protect critical infrastructure with specialized cleaning in Honolulu. Hawaiian expertise!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

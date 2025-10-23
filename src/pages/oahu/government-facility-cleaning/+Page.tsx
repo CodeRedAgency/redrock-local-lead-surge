@@ -278,7 +278,7 @@ const GovernmentFacilityCleaningOahuPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Government Facility Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Secure and compliant government facility cleaning on Oahu. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings in Honolulu and across the island by security-cleared staff." />
+        <meta name="description" content="Government facility cleaning in Oahu. Secure, compliant cleaning for municipal buildings in Honolulu. Professional service!" />
         <meta name="keywords" content="government cleaning near me Oahu, municipal building cleaning Honolulu, federal office cleaning Oahu, courthouse cleaning Honolulu, secure facility cleaning Oahu, GSA schedule cleaning Oahu, confidential cleaning services Honolulu, discreet government cleaners Oahu, government cleaning contracts Oahu, cost of municipal cleaning Honolulu, what is government facility cleaning Oahu, hire secure cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/government-facility-cleaning" />
       </Helmet>

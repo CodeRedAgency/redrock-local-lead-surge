@@ -221,7 +221,7 @@ const SalonSpaCleaningMauiPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Salon & Spa Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Professional salon and spa cleaning on Maui. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Wailea, Lahaina, and beyond." />
+        <meta name="description" content="Salon & spa cleaning in Maui. Hygienic, luxurious environments for Maui beauty businesses. Professional Hawaiian service today!" />
         <meta name="keywords" content="salon cleaning near me, spa cleaning Maui, hair salon cleaning Lahaina, nail salon cleaning Wailea, medispa cleaning Maui, best salon cleaners Maui, hygienic spa cleaning Kihei, beauty salon sanitation, barber shop cleaning Maui, salon cleaning cost Maui, spa cleaning prices Maui, what is salon cleaning Maui, hire spa cleaners in Maui" />
         <link rel="canonical" href="https://redrockcleans.com/maui/salon-spa-cleaning" />
       </Helmet>

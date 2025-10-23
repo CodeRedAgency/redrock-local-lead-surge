@@ -278,7 +278,7 @@ const IndustrialCleaningOahuPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Industrial Cleaning Services Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Heavy-duty industrial cleaning services on Oahu. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities in Honolulu and Kapolei." />
+        <meta name="description" content="Industrial cleaning in Oahu. Heavy-duty cleaning for warehouses & factories in Honolulu. Professional Hawaiian service today!" />
         <meta name="keywords" content="industrial cleaning near me, heavy duty cleaning Oahu, industrial cleaning Honolulu, industrial cleaners Kapolei, industrial equipment cleaning Oahu, manufacturing facility cleaning Oahu, plant deep cleaning Honolulu, OSHA compliant cleaning services Oahu, industrial cleaning cost Oahu, industrial cleaning rates Honolulu, what is industrial cleaning Oahu, hire industrial cleaners in Oahu" />
         <link rel="canonical" href="https://redrockcleans.com/oahu/industrial-cleaning" />
       </Helmet>

@@ -313,7 +313,7 @@ const MedicalOfficeCleaningColumbusOhioPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Medical Office Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Specialized medical office cleaning in Columbus, OH. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Dublin, Upper Arlington, and beyond." />
+        <meta name="description" content="Medical office cleaning in Columbus Ohio. HIPAA-compliant service for Columbus healthcare facilities. Book your service today!" />
         <meta name="keywords" content="medical office cleaning Columbus Ohio, medical office cleaning near me, clinic cleaning Columbus Ohio, dental office cleaning Dublin OH, healthcare cleaning Upper Arlington, best medical cleaners Columbus, HIPAA compliant cleaning Columbus, OSHA standards cleaning Columbus Ohio, exam room sanitation Dublin OH, terminal cleaning Columbus, medical office cleaning cost Columbus, clinic cleaning prices Columbus Ohio, what is terminal cleaning Columbus, hire medical cleaners in Columbus Ohio" />
         <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/medical-office-cleaning" />
       </Helmet>

@@ -375,7 +375,7 @@ const ChurchCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Church Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Professional church cleaning services in Las Vegas. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Henderson, Summerlin, and across the valley." />
+        <meta name="description" content="Las Vegas church cleaning. Respectful, thorough cleaning for places of worship in Las Vegas & Henderson. Book your service!" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

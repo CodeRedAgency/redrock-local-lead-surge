@@ -261,7 +261,7 @@ const GovernmentFacilityCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Government Facility Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Secure and compliant government facility cleaning in Dallas. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings in Plano and Frisco by security-cleared staff." />
+        <meta name="description" content="Government facility cleaning in Dallas. Secure, compliant cleaning for municipal buildings in Dallas, Plano & Frisco." />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

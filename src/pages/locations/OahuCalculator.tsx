@@ -12,7 +12,7 @@ const OahuCalculator = () => {
     <>
       <Helmet>
         <title>Get a Quote - Oahu Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Calculate your cleaning service cost instantly. Get an accurate quote for house cleaning in Oahu and Honolulu." />
+        <meta name="description" content="Get an instant cleaning quote in Oahu. Calculate costs for Honolulu & Oahu cleaning services. Free online estimate today!" />
       </Helmet>
       <Hreflang />
       

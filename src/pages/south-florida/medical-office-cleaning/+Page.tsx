@@ -411,7 +411,7 @@ const MedicalOfficeCleaningSouthFloridaPage = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Medical Office Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Specialized medical office cleaning in South Florida. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Fort Lauderdale, Weston, and beyond." />
+        <meta name="description" content="Medical office cleaning in South Florida. HIPAA-compliant service for Fort Lauderdale & Weston healthcare facilities today!" />
         <meta name="keywords" content="medical office cleaning South Florida, medical office cleaning near me, clinic cleaning Fort Lauderdale, dental office cleaning Weston FL, healthcare cleaning South Florida, best medical cleaners South Florida, HIPAA compliant cleaning South Florida, OSHA standards cleaning Broward County, exam room sanitation Fort Lauderdale, terminal cleaning South Florida, medical office cleaning cost South Florida, clinic cleaning prices Fort Lauderdale, what is terminal cleaning South Florida, hire medical cleaners in South Florida" />
         <link rel="canonical" href="https://redrockcleans.com/south-florida/medical-office-cleaning" />
       </Helmet>
