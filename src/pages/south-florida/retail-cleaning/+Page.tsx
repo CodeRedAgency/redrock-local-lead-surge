@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const RetailCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const RetailCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Retail Store Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Retail store cleaning in South Florida. Pristine spaces enhancing customer experience. Fort Lauderdale & Weston locations!" />
-        <meta name="keywords" content="retail store cleaning South Florida, retail cleaning near me, store cleaning South Florida, boutique cleaning Fort Lauderdale, shop cleaning Weston FL, Broward County retail cleaning, best retail cleaners South Florida, commercial store cleaning Fort Lauderdale, storefront window cleaning South Florida, retail floor care South Florida, retail cleaning cost South Florida, store cleaning prices Fort Lauderdale, retail cleaning checklist South Florida, hire store cleaners in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/retail-cleaning" />
+        <title>{t(`commercialServices.southFlorida.retail.title`, { defaultValue: "Retail Store Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.retail.description`, { defaultValue: "Retail store cleaning in South Florida. Pristine spaces enhancing customer experience. Fort Lauderdale & Weston locations!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

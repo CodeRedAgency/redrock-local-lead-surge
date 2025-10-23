@@ -7,6 +7,7 @@ import { BookOpen, HeartHandshake, Calendar, MapPin, Cross, Building, Heart, Pho
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -392,6 +393,7 @@ const cities = [
 ];
 
 const ChurchCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -409,10 +411,8 @@ const ChurchCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Church Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="South Florida church cleaning. Respectful, thorough cleaning for places of worship in Fort Lauderdale & Weston. Book today!" />
-        <meta name="keywords" content="church cleaning South Florida, church cleaning near me, place of worship cleaning South Florida, sanctuary cleaning Fort Lauderdale, chapel cleaning Weston FL, best church cleaners South Florida, professional church cleaning Broward County, respectful religious facility cleaning, dependable church cleaners Fort Lauderdale, church cleaning cost South Florida, affordable church cleaning services South Florida, what is included in church cleaning South Florida, hire church cleaners in Broward County" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/church-cleaning" />
+        <title>{t(`commercialServices.southFlorida.church.title`, { defaultValue: "Church Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.church.description`, { defaultValue: "South Florida church cleaning. Respectful, thorough cleaning for places of worship in Fort Lauderdale & Weston. Book today!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

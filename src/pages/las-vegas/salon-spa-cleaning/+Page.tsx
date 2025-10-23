@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useTranslation } from 'react-i18next';
 import { 
   Sparkles, 
   Shield, 
@@ -46,6 +47,7 @@ const SalonSpaCleaningLasVegasPage: React.FC = () => {
   // Animated counters
   useEffect(() => {
     const animateCounters = () => {
+  const { t } = useTranslation();
       const targets = { satisfaction: 98, hygiene: 100, environment: 95 };
       const duration = 2000;
       const steps = 60;
@@ -165,8 +167,8 @@ const SalonSpaCleaningLasVegasPage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Salon & Spa Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Salon & spa cleaning in Las Vegas. Hygienic, luxurious environments for Las Vegas & Henderson beauty businesses. Book now!" />
+        <title>{t(`commercialServices.lasVegas.salonSpa.title`, { defaultValue: "Salon & Spa Cleaning Las Vegas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.lasVegas.salonSpa.description`, { defaultValue: "Salon & spa cleaning in Las Vegas. Hygienic, luxurious environments for Las Vegas & Henderson beauty businesses. Book now!" })} />
       </Helmet>
       <LasVegasNavigation />
       

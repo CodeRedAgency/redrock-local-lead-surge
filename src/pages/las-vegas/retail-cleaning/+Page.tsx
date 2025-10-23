@@ -26,6 +26,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import Hreflang from "@/components/Hreflang";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -354,6 +355,7 @@ const neighborhoods = [
 ];
 
 const RetailCleaningLasVegasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [counters, setCounters] = useState({
     impressions: 0,
@@ -427,8 +429,8 @@ const RetailCleaningLasVegasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Retail Store Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Retail store cleaning in Las Vegas. Pristine spaces enhancing customer experience in Las Vegas & Henderson. Book today!" />
+        <title>{t(`commercialServices.lasVegas.retail.title`, { defaultValue: "Retail Store Cleaning Las Vegas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.lasVegas.retail.description`, { defaultValue: "Retail store cleaning in Las Vegas. Pristine spaces enhancing customer experience in Las Vegas & Henderson. Book today!" })} />
       </Helmet>
       <Hreflang />
       

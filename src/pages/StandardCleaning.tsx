@@ -10,8 +10,8 @@ const StandardCleaning = () => {
   return (
     <>
       <Helmet>
-        <title>{t("services.standard.title", { defaultValue: "Servicios de limpieza estándar | Red Rock Cleaning" })}</title>
-        <meta name="description" content={t("services.standard.description", { defaultValue: "Servicios de limpieza estándar regular para mantener un hogar u oficina impecable. Limpiadores profesionales para un mantenimiento constante y confiable." })} />
+        <title>{t("pageTitles.standardCleaning", { defaultValue: "Standard Cleaning Services | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.standardCleaning", { defaultValue: "Comprehensive standard cleaning services for your home or business. Regular, professional cleaning that keeps your space fresh and inviting." })} />
       </Helmet>
       <Hreflang />
       

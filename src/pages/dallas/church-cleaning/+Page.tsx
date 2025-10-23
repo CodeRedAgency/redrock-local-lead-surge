@@ -7,6 +7,7 @@ import { BookOpen, HeartHandshake, Calendar, Building2, Stethoscope, Dumbbell, P
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const ChurchCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
 
   useEffect(() => {
@@ -203,8 +205,8 @@ const ChurchCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Church Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Dallas church cleaning. Respectful, thorough cleaning for places of worship in Dallas, Plano & Frisco. Book your service today!" />
+        <title>{t(`commercialServices.dallas.church.title`, { defaultValue: "Church Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.church.description`, { defaultValue: "Dallas church cleaning. Respectful, thorough cleaning for places of worship in Dallas, Plano & Frisco. Book your service today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

@@ -7,6 +7,7 @@ import { Shield, Lock, FileText, Building, Gavel, Users, ShieldCheck, Building2,
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const GovernmentFacilityCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const GovernmentFacilityCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Government Facility Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Government facility cleaning in Dallas. Secure, compliant cleaning for municipal buildings in Dallas, Plano & Frisco." />
+        <title>{t(`commercialServices.dallas.government.title`, { defaultValue: "Government Facility Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.government.description`, { defaultValue: "Government facility cleaning in Dallas. Secure, compliant cleaning for municipal buildings in Dallas, Plano & Frisco." })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

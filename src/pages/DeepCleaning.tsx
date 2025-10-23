@@ -10,8 +10,8 @@ const DeepCleaning = () => {
   return (
     <>
       <Helmet>
-        <title>{t("services.deep.title", { defaultValue: "Deep Cleaning Services | Red Rock Cleaning" })}</title>
-        <meta name="description" content={t("services.deep.description", { defaultValue: "Comprehensive deep cleaning services that reach every corner. Perfect for seasonal cleaning, move-in/out, or thorough home sanitization." })} />
+        <title>{t("pageTitles.deepCleaning", { defaultValue: "Deep Cleaning Services | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.deepCleaning", { defaultValue: "Comprehensive deep cleaning services that reach every corner. Perfect for seasonal cleaning, move-in/out, or thorough home sanitization." })} />
       </Helmet>
       <Hreflang />
       

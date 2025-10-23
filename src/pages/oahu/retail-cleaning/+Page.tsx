@@ -26,6 +26,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -290,10 +291,8 @@ export default function RetailCleaningOahuPage() {
   return (
     <>
       <Helmet>
-        <title>Retail Store Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Retail store cleaning in Oahu. Pristine spaces enhancing customer experience in Honolulu. Professional Hawaiian service!" />
-        <meta name="keywords" content="retail store cleaning Oahu, store cleaning near me, boutique cleaning Honolulu, shop cleaning Waikiki, Ala Moana cleaning services, best retail cleaners Oahu, commercial store cleaning Honolulu, storefront window cleaning Oahu, retail floor care Oahu, retail cleaning cost Oahu, store cleaning prices Honolulu, retail cleaning checklist Oahu, hire store cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/retail-cleaning/" />
+        <title>{t(`commercialServices.oahu.retail.title`, { defaultValue: "Retail Store Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.retail.description`, { defaultValue: "Retail store cleaning in Oahu. Pristine spaces enhancing customer experience in Honolulu. Professional Hawaiian service!" })} />
       </Helmet>
 
       <OahuNavigation bookingUrl="/commercial-quote?location=oahu" />

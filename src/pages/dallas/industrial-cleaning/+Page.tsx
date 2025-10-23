@@ -7,6 +7,7 @@ import { Shield, Clock, Wrench, SprayCan, Construction, Layers, ShieldCheck, Gan
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const IndustrialCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const IndustrialCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Industrial Cleaning Services in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Industrial cleaning in Dallas. Heavy-duty cleaning for warehouses & factories in Dallas, Plano & Frisco. Book your service!" />
+        <title>{t(`commercialServices.dallas.industrial.title`, { defaultValue: "Industrial Cleaning Services in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.industrial.description`, { defaultValue: "Industrial cleaning in Dallas. Heavy-duty cleaning for warehouses & factories in Dallas, Plano & Frisco. Book your service!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

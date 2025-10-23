@@ -301,7 +301,7 @@ const DeepCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Deep Cleaning Service Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service on Oahu. Red Rock Cleans tackles built-up grime for a truly refreshed home in Honolulu and beyond. Get your free quote!" />
+        <meta name="description" content="Expert deep cleaning in Oahu. Thorough home cleaning in Honolulu, Pearl City & Kaneohe. Professional service that eliminates grime & restores beauty." />
       </Helmet>
       <Hreflang />
       

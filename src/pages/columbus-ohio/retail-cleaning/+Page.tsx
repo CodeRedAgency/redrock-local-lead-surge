@@ -7,6 +7,7 @@ import { Sparkles, ShoppingCart, Shirt, Store, AppWindow, PictureInPicture, Arch
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -240,6 +241,7 @@ const cities = [
 ];
 
 const RetailCleaningColumbusOhioPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
   const [countersVisible, setCountersVisible] = useState(false);
   const [customerImpressions, setCustomerImpressions] = useState(0);
@@ -312,10 +314,8 @@ const RetailCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Retail Store Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Retail store cleaning in Columbus Ohio. Pristine spaces enhancing customer experience in Columbus. Book your service today!" />
-        <meta name="keywords" content="retail store cleaning Columbus Ohio, retail cleaning near me, store cleaning Columbus Ohio, boutique cleaning Short North, shop cleaning Dublin OH, Columbus retail cleaning services, best retail cleaners Columbus, commercial store cleaning Columbus, storefront window cleaning Columbus, retail floor care Columbus, retail cleaning cost Columbus Ohio, store cleaning prices Columbus, retail cleaning checklist Columbus, hire store cleaners in Columbus Ohio" />
-        <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/retail-cleaning" />
+        <title>{t(`commercialServices.columbus.retail.title`, { defaultValue: "Retail Store Cleaning in Columbus Ohio | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.columbus.retail.description`, { defaultValue: "Retail store cleaning in Columbus Ohio. Pristine spaces enhancing customer experience in Columbus. Book your service today!" })} />
       </Helmet>
       
       <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />

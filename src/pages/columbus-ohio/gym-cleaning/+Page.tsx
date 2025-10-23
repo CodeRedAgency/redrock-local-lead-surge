@@ -7,6 +7,7 @@ import { Dumbbell, ShowerHead, Shield, Bike, Droplets, PersonStanding, Users, Th
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -240,6 +241,7 @@ const cities = [
 ];
 
 const GymCleaningColumbusOhioPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
   const [countersVisible, setCountersVisible] = useState(false);
   const [memberSatisfaction, setMemberSatisfaction] = useState(0);
@@ -312,10 +314,8 @@ const GymCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Gym Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Gym cleaning services in Columbus Ohio. Sanitized equipment & facilities for Columbus fitness centers. Book your service!" />
-        <meta name="keywords" content="gym cleaning Columbus Ohio, gym cleaning near me, fitness center cleaning Columbus Ohio, health club sanitation Dublin OH, gym disinfection Upper Arlington, professional gym cleaners Columbus, equipment disinfection Columbus, locker room cleaning Columbus Ohio, anti-viral gym cleaning Columbus, gym cleaning cost Columbus Ohio, commercial gym cleaning prices Dublin OH, gym cleaning checklist Columbus, how to keep a gym clean Columbus" />
-        <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/gym-cleaning" />
+        <title>{t(`commercialServices.columbus.gym.title`, { defaultValue: "Gym Cleaning in Columbus Ohio | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.columbus.gym.description`, { defaultValue: "Gym cleaning services in Columbus Ohio. Sanitized equipment & facilities for Columbus fitness centers. Book your service!" })} />
       </Helmet>
       
       <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />

@@ -7,6 +7,7 @@ import { ClipboardCheck, Flame, Sparkles, DoorOpen, ChefHat, GlassWater, Droplet
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const RestaurantCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const RestaurantCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Restaurant Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Restaurant cleaning in Dallas. Food-safe service maintaining health code compliance in Dallas, Plano & Frisco. Book today!" />
+        <title>{t(`commercialServices.dallas.restaurant.title`, { defaultValue: "Restaurant Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.restaurant.description`, { defaultValue: "Restaurant cleaning in Dallas. Food-safe service maintaining health code compliance in Dallas, Plano & Frisco. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

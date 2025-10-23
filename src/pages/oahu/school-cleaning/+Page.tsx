@@ -26,6 +26,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -290,10 +291,8 @@ export default function SchoolCleaningOahuPage() {
   return (
     <>
       <Helmet>
-        <title>School Cleaning Services Oahu | Red Rock Cleans</title>
-        <meta name="description" content="School cleaning in Oahu. Safe, healthy learning environments for students in Honolulu schools. Professional Hawaiian service!" />
-        <meta name="keywords" content="school cleaning services Oahu, school cleaning near me, janitorial services for schools Oahu, daycare cleaning Honolulu, preschool cleaning Kailua, Oahu school cleaning services, best school cleaners Oahu, educational facility cleaning Honolulu, classroom disinfection Oahu, private school cleaning Oahu, school cleaning cost Oahu, school janitorial service prices Honolulu, school cleaning checklist Oahu, hire school cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/school-cleaning/" />
+        <title>{t(`commercialServices.oahu.school.title`, { defaultValue: "School Cleaning Services Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.school.description`, { defaultValue: "School cleaning in Oahu. Safe, healthy learning environments for students in Honolulu schools. Professional Hawaiian service!" })} />
       </Helmet>
 
       <OahuNavigation bookingUrl="/commercial-quote?location=oahu" />

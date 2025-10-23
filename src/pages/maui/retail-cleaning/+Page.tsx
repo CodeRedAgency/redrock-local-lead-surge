@@ -26,6 +26,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -221,6 +222,7 @@ const towns = [
 ];
 
 const RetailCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -238,10 +240,8 @@ const RetailCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Retail Store Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Retail store cleaning in Maui. Pristine spaces enhancing customer experience. Professional Hawaiian service. Book your service!" />
-        <meta name="keywords" content="retail cleaning near me, store cleaning Maui, boutique cleaning Wailea, shop cleaning Lahaina, Maui retail cleaning services, best retail cleaners Maui, commercial store cleaning Maui, storefront window cleaning Maui, retail floor care Maui, retail cleaning cost Maui, store cleaning prices Maui, retail cleaning checklist Maui, hire store cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/retail-cleaning" />
+        <title>{t(`commercialServices.maui.retail.title`, { defaultValue: "Retail Store Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.retail.description`, { defaultValue: "Retail store cleaning in Maui. Pristine spaces enhancing customer experience. Professional Hawaiian service. Book your service!" })} />
       </Helmet>
       
       <MauiNavigation />

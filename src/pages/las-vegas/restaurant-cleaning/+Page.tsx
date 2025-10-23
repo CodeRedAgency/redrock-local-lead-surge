@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -336,6 +337,7 @@ const neighborhoods = [
 ];
 
 const RestaurantCleaningLasVegasPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -353,10 +355,8 @@ const RestaurantCleaningLasVegasPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Restaurant Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Restaurant cleaning in Las Vegas. Food-safe service maintaining health code compliance in Las Vegas & Henderson. Book now!" />
-        <meta name="keywords" content="restaurant cleaning Las Vegas, commercial kitchen cleaning, bar cleaning Henderson NV, dining room cleaning Summerlin, best restaurant cleaners Las Vegas, kitchen degreasing Las Vegas, front of house cleaning Las Vegas, health code cleaning Las Vegas, restaurant cleaning cost Las Vegas, commercial kitchen cleaning prices Las Vegas, restaurant cleaning checklist Las Vegas, hire restaurant cleaners in Las Vegas" />
-        <link rel="canonical" href="https://redrockcleans.com/las-vegas/restaurant-cleaning" />
+        <title>{t(`commercialServices.lasVegas.restaurant.title`, { defaultValue: "Restaurant Cleaning Las Vegas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.lasVegas.restaurant.description`, { defaultValue: "Restaurant cleaning in Las Vegas. Food-safe service maintaining health code compliance in Las Vegas & Henderson. Book now!" })} />
       </Helmet>
       
       <LasVegasNavigation />

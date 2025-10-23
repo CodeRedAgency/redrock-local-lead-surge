@@ -301,7 +301,7 @@ const AirbnbCleaningOahuPage = () => {
     <>
       <Helmet>
         <title>Airbnb Cleaning Service Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Oahu Airbnb cleaning services. Fast turnovers for vacation rentals in Honolulu & Oahu. Guest-ready results every time!" />
+        <meta name="description" content="Professional Oahu Airbnb cleaning services. Fast turnovers for vacation rentals in Honolulu & Pearl City. Guest-ready results guaranteed every time!" />
       </Helmet>
       <Hreflang />
       

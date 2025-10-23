@@ -7,6 +7,7 @@ import { Sparkles, ShoppingCart, Shirt, Store, AppWindow, PictureInPicture2, Arc
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const RetailCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const RetailCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Retail Store Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Retail store cleaning in Dallas. Pristine spaces enhancing customer experience in Dallas, Plano & Frisco. Book today!" />
+        <title>{t(`commercialServices.dallas.retail.title`, { defaultValue: "Retail Store Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.retail.description`, { defaultValue: "Retail store cleaning in Dallas. Pristine spaces enhancing customer experience in Dallas, Plano & Frisco. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

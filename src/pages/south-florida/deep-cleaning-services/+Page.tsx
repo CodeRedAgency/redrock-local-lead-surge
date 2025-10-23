@@ -434,7 +434,7 @@ const DeepCleaningSouthFloridaPage = () => {
     <>
       <Helmet>
         <title>Deep Cleaning Service South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service in South Florida. We tackle built-up grime for a truly refreshed home in Fort Lauderdale, Weston, and beyond." />
+        <meta name="description" content="Professional deep cleaning in South Florida. Complete home cleaning in Fort Lauderdale, Weston & Aventura. Eliminate grime & restore your sparkle." />
       </Helmet>
       <Hreflang />
       

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const GymCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const GymCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Gym Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Gym cleaning services in Maui. Sanitized equipment & facilities for Maui fitness centers. Professional Hawaiian service today!" />
-        <meta name="keywords" content="gym cleaning near me Maui, fitness center cleaning Kihei, health club sanitation Lahaina, gym disinfection Wailea, professional gym cleaners Maui, equipment disinfection Maui, locker room cleaning Maui, anti-viral gym cleaning Maui, gym cleaning cost Maui, commercial gym cleaning prices Maui, gym cleaning checklist Maui, how to keep a gym clean Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/gym-cleaning" />
+        <title>{t(`commercialServices.maui.gym.title`, { defaultValue: "Gym Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.gym.description`, { defaultValue: "Gym cleaning services in Maui. Sanitized equipment & facilities for Maui fitness centers. Professional Hawaiian service today!" })} />
       </Helmet>
       
       <MauiNavigation />

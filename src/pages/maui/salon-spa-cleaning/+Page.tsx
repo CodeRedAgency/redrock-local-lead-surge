@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const SalonSpaCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const SalonSpaCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Salon & Spa Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Salon & spa cleaning in Maui. Hygienic, luxurious environments for Maui beauty businesses. Professional Hawaiian service today!" />
-        <meta name="keywords" content="salon cleaning near me, spa cleaning Maui, hair salon cleaning Lahaina, nail salon cleaning Wailea, medispa cleaning Maui, best salon cleaners Maui, hygienic spa cleaning Kihei, beauty salon sanitation, barber shop cleaning Maui, salon cleaning cost Maui, spa cleaning prices Maui, what is salon cleaning Maui, hire spa cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/salon-spa-cleaning" />
+        <title>{t(`commercialServices.maui.salonSpa.title`, { defaultValue: "Salon & Spa Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.salonSpa.description`, { defaultValue: "Salon & spa cleaning in Maui. Hygienic, luxurious environments for Maui beauty businesses. Professional Hawaiian service today!" })} />
       </Helmet>
       
       <MauiNavigation />

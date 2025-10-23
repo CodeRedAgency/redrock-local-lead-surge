@@ -434,7 +434,7 @@ const MoveOutCleaningSouthFloridaPage = () => {
     <>
       <Helmet>
         <title>Move Out Cleaning Service South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Move-out cleaning in South Florida. Secure your deposit with thorough cleaning in Fort Lauderdale & Weston. Book today!" />
+        <meta name="description" content="Professional move-out cleaning in South Florida. Secure your deposit with thorough cleaning in Fort Lauderdale, Weston & Aventura. Book your service today!" />
       </Helmet>
       <Hreflang />
       

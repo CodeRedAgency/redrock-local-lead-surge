@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -260,6 +261,7 @@ const neighborhoods = [
 ];
 
 const GovernmentFacilityCleaningOahuPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -277,10 +279,8 @@ const GovernmentFacilityCleaningOahuPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Government Facility Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Government facility cleaning in Oahu. Secure, compliant cleaning for municipal buildings in Honolulu. Professional service!" />
-        <meta name="keywords" content="government cleaning near me Oahu, municipal building cleaning Honolulu, federal office cleaning Oahu, courthouse cleaning Honolulu, secure facility cleaning Oahu, GSA schedule cleaning Oahu, confidential cleaning services Honolulu, discreet government cleaners Oahu, government cleaning contracts Oahu, cost of municipal cleaning Honolulu, what is government facility cleaning Oahu, hire secure cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/government-facility-cleaning" />
+        <title>{t(`commercialServices.oahu.government.title`, { defaultValue: "Government Facility Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.government.description`, { defaultValue: "Government facility cleaning in Oahu. Secure, compliant cleaning for municipal buildings in Honolulu. Professional service!" })} />
       </Helmet>
       
       <OahuNavigation />

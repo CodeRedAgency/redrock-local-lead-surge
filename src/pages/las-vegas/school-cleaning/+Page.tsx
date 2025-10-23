@@ -28,6 +28,7 @@ import {
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -356,6 +357,7 @@ const neighborhoods = [
 ];
 
 const SchoolCleaningLasVegasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [counters, setCounters] = useState({
     studentsProtected: 0,
@@ -429,8 +431,8 @@ const SchoolCleaningLasVegasPage = () => {
   return (
     <>
       <Helmet>
-        <title>School Cleaning Services Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="School cleaning in Las Vegas. Safe, healthy learning environments for students in Las Vegas & Henderson schools. Book today!" />
+        <title>{t(`commercialServices.lasVegas.school.title`, { defaultValue: "School Cleaning Services Las Vegas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.lasVegas.school.description`, { defaultValue: "School cleaning in Las Vegas. Safe, healthy learning environments for students in Las Vegas & Henderson schools. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

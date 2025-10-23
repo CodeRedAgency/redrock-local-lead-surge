@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -260,6 +261,7 @@ const neighborhoods = [
 ];
 
 const MedicalOfficeCleaningOahuPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -277,10 +279,8 @@ const MedicalOfficeCleaningOahuPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Medical Office Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Medical office cleaning in Oahu. HIPAA-compliant service for Honolulu healthcare facilities. Professional Hawaiian service!" />
-        <meta name="keywords" content="medical office cleaning near me, clinic cleaning Honolulu, dental office cleaning Kailua, healthcare cleaning Oahu, best medical cleaners Oahu, HIPAA compliant cleaning Oahu, OSHA standards cleaning Oahu, exam room sanitation Honolulu, terminal cleaning Oahu, medical office cleaning cost Oahu, clinic cleaning prices Honolulu, what is terminal cleaning Oahu, hire medical cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/medical-office-cleaning" />
+        <title>{t(`commercialServices.oahu.medical.title`, { defaultValue: "Medical Office Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.medical.description`, { defaultValue: "Medical office cleaning in Oahu. HIPAA-compliant service for Honolulu healthcare facilities. Professional Hawaiian service!" })} />
       </Helmet>
       
       <OahuNavigation />

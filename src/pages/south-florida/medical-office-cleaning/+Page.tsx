@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const MedicalOfficeCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const MedicalOfficeCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Medical Office Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Medical office cleaning in South Florida. HIPAA-compliant service for Fort Lauderdale & Weston healthcare facilities today!" />
-        <meta name="keywords" content="medical office cleaning South Florida, medical office cleaning near me, clinic cleaning Fort Lauderdale, dental office cleaning Weston FL, healthcare cleaning South Florida, best medical cleaners South Florida, HIPAA compliant cleaning South Florida, OSHA standards cleaning Broward County, exam room sanitation Fort Lauderdale, terminal cleaning South Florida, medical office cleaning cost South Florida, clinic cleaning prices Fort Lauderdale, what is terminal cleaning South Florida, hire medical cleaners in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/medical-office-cleaning" />
+        <title>{t(`commercialServices.southFlorida.medical.title`, { defaultValue: "Medical Office Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.medical.description`, { defaultValue: "Medical office cleaning in South Florida. HIPAA-compliant service for Fort Lauderdale & Weston healthcare facilities today!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

@@ -7,6 +7,7 @@ import { CheckCircle, Clock, Shield, Star, Users, Calendar, Home, Sparkles, Dumb
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -335,6 +336,7 @@ const neighborhoods = [
 ];
 
 const GymCleaningLasVegasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
 
   useEffect(() => {
@@ -374,8 +376,8 @@ const GymCleaningLasVegasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Gym Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Gym cleaning services in Las Vegas. Sanitized equipment & facilities for Las Vegas & Henderson fitness centers. Book today!" />
+        <title>{t(`commercialServices.lasVegas.gym.title`, { defaultValue: "Gym Cleaning Las Vegas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.lasVegas.gym.description`, { defaultValue: "Gym cleaning services in Las Vegas. Sanitized equipment & facilities for Las Vegas & Henderson fitness centers. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const FactoryCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const FactoryCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Factory Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Factory cleaning in Maui. Heavy-duty industrial cleaning for manufacturing facilities. Professional Hawaiian service!" />
-        <meta name="keywords" content="factory cleaning near me, industrial cleaning Maui, manufacturing plant cleaning Maui, factory cleaning Lahaina, heavy-duty factory cleaning Maui, production floor cleaning Maui, machinery degreasing Maui, OSHA compliant cleaning Maui, factory cleaning cost Maui, industrial cleaning prices Maui, what is factory cleaning Maui, hire factory cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/factory-cleaning" />
+        <title>{t(`commercialServices.maui.factory.title`, { defaultValue: "Factory Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.factory.description`, { defaultValue: "Factory cleaning in Maui. Heavy-duty industrial cleaning for manufacturing facilities. Professional Hawaiian service!" })} />
       </Helmet>
       
       <MauiNavigation />

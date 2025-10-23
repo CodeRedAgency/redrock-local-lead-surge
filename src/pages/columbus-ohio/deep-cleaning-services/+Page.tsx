@@ -282,7 +282,7 @@ const DeepCleaningColumbusOhioPage = () => {
     <>
       <Helmet>
         <title>Deep Cleaning Service in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service in Columbus, OH. We tackle built-up grime for a truly refreshed home in Dublin, Upper Arlington, and beyond." />
+        <meta name="description" content="Professional deep cleaning in Columbus, OH. Detailed home cleaning in Dublin, Upper Arlington & Westerville. Remove grime and revitalize your space." />
       </Helmet>
       <Hreflang />
       

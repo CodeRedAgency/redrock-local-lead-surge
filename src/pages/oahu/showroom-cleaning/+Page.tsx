@@ -26,6 +26,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -290,10 +291,8 @@ export default function ShowroomCleaningOahuPage() {
   return (
     <>
       <Helmet>
-        <title>Showroom Cleaning Services Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Showroom cleaning in Oahu. Spotless displays showcasing your products perfectly in Honolulu. Professional Hawaiian service!" />
-        <meta name="keywords" content="showroom cleaning services Oahu, showroom cleaning near me, car dealership cleaning Oahu, furniture showroom cleaning Honolulu, luxury retail cleaning Waikiki, best showroom cleaners Oahu, professional showroom cleaning Honolulu, showroom floor polishing Oahu, immaculate dealership cleaning Oahu, showroom cleaning cost Oahu, dealership cleaning prices Honolulu, what is showroom cleaning Oahu, hire showroom cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/showroom-cleaning/" />
+        <title>{t(`commercialServices.oahu.showroom.title`, { defaultValue: "Showroom Cleaning Services Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.showroom.description`, { defaultValue: "Showroom cleaning in Oahu. Spotless displays showcasing your products perfectly in Honolulu. Professional Hawaiian service!" })} />
       </Helmet>
 
       <OahuNavigation bookingUrl="/commercial-quote?location=oahu" />

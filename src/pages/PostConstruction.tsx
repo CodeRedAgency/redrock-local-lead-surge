@@ -10,8 +10,8 @@ const PostConstruction = () => {
   return (
     <>
       <Helmet>
-        <title>{t("services.post.title", { defaultValue: "Post Construction Cleaning Services | Red Rock Cleaning" })}</title>
-        <meta name="description" content={t("services.post.description", { defaultValue: "Specialized post-construction cleaning to remove dust, debris, and make your newly built or renovated space move-in ready." })} />
+        <title>{t("pageTitles.postConstruction", { defaultValue: "Post-Construction Cleaning Services | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.postConstruction", { defaultValue: "Professional post-construction cleaning services. We remove dust and debris to leave your new space move-in ready." })} />
       </Helmet>
       <Hreflang />
       

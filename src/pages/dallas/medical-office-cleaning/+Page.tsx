@@ -7,6 +7,7 @@ import { Shield, Microscope, Award, Armchair, Stethoscope, Droplets, Hospital, B
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const MedicalOfficeCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -265,8 +267,8 @@ const MedicalOfficeCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Medical Office Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Medical office cleaning in Dallas. HIPAA-compliant service for Dallas, Plano & Frisco healthcare facilities. Book today!" />
+        <title>{t(`commercialServices.dallas.medical.title`, { defaultValue: "Medical Office Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.medical.description`, { defaultValue: "Medical office cleaning in Dallas. HIPAA-compliant service for Dallas, Plano & Frisco healthcare facilities. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

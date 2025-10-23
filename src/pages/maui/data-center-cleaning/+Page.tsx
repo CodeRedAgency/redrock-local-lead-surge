@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const DataCenterCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const DataCenterCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Data Center Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Data center cleaning in Maui. Protect critical infrastructure with specialized cleaning. Professional Hawaiian service!" />
-        <meta name="keywords" content="data center cleaning near me, server room cleaning Maui, critical environment cleaning Wailea, raised floor cleaning Kihei, professional data center cleaners Maui, ISO 14644-1 cleaning Maui, anti-static cleaning Maui, sub-floor cleaning Maui, data center cleaning cost Maui, data center maintenance services Maui, data center cleaning checklist Maui, hire data center cleaning services in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/data-center-cleaning" />
+        <title>{t(`commercialServices.maui.dataCenter.title`, { defaultValue: "Data Center Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.dataCenter.description`, { defaultValue: "Data center cleaning in Maui. Protect critical infrastructure with specialized cleaning. Professional Hawaiian service!" })} />
       </Helmet>
       
       <MauiNavigation />

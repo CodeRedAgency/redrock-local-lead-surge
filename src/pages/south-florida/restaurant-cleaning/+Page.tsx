@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const RestaurantCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const RestaurantCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Restaurant Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Restaurant cleaning in South Florida. Food-safe service maintaining health code compliance. Fort Lauderdale & Weston area!" />
-        <meta name="keywords" content="restaurant cleaning South Florida, restaurant cleaning near me, commercial kitchen cleaning South Florida, bar cleaning Fort Lauderdale, dining room cleaning Weston FL, best restaurant cleaners South Florida, kitchen degreasing Fort Lauderdale, front of house cleaning Broward County, health code cleaning South Florida, restaurant cleaning cost South Florida, commercial kitchen cleaning prices Fort Lauderdale, restaurant cleaning checklist South Florida, hire restaurant cleaners in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/restaurant-cleaning" />
+        <title>{t(`commercialServices.southFlorida.restaurant.title`, { defaultValue: "Restaurant Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.restaurant.description`, { defaultValue: "Restaurant cleaning in South Florida. Food-safe service maintaining health code compliance. Fort Lauderdale & Weston area!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

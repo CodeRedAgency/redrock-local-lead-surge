@@ -12,8 +12,8 @@ const MoveOutCleaning = () => {
   return (
     <>
       <Helmet>
-        <title>{t("services.moveout.title", { defaultValue: "Move Out Cleaning Services | Red Rock Cleaning" })}</title>
-        <meta name="description" content={t("services.moveout.description", { defaultValue: "Professional move out cleaning services. Get your security deposit back with our thorough move-out cleaning. Available in South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas." })} />
+        <title>{t("pageTitles.moveOut", { defaultValue: "Move-Out Cleaning Services | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.moveOut", { defaultValue: "Comprehensive move-out cleaning services. Get your full deposit back with our professional checklist and thorough service." })} />
       </Helmet>
       <Hreflang />
       

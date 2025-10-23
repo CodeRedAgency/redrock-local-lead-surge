@@ -7,6 +7,7 @@ import { Shield, Clock, Wrench, SprayCan, Construction, Layers, ShieldCheck, Gan
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -240,6 +241,7 @@ const cities = [
 ];
 
 const IndustrialCleaningColumbusOhioPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
   const [countersVisible, setCountersVisible] = useState(false);
   const [oshaStandards, setOshaStandards] = useState(0);
@@ -312,10 +314,8 @@ const IndustrialCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Industrial Cleaning Columbus | Red Rock Cleans</title>
-        <meta name="description" content="Industrial cleaning in Columbus Ohio. Heavy-duty cleaning for warehouses & factories. Professional service. Book today!" />
-        <meta name="keywords" content="industrial cleaning services Columbus Ohio, industrial cleaning near me, heavy duty cleaning Columbus Ohio, industrial cleaning Dublin OH, industrial cleaners Westerville, industrial equipment cleaning Columbus, manufacturing facility cleaning Columbus, plant deep cleaning Columbus Ohio, OSHA compliant cleaning services Columbus, industrial cleaning cost Columbus Ohio, industrial cleaning rates Columbus, what is industrial cleaning Columbus, hire industrial cleaners in Columbus Ohio" />
-        <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/industrial-cleaning" />
+        <title>{t(`commercialServices.columbus.industrial.title`, { defaultValue: "Industrial Cleaning Columbus | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.columbus.industrial.description`, { defaultValue: "Industrial cleaning in Columbus Ohio. Heavy-duty cleaning for warehouses & factories. Professional service. Book today!" })} />
       </Helmet>
       
       <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />

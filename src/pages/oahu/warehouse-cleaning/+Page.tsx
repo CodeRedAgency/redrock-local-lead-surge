@@ -26,6 +26,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -290,10 +291,8 @@ export default function WarehouseCleaningOahuPage() {
   return (
     <>
       <Helmet>
-        <title>Warehouse Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Warehouse cleaning in Oahu. Efficient service maximizing safety & productivity in Honolulu. Professional Hawaiian service!" />
-        <meta name="keywords" content="warehouse cleaning Oahu, warehouse cleaning near me, industrial warehouse cleaning Oahu, distribution center cleaning Honolulu, warehouse floor scrubbing Kapolei, best warehouse cleaners Oahu, heavy duty warehouse cleaning Oahu, OSHA compliant warehouse cleaning, pallet rack cleaning Honolulu, warehouse cleaning cost Oahu, commercial warehouse cleaning prices Honolulu, what is warehouse cleaning Oahu, hire warehouse cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/warehouse-cleaning/" />
+        <title>{t(`commercialServices.oahu.warehouse.title`, { defaultValue: "Warehouse Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.warehouse.description`, { defaultValue: "Warehouse cleaning in Oahu. Efficient service maximizing safety & productivity in Honolulu. Professional Hawaiian service!" })} />
       </Helmet>
 
       <OahuNavigation bookingUrl="/commercial-quote?location=oahu" />

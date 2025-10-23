@@ -377,7 +377,7 @@ const DeepCleaningLasVegasPage = () => {
     <>
       <Helmet>
         <title>Deep Cleaning Service Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service in Las Vegas. Red Rock Cleans tackles built-up grime for a truly refreshed home. Get your free quote!" />
+        <meta name="description" content="Professional deep cleaning in Las Vegas. Thorough home cleaning in Henderson, Summerlin & North Las Vegas. Eliminate grime & refresh your home." />
       </Helmet>
       <Hreflang />
       

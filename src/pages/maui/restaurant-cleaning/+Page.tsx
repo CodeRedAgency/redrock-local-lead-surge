@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const RestaurantCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const RestaurantCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Restaurant Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Restaurant cleaning in Maui. Food-safe service maintaining health code compliance. Professional Hawaiian service. Book today!" />
-        <meta name="keywords" content="restaurant cleaning near me, commercial kitchen cleaning Maui, bar cleaning Lahaina, dining room cleaning Wailea, best restaurant cleaners Maui, kitchen degreasing Kihei, front of house cleaning Maui, health code cleaning Maui, restaurant cleaning cost Maui, commercial kitchen cleaning prices Maui, restaurant cleaning checklist Maui, hire restaurant cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/restaurant-cleaning" />
+        <title>{t(`commercialServices.maui.restaurant.title`, { defaultValue: "Restaurant Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.restaurant.description`, { defaultValue: "Restaurant cleaning in Maui. Food-safe service maintaining health code compliance. Professional Hawaiian service. Book today!" })} />
       </Helmet>
       
       <MauiNavigation />

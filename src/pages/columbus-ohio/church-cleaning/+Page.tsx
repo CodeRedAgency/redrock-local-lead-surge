@@ -7,6 +7,7 @@ import { BookOpen, HeartHandshake, Calendar, Building, Heart, Dumbbell, Phone, H
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -240,6 +241,7 @@ const cities = [
 ];
 
 const ChurchCleaningColumbusOhioPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -263,10 +265,8 @@ const ChurchCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Church Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Columbus Ohio church cleaning. Respectful, thorough cleaning for places of worship in Columbus. Professional service today!" />
-        <meta name="keywords" content="church cleaning Columbus Ohio, church cleaning near me, place of worship cleaning Columbus Ohio, sanctuary cleaning Dublin OH, chapel cleaning Upper Arlington, best church cleaners Columbus, professional church cleaning Columbus Ohio, respectful religious facility cleaning, dependable church cleaners Columbus, church cleaning cost Columbus Ohio, affordable church cleaning services Columbus, what is included in church cleaning Columbus, hire church cleaners in Columbus" />
-        <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/church-cleaning" />
+        <title>{t(`commercialServices.columbus.church.title`, { defaultValue: "Church Cleaning in Columbus Ohio | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.columbus.church.description`, { defaultValue: "Columbus Ohio church cleaning. Respectful, thorough cleaning for places of worship in Columbus. Professional service today!" })} />
       </Helmet>
       
       <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />

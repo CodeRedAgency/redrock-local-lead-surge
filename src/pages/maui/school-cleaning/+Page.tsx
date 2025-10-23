@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const SchoolCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const SchoolCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>School Cleaning Services Maui | Red Rock Cleans</title>
-        <meta name="description" content="School cleaning in Maui. Safe, healthy learning environments for students in Maui schools. Professional Hawaiian service!" />
-        <meta name="keywords" content="school cleaning near me, janitorial services for schools Maui, daycare cleaning Kihei, preschool cleaning Lahaina, Maui school cleaning services, best school cleaners Maui, educational facility cleaning Maui, classroom disinfection Maui, private school cleaning Wailea, school cleaning cost Maui, school janitorial service prices Maui, school cleaning checklist Maui, hire school cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/school-cleaning" />
+        <title>{t(`commercialServices.maui.school.title`, { defaultValue: "School Cleaning Services Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.school.description`, { defaultValue: "School cleaning in Maui. Safe, healthy learning environments for students in Maui schools. Professional Hawaiian service!" })} />
       </Helmet>
       
       <MauiNavigation />

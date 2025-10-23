@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const DataCenterCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const DataCenterCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Data Center Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Data center cleaning in South Florida. Protect critical infrastructure with specialized cleaning. Fort Lauderdale service!" />
-        <meta name="keywords" content="data center cleaning South Florida, data center cleaning near me, server room cleaning South Florida, critical environment cleaning Fort Lauderdale, raised floor cleaning Weston FL, professional data center cleaners South Florida, ISO 14644-1 cleaning Fort Lauderdale, anti-static cleaning South Florida, sub-floor cleaning Broward County, data center cleaning cost South Florida, data center maintenance services Fort Lauderdale, data center cleaning checklist South Florida, hire data center cleaning services in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/data-center-cleaning" />
+        <title>{t(`commercialServices.southFlorida.dataCenter.title`, { defaultValue: "Data Center Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.dataCenter.description`, { defaultValue: "Data center cleaning in South Florida. Protect critical infrastructure with specialized cleaning. Fort Lauderdale service!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

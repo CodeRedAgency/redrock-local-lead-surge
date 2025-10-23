@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const FactoryCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const FactoryCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Factory Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Factory cleaning in South Florida. Heavy-duty industrial cleaning for manufacturing facilities in Fort Lauderdale. Book now!" />
-        <meta name="keywords" content="factory cleaning South Florida, factory cleaning near me, industrial cleaning South Florida, manufacturing plant cleaning Fort Lauderdale, factory cleaning Hollywood FL, heavy-duty factory cleaning South Florida, production floor cleaning Broward County, machinery degreasing South Florida, OSHA compliant cleaning South Florida, factory cleaning cost South Florida, industrial cleaning prices Fort Lauderdale, what is factory cleaning South Florida, hire factory cleaners in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/factory-cleaning" />
+        <title>{t(`commercialServices.southFlorida.factory.title`, { defaultValue: "Factory Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.factory.description`, { defaultValue: "Factory cleaning in South Florida. Heavy-duty industrial cleaning for manufacturing facilities in Fort Lauderdale. Book now!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

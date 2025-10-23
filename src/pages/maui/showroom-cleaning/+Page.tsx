@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const ShowroomCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const ShowroomCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Showroom Cleaning Services Maui | Red Rock Cleans</title>
-        <meta name="description" content="Showroom cleaning in Maui. Spotless displays showcasing your products perfectly. Professional Hawaiian service. Book today!" />
-        <meta name="keywords" content="showroom cleaning near me, car dealership cleaning Maui, furniture showroom cleaning Kihei, luxury retail cleaning Wailea, best showroom cleaners Maui, professional showroom cleaning Lahaina, showroom floor polishing Maui, immaculate dealership cleaning Maui, showroom cleaning cost Maui, dealership cleaning prices Maui, what is showroom cleaning Maui, hire showroom cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/showroom-cleaning" />
+        <title>{t(`commercialServices.maui.showroom.title`, { defaultValue: "Showroom Cleaning Services Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.showroom.description`, { defaultValue: "Showroom cleaning in Maui. Spotless displays showcasing your products perfectly. Professional Hawaiian service. Book today!" })} />
       </Helmet>
       
       <MauiNavigation />

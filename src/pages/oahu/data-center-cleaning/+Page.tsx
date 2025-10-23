@@ -7,6 +7,7 @@ import { Microchip, Award, Clock, Database, Activity, Shield, HardHat, Server, D
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -259,6 +260,7 @@ const neighborhoods = [
 ];
 
 const DataCenterCleaningOahuPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
 
   useEffect(() => {
@@ -298,8 +300,8 @@ const DataCenterCleaningOahuPage = () => {
   return (
     <>
       <Helmet>
-        <title>Data Center Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Data center cleaning in Oahu. Protect critical infrastructure with specialized cleaning in Honolulu. Hawaiian expertise!" />
+        <title>{t(`commercialServices.oahu.dataCenter.title`, { defaultValue: "Data Center Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.dataCenter.description`, { defaultValue: "Data center cleaning in Oahu. Protect critical infrastructure with specialized cleaning in Honolulu. Hawaiian expertise!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

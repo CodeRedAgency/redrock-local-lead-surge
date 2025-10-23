@@ -7,6 +7,7 @@ import { HardHat, Cog, ClipboardCheck, Layers, Wrench, Construction, Users, Shie
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const FactoryCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const FactoryCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Factory Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Factory cleaning in Dallas. Heavy-duty industrial cleaning for manufacturing facilities in Dallas, Plano & Frisco. Book today!" />
+        <title>{t(`commercialServices.dallas.factory.title`, { defaultValue: "Factory Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.factory.description`, { defaultValue: "Factory cleaning in Dallas. Heavy-duty industrial cleaning for manufacturing facilities in Dallas, Plano & Frisco. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

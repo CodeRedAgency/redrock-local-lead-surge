@@ -7,6 +7,7 @@ import { Sparkles, Droplets, Heart, Scissors, Paintbrush, Sofa, ShowerHead, Smil
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const SalonSpaCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const SalonSpaCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Salon & Spa Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Salon & spa cleaning in Dallas. Hygienic, luxurious environments for Dallas, Plano & Frisco beauty businesses. Book today!" />
+        <title>{t(`commercialServices.dallas.salonSpa.title`, { defaultValue: "Salon & Spa Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.salonSpa.description`, { defaultValue: "Salon & spa cleaning in Dallas. Hygienic, luxurious environments for Dallas, Plano & Frisco beauty businesses. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

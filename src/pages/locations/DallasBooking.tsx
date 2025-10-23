@@ -38,7 +38,7 @@ const DallasBooking = () => {
     <>
       <Helmet>
         <title>Book Now - Dallas Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Book cleaning services in Dallas. Easy online booking for Dallas, Plano & Frisco homes and businesses. Schedule today!" />
+        <meta name="description" content="Book professional cleaning services in Dallas. Easy online booking for Dallas, Plano & Frisco homes and businesses. Schedule your cleaning today!" />
       </Helmet>
       <Hreflang />
       

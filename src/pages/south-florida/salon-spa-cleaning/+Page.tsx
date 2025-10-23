@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const SalonSpaCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const SalonSpaCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Salon & Spa Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Salon & spa cleaning in South Florida. Hygienic, luxurious environments for Fort Lauderdale & Weston beauty businesses!" />
-        <meta name="keywords" content="salon and spa cleaning South Florida, salon cleaning near me, spa cleaning South Florida, hair salon cleaning Fort Lauderdale, nail salon cleaning Weston FL, medispa cleaning South Florida, best salon cleaners South Florida, hygienic spa cleaning Broward County, beauty salon sanitation, barber shop cleaning Fort Lauderdale, salon cleaning cost South Florida, spa cleaning prices Fort Lauderdale, what is salon cleaning South Florida, hire spa cleaners in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/salon-spa-cleaning" />
+        <title>{t(`commercialServices.southFlorida.salonSpa.title`, { defaultValue: "Salon & Spa Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.salonSpa.description`, { defaultValue: "Salon & spa cleaning in South Florida. Hygienic, luxurious environments for Fort Lauderdale & Weston beauty businesses!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

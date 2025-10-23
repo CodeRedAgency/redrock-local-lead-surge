@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -260,6 +261,7 @@ const neighborhoods = [
 ];
 
 const IndustrialCleaningOahuPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -277,10 +279,8 @@ const IndustrialCleaningOahuPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Industrial Cleaning Services Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Industrial cleaning in Oahu. Heavy-duty cleaning for warehouses & factories in Honolulu. Professional Hawaiian service today!" />
-        <meta name="keywords" content="industrial cleaning near me, heavy duty cleaning Oahu, industrial cleaning Honolulu, industrial cleaners Kapolei, industrial equipment cleaning Oahu, manufacturing facility cleaning Oahu, plant deep cleaning Honolulu, OSHA compliant cleaning services Oahu, industrial cleaning cost Oahu, industrial cleaning rates Honolulu, what is industrial cleaning Oahu, hire industrial cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/industrial-cleaning" />
+        <title>{t(`commercialServices.oahu.industrial.title`, { defaultValue: "Industrial Cleaning Services Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.industrial.description`, { defaultValue: "Industrial cleaning in Oahu. Heavy-duty cleaning for warehouses & factories in Honolulu. Professional Hawaiian service today!" })} />
       </Helmet>
       
       <OahuNavigation />

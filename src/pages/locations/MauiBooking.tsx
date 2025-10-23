@@ -38,7 +38,7 @@ const MauiBooking = () => {
     <>
       <Helmet>
         <title>Book Now - Maui Cleaning Services | Red Rock Cleaning</title>
-        <meta name="description" content="Book cleaning services in Maui. Easy online booking for vacation rental & residential cleaning in Maui. Schedule today!" />
+        <meta name="description" content="Book professional cleaning services in Maui. Easy online booking for vacation rental & residential cleaning in Maui. Schedule your service today!" />
       </Helmet>
       <Hreflang />
       

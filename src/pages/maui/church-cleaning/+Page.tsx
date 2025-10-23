@@ -7,6 +7,7 @@ import { BookOpen, HeartHandshake, Calendar, MapPin, Home, Building2, Stethoscop
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -202,6 +203,7 @@ const towns = [
 ];
 
 const ChurchCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -219,10 +221,8 @@ const ChurchCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Church Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Maui church cleaning. Respectful, thorough cleaning for places of worship. Professional Hawaiian service on Maui. Book today!" />
-        <meta name="keywords" content="church cleaning near me, place of worship cleaning Maui, sanctuary cleaning Wailea, chapel cleaning Lahaina, best church cleaners Maui, professional church cleaning Maui, respectful religious facility cleaning, dependable church cleaners Kihei, church cleaning cost Maui, affordable church cleaning services Maui, what is included in church cleaning Maui, hire church cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/church-cleaning" />
+        <title>{t(`commercialServices.maui.church.title`, { defaultValue: "Church Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.church.description`, { defaultValue: "Maui church cleaning. Respectful, thorough cleaning for places of worship. Professional Hawaiian service on Maui. Book today!" })} />
       </Helmet>
       
       <MauiNavigation />

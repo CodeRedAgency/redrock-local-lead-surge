@@ -244,7 +244,7 @@ const DeepCleaningMauiPage = () => {
     <>
       <Helmet>
         <title>Deep Cleaning Service Maui | Red Rock Cleans</title>
-        <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service on Maui. Red Rock Cleans tackles built-up grime for a truly refreshed home in Wailea, Lahaina, and beyond. Get your free quote!" />
+        <meta name="description" content="Premium deep cleaning in Maui. Complete home sanitization in Wailea, Lahaina & Kihei. Professional cleaners tackle every corner for a fresh space." />
       </Helmet>
       <Hreflang />
       

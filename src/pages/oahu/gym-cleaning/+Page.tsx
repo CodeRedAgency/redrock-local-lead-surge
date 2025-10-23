@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -260,6 +261,7 @@ const neighborhoods = [
 ];
 
 const GymCleaningOahuPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -277,10 +279,8 @@ const GymCleaningOahuPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Gym Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Gym cleaning services in Oahu. Sanitized equipment & facilities for Honolulu fitness centers. Professional Hawaiian service!" />
-        <meta name="keywords" content="gym cleaning near me Oahu, fitness center cleaning Honolulu, health club sanitation Kailua, gym disinfection Oahu, professional gym cleaners Oahu, equipment disinfection Honolulu, locker room cleaning Oahu, anti-viral gym cleaning Oahu, gym cleaning cost Oahu, commercial gym cleaning prices Honolulu, gym cleaning checklist Oahu, how to keep a gym clean Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/gym-cleaning" />
+        <title>{t(`commercialServices.oahu.gym.title`, { defaultValue: "Gym Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.gym.description`, { defaultValue: "Gym cleaning services in Oahu. Sanitized equipment & facilities for Honolulu fitness centers. Professional Hawaiian service!" })} />
       </Helmet>
       
       <OahuNavigation />

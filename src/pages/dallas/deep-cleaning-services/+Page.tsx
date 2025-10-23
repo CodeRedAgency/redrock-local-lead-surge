@@ -206,7 +206,7 @@ const DeepCleaningDallasPage = () => {
     <>
       <Helmet>
         <title>Deep Cleaning Service in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Restore your home's sparkle with our thorough deep cleaning service in Dallas. We tackle built-up grime for a truly refreshed home in Plano, Frisco, and beyond. Get your free quote!" />
+        <meta name="description" content="Comprehensive deep cleaning services in Dallas. Top-to-bottom home cleaning in Plano, Frisco & Allen. Professional cleaners eliminate dirt and restore your home's shine." />
       </Helmet>
       <Hreflang />
       

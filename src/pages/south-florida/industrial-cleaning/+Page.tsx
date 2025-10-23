@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const IndustrialCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const IndustrialCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Industrial Cleaning Services South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Industrial cleaning in South Florida. Heavy-duty cleaning for warehouses & factories in Fort Lauderdale & Weston area!" />
-        <meta name="keywords" content="industrial cleaning services South Florida, industrial cleaning near me, heavy duty cleaning South Florida, industrial cleaning Fort Lauderdale, industrial cleaners Hollywood FL, industrial equipment cleaning South Florida, manufacturing facility cleaning Broward County, plant deep cleaning South Florida, OSHA compliant cleaning services South Florida, industrial cleaning cost South Florida, industrial cleaning rates Fort Lauderdale, what is industrial cleaning South Florida, hire industrial cleaners in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/industrial-cleaning" />
+        <title>{t(`commercialServices.southFlorida.industrial.title`, { defaultValue: "Industrial Cleaning Services South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.industrial.description`, { defaultValue: "Industrial cleaning in South Florida. Heavy-duty cleaning for warehouses & factories in Fort Lauderdale & Weston area!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

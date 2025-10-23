@@ -7,6 +7,7 @@ import { HardHat, Forklift, Box, Layers, Construction, Truck, User, Package, Shi
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const WarehouseCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const WarehouseCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Warehouse Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Warehouse cleaning in Dallas. Efficient service maximizing safety & productivity in Dallas, Plano & Frisco. Book today!" />
+        <title>{t(`commercialServices.dallas.warehouse.title`, { defaultValue: "Warehouse Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.warehouse.description`, { defaultValue: "Warehouse cleaning in Dallas. Efficient service maximizing safety & productivity in Dallas, Plano & Frisco. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

@@ -7,6 +7,7 @@ import { Shield, Microscope, Award, Sofa, Stethoscope, Droplets, Hospital, Badge
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -240,6 +241,7 @@ const cities = [
 ];
 
 const MedicalOfficeCleaningColumbusOhioPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
   const [countersVisible, setCountersVisible] = useState(false);
   const [healthcareFacilities, setHealthcareFacilities] = useState(0);
@@ -312,10 +314,8 @@ const MedicalOfficeCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Medical Office Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Medical office cleaning in Columbus Ohio. HIPAA-compliant service for Columbus healthcare facilities. Book your service today!" />
-        <meta name="keywords" content="medical office cleaning Columbus Ohio, medical office cleaning near me, clinic cleaning Columbus Ohio, dental office cleaning Dublin OH, healthcare cleaning Upper Arlington, best medical cleaners Columbus, HIPAA compliant cleaning Columbus, OSHA standards cleaning Columbus Ohio, exam room sanitation Dublin OH, terminal cleaning Columbus, medical office cleaning cost Columbus, clinic cleaning prices Columbus Ohio, what is terminal cleaning Columbus, hire medical cleaners in Columbus Ohio" />
-        <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/medical-office-cleaning" />
+        <title>{t(`commercialServices.columbus.medical.title`, { defaultValue: "Medical Office Cleaning in Columbus Ohio | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.columbus.medical.description`, { defaultValue: "Medical office cleaning in Columbus Ohio. HIPAA-compliant service for Columbus healthcare facilities. Book your service today!" })} />
       </Helmet>
       
       <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />

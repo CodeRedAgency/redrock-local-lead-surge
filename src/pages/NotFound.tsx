@@ -13,7 +13,7 @@ const NotFound = () => {
     <>
       <Helmet>
         <title>Page Not Found | Red Rock Cleans</title>
-        <meta name="description" content="The page you're looking for doesn't exist. Return to Red Rock Cleans homepage for professional cleaning services." />
+        <meta name="description" content="The page you're looking for doesn't exist. Return to Red Rock Cleans homepage to explore our professional residential and commercial cleaning services." />
       </Helmet>
       <div className="flex min-h-screen items-center justify-center bg-gray-100">
         <div className="text-center">

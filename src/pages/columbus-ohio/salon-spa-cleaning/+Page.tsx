@@ -7,6 +7,7 @@ import { Sparkles, Droplets, Heart, Scissors, Paintbrush, Sofa, ShowerHead, Smil
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -240,6 +241,7 @@ const cities = [
 ];
 
 const SalonSpaCleaningColumbusOhioPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
   const [countersVisible, setCountersVisible] = useState(false);
   const [clientSatisfaction, setClientSatisfaction] = useState(0);
@@ -312,10 +314,8 @@ const SalonSpaCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Salon & Spa Cleaning in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Salon & spa cleaning in Columbus Ohio. Hygienic, luxurious environments for Columbus beauty businesses. Book your service!" />
-        <meta name="keywords" content="salon and spa cleaning Columbus Ohio, salon cleaning near me, spa cleaning Columbus Ohio, hair salon cleaning Dublin OH, nail salon cleaning Short North, medispa cleaning Columbus, best salon cleaners Columbus, hygienic spa cleaning Columbus Ohio, beauty salon sanitation, barber shop cleaning Columbus, salon cleaning cost Columbus Ohio, spa cleaning prices Columbus, what is salon cleaning Columbus, hire spa cleaners in Columbus Ohio" />
-        <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/salon-spa-cleaning" />
+        <title>{t(`commercialServices.columbus.salonSpa.title`, { defaultValue: "Salon & Spa Cleaning in Columbus Ohio | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.columbus.salonSpa.description`, { defaultValue: "Salon & spa cleaning in Columbus Ohio. Hygienic, luxurious environments for Columbus beauty businesses. Book your service!" })} />
       </Helmet>
       
       <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />

@@ -7,6 +7,7 @@ import { HeartHandshake, BookOpen, BadgeCheck, GraduationCap, Footprints, Medal,
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const SchoolCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const SchoolCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>School Cleaning Services in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="School cleaning in Dallas. Safe, healthy learning environments for students in Dallas, Plano & Frisco schools. Book today!" />
+        <title>{t(`commercialServices.dallas.school.title`, { defaultValue: "School Cleaning Services in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.school.description`, { defaultValue: "School cleaning in Dallas. Safe, healthy learning environments for students in Dallas, Plano & Frisco schools. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

@@ -7,6 +7,7 @@ import { Shield, Lock, FileText, Building, Gavel, Users, ShieldCheck, Building2,
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -240,6 +241,7 @@ const cities = [
 ];
 
 const GovernmentFacilityCleaningColumbusOhioPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
   const [countersVisible, setCountersVisible] = useState(false);
   const [securityStaff, setSecurityStaff] = useState(0);
@@ -312,10 +314,8 @@ const GovernmentFacilityCleaningColumbusOhioPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Government Facility Cleaning Columbus | Red Rock Cleans</title>
-        <meta name="description" content="Government facility cleaning in Columbus Ohio. Secure, compliant cleaning for municipal buildings. Professional service!" />
-        <meta name="keywords" content="government facility cleaning Columbus Ohio, government cleaning near me, municipal building cleaning Columbus Ohio, federal office cleaning Dublin OH, courthouse cleaning Columbus, secure facility cleaning Columbus, GSA schedule cleaning Columbus Ohio, confidential cleaning services, discreet government cleaners Columbus, government cleaning contracts Columbus, cost of municipal cleaning Columbus, what is government facility cleaning Columbus, hire secure cleaners in Columbus" />
-        <link rel="canonical" href="https://redrockcleans.com/columbus-ohio/government-facility-cleaning" />
+        <title>{t(`commercialServices.columbus.government.title`, { defaultValue: "Government Facility Cleaning Columbus | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.columbus.government.description`, { defaultValue: "Government facility cleaning in Columbus Ohio. Secure, compliant cleaning for municipal buildings. Professional service!" })} />
       </Helmet>
       
       <ColumbusNavigation loginUrl="https://customer-portal.maidily.com/red-rock-cleans-columbus-ohio/sign-in" bookingUrl="/commercial-quote?location=columbus-ohio" />

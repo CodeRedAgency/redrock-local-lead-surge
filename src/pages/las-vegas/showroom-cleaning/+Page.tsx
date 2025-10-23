@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useTranslation } from 'react-i18next';
 import { 
   Gem, 
   Sparkles, 
@@ -48,6 +49,7 @@ const ShowroomCleaningLasVegasPage: React.FC = () => {
   // Animated counters
   useEffect(() => {
     const animateCounters = () => {
+  const { t } = useTranslation();
       const targets = { impressions: 2500, value: 35, detail: 98 };
       const duration = 2000;
       const steps = 60;
@@ -167,8 +169,8 @@ const ShowroomCleaningLasVegasPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Showroom Cleaning Services in Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Showroom cleaning in Las Vegas. Spotless displays showcasing your products perfectly in Las Vegas & Henderson. Book now!" />
+        <title>{t(`commercialServices.lasVegas.showroom.title`, { defaultValue: "Showroom Cleaning Services in Las Vegas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.lasVegas.showroom.description`, { defaultValue: "Showroom cleaning in Las Vegas. Spotless displays showcasing your products perfectly in Las Vegas & Henderson. Book now!" })} />
       </Helmet>
       <Hreflang />
       <div className="min-h-screen flex flex-col">

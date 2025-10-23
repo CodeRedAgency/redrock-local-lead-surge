@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -260,6 +261,7 @@ const neighborhoods = [
 ];
 
 const RestaurantCleaningOahuPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -277,10 +279,8 @@ const RestaurantCleaningOahuPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Restaurant Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Restaurant cleaning in Oahu. Food-safe service maintaining health code compliance in Honolulu. Professional Hawaiian service!" />
-        <meta name="keywords" content="restaurant cleaning near me, commercial kitchen cleaning Oahu, bar cleaning Honolulu, dining room cleaning Waikiki, best restaurant cleaners Oahu, kitchen degreasing Honolulu, front of house cleaning Oahu, health code cleaning Oahu, restaurant cleaning cost Oahu, commercial kitchen cleaning prices Honolulu, restaurant cleaning checklist Oahu, hire restaurant cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/restaurant-cleaning" />
+        <title>{t(`commercialServices.oahu.restaurant.title`, { defaultValue: "Restaurant Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.restaurant.description`, { defaultValue: "Restaurant cleaning in Oahu. Food-safe service maintaining health code compliance in Honolulu. Professional Hawaiian service!" })} />
       </Helmet>
       
       <OahuNavigation />

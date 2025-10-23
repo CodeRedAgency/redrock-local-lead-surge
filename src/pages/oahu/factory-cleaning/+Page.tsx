@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -260,6 +261,7 @@ const neighborhoods = [
 ];
 
 const FactoryCleaningOahuPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -277,10 +279,8 @@ const FactoryCleaningOahuPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Factory Cleaning Oahu | Red Rock Cleans</title>
-        <meta name="description" content="Factory cleaning in Oahu. Heavy-duty industrial cleaning for manufacturing facilities in Honolulu. Professional service!" />
-        <meta name="keywords" content="factory cleaning near me, industrial cleaning Oahu, manufacturing plant cleaning Honolulu, factory cleaning Kapolei, heavy-duty factory cleaning Oahu, production floor cleaning Honolulu, machinery degreasing Oahu, OSHA compliant cleaning Oahu, factory cleaning cost Oahu, industrial cleaning prices Honolulu, what is factory cleaning Oahu, hire factory cleaners in Oahu" />
-        <link rel="canonical" href="https://redrockcleans.com/oahu/factory-cleaning" />
+        <title>{t(`commercialServices.oahu.factory.title`, { defaultValue: "Factory Cleaning Oahu | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.oahu.factory.description`, { defaultValue: "Factory cleaning in Oahu. Heavy-duty industrial cleaning for manufacturing facilities in Honolulu. Professional service!" })} />
       </Helmet>
       
       <OahuNavigation />

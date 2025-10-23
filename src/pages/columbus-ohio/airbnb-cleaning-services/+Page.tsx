@@ -282,7 +282,7 @@ const AirbnbCleaningColumbusOhioPage = () => {
     <>
       <Helmet>
         <title>Airbnb Cleaning Service in Columbus Ohio | Red Rock Cleans</title>
-        <meta name="description" content="Columbus Ohio Airbnb cleaning. Quick turnovers for vacation rentals. Professional service ensures guest-ready results!" />
+        <meta name="description" content="Professional Columbus Ohio Airbnb cleaning. Quick turnovers for vacation rentals. Expert service ensures spotless, guest-ready results every time!" />
       </Helmet>
       <Hreflang />
       

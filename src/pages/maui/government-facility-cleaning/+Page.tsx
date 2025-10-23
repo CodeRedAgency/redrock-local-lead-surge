@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const GovernmentFacilityCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const GovernmentFacilityCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Government Facility Cleaning Maui | Red Rock Cleans</title>
-        <meta name="description" content="Government facility cleaning in Maui. Secure, compliant cleaning for municipal buildings. Professional Hawaiian service!" />
-        <meta name="keywords" content="government cleaning near me Maui, municipal building cleaning Kihei, federal office cleaning Maui, courthouse cleaning Wailuku, secure facility cleaning Maui, GSA schedule cleaning Maui, confidential cleaning services Maui, discreet government cleaners Maui, government cleaning contracts Maui, cost of municipal cleaning Maui, what is government facility cleaning Maui, hire secure cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/government-facility-cleaning" />
+        <title>{t(`commercialServices.maui.government.title`, { defaultValue: "Government Facility Cleaning Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.government.description`, { defaultValue: "Government facility cleaning in Maui. Secure, compliant cleaning for municipal buildings. Professional Hawaiian service!" })} />
       </Helmet>
       
       <MauiNavigation />

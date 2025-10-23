@@ -10,8 +10,8 @@ const AirbnbCleaning = () => {
   return (
     <>
       <Helmet>
-        <title>{t("services.airbnb.title", { defaultValue: "Airbnb Cleaning Services | Red Rock Cleaning" })}</title>
-        <meta name="description" content={t("services.airbnb.description", { defaultValue: "Professional Airbnb and vacation rental cleaning services. Fast turnovers, consistent quality, and guest-ready results every time." })} />
+        <title>{t("pageTitles.airbnbCleaning", { defaultValue: "Airbnb & Vacation Rental Cleaning | Red Rock Cleaning" })}</title>
+        <meta name="description" content={t("pageDescriptions.airbnbCleaning", { defaultValue: "Specialized Airbnb and vacation rental cleaning services. Ensure satisfied guests with spotless turnovers every time." })} />
       </Helmet>
       <Hreflang />
       

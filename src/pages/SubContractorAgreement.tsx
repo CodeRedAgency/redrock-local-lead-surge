@@ -143,7 +143,7 @@ This is a legally binding agreement between the contractor and Red Rock Cleaning
     <>
       <Helmet>
         <title>Sub-Contractor Agreement | Red Rock Cleans</title>
-        <meta name="description" content="Complete your sub-contractor agreement with Red Rock Cleans. Review terms and sign the agreement to join our team." />
+        <meta name="description" content="Complete your sub-contractor agreement with Red Rock Cleans. Review terms, sign the agreement, and join our professional cleaning team today." />
         <link rel="canonical" href="/sub-contractor-agreement" />
       </Helmet>
       

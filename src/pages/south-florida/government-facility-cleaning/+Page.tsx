@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const cities = [
   {
@@ -393,6 +394,7 @@ const cities = [
 ];
 
 const GovernmentFacilityCleaningSouthFloridaPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -410,10 +412,8 @@ const GovernmentFacilityCleaningSouthFloridaPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Government Facility Cleaning South Florida | Red Rock Cleans</title>
-        <meta name="description" content="Government facility cleaning in South Florida. Secure, compliant cleaning for municipal buildings. Fort Lauderdale service!" />
-        <meta name="keywords" content="government facility cleaning South Florida, government cleaning near me, municipal building cleaning South Florida, federal office cleaning Fort Lauderdale, courthouse cleaning Broward County, secure facility cleaning South Florida, GSA schedule cleaning South Florida, confidential cleaning services Fort Lauderdale, discreet government cleaners South Florida, government cleaning contracts South Florida, cost of municipal cleaning Fort Lauderdale, what is government facility cleaning South Florida, hire secure cleaners in South Florida" />
-        <link rel="canonical" href="https://redrockcleans.com/south-florida/government-facility-cleaning" />
+        <title>{t(`commercialServices.southFlorida.government.title`, { defaultValue: "Government Facility Cleaning South Florida | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.southFlorida.government.description`, { defaultValue: "Government facility cleaning in South Florida. Secure, compliant cleaning for municipal buildings. Fort Lauderdale service!" })} />
       </Helmet>
       
       <SouthFloridaNavigation />

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { useTranslation } from 'react-i18next';
 
 const towns = [
   {
@@ -203,6 +204,7 @@ const towns = [
 ];
 
 const IndustrialCleaningMauiPage = () => {
+  const { t } = useTranslation();
   const [openAccordion, setOpenAccordion] = useState<string>("");
 
   useEffect(() => {
@@ -220,10 +222,8 @@ const IndustrialCleaningMauiPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Industrial Cleaning Services Maui | Red Rock Cleans</title>
-        <meta name="description" content="Industrial cleaning in Maui. Heavy-duty cleaning for warehouses & factories. Professional Hawaiian service. Book your service!" />
-        <meta name="keywords" content="industrial cleaning near me, heavy duty cleaning Maui, industrial cleaning Kihei, industrial cleaners Lahaina, industrial equipment cleaning Maui, manufacturing facility cleaning Maui, plant deep cleaning Maui, OSHA compliant cleaning services Maui, industrial cleaning cost Maui, industrial cleaning rates Maui, what is industrial cleaning Maui, hire industrial cleaners in Maui" />
-        <link rel="canonical" href="https://redrockcleans.com/maui/industrial-cleaning" />
+        <title>{t(`commercialServices.maui.industrial.title`, { defaultValue: "Industrial Cleaning Services Maui | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.maui.industrial.description`, { defaultValue: "Industrial cleaning in Maui. Heavy-duty cleaning for warehouses & factories. Professional Hawaiian service. Book your service!" })} />
       </Helmet>
       
       <MauiNavigation />

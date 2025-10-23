@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useTranslation } from 'react-i18next';
 import { 
   Shield, 
   Clock, 
@@ -45,6 +46,7 @@ const WarehouseCleaningLasVegasPage: React.FC = () => {
   // Animated counters
   useEffect(() => {
     const animateCounters = () => {
+  const { t } = useTranslation();
       const targets = { squareFeet: 2500000, incidents: 95, efficiency: 40 };
       const duration = 2000;
       const steps = 60;
@@ -164,8 +166,8 @@ const WarehouseCleaningLasVegasPage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Warehouse Cleaning Las Vegas | Red Rock Cleans</title>
-        <meta name="description" content="Warehouse cleaning in Las Vegas. Efficient service maximizing safety & productivity in Las Vegas & Henderson. Book today!" />
+        <title>{t(`commercialServices.lasVegas.warehouse.title`, { defaultValue: "Warehouse Cleaning Las Vegas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.lasVegas.warehouse.description`, { defaultValue: "Warehouse cleaning in Las Vegas. Efficient service maximizing safety & productivity in Las Vegas & Henderson. Book today!" })} />
       </Helmet>
       <LasVegasNavigation />
       

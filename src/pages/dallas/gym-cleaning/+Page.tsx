@@ -7,6 +7,7 @@ import { Dumbbell, ShowerHead, Shield, Bike, Droplets, User, Users, ThumbsUp, Sh
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const GymCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -265,8 +267,8 @@ const GymCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Gym Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Gym cleaning services in Dallas. Sanitized equipment & facilities for Dallas, Plano & Frisco fitness centers. Book today!" />
+        <title>{t(`commercialServices.dallas.gym.title`, { defaultValue: "Gym Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.gym.description`, { defaultValue: "Gym cleaning services in Dallas. Sanitized equipment & facilities for Dallas, Plano & Frisco fitness centers. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

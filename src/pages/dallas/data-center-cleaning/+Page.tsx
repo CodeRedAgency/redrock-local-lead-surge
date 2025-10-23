@@ -7,6 +7,7 @@ import { Cpu, Award, Clock, Grid3X3, Server, SprayCan, Database, TrendingUp, Shi
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const DataCenterCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const DataCenterCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Data Center Cleaning in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Data center cleaning in Dallas. Protect critical infrastructure with specialized cleaning in Dallas, Plano & Frisco. Book now!" />
+        <title>{t(`commercialServices.dallas.dataCenter.title`, { defaultValue: "Data Center Cleaning in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.dataCenter.description`, { defaultValue: "Data center cleaning in Dallas. Protect critical infrastructure with specialized cleaning in Dallas, Plano & Frisco. Book now!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

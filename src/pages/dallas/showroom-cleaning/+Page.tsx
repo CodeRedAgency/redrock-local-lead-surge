@@ -7,6 +7,7 @@ import { Diamond, Sparkles, Handshake, SprayCan, Square, Car, Sofa, Users, Dolla
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 const neighborhoods = [
   {
@@ -164,6 +165,7 @@ const neighborhoods = [
 ];
 
 const ShowroomCleaningDallasPage = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string>("");
   const [countersInView, setCountersInView] = useState(false);
 
@@ -260,8 +262,8 @@ const ShowroomCleaningDallasPage = () => {
   return (
     <>
       <Helmet>
-        <title>Showroom Cleaning Services in Dallas | Red Rock Cleans</title>
-        <meta name="description" content="Showroom cleaning in Dallas. Spotless displays showcasing your products perfectly in Dallas, Plano & Frisco. Book today!" />
+        <title>{t(`commercialServices.dallas.showroom.title`, { defaultValue: "Showroom Cleaning Services in Dallas | Red Rock Cleans" })}</title>
+        <meta name="description" content={t(`commercialServices.dallas.showroom.description`, { defaultValue: "Showroom cleaning in Dallas. Spotless displays showcasing your products perfectly in Dallas, Plano & Frisco. Book today!" })} />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
