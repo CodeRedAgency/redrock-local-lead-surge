@@ -47,6 +47,59 @@
       "faq": "Preguntas Frecuentes"
     }
   },
+  "footer": {
+    "home": {
+      "title": "Inicio",
+      "home": "Inicio"
+    },
+    "about": {
+      "title": "Acerca de",
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad",
+      "faq": "Preguntas Frecuentes",
+      "sitemap": "Mapa del Sitio"
+    },
+    "residential": {
+      "title": "Servicios Residenciales",
+      "standardVsDeep": "Limpieza Estándar vs Profunda",
+      "standard": "Limpieza Estándar",
+      "deep": "Limpieza Profunda",
+      "airbnb": "Limpieza de Airbnb",
+      "postConstruction": "Post Construcción"
+    },
+    "commercial": {
+      "title": "Servicios Comerciales",
+      "main": "Limpieza Comercial",
+      "church": "Limpieza de Iglesias",
+      "dataCenter": "Limpieza de Centros de Datos",
+      "industrial": "Limpieza Industrial",
+      "factory": "Limpieza de Fábricas",
+      "government": "Instalaciones Gubernamentales",
+      "gym": "Limpieza de Gimnasios",
+      "medical": "Oficinas Médicas",
+      "restaurant": "Limpieza de Restaurantes",
+      "retail": "Limpieza de Tiendas",
+      "school": "Limpieza de Escuelas",
+      "showroom": "Limpieza de Salones",
+      "warehouse": "Limpieza de Almacenes",
+      "salonSpa": "Salones y Spas"
+    },
+    "resources": {
+      "title": "Recursos",
+      "blog": "Blog",
+      "costEstimator": "Estimador de Costos Comercial",
+      "timeEstimator": "Estimador de Tiempo Comercial",
+      "pricing": "Precios"
+    },
+    "hiring": {
+      "title": "Únete a Nuestro Equipo",
+      "requirements": "Requisitos de Contratación",
+      "apply": "Solicitar Empleo"
+    },
+    "copyright": "Todos los derechos reservados.",
+    "madeWith": "Hecho con",
+    "by": "por"
+  },
   "blog": {
     "title": "Consejos y Guías de Limpieza",
     "subtitle": "Ideas prácticas y expertos para un espacio más limpio y saludable",

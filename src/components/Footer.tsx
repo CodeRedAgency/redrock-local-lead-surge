@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Youtube, ChevronDown, Languages } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, Youtube, ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const locationData = [
   {
@@ -49,226 +50,174 @@ const locationData = [
 
 export const Footer = () => {
   const location = useLocation();
-  const isSpanish = location.pathname.startsWith('/es');
-  const currentPath = location.pathname.replace(/^\/es/, '') || '/';
-  const alternateLanguagePath = isSpanish ? currentPath : `/es${currentPath}`;
+  const { t, i18n } = useTranslation();
+  
+  // Helper to get language prefix based on current i18n language
+  const getLanguagePrefix = () => {
+    return i18n.language.startsWith('es') ? '/es' : '';
+  };
   
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white mt-20">
       <div className="container mx-auto px-4">
         {/* Enhanced Navigation */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
             {/* Home Section */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">Home</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">{t("footer.home.title", { defaultValue: "Home" })}</h3>
               <Link 
-                to="/" 
+                to={getLanguagePrefix() + "/"} 
                 className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
               >
-                Home
+                {t("footer.home.home", { defaultValue: "Home" })}
               </Link>
             </div>
 
             {/* About Section */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">About</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">{t("footer.about.title", { defaultValue: "About" })}</h3>
               <div className="space-y-3">
                 <Link 
-                  to="/terms-and-conditions-page" 
+                  to={getLanguagePrefix() + "/terms-and-conditions-page"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Terms and Conditions
+                  {t("footer.about.terms", { defaultValue: "Terms and Conditions" })}
                 </Link>
                 <Link 
-                  to="/privacy-policy-page" 
+                  to={getLanguagePrefix() + "/privacy-policy-page"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Privacy Policy
+                  {t("footer.about.privacy", { defaultValue: "Privacy Policy" })}
                 </Link>
                 <Link 
-                  to="/about/faq" 
+                  to={getLanguagePrefix() + "/about/faq"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  FAQ
+                  {t("footer.about.faq", { defaultValue: "FAQ" })}
                 </Link>
                 <Link 
-                  to="/sitemap" 
+                  to={getLanguagePrefix() + "/sitemap"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Sitemap
+                  {t("footer.about.sitemap", { defaultValue: "Sitemap" })}
                 </Link>
               </div>
             </div>
 
             {/* Residential Services */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">Residential Services</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">{t("footer.residential.title", { defaultValue: "Residential Services" })}</h3>
               <div className="space-y-3">
                 <Link 
-                  to="/blog/standard-cleaning-vs-deep-cleaning" 
+                  to={getLanguagePrefix() + "/blog/standard-cleaning-vs-deep-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Standard vs Deep Cleaning
+                  {t("footer.residential.standardVsDeep", { defaultValue: "Standard vs Deep Cleaning" })}
                 </Link>
                 <Link 
-                  to="/standard-cleaning-services" 
+                  to={getLanguagePrefix() + "/standard-cleaning-services"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Standard Cleaning
+                  {t("footer.residential.standard", { defaultValue: "Standard Cleaning" })}
                 </Link>
                 <Link 
-                  to="/deep-cleaning-services" 
+                  to={getLanguagePrefix() + "/deep-cleaning-services"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Deep Cleaning
+                  {t("footer.residential.deep", { defaultValue: "Deep Cleaning" })}
                 </Link>
                 <Link 
-                  to="/airbnb-cleaning-services" 
+                  to={getLanguagePrefix() + "/airbnb-cleaning-services"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Airbnb Cleaning
+                  {t("footer.residential.airbnb", { defaultValue: "Airbnb Cleaning" })}
                 </Link>
                 <Link 
-                  to="/post-construction-cleaning-services" 
+                  to={getLanguagePrefix() + "/post-construction-cleaning-services"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Post Construction
+                  {t("footer.residential.postConstruction", { defaultValue: "Post Construction" })}
                 </Link>
               </div>
             </div>
 
             {/* Commercial Services */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">Commercial Services</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">{t("footer.commercial.title", { defaultValue: "Commercial Services" })}</h3>
               <div className="space-y-3">
                 <Link 
-                  to="/commercial-cleaning" 
+                  to={getLanguagePrefix() + "/commercial-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Commercial Cleaning
+                  {t("footer.commercial.main", { defaultValue: "Commercial Cleaning" })}
                 </Link>
                 <Link 
-                  to="/church-cleaning" 
+                  to={getLanguagePrefix() + "/church-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Church Cleaning
+                  {t("footer.commercial.church", { defaultValue: "Church Cleaning" })}
                 </Link>
                 <Link 
-                  to="/data-center-cleaning" 
+                  to={getLanguagePrefix() + "/data-center-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Data Center Cleaning
+                  {t("footer.commercial.dataCenter", { defaultValue: "Data Center Cleaning" })}
                 </Link>
                 <Link 
-                  to="/factory-cleaning" 
+                  to={getLanguagePrefix() + "/factory-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Factory Cleaning
+                  {t("footer.commercial.factory", { defaultValue: "Factory Cleaning" })}
                 </Link>
                 <Link 
-                  to="/government-facility-cleaning" 
+                  to={getLanguagePrefix() + "/government-facility-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Government Facility
+                  {t("footer.commercial.government", { defaultValue: "Government Facility" })}
                 </Link>
                 <Link 
-                  to="/gym-cleaning" 
+                  to={getLanguagePrefix() + "/gym-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Gym Cleaning
+                  {t("footer.commercial.gym", { defaultValue: "Gym Cleaning" })}
                 </Link>
                 <Link 
-                  to="/medical-office-cleaning" 
+                  to={getLanguagePrefix() + "/medical-office-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Medical Office
+                  {t("footer.commercial.medical", { defaultValue: "Medical Office" })}
                 </Link>
                 <Link 
-                  to="/retail-cleaning" 
+                  to={getLanguagePrefix() + "/retail-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Retail Store
+                  {t("footer.commercial.retail", { defaultValue: "Retail Store" })}
                 </Link>
                 <Link 
-                  to="/school-cleaning" 
+                  to={getLanguagePrefix() + "/school-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  School Cleaning
+                  {t("footer.commercial.school", { defaultValue: "School Cleaning" })}
                 </Link>
                 <Link 
-                  to="/showroom-cleaning" 
+                  to={getLanguagePrefix() + "/showroom-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Showroom Cleaning
+                  {t("footer.commercial.showroom", { defaultValue: "Showroom Cleaning" })}
                 </Link>
                 <Link 
-                  to="/warehouse-cleaning" 
+                  to={getLanguagePrefix() + "/warehouse-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Warehouse Cleaning
+                  {t("footer.commercial.warehouse", { defaultValue: "Warehouse Cleaning" })}
                 </Link>
                 <Link 
-                  to="/salon-spa-cleaning" 
+                  to={getLanguagePrefix() + "/salon-spa-cleaning"} 
                   className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                 >
-                  Salon & Spa
+                  {t("footer.commercial.salonSpa", { defaultValue: "Salon & Spa" })}
                 </Link>
-              </div>
-            </div>
-
-            {/* Language Section */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-                <Languages className="w-5 h-5" />
-                Language
-              </h3>
-              <div className="space-y-3">
-                <Link 
-                  to={currentPath} 
-                  className={`block transition-colors duration-300 hover:translate-x-1 transform ${!isSpanish ? 'text-primary font-semibold' : 'text-slate-300 hover:text-primary'}`}
-                >
-                  🇺🇸 English
-                </Link>
-                <Link 
-                  to={alternateLanguagePath} 
-                  className={`block transition-colors duration-300 hover:translate-x-1 transform ${isSpanish ? 'text-primary font-semibold' : 'text-slate-300 hover:text-primary'}`}
-                >
-                  🇪🇸 Español
-                </Link>
-                <div className="mt-4 pt-4 border-t border-slate-700">
-                  <p className="text-sm text-slate-400 mb-2">Páginas en Español:</p>
-                  <Link 
-                    to="/es/" 
-                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
-                  >
-                    Inicio
-                  </Link>
-                  <Link 
-                    to="/es/about" 
-                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
-                  >
-                    Sobre Nosotros
-                  </Link>
-                  <Link 
-                    to="/es/blog" 
-                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
-                  >
-                    Blog
-                  </Link>
-                  <Link 
-                    to="/es/residential-cleaning" 
-                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
-                  >
-                    Limpieza Residencial
-                  </Link>
-                  <Link 
-                    to="/es/commercial-cleaning" 
-                    className="block text-sm text-slate-300 hover:text-primary transition-colors duration-300"
-                  >
-                    Limpieza Comercial
-                  </Link>
-                </div>
               </div>
             </div>
   
@@ -276,50 +225,50 @@ export const Footer = () => {
             <div className="space-y-6">
               {/* Resources */}
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-primary mb-4">Resources</h3>
+                <h3 className="text-xl font-bold text-primary mb-4">{t("footer.resources.title", { defaultValue: "Resources" })}</h3>
                 <div className="space-y-3">
                   <Link 
-                    to="/blog" 
+                    to={getLanguagePrefix() + "/blog"} 
                     className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                   >
-                    Blog
+                    {t("footer.resources.blog", { defaultValue: "Blog" })}
                   </Link>
                   <Link 
-                    to="/commercial-cleaning-cost-estimator" 
+                    to={getLanguagePrefix() + "/commercial-cleaning-cost-estimator"} 
                     className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                   >
-                    Commercial Cleaning Cost Estimator
+                    {t("footer.resources.costEstimator", { defaultValue: "Commercial Cleaning Cost Estimator" })}
                   </Link>
                   <Link 
-                    to="/commercial-cleaning-time-estimator" 
+                    to={getLanguagePrefix() + "/commercial-cleaning-time-estimator"} 
                     className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                   >
-                    Commercial Cleaning Time Estimator
+                    {t("footer.resources.timeEstimator", { defaultValue: "Commercial Cleaning Time Estimator" })}
                   </Link>
                   <Link 
-                    to="/" 
+                    to={getLanguagePrefix() + "/"} 
                     className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                   >
-                    Pricing
+                    {t("footer.resources.pricing", { defaultValue: "Pricing" })}
                   </Link>
                 </div>
               </div>
 
               {/* Hiring */}
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-primary mb-4">Hiring</h3>
+                <h3 className="text-xl font-bold text-primary mb-4">{t("footer.hiring.title", { defaultValue: "Hiring" })}</h3>
                 <div className="space-y-3">
                   <Link 
-                    to="/hiring-req" 
+                    to={getLanguagePrefix() + "/hiring-req"} 
                     className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                   >
-                    Hiring Requirements
+                    {t("footer.hiring.requirements", { defaultValue: "Hiring Requirements" })}
                   </Link>
                   <Link 
-                    to="/hiring-application/how-to-use-the-maidily-mobile-app" 
+                    to={getLanguagePrefix() + "/hiring-application/how-to-use-the-maidily-mobile-app"} 
                     className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
                   >
-                    How to use the Maidily mobile app
+                    {t("footer.hiring.apply", { defaultValue: "How to use the Maidily mobile app" })}
                   </Link>
                 </div>
               </div>

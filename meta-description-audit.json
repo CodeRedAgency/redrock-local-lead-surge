@@ -1,0 +1,1658 @@
+{
+  "auditDate": "2025-10-23T10:53:24.478Z",
+  "totalPages": 183,
+  "statistics": {
+    "withDescription": 176,
+    "withoutDescription": 7,
+    "needsOptimization": 137
+  },
+  "pages": [
+    {
+      "file": "src\\pages\\Index.tsx",
+      "url": "/",
+      "hasHelmet": true,
+      "title": "Red Rock Cleaning - Trusted Local Cleaning Experts",
+      "description": "Professional cleaning services across South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas. Residential, commercial, and vacation rental cleaning.",
+      "descriptionLength": 153,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\about\\+Page.tsx",
+      "url": "/about",
+      "hasHelmet": true,
+      "title": "About Us - Red Rock Cleaning",
+      "description": "Learn about Red Rock Cleaning's commitment to providing exceptional cleaning services across multiple locations.",
+      "descriptionLength": 112,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\AboutUs.tsx",
+      "url": "/about-us",
+      "hasHelmet": true,
+      "title": "About Us - Professional Cleaning Services | Red Rock Cleaning",
+      "description": "Learn about Red Rock Cleaning's commitment to excellence in residential and commercial cleaning services across multiple locations.",
+      "descriptionLength": 131,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\AirbnbCleaning.tsx",
+      "url": "/airbnb-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"services.airbnb.title\", { defaultValue: \"Airbnb Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Professional Airbnb and vacation rental cleaning services. Fast turnovers, consistent quality, and guest-ready results every time.",
+      "descriptionLength": 130,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\Blog.tsx",
+      "url": "/blog",
+      "hasHelmet": true,
+      "title": "{currentPage > 1\r\n            ? `Cleaning Tips & Advice Blog - Page ${currentPage} | Red Rock Cleaning`\r\n            : \"Cleaning Tips & Advice Blog | Red Rock Cleaning\"}",
+      "description": "Expert cleaning tips, advice, and guides from Red Rock Cleaning professionals. Learn how to maintain a cleaner, healthier home.",
+      "descriptionLength": 127,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\6-handy-tips-to-help-you-minimize-your-time-on-housework\\+Page.tsx",
+      "url": "/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework",
+      "hasHelmet": true,
+      "title": "6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans",
+      "description": "Tired of endless chores? Discover 6 handy tips to help you minimize your time on housework and reclaim your free time.",
+      "descriptionLength": 118,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\airbnb-bedding-management-you-should-know\\+Page.tsx",
+      "url": "/blog/cleaning-tips/airbnb-bedding-management-you-should-know",
+      "hasHelmet": true,
+      "title": "Airbnb Bedding Management You Should Know | Red Rock Cleans",
+      "description": "Master Airbnb bedding management with expert tips on selecting, maintaining, and rotating linens for 5-star guest reviews and efficient turnover operations.",
+      "descriptionLength": 156,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\carpet-cleaning-to-remove-flea-infestation\\+Page.tsx",
+      "url": "/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation",
+      "hasHelmet": true,
+      "title": "Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans",
+      "description": "Dealing with a flea infestation? Our step-by-step guide shows you how professional carpet cleaning can help eradicate fleas from your home for good.",
+      "descriptionLength": 148,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill\\+Page.tsx",
+      "url": "/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill",
+      "hasHelmet": true,
+      "title": "Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans",
+      "description": "Master grill maintenance with our ultimate guide. Learn how to clean your outdoor grill for better taste, longer life, and a healthier cooking experience.",
+      "descriptionLength": 154,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\health-code-violations\\+Page.tsx",
+      "url": "/blog/cleaning-tips/health-code-violations",
+      "hasHelmet": true,
+      "title": "Navigating Health Code Violations: A Commercial Cleaning Guide | Red Rock Cleans",
+      "description": "Learn how to avoid and address health code violations in your business. Discover the role of professional commercial cleaning in maintaining compliance.",
+      "descriptionLength": 152,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\natures-air-purifiers-the-best-plants-for-cleaner-indoor-air\\+Page.tsx",
+      "url": "/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air",
+      "hasHelmet": true,
+      "title": "Nature&apos;s Air Purifiers: The Best Plants for Cleaner Indoor Air | Red Rock Cleans",
+      "description": "Discover the best houseplants for naturally purifying your indoor air. Our guide covers top plants, care tips, and how cleaning complements their benefits.",
+      "descriptionLength": 155,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets\\+Page.tsx",
+      "url": "/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets",
+      "hasHelmet": true,
+      "title": "Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans",
+      "description": "Don't panic over ink stains! Follow our step-by-step guide to effectively remove ink from carpets and learn when to call the professionals for stubborn spots.",
+      "descriptionLength": 158,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\the-science-of-spring-cleaning\\+Page.tsx",
+      "url": "/blog/cleaning-tips/the-science-of-spring-cleaning",
+      "hasHelmet": true,
+      "title": "The Science of Spring Cleaning: Why It Boosts Your Mood and Health | Red Rock Cleans",
+      "description": "Discover the science of spring cleaning! Learn how decluttering and a deep clean can improve your mood, health, and focus. Get our ultimate checklist.",
+      "descriptionLength": 150,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\why-you-should-host-a-spring-cleaning-party\\+Page.tsx",
+      "url": "/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party",
+      "hasHelmet": true,
+      "title": "Get It Done Together: Why You Should Host a Spring Cleaning Party | Red Rock Cleans",
+      "description": "Turn spring cleaning into a fun event! Learn why you should host a spring cleaning party and how to plan one, plus when to call in the pros for tough jobs.",
+      "descriptionLength": 155,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\blog\\cleaning-tips\\your-essential-guide-to-the-ultimate-move-out-cleaning-checklist\\+Page.tsx",
+      "url": "/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist",
+      "hasHelmet": true,
+      "title": "Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans",
+      "description": "Our ultimate move-out cleaning checklist ensures you get your security deposit back. Follow our room-by-room guide for a perfect clean, or hire our pros to do it for you.",
+      "descriptionLength": 170,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\ColumbusBooking.tsx",
+      "url": "/book-now-columbus-ohio",
+      "hasHelmet": true,
+      "title": "Book Now - Columbus Ohio Cleaning Services | Red Rock Cleaning",
+      "description": "Book your professional cleaning service in Columbus Ohio. Easy online booking for house and office cleaning.",
+      "descriptionLength": 108,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\DallasBooking.tsx",
+      "url": "/book-now-dallas",
+      "hasHelmet": true,
+      "title": "Book Now - Dallas Cleaning Services | Red Rock Cleaning",
+      "description": "Book your professional cleaning service in Dallas. Easy online booking for residential and commercial cleaning.",
+      "descriptionLength": 111,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\LasVegasBooking.tsx",
+      "url": "/book-now-las-vegas",
+      "hasHelmet": true,
+      "title": "Book Now - Las Vegas Cleaning Services | Red Rock Cleaning",
+      "description": "Book your professional cleaning service in Las Vegas. Easy online booking for residential and commercial cleaning.",
+      "descriptionLength": 114,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\MauiBooking.tsx",
+      "url": "/book-now-maui",
+      "hasHelmet": true,
+      "title": "Book Now - Maui Cleaning Services | Red Rock Cleaning",
+      "description": "Book your professional cleaning service in Maui. Easy online booking for vacation rental and deep cleaning services.",
+      "descriptionLength": 116,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\OahuBooking.tsx",
+      "url": "/book-now-oahu",
+      "hasHelmet": true,
+      "title": "Book Now - Oahu Cleaning Services | Red Rock Cleaning",
+      "description": "Book your professional cleaning service in Oahu and Honolulu. Easy online booking for residential and vacation rental cleaning.",
+      "descriptionLength": 127,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\SouthFloridaBooking.tsx",
+      "url": "/book-now-south-florida",
+      "hasHelmet": true,
+      "title": "Book Now - South Florida Cleaning Services | Red Rock Cleaning",
+      "description": "Book your professional cleaning service in South Florida. Easy online booking for residential and vacation rental cleaning.",
+      "descriptionLength": 123,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\church-cleaning\\+Page.tsx",
+      "url": "/church-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.church.title\", { defaultValue: \"Professional Church Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional church cleaning services by Red Rock Cleans. We provide respectful, detailed cleaning for sanctuaries, fellowship halls, and all places of worship. Learn more.",
+      "descriptionLength": 172,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\CleaningSupplies.tsx",
+      "url": "/cleaning-supplies",
+      "hasHelmet": true,
+      "title": "Cleaning Supplies You Need | Red Rock Cleans",
+      "description": "Complete list of cleaning supplies and equipment needed to work as a Red Rock Cleans contractor. Tools, equipment, and cleaning products checklist.",
+      "descriptionLength": 147,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\ColumbusHome.tsx",
+      "url": "/columbus-ohio",
+      "hasHelmet": true,
+      "title": "{t(\"locations.columbus.title\", { defaultValue: \"Columbus Ohio House Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Professional house and office cleaning in Columbus Ohio. Reliable service with easy online booking. Experience quality you can trust.",
+      "descriptionLength": 133,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\ColumbusCalculator.tsx",
+      "url": "/columbus-ohio-calculator",
+      "hasHelmet": true,
+      "title": "Get a Quote - Columbus Ohio Cleaning Services | Red Rock Cleaning",
+      "description": "Calculate your cleaning service cost instantly. Get an accurate quote for house and office cleaning in Columbus Ohio.",
+      "descriptionLength": 117,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\airbnb-cleaning-services\\+Page.tsx",
+      "url": "/columbus-ohio/airbnb-cleaning-services",
+      "hasHelmet": true,
+      "title": "Airbnb Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "description": "Get 5-star reviews with our reliable Airbnb cleaning service in Columbus, OH. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Dublin, the Short North, and beyond.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\church-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/church-cleaning",
+      "hasHelmet": true,
+      "title": "Church Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional church cleaning services in Columbus, OH. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Dublin, Upper Arlington, and across the area.",
+      "descriptionLength": 180,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\data-center-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/data-center-cleaning",
+      "hasHelmet": true,
+      "title": "Data Center Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Specialized data center cleaning in Columbus, OH. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Dublin and New Albany to ensure uptime.",
+      "descriptionLength": 195,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\deep-cleaning-services\\+Page.tsx",
+      "url": "/columbus-ohio/deep-cleaning-services",
+      "hasHelmet": true,
+      "title": "Deep Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "description": "Restore your home's sparkle with our thorough deep cleaning service in Columbus, OH. We tackle built-up grime for a truly refreshed home in Dublin, Upper Arlington, and beyond.",
+      "descriptionLength": 176,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\factory-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/factory-cleaning",
+      "hasHelmet": true,
+      "title": "Factory Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional factory cleaning in Columbus, OH. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Dublin, Westerville, and beyond to ensure safety and productivity.",
+      "descriptionLength": 184,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\government-facility-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/government-facility-cleaning",
+      "hasHelmet": true,
+      "title": "Government Facility Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Secure and compliant government facility cleaning in Columbus, OH. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff.",
+      "descriptionLength": 186,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\gym-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/gym-cleaning",
+      "hasHelmet": true,
+      "title": "Gym Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional gym cleaning in Columbus, OH. Red Rock Cleans provides hygienic fitness center sanitation, including equipment disinfection, in Dublin, Upper Arlington, and beyond.",
+      "descriptionLength": 177,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\industrial-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/industrial-cleaning",
+      "hasHelmet": true,
+      "title": "Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans",
+      "description": "Heavy-duty industrial cleaning services in Columbus, OH. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants and facilities in Dublin, Westerville, and beyond.",
+      "descriptionLength": 181,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\medical-office-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/medical-office-cleaning",
+      "hasHelmet": true,
+      "title": "Medical Office Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Specialized medical office cleaning in Columbus, OH. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Dublin, Upper Arlington, and beyond.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\move-out-cleaning-services\\+Page.tsx",
+      "url": "/columbus-ohio/move-out-cleaning-services",
+      "hasHelmet": true,
+      "title": "Move Out Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "description": "Secure your deposit with our reliable move out cleaning service in Columbus, OH. We provide thorough end-of-tenancy cleaning in Dublin, Upper Arlington, and beyond. Book today!",
+      "descriptionLength": 176,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\post-construction-cleaning-services\\+Page.tsx",
+      "url": "/columbus-ohio/post-construction-cleaning-services",
+      "hasHelmet": true,
+      "title": "Post Construction Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional post construction cleaning in Columbus, OH. Red Rock Cleans handles construction cleanup for new builds and renovations in Dublin, Upper Arlington, and beyond. Get a detailed quote!",
+      "descriptionLength": 194,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\restaurant-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/restaurant-cleaning",
+      "hasHelmet": true,
+      "title": "Restaurant Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional restaurant cleaning in Columbus, OH. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning.",
+      "descriptionLength": 176,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\retail-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/retail-cleaning",
+      "hasHelmet": true,
+      "title": "Retail Store Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional retail store cleaning in Columbus, OH. Red Rock Cleans helps enhance your brand image with spotless storefronts and sales floors in Dublin, the Short North, and beyond.",
+      "descriptionLength": 181,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\salon-spa-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/salon-spa-cleaning",
+      "hasHelmet": true,
+      "title": "Salon & Spa Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional salon and spa cleaning in Columbus, OH. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Dublin and the Short North.",
+      "descriptionLength": 194,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\school-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/school-cleaning",
+      "hasHelmet": true,
+      "title": "School Cleaning Services in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional school cleaning services in Columbus, OH. Red Rock Cleans provides a safe and healthy learning environment for students in Dublin, Upper Arlington, and beyond.",
+      "descriptionLength": 172,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\showroom-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/showroom-cleaning",
+      "hasHelmet": true,
+      "title": "Showroom Cleaning Services in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional showroom cleaning in Columbus, OH. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships and luxury retail in Dublin and New Albany.",
+      "descriptionLength": 187,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\standard-cleaning-services\\+Page.tsx",
+      "url": "/columbus-ohio/standard-cleaning-services",
+      "hasHelmet": true,
+      "title": "Standard Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "description": "Keep your Columbus home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Dublin, Upper Arlington, and beyond. Get your free quote!",
+      "descriptionLength": 184,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\columbus-ohio\\warehouse-cleaning\\+Page.tsx",
+      "url": "/columbus-ohio/warehouse-cleaning",
+      "hasHelmet": true,
+      "title": "Warehouse Cleaning in Columbus Ohio | Red Rock Cleans",
+      "description": "Professional warehouse cleaning in Columbus, OH. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers.",
+      "descriptionLength": 181,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\CommercialCleaning.tsx",
+      "url": "/commercial-cleaning",
+      "hasHelmet": true,
+      "title": "Commercial Office Cleaning Services | Red Rock Cleaning",
+      "description": "Professional commercial cleaning services for offices, retail spaces, and businesses. Maintain a pristine workplace environment.",
+      "descriptionLength": 128,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\commercial-cleaning-cost-estimator\\index.page.tsx",
+      "url": "/commercial-cleaning-cost-estimator",
+      "hasHelmet": true,
+      "title": "Commercial Cleaning Cost Estimator | Red Rock Cleans",
+      "description": "Get a free ballpark estimate for your commercial cleaning needs. Budget confidently using industry averages, then refine with your location.",
+      "descriptionLength": 140,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\commercial-cleaning-cost-estimator\\index.page.server.tsx",
+      "url": "/commercial-cleaning-cost-estimator/index.page.server",
+      "hasHelmet": false,
+      "title": null,
+      "description": null,
+      "descriptionLength": 0,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\CommercialCleaningEstimator.tsx",
+      "url": "/commercial-cleaning-estimator",
+      "hasHelmet": true,
+      "title": "Commercial Cleaning Cost Estimator | Red Rock Cleaning",
+      "description": "Calculate your commercial cleaning costs instantly. Get accurate pricing for office, retail, and business cleaning services across all our locations.",
+      "descriptionLength": 149,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\commercial-cleaning-time-estimator\\index.page.tsx",
+      "url": "/commercial-cleaning-time-estimator",
+      "hasHelmet": true,
+      "title": "Commercial Cleaning Time Estimator | Red Rock Cleans",
+      "description": "Use our free tool to estimate how long professional commercial cleaning will take based on ISSA standards. Get an instant time estimate to plan your budget.",
+      "descriptionLength": 156,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\commercial-cleaning-time-estimator\\index.page.server.tsx",
+      "url": "/commercial-cleaning-time-estimator/index.page.server",
+      "hasHelmet": false,
+      "title": null,
+      "description": null,
+      "descriptionLength": 0,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\commercial-quote\\index.page.tsx",
+      "url": "/commercial-quote",
+      "hasHelmet": true,
+      "title": "{t('quote.pageTitle')}",
+      "description": null,
+      "descriptionLength": 0,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\commercial-quote\\index.page.server.tsx",
+      "url": "/commercial-quote/index.page.server",
+      "hasHelmet": false,
+      "title": null,
+      "description": null,
+      "descriptionLength": 0,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\contact\\+Page.tsx",
+      "url": "/contact",
+      "hasHelmet": true,
+      "title": "Contact Us - Red Rock Cleaning",
+      "description": "Get in touch with Red Rock Cleaning for professional cleaning services. Contact us today for a free quote.",
+      "descriptionLength": 106,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\Contact.tsx",
+      "url": "/contact",
+      "hasHelmet": true,
+      "title": "{t(\"contact.title\", { defaultValue: \"Contact Us - All Locations | Red Rock Cleaning\" })}",
+      "description": "Get in touch with Red Rock Cleaning. Contact information for all our locations including phone numbers and email addresses.",
+      "descriptionLength": 123,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\DallasHome.tsx",
+      "url": "/dallas",
+      "hasHelmet": true,
+      "title": "{t(\"locations.dallas.title\", { defaultValue: \"Dallas House Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Premium residential and commercial cleaning packages in Dallas. Professional, reliable cleaning services you can trust.",
+      "descriptionLength": 119,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\DallasCalculator.tsx",
+      "url": "/dallas-calculator",
+      "hasHelmet": true,
+      "title": "Get a Quote - Dallas Cleaning Services | Red Rock Cleaning",
+      "description": "Calculate your cleaning service cost instantly. Get an accurate quote for house and commercial cleaning in Dallas.",
+      "descriptionLength": 114,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\airbnb-cleaning-services\\+Page.tsx",
+      "url": "/dallas/airbnb-cleaning-services",
+      "hasHelmet": true,
+      "title": "Airbnb Cleaning Service in Dallas | Red Rock Cleans",
+      "description": "Get 5-star reviews with our reliable Airbnb cleaning service in Dallas. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Uptown, Plano, and beyond.",
+      "descriptionLength": 173,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\church-cleaning\\+Page.tsx",
+      "url": "/dallas/church-cleaning",
+      "hasHelmet": true,
+      "title": "Church Cleaning in Dallas | Red Rock Cleans",
+      "description": "Professional church cleaning services in Dallas. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Plano, Frisco, and across the Dallas area.",
+      "descriptionLength": 171,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\data-center-cleaning\\+Page.tsx",
+      "url": "/dallas/data-center-cleaning",
+      "hasHelmet": true,
+      "title": "Data Center Cleaning in Dallas | Red Rock Cleans",
+      "description": "Specialized data center cleaning in Dallas. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Plano and Frisco to ensure uptime.",
+      "descriptionLength": 184,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\deep-cleaning-services\\+Page.tsx",
+      "url": "/dallas/deep-cleaning-services",
+      "hasHelmet": true,
+      "title": "Deep Cleaning Service in Dallas | Red Rock Cleans",
+      "description": "Restore your home's sparkle with our thorough deep cleaning service in Dallas. We tackle built-up grime for a truly refreshed home in Plano, Frisco, and beyond. Get your free quote!",
+      "descriptionLength": 181,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\factory-cleaning\\+Page.tsx",
+      "url": "/dallas/factory-cleaning",
+      "hasHelmet": true,
+      "title": "Factory Cleaning in Dallas | Red Rock Cleans",
+      "description": "Heavy-duty factory cleaning in Dallas. Red Rock Cleans offers comprehensive cleaning for manufacturing plants in Plano, Frisco, and across the Dallas area to ensure safety and productivity.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\government-facility-cleaning\\+Page.tsx",
+      "url": "/dallas/government-facility-cleaning",
+      "hasHelmet": true,
+      "title": "Government Facility Cleaning in Dallas | Red Rock Cleans",
+      "description": "Secure and compliant government facility cleaning in Dallas. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings in Plano and Frisco by security-cleared staff.",
+      "descriptionLength": 200,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\gym-cleaning\\+Page.tsx",
+      "url": "/dallas/gym-cleaning",
+      "hasHelmet": true,
+      "title": "Gym Cleaning in Dallas | Red Rock Cleans",
+      "description": "Professional gym cleaning in Dallas. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Plano and Frisco.",
+      "descriptionLength": 192,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\industrial-cleaning\\+Page.tsx",
+      "url": "/dallas/industrial-cleaning",
+      "hasHelmet": true,
+      "title": "Industrial Cleaning Services in Dallas | Red Rock Cleans",
+      "description": "Heavy-duty industrial cleaning services in Dallas. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities to ensure safety and uptime.",
+      "descriptionLength": 191,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\medical-office-cleaning\\+Page.tsx",
+      "url": "/dallas/medical-office-cleaning",
+      "hasHelmet": true,
+      "title": "Medical Office Cleaning in Dallas | Red Rock Cleans",
+      "description": "Specialized medical office cleaning in Dallas. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Plano, Frisco, and beyond.",
+      "descriptionLength": 173,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\move-out-cleaning-services\\+Page.tsx",
+      "url": "/dallas/move-out-cleaning-services",
+      "hasHelmet": true,
+      "title": "Move Out Cleaning Service in Dallas | Red Rock Cleans",
+      "description": "Secure your deposit with our reliable move out cleaning service in Dallas. We provide thorough end-of-tenancy cleaning in Plano, Frisco, and beyond. Book today!",
+      "descriptionLength": 160,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\post-construction-cleaning-services\\+Page.tsx",
+      "url": "/dallas/post-construction-cleaning-services",
+      "hasHelmet": true,
+      "title": "Post Construction Cleaning Service in Dallas | Red Rock Cleans",
+      "description": "Professional post construction cleaning service in Dallas. Red Rock Cleans handles construction cleanup for new builds and renovations in Plano, Frisco, and beyond. Get a detailed quote today!",
+      "descriptionLength": 192,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\restaurant-cleaning\\+Page.tsx",
+      "url": "/dallas/restaurant-cleaning",
+      "hasHelmet": true,
+      "title": "Restaurant Cleaning in Dallas | Red Rock Cleans",
+      "description": "Professional restaurant cleaning in Dallas. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning.",
+      "descriptionLength": 170,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\retail-cleaning\\+Page.tsx",
+      "url": "/dallas/retail-cleaning",
+      "hasHelmet": true,
+      "title": "Retail Store Cleaning in Dallas | Red Rock Cleans",
+      "description": "Professional retail store cleaning in Dallas. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts and sales floors in Plano, Frisco, and beyond.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\salon-spa-cleaning\\+Page.tsx",
+      "url": "/dallas/salon-spa-cleaning",
+      "hasHelmet": true,
+      "title": "Salon & Spa Cleaning in Dallas | Red Rock Cleans",
+      "description": "Professional salon and spa cleaning in Dallas. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Plano, Frisco, and beyond.",
+      "descriptionLength": 187,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\school-cleaning\\+Page.tsx",
+      "url": "/dallas/school-cleaning",
+      "hasHelmet": true,
+      "title": "School Cleaning Services in Dallas | Red Rock Cleans",
+      "description": "Professional school cleaning services in Dallas. Red Rock Cleans provides a safe and healthy learning environment for students in Plano, Frisco, and across the Dallas area.",
+      "descriptionLength": 172,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\showroom-cleaning\\+Page.tsx",
+      "url": "/dallas/showroom-cleaning",
+      "hasHelmet": true,
+      "title": "Showroom Cleaning Services in Dallas | Red Rock Cleans",
+      "description": "Professional showroom cleaning in Dallas. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships, furniture stores, and more in Plano and Frisco.",
+      "descriptionLength": 186,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\standard-cleaning-services\\+Page.tsx",
+      "url": "/dallas/standard-cleaning-services",
+      "hasHelmet": true,
+      "title": "Standard Cleaning Service in Dallas | Red Rock Cleans",
+      "description": "Keep your Dallas home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Plano, Frisco, and beyond. Get your free quote!",
+      "descriptionLength": 172,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\dallas\\warehouse-cleaning\\+Page.tsx",
+      "url": "/dallas/warehouse-cleaning",
+      "hasHelmet": true,
+      "title": "Warehouse Cleaning in Dallas | Red Rock Cleans",
+      "description": "Professional warehouse cleaning in Dallas. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers in Plano and Frisco.",
+      "descriptionLength": 195,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\data-center-cleaning\\+Page.tsx",
+      "url": "/data-center-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.datacenter.title\", { defaultValue: \"Data Center Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Specialized data center cleaning services. Red Rock Cleans provides professional server room, sub-floor, and critical environment cleaning to prevent downtime. Learn more.",
+      "descriptionLength": 171,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\DeepCleaning.tsx",
+      "url": "/deep-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"services.deep.title\", { defaultValue: \"Deep Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Comprehensive deep cleaning services that reach every corner. Perfect for seasonal cleaning, move-in/out, or thorough home sanitization.",
+      "descriptionLength": 136,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\deep-cleaning-services\\+Page.tsx",
+      "url": "/deep-cleaning-services",
+      "hasHelmet": true,
+      "title": "Deep Cleaning Services - Red Rock Cleaning",
+      "description": "Comprehensive deep cleaning services for your home. Thorough cleaning that reaches every corner and surface.",
+      "descriptionLength": 108,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\FAQ.tsx",
+      "url": "/f-a-q",
+      "hasHelmet": true,
+      "title": "FAQ - Frequently Asked Questions | Red Rock Cleaning",
+      "description": "Find answers to common questions about our cleaning services, pricing, scheduling, and more.",
+      "descriptionLength": 92,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\factory-cleaning\\+Page.tsx",
+      "url": "/factory-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.factory.title\", { defaultValue: \"Factory Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional factory cleaning services. Red Rock Cleans provides heavy-duty cleaning for manufacturing plants to ensure safety, compliance, and productivity. Learn more.",
+      "descriptionLength": 169,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\general-retail-cleaning\\+Page.tsx",
+      "url": "/general-retail-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.retail.title\", { defaultValue: \"Retail Store Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional retail store cleaning services. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts, sales floors, and more.",
+      "descriptionLength": 166,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\government-facility-cleaning\\+Page.tsx",
+      "url": "/government-facility-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.government.title\", { defaultValue: \"Government Facility Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Secure and compliant government facility cleaning. Red Rock Cleans provides discreet, professional cleaning for municipal, federal, and public buildings by security-cleared staff.",
+      "descriptionLength": 179,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\gym-cleaning\\+Page.tsx",
+      "url": "/gym-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.gym.title\", { defaultValue: \"Gym Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional gym and fitness center cleaning services. Sanitize equipment, locker rooms, and common areas with our specialized cleaning protocols.",
+      "descriptionLength": 146,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\HiringApplicationNew.tsx",
+      "url": "/hiring-application-new",
+      "hasHelmet": true,
+      "title": "Work Application - Join Our Team | Red Rock Cleans",
+      "description": "Apply to join the Red Rock Cleans team. Complete our work application form to start your career in professional cleaning services.",
+      "descriptionLength": 130,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\HiringRequirements.tsx",
+      "url": "/hiring-requirements",
+      "hasHelmet": true,
+      "title": "Hiring Requirements - Join Our Team | Red Rock Cleaning",
+      "description": "Explore career opportunities at Red Rock Cleaning. Learn about our hiring requirements and join our professional cleaning team.",
+      "descriptionLength": 127,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\index\\+Page.tsx",
+      "url": "/index",
+      "hasHelmet": true,
+      "title": "Red Rock Cleaning - Premium Multi-Location Cleaning Services",
+      "description": "Professional cleaning services across South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas. Residential, commercial, and vacation rental cleaning.",
+      "descriptionLength": 153,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\industrial-cleaning\\+Page.tsx",
+      "url": "/industrial-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.industrial.title\", { defaultValue: \"Industrial Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Heavy-duty industrial cleaning services for factories, plants, and warehouses. OSHA-compliant cleaning to protect workers, equipment, and uptime.",
+      "descriptionLength": 145,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\LasVegasHome.tsx",
+      "url": "/las-vegas",
+      "hasHelmet": true,
+      "title": "{t(\"locations.lasVegas.title\", { defaultValue: \"Las Vegas House Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Professional residential and commercial cleaning services in Las Vegas and Henderson. Reliable, quality cleaning you can trust.",
+      "descriptionLength": 127,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\LasVegasCalculator.tsx",
+      "url": "/las-vegas-calculator",
+      "hasHelmet": true,
+      "title": "Get a Quote - Las Vegas Cleaning Services | Red Rock Cleaning",
+      "description": "Calculate your cleaning service cost instantly. Get an accurate quote for house and office cleaning in Las Vegas.",
+      "descriptionLength": 113,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\airbnb-cleaning-services\\+Page.tsx",
+      "url": "/las-vegas/airbnb-cleaning-services",
+      "hasHelmet": true,
+      "title": "Airbnb Cleaning Services Las Vegas | Red Rock Cleans",
+      "description": "5-star Airbnb cleaning services in Las Vegas. Red Rock Cleans offers reliable, automated turnover cleaning for vacation rentals to impress every guest. Get your free instant quote today!",
+      "descriptionLength": 186,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\church-cleaning\\+Page.tsx",
+      "url": "/las-vegas/church-cleaning",
+      "hasHelmet": true,
+      "title": "Church Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Professional church cleaning services in Las Vegas. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Henderson, Summerlin, and across the valley.",
+      "descriptionLength": 176,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\data-center-cleaning\\+Page.tsx",
+      "url": "/las-vegas/data-center-cleaning",
+      "hasHelmet": true,
+      "title": "Data Center Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Specialized data center cleaning in Las Vegas. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning to ensure uptime.",
+      "descriptionLength": 167,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\deep-cleaning-services\\+Page.tsx",
+      "url": "/las-vegas/deep-cleaning-services",
+      "hasHelmet": true,
+      "title": "Deep Cleaning Service Las Vegas | Red Rock Cleans",
+      "description": "Restore your home's sparkle with our thorough deep cleaning service in Las Vegas. Red Rock Cleans tackles built-up grime for a truly refreshed home. Get your free quote!",
+      "descriptionLength": 169,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\factory-cleaning\\+Page.tsx",
+      "url": "/las-vegas/factory-cleaning",
+      "hasHelmet": true,
+      "title": "Factory Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Professional factory cleaning in Las Vegas. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Henderson, North Las Vegas, and beyond to ensure safety and productivity.",
+      "descriptionLength": 188,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\government-facility-cleaning\\+Page.tsx",
+      "url": "/las-vegas/government-facility-cleaning",
+      "hasHelmet": true,
+      "title": "Government Facility Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Secure and compliant government facility cleaning in Las Vegas. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff.",
+      "descriptionLength": 183,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\gym-cleaning\\+Page.tsx",
+      "url": "/las-vegas/gym-cleaning",
+      "hasHelmet": true,
+      "title": "Gym Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Professional gym cleaning in Las Vegas. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Henderson and Summerlin.",
+      "descriptionLength": 202,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\industrial-cleaning\\+Page.tsx",
+      "url": "/las-vegas/industrial-cleaning",
+      "hasHelmet": true,
+      "title": "Industrial Cleaning Services Las Vegas | Red Rock Cleans",
+      "description": "Heavy-duty industrial cleaning services in Las Vegas. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities to ensure safety and uptime.",
+      "descriptionLength": 194,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\medical-office-cleaning\\+Page.tsx",
+      "url": "/las-vegas/medical-office-cleaning",
+      "hasHelmet": true,
+      "title": "Medical Office Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Specialized medical office cleaning in Las Vegas. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Henderson, Summerlin, and beyond.",
+      "descriptionLength": 183,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\move-out-cleaning-services\\+Page.tsx",
+      "url": "/las-vegas/move-out-cleaning-services",
+      "hasHelmet": true,
+      "title": "Move Out Cleaning Service Las Vegas | Red Rock Cleans",
+      "description": "Secure your deposit with our reliable move out cleaning service in Las Vegas. Red Rock Cleans provides thorough end-of-tenancy cleaning for renters and sellers. Book today!",
+      "descriptionLength": 172,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\post-construction-cleaning-services\\+Page.tsx",
+      "url": "/las-vegas/post-construction-cleaning-services",
+      "hasHelmet": true,
+      "title": "Post Construction Cleaning Service Las Vegas | Red Rock Cleans",
+      "description": "Professional post construction cleaning service in Las Vegas. Red Rock Cleans handles all construction cleanup for new builds and renovations. Get your free, detailed quote today!",
+      "descriptionLength": 179,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\restaurant-cleaning\\+Page.tsx",
+      "url": "/las-vegas/restaurant-cleaning",
+      "hasHelmet": true,
+      "title": "Restaurant Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Professional restaurant cleaning in Las Vegas. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning.",
+      "descriptionLength": 173,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\retail-cleaning\\+Page.tsx",
+      "url": "/las-vegas/retail-cleaning",
+      "hasHelmet": true,
+      "title": "Retail Store Cleaning Las Vegas | Red Rock Cleans",
+      "description": "Professional retail store cleaning in Las Vegas. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts, sales floors, and more.",
+      "descriptionLength": 170,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\salon-spa-cleaning\\+Page.tsx",
+      "url": "/las-vegas/salon-spa-cleaning",
+      "hasHelmet": false,
+      "title": null,
+      "description": null,
+      "descriptionLength": 0,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\school-cleaning\\+Page.tsx",
+      "url": "/las-vegas/school-cleaning",
+      "hasHelmet": true,
+      "title": "School Cleaning Services Las Vegas | Red Rock Cleans",
+      "description": "Professional school cleaning services in Las Vegas. Red Rock Cleans provides a safe and healthy learning environment for students in Henderson, Summerlin, and across Clark County.",
+      "descriptionLength": 179,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\showroom-cleaning\\+Page.tsx",
+      "url": "/las-vegas/showroom-cleaning",
+      "hasHelmet": true,
+      "title": "Showroom Cleaning Services in Las Vegas | Red Rock Cleans",
+      "description": "Professional showroom cleaning in Las Vegas. Impeccable floors, glass, and product presentation for dealerships and retail showrooms.",
+      "descriptionLength": 133,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\las-vegas\\standard-cleaning-services\\+Page.tsx",
+      "url": "/las-vegas/standard-cleaning-services",
+      "hasHelmet": true,
+      "title": "Standard Cleaning Service Las Vegas | Red Rock Cleans",
+      "description": "Keep your Las Vegas home consistently beautiful with our reliable standard cleaning service. Red Rock Cleans offers flexible maid services for a spotless home. Get your free quote!",
+      "descriptionLength": 180,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\las-vegas\\warehouse-cleaning\\+Page.tsx",
+      "url": "/las-vegas/warehouse-cleaning",
+      "hasHelmet": false,
+      "title": null,
+      "description": null,
+      "descriptionLength": 0,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\MaidilyApp.tsx",
+      "url": "/maidily-app",
+      "hasHelmet": true,
+      "title": "Maidily Mobile App - For Our Team | Red Rock Cleaning",
+      "description": "Learn how to use the Maidily mobile app for managing schedules, tracking jobs, and streamlining your work at Red Rock Cleaning.",
+      "descriptionLength": 127,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\MauiHome.tsx",
+      "url": "/maui",
+      "hasHelmet": true,
+      "title": "{t(\"locations.maui.title\", { defaultValue: \"Maui House Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Professional vacation rental, deep, and recurring cleaning services in Maui. Premium cleaning for your Hawaiian paradise.",
+      "descriptionLength": 121,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\MauiCalculator.tsx",
+      "url": "/maui-calculator",
+      "hasHelmet": true,
+      "title": "Get a Quote - Maui Cleaning Services | Red Rock Cleaning",
+      "description": "Calculate your cleaning service cost instantly. Get an accurate quote for house and vacation rental cleaning in Maui.",
+      "descriptionLength": 117,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\airbnb-cleaning-services\\+Page.tsx",
+      "url": "/maui/airbnb-cleaning-services",
+      "hasHelmet": true,
+      "title": "Airbnb Cleaning Service Maui | Red Rock Cleans",
+      "description": "Get 5-star reviews with our reliable Airbnb cleaning service on Maui. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Wailea, Lahaina, and beyond.",
+      "descriptionLength": 173,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\church-cleaning\\+Page.tsx",
+      "url": "/maui/church-cleaning",
+      "hasHelmet": true,
+      "title": "Church Cleaning Maui | Red Rock Cleans",
+      "description": "Professional church cleaning services on Maui. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Wailea, Lahaina, and across the island.",
+      "descriptionLength": 166,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\data-center-cleaning\\+Page.tsx",
+      "url": "/maui/data-center-cleaning",
+      "hasHelmet": true,
+      "title": "Data Center Cleaning Maui | Red Rock Cleans",
+      "description": "Specialized data center cleaning on Maui. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning to ensure uptime.",
+      "descriptionLength": 162,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\deep-cleaning-services\\+Page.tsx",
+      "url": "/maui/deep-cleaning-services",
+      "hasHelmet": true,
+      "title": "Deep Cleaning Service Maui | Red Rock Cleans",
+      "description": "Restore your home's sparkle with our thorough deep cleaning service on Maui. Red Rock Cleans tackles built-up grime for a truly refreshed home in Wailea, Lahaina, and beyond. Get your free quote!",
+      "descriptionLength": 195,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\factory-cleaning\\+Page.tsx",
+      "url": "/maui/factory-cleaning",
+      "hasHelmet": true,
+      "title": "Factory Cleaning Maui | Red Rock Cleans",
+      "description": "Professional factory cleaning on Maui. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Lahaina, Kihei, and beyond to ensure safety and productivity.",
+      "descriptionLength": 171,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\government-facility-cleaning\\+Page.tsx",
+      "url": "/maui/government-facility-cleaning",
+      "hasHelmet": true,
+      "title": "Government Facility Cleaning Maui | Red Rock Cleans",
+      "description": "Secure and compliant government facility cleaning on Maui. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings by security-cleared staff.",
+      "descriptionLength": 178,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\gym-cleaning\\+Page.tsx",
+      "url": "/maui/gym-cleaning",
+      "hasHelmet": true,
+      "title": "Gym Cleaning Maui | Red Rock Cleans",
+      "description": "Professional gym cleaning on Maui. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Kihei and Lahaina.",
+      "descriptionLength": 191,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\industrial-cleaning\\+Page.tsx",
+      "url": "/maui/industrial-cleaning",
+      "hasHelmet": true,
+      "title": "Industrial Cleaning Services Maui | Red Rock Cleans",
+      "description": "Heavy-duty industrial cleaning services on Maui. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities to ensure safety and uptime.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\medical-office-cleaning\\+Page.tsx",
+      "url": "/maui/medical-office-cleaning",
+      "hasHelmet": true,
+      "title": "Medical Office Cleaning Maui | Red Rock Cleans",
+      "description": "Specialized medical office cleaning on Maui. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Wailea, Lahaina, and beyond.",
+      "descriptionLength": 173,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\move-out-cleaning-services\\+Page.tsx",
+      "url": "/maui/move-out-cleaning-services",
+      "hasHelmet": true,
+      "title": "Move Out Cleaning Service Maui | Red Rock Cleans",
+      "description": "Secure your deposit with our reliable move out cleaning service on Maui. We provide thorough end-of-tenancy cleaning in Wailea, Lahaina, and beyond. Book today!",
+      "descriptionLength": 160,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\post-construction-cleaning-services\\+Page.tsx",
+      "url": "/maui/post-construction-cleaning-services",
+      "hasHelmet": true,
+      "title": "Post Construction Cleaning Service Maui | Red Rock Cleans",
+      "description": "Professional post construction cleaning on Maui. Red Rock Cleans handles all construction cleanup for new builds and renovations in Wailea, Lahaina, and beyond. Get a detailed quote today!",
+      "descriptionLength": 188,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\restaurant-cleaning\\+Page.tsx",
+      "url": "/maui/restaurant-cleaning",
+      "hasHelmet": true,
+      "title": "Restaurant Cleaning Maui | Red Rock Cleans",
+      "description": "Professional restaurant cleaning on Maui. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning in Lahaina and Kihei.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\retail-cleaning\\+Page.tsx",
+      "url": "/maui/retail-cleaning",
+      "hasHelmet": true,
+      "title": "Retail Store Cleaning Maui | Red Rock Cleans",
+      "description": "Professional retail store cleaning on Maui. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts and sales floors in Wailea, Lahaina, and beyond.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\salon-spa-cleaning\\+Page.tsx",
+      "url": "/maui/salon-spa-cleaning",
+      "hasHelmet": true,
+      "title": "Salon & Spa Cleaning Maui | Red Rock Cleans",
+      "description": "Professional salon and spa cleaning on Maui. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Wailea, Lahaina, and beyond.",
+      "descriptionLength": 187,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\school-cleaning\\+Page.tsx",
+      "url": "/maui/school-cleaning",
+      "hasHelmet": true,
+      "title": "School Cleaning Services Maui | Red Rock Cleans",
+      "description": "Professional school cleaning services on Maui. Red Rock Cleans provides a safe and healthy learning environment for students in Kihei, Lahaina, and across the island.",
+      "descriptionLength": 166,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\showroom-cleaning\\+Page.tsx",
+      "url": "/maui/showroom-cleaning",
+      "hasHelmet": true,
+      "title": "Showroom Cleaning Services Maui | Red Rock Cleans",
+      "description": "Professional showroom cleaning on Maui. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships, furniture stores, and more in Wailea and Lahaina.",
+      "descriptionLength": 186,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\standard-cleaning-services\\+Page.tsx",
+      "url": "/maui/standard-cleaning-services",
+      "hasHelmet": true,
+      "title": "Standard Cleaning Service Maui | Red Rock Cleans",
+      "description": "Keep your Maui home consistently beautiful with our reliable standard cleaning service. We offer flexible maid services in Wailea, Kihei, and beyond. Get your free quote!",
+      "descriptionLength": 170,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\maui\\warehouse-cleaning\\+Page.tsx",
+      "url": "/maui/warehouse-cleaning",
+      "hasHelmet": true,
+      "title": "Warehouse Cleaning Maui | Red Rock Cleans",
+      "description": "Professional warehouse cleaning on Maui. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers.",
+      "descriptionLength": 173,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\medical-office-cleaning\\+Page.tsx",
+      "url": "/medical-office-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.medical.title\", { defaultValue: \"Medical Office Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Specialized medical office cleaning services. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities to ensure patient safety. Learn more.",
+      "descriptionLength": 180,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\MoveOutCleaning.tsx",
+      "url": "/move-out-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"services.moveout.title\", { defaultValue: \"Move Out Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Professional move out cleaning services. Get your security deposit back with our thorough move-out cleaning. Available in South Florida, Las Vegas, Hawaii, Columbus Ohio, and Dallas.",
+      "descriptionLength": 182,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\NotFound.tsx",
+      "url": "/not-found",
+      "hasHelmet": false,
+      "title": null,
+      "description": null,
+      "descriptionLength": 0,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\OahuHome.tsx",
+      "url": "/oahu",
+      "hasHelmet": true,
+      "title": "{t(\"locations.oahu.title\", { defaultValue: \"Oahu House Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Professional residential and vacation rental cleaning services in Oahu and Honolulu. Experience premium Hawaiian cleaning services.",
+      "descriptionLength": 131,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\locations\\OahuCalculator.tsx",
+      "url": "/oahu-calculator",
+      "hasHelmet": true,
+      "title": "Get a Quote - Oahu Cleaning Services | Red Rock Cleaning",
+      "description": "Calculate your cleaning service cost instantly. Get an accurate quote for house cleaning in Oahu and Honolulu.",
+      "descriptionLength": 110,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\airbnb-cleaning-services\\+Page.tsx",
+      "url": "/oahu/airbnb-cleaning-services",
+      "hasHelmet": true,
+      "title": "Airbnb Cleaning Service Oahu | Red Rock Cleans",
+      "description": "Get 5-star reviews with our reliable Airbnb cleaning service on Oahu. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Honolulu, Waikiki, and beyond.",
+      "descriptionLength": 175,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\church-cleaning\\+Page.tsx",
+      "url": "/oahu/church-cleaning",
+      "hasHelmet": true,
+      "title": "Church Cleaning Oahu | Red Rock Cleans",
+      "description": "Professional church cleaning services on Oahu. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Honolulu, Kailua, and across the island.",
+      "descriptionLength": 167,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\data-center-cleaning\\+Page.tsx",
+      "url": "/oahu/data-center-cleaning",
+      "hasHelmet": true,
+      "title": "Data Center Cleaning Oahu | Red Rock Cleans",
+      "description": "Specialized data center cleaning on Oahu. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Honolulu and across the island to ensure uptime.",
+      "descriptionLength": 196,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\deep-cleaning-services\\+Page.tsx",
+      "url": "/oahu/deep-cleaning-services",
+      "hasHelmet": true,
+      "title": "Deep Cleaning Service Oahu | Red Rock Cleans",
+      "description": "Restore your home's sparkle with our thorough deep cleaning service on Oahu. Red Rock Cleans tackles built-up grime for a truly refreshed home in Honolulu and beyond. Get your free quote!",
+      "descriptionLength": 187,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\factory-cleaning\\+Page.tsx",
+      "url": "/oahu/factory-cleaning",
+      "hasHelmet": true,
+      "title": "Factory Cleaning Oahu | Red Rock Cleans",
+      "description": "Professional factory cleaning on Oahu. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Honolulu, Kapolei, and beyond to ensure safety and productivity.",
+      "descriptionLength": 174,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\government-facility-cleaning\\+Page.tsx",
+      "url": "/oahu/government-facility-cleaning",
+      "hasHelmet": true,
+      "title": "Government Facility Cleaning Oahu | Red Rock Cleans",
+      "description": "Secure and compliant government facility cleaning on Oahu. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings in Honolulu and across the island by security-cleared staff.",
+      "descriptionLength": 212,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\gym-cleaning\\+Page.tsx",
+      "url": "/oahu/gym-cleaning",
+      "hasHelmet": true,
+      "title": "Gym Cleaning Oahu | Red Rock Cleans",
+      "description": "Professional gym cleaning on Oahu. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Honolulu and Kailua.",
+      "descriptionLength": 193,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\industrial-cleaning\\+Page.tsx",
+      "url": "/oahu/industrial-cleaning",
+      "hasHelmet": true,
+      "title": "Industrial Cleaning Services Oahu | Red Rock Cleans",
+      "description": "Heavy-duty industrial cleaning services on Oahu. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants, equipment, and industrial facilities in Honolulu and Kapolei.",
+      "descriptionLength": 185,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\medical-office-cleaning\\+Page.tsx",
+      "url": "/oahu/medical-office-cleaning",
+      "hasHelmet": true,
+      "title": "Medical Office Cleaning Oahu | Red Rock Cleans",
+      "description": "Specialized medical office cleaning on Oahu. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Honolulu, Kailua, and beyond.",
+      "descriptionLength": 174,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\move-out-cleaning-services\\+Page.tsx",
+      "url": "/oahu/move-out-cleaning-services",
+      "hasHelmet": true,
+      "title": "Move Out Cleaning Service Oahu | Red Rock Cleans",
+      "description": "Secure your deposit with our reliable move out cleaning service on Oahu. Red Rock Cleans provides thorough end-of-tenancy cleaning for renters and sellers in Honolulu and beyond. Book today!",
+      "descriptionLength": 190,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\post-construction-cleaning-services\\+Page.tsx",
+      "url": "/oahu/post-construction-cleaning-services",
+      "hasHelmet": true,
+      "title": "Post Construction Cleaning Service Oahu | Red Rock Cleans",
+      "description": "Professional post construction cleaning on Oahu. Red Rock Cleans handles all construction cleanup for new builds and renovations in Honolulu and beyond. Get a detailed quote today!",
+      "descriptionLength": 180,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\restaurant-cleaning\\+Page.tsx",
+      "url": "/oahu/restaurant-cleaning",
+      "hasHelmet": true,
+      "title": "Restaurant Cleaning Oahu | Red Rock Cleans",
+      "description": "Professional restaurant cleaning on Oahu. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning in Honolulu and Waikiki.",
+      "descriptionLength": 192,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\retail-cleaning\\+Page.tsx",
+      "url": "/oahu/retail-cleaning",
+      "hasHelmet": true,
+      "title": "Retail Store Cleaning Oahu | Red Rock Cleans",
+      "description": "Professional retail store cleaning on Oahu. Red Rock Cleans helps enhance your brand image and customer experience with spotless storefronts and sales floors in Honolulu, Waikiki, and beyond.",
+      "descriptionLength": 191,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\salon-spa-cleaning\\+Page.tsx",
+      "url": "/oahu/salon-spa-cleaning",
+      "hasHelmet": true,
+      "title": "Salon & Spa Cleaning Oahu | Red Rock Cleans",
+      "description": "Professional salon and spa cleaning on Oahu. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Honolulu and Waikiki.",
+      "descriptionLength": 180,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\school-cleaning\\+Page.tsx",
+      "url": "/oahu/school-cleaning",
+      "hasHelmet": true,
+      "title": "School Cleaning Services Oahu | Red Rock Cleans",
+      "description": "Professional school cleaning services on Oahu. Red Rock Cleans provides a safe and healthy learning environment for students in Honolulu, Kailua, and across the island.",
+      "descriptionLength": 168,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\showroom-cleaning\\+Page.tsx",
+      "url": "/oahu/showroom-cleaning",
+      "hasHelmet": true,
+      "title": "Showroom Cleaning Services Oahu | Red Rock Cleans",
+      "description": "Professional showroom cleaning on Oahu. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships, furniture stores, and more in Honolulu and Waikiki.",
+      "descriptionLength": 188,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\standard-cleaning-services\\+Page.tsx",
+      "url": "/oahu/standard-cleaning-services",
+      "hasHelmet": true,
+      "title": "Standard Cleaning Service Oahu | Red Rock Cleans",
+      "description": "Keep your home consistently beautiful with our reliable standard cleaning service on Oahu. Red Rock Cleans offers flexible maid services in Honolulu and beyond. Get your free quote!",
+      "descriptionLength": 181,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\oahu\\warehouse-cleaning\\+Page.tsx",
+      "url": "/oahu/warehouse-cleaning",
+      "hasHelmet": true,
+      "title": "Warehouse Cleaning Oahu | Red Rock Cleans",
+      "description": "Professional warehouse cleaning on Oahu. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers in Honolulu and Kapolei.",
+      "descriptionLength": 197,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\PostConstruction.tsx",
+      "url": "/post-construction",
+      "hasHelmet": true,
+      "title": "{t(\"services.post.title\", { defaultValue: \"Post Construction Cleaning Services | Red Rock Cleaning\" })}",
+      "description": "Specialized post-construction cleaning to remove dust, debris, and make your newly built or renovated space move-in ready.",
+      "descriptionLength": 122,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\PrivacyPolicy.tsx",
+      "url": "/privacy-policy",
+      "hasHelmet": true,
+      "title": "Privacy Policy | Red Rock Cleans",
+      "description": "Review the Red Rock Cleans privacy policy. Learn how we collect, use, and protect your personal information when you use our website and services.",
+      "descriptionLength": 146,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\ResidentialCleaning.tsx",
+      "url": "/residential-cleaning",
+      "hasHelmet": true,
+      "title": "Residential House Cleaning Services | Red Rock Cleaning",
+      "description": "Professional residential cleaning services for your home. From regular maintenance to deep cleaning, we keep your house spotless.",
+      "descriptionLength": 129,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\restaurant-cleaning\\+Page.tsx",
+      "url": "/restaurant-cleaning",
+      "hasHelmet": true,
+      "title": "Restaurant Cleaning Services | Red Rock Cleans",
+      "description": "Professional restaurant cleaning services. We help you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning.",
+      "descriptionLength": 155,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\salon-spa-cleaning\\+Page.tsx",
+      "url": "/salon-spa-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.salon.title\", { defaultValue: \"Salon & Spa Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional salon and spa cleaning services. Red Rock Cleans ensures pristine, hygienic, and relaxing environments for hair salons, day spas, nail salons, and medispas.",
+      "descriptionLength": 169,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\school-cleaning\\+Page.tsx",
+      "url": "/school-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.school.title\", { defaultValue: \"School Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional school cleaning services. Red Rock Cleans provides a safe and healthy learning environment for students and staff with our comprehensive janitorial services.",
+      "descriptionLength": 170,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\showroom-cleaning\\+Page.tsx",
+      "url": "/showroom-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.showroom.title\", { defaultValue: \"Showroom Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional showroom cleaning services. Red Rock Cleans enhances your product presentation and client experience with meticulous cleaning for car dealerships, furniture stores, and more.",
+      "descriptionLength": 187,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\Sitemap.tsx",
+      "url": "/sitemap",
+      "hasHelmet": true,
+      "title": "Sitemap | Red Rock Cleaning",
+      "description": "Browse our complete sitemap to find all Red Rock Cleaning pages and services.",
+      "descriptionLength": 77,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\SouthFloridaHome.tsx",
+      "url": "/south-florida",
+      "hasHelmet": true,
+      "title": "{t(\"locations.southFlorida.title\", { defaultValue: \"Servicios profesionales de limpieza de casas en el sur de Florida | Red Rock Cleaning\" })}",
+      "description": "Servicios premium de limpieza residencial y de alquiler vacacional en el sur de Florida, Weston, y Fort Lauderdale. Reserva tu servicio de limpieza profesional hoy.",
+      "descriptionLength": 164,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\locations\\SouthFloridaCalculator.tsx",
+      "url": "/south-florida-calculator",
+      "hasHelmet": true,
+      "title": "Get a Quote - South Florida Cleaning Services | Red Rock Cleaning",
+      "description": "Calculate your cleaning service cost instantly. Get an accurate quote for house cleaning in South Florida, Weston, and Fort Lauderdale.",
+      "descriptionLength": 135,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\south-florida\\airbnb-cleaning-services\\+Page.tsx",
+      "url": "/south-florida/airbnb-cleaning-services",
+      "hasHelmet": true,
+      "title": "Airbnb Cleaning Service South Florida | Red Rock Cleans",
+      "description": "Get 5-star reviews with our reliable Airbnb cleaning service in South Florida. Red Rock Cleans offers automated turnover cleaning for vacation rentals in Fort Lauderdale, Weston, and beyond.",
+      "descriptionLength": 190,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\church-cleaning\\+Page.tsx",
+      "url": "/south-florida/church-cleaning",
+      "hasHelmet": true,
+      "title": "Church Cleaning South Florida | Red Rock Cleans",
+      "description": "Professional church cleaning services in South Florida. Red Rock Cleans provides respectful, detailed cleaning for places of worship in Fort Lauderdale, Weston, and across the region.",
+      "descriptionLength": 183,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\data-center-cleaning\\+Page.tsx",
+      "url": "/south-florida/data-center-cleaning",
+      "hasHelmet": true,
+      "title": "Data Center Cleaning South Florida | Red Rock Cleans",
+      "description": "Specialized data center cleaning in South Florida. Red Rock Cleans offers ISO 14644-1 compliant server room, sub-floor, and critical environment cleaning in Fort Lauderdale and Weston to ensure uptime.",
+      "descriptionLength": 201,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\deep-cleaning-services\\+Page.tsx",
+      "url": "/south-florida/deep-cleaning-services",
+      "hasHelmet": true,
+      "title": "Deep Cleaning Service South Florida | Red Rock Cleans",
+      "description": "Restore your home's sparkle with our thorough deep cleaning service in South Florida. We tackle built-up grime for a truly refreshed home in Fort Lauderdale, Weston, and beyond.",
+      "descriptionLength": 177,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\factory-cleaning\\+Page.tsx",
+      "url": "/south-florida/factory-cleaning",
+      "hasHelmet": true,
+      "title": "Factory Cleaning South Florida | Red Rock Cleans",
+      "description": "Professional factory cleaning in South Florida. Red Rock Cleans offers heavy-duty cleaning for manufacturing plants in Fort Lauderdale, Weston, and beyond to ensure safety and productivity.",
+      "descriptionLength": 189,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\government-facility-cleaning\\+Page.tsx",
+      "url": "/south-florida/government-facility-cleaning",
+      "hasHelmet": true,
+      "title": "Government Facility Cleaning South Florida | Red Rock Cleans",
+      "description": "Secure and compliant government facility cleaning in South Florida. Red Rock Cleans provides discreet, professional cleaning for municipal and federal buildings in Fort Lauderdale and Weston by security-cleared staff.",
+      "descriptionLength": 217,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\gym-cleaning\\+Page.tsx",
+      "url": "/south-florida/gym-cleaning",
+      "hasHelmet": true,
+      "title": "Gym Cleaning South Florida | Red Rock Cleans",
+      "description": "Professional gym cleaning in South Florida. Red Rock Cleans provides hygienic fitness center and health club sanitation, including equipment disinfection and locker room cleaning in Fort Lauderdale and Weston.",
+      "descriptionLength": 209,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\industrial-cleaning\\+Page.tsx",
+      "url": "/south-florida/industrial-cleaning",
+      "hasHelmet": true,
+      "title": "Industrial Cleaning Services South Florida | Red Rock Cleans",
+      "description": "Heavy-duty industrial cleaning services in South Florida. Red Rock Cleans provides OSHA compliant cleaning for manufacturing plants and industrial facilities in Fort Lauderdale and beyond.",
+      "descriptionLength": 188,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\medical-office-cleaning\\+Page.tsx",
+      "url": "/south-florida/medical-office-cleaning",
+      "hasHelmet": true,
+      "title": "Medical Office Cleaning South Florida | Red Rock Cleans",
+      "description": "Specialized medical office cleaning in South Florida. Red Rock Cleans provides HIPAA and OSHA compliant cleaning for clinics and healthcare facilities in Fort Lauderdale, Weston, and beyond.",
+      "descriptionLength": 190,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\move-out-cleaning-services\\+Page.tsx",
+      "url": "/south-florida/move-out-cleaning-services",
+      "hasHelmet": true,
+      "title": "Move Out Cleaning Service South Florida | Red Rock Cleans",
+      "description": "Secure your deposit with our reliable move out cleaning service in South Florida. Red Rock Cleans provides thorough end-of-tenancy cleaning for renters and sellers in Fort Lauderdale, Weston, and beyond. Book today!",
+      "descriptionLength": 215,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\post-construction-cleaning-services\\+Page.tsx",
+      "url": "/south-florida/post-construction-cleaning-services",
+      "hasHelmet": true,
+      "title": "Post Construction Cleaning Service South Florida | Red Rock Cleans",
+      "description": "Professional post construction cleaning service in South Florida. Red Rock Cleans handles construction cleanup for new builds and renovations in Fort Lauderdale, Weston, and beyond. Get a quote!",
+      "descriptionLength": 194,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\restaurant-cleaning\\+Page.tsx",
+      "url": "/south-florida/restaurant-cleaning",
+      "hasHelmet": true,
+      "title": "Restaurant Cleaning South Florida | Red Rock Cleans",
+      "description": "Professional restaurant cleaning in South Florida. Red Rock Cleans helps you pass health inspections and earn 5-star reviews with comprehensive kitchen and dining room cleaning.",
+      "descriptionLength": 177,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\retail-cleaning\\+Page.tsx",
+      "url": "/south-florida/retail-cleaning",
+      "hasHelmet": true,
+      "title": "Retail Store Cleaning South Florida | Red Rock Cleans",
+      "description": "Professional retail store cleaning in South Florida. Red Rock Cleans helps enhance your brand image with spotless storefronts and sales floors in Fort Lauderdale, Weston, and beyond.",
+      "descriptionLength": 182,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\salon-spa-cleaning\\+Page.tsx",
+      "url": "/south-florida/salon-spa-cleaning",
+      "hasHelmet": true,
+      "title": "Salon & Spa Cleaning South Florida | Red Rock Cleans",
+      "description": "Professional salon and spa cleaning in South Florida. Red Rock Cleans ensures a pristine, hygienic, and relaxing environment for hair salons, day spas, and medispas in Fort Lauderdale and Weston.",
+      "descriptionLength": 195,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\school-cleaning\\+Page.tsx",
+      "url": "/south-florida/school-cleaning",
+      "hasHelmet": true,
+      "title": "School Cleaning Services South Florida | Red Rock Cleans",
+      "description": "Professional school cleaning services in South Florida. Red Rock Cleans provides a safe and healthy learning environment for students in Fort Lauderdale, Weston, and across Broward County.",
+      "descriptionLength": 188,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\showroom-cleaning\\+Page.tsx",
+      "url": "/south-florida/showroom-cleaning",
+      "hasHelmet": true,
+      "title": "Showroom Cleaning Services South Florida | Red Rock Cleans",
+      "description": "Professional showroom cleaning in South Florida. Red Rock Cleans enhances your product presentation with meticulous cleaning for car dealerships and luxury retail in Fort Lauderdale and Weston.",
+      "descriptionLength": 193,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\standard-cleaning-services\\+Page.tsx",
+      "url": "/south-florida/standard-cleaning-services",
+      "hasHelmet": true,
+      "title": "Standard Cleaning Service South Florida | Red Rock Cleans",
+      "description": "Keep your home consistently beautiful with our reliable standard cleaning service in South Florida. We offer flexible maid services in Fort Lauderdale, Weston, and beyond. Get your free quote!",
+      "descriptionLength": 192,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\south-florida\\warehouse-cleaning\\+Page.tsx",
+      "url": "/south-florida/warehouse-cleaning",
+      "hasHelmet": true,
+      "title": "Warehouse Cleaning South Florida | Red Rock Cleans",
+      "description": "Professional warehouse cleaning in South Florida. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers in Fort Lauderdale.",
+      "descriptionLength": 201,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\StandardCleaning.tsx",
+      "url": "/standard-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"services.standard.title\", { defaultValue: \"Servicios de limpieza estándar | Red Rock Cleaning\" })}",
+      "description": "Servicios de limpieza estándar regular para mantener un hogar u oficina impecable. Limpiadores profesionales para un mantenimiento constante y confiable.",
+      "descriptionLength": 153,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\standard-cleaning-services\\+Page.tsx",
+      "url": "/standard-cleaning-services",
+      "hasHelmet": true,
+      "title": "Standard Cleaning Services - Red Rock Cleaning",
+      "description": "Professional standard cleaning services for your home. Regular maintenance cleaning to keep your space spotless.",
+      "descriptionLength": 112,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\StandardVsDeep.tsx",
+      "url": "/standard-vs-deep",
+      "hasHelmet": true,
+      "title": "Standard vs Deep Cleaning - What's the Difference? | Red Rock Cleaning",
+      "description": "Understand the differences between standard and deep cleaning services to choose the right option for your home or business.",
+      "descriptionLength": 124,
+      "needsOptimization": false
+    },
+    {
+      "file": "src\\pages\\SubContractorAgreement.tsx",
+      "url": "/sub-contractor-agreement",
+      "hasHelmet": true,
+      "title": "Sub-Contractor Agreement | Red Rock Cleans",
+      "description": "Complete your sub-contractor agreement with Red Rock Cleans. Review terms and sign the agreement to join our team.",
+      "descriptionLength": 114,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\TermsAndConditions.tsx",
+      "url": "/terms-and-conditions",
+      "hasHelmet": true,
+      "title": "Terms and Conditions | Red Rock Cleans",
+      "description": "Review the terms and conditions for using the services provided by Red Rock Cleans. Please read these terms carefully before using our website or booking our services.",
+      "descriptionLength": 167,
+      "needsOptimization": true
+    },
+    {
+      "file": "src\\pages\\warehouse-cleaning\\+Page.tsx",
+      "url": "/warehouse-cleaning",
+      "hasHelmet": true,
+      "title": "{t(\"commercial.warehouse.title\", { defaultValue: \"Warehouse Cleaning Services | Red Rock Cleans\" })}",
+      "description": "Professional warehouse cleaning services. Red Rock Cleans improves safety and efficiency with comprehensive floor scrubbing, high-bay dusting, and more for logistics centers.",
+      "descriptionLength": 174,
+      "needsOptimization": true
+    }
+  ]
+}

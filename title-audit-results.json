@@ -1,0 +1,2696 @@
+{
+  "summary": {
+    "totalPages": 312,
+    "withTitles": 177,
+    "withoutTitles": 135,
+    "withJSX": 27,
+    "staticTitles": 150,
+    "tooLong": 22,
+    "noBranding": 0,
+    "duplicates": 0
+  },
+  "allTitles": [
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/about/+Page.tsx",
+      "title": "About Us - Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 28,
+      "hasBranding": true,
+      "raw": "<title>About Us - Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/AboutUs.tsx",
+      "title": "About Us - Professional Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 61,
+      "hasBranding": true,
+      "raw": "<title>About Us - Professional Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework/+Page.tsx",
+      "title": "6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 74,
+      "hasBranding": true,
+      "raw": "<title>6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/airbnb-bedding-management-you-should-know/+Page.tsx",
+      "title": "Airbnb Bedding Management You Should Know | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 59,
+      "hasBranding": true,
+      "raw": "<title>Airbnb Bedding Management You Should Know | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation/+Page.tsx",
+      "title": "Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 82,
+      "hasBranding": true,
+      "raw": "<title>Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill/+Page.tsx",
+      "title": "Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 90,
+      "hasBranding": true,
+      "raw": "<title>Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/health-code-violations/+Page.tsx",
+      "title": "Navigating Health Code Violations: A Commercial Cleaning Guide | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 80,
+      "hasBranding": true,
+      "raw": "<title>Navigating Health Code Violations: A Commercial Cleaning Guide | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air/+Page.tsx",
+      "title": "Nature&apos;s Air Purifiers: The Best Plants for Cleaner Indoor Air | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 85,
+      "hasBranding": true,
+      "raw": "<title>Nature&apos;s Air Purifiers: The Best Plants for Cleaner Indoor Air | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets/+Page.tsx",
+      "title": "Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 95,
+      "hasBranding": true,
+      "raw": "<title>Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/the-science-of-spring-cleaning/+Page.tsx",
+      "title": "The Science of Spring Cleaning: Why It Boosts Your Mood and Health | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 84,
+      "hasBranding": true,
+      "raw": "<title>The Science of Spring Cleaning: Why It Boosts Your Mood and Health | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party/+Page.tsx",
+      "title": "Get It Done Together: Why You Should Host a Spring Cleaning Party | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 83,
+      "hasBranding": true,
+      "raw": "<title>Get It Done Together: Why You Should Host a Spring Cleaning Party | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist/+Page.tsx",
+      "title": "Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 82,
+      "hasBranding": true,
+      "raw": "<title>Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/CleaningSupplies.tsx",
+      "title": "Cleaning Supplies You Need | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Cleaning Supplies You Need | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/airbnb-cleaning-services/+Page.tsx",
+      "title": "Airbnb Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 58,
+      "hasBranding": true,
+      "raw": "<title>Airbnb Cleaning Service in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/church-cleaning/+Page.tsx",
+      "title": "Church Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 50,
+      "hasBranding": true,
+      "raw": "<title>Church Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/data-center-cleaning/+Page.tsx",
+      "title": "Data Center Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Data Center Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/deep-cleaning-services/+Page.tsx",
+      "title": "Deep Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Deep Cleaning Service in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/factory-cleaning/+Page.tsx",
+      "title": "Factory Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Factory Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/government-facility-cleaning/+Page.tsx",
+      "title": "Government Facility Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 63,
+      "hasBranding": true,
+      "raw": "<title>Government Facility Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/gym-cleaning/+Page.tsx",
+      "title": "Gym Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 47,
+      "hasBranding": true,
+      "raw": "<title>Gym Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/industrial-cleaning/+Page.tsx",
+      "title": "Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 63,
+      "hasBranding": true,
+      "raw": "<title>Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/medical-office-cleaning/+Page.tsx",
+      "title": "Medical Office Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 58,
+      "hasBranding": true,
+      "raw": "<title>Medical Office Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/move-out-cleaning-services/+Page.tsx",
+      "title": "Move Out Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 60,
+      "hasBranding": true,
+      "raw": "<title>Move Out Cleaning Service in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/post-construction-cleaning-services/+Page.tsx",
+      "title": "Post Construction Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 69,
+      "hasBranding": true,
+      "raw": "<title>Post Construction Cleaning Service in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/restaurant-cleaning/+Page.tsx",
+      "title": "Restaurant Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 54,
+      "hasBranding": true,
+      "raw": "<title>Restaurant Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/retail-cleaning/+Page.tsx",
+      "title": "Retail Store Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Retail Store Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/salon-spa-cleaning/+Page.tsx",
+      "title": "Salon & Spa Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Salon & Spa Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/school-cleaning/+Page.tsx",
+      "title": "School Cleaning Services in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 59,
+      "hasBranding": true,
+      "raw": "<title>School Cleaning Services in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/showroom-cleaning/+Page.tsx",
+      "title": "Showroom Cleaning Services in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 61,
+      "hasBranding": true,
+      "raw": "<title>Showroom Cleaning Services in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/standard-cleaning-services/+Page.tsx",
+      "title": "Standard Cleaning Service in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 60,
+      "hasBranding": true,
+      "raw": "<title>Standard Cleaning Service in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/warehouse-cleaning/+Page.tsx",
+      "title": "Warehouse Cleaning in Columbus Ohio | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Warehouse Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/commercial-cleaning-cost-estimator/index.page.tsx",
+      "title": "Commercial Cleaning Cost Estimator | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>Commercial Cleaning Cost Estimator | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/commercial-cleaning-time-estimator/index.page.tsx",
+      "title": "Commercial Cleaning Time Estimator | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>Commercial Cleaning Time Estimator | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/CommercialCleaning.tsx",
+      "title": "Commercial Office Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Commercial Office Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/CommercialCleaningEstimator.tsx",
+      "title": "Commercial Cleaning Cost Estimator | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 54,
+      "hasBranding": true,
+      "raw": "<title>Commercial Cleaning Cost Estimator | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/contact/+Page.tsx",
+      "title": "Contact Us - Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 30,
+      "hasBranding": true,
+      "raw": "<title>Contact Us - Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/airbnb-cleaning-services/+Page.tsx",
+      "title": "Airbnb Cleaning Service in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Airbnb Cleaning Service in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/church-cleaning/+Page.tsx",
+      "title": "Church Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 43,
+      "hasBranding": true,
+      "raw": "<title>Church Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/data-center-cleaning/+Page.tsx",
+      "title": "Data Center Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Data Center Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/deep-cleaning-services/+Page.tsx",
+      "title": "Deep Cleaning Service in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 49,
+      "hasBranding": true,
+      "raw": "<title>Deep Cleaning Service in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/factory-cleaning/+Page.tsx",
+      "title": "Factory Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Factory Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/government-facility-cleaning/+Page.tsx",
+      "title": "Government Facility Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Government Facility Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/gym-cleaning/+Page.tsx",
+      "title": "Gym Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 40,
+      "hasBranding": true,
+      "raw": "<title>Gym Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/industrial-cleaning/+Page.tsx",
+      "title": "Industrial Cleaning Services in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Industrial Cleaning Services in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/medical-office-cleaning/+Page.tsx",
+      "title": "Medical Office Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Medical Office Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/move-out-cleaning-services/+Page.tsx",
+      "title": "Move Out Cleaning Service in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Move Out Cleaning Service in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/post-construction-cleaning-services/+Page.tsx",
+      "title": "Post Construction Cleaning Service in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 62,
+      "hasBranding": true,
+      "raw": "<title>Post Construction Cleaning Service in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/restaurant-cleaning/+Page.tsx",
+      "title": "Restaurant Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 47,
+      "hasBranding": true,
+      "raw": "<title>Restaurant Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/retail-cleaning/+Page.tsx",
+      "title": "Retail Store Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 49,
+      "hasBranding": true,
+      "raw": "<title>Retail Store Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/salon-spa-cleaning/+Page.tsx",
+      "title": "Salon & Spa Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Salon & Spa Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/school-cleaning/+Page.tsx",
+      "title": "School Cleaning Services in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>School Cleaning Services in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/showroom-cleaning/+Page.tsx",
+      "title": "Showroom Cleaning Services in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 54,
+      "hasBranding": true,
+      "raw": "<title>Showroom Cleaning Services in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/standard-cleaning-services/+Page.tsx",
+      "title": "Standard Cleaning Service in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Standard Cleaning Service in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/warehouse-cleaning/+Page.tsx",
+      "title": "Warehouse Cleaning in Dallas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 46,
+      "hasBranding": true,
+      "raw": "<title>Warehouse Cleaning in Dallas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/deep-cleaning-services/+Page.tsx",
+      "title": "Deep Cleaning Services - Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 42,
+      "hasBranding": true,
+      "raw": "<title>Deep Cleaning Services - Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/FAQ.tsx",
+      "title": "FAQ - Frequently Asked Questions | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>FAQ - Frequently Asked Questions | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/HiringApplicationNew.tsx",
+      "title": "Work Application - Join Our Team | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 50,
+      "hasBranding": true,
+      "raw": "<title>Work Application - Join Our Team | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/HiringRequirements.tsx",
+      "title": "Hiring Requirements - Join Our Team | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Hiring Requirements - Join Our Team | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/Index.tsx",
+      "title": "Red Rock Cleaning - Trusted Local Cleaning Experts",
+      "hasJSX": false,
+      "titleLength": 50,
+      "hasBranding": true,
+      "raw": "<title>Red Rock Cleaning - Trusted Local Cleaning Experts</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/index/+Page.tsx",
+      "title": "Red Rock Cleaning - Premium Multi-Location Cleaning Services",
+      "hasJSX": false,
+      "titleLength": 60,
+      "hasBranding": true,
+      "raw": "<title>Red Rock Cleaning - Premium Multi-Location Cleaning Services</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/airbnb-cleaning-services/+Page.tsx",
+      "title": "Airbnb Cleaning Services Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>Airbnb Cleaning Services Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/church-cleaning/+Page.tsx",
+      "title": "Church Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 43,
+      "hasBranding": true,
+      "raw": "<title>Church Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/data-center-cleaning/+Page.tsx",
+      "title": "Data Center Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Data Center Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/deep-cleaning-services/+Page.tsx",
+      "title": "Deep Cleaning Service Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 49,
+      "hasBranding": true,
+      "raw": "<title>Deep Cleaning Service Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/factory-cleaning/+Page.tsx",
+      "title": "Factory Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Factory Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/government-facility-cleaning/+Page.tsx",
+      "title": "Government Facility Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Government Facility Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/gym-cleaning/+Page.tsx",
+      "title": "Gym Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 40,
+      "hasBranding": true,
+      "raw": "<title>Gym Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/industrial-cleaning/+Page.tsx",
+      "title": "Industrial Cleaning Services Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Industrial Cleaning Services Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/medical-office-cleaning/+Page.tsx",
+      "title": "Medical Office Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Medical Office Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/move-out-cleaning-services/+Page.tsx",
+      "title": "Move Out Cleaning Service Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Move Out Cleaning Service Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/post-construction-cleaning-services/+Page.tsx",
+      "title": "Post Construction Cleaning Service Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 62,
+      "hasBranding": true,
+      "raw": "<title>Post Construction Cleaning Service Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/restaurant-cleaning/+Page.tsx",
+      "title": "Restaurant Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 47,
+      "hasBranding": true,
+      "raw": "<title>Restaurant Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/retail-cleaning/+Page.tsx",
+      "title": "Retail Store Cleaning Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 49,
+      "hasBranding": true,
+      "raw": "<title>Retail Store Cleaning Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/school-cleaning/+Page.tsx",
+      "title": "School Cleaning Services Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>School Cleaning Services Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/showroom-cleaning/+Page.tsx",
+      "title": "Showroom Cleaning Services in Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 57,
+      "hasBranding": true,
+      "raw": "<title>Showroom Cleaning Services in Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/standard-cleaning-services/+Page.tsx",
+      "title": "Standard Cleaning Service Las Vegas | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Standard Cleaning Service Las Vegas | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/ColumbusBooking.tsx",
+      "title": "Book Now - Columbus Ohio Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 62,
+      "hasBranding": true,
+      "raw": "<title>Book Now - Columbus Ohio Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/ColumbusCalculator.tsx",
+      "title": "Get a Quote - Columbus Ohio Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 65,
+      "hasBranding": true,
+      "raw": "<title>Get a Quote - Columbus Ohio Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/DallasBooking.tsx",
+      "title": "Book Now - Dallas Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Book Now - Dallas Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/DallasCalculator.tsx",
+      "title": "Get a Quote - Dallas Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 58,
+      "hasBranding": true,
+      "raw": "<title>Get a Quote - Dallas Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/LasVegasBooking.tsx",
+      "title": "Book Now - Las Vegas Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 58,
+      "hasBranding": true,
+      "raw": "<title>Book Now - Las Vegas Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/LasVegasCalculator.tsx",
+      "title": "Get a Quote - Las Vegas Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 61,
+      "hasBranding": true,
+      "raw": "<title>Get a Quote - Las Vegas Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/MauiBooking.tsx",
+      "title": "Book Now - Maui Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Book Now - Maui Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/MauiCalculator.tsx",
+      "title": "Get a Quote - Maui Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Get a Quote - Maui Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/OahuBooking.tsx",
+      "title": "Book Now - Oahu Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Book Now - Oahu Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/OahuCalculator.tsx",
+      "title": "Get a Quote - Oahu Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>Get a Quote - Oahu Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/SouthFloridaBooking.tsx",
+      "title": "Book Now - South Florida Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 62,
+      "hasBranding": true,
+      "raw": "<title>Book Now - South Florida Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/SouthFloridaCalculator.tsx",
+      "title": "Get a Quote - South Florida Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 65,
+      "hasBranding": true,
+      "raw": "<title>Get a Quote - South Florida Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/MaidilyApp.tsx",
+      "title": "Maidily Mobile App - For Our Team | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Maidily Mobile App - For Our Team | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/airbnb-cleaning-services/+Page.tsx",
+      "title": "Airbnb Cleaning Service Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 46,
+      "hasBranding": true,
+      "raw": "<title>Airbnb Cleaning Service Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/church-cleaning/+Page.tsx",
+      "title": "Church Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 38,
+      "hasBranding": true,
+      "raw": "<title>Church Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/data-center-cleaning/+Page.tsx",
+      "title": "Data Center Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 43,
+      "hasBranding": true,
+      "raw": "<title>Data Center Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/deep-cleaning-services/+Page.tsx",
+      "title": "Deep Cleaning Service Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Deep Cleaning Service Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/factory-cleaning/+Page.tsx",
+      "title": "Factory Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 39,
+      "hasBranding": true,
+      "raw": "<title>Factory Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/government-facility-cleaning/+Page.tsx",
+      "title": "Government Facility Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Government Facility Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/gym-cleaning/+Page.tsx",
+      "title": "Gym Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 35,
+      "hasBranding": true,
+      "raw": "<title>Gym Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/industrial-cleaning/+Page.tsx",
+      "title": "Industrial Cleaning Services Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Industrial Cleaning Services Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/medical-office-cleaning/+Page.tsx",
+      "title": "Medical Office Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 46,
+      "hasBranding": true,
+      "raw": "<title>Medical Office Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/move-out-cleaning-services/+Page.tsx",
+      "title": "Move Out Cleaning Service Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Move Out Cleaning Service Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/post-construction-cleaning-services/+Page.tsx",
+      "title": "Post Construction Cleaning Service Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 57,
+      "hasBranding": true,
+      "raw": "<title>Post Construction Cleaning Service Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/restaurant-cleaning/+Page.tsx",
+      "title": "Restaurant Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 42,
+      "hasBranding": true,
+      "raw": "<title>Restaurant Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/retail-cleaning/+Page.tsx",
+      "title": "Retail Store Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Retail Store Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/salon-spa-cleaning/+Page.tsx",
+      "title": "Salon & Spa Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 43,
+      "hasBranding": true,
+      "raw": "<title>Salon & Spa Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/school-cleaning/+Page.tsx",
+      "title": "School Cleaning Services Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 47,
+      "hasBranding": true,
+      "raw": "<title>School Cleaning Services Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/showroom-cleaning/+Page.tsx",
+      "title": "Showroom Cleaning Services Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 49,
+      "hasBranding": true,
+      "raw": "<title>Showroom Cleaning Services Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/standard-cleaning-services/+Page.tsx",
+      "title": "Standard Cleaning Service Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Standard Cleaning Service Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/warehouse-cleaning/+Page.tsx",
+      "title": "Warehouse Cleaning Maui | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 41,
+      "hasBranding": true,
+      "raw": "<title>Warehouse Cleaning Maui | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/airbnb-cleaning-services/+Page.tsx",
+      "title": "Airbnb Cleaning Service Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 46,
+      "hasBranding": true,
+      "raw": "<title>Airbnb Cleaning Service Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/church-cleaning/+Page.tsx",
+      "title": "Church Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 38,
+      "hasBranding": true,
+      "raw": "<title>Church Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/data-center-cleaning/+Page.tsx",
+      "title": "Data Center Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 43,
+      "hasBranding": true,
+      "raw": "<title>Data Center Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/deep-cleaning-services/+Page.tsx",
+      "title": "Deep Cleaning Service Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Deep Cleaning Service Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/factory-cleaning/+Page.tsx",
+      "title": "Factory Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 39,
+      "hasBranding": true,
+      "raw": "<title>Factory Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/government-facility-cleaning/+Page.tsx",
+      "title": "Government Facility Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Government Facility Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/gym-cleaning/+Page.tsx",
+      "title": "Gym Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 35,
+      "hasBranding": true,
+      "raw": "<title>Gym Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/industrial-cleaning/+Page.tsx",
+      "title": "Industrial Cleaning Services Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Industrial Cleaning Services Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/medical-office-cleaning/+Page.tsx",
+      "title": "Medical Office Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 46,
+      "hasBranding": true,
+      "raw": "<title>Medical Office Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/move-out-cleaning-services/+Page.tsx",
+      "title": "Move Out Cleaning Service Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Move Out Cleaning Service Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/post-construction-cleaning-services/+Page.tsx",
+      "title": "Post Construction Cleaning Service Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 57,
+      "hasBranding": true,
+      "raw": "<title>Post Construction Cleaning Service Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/restaurant-cleaning/+Page.tsx",
+      "title": "Restaurant Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 42,
+      "hasBranding": true,
+      "raw": "<title>Restaurant Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/retail-cleaning/+Page.tsx",
+      "title": "Retail Store Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Retail Store Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/salon-spa-cleaning/+Page.tsx",
+      "title": "Salon & Spa Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 43,
+      "hasBranding": true,
+      "raw": "<title>Salon & Spa Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/school-cleaning/+Page.tsx",
+      "title": "School Cleaning Services Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 47,
+      "hasBranding": true,
+      "raw": "<title>School Cleaning Services Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/showroom-cleaning/+Page.tsx",
+      "title": "Showroom Cleaning Services Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 49,
+      "hasBranding": true,
+      "raw": "<title>Showroom Cleaning Services Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/standard-cleaning-services/+Page.tsx",
+      "title": "Standard Cleaning Service Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Standard Cleaning Service Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/warehouse-cleaning/+Page.tsx",
+      "title": "Warehouse Cleaning Oahu | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 41,
+      "hasBranding": true,
+      "raw": "<title>Warehouse Cleaning Oahu | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/PrivacyPolicy.tsx",
+      "title": "Privacy Policy | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 32,
+      "hasBranding": true,
+      "raw": "<title>Privacy Policy | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/ResidentialCleaning.tsx",
+      "title": "Residential House Cleaning Services | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Residential House Cleaning Services | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/restaurant-cleaning/+Page.tsx",
+      "title": "Restaurant Cleaning Services | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 46,
+      "hasBranding": true,
+      "raw": "<title>Restaurant Cleaning Services | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/Sitemap.tsx",
+      "title": "Sitemap | Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 27,
+      "hasBranding": true,
+      "raw": "<title>Sitemap | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/airbnb-cleaning-services/+Page.tsx",
+      "title": "Airbnb Cleaning Service South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Airbnb Cleaning Service South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/church-cleaning/+Page.tsx",
+      "title": "Church Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 47,
+      "hasBranding": true,
+      "raw": "<title>Church Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/data-center-cleaning/+Page.tsx",
+      "title": "Data Center Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>Data Center Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/deep-cleaning-services/+Page.tsx",
+      "title": "Deep Cleaning Service South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Deep Cleaning Service South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/factory-cleaning/+Page.tsx",
+      "title": "Factory Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 48,
+      "hasBranding": true,
+      "raw": "<title>Factory Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/government-facility-cleaning/+Page.tsx",
+      "title": "Government Facility Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 60,
+      "hasBranding": true,
+      "raw": "<title>Government Facility Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/gym-cleaning/+Page.tsx",
+      "title": "Gym Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 44,
+      "hasBranding": true,
+      "raw": "<title>Gym Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/industrial-cleaning/+Page.tsx",
+      "title": "Industrial Cleaning Services South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 60,
+      "hasBranding": true,
+      "raw": "<title>Industrial Cleaning Services South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/medical-office-cleaning/+Page.tsx",
+      "title": "Medical Office Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 55,
+      "hasBranding": true,
+      "raw": "<title>Medical Office Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/move-out-cleaning-services/+Page.tsx",
+      "title": "Move Out Cleaning Service South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 57,
+      "hasBranding": true,
+      "raw": "<title>Move Out Cleaning Service South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/post-construction-cleaning-services/+Page.tsx",
+      "title": "Post Construction Cleaning Service South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 66,
+      "hasBranding": true,
+      "raw": "<title>Post Construction Cleaning Service South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/restaurant-cleaning/+Page.tsx",
+      "title": "Restaurant Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 51,
+      "hasBranding": true,
+      "raw": "<title>Restaurant Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/retail-cleaning/+Page.tsx",
+      "title": "Retail Store Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 53,
+      "hasBranding": true,
+      "raw": "<title>Retail Store Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/salon-spa-cleaning/+Page.tsx",
+      "title": "Salon & Spa Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 52,
+      "hasBranding": true,
+      "raw": "<title>Salon & Spa Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/school-cleaning/+Page.tsx",
+      "title": "School Cleaning Services South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 56,
+      "hasBranding": true,
+      "raw": "<title>School Cleaning Services South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/showroom-cleaning/+Page.tsx",
+      "title": "Showroom Cleaning Services South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 58,
+      "hasBranding": true,
+      "raw": "<title>Showroom Cleaning Services South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/standard-cleaning-services/+Page.tsx",
+      "title": "Standard Cleaning Service South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 57,
+      "hasBranding": true,
+      "raw": "<title>Standard Cleaning Service South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/warehouse-cleaning/+Page.tsx",
+      "title": "Warehouse Cleaning South Florida | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 50,
+      "hasBranding": true,
+      "raw": "<title>Warehouse Cleaning South Florida | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/standard-cleaning-services/+Page.tsx",
+      "title": "Standard Cleaning Services - Red Rock Cleaning",
+      "hasJSX": false,
+      "titleLength": 46,
+      "hasBranding": true,
+      "raw": "<title>Standard Cleaning Services - Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/SubContractorAgreement.tsx",
+      "title": "Sub-Contractor Agreement | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 42,
+      "hasBranding": true,
+      "raw": "<title>Sub-Contractor Agreement | Red Rock Cleans</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/TermsAndConditions.tsx",
+      "title": "Terms and Conditions | Red Rock Cleans",
+      "hasJSX": false,
+      "titleLength": 38,
+      "hasBranding": true,
+      "raw": "<title>Terms and Conditions | Red Rock Cleans</title>"
+    }
+  ],
+  "issues": {
+    "duplicates": [],
+    "tooLong": [
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets/+Page.tsx",
+        "title": "Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 95,
+        "hasBranding": true,
+        "raw": "<title>Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill/+Page.tsx",
+        "title": "Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 90,
+        "hasBranding": true,
+        "raw": "<title>Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air/+Page.tsx",
+        "title": "Nature&apos;s Air Purifiers: The Best Plants for Cleaner Indoor Air | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 85,
+        "hasBranding": true,
+        "raw": "<title>Nature&apos;s Air Purifiers: The Best Plants for Cleaner Indoor Air | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/the-science-of-spring-cleaning/+Page.tsx",
+        "title": "The Science of Spring Cleaning: Why It Boosts Your Mood and Health | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 84,
+        "hasBranding": true,
+        "raw": "<title>The Science of Spring Cleaning: Why It Boosts Your Mood and Health | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party/+Page.tsx",
+        "title": "Get It Done Together: Why You Should Host a Spring Cleaning Party | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 83,
+        "hasBranding": true,
+        "raw": "<title>Get It Done Together: Why You Should Host a Spring Cleaning Party | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation/+Page.tsx",
+        "title": "Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 82,
+        "hasBranding": true,
+        "raw": "<title>Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist/+Page.tsx",
+        "title": "Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 82,
+        "hasBranding": true,
+        "raw": "<title>Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/health-code-violations/+Page.tsx",
+        "title": "Navigating Health Code Violations: A Commercial Cleaning Guide | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 80,
+        "hasBranding": true,
+        "raw": "<title>Navigating Health Code Violations: A Commercial Cleaning Guide | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework/+Page.tsx",
+        "title": "6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 74,
+        "hasBranding": true,
+        "raw": "<title>6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/post-construction-cleaning-services/+Page.tsx",
+        "title": "Post Construction Cleaning Service in Columbus Ohio | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 69,
+        "hasBranding": true,
+        "raw": "<title>Post Construction Cleaning Service in Columbus Ohio | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/post-construction-cleaning-services/+Page.tsx",
+        "title": "Post Construction Cleaning Service South Florida | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 66,
+        "hasBranding": true,
+        "raw": "<title>Post Construction Cleaning Service South Florida | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/ColumbusCalculator.tsx",
+        "title": "Get a Quote - Columbus Ohio Cleaning Services | Red Rock Cleaning",
+        "hasJSX": false,
+        "titleLength": 65,
+        "hasBranding": true,
+        "raw": "<title>Get a Quote - Columbus Ohio Cleaning Services | Red Rock Cleaning</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/SouthFloridaCalculator.tsx",
+        "title": "Get a Quote - South Florida Cleaning Services | Red Rock Cleaning",
+        "hasJSX": false,
+        "titleLength": 65,
+        "hasBranding": true,
+        "raw": "<title>Get a Quote - South Florida Cleaning Services | Red Rock Cleaning</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/government-facility-cleaning/+Page.tsx",
+        "title": "Government Facility Cleaning in Columbus Ohio | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 63,
+        "hasBranding": true,
+        "raw": "<title>Government Facility Cleaning in Columbus Ohio | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/industrial-cleaning/+Page.tsx",
+        "title": "Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 63,
+        "hasBranding": true,
+        "raw": "<title>Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/post-construction-cleaning-services/+Page.tsx",
+        "title": "Post Construction Cleaning Service in Dallas | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 62,
+        "hasBranding": true,
+        "raw": "<title>Post Construction Cleaning Service in Dallas | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/post-construction-cleaning-services/+Page.tsx",
+        "title": "Post Construction Cleaning Service Las Vegas | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 62,
+        "hasBranding": true,
+        "raw": "<title>Post Construction Cleaning Service Las Vegas | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/ColumbusBooking.tsx",
+        "title": "Book Now - Columbus Ohio Cleaning Services | Red Rock Cleaning",
+        "hasJSX": false,
+        "titleLength": 62,
+        "hasBranding": true,
+        "raw": "<title>Book Now - Columbus Ohio Cleaning Services | Red Rock Cleaning</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/SouthFloridaBooking.tsx",
+        "title": "Book Now - South Florida Cleaning Services | Red Rock Cleaning",
+        "hasJSX": false,
+        "titleLength": 62,
+        "hasBranding": true,
+        "raw": "<title>Book Now - South Florida Cleaning Services | Red Rock Cleaning</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/AboutUs.tsx",
+        "title": "About Us - Professional Cleaning Services | Red Rock Cleaning",
+        "hasJSX": false,
+        "titleLength": 61,
+        "hasBranding": true,
+        "raw": "<title>About Us - Professional Cleaning Services | Red Rock Cleaning</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/showroom-cleaning/+Page.tsx",
+        "title": "Showroom Cleaning Services in Columbus Ohio | Red Rock Cleans",
+        "hasJSX": false,
+        "titleLength": 61,
+        "hasBranding": true,
+        "raw": "<title>Showroom Cleaning Services in Columbus Ohio | Red Rock Cleans</title>"
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/LasVegasCalculator.tsx",
+        "title": "Get a Quote - Las Vegas Cleaning Services | Red Rock Cleaning",
+        "hasJSX": false,
+        "titleLength": 61,
+        "hasBranding": true,
+        "raw": "<title>Get a Quote - Las Vegas Cleaning Services | Red Rock Cleaning</title>"
+      }
+    ],
+    "noBranding": [],
+    "withoutTitles": [
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/airbnb-bedding-management-you-should-know/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/health-code-violations/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/the-science-of-spring-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/church-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/airbnb-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/church-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/data-center-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/deep-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/factory-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/government-facility-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/gym-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/industrial-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/medical-office-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/move-out-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/post-construction-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/restaurant-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/retail-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/salon-spa-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/school-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/showroom-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/standard-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/columbus-ohio/warehouse-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/commercial-cleaning-cost-estimator/index.page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/commercial-cleaning-time-estimator/index.page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/commercial-quote/index.page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/airbnb-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/church-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/data-center-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/deep-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/factory-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/government-facility-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/gym-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/industrial-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/medical-office-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/move-out-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/post-construction-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/restaurant-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/retail-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/salon-spa-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/school-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/showroom-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/standard-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/dallas/warehouse-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/data-center-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/factory-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/general-retail-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/government-facility-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/gym-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/airbnb-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/church-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/data-center-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/deep-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/factory-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/government-facility-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/gym-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/industrial-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/medical-office-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/move-out-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/post-construction-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/restaurant-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/retail-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/salon-spa-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/salon-spa-cleaning/+Page.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/school-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/showroom-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/standard-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/warehouse-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/las-vegas/warehouse-cleaning/+Page.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/airbnb-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/church-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/data-center-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/deep-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/factory-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/government-facility-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/gym-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/industrial-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/medical-office-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/move-out-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/post-construction-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/restaurant-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/retail-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/salon-spa-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/school-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/showroom-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/standard-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/maui/warehouse-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/medical-office-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/NotFound.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/airbnb-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/church-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/data-center-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/deep-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/factory-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/government-facility-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/gym-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/industrial-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/medical-office-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/move-out-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/post-construction-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/restaurant-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/retail-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/salon-spa-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/school-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/showroom-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/standard-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/oahu/warehouse-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/salon-spa-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/school-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/showroom-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/airbnb-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/church-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/data-center-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/deep-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/factory-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/government-facility-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/gym-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/industrial-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/medical-office-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/move-out-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/post-construction-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/restaurant-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/retail-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/salon-spa-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/school-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/showroom-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/standard-cleaning-services/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/south-florida/warehouse-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      },
+      {
+        "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/warehouse-cleaning/+Page.server.tsx",
+        "title": null,
+        "hasJSX": false,
+        "titleLength": null,
+        "hasBranding": false,
+        "raw": null
+      }
+    ]
+  },
+  "dynamicTitles": [
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/AirbnbCleaning.tsx",
+      "title": "{t(\"services.airbnb.title\", { defaultValue: \"Airbnb Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"services.airbnb.title\", { defaultValue: \"Airbnb Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/Blog.tsx",
+      "title": "{currentPage > 1 ? `Cleaning Tips & Advice Blog - Page ${currentPage} | Red Rock Cleaning` : \"Cleaning Tips & Advice Blog | Red Rock Cleaning\"}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>\r\n          {currentPage > 1\r\n            ? `Cleaning Tips & Advice Blog - Page ${currentPage} | Red Rock Cleaning`\r\n            : \"Cleaning Tips & Advice Blog | Red Rock Cleaning\"}\r\n        </title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/church-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.church.title\", { defaultValue: \"Professional Church Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.church.title\", { defaultValue: \"Professional Church Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/commercial-quote/index.page.tsx",
+      "title": "{t('quote.pageTitle')}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": false,
+      "raw": "<title>{t('quote.pageTitle')}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/Contact.tsx",
+      "title": "{t(\"contact.title\", { defaultValue: \"Contact Us - All Locations | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"contact.title\", { defaultValue: \"Contact Us - All Locations | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/data-center-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.datacenter.title\", { defaultValue: \"Data Center Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.datacenter.title\", { defaultValue: \"Data Center Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/DeepCleaning.tsx",
+      "title": "{t(\"services.deep.title\", { defaultValue: \"Deep Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"services.deep.title\", { defaultValue: \"Deep Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/factory-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.factory.title\", { defaultValue: \"Factory Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.factory.title\", { defaultValue: \"Factory Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/general-retail-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.retail.title\", { defaultValue: \"Retail Store Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.retail.title\", { defaultValue: \"Retail Store Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/government-facility-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.government.title\", { defaultValue: \"Government Facility Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.government.title\", { defaultValue: \"Government Facility Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/gym-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.gym.title\", { defaultValue: \"Gym Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.gym.title\", { defaultValue: \"Gym Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/industrial-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.industrial.title\", { defaultValue: \"Industrial Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.industrial.title\", { defaultValue: \"Industrial Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/ColumbusHome.tsx",
+      "title": "{t(\"locations.columbus.title\", { defaultValue: \"Columbus Ohio House Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"locations.columbus.title\", { defaultValue: \"Columbus Ohio House Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/DallasHome.tsx",
+      "title": "{t(\"locations.dallas.title\", { defaultValue: \"Dallas House Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"locations.dallas.title\", { defaultValue: \"Dallas House Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/LasVegasHome.tsx",
+      "title": "{t(\"locations.lasVegas.title\", { defaultValue: \"Las Vegas House Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"locations.lasVegas.title\", { defaultValue: \"Las Vegas House Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/MauiHome.tsx",
+      "title": "{t(\"locations.maui.title\", { defaultValue: \"Maui House Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"locations.maui.title\", { defaultValue: \"Maui House Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/OahuHome.tsx",
+      "title": "{t(\"locations.oahu.title\", { defaultValue: \"Oahu House Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"locations.oahu.title\", { defaultValue: \"Oahu House Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/locations/SouthFloridaHome.tsx",
+      "title": "{t(\"locations.southFlorida.title\", { defaultValue: \"Servicios profesionales de limpieza de casas en el sur de Florida | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"locations.southFlorida.title\", { defaultValue: \"Servicios profesionales de limpieza de casas en el sur de Florida | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/medical-office-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.medical.title\", { defaultValue: \"Medical Office Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.medical.title\", { defaultValue: \"Medical Office Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/MoveOutCleaning.tsx",
+      "title": "{t(\"services.moveout.title\", { defaultValue: \"Move Out Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"services.moveout.title\", { defaultValue: \"Move Out Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/PostConstruction.tsx",
+      "title": "{t(\"services.post.title\", { defaultValue: \"Post Construction Cleaning Services | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"services.post.title\", { defaultValue: \"Post Construction Cleaning Services | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/salon-spa-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.salon.title\", { defaultValue: \"Salon & Spa Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.salon.title\", { defaultValue: \"Salon & Spa Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/school-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.school.title\", { defaultValue: \"School Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.school.title\", { defaultValue: \"School Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/showroom-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.showroom.title\", { defaultValue: \"Showroom Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.showroom.title\", { defaultValue: \"Showroom Cleaning Services | Red Rock Cleans\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/StandardCleaning.tsx",
+      "title": "{t(\"services.standard.title\", { defaultValue: \"Servicios de limpieza estándar | Red Rock Cleaning\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"services.standard.title\", { defaultValue: \"Servicios de limpieza estándar | Red Rock Cleaning\" })}</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/StandardVsDeep.tsx",
+      "title": "Standard vs Deep Cleaning - What's the Difference? | Red Rock Cleaning",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>Standard vs Deep Cleaning - What's the Difference? | Red Rock Cleaning</title>"
+    },
+    {
+      "file": "C:/Users/cavan/redrock-local-lead-surge/src/pages/warehouse-cleaning/+Page.tsx",
+      "title": "{t(\"commercial.warehouse.title\", { defaultValue: \"Warehouse Cleaning Services | Red Rock Cleans\" })}",
+      "hasJSX": true,
+      "titleLength": null,
+      "hasBranding": true,
+      "raw": "<title>{t(\"commercial.warehouse.title\", { defaultValue: \"Warehouse Cleaning Services | Red Rock Cleans\" })}</title>"
+    }
+  ]
+}

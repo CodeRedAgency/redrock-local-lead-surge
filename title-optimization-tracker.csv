@@ -1,0 +1,27 @@
+Priority,File Path,Current Title,Current Length,Optimized Title,New Length,Status,Notes,Date Completed
+HIGH,blog/cleaning-tips/step-by-step-guide-effective-techniques-for-removing-ink-stains-from-carpets/+Page.tsx,Step-by-Step Guide: Effective Techniques for Removing Ink Stains from Carpets | Red Rock Cleans,95,Remove Ink Stains from Carpets: Expert Guide | Red Rock Cleans,55,Completed,Blog post - most critical
+HIGH,blog/cleaning-tips/grill-maintenance-101-the-ultimate-guide-to-cleaning-your-outdoor-grill/+Page.tsx,Grill Maintenance 101: The Ultimate Guide to Cleaning Your Outdoor Grill | Red Rock Cleans,90,Grill Cleaning & Maintenance Guide | Red Rock Cleans,52,Completed,Blog post
+HIGH,blog/cleaning-tips/natures-air-purifiers-the-best-plants-for-cleaner-indoor-air/+Page.tsx,Nature's Air Purifiers: The Best Plants for Cleaner Indoor Air | Red Rock Cleans,85,Best Air-Purifying Plants for Your Home | Red Rock Cleans,58,Completed,Blog post
+HIGH,blog/cleaning-tips/the-science-of-spring-cleaning/+Page.tsx,The Science of Spring Cleaning: Why It Boosts Your Mood and Health | Red Rock Cleans,84,Spring Cleaning Benefits: Mood & Health | Red Rock Cleans,58,Completed,Blog post
+HIGH,blog/cleaning-tips/why-you-should-host-a-spring-cleaning-party/+Page.tsx,Get It Done Together: Why You Should Host a Spring Cleaning Party | Red Rock Cleans,83,How to Host a Spring Cleaning Party | Red Rock Cleans,54,Completed,Blog post
+HIGH,blog/cleaning-tips/carpet-cleaning-to-remove-flea-infestation/+Page.tsx,Carpet Cleaning to Remove Flea Infestation: A Step-by-Step Guide | Red Rock Cleans,82,Remove Fleas from Carpets: Expert Guide | Red Rock Cleans,58,Completed,Blog post
+HIGH,blog/cleaning-tips/your-essential-guide-to-the-ultimate-move-out-cleaning-checklist/+Page.tsx,Your Essential Guide to the Ultimate Move-Out Cleaning Checklist | Red Rock Cleans,82,Move-Out Cleaning Checklist: Complete Guide | Red Rock Cleans,59,Completed,Blog post
+HIGH,blog/cleaning-tips/health-code-violations/+Page.tsx,Navigating Health Code Violations: A Commercial Cleaning Guide | Red Rock Cleans,80,Avoid Health Code Violations: Cleaning Guide | Red Rock Cleans,59,Completed,Blog post
+MEDIUM,blog/cleaning-tips/6-handy-tips-to-help-you-minimize-your-time-on-housework/+Page.tsx,6 Handy Tips to Help You Minimize Your Time on Housework | Red Rock Cleans,74,6 Tips to Minimize Housework Time | Red Rock Cleans,51,Completed,Blog post
+MEDIUM,columbus-ohio/post-construction-cleaning-services/+Page.tsx,Post Construction Cleaning Service in Columbus Ohio | Red Rock Cleans,69,Post Construction Cleaning Columbus | Red Rock Cleans,53,Completed,Service page
+MEDIUM,south-florida/post-construction-cleaning-services/+Page.tsx,Post Construction Cleaning Service South Florida | Red Rock Cleans,66,Post Construction Cleaning South Florida | Red Rock,52,Completed,Service page
+MEDIUM,dallas/post-construction-cleaning-services/+Page.tsx,Post Construction Cleaning Service in Dallas | Red Rock Cleans,62,Post Construction Cleaning Dallas | Red Rock Cleans,51,Completed,Service page
+MEDIUM,las-vegas/post-construction-cleaning-services/+Page.tsx,Post Construction Cleaning Service Las Vegas | Red Rock Cleans,62,Post Construction Cleaning Las Vegas | Red Rock Cleans,54,Completed,Service page
+MEDIUM,locations/ColumbusCalculator.tsx,Get a Quote - Columbus Ohio Cleaning Services | Red Rock Cleaning,65,Free Columbus Cleaning Quote | Red Rock Cleans,47,Completed,Calculator page
+MEDIUM,locations/SouthFloridaCalculator.tsx,Get a Quote - South Florida Cleaning Services | Red Rock Cleaning,65,Free South Florida Cleaning Quote | Red Rock Cleans,52,Completed,Calculator page
+MEDIUM,locations/LasVegasCalculator.tsx,Get a Quote - Las Vegas Cleaning Services | Red Rock Cleaning,61,Free Las Vegas Cleaning Quote | Red Rock Cleans,48,Completed,Calculator page
+MEDIUM,locations/DallasCalculator.tsx,Get a Quote - Dallas Cleaning Services | Red Rock Cleaning,61,Free Dallas Cleaning Quote | Red Rock Cleans,45,Completed,Calculator page
+MEDIUM,locations/ColumbusBooking.tsx,Book Now - Columbus Ohio Cleaning Services | Red Rock Cleaning,62,Book Columbus Cleaning Services | Red Rock Cleans,50,Completed,Booking page
+MEDIUM,locations/SouthFloridaBooking.tsx,Book Now - South Florida Cleaning Services | Red Rock Cleaning,62,Book South Florida Cleaning | Red Rock Cleans,46,Completed,Booking page
+MEDIUM,columbus-ohio/government-facility-cleaning/+Page.tsx,Government Facility Cleaning in Columbus Ohio | Red Rock Cleans,63,Government Facility Cleaning Columbus | Red Rock Cleans,55,Completed,Service page
+MEDIUM,columbus-ohio/industrial-cleaning/+Page.tsx,Industrial Cleaning Services in Columbus Ohio | Red Rock Cleans,63,Industrial Cleaning Columbus | Red Rock Cleans,46,Completed,Service page
+LOW,AboutUs.tsx,About Us - Professional Cleaning Services | Red Rock Cleaning,61,About Red Rock Cleans | Professional Cleaning Services,55,Completed,About page - Option 1
+CRITICAL,NotFound.tsx,MISSING TITLE,0,Page Not Found | Red Rock Cleans,32,Completed,Add title tag
+CRITICAL,las-vegas/salon-spa-cleaning/+Page.tsx,MISSING TITLE,0,Salon & Spa Cleaning Las Vegas | Red Rock Cleans,49,Completed,Verify page renders first
+CRITICAL,las-vegas/warehouse-cleaning/+Page.tsx,MISSING TITLE,0,Warehouse Cleaning Las Vegas | Red Rock Cleans,47,Completed,Verify page renders first
+
