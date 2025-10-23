@@ -64,7 +64,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         {/* Enhanced Navigation */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Home & Hiring Section */}
             <div className="space-y-6">
               {/* Home */}
@@ -251,37 +251,31 @@ export const Footer = () => {
                 >
                   {t("footer.commercial.salonSpa", { defaultValue: "Salon & Spa" })}
                 </Link>
-              </div>
-            </div>
-  
-            {/* Resources Section */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold text-primary mb-4">{t("footer.resources.title", { defaultValue: "Resources" })}</h3>
-              <div className="space-y-3">
-                <Link 
-                  to={getLanguagePrefix() + "/blog"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.resources.blog", { defaultValue: "Blog" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/commercial-cleaning-cost-estimator"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.resources.costEstimator", { defaultValue: "Commercial Cleaning Cost Estimator" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/commercial-cleaning-time-estimator"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.resources.timeEstimator", { defaultValue: "Commercial Cleaning Time Estimator" })}
-                </Link>
-                <Link 
-                  to={getLanguagePrefix() + "/"} 
-                  className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {t("footer.resources.pricing", { defaultValue: "Pricing" })}
-                </Link>
+                
+                {/* Resources Section (inside Commercial) */}
+                <div className="pt-4 mt-4 border-t border-slate-700">
+                  <div className="font-semibold text-primary mb-3 text-base">{t("footer.resources.title", { defaultValue: "Resources" })}</div>
+                  <div className="space-y-3">
+                    <Link 
+                      to={getLanguagePrefix() + "/blog"} 
+                      className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                    >
+                      {t("footer.resources.blog", { defaultValue: "Blog" })}
+                    </Link>
+                    <Link 
+                      to={getLanguagePrefix() + "/commercial-cleaning-cost-estimator"} 
+                      className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                    >
+                      {t("footer.resources.costEstimator", { defaultValue: "Commercial Cleaning Cost Estimator" })}
+                    </Link>
+                    <Link 
+                      to={getLanguagePrefix() + "/commercial-cleaning-time-estimator"} 
+                      className="block text-slate-300 hover:text-primary transition-colors duration-300 hover:translate-x-1 transform"
+                    >
+                      {t("footer.resources.timeEstimator", { defaultValue: "Commercial Cleaning Time Estimator" })}
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
