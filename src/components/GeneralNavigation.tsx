@@ -111,7 +111,7 @@ export const GeneralNavigation = () => {
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex items-center h-24">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to={getLanguagePrefix() + "/"} className="flex items-center space-x-2 flex-shrink-0">
             <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
@@ -122,18 +122,18 @@ export const GeneralNavigation = () => {
             {/* Location Selector for Mobile */}
             <div className="flex items-center gap-1">
               <MapPin className="w-3 h-3 text-muted-foreground" />
-            <Select value={location.pathname} onValueChange={handleLocationChange}>
+              <Select value={location.pathname} onValueChange={handleLocationChange}>
                 <SelectTrigger className="w-24 h-8 border-0 bg-transparent shadow-none text-xs">
-                <SelectValue>{getCurrentLocationName()}</SelectValue>
-              </SelectTrigger>
-              <SelectContent>
-                {locations.map((locationItem) => (
-                  <SelectItem key={locationItem.path} value={locationItem.path}>
-                    {locationItem.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+                  <SelectValue>{getCurrentLocationName()}</SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                  {locations.map((locationItem) => (
+                    <SelectItem key={locationItem.path} value={locationItem.path}>
+                      {locationItem.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
             
             {/* Language Toggle for Mobile */}
@@ -161,8 +161,8 @@ export const GeneralNavigation = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center justify-center space-x-8 flex-1">
             <Link to={getLanguagePrefix() + "/"} className="hover:text-primary transition-colors relative z-10">
               {t("nav.home")}
             </Link>
