@@ -26,7 +26,13 @@
   },
   "cta": {
     "needPro": "Need Professional Cleaning?",
-    "phone": "Call (888) 805-1733"
+    "phone": "Call (888) 805-1733",
+    "getQuote": "Get Your Quote"
+  },
+  "serviceLocations": {
+    "title": "{{service}} by Location",
+    "subtitle": "Select your location to learn more about our services in your area",
+    "viewDetails": "View Details"
   },
   "home": {
     "badge": "Trusted Local Cleaning Experts",

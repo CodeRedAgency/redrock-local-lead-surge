@@ -111,7 +111,13 @@
   },
   "cta": {
     "needPro": "¿Necesitas limpieza profesional?",
-    "phone": "Llama al (888) 805-1733"
+    "phone": "Llama al (888) 805-1733",
+    "getQuote": "Obtener Cotización"
+  },
+  "serviceLocations": {
+    "title": "{{service}} por Ubicación",
+    "subtitle": "Seleccione su ubicación para obtener más información sobre nuestros servicios en su área",
+    "viewDetails": "Ver Detalles"
   },
   "home": {
     "badge": "Expertos locales de limpieza de confianza",

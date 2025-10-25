@@ -1,5 +1,6 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
+import { ServiceLocationCards } from "@/components/ServiceLocationCards";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
@@ -185,6 +186,11 @@ const PostConstruction = () => {
             </div>
           </div>
         </main>
+        
+        <ServiceLocationCards 
+          servicePath="/post-construction-cleaning-services" 
+          serviceTitle={t("services.post.heading", { defaultValue: "Post Construction Cleaning Services" })}
+        />
         
         <Footer />
       </div>

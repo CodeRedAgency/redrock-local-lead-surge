@@ -1,5 +1,6 @@
 import { GeneralNavigation } from "@/components/GeneralNavigation";
 import { Footer } from "@/components/Footer";
+import { ServiceLocationCards } from "@/components/ServiceLocationCards";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
@@ -185,6 +186,11 @@ const DeepCleaning = () => {
             </div>
           </div>
         </main>
+        
+        <ServiceLocationCards 
+          servicePath="/deep-cleaning-services" 
+          serviceTitle={t("services.deep.heading", { defaultValue: "Deep Cleaning Services" })}
+        />
         
         <Footer />
       </div>

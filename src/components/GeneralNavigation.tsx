@@ -111,14 +111,31 @@ export const GeneralNavigation = () => {
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center h-24">
           {/* Logo */}
-          <Link to={getLanguagePrefix() + "/"} className="flex items-center space-x-2">
+          <Link to={getLanguagePrefix() + "/"} className="flex items-center space-x-2 flex-shrink-0">
             <img src={logo} alt="Red Rock Cleans" className="h-24 w-auto" />
           </Link>
 
           {/* Mobile Location Selector & Language Switcher */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="md:hidden flex items-center gap-2 flex-1 justify-center mr-2">
+            {/* Location Selector for Mobile */}
+            <div className="flex items-center gap-1">
+              <MapPin className="w-3 h-3 text-muted-foreground" />
+            <Select value={location.pathname} onValueChange={handleLocationChange}>
+                <SelectTrigger className="w-24 h-8 border-0 bg-transparent shadow-none text-xs">
+                <SelectValue>{getCurrentLocationName()}</SelectValue>
+              </SelectTrigger>
+              <SelectContent>
+                {locations.map((locationItem) => (
+                  <SelectItem key={locationItem.path} value={locationItem.path}>
+                    {locationItem.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            </div>
+            
             {/* Language Toggle for Mobile */}
             <div className="flex items-center space-x-1 bg-slate-100 rounded-md p-1">
               <Link 
