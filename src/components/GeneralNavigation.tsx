@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MapPin, ChevronDown, Phone } from "lucide-react";
+import { Menu, X, MapPin, ChevronDown, Phone, Calendar } from "lucide-react";
 import logo from "@/assets/logo.png";
 import {
   DropdownMenu,
@@ -322,7 +322,7 @@ export const GeneralNavigation = () => {
             </Button>
             <Button size="sm" asChild>
               <a href="/book-now-south-florida">
-                <Phone className="w-4 h-4 mr-2" />
+                <Calendar className="w-4 h-4 mr-2" />
                 {t("nav.bookNow")}
               </a>
             </Button>
