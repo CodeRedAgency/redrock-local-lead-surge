@@ -11,6 +11,7 @@
       "title": "Limpieza Residencial",
       "standard": "Servicios de Limpieza Estándar",
       "deep": "Servicios de Limpieza Profunda",
+      "airbnb": "Servicios de Limpieza de Airbnb",
       "moveOut": "Servicios de Limpieza para Mudanzas",
       "postConstruction": "Servicios de Limpieza Post Construcción"
     },

@@ -54,8 +54,8 @@ const Index = () => {
             <div className="container mx-auto px-4 relative z-10 flex items-center min-h-[80vh]">
               <div className="max-w-5xl mx-auto text-center space-y-8 w-full">
                 <div className="inline-block animate-fade-in">
-                  <span className="inline-flex items-center px-6 py-3 rounded-full bg-accent/15 border border-accent/30 text-accent font-semibold text-sm mb-8 shadow-lg backdrop-blur-sm">
-                    <span className="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse"></span>
+                  <span className="inline-flex items-center gap-2 text-accent font-medium text-sm uppercase tracking-wider">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></span>
                     {t("home.badge", { defaultValue: "Expertos locales de limpieza confiables" })}
                   </span>
                 </div>
@@ -68,19 +68,16 @@ const Index = () => {
                 <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-fade-in font-medium" style={{ animationDelay: "0.2s" }}>
                   {t("home.subtitle", { defaultValue: "Experimenta la excelencia en servicios de limpieza residencial, comercial y de alquiler vacacional en múltiples ubicaciones" })}
                 </p>
-                {/* Service Type Indicators */}
-                <div className="flex flex-wrap justify-center gap-4 pt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-                  <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/20">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-foreground/90">{t("home.badges.residential", { defaultValue: "Residencial" })}</span>
+                {/* Service Type Indicators - Informational Tags */}
+                <div className="flex flex-wrap justify-center gap-3 pt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+                  <div className="flex items-center gap-1.5 px-3 py-1 border-l-2 border-green-500 bg-green-500/5">
+                    <span className="text-xs font-medium text-foreground/80 uppercase tracking-wide">{t("home.badges.residential", { defaultValue: "Residencial" })}</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/20">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-foreground/90">{t("home.badges.commercial", { defaultValue: "Comercial" })}</span>
+                  <div className="flex items-center gap-1.5 px-3 py-1 border-l-2 border-blue-500 bg-blue-500/5">
+                    <span className="text-xs font-medium text-foreground/80 uppercase tracking-wide">{t("home.badges.commercial", { defaultValue: "Comercial" })}</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/20">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-foreground/90">{t("home.badges.vacationRental", { defaultValue: "Alquiler vacacional" })}</span>
+                  <div className="flex items-center gap-1.5 px-3 py-1 border-l-2 border-purple-500 bg-purple-500/5">
+                    <span className="text-xs font-medium text-foreground/80 uppercase tracking-wide">{t("home.badges.vacationRental", { defaultValue: "Alquiler vacacional" })}</span>
                   </div>
                 </div>
               </div>

@@ -6,7 +6,15 @@
     "about": "About",
     "contact": "Contact",
     "bookNow": "Book Now",
-    "login": "Login"
+    "login": "Login",
+    "residential": {
+      "title": "Residential Cleaning",
+      "standard": "Standard Cleaning Services",
+      "deep": "Deep Cleaning Services",
+      "airbnb": "Airbnb Cleaning Services",
+      "moveOut": "Move Out Cleaning Services",
+      "postConstruction": "Post Construction Cleaning Services"
+    }
   },
   "blog": {
     "title": "Cleaning Tips & Advice",

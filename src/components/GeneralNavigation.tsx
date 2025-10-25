@@ -165,6 +165,9 @@ export const GeneralNavigation = () => {
                       <Link to={getLanguagePrefix() + "/deep-cleaning-services"}>{t("nav.residential.deep", { defaultValue: "Deep Cleaning Services" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
+                      <Link to={getLanguagePrefix() + "/airbnb-cleaning-services"}>{t("nav.residential.airbnb", { defaultValue: "Airbnb Cleaning Services" })}</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
                       <Link to={getLanguagePrefix() + "/move-out-cleaning-services"}>{t("nav.residential.moveOut", { defaultValue: "Move Out Cleaning Services" })}</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -330,18 +333,21 @@ export const GeneralNavigation = () => {
               <div>
                 <div className="font-medium mb-2">{t("nav.services")}</div>
                 <div className="ml-4 space-y-2">
-                  <div className="font-medium text-sm text-muted-foreground mb-1">Residential Cleaning</div>
-                  <Link to="/standard-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Standard Cleaning Services
+                  <div className="font-medium text-sm text-muted-foreground mb-1">{t("nav.residential.title", { defaultValue: "Residential Cleaning" })}</div>
+                  <Link to={getLanguagePrefix() + "/standard-cleaning-services"} className="block ml-4 hover:text-primary transition-colors text-sm">
+                    {t("nav.residential.standard", { defaultValue: "Standard Cleaning Services" })}
                   </Link>
-                  <Link to="/deep-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Deep Cleaning Services
+                  <Link to={getLanguagePrefix() + "/deep-cleaning-services"} className="block ml-4 hover:text-primary transition-colors text-sm">
+                    {t("nav.residential.deep", { defaultValue: "Deep Cleaning Services" })}
                   </Link>
-                  <Link to="/move-out-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Move Out Cleaning Services
+                  <Link to={getLanguagePrefix() + "/airbnb-cleaning-services"} className="block ml-4 hover:text-primary transition-colors text-sm">
+                    {t("nav.residential.airbnb", { defaultValue: "Airbnb Cleaning Services" })}
                   </Link>
-                  <Link to="/post-construction-cleaning-services" className="block ml-4 hover:text-primary transition-colors text-sm">
-                    Post Construction Cleaning Services
+                  <Link to={getLanguagePrefix() + "/move-out-cleaning-services"} className="block ml-4 hover:text-primary transition-colors text-sm">
+                    {t("nav.residential.moveOut", { defaultValue: "Move Out Cleaning Services" })}
+                  </Link>
+                  <Link to={getLanguagePrefix() + "/post-construction-cleaning-services"} className="block ml-4 hover:text-primary transition-colors text-sm">
+                    {t("nav.residential.postConstruction", { defaultValue: "Post Construction Cleaning Services" })}
                   </Link>
                 </div>
               </div>
