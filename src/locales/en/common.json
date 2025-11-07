@@ -29,6 +29,123 @@
     "phone": "Call (888) 805-1733",
     "getQuote": "Get Your Quote"
   },
+  "checklists": {
+    "airbnb": {
+      "title": "Airbnb & Short-Term Rental Cleaning Checklist",
+      "intro": "Our Airbnb Cleaning specialists rely on this comprehensive Short-Term Rental Checklist to keep every guest space pristine, stocked, and ready for five-star reviews.",
+      "introWithLocation": "Our {{location}} Airbnb Cleaning specialists rely on this comprehensive Short-Term Rental Checklist to keep every guest space pristine, stocked, and ready for five-star reviews.",
+      "sections": {
+        "kitchen": {
+          "title": "Kitchen",
+          "items": [
+            "Check refrigerator for leftover food or messes",
+            "Clean out crumbs or other messes from cabinets",
+            "Clean faucets",
+            "Clean and replace kitchen towels",
+            "Clean sink",
+            "Empty/run dishwasher as needed",
+            "Make sure hand soap is full",
+            "Remove trash",
+            "Wipe down counters and refrigerator shelves"
+          ]
+        },
+        "bathrooms": {
+          "title": "Bathrooms",
+          "items": [
+            "Change and replace towels",
+            "Clean sink and shower drains for hair and clogs",
+            "Clean faucets",
+            "Clean shower",
+            "Make sure handsoap is available",
+            "Mop floors",
+            "Remove trash",
+            "Scrub toilet",
+            "Spray and rinse shower and shower curtain",
+            "Sweep or vacuum"
+          ]
+        },
+        "bedrooms": {
+          "title": "Bedrooms",
+          "items": [
+            "Change and replace sheets and linens",
+            "Inspect closets",
+            "Remove any trash from space and empty trash bins",
+            "Sweep/vacuum space (including under the bed)",
+            "Wipe down blades of any fans",
+            "Wipe down windows"
+          ]
+        },
+        "livingRoom": {
+          "title": "Living/Family Room",
+          "items": [
+            "Dust/wipe any furniture and high-touch surfaces",
+            "Inspect closets",
+            "Remove any trash from space and empty trash bins",
+            "Sweep/vacuum space (including under couches and tables)",
+            "Wipe down windows"
+          ]
+        },
+        "laundryRoom": {
+          "title": "Laundry Room/Utility Room",
+          "items": [
+            "Check and clean up any detergent spills",
+            "Check laundry baskets are clean and ready for use",
+            "Remove dryer lint",
+            "Wipe down exterior of washer and dryer"
+          ]
+        },
+        "exterior": {
+          "title": "Exterior of Property",
+          "items": [
+            "Remove any trash or debris",
+            "Clean BBQ grill or other outdoor cooking*",
+            "Disinfect any dining areas",
+            "Sweep sitting/eating area",
+            "Wipe down patio furniture",
+            "Shake out \"Welcome\" mats"
+          ]
+        },
+        "other": {
+          "title": "Other (General Prep)",
+          "items": [
+            "Coffee/tea",
+            "Dish soaps/hand soaps",
+            "Laundry detergent",
+            "Napkins/paper towels",
+            "Toiletries (shampoo/conditioner/body wash)",
+            "Trash bags",
+            "Make note of other items in need of restock"
+          ]
+        },
+        "extraServices": {
+          "title": "Extra Services*",
+          "subSections": [
+            {
+              "title": "Every 2-4 Weeks (Extra*):",
+              "items": [
+                "Check for any burnt light bulbs",
+                "Wash duvet covers",
+                "Check plumbing and faucets throughout property"
+              ]
+            },
+            {
+              "title": "3-6 Months (Extra*):",
+              "items": [
+                "Air out the property by opening windows and doors",
+                "Dust all furniture",
+                "Deep clean behind/under refrigerator and stove"
+              ]
+            }
+          ]
+        }
+      },
+      "notesTitle": "Extra Services*",
+      "notes": [
+        "Extra Service will require additional time.",
+        "Checklist is a guideline and some homes can require additional time."
+      ]
+    }
+  },
   "serviceLocations": {
     "title": "{{service}} by Location",
     "subtitle": "Select your location to learn more about our services in your area",

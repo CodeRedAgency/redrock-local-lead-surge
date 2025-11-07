@@ -114,6 +114,123 @@
     "phone": "Llama al (888) 805-1733",
     "getQuote": "Obtener Cotización"
   },
+  "checklists": {
+    "airbnb": {
+      "title": "Lista de verificación de limpieza para Airbnb y alquileres a corto plazo",
+      "intro": "Nuestro equipo de limpieza de Airbnb utiliza esta completa Lista de Verificación para Alquileres a Corto Plazo para mantener cada espacio impecable, abastecido y listo para obtener reseñas de cinco estrellas.",
+      "introWithLocation": "Nuestro equipo de limpieza de Airbnb en {{location}} utiliza esta completa Lista de Verificación para Alquileres a Corto Plazo para mantener cada espacio impecable, abastecido y listo para obtener reseñas de cinco estrellas.",
+      "sections": {
+        "kitchen": {
+          "title": "Cocina",
+          "items": [
+            "Revisa el refrigerador por comida sobrante o derrames",
+            "Limpia migas u otros desórdenes de los gabinetes",
+            "Limpia los grifos",
+            "Lava y reemplaza las toallas de cocina",
+            "Limpia el fregadero",
+            "Vacía/pon a funcionar el lavavajillas según sea necesario",
+            "Asegúrate de que el jabón de manos esté lleno",
+            "Saca la basura",
+            "Limpia las encimeras y los estantes del refrigerador"
+          ]
+        },
+        "bathrooms": {
+          "title": "Baños",
+          "items": [
+            "Cambia y reemplaza las toallas",
+            "Limpia los desagües del lavabo y la ducha para eliminar cabellos y obstrucciones",
+            "Limpia los grifos",
+            "Limpia la ducha",
+            "Asegúrate de que haya jabón de manos disponible",
+            "Trapea los pisos",
+            "Saca la basura",
+            "Friega el inodoro",
+            "Rocía y enjuaga la ducha y la cortina",
+            "Barre o aspira"
+          ]
+        },
+        "bedrooms": {
+          "title": "Dormitorios",
+          "items": [
+            "Cambia y reemplaza sábanas y ropa de cama",
+            "Inspecciona los closets",
+            "Retira cualquier basura y vacía los botes",
+            "Barre/aspira el espacio (incluyendo debajo de la cama)",
+            "Limpia las aspas de los ventiladores",
+            "Limpia las ventanas"
+          ]
+        },
+        "livingRoom": {
+          "title": "Sala/Área familiar",
+          "items": [
+            "Quita el polvo/lustra muebles y superficies de alto contacto",
+            "Inspecciona los closets",
+            "Retira cualquier basura y vacía los botes",
+            "Barre/aspira el espacio (incluyendo debajo de sofás y mesas)",
+            "Limpia las ventanas"
+          ]
+        },
+        "laundryRoom": {
+          "title": "Lavandería/Cuarto de servicio",
+          "items": [
+            "Revisa y limpia cualquier derrame de detergente",
+            "Verifica que las canastas de ropa estén limpias y listas para usar",
+            "Retira la pelusa de la secadora",
+            "Limpia el exterior de la lavadora y la secadora"
+          ]
+        },
+        "exterior": {
+          "title": "Exterior de la propiedad",
+          "items": [
+            "Retira cualquier basura o escombros",
+            "Limpia la parrilla o cualquier zona de cocina exterior*",
+            "Desinfecta las áreas de comedor",
+            "Barre el área de estar/comedor",
+            "Limpia los muebles del patio",
+            "Sacude los tapetes de bienvenida"
+          ]
+        },
+        "other": {
+          "title": "Otros (Preparación general)",
+          "items": [
+            "Café/té",
+            "Jabón para trastes/jabón de manos",
+            "Detergente para ropa",
+            "Servilletas/toallas de papel",
+            "Artículos de tocador (shampoo/acondicionador/gel de baño)",
+            "Bolsas de basura",
+            "Anota otros artículos que necesiten reabastecerse"
+          ]
+        },
+        "extraServices": {
+          "title": "Servicios adicionales*",
+          "subSections": [
+            {
+              "title": "Cada 2-4 semanas (Extra*):",
+              "items": [
+                "Revisa si hay focos fundidos",
+                "Lava las fundas de edredón",
+                "Verifica la plomería y los grifos en toda la propiedad"
+              ]
+            },
+            {
+              "title": "Cada 3-6 meses (Extra*):",
+              "items": [
+                "Ventila la propiedad abriendo puertas y ventanas",
+                "Quita el polvo de todos los muebles",
+                "Limpia a profundidad detrás/debajo del refrigerador y la estufa"
+              ]
+            }
+          ]
+        }
+      },
+      "notesTitle": "Servicios adicionales*",
+      "notes": [
+        "Los servicios adicionales requieren tiempo adicional.",
+        "La lista es una guía y algunos hogares pueden necesitar tiempo adicional."
+      ]
+    }
+  },
   "serviceLocations": {
     "title": "{{service}} por Ubicación",
     "subtitle": "Seleccione su ubicación para obtener más información sobre nuestros servicios en su área",

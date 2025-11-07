@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
 import { Check, Clock, Star, Users } from "lucide-react";
+import { AirbnbChecklistSection } from "@/components/AirbnbChecklistSection";
 
 const AirbnbCleaning = () => {
   const { t } = useTranslation();
@@ -52,70 +53,7 @@ const AirbnbCleaning = () => {
                 </div>
               </div>
 
-              <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                <h2 className="text-3xl font-bold mb-6 text-primary">{t("services.airbnb.checklist.title", { defaultValue: "Turnover Cleaning Checklist" })}</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.airbnb.checklist.every", { defaultValue: "Every Turnover" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.e1", { defaultValue: "Strip and remake all beds with fresh linens" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.e2", { defaultValue: "Replace all towels and toiletries" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.e3", { defaultValue: "Deep clean all bathrooms" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.e4", { defaultValue: "Kitchen deep clean and restock" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.e5", { defaultValue: "Vacuum and mop all floors" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.e6", { defaultValue: "Dust all surfaces and decor" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.airbnb.checklist.guest", { defaultValue: "Guest Experience" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.g1", { defaultValue: "Check and replenish supplies" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.g2", { defaultValue: "Test all appliances and remotes" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.g3", { defaultValue: "Report any maintenance issues" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.g4", { defaultValue: "Take before/after photos" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.g5", { defaultValue: "Lock and secure property" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.airbnb.checklist.g6", { defaultValue: "Send completion notification" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <AirbnbChecklistSection />
 
               <div className="bg-primary text-primary-foreground p-8 rounded-lg mb-12">
                 <h2 className="text-3xl font-bold mb-6 text-center">{t("services.airbnb.why.title", { defaultValue: "Why Hosts Choose Us" })}</h2>

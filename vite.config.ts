@@ -46,25 +46,51 @@ export default defineConfig(({ mode }) => ({
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Split vendor chunks for better caching
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-vendor': [
-            '@radix-ui/react-accordion',
-            '@radix-ui/react-dialog',
-            '@radix-ui/react-dropdown-menu',
-            '@radix-ui/react-popover',
-            '@radix-ui/react-select',
-            '@radix-ui/react-tabs',
-            '@radix-ui/react-toast',
-            '@radix-ui/react-tooltip'
-          ],
-          'form-vendor': [
-            'react-hook-form',
-            '@hookform/resolvers',
-            'zod'
-          ],
-          'icons': ['lucide-react']
+        manualChunks(id) {
+          const normalizedId = id.replace(/\\/g, "/");
+
+          if (normalizedId.includes("node_modules")) {
+            if (/[\\/]node_modules[\\/]react/.test(id) ||
+                normalizedId.includes("react-dom") ||
+                normalizedId.includes("react-router-dom")) {
+              return "react-vendor";
+            }
+
+            if (normalizedId.includes("@radix-ui")) {
+              return "ui-vendor";
+            }
+
+            if (
+              normalizedId.includes("react-hook-form") ||
+              normalizedId.includes("@hookform/resolvers") ||
+              normalizedId.includes("zod")
+            ) {
+              return "form-vendor";
+            }
+
+            if (normalizedId.includes("lucide-react")) {
+              return "icons";
+            }
+
+            return "vendor";
+          }
+
+          if (normalizedId.includes("/src/pages/")) {
+            const [firstSegment] = normalizedId
+              .split("/src/pages/")[1]
+              .split("/");
+            return `page-${firstSegment || "root"}`;
+          }
+
+          if (normalizedId.includes("/src/components/")) {
+            return "components";
+          }
+
+          if (normalizedId.includes("/src/hooks/")) {
+            return "hooks";
+          }
+
+          return undefined;
         },
         // Better chunk naming for cache optimization
         chunkFileNames: 'assets/js/[name]-[hash].js',

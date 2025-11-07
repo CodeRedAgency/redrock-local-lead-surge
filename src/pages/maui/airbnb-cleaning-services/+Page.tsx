@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { AirbnbChecklistSection } from "@/components/AirbnbChecklistSection";
 
 const neighborhoods = [
   {
@@ -286,6 +287,10 @@ const AirbnbCleaningMauiPage = () => {
               </div>
             </div>
           </section>
+
+          <AirbnbChecklistSection
+            intro={t('checklists.airbnb.introWithLocation', { location: 'Maui' })}
+          />
 
           {/* Our Turnover Process for Flawless Guest Arrivals */}
           <section className="py-20 bg-background">

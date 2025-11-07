@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
+import { AirbnbChecklistSection } from "@/components/AirbnbChecklistSection";
 
 const neighborhoods = [
   {
@@ -426,6 +427,9 @@ export default function AirbnbCleaningLasVegasPage() {
               </div>
             </div>
           </section>
+          <AirbnbChecklistSection
+            intro={t("checklists.airbnb.introWithLocation", { location: "Las Vegas" })}
+          />
 
           {/* Our Process Section */}
           <section className="py-20 bg-background">
