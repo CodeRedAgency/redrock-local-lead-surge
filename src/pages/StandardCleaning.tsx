@@ -4,7 +4,9 @@ import { ServiceLocationCards } from "@/components/ServiceLocationCards";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
-import { Check, Clock, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import heroResidential from "@/assets/hero-residential.jpg";
 import { StandardCleaningChecklistSection } from "@/components/StandardCleaningChecklistSection";
 
 const StandardCleaning = () => {
@@ -20,47 +22,75 @@ const StandardCleaning = () => {
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
         
-        <main className="flex-grow py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h1 className="text-5xl font-bold mb-6">{t("services.standard.heading", { defaultValue: "Servicios de limpieza estándar" })}</h1>
-                <p className="text-xl text-muted-foreground">
-                  {t("services.standard.tagline", { defaultValue: "Limpieza de mantenimiento regular para mantener su espacio siempre fresco y limpio" })}
-                </p>
-              </div>
+        <main className="flex-grow">
+          {/* Hero Section */}
+          <section className="relative h-[500px] flex items-center justify-center">
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${heroResidential})` }}
+            >
+              <div className="absolute inset-0 bg-black/50" />
+            </div>
+            <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("services.standard.heading", { defaultValue: "Standard Cleaning Services" })}</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                {t("services.standard.tagline", { defaultValue: "Regular, professional cleaning that keeps your space fresh and inviting" })}
+              </p>
+              <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
+                <Link to="/">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
+              </Button>
+            </div>
+          </section>
 
-              <div className="grid md:grid-cols-3 gap-6 mb-12">
-                <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                  <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">{t("services.standard.flex.title", { defaultValue: "Flexible Scheduling" })}</h3>
-                  <p className="text-muted-foreground">{t("services.standard.flex.copy", { defaultValue: "Weekly, bi-weekly, or monthly options" })}</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                  <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">{t("services.standard.team.title", { defaultValue: "Professional Team" })}</h3>
-                  <p className="text-muted-foreground">{t("services.standard.team.copy", { defaultValue: "Trained and experienced cleaners" })}</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                  <Check className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">{t("services.standard.quality.title", { defaultValue: "Quality Guaranteed" })}</h3>
-                  <p className="text-muted-foreground">{t("services.standard.quality.copy", { defaultValue: "100% satisfaction promise" })}</p>
-                </div>
-              </div>
+          <StandardCleaningChecklistSection />
 
-              <StandardCleaningChecklistSection />
+          {/* Why Choose Us */}
+          <section className="py-20 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-4xl font-bold mb-12">{t("services.standard.why.title", { defaultValue: "Why Choose Red Rock for Standard Cleaning?" })}</h2>
+                
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">⏰</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{t("services.standard.why.flexible.title", { defaultValue: "Flexible Scheduling" })}</h3>
+                    <p className="text-muted-foreground">{t("services.standard.why.flexible.copy", { defaultValue: "Weekly, bi-weekly, or monthly options to fit your lifestyle." })}</p>
+                  </div>
 
-              <div className="bg-muted/30 p-8 rounded-lg text-center">
-                <h2 className="text-3xl font-bold mb-4">{t("services.standard.cta.title", { defaultValue: "Ready to Get Started?" })}</h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  {t("services.standard.cta.copy", { defaultValue: "Book your standard cleaning service today and enjoy a consistently clean space." })}
-                </p>
-                <a href="tel:+18888051733" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                  {t("cta.phone")}
-                </a>
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">✨</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{t("services.standard.why.consistent.title", { defaultValue: "Consistent Quality" })}</h3>
+                    <p className="text-muted-foreground">{t("services.standard.why.consistent.copy", { defaultValue: "Same high standards every visit with trained professionals." })}</p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">💯</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{t("services.standard.why.satisfaction.title", { defaultValue: "100% Satisfaction" })}</h3>
+                    <p className="text-muted-foreground">{t("services.standard.why.satisfaction.copy", { defaultValue: "We stand behind our work with a satisfaction guarantee." })}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="py-20 bg-primary/5">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-4xl font-bold mb-6">{t("services.standard.cta.title", { defaultValue: "Ready for a Consistently Clean Space?" })}</h2>
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                {t("services.standard.cta.copy", { defaultValue: "Get a quote for professional standard cleaning services today." })}
+              </p>
+              <Button size="lg" asChild>
+                <Link to="/">{t("cta.getQuote", { defaultValue: "Get Your Quote" })}</Link>
+              </Button>
+            </div>
+          </section>
         </main>
         
         <ServiceLocationCards 

@@ -4,7 +4,10 @@ import { ServiceLocationCards } from "@/components/ServiceLocationCards";
 import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
-import { Check, HardHat, Sparkles, Shield } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Check } from "lucide-react";
+import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const PostConstruction = () => {
   const { t } = useTranslation();
@@ -19,38 +22,34 @@ const PostConstruction = () => {
       <div className="min-h-screen flex flex-col">
         <GeneralNavigation />
         
-        <main className="flex-grow py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h1 className="text-5xl font-bold mb-6">{t("services.post.heading", { defaultValue: "Post Construction Cleaning" })}</h1>
-                <p className="text-xl text-muted-foreground">
-                  {t("services.post.tagline", { defaultValue: "Professional cleaning after construction, renovation, or remodeling projects" })}
-                </p>
-              </div>
+        <main className="flex-grow">
+          {/* Hero Section */}
+          <section className="relative h-[500px] flex items-center justify-center">
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${heroCommercial})` }}
+            >
+              <div className="absolute inset-0 bg-black/50" />
+            </div>
+            <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">{t("services.post.heading", { defaultValue: "Post-Construction Cleaning" })}</h1>
+              <p className="text-xl md:text-2xl mb-8">
+                {t("services.post.tagline", { defaultValue: "Professional cleaning after construction, renovation, or remodeling projects" })}
+              </p>
+              <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
+                <Link to="/">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
+              </Button>
+            </div>
+          </section>
 
-              <div className="grid md:grid-cols-3 gap-6 mb-12">
-                <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                  <HardHat className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">Construction Ready</h3>
-                  <p className="text-muted-foreground">Specialized equipment & techniques</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                  <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">Move-In Ready</h3>
-                  <p className="text-muted-foreground">From construction site to home</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg shadow-md text-center">
-                  <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">Safety First</h3>
-                  <p className="text-muted-foreground">Proper dust and debris removal</p>
-                </div>
-              </div>
-
-              <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                <h2 className="text-3xl font-bold mb-6 text-primary">{t("services.post.process.title", { defaultValue: "Three-Phase Cleaning Process" })}</h2>
-                
-                <div className="space-y-8">
+          {/* Three-Phase Process */}
+          <section className="py-20 bg-muted/30">
+            <div className="container mx-auto px-4">
+              <div className="max-w-6xl mx-auto">
+                <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
+                  <h2 className="text-3xl font-bold mb-6 text-primary">{t("services.post.process.title", { defaultValue: "Three-Phase Cleaning Process" })}</h2>
+                  
+                  <div className="space-y-8">
                   <div className="border-l-4 border-primary pl-6">
                     <h3 className="text-2xl font-bold mb-4">{t("services.post.process.p1.title", { defaultValue: "Phase 1: Rough Clean" })}</h3>
                     <p className="text-muted-foreground mb-4">{t("services.post.process.p1.copy", { defaultValue: "Initial cleanup during construction phase" })}</p>
@@ -124,10 +123,10 @@ const PostConstruction = () => {
                     </ul>
                   </div>
                 </div>
-              </div>
+                </div>
 
-              <div className="bg-muted/30 p-8 rounded-lg mb-12">
-                <h2 className="text-3xl font-bold mb-6 text-center">{t("services.post.remove.title", { defaultValue: "What We Remove" })}</h2>
+                <div className="bg-muted/30 p-8 rounded-lg mb-12">
+                  <h2 className="text-3xl font-bold mb-6 text-center">{t("services.post.remove.title", { defaultValue: "What We Remove" })}</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-card p-4 rounded-lg text-center">
                     <p className="font-semibold">{t("services.post.remove.r1", { defaultValue: "Construction Dust" })}</p>
@@ -154,10 +153,10 @@ const PostConstruction = () => {
                     <p className="font-semibold">{t("services.post.remove.r8", { defaultValue: "Debris" })}</p>
                   </div>
                 </div>
-              </div>
+                </div>
 
-              <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">{t("services.post.perfectFor.title", { defaultValue: "Perfect For" })}</h2>
+                <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center">
+                  <h2 className="text-3xl font-bold mb-4">{t("services.post.perfectFor.title", { defaultValue: "Perfect For" })}</h2>
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   <div>
                     <h3 className="font-bold mb-2">{t("services.post.perfectFor.n1.title", { defaultValue: "New Construction" })}</h3>
@@ -172,19 +171,58 @@ const PostConstruction = () => {
                     <p>{t("services.post.perfectFor.n3.copy", { defaultValue: "Office build-outs and retail spaces" })}</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="bg-card p-8 rounded-lg shadow-lg text-center">
-                <h2 className="text-3xl font-bold mb-4">{t("services.post.cta.title", { defaultValue: "Ready to Make It Move-In Ready?" })}</h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  {t("services.post.cta.copy", { defaultValue: "Let us transform your construction site into a beautiful, clean space." })}
-                </p>
-                <a href="tel:+18888051733" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                  {t("cta.phone")}
-                </a>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          {/* Why Choose Us */}
+          <section className="py-20 bg-background">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-4xl font-bold mb-12">{t("services.post.why.title", { defaultValue: "Why Choose Red Rock for Post-Construction Cleaning?" })}</h2>
+                
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">🛠️</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{t("services.post.why.specialized.title", { defaultValue: "Specialized Equipment" })}</h3>
+                    <p className="text-muted-foreground">{t("services.post.why.specialized.copy", { defaultValue: "Industrial-grade tools and techniques for construction debris." })}</p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">✨</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{t("services.post.why.movein.title", { defaultValue: "Move-In Ready" })}</h3>
+                    <p className="text-muted-foreground">{t("services.post.why.movein.copy", { defaultValue: "We transform construction sites into beautiful, clean spaces." })}</p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl">🏗️</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{t("services.post.why.experience.title", { defaultValue: "Construction Experience" })}</h3>
+                    <p className="text-muted-foreground">{t("services.post.why.experience.copy", { defaultValue: "Years of experience with contractors and new builds." })}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="py-20 bg-primary/5">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-4xl font-bold mb-6">{t("services.post.cta.title", { defaultValue: "Ready to Make It Move-In Ready?" })}</h2>
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                {t("services.post.cta.copy", { defaultValue: "Get a quote for professional post-construction cleaning services." })}
+              </p>
+              <Button size="lg" asChild>
+                <Link to="/">{t("cta.getQuote", { defaultValue: "Get Your Quote" })}</Link>
+              </Button>
+            </div>
+          </section>
         </main>
         
         <ServiceLocationCards 
