@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { MoveOutChecklistSection } from "@/components/MoveOutChecklistSection";
 
 const cities = [
   {
@@ -477,72 +478,9 @@ const MoveOutCleaningSouthFloridaPage = () => {
             </div>
           </section>
 
-          {/* Our Deposit-Focused Move Out Cleaning Checklist */}
-          <section className="py-20 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('southFlorida.moveout.checklistTitle')}</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Kitchen & Appliances
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Inside oven and all oven racks
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Inside refrigerator and freezer
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Inside all cabinets and drawers
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean and sanitize all surfaces
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean inside dishwasher and microwave
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Bathrooms & Details
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean inside all bathroom cabinets
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean baseboards throughout
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean windows and remove salt residue
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Sanitize all fixtures and hardware
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean light fixtures and ceiling fans
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <MoveOutChecklistSection
+            intro={t('checklists.moveOut.introWithLocation', { location: 'South Florida' })}
+          />
 
           {/* Make Your Move Easier and Secure Your Deposit */}
           <section className="py-20 bg-muted/30">
