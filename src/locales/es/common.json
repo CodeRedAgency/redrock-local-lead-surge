@@ -298,7 +298,7 @@
         }
       },
       "notIncludedTitle": "NO INCLUIDO (Exclusiones críticas)",
-      "notIncludedIntro": "Asegúrese de que esta sección sea muy visible en su página web",
+      "notIncludedIntro": "",
       "notIncludedItems": [
         "Cualquier cosa a más de 10 pies de altura (o cualquier cosa que no se pueda alcanzar con una escalera de 3 a 4 pies)",
         "Lavar bombillas (debido al riesgo de rotura)",
@@ -383,7 +383,7 @@
         }
       },
       "notIncludedTitle": "NO INCLUIDO (Exclusiones críticas)",
-      "notIncludedIntro": "Asegúrese de que esta sección esté destacada como una política en su página web",
+      "notIncludedIntro": "",
       "notIncludedItems": [
         "Cualquier cosa a más de 10 pies de altura (o cualquier cosa que no se pueda alcanzar con una escalera de 3 a 4 pies)",
         "Lavar bombillas (debido al riesgo de rotura)",

@@ -213,7 +213,7 @@
         }
       },
       "notIncludedTitle": "NOT INCLUDED (Critical Exclusions)",
-      "notIncludedIntro": "Ensure this section is highly visible on your webpage",
+      "notIncludedIntro": "",
       "notIncludedItems": [
         "Anything above 10 feet (or anything that cannot be reached within a 3-to-4 foot step ladder)",
         "Washing light bulbs (due to risk of breakage)",
@@ -298,7 +298,7 @@
         }
       },
       "notIncludedTitle": "NOT INCLUDED (Critical Exclusions)",
-      "notIncludedIntro": "Ensure this section is highlighted as a policy on your webpage",
+      "notIncludedIntro": "",
       "notIncludedItems": [
         "Anything above 10 feet (or anything that cannot be reached within a 3-to-4 foot step ladder)",
         "Washing light bulbs (due to risk of breakage)",
