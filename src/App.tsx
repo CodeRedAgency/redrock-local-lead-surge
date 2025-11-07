@@ -27,6 +27,7 @@ import DeepCleaning from "./pages/DeepCleaning";
 import AirbnbCleaning from "./pages/AirbnbCleaning";
 import PostConstruction from "./pages/PostConstruction";
 import MoveOutCleaning from "./pages/MoveOutCleaning";
+import ResidentialServicesChecklist from "./pages/ResidentialServicesChecklist";
 import CommercialCleaningEstimator from "./pages/CommercialCleaningEstimator";
 import CommercialCleaningTimeEstimatorPage from "./pages/commercial-cleaning-time-estimator/index.page";
 import CommercialCleaningCostEstimatorPage from "./pages/commercial-cleaning-cost-estimator/index.page";
@@ -239,6 +240,7 @@ const App = () => (
           {...createDualLanguageRoutes("/sitemap", <Sitemap />)}
           
           {/* Services Pages */}
+          {...createDualLanguageRoutes("/residential-services-checklist", <ResidentialServicesChecklist />)}
           {...createDualLanguageRoutes("/blog/standard-cleaning-vs-deep-cleaning", <StandardVsDeep />)}
           {...createDualLanguageRoutes("/standard-cleaning-services", <StandardCleaning />)}
           {...createDualLanguageRoutes("/deep-cleaning-services", <DeepCleaning />)}

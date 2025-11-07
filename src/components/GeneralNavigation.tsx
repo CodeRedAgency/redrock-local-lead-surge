@@ -193,8 +193,11 @@ export const GeneralNavigation = () => {
                 {t("nav.services")} <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to={getLanguagePrefix() + "/residential-services-checklist"}>{t("nav.residential.title", { defaultValue: "Residential Cleaning" })}</Link>
+                </DropdownMenuItem>
                 <DropdownMenuSub>
-                  <DropdownMenuSubTrigger>{t("nav.residential.title", { defaultValue: "Residential Cleaning" })}</DropdownMenuSubTrigger>
+                  <DropdownMenuSubTrigger>{t("nav.residential.services", { defaultValue: "Residential Services" })}</DropdownMenuSubTrigger>
                   <DropdownMenuSubContent>
                     <DropdownMenuItem asChild>
                       <Link to={getLanguagePrefix() + "/standard-cleaning-services"}>{t("nav.residential.standard", { defaultValue: "Standard Cleaning Services" })}</Link>
@@ -367,7 +370,10 @@ export const GeneralNavigation = () => {
               <div>
                 <div className="font-medium mb-2">{t("nav.services")}</div>
                 <div className="ml-4 space-y-2">
-                  <div className="font-medium text-sm text-muted-foreground mb-1">{t("nav.residential.title", { defaultValue: "Residential Cleaning" })}</div>
+                  <Link to={getLanguagePrefix() + "/residential-services-checklist"} className="block font-medium text-sm hover:text-primary transition-colors">
+                    {t("nav.residential.title", { defaultValue: "Residential Cleaning" })}
+                  </Link>
+                  <div className="font-medium text-sm text-muted-foreground mb-1 mt-2">{t("nav.residential.services", { defaultValue: "Residential Services" })}</div>
                   <Link to={getLanguagePrefix() + "/standard-cleaning-services"} className="block ml-4 hover:text-primary transition-colors text-sm">
                     {t("nav.residential.standard", { defaultValue: "Standard Cleaning Services" })}
                   </Link>
