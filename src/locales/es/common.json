@@ -229,6 +229,89 @@
         "Los servicios adicionales requieren tiempo adicional.",
         "La lista es una guía y algunos hogares pueden necesitar tiempo adicional."
       ]
+    },
+    "moveOut": {
+      "title": "Lista de verificación de limpieza para mudanza",
+      "intro": "Nuestra lista completa de limpieza para mudanza garantiza que todos los detalles estén cubiertos para ayudarlo a recuperar su depósito de seguridad completo.",
+      "introWithLocation": "Nuestros especialistas en limpieza para mudanza en {{location}} utilizan esta lista completa para garantizar que todos los detalles estén cubiertos y le ayuden a recuperar su depósito de seguridad completo.",
+      "sections": {
+        "kitchen": {
+          "title": "Cocina",
+          "items": [
+            "Eliminar telarañas",
+            "Limpiar el exterior de los electrodomésticos grandes",
+            "Limpiar el interior del microondas",
+            "Limpiar y secar los fregaderos",
+            "Limpiar todas las encimeras",
+            "Limpiar la estufa y el área del extractor",
+            "Limpiar el salpicadero detrás del fregadero y electrodomésticos",
+            "Aspirar, barrer y trapear los pisos",
+            "Limpiar los marcos de las ventanas",
+            "Quitar el polvo y limpiar las persianas"
+          ]
+        },
+        "bathrooms": {
+          "title": "Baños",
+          "items": [
+            "Eliminar telarañas",
+            "Quitar el polvo de las lámparas",
+            "Limpiar los espejos",
+            "Limpiar y secar la bañera y la ducha a mano",
+            "Limpiar y secar los lavabos a mano",
+            "Limpiar la lechada de las baldosas",
+            "Limpiar las puertas de la ducha",
+            "Limpiar el interior, exterior y parte superior de los inodoros",
+            "Limpiar las encimeras",
+            "Quitar el polvo de la parte superior del marco de la puerta"
+          ]
+        },
+        "livingAreas": {
+          "title": "Áreas de estar y dormitorios",
+          "items": [
+            "Eliminación de telarañas",
+            "Quitar el polvo de los marcos de las puertas",
+            "Quitar el polvo de los ventiladores de techo",
+            "Quitar el polvo y limpiar las persianas",
+            "Limpiar los marcos de las ventanas",
+            "Aspirar, barrer y trapear los pisos"
+          ]
+        },
+        "deepCleaning": {
+          "title": "Artículos de limpieza profunda adicionales",
+          "items": [
+            "Limpiar todas las superficies horizontales",
+            "Limpiar los zócalos",
+            "Limpiar las puertas",
+            "Limpiar manchas en manijas y interruptores de luz",
+            "Limpiar el vidrio y los marcos de las ventanas",
+            "Limpiar manchas en puertas y manijas de gabinetes"
+          ]
+        },
+        "closets": {
+          "title": "Closets",
+          "items": [
+            "Aspirar, barrer o trapear",
+            "Limpiar los zócalos",
+            "Eliminar telarañas",
+            "Quitar el polvo y limpiar los estantes"
+          ]
+        }
+      },
+      "notIncludedTitle": "NO INCLUIDO (Exclusiones críticas)",
+      "notIncludedIntro": "Asegúrese de que esta sección sea muy visible en su página web",
+      "notIncludedItems": [
+        "Cualquier cosa a más de 10 pies de altura (o cualquier cosa que no se pueda alcanzar con una escalera de 3 a 4 pies)",
+        "Lavar bombillas (debido al riesgo de rotura)",
+        "Limpieza de materiales peligrosos",
+        "Guardar platos (no queremos apilarlos de una manera que no le guste y reducir el riesgo de rotura)",
+        "Eliminar moho o pintura",
+        "Transportar basura (solo podemos llevar la basura a sus botes exteriores)",
+        "Mover muebles u objetos pesados",
+        "Limpiar cualquier cosa que involucre una escalera alta o limpiar candelabros",
+        "Limpieza exterior de ventanas",
+        "Limpieza de hogares infestados de plagas (cucarachas, chinches, etc.)"
+      ],
+      "note": "Nota: La lista es una guía y algunos hogares pueden requerir tiempo adicional."
     }
   },
   "serviceLocations": {
