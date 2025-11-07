@@ -312,6 +312,161 @@
         "Limpieza de hogares infestados de plagas (cucarachas, chinches, etc.)"
       ],
       "note": "Nota: La lista es una guía y algunos hogares pueden requerir tiempo adicional."
+    },
+    "deepCleaning": {
+      "title": "Lista de verificación de limpieza profunda",
+      "intro": "Nuestra lista completa de limpieza profunda garantiza que todos los detalles estén cubiertos para una limpieza exhaustiva de arriba a abajo de su hogar.",
+      "introWithLocation": "Nuestros especialistas en limpieza profunda en {{location}} utilizan esta lista completa para garantizar que todos los detalles estén cubiertos para una limpieza exhaustiva de arriba a abajo de su hogar.",
+      "sections": {
+        "kitchen": {
+          "title": "Cocina",
+          "items": [
+            "Eliminar telarañas",
+            "Limpiar el exterior de los electrodomésticos grandes",
+            "Limpiar el interior del microondas",
+            "Limpiar y secar los fregaderos",
+            "Limpiar todas las encimeras",
+            "Limpiar la estufa y el área del extractor",
+            "Limpiar el salpicadero detrás del fregadero y electrodomésticos",
+            "Aspirar, barrer y trapear los pisos",
+            "Limpiar los marcos de las ventanas",
+            "Quitar el polvo y limpiar las persianas",
+            "Vaciar los botes de basura"
+          ]
+        },
+        "bathrooms": {
+          "title": "Baños",
+          "items": [
+            "Eliminar telarañas",
+            "Quitar el polvo de las lámparas",
+            "Limpiar los espejos",
+            "Limpiar y secar la bañera y la ducha a mano",
+            "Limpiar y secar los lavabos a mano",
+            "Limpiar la lechada de las baldosas",
+            "Limpiar las puertas de la ducha",
+            "Limpiar el interior, exterior y parte superior de los inodoros",
+            "Limpiar las encimeras",
+            "Quitar el polvo de la parte superior del marco de la puerta",
+            "Aspirar, barrer y trapear los pisos",
+            "Vaciar los botes de basura"
+          ]
+        },
+        "livingAreas": {
+          "title": "Áreas de estar y dormitorios",
+          "items": [
+            "Cambiar sábanas y ropa de cama cuando se dejan en la cama",
+            "Eliminación de telarañas",
+            "Quitar el polvo de los marcos de las puertas",
+            "Quitar el polvo de los ventiladores de techo",
+            "Quitar el polvo de todos los muebles y estantes",
+            "Limpiar todas las mesas",
+            "Limpiar las superficies de vidrio de las mesas y los espejos",
+            "Quitar el polvo y limpiar las persianas",
+            "Limpiar los marcos de las ventanas",
+            "Aspirar, barrer y trapear los pisos",
+            "Vaciar los botes de basura",
+            "Limpiar manchas en gabinetes"
+          ]
+        },
+        "additionalItems": {
+          "title": "Artículos adicionales de limpieza profunda",
+          "items": [
+            "Quitar el polvo de artículos y adornos en estantes, mesas y libreros",
+            "Aspirar tapicería",
+            "Limpiar manchas en puertas y manijas de gabinetes",
+            "Limpiar los zócalos",
+            "Limpiar las puertas",
+            "Limpiar manchas en manijas y interruptores de luz",
+            "Limpiar el vidrio y los marcos de las ventanas",
+            "Limpiar manchas en electrodomésticos pequeños de cocina (tostadoras, cafeteras, etc.)"
+          ]
+        }
+      },
+      "notIncludedTitle": "NO INCLUIDO (Exclusiones críticas)",
+      "notIncludedIntro": "Asegúrese de que esta sección esté destacada como una política en su página web",
+      "notIncludedItems": [
+        "Cualquier cosa a más de 10 pies de altura (o cualquier cosa que no se pueda alcanzar con una escalera de 3 a 4 pies)",
+        "Lavar bombillas (debido al riesgo de rotura)",
+        "Limpieza de materiales peligrosos",
+        "Guardar platos (no queremos apilarlos de una manera que no le guste y reducir el riesgo de rotura)",
+        "Eliminar moho o pintura",
+        "Transportar basura (solo podemos llevar la basura a sus botes exteriores)",
+        "Mover muebles u objetos pesados",
+        "Limpiar cualquier cosa que involucre una escalera alta o limpiar candelabros",
+        "Limpieza exterior de ventanas",
+        "Limpieza de hogares infestados de plagas (cucarachas, chinches, etc.)"
+      ],
+      "note": "Nota: La lista es una guía y algunos hogares pueden requerir tiempo adicional."
+    },
+    "standardCleaning": {
+      "title": "Lista de verificación de limpieza estándar",
+      "intro": "Nuestra lista completa de limpieza estándar garantiza un servicio de limpieza constante y confiable para las necesidades de mantenimiento de su hogar.",
+      "introWithLocation": "Nuestros especialistas en limpieza estándar en {{location}} utilizan esta lista completa para garantizar un servicio de limpieza constante y confiable para las necesidades de mantenimiento de su hogar.",
+      "sections": {
+        "kitchen": {
+          "title": "Cocina",
+          "items": [
+            "Eliminar telarañas",
+            "Limpiar el exterior de los electrodomésticos grandes",
+            "Limpiar el interior del microondas",
+            "Limpiar y secar los fregaderos",
+            "Limpiar todas las encimeras",
+            "Limpiar la estufa y el área del extractor",
+            "Limpiar el salpicadero detrás del fregadero y electrodomésticos",
+            "Aspirar, barrer y trapear los pisos",
+            "Limpiar los marcos de las ventanas",
+            "Quitar el polvo y limpiar las persianas",
+            "Vaciar los botes de basura"
+          ]
+        },
+        "bathrooms": {
+          "title": "Baños",
+          "items": [
+            "Eliminar telarañas",
+            "Quitar el polvo de las lámparas",
+            "Limpiar los espejos",
+            "Limpiar y secar la bañera y la ducha a mano",
+            "Limpiar y secar los lavabos a mano",
+            "Limpiar la lechada de las baldosas",
+            "Limpiar las puertas de la ducha",
+            "Limpiar el interior, exterior y parte superior de los inodoros",
+            "Limpiar las encimeras",
+            "Quitar el polvo de la parte superior del marco de la puerta",
+            "Aspirar, barrer y trapear los pisos",
+            "Vaciar los botes de basura"
+          ]
+        },
+        "livingAreas": {
+          "title": "Áreas de estar y dormitorios",
+          "items": [
+            "Cambiar sábanas y ropa de cama cuando se dejan en la cama",
+            "Eliminación de telarañas",
+            "Quitar el polvo de los marcos de las puertas",
+            "Quitar el polvo de todos los muebles y estantes",
+            "Limpiar todas las mesas",
+            "Limpiar las superficies de vidrio de las mesas y los espejos",
+            "Quitar el polvo y limpiar las persianas",
+            "Limpiar los marcos de las ventanas",
+            "Aspirar, barrer y trapear los pisos",
+            "Vaciar los botes de basura"
+          ]
+        }
+      },
+      "notIncludedTitle": "NO INCLUIDO (Exclusiones críticas)",
+      "notIncludedIntro": "Esta sección define lo que el servicio estándar NO cubre",
+      "notIncludedItems": [
+        "Cualquier cosa a más de 10 pies de altura (o cualquier cosa que no se pueda alcanzar con una escalera de 3 a 4 pies)",
+        "Lavar bombillas (debido al riesgo de rotura)",
+        "Limpieza de materiales peligrosos",
+        "Guardar platos (no queremos apilarlos de una manera que no le guste y reducir el riesgo de rotura)",
+        "Eliminar moho o pintura",
+        "Transportar basura (solo podemos llevar la basura a sus botes exteriores)",
+        "Mover muebles u objetos pesados",
+        "Limpiar cualquier cosa que involucre una escalera alta o limpiar candelabros",
+        "Limpieza exterior de ventanas",
+        "Limpieza de hogares infestados de plagas (cucarachas, chinches, etc.)"
+      ],
+      "note": "Nota: La lista es una guía y algunos hogares pueden requerir tiempo adicional."
     }
   },
   "serviceLocations": {

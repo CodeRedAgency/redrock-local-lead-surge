@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { DeepCleaningChecklistSection } from "@/components/DeepCleaningChecklistSection";
 
 const neighborhoods = [
   {
@@ -420,72 +421,9 @@ const DeepCleaningLasVegasPage = () => {
             </div>
           </section>
 
-          {/* Our Comprehensive Deep Cleaning Checklist */}
-          <section className="py-20 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('lv.deep.checklistTitle')}</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Detailed Interior Cleaning
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean inside all cabinets, drawers, and appliances
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Detailed baseboard and trim cleaning
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean light fixtures, ceiling fans, and vents
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Intensive grout scrubbing and tile cleaning
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Deep clean inside ovens, microwaves, and refrigerators
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Intensive Surface Treatment
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean window tracks and sills thoroughly
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Detailed door and frame cleaning
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean behind and under all furniture
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Deep clean all switch plates and outlet covers
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Sanitize all high-touch surfaces and handles
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <DeepCleaningChecklistSection
+            intro={t('checklists.deepCleaning.introWithLocation', { location: 'Las Vegas' })}
+          />
 
           {/* The Perfect Solution for a Healthier Las Vegas Home */}
           <section className="py-20 bg-muted/30">

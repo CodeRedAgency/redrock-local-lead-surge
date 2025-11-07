@@ -227,6 +227,161 @@
         "Cleaning pest infested homes (roaches, bedbugs, etc.)"
       ],
       "note": "Note: Checklist is a guideline and some homes can require additional time."
+    },
+    "deepCleaning": {
+      "title": "Deep Cleaning Checklist",
+      "intro": "Our professional deep cleaning checklist ensures every detail is covered for a thorough, top-to-bottom clean of your home.",
+      "introWithLocation": "Our {{location}} deep cleaning specialists use this comprehensive checklist to ensure every detail is covered for a thorough, top-to-bottom clean of your home.",
+      "sections": {
+        "kitchen": {
+          "title": "Kitchen",
+          "items": [
+            "Remove cobwebs",
+            "Wipe down exteriors of large appliances",
+            "Clean inside of microwave",
+            "Clean and dry sinks",
+            "Wipe down all countertops",
+            "Clean stove top and the fan area above stove",
+            "Clean backsplash behind sink and appliances",
+            "Vacuum, sweep, and mop floors",
+            "Wipe down window ledges",
+            "Dust and spot clean blinds",
+            "Empty trash cans"
+          ]
+        },
+        "bathrooms": {
+          "title": "Bathrooms",
+          "items": [
+            "Remove cobwebs",
+            "Dust light fixtures",
+            "Clean mirrors",
+            "Hand clean and dry bathtub and shower",
+            "Hand clean and dry sinks",
+            "Clean grout on tiles",
+            "Clean shower doors",
+            "Clean interior, exterior, and top of toilets",
+            "Wipe down countertops",
+            "Dust top of door frame",
+            "Vacuum, sweep, and mop floors",
+            "Empty trash cans"
+          ]
+        },
+        "livingAreas": {
+          "title": "Living Areas and Bedrooms",
+          "items": [
+            "Change sheets and linens when left on bed",
+            "Cobweb removal",
+            "Dust door frames",
+            "Dust ceiling fans",
+            "Dust all furniture and shelves",
+            "Wipe down any tables",
+            "Clean glass table tops and mirrors",
+            "Dust and spot clean blinds",
+            "Wipe down window ledges",
+            "Vacuum, sweep and mop floors",
+            "Empty trash cans",
+            "Spot clean cabinets"
+          ]
+        },
+        "additionalItems": {
+          "title": "Additional Deep Cleaning Items",
+          "items": [
+            "Dust items and knick-knacks on shelves, tables, and bookcases",
+            "Vacuum upholstery",
+            "Spot clean cabinet doors and handles",
+            "Wipe baseboards",
+            "Wipe down doors",
+            "Spot clean doorknobs and light switches",
+            "Clean window glass and trimming",
+            "Spot clean smaller kitchen appliances (toasters, coffee makers, etc.)"
+          ]
+        }
+      },
+      "notIncludedTitle": "NOT INCLUDED (Critical Exclusions)",
+      "notIncludedIntro": "Ensure this section is highlighted as a policy on your webpage",
+      "notIncludedItems": [
+        "Anything above 10 feet (or anything that cannot be reached within a 3-to-4 foot step ladder)",
+        "Washing light bulbs (due to risk of breakage)",
+        "Cleaning hazardous materials",
+        "Putting away dishes (we don't want to stack things in a way you don't like, and reduce risk of breakage)",
+        "Removing mold or paint",
+        "Hauling trash (we can only take the trash to your outside cans)",
+        "Moving furniture or heavy objects",
+        "Cleaning anything that involves a high ladder or cleaning chandeliers",
+        "Exterior window cleaning",
+        "Cleaning pest infested homes (roaches, bedbugs, etc.)"
+      ],
+      "note": "Note: Checklist is a guideline and some homes can require additional time."
+    },
+    "standardCleaning": {
+      "title": "Standard Cleaning Checklist",
+      "intro": "Our professional standard cleaning checklist ensures consistent, reliable cleaning service for your home maintenance needs.",
+      "introWithLocation": "Our {{location}} standard cleaning specialists use this comprehensive checklist to ensure consistent, reliable cleaning service for your home maintenance needs.",
+      "sections": {
+        "kitchen": {
+          "title": "Kitchen",
+          "items": [
+            "Remove cobwebs",
+            "Wipe down exteriors of large appliances",
+            "Clean inside of microwave",
+            "Clean and dry sinks",
+            "Wipe down all countertops",
+            "Clean stove top and the fan area above stove",
+            "Clean backsplash behind sink and appliances",
+            "Vacuum, sweep, and mop floors",
+            "Wipe down window ledges",
+            "Dust and spot clean blinds",
+            "Empty trash cans"
+          ]
+        },
+        "bathrooms": {
+          "title": "Bathrooms",
+          "items": [
+            "Remove cobwebs",
+            "Dust light fixtures",
+            "Clean mirrors",
+            "Hand clean and dry bathtub and shower",
+            "Hand clean and dry sinks",
+            "Clean grout on tiles",
+            "Clean shower doors",
+            "Clean interior, exterior, and top of toilets",
+            "Wipe down countertops",
+            "Dust top of door frame",
+            "Vacuum, sweep, and mop floors",
+            "Empty trash cans"
+          ]
+        },
+        "livingAreas": {
+          "title": "Living Areas and Bedrooms",
+          "items": [
+            "Change sheets and linens when left on bed",
+            "Cobweb removal",
+            "Dust door frames",
+            "Dust all furniture and shelves",
+            "Wipe down any tables",
+            "Clean glass table tops and mirrors",
+            "Dust and spot clean blinds",
+            "Wipe down window ledges",
+            "Vacuum, sweep and mop floors",
+            "Empty trash cans"
+          ]
+        }
+      },
+      "notIncludedTitle": "NOT INCLUDED (Critical Exclusions)",
+      "notIncludedIntro": "This section defines what the standard service does NOT cover",
+      "notIncludedItems": [
+        "Anything above 10 feet (or anything that cannot be reached within a 3-to-4 foot step ladder)",
+        "Washing light bulbs (due to risk of breakage)",
+        "Cleaning hazardous materials",
+        "Putting away dishes (we don't want to stack things in a way you don't like, and reduce risk of breakage)",
+        "Removing mold or paint",
+        "Hauling trash (we can only take the trash to your outside cans)",
+        "Moving furniture or heavy objects",
+        "Cleaning anything that involves a high ladder or cleaning chandeliers",
+        "Exterior window cleaning",
+        "Cleaning pest infested homes (roaches, bedbugs, etc.)"
+      ],
+      "note": "Note: Checklist is a guideline and some homes can require additional time."
     }
   },
   "serviceLocations": {

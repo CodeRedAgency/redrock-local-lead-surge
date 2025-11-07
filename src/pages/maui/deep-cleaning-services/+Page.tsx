@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { DeepCleaningChecklistSection } from "@/components/DeepCleaningChecklistSection";
 
 const neighborhoods = [
   {
@@ -287,72 +288,9 @@ const DeepCleaningMauiPage = () => {
             </div>
           </section>
 
-          {/* Our Comprehensive Deep Cleaning Checklist */}
-          <section className="py-20 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('maui.deep.checklistTitle')}</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Intensive Surface Cleaning
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Cleaning baseboards and trim throughout
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Inside of cabinets and drawers
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Inside all appliances (oven, refrigerator, dishwasher)
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Light fixtures and ceiling fans
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Detailed grout scrubbing and tile cleaning
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Maui-Specific Deep Clean
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Removing sand and salt buildup
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Cleaning window tracks and screens
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Deep carpet and upholstery cleaning
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        HVAC vent and filter cleaning
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Comprehensive dust removal from all surfaces
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <DeepCleaningChecklistSection
+            intro={t('checklists.deepCleaning.introWithLocation', { location: 'Maui' })}
+          />
 
           {/* The Perfect Solution for a Healthier Home */}
           <section className="py-20 bg-muted/30">

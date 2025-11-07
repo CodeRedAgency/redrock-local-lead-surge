@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
 import { Check, Sparkles, Shield } from "lucide-react";
+import { DeepCleaningChecklistSection } from "@/components/DeepCleaningChecklistSection";
 
 const DeepCleaning = () => {
   const { t } = useTranslation();
@@ -47,114 +48,7 @@ const DeepCleaning = () => {
                 </div>
               </div>
 
-              <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                <h2 className="text-3xl font-bold mb-6 text-primary">{t("services.deep.checklist.title", { defaultValue: "Complete Deep Cleaning Checklist" })}</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.deep.checklist.kitchen", { defaultValue: "Kitchen Deep Clean" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.kitchen1", { defaultValue: "Inside oven, refrigerator, and dishwasher" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.kitchen2", { defaultValue: "Inside and outside all cabinets" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.kitchen3", { defaultValue: "Degrease range hood and backsplash" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.kitchen4", { defaultValue: "Clean baseboards and corners" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.kitchen5", { defaultValue: "Detailed grout cleaning" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.deep.checklist.bath", { defaultValue: "Bathroom Deep Clean" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.bath1", { defaultValue: "Scrub and sanitize grout lines" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.bath2", { defaultValue: "Deep clean shower doors and tracks" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.bath3", { defaultValue: "Descale fixtures and showerheads" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.bath4", { defaultValue: "Clean inside cabinets and drawers" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.bath5", { defaultValue: "Detailed baseboard cleaning" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.deep.checklist.living", { defaultValue: "Living Areas" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.living1", { defaultValue: "Clean ceiling fans and light fixtures" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.living2", { defaultValue: "Wipe down walls and doors" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.living3", { defaultValue: "Clean window sills and tracks" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.living4", { defaultValue: "Vacuum behind and under furniture" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.living5", { defaultValue: "Detailed baseboard and molding" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.deep.checklist.additional", { defaultValue: "Additional Services" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.add1", { defaultValue: "Clean inside closets" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.add2", { defaultValue: "Dust vents and air returns" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.add3", { defaultValue: "Wipe down switches and outlets" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.add4", { defaultValue: "Polish all hardware" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.deep.checklist.add5", { defaultValue: "Remove cobwebs from ceilings" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <DeepCleaningChecklistSection />
 
               <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center mb-12">
                 <h2 className="text-3xl font-bold mb-4">{t("services.deep.when.title", { defaultValue: "When to Schedule Deep Cleaning" })}</h2>

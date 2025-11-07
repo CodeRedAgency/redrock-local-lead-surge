@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { StandardCleaningChecklistSection } from "@/components/StandardCleaningChecklistSection";
 
 const neighborhoods = [
   {
@@ -344,72 +345,9 @@ const StandardCleaningOahuPage = () => {
             </div>
           </section>
 
-          {/* Our Standard Cleaning Checklist */}
-          <section className="py-20 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('oahu.standard.checklistTitle')}</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Living Areas & Bedrooms
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Dust all surfaces, furniture, and decorative items
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Vacuum carpets and rugs thoroughly
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Mop hard floors with appropriate cleaners
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean mirrors and glass surfaces
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Empty trash and replace liners
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4 flex items-center">
-                      <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                      Kitchen & Bathrooms
-                    </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean kitchen counters and sinks
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Sanitize all bathroom fixtures and surfaces
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean and disinfect toilet bowls
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Wipe down appliances and cabinet fronts
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                        Clean baseboards and light switches
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <StandardCleaningChecklistSection
+            intro={t('checklists.standardCleaning.introWithLocation', { location: 'Oahu' })}
+          />
 
           {/* Enjoy a Consistently Clean Home */}
           <section className="py-20 bg-muted/30">

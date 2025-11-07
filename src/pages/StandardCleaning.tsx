@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
 import { Check, Clock, Sparkles } from "lucide-react";
+import { StandardCleaningChecklistSection } from "@/components/StandardCleaningChecklistSection";
 
 const StandardCleaning = () => {
   const { t } = useTranslation();
@@ -47,98 +48,7 @@ const StandardCleaning = () => {
                 </div>
               </div>
 
-              <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-                <h2 className="text-3xl font-bold mb-6 text-primary">{t("services.standard.included.title", { defaultValue: "What's Included" })}</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.standard.included.allRooms", { defaultValue: "All Rooms" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.dust", { defaultValue: "Dust all accessible surfaces" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.vacuum", { defaultValue: "Vacuum carpets and rugs" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.mop", { defaultValue: "Mop hard floors" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.trash", { defaultValue: "Empty trash bins" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.handles", { defaultValue: "Wipe door handles and switches" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.standard.included.kitchen", { defaultValue: "Kitchen" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.ctops", { defaultValue: "Clean countertops and backsplash" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.appliances", { defaultValue: "Clean outside of appliances" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.sink", { defaultValue: "Clean sink and faucet" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.cabinets", { defaultValue: "Wipe cabinet fronts" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.standard.included.bathrooms", { defaultValue: "Bathrooms" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.toilet", { defaultValue: "Scrub and sanitize toilet" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.shower", { defaultValue: "Clean shower and tub" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.bathSink", { defaultValue: "Clean sink and counters" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.mirrors", { defaultValue: "Polish mirrors and fixtures" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">{t("services.standard.included.bedrooms", { defaultValue: "Bedrooms" })}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.beds", { defaultValue: "Make beds and change linens" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.dustFurniture", { defaultValue: "Dust furniture and decor" })}</span>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                        <span>{t("services.standard.included.vacuumUnder", { defaultValue: "Vacuum under accessible areas" })}</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <StandardCleaningChecklistSection />
 
               <div className="bg-muted/30 p-8 rounded-lg text-center">
                 <h2 className="text-3xl font-bold mb-4">{t("services.standard.cta.title", { defaultValue: "Ready to Get Started?" })}</h2>
