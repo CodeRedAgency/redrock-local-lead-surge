@@ -5,12 +5,26 @@ import { Helmet } from "react-helmet";
 import Hreflang from "@/components/Hreflang";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Check } from "lucide-react";
 import heroCommercial from "@/assets/hero-commercial.jpg";
+import { useLocationGuard } from "@/hooks/use-location-guard";
+import { LocationPromptModal } from "@/components/LocationPromptModal";
+import { useLocationContext } from "@/contexts/LocationContext";
 
 const PostConstruction = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const guardLocation = useLocationGuard();
+  const { showPrompt, setShowPrompt } = useLocationContext();
+
+  const handleGetQuote = (e: React.MouseEvent) => {
+    e.preventDefault();
+    guardLocation(() => {
+      navigate("/");
+    });
+  };
+
   return (
     <>
       <Helmet>
@@ -36,8 +50,8 @@ const PostConstruction = () => {
               <p className="text-xl md:text-2xl mb-8">
                 {t("services.post.tagline", { defaultValue: "Professional cleaning after construction, renovation, or remodeling projects" })}
               </p>
-              <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/">{t("cta.getQuote", { defaultValue: "Get a Quote" })}</Link>
+              <Button size="lg" onClick={handleGetQuote} className="bg-primary hover:bg-primary/90">
+                {t("cta.getQuote", { defaultValue: "Get a Quote" })}
               </Button>
             </div>
           </section>
@@ -218,12 +232,14 @@ const PostConstruction = () => {
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 {t("services.post.cta.copy", { defaultValue: "Get a quote for professional post-construction cleaning services." })}
               </p>
-              <Button size="lg" asChild>
-                <Link to="/">{t("cta.getQuote", { defaultValue: "Get Your Quote" })}</Link>
+              <Button size="lg" onClick={handleGetQuote}>
+                {t("cta.getQuote", { defaultValue: "Get Your Quote" })}
               </Button>
             </div>
           </section>
         </main>
+        
+        <LocationPromptModal isOpen={showPrompt} onClose={() => setShowPrompt(false)} />
         
         <ServiceLocationCards 
           servicePath="/post-construction-cleaning-services" 

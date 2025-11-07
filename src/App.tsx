@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import i18n from "./i18n";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { LocationProvider } from "@/contexts/LocationContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
@@ -208,9 +209,10 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <LanguageSynchronizer />
-        <ScrollToTop />
-        <Routes>
+        <LocationProvider>
+          <LanguageSynchronizer />
+          <ScrollToTop />
+          <Routes>
           {...createDualLanguageRoutes("/", <Index />)}
           
           {/* General Pages */}
@@ -411,6 +413,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {...createDualLanguageRoutes("*", <NotFound />)}
         </Routes>
+        </LocationProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

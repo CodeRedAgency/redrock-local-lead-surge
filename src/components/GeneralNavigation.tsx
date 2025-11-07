@@ -4,6 +4,9 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MapPin, ChevronDown, Phone, Calendar } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useLocationContext } from "@/contexts/LocationContext";
+import { LocationPromptModal } from "@/components/LocationPromptModal";
+import { useLocationGuard } from "@/hooks/use-location-guard";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -37,6 +40,8 @@ export const GeneralNavigation = () => {
   const location = useLocation();
   const { t, i18n } = useTranslation();
   const isMobile = useIsMobile();
+  const { setSelectedLocation, highlightLocation, showPrompt, setShowPrompt } = useLocationContext();
+  const guardLocation = useLocationGuard();
 
   // Helper to get language prefix based on current i18n language
   const getLanguagePrefix = () => {
@@ -52,6 +57,8 @@ export const GeneralNavigation = () => {
   };
 
   const handleLocationChange = (path: string) => {
+    // Update context with selected location
+    setSelectedLocation(path);
     // Add current language prefix to location path
     const langPrefix = getLanguagePrefix();
     const prefixedPath = langPrefix + path;
@@ -69,6 +76,20 @@ export const GeneralNavigation = () => {
     i18n.changeLanguage(lang).then(() => {
       // Use navigate instead of window.location to avoid reload
       navigate(newPath);
+    });
+  };
+
+  const handleLoginClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    guardLocation(() => {
+      window.open("https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in", "_blank", "noopener,noreferrer");
+    });
+  };
+
+  const handleBookNowClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    guardLocation(() => {
+      window.location.href = "/book-now-south-florida";
     });
   };
 
@@ -123,7 +144,7 @@ export const GeneralNavigation = () => {
             <div className="flex items-center gap-1">
               <MapPin className="w-3 h-3 text-muted-foreground" />
               <Select value={location.pathname} onValueChange={handleLocationChange}>
-                <SelectTrigger className="w-24 h-8 border-0 bg-transparent shadow-none text-xs">
+                <SelectTrigger className={`w-24 h-8 border-0 bg-transparent shadow-none text-xs transition-all ${highlightLocation ? 'location-highlight border-2 border-primary rounded-md' : ''}`}>
                   <SelectValue>{getCurrentLocationName()}</SelectValue>
                 </SelectTrigger>
                 <SelectContent>
@@ -299,7 +320,7 @@ export const GeneralNavigation = () => {
             <div className="flex items-center space-x-2">
               <MapPin className="w-4 h-4 text-muted-foreground" />
               <Select value={location.pathname} onValueChange={handleLocationChange}>
-                <SelectTrigger className="w-40 border-0 bg-transparent shadow-none">
+                <SelectTrigger className={`w-40 border-0 bg-transparent shadow-none transition-all ${highlightLocation ? 'location-highlight border-2 border-primary rounded-md' : ''}`}>
                   <SelectValue>{getCurrentLocationName()}</SelectValue>
                 </SelectTrigger>
                 <SelectContent>
@@ -315,16 +336,12 @@ export const GeneralNavigation = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm" asChild>
-              <a href="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" target="_blank" rel="noopener noreferrer">
-                {t("nav.login")}
-              </a>
+            <Button variant="ghost" size="sm" onClick={handleLoginClick}>
+              {t("nav.login")}
             </Button>
-            <Button size="sm" asChild>
-              <a href="/book-now-south-florida">
-                <Calendar className="w-4 h-4 mr-2" />
-                {t("nav.bookNow")}
-              </a>
+            <Button size="sm" onClick={handleBookNowClick}>
+              <Calendar className="w-4 h-4 mr-2" />
+              {t("nav.bookNow")}
             </Button>
           </div>
 
@@ -411,22 +428,21 @@ export const GeneralNavigation = () => {
 
               {/* Mobile CTA Buttons */}
               <div className="pt-4 space-y-2">
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="https://customer-portal.maidily.com/red-rock-cleans-south-florida/sign-in" target="_blank" rel="noopener noreferrer">
-                    {t("nav.login")}
-                  </a>
+                <Button variant="outline" size="sm" className="w-full" onClick={handleLoginClick}>
+                  {t("nav.login")}
                 </Button>
-                <Button size="sm" className="w-full" asChild>
-                  <a href="/book-now-south-florida">
-                    <Phone className="w-4 h-4 mr-2" />
-                    {t("nav.bookNow")}
-                  </a>
+                <Button size="sm" className="w-full" onClick={handleBookNowClick}>
+                  <Phone className="w-4 h-4 mr-2" />
+                  {t("nav.bookNow")}
                 </Button>
               </div>
             </nav>
           </div>
         )}
       </div>
+
+      {/* Location Prompt Modal */}
+      <LocationPromptModal isOpen={showPrompt} onClose={() => setShowPrompt(false)} />
     </nav>
   );
 };
