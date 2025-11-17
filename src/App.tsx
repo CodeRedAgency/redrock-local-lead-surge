@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import i18n from "./i18n";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -189,7 +189,9 @@ const queryClient = new QueryClient();
 const LanguageSynchronizer = () => {
   const location = useLocation();
   useEffect(() => {
-    const isEs = window.location.pathname.startsWith("/es");
+    const path = window.location.pathname;
+    const isEs = path.startsWith("/es");
+    const isEn = path.startsWith("/en");
     const target = isEs ? "es" : "en";
     if (i18n.language !== target) {
       i18n.changeLanguage(target);
@@ -199,10 +201,21 @@ const LanguageSynchronizer = () => {
 };
 
 // Helper function to create both English and Spanish route elements
-const createDualLanguageRoutes = (path: string, element: React.ReactElement) => [
-  <Route key={path} path={path} element={element} />,
-  <Route key={`/es${path}`} path={`/es${path}`} element={element} />
-];
+const createDualLanguageRoutes = (path: string, element: React.ReactElement) => {
+  // Handle root path specially
+  if (path === "/") {
+    return [
+      <Route key="/" path="/" element={element} />,
+      <Route key="/en" path="/en" element={element} />,
+      <Route key="/es" path="/es" element={element} />
+    ];
+  }
+  return [
+    <Route key={path} path={path} element={element} />,
+    <Route key={`/en${path}`} path={`/en${path}`} element={element} />,
+    <Route key={`/es${path}`} path={`/es${path}`} element={element} />
+  ];
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -223,17 +236,33 @@ const App = () => (
           {...createDualLanguageRoutes("/commercial-cleaning", <CommercialCleaning />)}
           {...createDualLanguageRoutes("/church-cleaning", <ChurchCleaningPage />)}
           {...createDualLanguageRoutes("/data-center-cleaning", <DataCenterCleaningPage />)}
-          {...createDualLanguageRoutes("/industrial-cleaning", <IndustrialCleaningPage />)}
+          <Route path="/industrial-cleaning" element={<IndustrialCleaningPage />} />
+          <Route path="/en/industrial-cleaning" element={<IndustrialCleaningPage />} />
+          <Route path="/es/industrial-cleaning" element={<IndustrialCleaningPage />} />
           {...createDualLanguageRoutes("/factory-cleaning", <FactoryCleaningPage />)}
           {...createDualLanguageRoutes("/government-facility-cleaning", <GovernmentFacilityCleaningPage />)}
           {...createDualLanguageRoutes("/gym-cleaning", <GymCleaningPage />)}
-          {...createDualLanguageRoutes("/medical-office-cleaning", <MedicalOfficeCleaningPage />)}
-          {...createDualLanguageRoutes("/retail-cleaning", <RetailCleaningPage />)}
-          {...createDualLanguageRoutes("/school-cleaning", <SchoolCleaningPage />)}
-          {...createDualLanguageRoutes("/showroom-cleaning", <ShowroomCleaningPage />)}
-          {...createDualLanguageRoutes("/warehouse-cleaning", <WarehouseCleaningPage />)}
-          {...createDualLanguageRoutes("/salon-spa-cleaning", <SalonSpaCleaningPage />)}
-          {...createDualLanguageRoutes("/restaurant-cleaning", <RestaurantCleaningPage />)}
+          <Route path="/medical-office-cleaning" element={<MedicalOfficeCleaningPage />} />
+          <Route path="/en/medical-office-cleaning" element={<MedicalOfficeCleaningPage />} />
+          <Route path="/es/medical-office-cleaning" element={<MedicalOfficeCleaningPage />} />
+          <Route path="/retail-cleaning" element={<RetailCleaningPage />} />
+          <Route path="/en/retail-cleaning" element={<RetailCleaningPage />} />
+          <Route path="/es/retail-cleaning" element={<RetailCleaningPage />} />
+          <Route path="/school-cleaning" element={<SchoolCleaningPage />} />
+          <Route path="/en/school-cleaning" element={<SchoolCleaningPage />} />
+          <Route path="/es/school-cleaning" element={<SchoolCleaningPage />} />
+          <Route path="/showroom-cleaning" element={<ShowroomCleaningPage />} />
+          <Route path="/en/showroom-cleaning" element={<ShowroomCleaningPage />} />
+          <Route path="/es/showroom-cleaning" element={<ShowroomCleaningPage />} />
+          <Route path="/warehouse-cleaning" element={<WarehouseCleaningPage />} />
+          <Route path="/en/warehouse-cleaning" element={<WarehouseCleaningPage />} />
+          <Route path="/es/warehouse-cleaning" element={<WarehouseCleaningPage />} />
+          <Route path="/salon-spa-cleaning" element={<SalonSpaCleaningPage />} />
+          <Route path="/en/salon-spa-cleaning" element={<SalonSpaCleaningPage />} />
+          <Route path="/es/salon-spa-cleaning" element={<SalonSpaCleaningPage />} />
+          <Route path="/restaurant-cleaning" element={<RestaurantCleaningPage />} />
+          <Route path="/en/restaurant-cleaning" element={<RestaurantCleaningPage />} />
+          <Route path="/es/restaurant-cleaning" element={<RestaurantCleaningPage />} />
           {...createDualLanguageRoutes("/contact", <Contact />)}
           {...createDualLanguageRoutes("/terms-and-conditions-page", <TermsAndConditions />)}
           {...createDualLanguageRoutes("/privacy-policy-page", <PrivacyPolicy />)}

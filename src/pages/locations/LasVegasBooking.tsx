@@ -29,8 +29,25 @@ const LasVegasBooking = () => {
     };
     
     return () => {
-      const scripts = document.querySelectorAll('script[src*="jquery"], script[src*="maidily"]');
-      scripts.forEach(script => script.remove());
+      // Cleanup scripts on unmount - safely check if parent exists before removing
+      try {
+        const scripts = document.querySelectorAll('script[src*="jquery"], script[src*="maidily"]');
+        scripts.forEach(script => {
+          try {
+            // Check if script exists and has a parent before removing
+            // Use remove() instead of removeChild() for better safety
+            if (script && script.parentNode && script.parentNode.contains(script)) {
+              script.remove();
+            }
+          } catch (e) {
+            // Script already removed or parent became null - ignore
+            console.debug('Script cleanup error (safe to ignore):', e);
+          }
+        });
+      } catch (e) {
+        // Error during cleanup - ignore
+        console.debug('Script cleanup error (safe to ignore):', e);
+      }
     };
   }, []);
   

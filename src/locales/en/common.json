@@ -16,6 +16,59 @@
       "postConstruction": "Post Construction Cleaning Services"
     }
   },
+  "footer": {
+    "home": {
+      "title": "Home",
+      "home": "Home"
+    },
+    "about": {
+      "title": "About",
+      "terms": "Terms and Conditions",
+      "privacy": "Privacy Policy",
+      "faq": "FAQ",
+      "sitemap": "Sitemap"
+    },
+    "residential": {
+      "title": "Residential Services",
+      "standardVsDeep": "Standard vs Deep Cleaning",
+      "standard": "Standard Cleaning",
+      "deep": "Deep Cleaning",
+      "airbnb": "Airbnb Cleaning",
+      "postConstruction": "Post Construction"
+    },
+    "commercial": {
+      "title": "Commercial Services",
+      "main": "Commercial Cleaning",
+      "church": "Church Cleaning",
+      "dataCenter": "Data Center Cleaning",
+      "industrial": "Industrial Cleaning",
+      "factory": "Factory Cleaning",
+      "government": "Government Facility",
+      "gym": "Gym Cleaning",
+      "medical": "Medical Office",
+      "restaurant": "Restaurant Cleaning",
+      "retail": "Retail Store",
+      "school": "School Cleaning",
+      "showroom": "Showroom Cleaning",
+      "warehouse": "Warehouse Cleaning",
+      "salonSpa": "Salon & Spa"
+    },
+    "resources": {
+      "title": "Resources",
+      "blog": "Blog",
+      "costEstimator": "Commercial Cleaning Cost Estimator",
+      "timeEstimator": "Commercial Cleaning Time Estimator",
+      "pricing": "Pricing"
+    },
+    "hiring": {
+      "title": "Join Our Team",
+      "requirements": "Hiring Requirements",
+      "apply": "How to use the Maidily mobile app"
+    },
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by"
+  },
   "blog": {
     "title": "Cleaning Tips & Advice",
     "subtitle": "Expert insights and practical guides for a cleaner, healthier space",

@@ -10,6 +10,16 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    // Ensure all routes fall back to index.html for SPA routing
+    middlewareMode: false,
+    fs: {
+      // Allow serving files from one level up to the project root
+      allow: ['..']
+    }
+  },
+  preview: {
+    // Ensure preview server also handles SPA routing
+    port: 8080,
   },
   plugins: [
     react(), 

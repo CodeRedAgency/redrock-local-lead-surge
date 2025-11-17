@@ -12,7 +12,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
-import { FileText, Microscope, Award, Users, Stethoscope, Droplets, Cross, GraduationCap, Shield } from "lucide-react";
+import { FileText, Microscope, Award, Users, Stethoscope, Droplets, XCircle, GraduationCap, Shield } from "lucide-react";
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const MedicalOfficeCleaningPage = () => {
@@ -155,7 +155,7 @@ const MedicalOfficeCleaningPage = () => {
                   <div className="grid md:grid-cols-3 gap-8 text-center">
                     <div>
                       <div className="mb-4">
-                        <Cross className="w-16 h-16 mx-auto animate-pulse" />
+                        <XCircle className="w-16 h-16 mx-auto animate-pulse" />
                       </div>
                       <div className="text-6xl font-bold mb-2">150+</div>
                       <h3 className="text-xl font-semibold mb-2">Healthcare Facilities Served</h3>

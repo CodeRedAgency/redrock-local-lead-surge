@@ -12,7 +12,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
-import { Shield, Clock, Package, Wrench, Users, Truck, Monitor, HardHat, Forklift } from "lucide-react";
+import { Shield, Clock, Package, Wrench, Users, Truck, Monitor, HardHat, Warehouse } from "lucide-react";
 import heroCommercial from "@/assets/hero-commercial.jpg";
 
 const WarehouseCleaningPage = () => {
@@ -190,7 +190,7 @@ const WarehouseCleaningPage = () => {
                     </div>
                     <div>
                       <div className="mb-4">
-                        <Forklift className="w-16 h-16 mx-auto animate-pulse" />
+                        <Warehouse className="w-16 h-16 mx-auto animate-pulse" />
                       </div>
                       <div className="text-6xl font-bold mb-2">40%</div>
                       <h3 className="text-xl font-semibold mb-2">More Efficient Operations</h3>
