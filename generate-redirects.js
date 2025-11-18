@@ -49,3 +49,4 @@ export default nextConfig;
 fs.writeFileSync('my-next-app/next.config.ts', config);
 console.log(`✅ Created next.config.ts with ${redirects.length} redirects`);
 
+
